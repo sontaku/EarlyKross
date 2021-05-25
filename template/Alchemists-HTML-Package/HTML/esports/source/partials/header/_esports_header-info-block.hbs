@@ -1,0 +1,15 @@
+<!-- Header Info Block -->
+<ul class="info-block info-block--header">
+	{{#if header-alt }}
+	<li class="info-block__item info-block__item--contact-primary">
+		<svg role="img" class="df-icon df-icon--jersey">
+			<use xlink:href="{{../root}}assets/images/icons-basket.svg#jersey"/>
+		</svg>
+		<h6 class="info-block__heading">Join Our Team!</h6>
+		<a class="info-block__link" href="mailto:{{esports.contact-info.email-1}}">{{esports.contact-info.email-1}}</a>
+	</li>
+	{{/if}}
+
+	{{> _esports_header-cart }}
+</ul>
+<!-- Header Info Block / End -->

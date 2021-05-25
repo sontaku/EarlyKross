@@ -1,0 +1,35 @@
+<!-- Widget: Team Info -->
+<aside class="widget widget--sidebar card card--no-paddings widget-event-info">
+	<div class="widget__title card__header">
+		<h4>Game Information</h4>
+	</div>
+	<div class="widget__content card__content">
+
+		{{#each basketball.sp.event.info}}
+		<figure class="alc-event-img">
+			<img src="{{image}}" alt="">
+		</figure>
+		<ul class="alc-event-info list-unstyled">
+
+			{{#each details}}
+			<li class="alc-event-info__item">
+				<span class="alc-event-info__icon">
+					<svg role="img" class="df-icon df-icon--{{icon}}">
+						<use xlink:href="{{../root}}assets/images/icons-basket.svg#{{icon}}"/>
+					</svg>
+				</span>
+				<span class="alc-event-info__value">{{value}}</span>
+			</li>
+			{{/each}}
+
+			<li class="alc-event-info__item alc-event-info__item--desc">
+				<span class="alc-event-info__label">{{excerpt.label}}</span>
+				<span class="alc-event-info__desc">{{excerpt.value}}</span>
+			</li>
+
+		</ul>
+		{{/each}}
+
+	</div>
+</aside>
+<!-- Widget: Team Info / End -->

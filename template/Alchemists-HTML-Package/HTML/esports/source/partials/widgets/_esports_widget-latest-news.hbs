@@ -1,0 +1,29 @@
+<!-- Widget: Latest News -->
+<aside class="widget widget--sidebar card widget-popular-posts">
+	<div class="widget__title card__header">
+		<h4>Latest News</h4>
+	</div>
+	<div class="widget__content card__content">
+		<ul class="posts posts--simple-list">
+			{{#each esports.posts.widget-latest-news }}
+			<li class="posts__item {{#each category}}posts__item--{{class}} {{/each}}">
+				<figure class="posts__thumb posts__thumb--hover">
+					<a href="_esports_blog-post-1.html"><img src="{{../root}}assets/images/esports/samples/{{thumb}}" alt=""></a>
+				</figure>
+				<div class="posts__inner">
+					<div class="posts__cat">
+						{{#each category}}<span class="label posts__cat-label posts__cat-label--{{class}}">{{name}}</span>{{/each}}
+					</div>
+					<h6 class="posts__title posts__title--color-hover"><a href="_esports_blog-post-1.html">{{title}}</a></h6>
+					<time datetime="2018-09-27" class="posts__date">{{date}}</time>
+				</div>
+				<div class="clearfix"></div>
+				<div class="posts__excerpt">
+					{{excerpt}}
+				</div>
+			</li>
+			{{/each}}
+		</ul>
+	</div>
+</aside>
+<!-- Widget: Latest News / End -->

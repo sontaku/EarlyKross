@@ -1,0 +1,7334 @@
+{
+	"site-title": "eSports & Gaming HTML Template",
+	"template": "esports",
+	"fonts": "Open+Sans:400,400i,700|Roboto+Condensed:400,400i,700,700i",
+	"posts": {
+		"marquee": [
+			{
+				"title": "Shadow's Ability will receive a nerf on May",
+				"category": [
+					{
+						"class": "category-4",
+						"name": "Xenowatch"
+					}
+				],
+				"excerpt": "Due to multiple player complaints..."
+			},
+			{
+				"title": "The team uniforms are getting a revamped",
+				"category": [
+					{
+						"class": "category-1",
+						"name": "The Team"
+					}
+				],
+				"excerpt": "After several years, the uniforms..."
+			},
+			{
+				"title": "A new mage character is coming to the league",
+				"category": [
+					{
+						"class": "category-2",
+						"name": "L.O. Heroes"
+					}
+				],
+				"excerpt": "Lorem ipsum dolor sit amet adipisicing..."
+			}
+		],
+		"hero-posts": [
+			{
+				"title": "The Alchemists reach to the Xenowatch finals",
+				"excerpt-sm": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, exercitation ullamco laboris nisi ut aliquip ex sed do...",
+				"thumb": "post-img2-grid.jpg",
+				"category": [
+					{
+						"class": "category-2",
+						"name": "L.O. Heroes"
+					}
+				],
+				"author": {
+					"name": "Erick Rodgers",
+					"avatar": "avatar-12-xs.jpg"
+				},
+				"date": "October 24th, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "Destroy will stream the Mercenaries mission",
+				"excerpt-sm": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do...",
+				"thumb": "post-img9-grid.jpg",
+				"category": [
+					{
+						"class": "category-1",
+						"name": "The Team"
+					},
+					{
+						"class": "category-4",
+						"name": "Xenowatch"
+					}
+				],
+				"author": {
+					"name": "Erick Rodgers",
+					"avatar": "avatar-12-xs.jpg"
+				},
+				"date": "August 27th, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "The story behind Rurouni and his Robot Guardian",
+				"excerpt-sm": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do...",
+				"thumb": "post-img10-grid.jpg",
+				"category": [
+					{
+						"class": "category-2",
+						"name": "L.O. Heroes"
+					}
+				],
+				"author": {
+					"name": "Erick Rodgers",
+					"avatar": "avatar-12-xs.jpg"
+				},
+				"date": "August 16th, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "New stealth missions for the strikers mode",
+				"excerpt-sm": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed exercitation ullamco laboris nisi ut enim ad minim veniam aliquip ex...",
+				"thumb": "post-img15-grid.jpg",
+				"category": [
+					{
+						"class": "category-3",
+						"name": "Striker GO"
+					}
+				],
+				"author": {
+					"name": "Erick Rodgers",
+					"avatar": "avatar-12-xs.jpg"
+				},
+				"date": "July 3rd, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			}
+		],
+		"news-1": [
+			{
+				"title": "The Alchemists reach to the Xenowatch finals",
+				"thumb": "post-img1-card.jpg",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in enderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+				"excerpt-sm": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do...",
+				"category": [
+					{
+						"class": "category-1",
+						"name": "The Team"
+					},
+					{
+						"class": "category-4",
+						"name": "Xenowatch"
+					}
+				],
+				"author": {
+					"name": "Erick Rodgers",
+					"avatar": "avatar-12-xs.jpg"
+				},
+				"date": "August 27th, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "A new mage character is coming to the league",
+				"thumb": "post-img2-card.jpg",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in enderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+				"excerpt-sm": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do...",
+				"category": [
+					{
+						"class": "category-2",
+						"name": "L.O. Heroes"
+					}
+				],
+				"author": {
+					"name": "Lagertha Dax",
+					"avatar": "avatar-6-xs.jpg"
+				},
+				"date": "August 23rd, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "The Team defeated the L.A. Pirates 2-1 in the Pro League Quarterfinals",
+				"thumb": "post-img3-card.jpg",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in enderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+				"excerpt-sm": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do...",
+				"category": [
+					{
+						"class": "category-1",
+						"name": "The Team"
+					},
+					{
+						"class": "category-3",
+						"name": "Striker GO"
+					}
+				],
+				"author": {
+					"name": "Lagertha Dax",
+					"avatar": "avatar-6-xs.jpg"
+				},
+				"date": "July 28th, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "Xenowatch's new patch will fix the faces bugs",
+				"thumb": "post-img4-card.jpg",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in enderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+				"excerpt-sm": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do...",
+				"category": [
+					{
+						"class": "category-4",
+						"name": "Xenowatch"
+					}
+				],
+				"author": {
+					"name": "Lagertha Dax",
+					"avatar": "avatar-6-xs.jpg"
+				},
+				"date": "July 24th, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "A new class is added to the human's race",
+				"thumb": "post-img5-card.jpg",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in enderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+				"excerpt-sm": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do...",
+				"category": [
+					{
+						"class": "category-2",
+						"name": "L.O. Heroes"
+					}
+				],
+				"author": {
+					"name": "Lagertha Dax",
+					"avatar": "avatar-6-xs.jpg"
+				},
+				"date": "July 16th, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "The Alchemists welcome \"Logan-X\" to the team",
+				"thumb": "post-img6-card.jpg",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in enderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+				"excerpt-sm": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do...",
+				"category": [
+					{
+						"class": "category-1",
+						"name": "The Team"
+					}
+				],
+				"author": {
+					"name": "Eric Rodgers",
+					"avatar": "avatar-12-xs.jpg"
+				},
+				"date": "June 3rd, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "Kelly_Spiegel9 joins the Xenowatch team",
+				"thumb": "post-img7-card.jpg",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in enderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+				"excerpt-sm": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do...",
+				"category": [
+					{
+						"class": "category-1",
+						"name": "The Team"
+					},
+					{
+						"class": "category-4",
+						"name": "Xenowatch"
+					}
+				],
+				"author": {
+					"name": "Eric Rodgers",
+					"avatar": "avatar-12-xs.jpg"
+				},
+				"date": "May 15th, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "New Tech vehicles will be added in July's patch",
+				"thumb": "post-img8-card.jpg",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in enderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+				"excerpt-sm": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do...",
+				"category": [
+					{
+						"class": "category-3",
+						"name": "Striker GO"
+					}
+				],
+				"author": {
+					"name": "Lagertha Dax",
+					"avatar": "avatar-6-xs.jpg"
+				},
+				"date": "May 14th, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			}
+		],
+		"news-2": [
+			{
+				"title": "The Alchemists reach to the Xenowatch finals",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nela elit, sed do eiusmod tempore der incididunt.",
+				"thumb": "post-img1.jpg",
+				"category": [
+					{
+						"class": "category-1",
+						"name": "The Team"
+					},
+					{
+						"class": "category-4",
+						"name": "Xenowatch"
+					}
+				],
+				"author": {
+					"name": "Erick Rodgers",
+					"avatar": "avatar-12-xs.jpg"
+				},
+				"date": "August 27th, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "A new mage character is coming to the league",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nela elit, sed do eiusmod tempore der incididunt.",
+				"thumb": "post-img2.jpg",
+				"category": [
+					{
+						"class": "category-2",
+						"name": "L.O. Heroes"
+					}
+				],
+				"author": {
+					"name": "Lagertha Dax",
+					"avatar": "avatar-6-xs.jpg"
+				},
+				"date": "August 23rd, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "The Team defeated the L.A. Pirates 2-1 in the Pro League Quarterfinals",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi",
+				"thumb": "post-img3.jpg",
+				"category": [
+					{
+						"class": "category-1",
+						"name": "The Team"
+					},
+					{
+						"class": "category-3",
+						"name": "Striker GO"
+					}
+				],
+				"author": {
+					"name": "Lagertha Dax",
+					"avatar": "avatar-6-xs.jpg"
+				},
+				"date": "July 28th, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "Xenowatch's new patch will fix the faces bugs",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nela elit, sed do eiusmod tempore der incididunt.",
+				"thumb": "post-img4.jpg",
+				"category": [
+					{
+						"class": "category-4",
+						"name": "Xenowatch"
+					}
+				],
+				"author": {
+					"name": "Lagertha Dax",
+					"avatar": "avatar-6-xs.jpg"
+				},
+				"date": "July 24th, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "The Alchemists welcome \"Logan-X\" to the team",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nela elit, sed do eiusmod tempore der incididunt.",
+				"thumb": "post-img6.jpg",
+				"category": [
+					{
+						"class": "category-1",
+						"name": "The Team"
+					}
+				],
+				"author": {
+					"name": "Eric Rodgers",
+					"avatar": "avatar-12-xs.jpg"
+				},
+				"date": "June 3rd, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "A new class is added to the human's race",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nela elit, sed do eiusmod tempore der incididunt.",
+				"thumb": "post-img5.jpg",
+				"category": [
+					{
+						"class": "category-2",
+						"name": "L.O. Heroes"
+					}
+				],
+				"author": {
+					"name": "Lagertha Dax",
+					"avatar": "avatar-6-xs.jpg"
+				},
+				"date": "July 16th, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "The New AR Rifle 245 will be awarded as a prize",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nela elit, sed do eiusmod tempore der incididunt.",
+				"thumb": "post-img11.jpg",
+				"category": [
+					{
+						"class": "category-3",
+						"name": "Striker GO"
+					}
+				],
+				"author": {
+					"name": "Lagertha Dax",
+					"avatar": "avatar-6-xs.jpg"
+				},
+				"date": "May 15th, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "Destroy will stream the Mercenaries mission",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nela elit, sed do eiusmod tempore der incididunt.",
+				"thumb": "post-img9.jpg",
+				"category": [
+					{
+						"class": "category-1",
+						"name": "The Team"
+					},
+					{
+						"class": "category-4",
+						"name": "Xenowatch"
+					}
+				],
+				"author": {
+					"name": "Eric Rodgers",
+					"avatar": "avatar-12-xs.jpg"
+				},
+				"date": "May 14th, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			}
+		],
+		"news-3": [
+			{
+				"title": "The Alchemists reach to the Xenowatch finals",
+				"thumb": "post-img1-lg.jpg",
+				"category": [
+					{
+						"class": "category-1",
+						"name": "The Team"
+					},
+					{
+						"class": "category-4",
+						"name": "Xenowatch"
+					}
+				],
+				"author": {
+					"name": "Erick Rodgers",
+					"avatar": "avatar-12-xs.jpg"
+				},
+				"date": "August 27th, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "A new mage character is coming to the league",
+				"thumb": "post-img2-lg.jpg",
+				"category": [
+					{
+						"class": "category-2",
+						"name": "L.O. Heroes"
+					}
+				],
+				"author": {
+					"name": "Lagertha Dax",
+					"avatar": "avatar-6-xs.jpg"
+				},
+				"date": "August 23rd, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "The Alchemists welcome \"Logan-X\" to the team",
+				"thumb": "post-img6-lg.jpg",
+				"category": [
+					{
+						"class": "category-1",
+						"name": "The Team"
+					}
+				],
+				"author": {
+					"name": "Erick Rodgers",
+					"avatar": "avatar-12-xs.jpg"
+				},
+				"date": "August 23rd, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "League of Heroies \"Jaxxy\" character is gonna get a really big update",
+				"thumb": "post-img12-lg.jpg",
+				"category": [
+					{
+						"class": "category-2",
+						"name": "L.O. Heroes"
+					}
+				],
+				"author": {
+					"name": "Erick Rodgers",
+					"avatar": "avatar-12-xs.jpg"
+				},
+				"date": "August 23rd, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			}
+		],
+		"news-4": [
+			{
+				"title": "The Alchemists reach to the Xenowatch finals",
+				"thumb": "post-img1-card.jpg",
+				"category": [
+					{
+						"class": "category-1",
+						"name": "The Team"
+					},
+					{
+						"class": "category-4",
+						"name": "Xenowatch"
+					}
+				],
+				"author": {
+					"name": "Erick Rodgers",
+					"avatar": "avatar-12-xs.jpg"
+				},
+				"date": "August 27th, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "A new mage character is coming to the league",
+				"thumb": "post-img2-card.jpg",
+				"category": [
+					{
+						"class": "category-2",
+						"name": "L.O. Heroes"
+					}
+				],
+				"author": {
+					"name": "Lagertha Dax",
+					"avatar": "avatar-6-xs.jpg"
+				},
+				"date": "August 23rd, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "The Team defeated the L.A. Pirates 2-1 in the Pro League Quarterfinals",
+				"thumb": "post-img3-card.jpg",
+				"category": [
+					{
+						"class": "category-1",
+						"name": "The Team"
+					},
+					{
+						"class": "category-3",
+						"name": "Striker GO"
+					}
+				],
+				"author": {
+					"name": "Lagertha Dax",
+					"avatar": "avatar-6-xs.jpg"
+				},
+				"date": "July 28th, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "The Alchemists welcome \"Logan-X\" to the team",
+				"thumb": "post-img6-card.jpg",
+				"category": [
+					{
+						"class": "category-1",
+						"name": "The Team"
+					}
+				],
+				"author": {
+					"name": "Eric Rodgers",
+					"avatar": "avatar-12-xs.jpg"
+				},
+				"date": "June 3rd, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "Join the Game Huntress to try out the new missions and character",
+				"excerpt": "This Friday, from 8:00pm to 2:00am we’ll be playing Striker Go’s new updated version (2.6.1) and trying out all the new things it has to offer!",
+				"thumb": "post-img9-card-lg.jpg",
+				"format": "event",
+				"category": [
+					{
+						"class": "category-3",
+						"name": "Striker GO"
+					}
+				],
+				"date": "June 18, 2021 21:00:00"
+			},
+			{
+				"title": "Xenowatch's new patch will fix the faces bugs",
+				"thumb": "post-img4-card.jpg",
+				"category": [
+					{
+						"class": "category-4",
+						"name": "Xenowatch"
+					}
+				],
+				"author": {
+					"name": "Lagertha Dax",
+					"avatar": "avatar-6-xs.jpg"
+				},
+				"date": "July 24th, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "A new class is added to the human's race",
+				"thumb": "post-img5-card.jpg",
+				"category": [
+					{
+						"class": "category-2",
+						"name": "L.O. Heroes"
+					}
+				],
+				"author": {
+					"name": "Lagertha Dax",
+					"avatar": "avatar-6-xs.jpg"
+				},
+				"date": "July 16th, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "New modes are coming in the next April update",
+				"thumb": "post-img13-card-sm.jpg",
+				"category": [
+					{
+						"class": "category-4",
+						"name": "Xenowatch"
+					}
+				],
+				"author": {
+					"name": "Eric Rodgers",
+					"avatar": "avatar-12-xs.jpg"
+				},
+				"date": "July 24th, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "Kelly_Spiegel9 joins the Xenowatch team",
+				"thumb": "post-img7-card.jpg",
+				"category": [
+					{
+						"class": "category-1",
+						"name": "The Team"
+					},
+					{
+						"class": "category-4",
+						"name": "Xenowatch"
+					}
+				],
+				"author": {
+					"name": "Eric Rodgers",
+					"avatar": "avatar-12-xs.jpg"
+				},
+				"date": "May 15th, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "New Tech vehicles will be added in July's patch",
+				"thumb": "post-img8-card.jpg",
+				"category": [
+					{
+						"class": "category-3",
+						"name": "Striker GO"
+					}
+				],
+				"author": {
+					"name": "Lagertha Dax",
+					"avatar": "avatar-6-xs.jpg"
+				},
+				"date": "May 14th, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "The New AR Rifle 245 will be awarded as a prize",
+				"thumb": "post-img11-card-sm.jpg",
+				"category": [
+					{
+						"class": "category-3",
+						"name": "Striker GO"
+					}
+				],
+				"author": {
+					"name": "Eric Rodgers",
+					"avatar": "avatar-12-xs.jpg"
+				},
+				"date": "May 14th, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			}
+		],
+		"news-5": [
+			{
+				"title": "The New AR Rifle 245 will be awarded as a prize",
+				"thumb": "post-img11-card-sm.jpg",
+				"category": [
+					{
+						"class": "category-3",
+						"name": "Striker GO"
+					}
+				],
+				"author": {
+					"name": "Erick Rodgers",
+					"avatar": "avatar-12-xs.jpg"
+				},
+				"date": "August 27th, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "New modes are coming in the April update",
+				"thumb": "post-img13-card-sm.jpg",
+				"category": [
+					{
+						"class": "category-4",
+						"name": "Xenowatch"
+					}
+				],
+				"author": {
+					"name": "Lagertha Dax",
+					"avatar": "avatar-6-xs.jpg"
+				},
+				"date": "August 23rd, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			}
+		],
+		"news-6": [
+			{
+				"title": "League of Heroes \"Jaxxy\" character is gonna a really big update",
+				"thumb": "post-img12-lg.jpg",
+				"category": [
+					{
+						"class": "category-2",
+						"name": "L.O. Heroes"
+					}
+				],
+				"author": {
+					"name": "Erick Rodgers",
+					"avatar": "avatar-12-xs.jpg"
+				},
+				"date": "May 14th, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				},
+				"featured": true
+			},
+			{
+				"title": "The team is going to New York for the Finals",
+				"thumb": "post-img14-card.jpg",
+				"category": [
+					{
+						"class": "category-1",
+						"name": "Team"
+					}
+				],
+				"author": {
+					"name": "Lagertha Dax",
+					"avatar": "avatar-6-xs.jpg"
+				},
+				"date": "March 17th, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "New Tech vehicles will be added in July's patch",
+				"thumb": "post-img8-card.jpg",
+				"category": [
+					{
+						"class": "category-3",
+						"name": "Striker GO"
+					}
+				],
+				"author": {
+					"name": "Lagertha Dax",
+					"avatar": "avatar-6-xs.jpg"
+				},
+				"date": "April 1st, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			}
+		],
+		"news-7": [
+			{
+				"title": "The New AR Rifle 245 will be awarded as a prize",
+				"thumb": "post-img11-card-md.jpg",
+				"category": [
+					{
+						"class": "category-3",
+						"name": "Striker GO"
+					}
+				],
+				"author": {
+					"name": "Lagertha Dax",
+					"avatar": "avatar-6-xs.jpg"
+				},
+				"date": "March 17th, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "A tech class is added to the human's race",
+				"thumb": "post-img5-card-md.jpg",
+				"category": [
+					{
+						"class": "category-2",
+						"name": "L.O. Heroes"
+					}
+				],
+				"author": {
+					"name": "Lagertha Dax",
+					"avatar": "avatar-6-xs.jpg"
+				},
+				"date": "April 1st, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			}
+		],
+		"news-8": [
+			{
+				"title": "New modes are coming in the next April update",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nela elit, sed do eiusmod tempore der incididunt.",
+				"thumb": "post-img13.jpg",
+				"category": [
+					{
+						"class": "category-4",
+						"name": "Xenowatch"
+					}
+				],
+				"author": {
+					"name": "Erick Rodgers",
+					"avatar": "avatar-12-xs.jpg"
+				},
+				"date": "August 27th, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "Kelly_Spiegel9 joins the Xenowatch team",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nela elit, sed do eiusmod tempore der incididunt.",
+				"thumb": "post-img7.jpg",
+				"category": [
+					{
+						"class": "category-1",
+						"name": "The Team"
+					},
+					{
+						"class": "category-4",
+						"name": "Xenowatch"
+					}
+				],
+				"author": {
+					"name": "Erick Rodgers",
+					"avatar": "avatar-12-xs.jpg"
+				},
+				"date": "August 23rd, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "The team is going to New York for the Finals",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi",
+				"thumb": "post-img14.jpg",
+				"category": [
+					{
+						"class": "category-1",
+						"name": "The Team"
+					}
+				],
+				"author": {
+					"name": "Erick Rodgers",
+					"avatar": "avatar-12-xs.jpg"
+				},
+				"date": "July 28th, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "New Tech vehicles will be added in July's patch",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nela elit, sed do eiusmod tempore der incididunt.",
+				"thumb": "post-img4.jpg",
+				"category": [
+					{
+						"class": "category-3",
+						"name": "Striker GO"
+					}
+				],
+				"author": {
+					"name": "Lagertha Dax",
+					"avatar": "avatar-6-xs.jpg"
+				},
+				"date": "July 24th, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			}
+		],
+		"videos": [
+			{
+				"title": "Destroy played the first mission of the Mercenaries update with Kelly and Saki",
+				"thumb": "post-img9-lg.jpg",
+				"video": "https://www.youtube.com/watch?v=XE0fU9PCrWE",
+				"category": [
+					{
+						"class": "category-1",
+						"name": "The Team"
+					},
+					{
+						"class": "category-4",
+						"name": "Xenowatch"
+					}
+				],
+				"tag": [
+					{
+						"class": "tag-1",
+						"name": "Streams"
+					},
+					{
+						"class": "tag-4",
+						"name": "Competitions"
+					}
+				],
+				"date": "August 27th, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "Tech pirates are having a huge arsenal upgrade this October",
+				"thumb": "team-video2.jpg",
+				"video": "https://www.youtube.com/watch?v=XE0fU9PCrWE",
+				"category": [
+					{
+						"class": "category-3",
+						"name": "Striker GO"
+					}
+				],
+				"tag": [
+					{
+						"class": "tag-3",
+						"name": "Gameplays"
+					}
+				],
+				"date": "August 27th, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "Watch The Alchemists vs The Sharks in the Heroes Razz Tournament",
+				"thumb": "team-video3.jpg",
+				"video": "https://www.youtube.com/watch?v=XE0fU9PCrWE",
+				"category": [
+					{
+						"class": "category-1",
+						"name": "The Team"
+					},
+					{
+						"class": "category-2",
+						"name": "L.O. Heroes"
+					}
+				],
+				"tag": [
+					{
+						"class": "tag-1",
+						"name": "Streams"
+					},
+					{
+						"class": "tag-2",
+						"name": "Unboxing"
+					}
+				],
+				"date": "August 27th, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			}
+		],
+		"related-1": [
+			{
+				"title": "A new class is added to the human's race",
+				"thumb": "post-img5-card.jpg",
+				"category": [
+					{
+						"class": "category-2",
+						"name": "L.O. Heroes"
+					}
+				],
+				"author": {
+					"name": "Lagertha Dax",
+					"avatar": "avatar-6-xs.jpg"
+				},
+				"date": "July 16th, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "New Tech vehicles will be added in July's patch",
+				"thumb": "post-img8-card.jpg",
+				"category": [
+					{
+						"class": "category-3",
+						"name": "Striker GO"
+					}
+				],
+				"author": {
+					"name": "Lagertha Dax",
+					"avatar": "avatar-6-xs.jpg"
+				},
+				"date": "May 14th, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			}
+		],
+		"related-2": [
+			{
+				"title": "The story behind Rurouni and his Robot Guardian",
+				"thumb": "post-img10-related-lg.jpg",
+				"category": [
+					{
+						"class": "category-2",
+						"name": "L.O. Heroes"
+					}
+				],
+				"author": {
+					"name": "Lagertha Dax",
+					"avatar": "avatar-6-xs.jpg"
+				},
+				"date": "July 16th, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "New Tech vehicles will be added in July's patch",
+				"thumb": "post-img8-related-lg.jpg",
+				"category": [
+					{
+						"class": "category-3",
+						"name": "Striker GO"
+					}
+				],
+				"author": {
+					"name": "Lagertha Dax",
+					"avatar": "avatar-6-xs.jpg"
+				},
+				"date": "May 14th, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			}
+		],
+		"widget-popular": [
+			{
+				"title": "The Team defeated the L.A. Pirates 2-1 in the Pro League...",
+				"thumb": "post-img3-sidebar-xs.jpg",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore magna.",
+				"category": [
+					{
+						"class": "category-1",
+						"name": "The Team"
+					},
+					{
+						"class": "category-3",
+						"name": "Striker GO"
+					}
+				],
+				"date": "September 27th, 2018"
+			},
+			{
+				"title": "New modes are coming in the April update",
+				"thumb": "post-img13-sidebar-xs.jpg",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore magna.",
+				"category": [
+					{
+						"class": "category-4",
+						"name": "Xenowatch"
+					}
+				],
+				"date": "August 5th, 2018"
+			},
+			{
+				"title": "The story behind Rurouni and his Robot Guardian",
+				"thumb": "post-img10-sidebar-xs.jpg",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore magna.",
+				"category": [
+					{
+						"class": "category-2",
+						"name": "L.O. Heroes"
+					}
+				],
+				"date": "September 5th, 2018"
+			},
+			{
+				"title": "Destroy will stream the Mercenaries mission",
+				"thumb": "post-img9-sidebar-xs.jpg",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore magna.",
+				"category": [
+					{
+						"class": "category-4",
+						"name": "Xenowatch"
+					}
+				],
+				"date": "August 14th, 2018"
+			}
+		],
+		"widget-popular-thumbs": [
+			{
+				"title": "New Teach vehicles will be added in July's patch",
+				"thumb": "post-img8-sidebar-xs.jpg",
+				"category": [
+					{
+						"class": "category-3",
+						"name": "Striker GO"
+					}
+				],
+				"date": "September 5th, 2018"
+			},
+			{
+				"title": "The Alchemists reach to the Xenowatch finals",
+				"thumb": "post-img4-sidebar-xs.jpg",
+				"category": [
+					{
+						"class": "category-1",
+						"name": "The Team"
+					},
+					{
+						"class": "category-4",
+						"name": "Xenowatch"
+					}
+				],
+				"date": "August 14th, 2018"
+			},
+			{
+				"title": "The Alchemists welcome \"Logan-X\" to the team",
+				"thumb": "post-img6-sidebar-xs.jpg",
+				"category": [
+					{
+						"class": "category-1",
+						"name": "The Team"
+					}
+				],
+				"date": "August 14th, 2018"
+			},
+			{
+				"title": "Xenowatch's new patch will fix the faces bugs",
+				"thumb": "post-img1-sidebar-xs.jpg",
+				"category": [
+					{
+						"class": "category-4",
+						"name": "Xenowatch"
+					}
+				],
+				"date": "September 27th, 2018"
+			},
+			{
+				"title": "A new mage character is coming to the League",
+				"thumb": "post-img2-sidebar-xs.jpg",
+				"category": [
+					{
+						"class": "category-2",
+						"name": "L.O. Heroes"
+					}
+				],
+				"date": "August 5th, 2018"
+			}
+		],
+		"widget-tabbed": {
+			"newest": [
+				{
+					"title": "Xenowatch's new patch will fix the faces bugs",
+					"thumb": "post-img4-sidebar-xs.jpg",
+					"category": [
+						{
+							"class": "category-4",
+							"name": "Xenowatch"
+						}
+					],
+					"date": "September 27th, 2018"
+				},
+				{
+					"title": "A new mage character is coming to the League",
+					"thumb": "post-img2-sidebar-xs.jpg",
+					"category": [
+						{
+							"class": "category-2",
+							"name": "L.O. Heroes"
+						}
+					],
+					"date": "August 5th, 2018"
+				},
+				{
+					"title": "New Tech vehicles will be added in July's patch",
+					"thumb": "post-img8-sidebar-xs.jpg",
+					"category": [
+						{
+							"class": "category-3",
+							"name": "Striker GO"
+						}
+					],
+					"date": "September 5th, 2018"
+				},
+				{
+					"title": "The Alchemists reach to the Xenowatch finals",
+					"thumb": "post-img1-sidebar-xs.jpg",
+					"category": [
+						{
+							"class": "category-1",
+							"name": "The Team"
+						},
+						{
+							"class": "category-4",
+							"name": "Xenowatch"
+						}
+					],
+					"date": "August 14th, 2018"
+				},
+				{
+					"title": "The Alchemists welcome \"Logan-X\" to the team",
+					"thumb": "post-img6-sidebar-xs.jpg",
+					"category": [
+						{
+							"class": "category-1",
+							"name": "The Team"
+						}
+					],
+					"date": "August 14th, 2018"
+				}
+			],
+			"commented": [
+				{
+					"title": "New Teach vehicles will be added in July's patch",
+					"thumb": "post-img8-sidebar-xs.jpg",
+					"category": [
+						{
+							"class": "category-3",
+							"name": "Striker GO"
+						}
+					],
+					"date": "September 5th, 2018"
+				},
+				{
+					"title": "The Alchemists reach to the Xenowatch finals",
+					"thumb": "post-img4-sidebar-xs.jpg",
+					"category": [
+						{
+							"class": "category-1",
+							"name": "The Team"
+						},
+						{
+							"class": "category-4",
+							"name": "Xenowatch"
+						}
+					],
+					"date": "August 14th, 2018"
+				},
+				{
+					"title": "The Alchemists welcome \"Logan-X\" to the team",
+					"thumb": "post-img6-sidebar-xs.jpg",
+					"category": [
+						{
+							"class": "category-1",
+							"name": "The Team"
+						}
+					],
+					"date": "August 14th, 2018"
+				},
+				{
+					"title": "Xenowatch's new patch will fix the faces bugs",
+					"thumb": "post-img1-sidebar-xs.jpg",
+					"category": [
+						{
+							"class": "category-4",
+							"name": "Xenowatch"
+						}
+					],
+					"date": "September 27th, 2018"
+				},
+				{
+					"title": "A new mage character is coming to the League",
+					"thumb": "post-img2-sidebar-xs.jpg",
+					"category": [
+						{
+							"class": "category-2",
+							"name": "L.O. Heroes"
+						}
+					],
+					"date": "August 5th, 2018"
+				}
+			],
+			"popular": [
+				{
+					"title": "The Alchemists welcome \"Logan-X\" to the team",
+					"thumb": "post-img6-sidebar-xs.jpg",
+					"category": [
+						{
+							"class": "category-1",
+							"name": "The Team"
+						}
+					],
+					"date": "August 14th, 2018"
+				},
+				{
+					"title": "A new mage character is coming to the League",
+					"thumb": "post-img2-sidebar-xs.jpg",
+					"category": [
+						{
+							"class": "category-2",
+							"name": "L.O. Heroes"
+						}
+					],
+					"date": "August 5th, 2018"
+				},
+				{
+					"title": "Xenowatch's new patch will fix the faces bugs",
+					"thumb": "post-img1-sidebar-xs.jpg",
+					"category": [
+						{
+							"class": "category-4",
+							"name": "Xenowatch"
+						}
+					],
+					"date": "September 27th, 2018"
+				},
+				{
+					"title": "The Alchemists reach to the Xenowatch finals",
+					"thumb": "post-img4-sidebar-xs.jpg",
+					"category": [
+						{
+							"class": "category-1",
+							"name": "The Team"
+						},
+						{
+							"class": "category-4",
+							"name": "Xenowatch"
+						}
+					],
+					"date": "August 14th, 2018"
+				},
+				{
+					"title": "New Teach vehicles will be added in July's patch",
+					"thumb": "post-img8-sidebar-xs.jpg",
+					"category": [
+						{
+							"class": "category-3",
+							"name": "Striker GO"
+						}
+					],
+					"date": "September 5th, 2018"
+				}
+			]
+		},
+		"widget-latest-news": [
+			{
+				"title": "The Alchemists reach to the Xenowatch finals",
+				"thumb": "post-img1-sidebar-xs.jpg",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore magna.",
+				"category": [
+					{
+						"class": "category-1",
+						"name": "The Team"
+					},
+					{
+						"class": "category-4",
+						"name": "Xenowatch"
+					}
+				],
+				"date": "September 27th, 2018"
+			},
+			{
+				"title": "New Tech vehicles will be added in July's patch",
+				"thumb": "post-img8-sidebar-xs.jpg",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore magna.",
+				"category": [
+					{
+						"class": "category-3",
+						"name": "Striker GO"
+					}
+				],
+				"date": "August 5th, 2018"
+			},
+			{
+				"title": "A new mage character is coming to the League",
+				"thumb": "post-img2-sidebar-xs.jpg",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore magna.",
+				"category": [
+					{
+						"class": "category-2",
+						"name": "L.O. Heroes"
+					}
+				],
+				"date": "September 5th, 2018"
+			},
+			{
+				"title": "Destroy will stream the Mercenaries mission",
+				"thumb": "post-img9-sidebar-xs.jpg",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore magna.",
+				"category": [
+					{
+						"class": "category-4",
+						"name": "Xenowatch"
+					}
+				],
+				"date": "August 14th, 2018"
+			}
+		],
+		"widget-latest-nav": [
+			{
+				"title": "Xenowatch's new patch will fix the faces bugs",
+				"thumb": "nav-post-img-1.jpg",
+				"category": [
+					{
+						"class": "category-4",
+						"name": "Xenowatch"
+					}
+				],
+				"date": "August 27th, 2018"
+			},
+			{
+				"title": "A new mage character is coming to the League",
+				"thumb": "nav-post-img-2.jpg",
+				"category": [
+					{
+						"class": "category-2",
+						"name": "L.O. Heroes"
+					}
+				],
+				"date": "July 16th, 2018"
+			},
+			{
+				"title": "New Teach vehicles will be added in July's patch",
+				"thumb": "nav-post-img-3.jpg",
+				"category": [
+					{
+						"class": "category-3",
+						"name": "Striker GO"
+					}
+				],
+				"date": "June 12th, 2018"
+			}
+		],
+		"widget-comments": [
+			{
+				"comment": "Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				"author": {
+					"name": "Samantha Rodgers",
+					"avatar": "avatar-11.jpg"
+				},
+				"date": "25 mins ago"
+			},
+			{
+				"comment": "Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud en derum sum laborem.",
+				"author": {
+					"name": "Alexandra Dason",
+					"avatar": "avatar-2.jpg"
+				},
+				"date": "48 mins ago"
+			},
+			{
+				"comment": "Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt.",
+				"author": {
+					"name": "Jake Casspon",
+					"avatar": "avatar-9.jpg"
+				},
+				"date": "23 hours ago"
+			}
+		],
+		"tagcloud": [
+			{ "label": "Xenowatch" },
+			{ "label": "Alchemists" },
+			{ "label": "Finals" },
+			{ "label": "Tournament" },
+			{ "label": "League" },
+			{ "label": "Destroy" },
+			{ "label": "Team" },
+			{ "label": "Match" },
+			{ "label": "Winners" },
+			{ "label": "Prize" },
+			{ "label": "Striker GO" },
+			{ "label": "L.O. Heroes" },
+			{ "label": "Players" },
+			{ "label": "esport" },
+			{ "label": "Awards" }
+		],
+		"widget-popular-footer": [
+			{
+				"title": "Xenowatch's new patch will fix the faces bugs",
+				"thumb": "post-img4-xs.jpg",
+				"category": [
+					{
+						"class": "category-4",
+						"name": "Xenowatch"
+					}
+				],
+				"date": "August 27th, 2018"
+			},
+			{
+				"title": "A new mage character is coming to the League",
+				"thumb": "post-img2-xs.jpg",
+				"category": [
+					{
+						"class": "category-2",
+						"name": "L.O. Heroes"
+					}
+				],
+				"date": "July 16th, 2018"
+			}
+		],
+		"widget-featured-footer": [
+			{
+				"title": "The Team defeated the L.A. Pirates 2-1 in the Pro League...",
+				"thumb": "post-img3-xs.jpg",
+				"category": [
+					{
+						"class": "category-1",
+						"name": "The Team"
+					},
+					{
+						"class": "category-3",
+						"name": "Striker GO"
+					}
+				],
+				"date": "September 24th, 2018"
+			},
+			{
+				"title": "New modes are coming in the April update",
+				"thumb": "post-img13-xs.jpg",
+				"category": [
+					{
+						"class": "category-4",
+						"name": "Xenowatch"
+					}
+				],
+				"date": "June 18th, 2018"
+			}
+		]
+	},
+	"sp": {
+		"league-table": [
+			{
+				"logo": "samples/logos/pirates_shield.png",
+				"name": "L.A. Pirates",
+				"place": "United States",
+				"stats": {
+					"overall": "14 - 2",
+					"match": "28 - 14"
+				}
+			},
+			{
+				"logo": "samples/logos/sharks_shield.png",
+				"name": "Sharks",
+				"place": "South Korea",
+				"stats": {
+					"overall": "12 - 4",
+					"match": "27 - 13"
+				}
+			},
+			{
+				"logo": "esports/logos/alchemists-22x25.png",
+				"name": "The Alchemists",
+				"place": "United States",
+				"stats": {
+					"overall": "11 - 5",
+					"match": "26 - 11"
+				},
+				"highlight": true
+			},
+			{
+				"logo": "samples/logos/ocean_kings_shield.png",
+				"name": "Ocean Kings",
+				"place": "Japan",
+				"stats": {
+					"overall": "9 - 7",
+					"match": "20 - 19"
+				}
+			},
+			{
+				"logo": "samples/logos/red_wings_shield.png",
+				"name": "Red Wings",
+				"place": "Canada",
+				"stats": {
+					"overall": "8 - 8",
+					"match": "20 - 20"
+				}
+			},
+			{
+				"logo": "samples/logos/lucky_clovers_shield.png",
+				"name": "Lucky Clovers",
+				"place": "Ireland",
+				"stats": {
+					"overall": "7 - 9",
+					"match": "19 - 21"
+				}
+			},
+			{
+				"logo": "samples/logos/draconians_shield.png",
+				"name": "Draconians",
+				"place": "Russia",
+				"stats": {
+					"overall": "6 - 2",
+					"match": "17 - 12"
+				}
+			},
+			{
+				"logo": "samples/logos/icarus_wings_shield.png",
+				"name": "Icarus Wings",
+				"place": "Portugal",
+				"stats": {
+					"overall": "5 - 3",
+					"match": "16 - 18"
+				}
+			}
+		],
+		"team": {
+			"standings": [
+				{
+					"pos": "01",
+					"team": {
+						"logo": "samples/logos/pirates_shield.png",
+						"name": "L.A. Pirates",
+						"place": "United States"
+					},
+					"win": "24",
+					"lose": "6",
+					"kills": "620",
+					"deaths": "341",
+					"assists": "1243",
+					"pentakills": "26",
+					"kdar": "7.8",
+					"dmg": "56.1",
+					"dpm": "1536",
+					"gold": "42.5",
+					"overall": "14-2",
+					"match": "28-14"
+				},
+				{
+					"pos": "02",
+					"team": {
+						"logo": "samples/logos/sharks_shield.png",
+						"name": "Sharks",
+						"place": "South Korea"
+					},
+					"win": "22",
+					"lose": "8",
+					"kills": "590",
+					"deaths": "368",
+					"assists": "1164",
+					"pentakills": "21",
+					"kdar": "7.1",
+					"dmg": "52.8",
+					"dpm": "1436",
+					"gold": "39.8",
+					"overall": "12-4",
+					"match": "27-13"
+				},
+				{
+					"pos": "03",
+					"team": {
+						"logo": "esports/logos/alchemists-22x25.png",
+						"name": "The Alchemists",
+						"place": "United States"
+					},
+					"win": "21",
+					"lose": "9",
+					"kills": "543",
+					"deaths": "389",
+					"assists": "1043",
+					"pentakills": "18",
+					"kdar": "6.5",
+					"dmg": "48.6",
+					"dpm": "1405",
+					"gold": "34.7",
+					"overall": "11-5",
+					"match": "26-11"
+				},
+				{
+					"pos": "04",
+					"team": {
+						"logo": "samples/logos/ocean_kings_shield.png",
+						"name": "Ocean Kings",
+						"place": "Japan"
+					},
+					"win": "19",
+					"lose": "11",
+					"kills": "501",
+					"deaths": "402",
+					"assists": "996",
+					"pentakills": "18",
+					"kdar": "6.2",
+					"dmg": "42.3",
+					"dpm": "1398",
+					"gold": "30.4",
+					"overall": "9-7",
+					"match": "20-19"
+				},
+				{
+					"pos": "05",
+					"team": {
+						"logo": "samples/logos/red_wings_shield.png",
+						"name": "Red Wings",
+						"place": "Canada"
+					},
+					"win": "18",
+					"lose": "12",
+					"kills": "433",
+					"deaths": "435",
+					"assists": "947",
+					"pentakills": "15",
+					"kdar": "5.9",
+					"dmg": "39.7",
+					"dpm": "1367",
+					"gold": "28.1",
+					"overall": "8-8",
+					"match": "20-20"
+				},
+				{
+					"pos": "06",
+					"team": {
+						"logo": "samples/logos/lucky_clovers_shield.png",
+						"name": "Lucky Clovers",
+						"place": "Ireland"
+					},
+					"win": "16",
+					"lose": "14",
+					"kills": "419",
+					"deaths": "439",
+					"assists": "835",
+					"pentakills": "14",
+					"kdar": "5.4",
+					"dmg": "36.1",
+					"dpm": "1344",
+					"gold": "26.6",
+					"overall": "7-9",
+					"match": "19-21"
+				},
+				{
+					"pos": "07",
+					"team": {
+						"logo": "samples/logos/draconians_shield.png",
+						"name": "Draconians",
+						"place": "Russia"
+					},
+					"win": "14",
+					"lose": "16",
+					"kills": "307",
+					"deaths": "510",
+					"assists": "804",
+					"pentakills": "9",
+					"kdar": "4.8",
+					"dmg": "32.5",
+					"dpm": "1284",
+					"gold": "22.5",
+					"overall": "6-2",
+					"match": "17-12"
+				},
+				{
+					"pos": "08",
+					"team": {
+						"logo": "samples/logos/icarus_wings_shield.png",
+						"name": "Icarus Wings",
+						"place": "Portugal"
+					},
+					"win": "11",
+					"lose": "19",
+					"kills": "299",
+					"deaths": "523",
+					"assists": "768",
+					"pentakills": "7",
+					"kdar": "4.4",
+					"dmg": "31.0",
+					"dpm": "1179",
+					"gold": "19.4",
+					"overall": "5-3",
+					"match": "16-18"
+				}
+			],
+			"results": [
+				{
+					"date": "06 - 12 - 2017",
+					"team": {
+						"name": "Aqua Keyes",
+						"logo": "aqua_keyes_shield.png",
+						"place": "Italy"
+					},
+					"result": {
+						"outcome": "W",
+						"score": "9 - 6"
+					},
+					"kills": "620",
+					"deaths": "341",
+					"assists": "1243",
+					"pentakills": "26",
+					"kdar": "7.8",
+					"dmg": "56.1",
+					"dpm": "1536",
+					"gold": "42.5"
+				},
+				{
+					"date": "06 - 14 - 2017",
+					"team": {
+						"name": "Draconians",
+						"logo": "draconians_shield.png",
+						"place": "Russia"
+					},
+					"result": {
+						"outcome": "W",
+						"score": "12 - 7"
+					},
+					"kills": "1235",
+					"deaths": "245",
+					"assists": "1699",
+					"pentakills": "12",
+					"kdar": "10.5",
+					"dmg": "43.5",
+					"dpm": "2468",
+					"gold": "59.8"
+				},
+				{
+					"date": "06 - 20 - 2017",
+					"team": {
+						"name": "Red Wings",
+						"logo": "icarus_wings_shield.png",
+						"place": "Spain"
+					},
+					"result": {
+						"outcome": "L",
+						"score": "5 - 9"
+					},
+					"kills": "436",
+					"deaths": "579",
+					"assists": "846",
+					"pentakills": "8",
+					"kdar": "2.8",
+					"dmg": "32.8",
+					"dpm": "956",
+					"gold": "34.5"
+				},
+				{
+					"date": "06 - 20 - 2017",
+					"team": {
+						"name": "Sharks",
+						"logo": "sharks_shield.png",
+						"place": "South Korea"
+					},
+					"result": {
+						"outcome": "W",
+						"score": "8 - 5"
+					},
+					"kills": "536",
+					"deaths": "293",
+					"assists": "934",
+					"pentakills": "12",
+					"kdar": "6.4",
+					"dmg": "34.9",
+					"dpm": "1034",
+					"gold": "36.7"
+				},
+				{
+					"date": "06 - 28 - 2017",
+					"team": {
+						"name": "L.A. Pirates",
+						"logo": "pirates_shield.png",
+						"place": "United States"
+					},
+					"result": {
+						"outcome": "W",
+						"score": "14 - 11"
+					},
+					"kills": "1048",
+					"deaths": "482",
+					"assists": "1048",
+					"pentakills": "18",
+					"kdar": "12.4",
+					"dmg": "54.1",
+					"dpm": "1536",
+					"gold": "55.1"
+				},
+				{
+					"date": "07 - 02 - 2017",
+					"team": {
+						"name": "Icarus Wings",
+						"logo": "icarus_wings_shield.png",
+						"place": "Portugal"
+					},
+					"result": {
+						"outcome": "L",
+						"score": "3 - 4"
+					},
+					"kills": "203",
+					"deaths": "766",
+					"assists": "534",
+					"pentakills": "2",
+					"kdar": "1.8",
+					"dmg": "26.8",
+					"dpm": "738",
+					"gold": "32.2"
+				},
+				{
+					"date": "07 - 04 - 2017",
+					"team": {
+						"name": "Lucky Clovers",
+						"logo": "lucky_clovers_shield.png",
+						"place": "Ireland"
+					},
+					"result": {
+						"outcome": "L",
+						"score": "6 - 8"
+					},
+					"kills": "468",
+					"deaths": "583",
+					"assists": "772",
+					"pentakills": "14",
+					"kdar": "2.9",
+					"dmg": "33.4",
+					"dpm": "886",
+					"gold": "34.7"
+				},
+				{
+					"date": "07 - 04 - 2017",
+					"team": {
+						"logo": "bloody_wave_shield.png",
+						"name": "Bloody Wave",
+						"place": "Germany"
+					},
+					"result": {
+						"outcome": "W",
+						"score": "7 - 2"
+					},
+					"kills": "672",
+					"deaths": "317",
+					"assists": "946",
+					"pentakills": "14",
+					"kdar": "4.5",
+					"dmg": "38.7",
+					"dpm": "973",
+					"gold": "44.1"
+				}
+			],
+			"schedule": [
+				{
+					"date": "06 - 12 - 2018",
+					"team": {
+						"logo": "lucky_clovers_shield.png",
+						"name": "Lucky Clovers",
+						"place": "Ireland"
+					},
+					"time": "9:00PM EST",
+					"league": "Heroes Razz Tournament",
+					"instance": "Semi-Finals",
+					"venue": "Madison Cube Garden",
+					"prize": "USD1.500.000",
+					"availability": true
+				},
+				{
+					"date": "06 - 19 - 2018",
+					"team": {
+						"logo": "red_wings_shield.png",
+						"name": "Red Wings",
+						"place": "Spain"
+					},
+					"time": "9:30PM EST",
+					"league": "Heroes League Cup",
+					"instance": "Qualifiers",
+					"venue": "Ragnark IV Arena",
+					"prize": "USD1.500.000",
+					"availability": true
+				},
+				{
+					"date": "06 - 26 - 2018",
+					"team": {
+						"logo": "draconians_shield.png",
+						"name": "Draconians",
+						"place": "Russia"
+					},
+					"time": "10:00PM EST",
+					"league": "L.O. Heroes Pro League",
+					"instance": "Qualifiers",
+					"venue": "Madison Cube Garden",
+					"prize": "USD1.500.000",
+					"availability": false
+				},
+				{
+					"date": "07 - 04 - 2018",
+					"team": {
+						"logo": "aqua_keyes_shield.png",
+						"name": "Aqua Keyes",
+						"place": "Italy"
+					},
+					"time": "10:00PM EST",
+					"league": "Heroes League Cup",
+					"instance": "Quater-Finals",
+					"venue": "Madison Cube Garden",
+					"prize": "USD1.500.000",
+					"availability": true
+				},
+				{
+					"date": "07 - 09 - 2018",
+					"team": {
+						"logo": "icarus_wings_shield.png",
+						"name": "Icarus Wings",
+						"place": "Portugal"
+					},
+					"time": "9:00PM EST",
+					"league": "L.O. Heroes Pro League",
+					"instance": "Semi-Finals",
+					"venue": "Ragnark IV Arena",
+					"prize": "USD1.500.000",
+					"availability": true
+				},
+				{
+					"date": "07 - 22 - 2018",
+					"team": {
+						"logo": "bloody_wave_shield.png",
+						"name": "Bloody Wave",
+						"place": "Germany"
+					},
+					"time": "9:00PM EST",
+					"league": "Heroes League Cup",
+					"instance": "Semi-Finals",
+					"venue": "DragonFire Stadium",
+					"prize": "USD1.500.000",
+					"availability": true
+				},
+				{
+					"date": "07 - 25 - 2018",
+					"team": {
+						"logo": "pirates_shield.png",
+						"name": "L.A. Pirates",
+						"place": "United States"
+					},
+					"time": "9:00PM EST",
+					"league": "Heroes League Cup",
+					"instance": "Semi-Finals",
+					"venue": "DragonFire Stadium",
+					"prize": "USD1.500.000",
+					"availability": true
+				},
+				{
+					"date": "07 - 29 - 2018",
+					"team": {
+						"logo": "ocean_kings_shield.png",
+						"name": "Ocean Kings",
+						"place": "Japan"
+					},
+					"time": "9:00PM EST",
+					"league": "Heroes League Cup",
+					"instance": "Semi-Finals",
+					"venue": "Madison Cube Garden",
+					"prize": "USD1.500.000",
+					"availability": true
+				}
+			],
+			"newslog": [
+				{
+					"type": "join",
+					"content": "Pro Gamer <strong>Logan-X</strong> (Peter Howlett) has joined the <strong>League of Heroes Alchemists</strong> team!",
+					"date": "January 16th, 2017"
+				},
+				{
+					"type": "exit",
+					"content": "<strong>Sakura_CC</strong> (Sarah Summers) has has left the <strong>League of Heroes Alchemists</strong> team.",
+					"date": "September 24th, 2016"
+				},
+				{
+					"type": "news",
+					"content": "We welcome <strong>DragonFire</strong> as the new sponsor for our <strong>League of Heroes Alchemists</strong> team!",
+					"date": "August 24, 2016"
+				}
+			],
+			"gallery": [
+				{
+					"featured": "team-gallery1-featured.jpg",
+					"thumbs": {
+						"thumb1": "team-gallery1-thumb1.jpg",
+						"thumb2": "team-gallery1-thumb2.jpg",
+						"thumb3": "team-gallery1-thumb3.jpg"
+					},
+					"size": 80,
+					"title": "New Xenowatch Characters",
+					"date": "March 12th, 2018"
+				},
+				{
+					"featured": "team-gallery2-featured.jpg",
+					"thumbs": {
+						"thumb1": "team-gallery2-thumb1.jpg",
+						"thumb2": "team-gallery2-thumb2.jpg",
+						"thumb3": "team-gallery2-thumb3.jpg"
+					},
+					"size": 16,
+					"title": "Player Photoshoot 2018",
+					"date": "August 29th, 2018"
+				},
+				{
+					"featured": "team-gallery3-featured.jpg",
+					"thumbs": {
+						"thumb1": "team-gallery3-thumb1.jpg",
+						"thumb2": "team-gallery3-thumb2.jpg",
+						"thumb3": "team-gallery3-thumb3.jpg"
+					},
+					"size": 204,
+					"title": "Heroez Razz Tournament 2016",
+					"date": "December 5th, 2017"
+				},
+				{
+					"featured": "team-gallery4-featured.jpg",
+					"thumbs": {
+						"thumb1": "team-gallery4-thumb1.jpg",
+						"thumb2": "team-gallery4-thumb2.jpg",
+						"thumb3": "team-gallery4-thumb3.jpg"
+					},
+					"size": 22,
+					"title": "Players Photoshoot 2016",
+					"date": "October 28th, 2016"
+				},
+				{
+					"featured": "team-gallery5-featured.jpg",
+					"thumbs": {
+						"thumb1": "team-gallery5-thumb1.jpg",
+						"thumb2": "team-gallery5-thumb2.jpg",
+						"thumb3": "team-gallery5-thumb3.jpg"
+					},
+					"size": 57,
+					"title": "New League of Heroes Characters",
+					"date": "April 28th, 2017"
+				},
+				{
+					"featured": "team-gallery6-featured.jpg",
+					"thumbs": {
+						"thumb1": "team-gallery6-thumb1.jpg",
+						"thumb2": "team-gallery6-thumb2.jpg",
+						"thumb3": "team-gallery6-thumb3.jpg"
+					},
+					"size": 95,
+					"title": "Manhattan Team Vacation",
+					"date": "October 14th, 2015"
+				}
+			],
+			"album": [
+				{
+					"col": "col-4 col-sm-6 col-lg-4",
+					"title": "Join the Game Huntress to try out the new missions and character",
+					"imgs": {
+						"full": "team-album2.jpg",
+						"thumb": "team-album2.jpg"
+					},
+					"info": "Patch 2.0",
+					"meta": {
+						"likes": "26"
+					}
+				},
+				{
+					"col": "col-4 col-sm-6 col-lg-8",
+					"title": "A new mage character is coming to the league",
+					"imgs": {
+						"full": "team-album1.jpg",
+						"thumb": "team-album1.jpg"
+					},
+					"info": "Patch 2.0",
+					"meta": {
+						"likes": "26"
+					}
+				},
+				{
+					"col": "col-4 col-sm-6 col-lg-4",
+					"title": "The Alchemists reach to the Xenowatch finals",
+					"imgs": {
+						"full": "team-album3.jpg",
+						"thumb": "team-album3.jpg"
+					},
+					"info": "Patch 2.0",
+					"meta": {
+						"likes": "26"
+					}
+				},
+				{
+					"col": "col-4 col-sm-6 col-lg-4",
+					"title": "The story behind Rurouni and his Robot Guardian",
+					"imgs": {
+						"full": "team-album4.jpg",
+						"thumb": "team-album4.jpg"
+					},
+					"info": "Patch 2.0",
+					"meta": {
+						"likes": "26"
+					}
+				},
+				{
+					"col": "col-4 col-sm-6 col-lg-4",
+					"title": "New Tech vehicles will be added in July's patch",
+					"imgs": {
+						"full": "team-album5.jpg",
+						"thumb": "team-album5.jpg"
+					},
+					"info": "Patch 2.0",
+					"meta": {
+						"likes": "26"
+					}
+				},
+				{
+					"col": "col-4 col-sm-6 col-lg-4",
+					"title": "A new mage character is coming to the league",
+					"imgs": {
+						"full": "team-album6.jpg",
+						"thumb": "team-album6.jpg"
+					},
+					"info": "Patch 2.0",
+					"meta": {
+						"likes": "26"
+					}
+				},
+				{
+					"col": "col-4 col-sm-6 col-lg-4",
+					"title": "New Tech vehicles will be added in July's patch",
+					"imgs": {
+						"full": "team-album7.jpg",
+						"thumb": "team-album7.jpg"
+					},
+					"info": "Patch 2.0",
+					"meta": {
+						"likes": "26"
+					}
+				},
+				{
+					"col": "col-4 col-sm-6 col-lg-4",
+					"title": "Futurictis Pirate class",
+					"imgs": {
+						"full": "team-album8.jpg",
+						"thumb": "team-album8.jpg"
+					},
+					"info": "Patch 2.0",
+					"meta": {
+						"likes": "26"
+					}
+				},
+				{
+					"col": "col-4 col-sm-6 col-lg-4",
+					"title": "A new mage character is coming to the league",
+					"imgs": {
+						"full": "team-album9.jpg",
+						"thumb": "team-album9.jpg"
+					},
+					"info": "Patch 2.0",
+					"meta": {
+						"likes": "26"
+					}
+				},
+				{
+					"col": "col-4 col-sm-6 col-lg-4",
+					"title": "The New AR Rifle 245 will be awarded as a prize",
+					"imgs": {
+						"full": "team-album10.jpg",
+						"thumb": "team-album10.jpg"
+					},
+					"info": "Patch 2.0",
+					"meta": {
+						"likes": "26"
+					}
+				},
+				{
+					"col": "col-4 col-sm-6 col-lg-4",
+					"title": "Sandbending ability and sandboats",
+					"imgs": {
+						"full": "team-album11.jpg",
+						"thumb": "team-album11.jpg"
+					},
+					"info": "Patch 2.0",
+					"meta": {
+						"likes": "26"
+					}
+				}
+			],
+			"videos": [
+				{
+					"title": "Destroy played the first mission of the Mercenaries update with Kelly and Saki",
+					"thumb": "team-video1.jpg",
+					"video": "https://www.youtube.com/watch?v=XE0fU9PCrWE",
+					"category": [
+						{
+							"class": "category-1",
+							"name": "The Team"
+						},
+						{
+							"class": "category-4",
+							"name": "Xenowatch"
+						}
+					],
+					"tag": [
+						{
+							"class": "tag-1",
+							"name": "Streams"
+						},
+						{
+							"class": "tag-4",
+							"name": "Competitions"
+						}
+					],
+					"date": "August 27th, 2018",
+					"meta": {
+						"views": 2369,
+						"likes": 530,
+						"comments": 18
+					}
+				},
+				{
+					"title": "Tech pirates are having a huge arsenal upgrade this October",
+					"thumb": "team-video2.jpg",
+					"video": "https://www.youtube.com/watch?v=XE0fU9PCrWE",
+					"category": [
+						{
+							"class": "category-3",
+							"name": "Striker GO"
+						}
+					],
+					"tag": [
+						{
+							"class": "tag-3",
+							"name": "Gameplays"
+						}
+					],
+					"date": "August 27th, 2018",
+					"meta": {
+						"views": 2369,
+						"likes": 530,
+						"comments": 18
+					}
+				},
+				{
+					"title": "Watch The Alchemists vs The Sharks in the Heroes Razz Tournament",
+					"thumb": "team-video3.jpg",
+					"video": "https://www.youtube.com/watch?v=XE0fU9PCrWE",
+					"category": [
+						{
+							"class": "category-1",
+							"name": "The Team"
+						},
+						{
+							"class": "category-2",
+							"name": "L.O. Heroes"
+						}
+					],
+					"tag": [
+						{
+							"class": "tag-1",
+							"name": "Streams"
+						},
+						{
+							"class": "tag-2",
+							"name": "Unboxing"
+						}
+					],
+					"date": "August 27th, 2018",
+					"meta": {
+						"views": 2369,
+						"likes": 530,
+						"comments": 18
+					}
+				},
+				{
+					"title": "The Game Huntress plays with Jaxxy The New Dungeon and Region",
+					"thumb": "team-video4.jpg",
+					"video": "https://www.youtube.com/watch?v=XE0fU9PCrWE",
+					"category": [
+						{
+							"class": "category-1",
+							"name": "The Team"
+						},
+						{
+							"class": "category-2",
+							"name": "L.O. Heroes"
+						}
+					],
+					"tag": [
+						{
+							"class": "tag-1",
+							"name": "Streams"
+						},
+						{
+							"class": "tag-2",
+							"name": "Unboxing"
+						}
+					],
+					"date": "August 27th, 2018",
+					"meta": {
+						"views": 2369,
+						"likes": 530,
+						"comments": 18
+					}
+				},
+				{
+					"title": "Team vacation in Manhattan. We explored all the city together!",
+					"thumb": "team-video5.jpg",
+					"video": "https://www.youtube.com/watch?v=XE0fU9PCrWE",
+					"category": [
+						{
+							"class": "category-1",
+							"name": "The Team"
+						}
+					],
+					"tag": [
+						{
+							"class": "tag-1",
+							"name": "Streams"
+						}
+					],
+					"date": "August 27th, 2018",
+					"meta": {
+						"views": 2369,
+						"likes": 530,
+						"comments": 18
+					}
+				},
+				{
+					"title": "Xenowatch futuristic pirates 2.0. patch U.S. announcement trailer",
+					"thumb": "team-video6.jpg",
+					"video": "https://www.youtube.com/watch?v=XE0fU9PCrWE",
+					"category": [
+						{
+							"class": "category-4",
+							"name": "Xenowatch"
+						}
+					],
+					"tag": [
+						{
+							"class": "tag-4",
+							"name": "Competitions"
+						}
+					],
+					"date": "August 27th, 2018",
+					"meta": {
+						"views": 2369,
+						"likes": 530,
+						"comments": 18
+					}
+				}
+			],
+			"video-playlist": [
+				{
+					"title": "Destroy played the first mission of the Mercenaries",
+					"thumb": "team-video1-sm.jpg",
+					"cover": "team-video1-lg.jpg",
+					"video": "https://www.youtube.com/watch?v=XE0fU9PCrWE",
+					"category": [
+						{
+							"class": "category-1",
+							"name": "The Team"
+						},
+						{
+							"class": "category-4",
+							"name": "Xenowatch"
+						}
+					],
+					"date": "September 27th, 2018"
+				},
+				{
+					"title": "Xenowatch futuristic pirates 2.0. patch U.S. announcement trailer",
+					"thumb": "team-video6-sm.jpg",
+					"cover": "team-video6-lg.jpg",
+					"video": "https://player.twitch.tv/?autoplay=true&video=v295680508",
+					"category": [
+						{
+							"class": "category-4",
+							"name": "Xenowatch"
+						}
+					],
+					"date": "September 27th, 2018"
+				},
+				{
+					"title": "Brd_Wonder tries out the next magic character and her skills!",
+					"thumb": "team-video3-sm.jpg",
+					"cover": "team-video3-lg.jpg",
+					"video": "https://vimeo.com/111903847",
+					"category": [
+						{
+							"class": "category-1",
+							"name": "The Team"
+						},
+						{
+							"class": "category-2",
+							"name": "L.O. Heroes"
+						}
+					],
+					"date": "August 5th, 2018"
+				},
+				{
+					"title": "Tech pirates are having a huge arsenal upgrade this October",
+					"thumb": "team-video2-sm.jpg",
+					"cover": "team-video2-lg.jpg",
+					"video": "https://www.youtube.com/watch?v=XE0fU9PCrWE",
+					"category": [
+						{
+							"class": "category-3",
+							"name": "Striker GO"
+						}
+					],
+					"date": "September 5th, 2018"
+				}
+			],
+			"roster": [
+				{
+					"firstname": "Sarah",
+					"lastname": "Valentine",
+					"nickname": "Fayed<span class=\"highlight\">Bebop</span>",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quise nostrud exercitation ullamco laboris nisi ut aliquip ex ea consequat.",
+					"role": {
+						"type": "Offensive",
+						"icon": "fire"
+					},
+					"img": {
+						"sm": "team-player1.png",
+						"lg": "team-player1-lg.png"
+					},
+					"bg": {
+						"filter": "primary",
+						"img": "bg1"
+					},
+					"stats": {
+						"circular-bars": [
+							{
+								"label": "Played",
+								"value": 19,
+								"pct": 68
+							},
+							{
+								"label": "Win Rate",
+								"value": 89.2,
+								"pct": 89.2,
+								"ispct": true
+							}
+						],
+						"progress-bars": [
+							{
+								"label": "Total Kills",
+								"value": 602,
+								"pct": 90
+							},
+							{
+								"label": "Total Deaths",
+								"value": 349,
+								"pct": 40
+							}
+						]
+					},
+					"metrics": [
+						{
+							"label": "Born In",
+							"value": "Los Angeles, CA"
+						},
+						{
+							"label": "Age",
+							"value": "18 Years"
+						}
+					],
+					"social": [
+						{
+							"name": "facebook",
+							"icon": "fab fa-facebook",
+							"link": "#"
+						},
+						{
+							"name": "twitter",
+							"icon": "fab fa-twitter",
+							"link": "#"
+						},
+						{
+							"name": "twitch",
+							"icon": "fab fa-twitch",
+							"link": "#"
+						}
+					]
+				},
+				{
+					"firstname": "James",
+					"lastname": "Spiegel",
+					"nickname": "The <span class=\"highlight\">Destroy</span>",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quise nostrud exercitation ullamco laboris nisi ut aliquip ex ea consequat.",
+					"role": {
+						"type": "Offensive",
+						"icon": "fire"
+					},
+					"img": {
+						"sm": "team-player2.png",
+						"lg": "team-player2-lg.png"
+					},
+					"bg": {
+						"filter": "blue",
+						"img": "bg2"
+					},
+					"stats": {
+						"circular-bars": [
+							{
+								"label": "Played",
+								"value": 19,
+								"pct": 68
+							},
+							{
+								"label": "Win Rate",
+								"value": 89.2,
+								"pct": 89.2,
+								"ispct": true
+							}
+						],
+						"progress-bars": [
+							{
+								"label": "Total Kills",
+								"value": 602,
+								"pct": 90
+							},
+							{
+								"label": "Total Deaths",
+								"value": 349,
+								"pct": 40
+							}
+						]
+					},
+					"metrics": [
+						{
+							"label": "Born In",
+							"value": "Los Angeles, CA"
+						},
+						{
+							"label": "Age",
+							"value": "18 Years"
+						}
+					],
+					"social": [
+						{
+							"name": "facebook",
+							"icon": "fab fa-facebook",
+							"link": "#"
+						},
+						{
+							"name": "twitter",
+							"icon": "fab fa-twitter",
+							"link": "#"
+						},
+						{
+							"name": "twitch",
+							"icon": "fab fa-twitch",
+							"link": "#"
+						}
+					]
+				},
+				{
+					"firstname": "April",
+					"lastname": "Summers",
+					"nickname": "G-<span class=\"highlight\">Huntress</span>",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quise nostrud exercitation ullamco laboris nisi ut aliquip ex ea consequat.",
+					"role": {
+						"type": "Medic",
+						"icon": "medic"
+					},
+					"img": {
+						"sm": "team-player3.png",
+						"lg": "team-player3-lg.png"
+					},
+					"bg": {
+						"filter": "red",
+						"img": "bg3"
+					},
+					"stats": {
+						"circular-bars": [
+							{
+								"label": "Played",
+								"value": 19,
+								"pct": 68
+							},
+							{
+								"label": "Win Rate",
+								"value": 89.2,
+								"pct": 89.2,
+								"ispct": true
+							}
+						],
+						"progress-bars": [
+							{
+								"label": "Total Kills",
+								"value": 602,
+								"pct": 90
+							},
+							{
+								"label": "Total Deaths",
+								"value": 349,
+								"pct": 40
+							}
+						]
+					},
+					"metrics": [
+						{
+							"label": "Born In",
+							"value": "Los Angeles, CA"
+						},
+						{
+							"label": "Age",
+							"value": "18 Years"
+						}
+					],
+					"social": [
+						{
+							"name": "facebook",
+							"icon": "fab fa-facebook",
+							"link": "#"
+						},
+						{
+							"name": "twitter",
+							"icon": "fab fa-twitter",
+							"link": "#"
+						},
+						{
+							"name": "twitch",
+							"icon": "fab fa-twitch",
+							"link": "#"
+						}
+					]
+				},
+				{
+					"firstname": "Eric",
+					"lastname": "Stoneson",
+					"nickname": "BRD<span class=\"highlight\">Wonder</span>",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quise nostrud exercitation ullamco laboris nisi ut aliquip ex ea consequat.",
+					"role": {
+						"type": "Defensive",
+						"icon": "shield"
+					},
+					"img": {
+						"sm": "team-player4.png",
+						"lg": "team-player4-lg.png"
+					},
+					"bg": {
+						"filter": "grey",
+						"img": "bg4"
+					},
+					"stats": {
+						"circular-bars": [
+							{
+								"label": "Played",
+								"value": 19,
+								"pct": 68
+							},
+							{
+								"label": "Win Rate",
+								"value": 89.2,
+								"pct": 89.2,
+								"ispct": true
+							}
+						],
+						"progress-bars": [
+							{
+								"label": "Total Kills",
+								"value": 602,
+								"pct": 90
+							},
+							{
+								"label": "Total Deaths",
+								"value": 349,
+								"pct": 40
+							}
+						]
+					},
+					"metrics": [
+						{
+							"label": "Born In",
+							"value": "Los Angeles, CA"
+						},
+						{
+							"label": "Age",
+							"value": "18 Years"
+						}
+					],
+					"social": [
+						{
+							"name": "facebook",
+							"icon": "fab fa-facebook",
+							"link": "#"
+						},
+						{
+							"name": "twitter",
+							"icon": "fab fa-twitter",
+							"link": "#"
+						},
+						{
+							"name": "twitch",
+							"icon": "fab fa-twitch",
+							"link": "#"
+						}
+					]
+				},
+				{
+					"firstname": "Marc",
+					"lastname": "Johnson",
+					"nickname": "Crazzzy<span class=\"highlight\">_80</span>",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quise nostrud exercitation ullamco laboris nisi ut aliquip ex ea consequat.",
+					"role": {
+						"type": "Defensive",
+						"icon": "shield"
+					},
+					"img": {
+						"sm": "team-player5.png",
+						"lg": "team-player5-lg.png"
+					},
+					"bg": {
+						"filter": "info",
+						"img": "bg5"
+					},
+					"stats": {
+						"circular-bars": [
+							{
+								"label": "Played",
+								"value": 19,
+								"pct": 68
+							},
+							{
+								"label": "Win Rate",
+								"value": 89.2,
+								"pct": 89.2,
+								"ispct": true
+							}
+						],
+						"progress-bars": [
+							{
+								"label": "Total Kills",
+								"value": 602,
+								"pct": 90
+							},
+							{
+								"label": "Total Deaths",
+								"value": 349,
+								"pct": 40
+							}
+						]
+					},
+					"metrics": [
+						{
+							"label": "Born In",
+							"value": "Los Angeles, CA"
+						},
+						{
+							"label": "Age",
+							"value": "18 Years"
+						}
+					],
+					"social": [
+						{
+							"name": "facebook",
+							"icon": "fab fa-facebook",
+							"link": "#"
+						},
+						{
+							"name": "twitter",
+							"icon": "fab fa-twitter",
+							"link": "#"
+						},
+						{
+							"name": "twitch",
+							"icon": "fab fa-twitch",
+							"link": "#"
+						}
+					]
+				},
+				{
+					"firstname": "John",
+					"lastname": "Doe",
+					"nickname": "No<span class=\"highlight\">Photo</span>Av",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quise nostrud exercitation ullamco laboris nisi ut aliquip ex ea consequat.",
+					"role": {
+						"type": "Defensive",
+						"icon": "shield"
+					},
+					"img": {
+						"sm": "team-player-placeholder.png",
+						"lg": "team-player-lg-placeholder.png"
+					},
+					"bg": {
+						"filter": "yellow",
+						"img": "bg6"
+					},
+					"stats": {
+						"circular-bars": [
+							{
+								"label": "Played",
+								"value": 19,
+								"pct": 68
+							},
+							{
+								"label": "Win Rate",
+								"value": 89.2,
+								"pct": 89.2,
+								"ispct": true
+							}
+						],
+						"progress-bars": [
+							{
+								"label": "Total Kills",
+								"value": 602,
+								"pct": 90
+							},
+							{
+								"label": "Total Deaths",
+								"value": 349,
+								"pct": 40
+							}
+						]
+					},
+					"metrics": [
+						{
+							"label": "Born In",
+							"value": "Los Angeles, CA"
+						},
+						{
+							"label": "Age",
+							"value": "18 Years"
+						}
+					],
+					"social": [
+						{
+							"name": "facebook",
+							"icon": "fab fa-facebook",
+							"link": "#"
+						},
+						{
+							"name": "twitter",
+							"icon": "fab fa-twitter",
+							"link": "#"
+						},
+						{
+							"name": "twitch",
+							"icon": "fab fa-twitch",
+							"link": "#"
+						}
+					]
+				}
+			],
+			"widget-videos": [
+				{
+					"title": "The Game Huntress plays with Jaxxy The New Dungeon and Region",
+					"thumb": "team-video4.jpg",
+					"video": "https://www.youtube.com/watch?v=XE0fU9PCrWE",
+					"category": [
+						{
+							"class": "category-1",
+							"name": "The Team"
+						},
+						{
+							"class": "category-2",
+							"name": "L.O. Heroes"
+						}
+					],
+					"tag": [
+						{
+							"class": "tag-1",
+							"name": "Streams"
+						},
+						{
+							"class": "tag-2",
+							"name": "Unboxing"
+						}
+					],
+					"date": "August 27th, 2018",
+					"meta": {
+						"views": 2369,
+						"likes": 530,
+						"comments": 18
+					}
+				},
+				{
+					"title": "Team vacation in Manhattan. We explored all the city together!",
+					"thumb": "team-video5.jpg",
+					"video": "https://www.youtube.com/watch?v=XE0fU9PCrWE",
+					"category": [
+						{
+							"class": "category-1",
+							"name": "The Team"
+						}
+					],
+					"tag": [
+						{
+							"class": "tag-1",
+							"name": "Streams"
+						}
+					],
+					"date": "August 27th, 2018",
+					"meta": {
+						"views": 2369,
+						"likes": 530,
+						"comments": 18
+					}
+				},
+				{
+					"title": "Tech pirates are having a huge arsenal upgrade this October",
+					"thumb": "team-video2.jpg",
+					"video": "https://www.youtube.com/watch?v=XE0fU9PCrWE",
+					"category": [
+						{
+							"class": "category-3",
+							"name": "Striker GO"
+						}
+					],
+					"tag": [
+						{
+							"class": "tag-3",
+							"name": "Gameplays"
+						}
+					],
+					"date": "August 27th, 2018",
+					"meta": {
+						"views": 2369,
+						"likes": 530,
+						"comments": 18
+					}
+				},
+				{
+					"title": "Watch Alchemists vs Clovers in L.O. Heroes Pro League",
+					"thumb": "team-video7.jpg",
+					"video": "https://www.youtube.com/watch?v=XE0fU9PCrWE",
+					"category": [
+						{
+							"class": "category-1",
+							"name": "The Team"
+						},
+						{
+							"class": "category-2",
+							"name": "L.O. Heroes"
+						}
+					],
+					"tag": [
+						{
+							"class": "tag-4",
+							"name": "Competitions"
+						}
+					],
+					"date": "August 27th, 2018",
+					"meta": {
+						"views": 2369,
+						"likes": 530,
+						"comments": 18
+					}
+				}
+			],
+			"widget-tournaments": [
+				{
+					"title": "Heroes Razz Tournament",
+					"date": "November - December 2018",
+					"rank": "-",
+					"results": {
+						"label": "Quarter-Finals",
+						"value": 57.5
+					},
+					"thumb": "widget-tournament-1.jpg",
+					"category": [
+						{
+							"class": "category-5",
+							"name": "Ongoing..."
+						}
+					],
+					"meta": {
+						"win": {
+							"value": 7,
+							"label": "Wins"
+						},
+						"loss": {
+							"value": 2,
+							"label": "Losses"
+						},
+						"prize": {
+							"value": "$560.000",
+							"label": "First Place Prize"
+						},
+						"result": {
+							"value": "-",
+							"label": "Money Won",
+							"highlight": true
+						}
+					}
+				},
+				{
+					"title": "L.O. Heroes Pro League",
+					"date": "August - September 2018",
+					"rank": "1",
+					"results": {
+						"label": "Finals",
+						"value": 100
+					},
+					"thumb": "widget-tournament-2.jpg",
+					"category": [
+						{
+							"class": "category-6",
+							"name": "Finished"
+						}
+					],
+					"meta": {
+						"win": {
+							"value": 9,
+							"label": "Wins"
+						},
+						"loss": {
+							"value": 0,
+							"label": "Losses"
+						},
+						"prize": {
+							"value": "$980.000",
+							"label": "First Place Prize"
+						},
+						"result": {
+							"value": "$980.000",
+							"label": "Money Won",
+							"highlight": true
+						}
+					}
+				},
+				{
+					"title": "Heroes Razz Tournament",
+					"date": "November - December 2018",
+					"rank": "-",
+					"results": {
+						"label": "Quarter-Finals",
+						"value": 57.5
+					},
+					"thumb": "widget-tournament-1.jpg",
+					"category": [
+						{
+							"class": "category-6",
+							"name": "Finished"
+						}
+					],
+					"meta": {
+						"win": {
+							"value": 7,
+							"label": "Wins"
+						},
+						"loss": {
+							"value": 2,
+							"label": "Losses"
+						},
+						"prize": {
+							"value": "$560.000",
+							"label": "First Place Prize"
+						},
+						"result": {
+							"value": "-",
+							"label": "Money Won",
+							"highlight": true
+						}
+					}
+				},
+				{
+					"title": "L.O. Heroes Pro League",
+					"date": "August - September 2018",
+					"rank": "1",
+					"results": {
+						"label": "Finals",
+						"value": 100
+					},
+					"thumb": "widget-tournament-2.jpg",
+					"category": [
+						{
+							"class": "category-6",
+							"name": "Finished"
+						}
+					],
+					"meta": {
+						"win": {
+							"value": 9,
+							"label": "Wins"
+						},
+						"loss": {
+							"value": 0,
+							"label": "Losses"
+						},
+						"prize": {
+							"value": "$980.000",
+							"label": "First Place Prize"
+						},
+						"result": {
+							"value": "$980.000",
+							"label": "Money Won",
+							"highlight": true
+						}
+					}
+				}
+			],
+			"widget-results": [
+				{
+					"date": "Saturday, March 6th",
+					"team1": {
+						"name": "Alchemists",
+						"logo": "esports/logos/alchemists-22x25.png",
+						"place": "United States",
+						"result": {
+							"outcome": {
+								"win": true
+							},
+							"score": "8"
+						}
+					},
+					"team2": {
+						"name": "Sharks",
+						"logo": "samples/logos/sharks_shield.png",
+						"place": "South Korea",
+						"result": {
+							"outcome": {
+								"win": false
+							},
+							"score": "5"
+						}
+					},
+					"league": "Heroes Spring Spit Semi-Finals"
+				},
+				{
+					"date": "Tuesday, March 18th",
+					"team1": {
+						"name": "Alchemists",
+						"logo": "esports/logos/alchemists-22x25.png",
+						"place": "United States",
+						"result": {
+							"outcome": {
+								"win": true
+							},
+							"score": "9"
+						}
+					},
+					"team2": {
+						"name": "Icarus Wings",
+						"logo": "samples/logos/icarus_wings_shield.png",
+						"place": "Portugal",
+						"result": {
+							"outcome": {
+								"win": false
+							},
+							"score": "4"
+						}
+					},
+					"league": "L.O. Heroes Cup Qualifiers"
+				},
+				{
+					"date": "Saturday, March 6th",
+					"team1": {
+						"name": "Alchemists",
+						"logo": "esports/logos/alchemists-22x25.png",
+						"place": "United States",
+						"result": {
+							"outcome": {
+								"win": false
+							},
+							"score": "15"
+						}
+					},
+					"team2": {
+						"name": "Sharks",
+						"logo": "samples/logos/sharks_shield.png",
+						"place": "South Korea",
+						"result": {
+							"outcome": {
+								"win": true
+							},
+							"score": "21"
+						}
+					},
+					"league": "Heroes Razz Tournament"
+				},
+				{
+					"date": "Friday, April 26th",
+					"team1": {
+						"name": "Alchemists",
+						"logo": "esports/logos/alchemists-22x25.png",
+						"place": "United States",
+						"result": {
+							"outcome": {
+								"win": true
+							},
+							"score": "3"
+						}
+					},
+					"team2": {
+						"name": "L.A. Pirates",
+						"logo": "samples/logos/pirates_shield.png",
+						"place": "United States",
+						"result": {
+							"outcome": {
+								"win": false
+							},
+							"score": "2"
+						}
+					},
+					"league": "Pro League Quarter-Finals"
+				}
+			],
+			"widget-results-2": [
+				{
+					"label": "Xenowatch",
+					"cat": "category-4",
+					"events": [
+						{
+							"date": "Saturday, March 6th",
+							"team1": {
+								"name": "Alchemists",
+								"logo": "esports/logos/alchemists-22x25.png",
+								"place": "United States",
+								"result": {
+									"outcome": {
+										"win": true
+									},
+									"score": "8"
+								}
+							},
+							"team2": {
+								"name": "Sharks",
+								"logo": "samples/logos/sharks_shield.png",
+								"place": "South Korea",
+								"result": {
+									"outcome": {
+										"win": false
+									},
+									"score": "5"
+								}
+							},
+							"league": "Heroes Spring Spit Semi-Finals"
+						},
+						{
+							"date": "Tuesday, March 18th",
+							"team1": {
+								"name": "Alchemists",
+								"logo": "esports/logos/alchemists-22x25.png",
+								"place": "United States",
+								"result": {
+									"outcome": {
+										"win": true
+									},
+									"score": "9"
+								}
+							},
+							"team2": {
+								"name": "Icarus Wings",
+								"logo": "samples/logos/icarus_wings_shield.png",
+								"place": "Portugal",
+								"result": {
+									"outcome": {
+										"win": false
+									},
+									"score": "4"
+								}
+							},
+							"league": "L.O. Heroes Cup Qualifiers"
+						}
+					]
+				},
+				{
+					"label": "League of Heroes",
+					"cat": "category-2",
+					"events": [
+						{
+							"date": "Saturday, March 6th",
+							"team1": {
+								"name": "Alchemists",
+								"logo": "esports/logos/alchemists-22x25.png",
+								"place": "United States",
+								"result": {
+									"outcome": {
+										"win": false
+									},
+									"score": "15"
+								}
+							},
+							"team2": {
+								"name": "Sharks",
+								"logo": "samples/logos/sharks_shield.png",
+								"place": "South Korea",
+								"result": {
+									"outcome": {
+										"win": true
+									},
+									"score": "21"
+								}
+							},
+							"league": "Heroes Razz Tournament"
+						}
+					]
+				},
+				{
+					"label": "Striker GO",
+					"cat": "category-3",
+					"events": [
+						{
+							"date": "Friday, April 26th",
+							"team1": {
+								"name": "Alchemists",
+								"logo": "esports/logos/alchemists-22x25.png",
+								"place": "United States",
+								"result": {
+									"outcome": {
+										"win": true
+									},
+									"score": "3"
+								}
+							},
+							"team2": {
+								"name": "L.A. Pirates",
+								"logo": "samples/logos/pirates_shield.png",
+								"place": "United States",
+								"result": {
+									"outcome": {
+										"win": false
+									},
+									"score": "2"
+								}
+							},
+							"league": "Pro League Quarter-Finals"
+						}
+					]
+				}
+			],
+			"widget-team-info": {
+				"list": [
+					{
+						"label": "Team Name:",
+						"value": "Alchemists L.O. Heroes"
+					},
+					{
+						"label": "Country of Origin:",
+						"value": "United States"
+					},
+					{
+						"label": "Founded in:",
+						"value": "December 2014"
+					},
+					{
+						"label": "Prize Money Won in 2017:",
+						"value": "USD 94.000",
+						"highlight": true
+					},
+					{
+						"label": "Total Prize Money Won:",
+						"value": "USD 2.843.050"
+					}
+				],
+				"desc": [
+					{
+						"label": "Team Bio:",
+						"value": "Based in California, and founded by Faye Spiegel “The Game Huntress”,  The Alchemists L.O. Heroes ended up being one of the strongests teams in the world."
+					}
+				]
+			}
+		},
+		"single-player": {
+			"player": [
+				{
+					"firstname": "James",
+					"lastname": "Spiegel",
+					"nickname": "The <span class=\"highlight\">Destroy</span>",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quise nostrud exercitation ullamco laboris nisi ut aliquip ex ea consequat.",
+					"role": {
+						"type": "Offensive",
+						"icon": "fire"
+					},
+					"img": {
+						"sm": "team-player2.png",
+						"lg": "team-player2-lg.png"
+					},
+					"bg": {
+						"filter": "blue",
+						"img": "bg2"
+					},
+					"stats": {
+						"avg": [
+							{
+								"label": "Average Kills",
+								"sublabel": "in all time",
+								"value": 12.7,
+								"icon": "crosshair"
+							},
+							{
+								"label": "Average Deaths",
+								"sublabel": "in all time",
+								"value": 9.8,
+								"icon": "dead-face"
+							},
+							{
+								"label": "Average Assists",
+								"sublabel": "in all time",
+								"value": 63.1,
+								"icon": "thumbs-up"
+							},
+							{
+								"label": "Average Pentakills",
+								"sublabel": "in all time",
+								"value": 2.7,
+								"icon": "gamepad"
+							}
+						],
+						"circular-bars": [
+							{
+								"label": "Played",
+								"value": 19,
+								"pct": 68
+							},
+							{
+								"label": "Win Rate",
+								"value": 89.2,
+								"pct": 89.2,
+								"ispct": true
+							}
+						],
+						"progress-bars": [
+							{
+								"label": "Total Kills",
+								"value": 602,
+								"pct": 90
+							},
+							{
+								"label": "Total Deaths",
+								"value": 349,
+								"pct": 40
+							}
+						]
+					},
+					"metrics": [
+						{
+							"label": "Born In",
+							"value": "Los Angeles, CA"
+						},
+						{
+							"label": "Age",
+							"value": "18 Years"
+						}
+					],
+					"social": [
+						{
+							"name": "facebook",
+							"icon": "fab fa-facebook",
+							"link": "#"
+						},
+						{
+							"name": "twitter",
+							"icon": "fab fa-twitter",
+							"link": "#"
+						},
+						{
+							"name": "twitch",
+							"icon": "fab fa-twitch",
+							"link": "#"
+						}
+					]
+				}
+			],
+			"widget-player-stats": [
+				{
+					"value": 355,
+					"label": "MVPs Awarded",
+					"sublabel": "in all time",
+					"icon": {
+						"type": "fa",
+						"class": "fa fa-star-o"
+					}
+				},
+				{
+					"value": 543.7,
+					"label": "Average Gold",
+					"sublabel": "in all time",
+					"icon": {
+						"type": "svg",
+						"class": "coin"
+					}
+				},
+				{
+					"value": "84.2%",
+					"label": "First Blood",
+					"sublabel": "in all time",
+					"icon": {
+						"type": "svg",
+						"class": "drop"
+					}
+				},
+				{
+					"value": "8:58",
+					"label": "Time Between Kills",
+					"sublabel": "average / in all time",
+					"icon": {
+						"type": "svg",
+						"class": "stopwatch"
+					}
+				}
+			],
+			"widget-character-stats": [
+				{
+					"character": {
+						"img": "character-1-xs.jpg",
+						"name": "Valholl",
+						"type": "Offensive"
+					},
+					"stats": {
+						"games": 12,
+						"win-pct": 71.4,
+						"kills": 3.7,
+						"deaths": 1.6,
+						"assists": 4.7
+					}
+				},
+				{
+					"character": {
+						"img": "character-2-xs.jpg",
+						"name": "Ragnark",
+						"type": "Offensive"
+					},
+					"stats": {
+						"games": 7,
+						"win-pct": 86.2,
+						"kills": 2.8,
+						"deaths": 1.5,
+						"assists": 7.5
+					}
+				},
+				{
+					"character": {
+						"img": "character-3-xs.jpg",
+						"name": "Jaxxy Reev",
+						"type": "Offensive"
+					},
+					"stats": {
+						"games": 4,
+						"win-pct": 100,
+						"kills": 3.0,
+						"deaths": 2.0,
+						"assists": 8.3
+					}
+				},
+				{
+					"character": {
+						"img": "character-4-xs.jpg",
+						"name": "Bloodshid",
+						"type": "Defensive"
+					},
+					"stats": {
+						"games": 3,
+						"win-pct": 26.3,
+						"kills": 4.3,
+						"deaths": 1.7,
+						"assists": 5.0
+					}
+				},
+				{
+					"character": {
+						"img": "character-5-xs.jpg",
+						"name": "Valkyrine",
+						"type": "Medic"
+					},
+					"stats": {
+						"games": 1,
+						"win-pct": 57.9,
+						"kills": 2.0,
+						"deaths": 1.5,
+						"assists": 5.5
+					}
+				}
+			],
+			"widget-achievements": [
+				{
+					"event": {
+						"icon": "trophy",
+						"title": "Heroes Razz Tournament",
+						"date": "August 2016"
+					},
+					"meta": [
+						{
+							"name": "Position",
+							"value": "1st Rank"
+						},
+						{
+							"name": "Team Kills",
+							"value": 637
+						},
+						{
+							"name": "Money Won",
+							"value": "$80.000"
+						}
+					]
+				},
+				{
+					"event": {
+						"icon": "trophy",
+						"title": "L.O. Heroes Pro League",
+						"date": "September 2017"
+					},
+					"meta": [
+						{
+							"name": "Position",
+							"value": "1st Rank"
+						},
+						{
+							"name": "Team Kills",
+							"value": 825
+						},
+						{
+							"name": "Money Won",
+							"value": "$90.000"
+						}
+					]
+				},
+				{
+					"event": {
+						"icon": "trophy",
+						"title": "Xenowatch Con 2018",
+						"date": "February 2018"
+					},
+					"meta": [
+						{
+							"name": "Position",
+							"value": "7th Rank"
+						},
+						{
+							"name": "Team Kills",
+							"value": 521
+						},
+						{
+							"name": "Money Won",
+							"value": "-"
+						}
+					]
+				}
+			],
+			"related-posts": [
+				{
+					"title": "A new mage character is coming to the league",
+					"thumb": "post-img2-card.jpg",
+					"category": [
+						{
+							"class": "category-2",
+							"name": "L.O. Heroes"
+						}
+					],
+					"author": {
+						"name": "Lagertha Dax",
+						"avatar": "avatar-6-xs.jpg"
+					},
+					"date": "August 23rd, 2018",
+					"meta": {
+						"views": 2369,
+						"likes": 530,
+						"comments": 18
+					}
+				},
+				{
+					"title": "New Tech vehicles will be added in July's patch",
+					"thumb": "post-img8-card.jpg",
+					"category": [
+						{
+							"class": "category-3",
+							"name": "Striker GO"
+						}
+					],
+					"author": {
+						"name": "Lagertha Dax",
+						"avatar": "avatar-6-xs.jpg"
+					},
+					"date": "May 14th, 2018",
+					"meta": {
+						"views": 2369,
+						"likes": 530,
+						"comments": 18
+					}
+				},
+				{
+					"title": "The Team defeated the L.A. Pirates 2-1 in the Pro League Quarterfinals",
+					"thumb": "post-img3-card.jpg",
+					"category": [
+						{
+							"class": "category-1",
+							"name": "The Team"
+						},
+						{
+							"class": "category-3",
+							"name": "Striker GO"
+						}
+					],
+					"author": {
+						"name": "Lagertha Dax",
+						"avatar": "avatar-6-xs.jpg"
+					},
+					"date": "July 28th, 2018",
+					"meta": {
+						"views": 2369,
+						"likes": 530,
+						"comments": 18
+					}
+				},
+				{
+					"title": "Xenowatch's new patch will fix the faces bugs",
+					"thumb": "post-img4-card.jpg",
+					"category": [
+						{
+							"class": "category-4",
+							"name": "Xenowatch"
+						}
+					],
+					"author": {
+						"name": "Lagertha Dax",
+						"avatar": "avatar-6-xs.jpg"
+					},
+					"date": "July 24th, 2018",
+					"meta": {
+						"views": 2369,
+						"likes": 530,
+						"comments": 18
+					}
+				},
+				{
+					"title": "A new class is added to the human's race",
+					"thumb": "post-img5-card.jpg",
+					"category": [
+						{
+							"class": "category-2",
+							"name": "L.O. Heroes"
+						}
+					],
+					"author": {
+						"name": "Lagertha Dax",
+						"avatar": "avatar-6-xs.jpg"
+					},
+					"date": "July 16th, 2018",
+					"meta": {
+						"views": 2369,
+						"likes": 530,
+						"comments": 18
+					}
+				}
+			],
+			"log": [
+				{
+					"date": "06 - 12 - 2018",
+					"team": {
+						"logo": "lucky_clovers_shield.png",
+						"name": "Lucky Clovers",
+						"place": "Ireland"
+					},
+					"character": "Valholl (Offensive)",
+					"stats": {
+						"kills": 7,
+						"deaths": 5,
+						"ast": 12,
+						"pkills": 0
+					}
+				},
+				{
+					"date": "06 - 19 - 2018",
+					"team": {
+						"logo": "red_wings_shield.png",
+						"name": "Red Wings",
+						"place": "Spain"
+					},
+					"character": "Ragnark (Offensive)",
+					"stats": {
+						"kills": 5,
+						"deaths": 2,
+						"ast": 8,
+						"pkills": 2
+					},
+					"featured": true
+				},
+				{
+					"date": "06 - 26 - 2018",
+					"team": {
+						"logo": "draconians_shield.png",
+						"name": "Draconians",
+						"place": "Russia"
+					},
+					"character": "Valholl (Offensive)",
+					"stats": {
+						"kills": 8,
+						"deaths": 7,
+						"ast": 16,
+						"pkills": 0
+					}
+				},
+				{
+					"date": "07 - 04 - 2018",
+					"team": {
+						"logo": "aqua_keyes_shield.png",
+						"name": "Aqua Keyes",
+						"place": "Italy"
+					},
+					"character": "Valholl (Offensive)",
+					"stats": {
+						"kills": 9,
+						"deaths": 6,
+						"ast": 13,
+						"pkills": 1
+					}
+				},
+				{
+					"date": "07 - 09 - 2018",
+					"team": {
+						"logo": "icarus_wings_shield.png",
+						"name": "Icarus Wings",
+						"place": "Portugal"
+					},
+					"character": "Ragnark (Offensive)",
+					"stats": {
+						"kills": 6,
+						"deaths": 8,
+						"ast": 19,
+						"pkills": 0
+					}
+				},
+				{
+					"date": "07 - 22 - 2018",
+					"team": {
+						"logo": "bloody_wave_shield.png",
+						"name": "Bloody Wave",
+						"place": "Germany"
+					},
+					"character": "Ragnark (Offensive)",
+					"stats": {
+						"kills": 4,
+						"deaths": 1,
+						"ast": 15,
+						"pkills": 0
+					}
+				}
+			],
+			"widget-total-stats": [
+				{
+					"value": 19,
+					"label": "Matches Played",
+					"sublabel": "in his career"
+				},
+				{
+					"value": 2,
+					"label": "Tournaments Played",
+					"sublabel": "in his career"
+				},
+				{
+					"value": 3640,
+					"label": "Total Kills",
+					"sublabel": "in his career"
+				},
+				{
+					"value": 908,
+					"label": "Total Deaths",
+					"sublabel": "in his career"
+				},
+				{
+					"value": 1953,
+					"label": "Total Assists",
+					"sublabel": "in his career"
+				},
+				{
+					"value": 307,
+					"label": "Total Pentakills",
+					"sublabel": "in his career"
+				},
+				{
+					"value": 28,
+					"label": "Total Gold",
+					"sublabel": "in his career"
+				},
+				{
+					"value": 19,
+					"label": "First Blood",
+					"sublabel": "in his career"
+				},
+				{
+					"value": "963K",
+					"label": "Damage Made",
+					"sublabel": "in his career"
+				},
+				{
+					"value": "637K",
+					"label": "Damage Received",
+					"sublabel": "in his career"
+				}
+			]
+		},
+		"event": {
+			"stats": {
+				"team1": {
+					"name": "The Alchemists",
+					"players": [
+						{
+							"player": {
+								"nickname": "FayeDBebop",
+								"name": "Sarah Valentine",
+								"avatar": "player-1-xs.jpg"
+							},
+							"character": {
+								"name": "Ragnark",
+								"type": "Offensive",
+								"avatar": "character-2-xs.jpg"
+							},
+							"performances": {
+								"kills": 18,
+								"deaths": 9,
+								"assists": 34,
+								"pkills": 2,
+								"kda-r": 7.8,
+								"dmg-pct": 56.1,
+								"dpm": 863,
+								"gold-pct": 32.7
+							}
+						},
+						{
+							"player": {
+								"nickname": "The Destroy",
+								"name": "James Spiegel",
+								"avatar": "player-2-xs.jpg"
+							},
+							"character": {
+								"name": "Valholl",
+								"type": "Offensive",
+								"avatar": "character-1-xs.jpg"
+							},
+							"performances": {
+								"kills": 25,
+								"deaths": 5,
+								"assists": 56,
+								"pkills": 5,
+								"kda-r": 12.4,
+								"dmg-pct": 78.9,
+								"dpm": 1235,
+								"gold-pct": 42.5
+							},
+							"featured": true
+						},
+						{
+							"player": {
+								"nickname": "G-Huntress",
+								"name": "April Summers",
+								"avatar": "player-3-xs.jpg"
+							},
+							"character": {
+								"name": "Valkyrine",
+								"type": "Medic",
+								"avatar": "character-5-xs.jpg"
+							},
+							"performances": {
+								"kills": 12,
+								"deaths": 8,
+								"assists": 22,
+								"pkills": 3,
+								"kda-r": 6.5,
+								"dmg-pct": 55.8,
+								"dpm": 953,
+								"gold-pct": 37.8
+							}
+						},
+						{
+							"player": {
+								"nickname": "BRDWonder",
+								"name": "Eric Thunderer",
+								"avatar": "player-4-xs.jpg"
+							},
+							"character": {
+								"name": "Jaxxy Reev",
+								"type": "Defensive",
+								"avatar": "character-3-xs.jpg"
+							},
+							"performances": {
+								"kills": 9,
+								"deaths": 6,
+								"assists": 19,
+								"pkills": 2,
+								"kda-r": 4.8,
+								"dmg-pct": 49.7,
+								"dpm": 457,
+								"gold-pct": 29.2
+							}
+						},
+						{
+							"player": {
+								"nickname": "Crazzzy_80",
+								"name": "Marc Johnson",
+								"avatar": "player-5-xs.jpg"
+							},
+							"character": {
+								"name": "Bloodshid",
+								"type": "Defensive",
+								"avatar": "character-4-xs.jpg"
+							},
+							"performances": {
+								"kills": 20,
+								"deaths": 12,
+								"assists": 24,
+								"pkills": 4,
+								"kda-r": 6.6,
+								"dmg-pct": 38.5,
+								"dpm": 788,
+								"gold-pct": 31.0
+							}
+						}
+					]
+				},
+				"team2": {
+					"name": "Sharks",
+					"players": [
+						{
+							"player": {
+								"nickname": "Lionel-Reese",
+								"name": "John Fusco",
+								"avatar": "player-placeholder-xs.jpg"
+							},
+							"character": {
+								"name": "Valholl",
+								"type": "Offensive",
+								"avatar": "character-1-xs.jpg"
+							},
+							"performances": {
+								"kills": 16,
+								"deaths": 12,
+								"assists": 42,
+								"pkills": 1,
+								"kda-r": 7.8,
+								"dmg-pct": 12.7,
+								"dpm": 536,
+								"gold-pct": 42.5
+							}
+						},
+						{
+							"player": {
+								"nickname": "NekoKrisser",
+								"name": "Mary Robinson",
+								"avatar": "player-placeholder-xs.jpg"
+							},
+							"character": {
+								"name": "Jaxxy Reev",
+								"type": "Defensive",
+								"avatar": "character-3-xs.jpg"
+							},
+							"performances": {
+								"kills": 7,
+								"deaths": 19,
+								"assists": 29,
+								"pkills": 4,
+								"kda-r": 5.1,
+								"dmg-pct": 24.5,
+								"dpm": 863,
+								"gold-pct": 32.4
+							}
+						},
+						{
+							"player": {
+								"nickname": "Sam-X-199",
+								"name": "Samantha Grey",
+								"avatar": "player-placeholder-xs.jpg"
+							},
+							"character": {
+								"name": "Ragnark",
+								"type": "Offensive",
+								"avatar": "character-2-xs.jpg"
+							},
+							"performances": {
+								"kills": 8,
+								"deaths": 11,
+								"assists": 34,
+								"pkills": 2,
+								"kda-r": 2.4,
+								"dmg-pct": 45.6,
+								"dpm": 437,
+								"gold-pct": 29.7
+							}
+						},
+						{
+							"player": {
+								"nickname": "Shark_Bullet",
+								"name": "Mark Roberts",
+								"avatar": "player-placeholder-xs.jpg"
+							},
+							"character": {
+								"name": "Bloodshid",
+								"type": "Defensive",
+								"avatar": "character-4-xs.jpg"
+							},
+							"performances": {
+								"kills": 12,
+								"deaths": 14,
+								"assists": 40,
+								"pkills": 0,
+								"kda-r": 3.9,
+								"dmg-pct": 33.8,
+								"dpm": 678,
+								"gold-pct": 38.4
+							}
+						},
+						{
+							"player": {
+								"nickname": "DaMachineR",
+								"name": "Rina Munroe",
+								"avatar": "player-placeholder-xs.jpg"
+							},
+							"character": {
+								"name": "Valkyrine",
+								"type": "Medic",
+								"avatar": "character-5-xs.jpg"
+							},
+							"performances": {
+								"kills": 9,
+								"deaths": 8,
+								"assists": 36,
+								"pkills": 2,
+								"kda-r": 4.1,
+								"dmg-pct": 19.4,
+								"dpm": 755,
+								"gold-pct": 19.9
+							}
+						}
+					]
+				}
+			},
+			"widget-event-overview": {
+				"stats": [
+					{
+						"label": "Total Kills",
+						"team1": {
+							"pct": 60,
+							"value": 56,
+							"highlight": true
+						},
+						"team2": {
+							"pct": 40,
+							"value": 40
+						}
+					},
+					{
+						"label": "Total Deaths",
+						"team1": {
+							"pct": 30,
+							"value": 23
+						},
+						"team2": {
+							"pct": 70,
+							"value": 38,
+							"highlight": true
+						}
+					},
+					{
+						"label": "Total Assists",
+						"team1": {
+							"pct": 70,
+							"value": 14,
+							"highlight": true
+						},
+						"team2": {
+							"pct": 30,
+							"value": 6
+						}
+					},
+					{
+						"label": "Pentakills",
+						"team1": {
+							"pct": 60,
+							"value": 19,
+							"highlight": true
+						},
+						"team2": {
+							"pct": 40,
+							"value": 12
+						}
+					}
+				],
+				"additional-stats": [
+					{
+						"label": "Gold",
+						"sublabel": "per minute",
+						"pct": 60,
+						"value": "10.2 - 6.3",
+						"icon": "coin"
+					},
+					{
+						"label": "Kills",
+						"sublabel": "per minute",
+						"pct": 28,
+						"value": "2.3 - 0.8",
+						"icon": "crosshair"
+					},
+					{
+						"label": "Deaths",
+						"sublabel": "per minute",
+						"pct": 20,
+						"value": "2.6 - 9.2",
+						"icon": "dead-face"
+					},
+					{
+						"label": "Assists",
+						"sublabel": "per minute",
+						"pct": 45,
+						"value": "2.2 - 8.8",
+						"icon": "thumbs-up"
+					}
+				]
+			},
+			"widget-event-overview-2": {
+				"stats": [
+					{
+						"label": "Total Kills",
+						"team1": {
+							"pct": 60,
+							"value": 56,
+							"highlight": true
+						},
+						"team2": {
+							"pct": 40,
+							"value": 40
+						}
+					},
+					{
+						"label": "Total Deaths",
+						"team1": {
+							"pct": 30,
+							"value": 23
+						},
+						"team2": {
+							"pct": 70,
+							"value": 38,
+							"highlight": true
+						}
+					},
+					{
+						"label": "Total Assists",
+						"team1": {
+							"pct": 70,
+							"value": 14,
+							"highlight": true
+						},
+						"team2": {
+							"pct": 30,
+							"value": 6
+						}
+					},
+					{
+						"label": "Pentakills",
+						"team1": {
+							"pct": 60,
+							"value": 19,
+							"highlight": true
+						},
+						"team2": {
+							"pct": 40,
+							"value": 12
+						}
+					}
+				],
+				"additional-stats": [
+					{
+						"label": "Gold",
+						"sublabel": "per minute",
+						"pct": 60,
+						"value": "10.2 - 6.3",
+						"icon": "coin"
+					},
+					{
+						"label": "Kills",
+						"sublabel": "per minute",
+						"pct": 28,
+						"value": "2.3 - 0.8",
+						"icon": "crosshair"
+					},
+					{
+						"label": "Deaths",
+						"sublabel": "per minute",
+						"pct": 20,
+						"value": "2.6 - 9.2",
+						"icon": "dead-face"
+					},
+					{
+						"label": "Assists",
+						"sublabel": "per minute",
+						"pct": 45,
+						"value": "2.2 - 8.8",
+						"icon": "thumbs-up"
+					}
+				]
+			}
+		},
+		"event1": {
+			"a": {
+				"lineup": {
+					"team1": {
+						"name": "The Alchemists",
+						"place": "United States",
+						"logo": "assets/images/esports/logos/alchemists-22x25.png",
+						"bans": [
+							{
+								"name": "TechOrb",
+								"img": "assets/images/esports/samples/event-1-banned-1.jpg"
+							},
+							{
+								"name": "Lucy",
+								"img": "assets/images/esports/samples/event-1-banned-2.jpg"
+							},
+							{
+								"name": "Jaxxy Reev",
+								"img": "assets/images/esports/samples/event-1-banned-3.jpg"
+							},
+							{
+								"name": "Valholl",
+								"img": "assets/images/esports/samples/event-1-banned-4.jpg"
+							},
+							{
+								"name": "Ragnark",
+								"img": "assets/images/esports/samples/event-1-banned-5.jpg"
+							}
+						]
+					},
+					"team2": {
+						"name": "Sharks",
+						"place": "South Korea",
+						"logo": "assets/images/samples/logos/sharks_shield.png",
+						"bans": [
+							{
+								"name": "Stacy",
+								"img": "assets/images/esports/samples/event-1-banned-6.jpg"
+							},
+							{
+								"name": "Valkyrine",
+								"img": "assets/images/esports/samples/event-1-banned-7.jpg"
+							},
+							{
+								"name": "Bloodshid",
+								"img": "assets/images/esports/samples/event-1-banned-8.jpg"
+							},
+							{
+								"name": "Cipher",
+								"img": "assets/images/esports/samples/event-1-banned-9.jpg"
+							},
+							{
+								"name": "Berserk",
+								"img": "assets/images/esports/samples/event-1-banned-10.jpg"
+							}
+						]
+					},
+					"stats": [
+						{
+							"player1": {
+								"thumb": "assets/images/esports/samples/event-character1-sm.jpg",
+								"level": 16,
+								"nickname": "FayeDBebop",
+								"info": [
+									{
+										"class": "Mid"
+									},
+									{
+										"class": "Solo"
+									}
+								],
+								"details": [
+									{
+										"img": "assets/images/esports/samples/event-character1-detail1.jpg"
+									},
+									{
+										"img": "assets/images/esports/samples/event-character1-detail2.jpg"
+									}
+								],
+								"stat": {
+									"kills": 9,
+									"deaths": 4,
+									"assists": 8
+								},
+								"items": [
+									{
+										"title": "Item Title #1",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item1.jpg"
+									},
+									{
+										"title": "Item Title #2",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item2.jpg"
+									},
+									{
+										"title": "Item Title #3",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item3.jpg"
+									},
+									{
+										"title": "Item Title #4",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item4.jpg"
+									},
+									{
+										"title": "Item Title #5",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item5.jpg"
+									},
+									{
+										"title": "Item Title #6",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item6.jpg"
+									},
+									{
+										"title": "Item Title #7",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item7.jpg"
+									}
+								]
+							},
+							"player2": {
+								"thumb": "assets/images/esports/samples/event-character6-sm.jpg",
+								"level": 14,
+								"nickname": "Lionel-Reese",
+								"info": [
+									{
+										"class": "Bot"
+									},
+									{
+										"class": "Carry"
+									}
+								],
+								"details": [
+									{
+										"img": "assets/images/esports/samples/event-character6-detail1.jpg"
+									},
+									{
+										"img": "assets/images/esports/samples/event-character6-detail2.jpg"
+									}
+								],
+								"stat": {
+									"kills": 7,
+									"deaths": 5,
+									"assists": 3
+								},
+								"items": [
+									{
+										"title": "Item Title #1",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item8.jpg"
+									},
+									{
+										"title": "Item Title #2",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item9.jpg"
+									},
+									{
+										"title": "Item Title #3",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item10.jpg"
+									},
+									{
+										"title": "Item Title #4",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item11.jpg"
+									},
+									{
+										"title": "Item Title #5",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item12.jpg"
+									},
+									{
+										"title": "Item Title #6",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item13.jpg"
+									},
+									{
+										"title": "Item Title #7",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item14.jpg"
+									}
+								]
+							}
+						},
+						{
+							"player1": {
+								"thumb": "assets/images/esports/samples/event-character2-sm.jpg",
+								"level": 14,
+								"nickname": "The Destroy",
+								"info": [
+									{
+										"class": "Bot"
+									},
+									{
+										"class": "Support"
+									}
+								],
+								"details": [
+									{
+										"img": "assets/images/esports/samples/event-character2-detail1.jpg"
+									},
+									{
+										"img": "assets/images/esports/samples/event-character2-detail2.jpg"
+									}
+								],
+								"stat": {
+									"kills": 7,
+									"deaths": 6,
+									"assists": 14
+								},
+								"items": [
+									{
+										"title": "Item Title #1",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item8.jpg"
+									},
+									{
+										"title": "Item Title #2",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item9.jpg"
+									},
+									{
+										"title": "Item Title #3",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item10.jpg"
+									},
+									{
+										"title": "Item Title #4",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item11.jpg"
+									},
+									{
+										"title": "Item Title #5",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item12.jpg"
+									},
+									{
+										"title": "Item Title #6",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item13.jpg"
+									},
+									{
+										"title": "Item Title #7",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item14.jpg"
+									}
+								]
+							},
+							"player2": {
+								"thumb": "assets/images/esports/samples/event-character7-sm.jpg",
+								"level": 12,
+								"nickname": "NekoKrisser",
+								"info": [
+									{
+										"class": "Bot"
+									},
+									{
+										"class": "Support"
+									}
+								],
+								"details": [
+									{
+										"img": "assets/images/esports/samples/event-character7-detail1.jpg"
+									},
+									{
+										"img": "assets/images/esports/samples/event-character7-detail2.jpg"
+									}
+								],
+								"stat": {
+									"kills": 7,
+									"deaths": 5,
+									"assists": 3
+								},
+								"items": [
+									{
+										"title": "Item Title #1",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item1.jpg"
+									},
+									{
+										"title": "Item Title #2",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item2.jpg"
+									},
+									{
+										"title": "Item Title #3",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item3.jpg"
+									},
+									{
+										"title": "Item Title #4",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item4.jpg"
+									},
+									{
+										"title": "Item Title #5",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item5.jpg"
+									},
+									{
+										"title": "Item Title #6",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item6.jpg"
+									},
+									{
+										"title": "Item Title #7",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item7.jpg"
+									}
+								]
+							}
+						},
+						{
+							"player1": {
+								"thumb": "assets/images/esports/samples/event-character3-sm.jpg",
+								"level": 16,
+								"nickname": "G-Huntress",
+								"info": [
+									{
+										"class": "Bot"
+									},
+									{
+										"class": "Carry"
+									}
+								],
+								"details": [
+									{
+										"img": "assets/images/esports/samples/event-character3-detail1.jpg"
+									},
+									{
+										"img": "assets/images/esports/samples/event-character3-detail2.jpg"
+									}
+								],
+								"stat": {
+									"kills": 1,
+									"deaths": 6,
+									"assists": 21
+								},
+								"items": [
+									{
+										"title": "Item Title #15",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item15.jpg"
+									},
+									{
+										"title": "Item Title #16",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item16.jpg"
+									},
+									{
+										"title": "Item Title #17",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item17.jpg"
+									},
+									{
+										"title": "Item Title #18",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item18.jpg"
+									},
+									{
+										"title": "Item Title #17",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item17.jpg"
+									},
+									{
+										"title": "Item Title #19",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item19.jpg"
+									},
+									{
+										"title": "Item Title #20",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item20.jpg"
+									}
+								]
+							},
+							"player2": {
+								"thumb": "assets/images/esports/samples/event-character8-sm.jpg",
+								"level": 14,
+								"nickname": "Sam-X-199",
+								"info": [
+									{
+										"class": "Top"
+									},
+									{
+										"class": "Solo"
+									}
+								],
+								"details": [
+									{
+										"img": "assets/images/esports/samples/event-character8-detail1.jpg"
+									},
+									{
+										"img": "assets/images/esports/samples/event-character8-detail2.jpg"
+									}
+								],
+								"stat": {
+									"kills": 3,
+									"deaths": 9,
+									"assists": 9
+								},
+								"items": [
+									{
+										"title": "Item Title #21",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item21.jpg"
+									},
+									{
+										"title": "Item Title #22",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item22.jpg"
+									},
+									{
+										"title": "Item Title #23",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item23.jpg"
+									},
+									{
+										"title": "Item Title #24",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item24.jpg"
+									},
+									{
+										"title": "Item Title #25",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item25.jpg"
+									},
+									{
+										"title": "Item Title #10",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item10.jpg"
+									},
+									{
+										"title": "Item Title #26",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item26.jpg"
+									}
+								]
+							}
+						},
+						{
+							"player1": {
+								"thumb": "assets/images/esports/samples/event-character4-sm.jpg",
+								"level": 16,
+								"nickname": "BRDWonder",
+								"info": [
+									{
+										"class": "Top"
+									},
+									{
+										"class": "Solo"
+									}
+								],
+								"details": [
+									{
+										"img": "assets/images/esports/samples/event-character4-detail1.jpg"
+									},
+									{
+										"img": "assets/images/esports/samples/event-character4-detail2.jpg"
+									}
+								],
+								"stat": {
+									"kills": 11,
+									"deaths": 6,
+									"assists": 10
+								},
+								"items": [
+									{
+										"title": "Item Title #27",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item27.jpg"
+									},
+									{
+										"title": "Item Title #28",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item28.jpg"
+									},
+									{
+										"title": "Item Title #29",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item29.jpg"
+									},
+									{
+										"title": "Item Title #30",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item30.jpg"
+									},
+									{
+										"title": "Item Title #31",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item31.jpg"
+									},
+									{
+										"title": "Item Title #32",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item32.jpg"
+									},
+									{
+										"title": "Item Title #33",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item33.jpg"
+									}
+								]
+							},
+							"player2": {
+								"thumb": "assets/images/esports/samples/event-character9-sm.jpg",
+								"level": 15,
+								"nickname": "Shark_Bullet",
+								"info": [
+									{
+										"class": "Mid"
+									},
+									{
+										"class": "Solo"
+									}
+								],
+								"details": [
+									{
+										"img": "assets/images/esports/samples/event-character9-detail1.jpg"
+									},
+									{
+										"img": "assets/images/esports/samples/event-character9-detail2.jpg"
+									}
+								],
+								"stat": {
+									"kills": 8,
+									"deaths": 7,
+									"assists": 10
+								},
+								"items": [
+									{
+										"title": "Item Title #15",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item15.jpg"
+									},
+									{
+										"title": "Item Title #16",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item16.jpg"
+									},
+									{
+										"title": "Item Title #17",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item17.jpg"
+									},
+									{
+										"title": "Item Title #18",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item18.jpg"
+									},
+									{
+										"title": "Item Title #17",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item17.jpg"
+									},
+									{
+										"title": "Item Title #19",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item19.jpg"
+									},
+									{
+										"title": "Item Title #20",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item20.jpg"
+									}
+								]
+							}
+						},
+						{
+							"player1": {
+								"thumb": "assets/images/esports/samples/event-character5-sm.jpg",
+								"level": 14,
+								"nickname": "Crazzzy_80",
+								"info": [
+									{
+										"class": "Jungle"
+									}
+								],
+								"details": [
+									{
+										"img": "assets/images/esports/samples/event-character5-detail1.jpg"
+									},
+									{
+										"img": "assets/images/esports/samples/event-character5-detail2.jpg"
+									}
+								],
+								"stat": {
+									"kills": 8,
+									"deaths": 5,
+									"assists": 17
+								},
+								"items": [
+									{
+										"title": "Item Title #21",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item21.jpg"
+									},
+									{
+										"title": "Item Title #22",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item22.jpg"
+									},
+									{
+										"title": "Item Title #23",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item23.jpg"
+									},
+									{
+										"title": "Item Title #24",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item24.jpg"
+									},
+									{
+										"title": "Item Title #25",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item25.jpg"
+									},
+									{
+										"title": "Item Title #10",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item10.jpg"
+									},
+									{
+										"title": "Item Title #26",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item26.jpg"
+									}
+								]
+							},
+							"player2": {
+								"thumb": "assets/images/esports/samples/event-character10-sm.jpg",
+								"level": 13,
+								"nickname": "DaMachineR",
+								"info": [
+									{
+										"class": "Jungle"
+									}
+								],
+								"details": [
+									{
+										"img": "assets/images/esports/samples/event-character10-detail1.jpg"
+									},
+									{
+										"img": "assets/images/esports/samples/event-character10-detail2.jpg"
+									}
+								],
+								"stat": {
+									"kills": 7,
+									"deaths": 7,
+									"assists": 9
+								},
+								"items": [
+									{
+										"title": "Item Title #27",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item27.jpg"
+									},
+									{
+										"title": "Item Title #28",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item28.jpg"
+									},
+									{
+										"title": "Item Title #29",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item29.jpg"
+									},
+									{
+										"title": "Item Title #30",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item30.jpg"
+									},
+									{
+										"title": "Item Title #31",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item31.jpg"
+									},
+									{
+										"title": "Item Title #32",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item32.jpg"
+									},
+									{
+										"title": "Item Title #33",
+										"desc": "Lorem ipsum dolor sit amet, tetur en derun adipisicing elit, sed do eiusmod de tempor lor dolore magna.",
+										"img": "assets/images/esports/samples/event-item33.jpg"
+									}
+								]
+							}
+						}
+					]
+				},
+				"widget-event-overview": {
+					"general": {
+						"team1": {
+							"name": "Alchemists",
+							"place": "United States",
+							"logo": "assets/images/esports/logos/alchemists-22x25.png",
+							"win": true
+						},
+						"team2": {
+							"name": "Sharks",
+							"place": "South Korea",
+							"logo": "assets/images/samples/logos/sharks_shield.png"
+						},
+						"info": [
+							{
+								"label": "Duration",
+								"value": "23:39"
+							},
+							{
+								"label": "Status",
+								"value": "Final Score"
+							}
+						]
+					},
+					"stats": [
+						{
+							"label": "Total Kills",
+							"team1": {
+								"pct": 90,
+								"value": 36,
+								"highlight": true
+							},
+							"team2": {
+								"pct": 70,
+								"value": 27
+							}
+						},
+						{
+							"label": "Total Deaths",
+							"team1": {
+								"pct": 30,
+								"value": 27
+							},
+							"team2": {
+								"pct": 70,
+								"value": 37,
+								"highlight": true
+							}
+						},
+						{
+							"label": "Total Assists",
+							"team1": {
+								"pct": 80,
+								"value": 70,
+								"highlight": true
+							},
+							"team2": {
+								"pct": 20,
+								"value": 31
+							}
+						},
+						{
+							"label": "T. Damage (K)",
+							"team1": {
+								"pct": 100,
+								"value": 142.8,
+								"highlight": true
+							},
+							"team2": {
+								"pct": 85,
+								"value": 120.6
+							}
+						}
+					],
+					"additional-stats": [
+						{
+							"label": "Gold",
+							"sublabel": "per minute",
+							"pct": 60,
+							"value1": 10.2,
+							"value2": 6.3,
+							"color1": "#00ff5b",
+							"color2": "#00deff",
+							"icon": "coin"
+						},
+						{
+							"label": "Kills",
+							"sublabel": "per minute",
+							"pct": 28,
+							"value1": 2.7,
+							"value2": 0.9,
+							"color1": "#00ff5b",
+							"color2": "#00deff",
+							"icon": "crosshair"
+						},
+						{
+							"label": "Deaths",
+							"sublabel": "per minute",
+							"pct": 20,
+							"value1": 2.6,
+							"value2": 9.2,
+							"color1": "#00ff5b",
+							"color2": "#00deff",
+							"icon": "dead-face"
+						},
+						{
+							"label": "Assists",
+							"sublabel": "per minute",
+							"pct": 45,
+							"value1": 4.5,
+							"value2": 6.3,
+							"color1": "#00ff5b",
+							"color2": "#00deff",
+							"icon": "thumbs-up"
+						},
+						{
+							"label": "PentaK",
+							"sublabel": "in the match",
+							"pct": 40,
+							"value1": 3.1,
+							"value2": 4.2,
+							"color1": "#00ff5b",
+							"color2": "#00deff",
+							"icon": "gamepad"
+						},
+						{
+							"label": "F.Blood",
+							"sublabel": "in all time",
+							"pct": 50,
+							"value1": 1.2,
+							"value2": 1.2,
+							"color1": "#00ff5b",
+							"color2": "#00deff",
+							"icon": "drop"
+						},
+						{
+							"label": "TB Kills",
+							"sublabel": "avg in match",
+							"pct": 65,
+							"value1": 24.1,
+							"value2": 20.8,
+							"color1": "#00ff5b",
+							"color2": "#00deff",
+							"icon": "stopwatch"
+						},
+						{
+							"label": "T. Wins",
+							"sublabel": "in all time",
+							"pct": 40,
+							"value1": 8.7,
+							"value2": 9.8,
+							"color1": "#00ff5b",
+							"color2": "#00deff",
+							"icon": "trophy"
+						}
+					],
+					"leaders": [
+						{
+							"team": 1,
+							"player": {
+								"name": "FayeDBebop",
+								"img": "assets/images/esports/samples/event-1-top-player-1.jpg"
+							},
+							"character": {
+								"name": "Thrasr",
+								"img": "assets/images/esports/samples/event-1-top-character-1.jpg"
+							},
+							"stats": {
+								"value": "30.092",
+								"pct": 100
+							}
+						},
+						{
+							"team": 1,
+							"player": {
+								"name": "BRDWonder",
+								"img": "assets/images/esports/samples/event-1-top-player-2.jpg"
+							},
+							"character": {
+								"name": "Vanstus",
+								"img": "assets/images/esports/samples/event-1-top-character-2.jpg"
+							},
+							"stats": {
+								"value": "26.596",
+								"pct": 80
+							}
+						},
+						{
+							"team": 2,
+							"player": {
+								"name": "Shark_Bullet",
+								"img": "assets/images/esports/samples/event-1-top-player-placeholder.jpg"
+							},
+							"character": {
+								"name": "Vanstus",
+								"img": "assets/images/esports/samples/event-1-top-character-3.jpg"
+							},
+							"stats": {
+								"value": "23.386",
+								"pct": 65
+							}
+						}
+					]
+				}
+			},
+			"b": {
+				"lineup": {
+					"team1": {
+						"name": "The Alchemists",
+						"place": "United States",
+						"logo": "assets/images/esports/logos/alchemists-22x25.png"
+					},
+					"team2": {
+						"name": "Sharks",
+						"place": "South Korea",
+						"logo": "assets/images/samples/logos/sharks_shield.png"
+					},
+					"stats": [
+						{
+							"player1": {
+								"thumb": "assets/images/esports/samples/event-1c-player1-sm.jpg",
+								"nickname": "FayeDBebop",
+								"name": "Sarah Valentine",
+								"stat": {
+									"kills": 45,
+									"deaths": 31,
+									"assists": 77,
+									"kda": 4.6
+								}
+							},
+							"player2": {
+								"thumb": "assets/images/esports/samples/event-1b-player-placeholder-sm.jpg",
+								"nickname": "Lionel-Reese",
+								"name": "John Fusco",
+								"stat": {
+									"kills": 52,
+									"deaths": 34,
+									"assists": 67,
+									"kda": 4.9
+								}
+							}
+						},
+						{
+							"player1": {
+								"thumb": "assets/images/esports/samples/event-1c-player2-sm.jpg",
+								"nickname": "The Destroy",
+								"name": "James Spiegel",
+								"stat": {
+									"kills": 39,
+									"deaths": 34,
+									"assists": 84,
+									"kda": 4.0
+								}
+							},
+							"player2": {
+								"thumb": "assets/images/esports/samples/event-1b-player-placeholder-sm.jpg",
+								"nickname": "NekoKrisser",
+								"name": "Mary Robinson",
+								"stat": {
+									"kills": 44,
+									"deaths": 37,
+									"assists": 80,
+									"kda": 4.1
+								}
+							}
+						},
+						{
+							"player1": {
+								"thumb": "assets/images/esports/samples/event-1c-player3-sm.jpg",
+								"nickname": "G-Huntress",
+								"name": "April Summers",
+								"stat": {
+									"kills": 42,
+									"deaths": 45,
+									"assists": 75,
+									"kda": 4.2
+								}
+							},
+							"player2": {
+								"thumb": "assets/images/esports/samples/event-1b-player-placeholder-sm.jpg",
+								"nickname": "Sam-X-199",
+								"name": "Samantha Gray",
+								"stat": {
+									"kills": 58,
+									"deaths": 30,
+									"assists": 72,
+									"kda": 5.2
+								}
+							}
+						},
+						{
+							"player1": {
+								"thumb": "assets/images/esports/samples/event-1c-player4-sm.jpg",
+								"nickname": "BRDWonder",
+								"name": "Eric Thunderer",
+								"stat": {
+									"kills": 40,
+									"deaths": 37,
+									"assists": 60,
+									"kda": 4.0
+								}
+							},
+							"player2": {
+								"thumb": "assets/images/esports/samples/event-1b-player-placeholder-sm.jpg",
+								"nickname": "Shark_Bullet",
+								"name": "Mark Roberts",
+								"stat": {
+									"kills": 29,
+									"deaths": 41,
+									"assists": 75,
+									"kda": 4.8
+								}
+							}
+						},
+						{
+							"player1": {
+								"thumb": "assets/images/esports/samples/event-1c-player5-sm.jpg",
+								"nickname": "Crazzzy_80",
+								"name": "Marc Johnson",
+								"stat": {
+									"kills": 34,
+									"deaths": 32,
+									"assists": 66,
+									"kda": 4.4
+								}
+							},
+							"player2": {
+								"thumb": "assets/images/esports/samples/event-1b-player-placeholder-sm.jpg",
+								"nickname": "DaMachineR",
+								"name": "Rina Munroe",
+								"stat": {
+									"kills": 34,
+									"deaths": 29,
+									"assists": 69,
+									"kda": 4.3
+								}
+							}
+						}
+					]
+				},
+				"widget-event-overview": {
+					"general": {
+						"team1": {
+							"name": "ALC",
+							"place": "USA",
+							"logo": "assets/images/esports/logos/alchemists-22x25.png",
+							"win": true
+						},
+						"team2": {
+							"name": "SRK",
+							"place": "SOK",
+							"logo": "assets/images/samples/logos/sharks_shield.png"
+						},
+						"info": [
+							{
+								"label": "Map / Level",
+								"value": "Downpass"
+							},
+							{
+								"label": "Duration",
+								"value": "15:41"
+							}
+						]
+					},
+					"stats": [
+						{
+							"label": "Total Kills",
+							"team1": {
+								"pct": 90,
+								"value": 142,
+								"highlight": true
+							},
+							"team2": {
+								"pct": 70,
+								"value": 127
+							}
+						},
+						{
+							"label": "Total Deaths",
+							"team1": {
+								"pct": 30,
+								"value": 56
+							},
+							"team2": {
+								"pct": 70,
+								"value": 81,
+								"highlight": true
+							}
+						},
+						{
+							"label": "Assists",
+							"team1": {
+								"pct": 70,
+								"value": 28,
+								"highlight": true
+							},
+							"team2": {
+								"pct": 60,
+								"value": 24
+							}
+						},
+						{
+							"label": "KDA.R",
+							"team1": {
+								"pct": 100,
+								"value": 4.9,
+								"highlight": true
+							},
+							"team2": {
+								"pct": 90,
+								"value": 4.1
+							}
+						}
+					],
+					"round-by-round": [
+						{
+							"team1": "skull",
+							"team2": ""
+						},
+						{
+							"team1": "",
+							"team2": "skull"
+						},
+						{
+							"team1": "pliers",
+							"team2": ""
+						},
+						{
+							"team1": "",
+							"team2": "explosion"
+						},
+						{
+							"team1": "stopwatch2",
+							"team2": ""
+						},
+						{
+							"team1": "skull",
+							"team2": ""
+						},
+						{
+							"team1": "",
+							"team2": "explosion"
+						},
+						{
+							"team1": "skull",
+							"team2": ""
+						},
+						{
+							"team1": "",
+							"team2": "pliers"
+						},
+						{
+							"team1": "",
+							"team2": "skull"
+						}
+					]
+				}
+			},
+			"c": {
+				"lineup": {
+					"team1": {
+						"name": "The Alchemists",
+						"place": "United States",
+						"logo": "assets/images/esports/logos/alchemists-22x25.png"
+					},
+					"team2": {
+						"name": "Sharks",
+						"place": "South Korea",
+						"logo": "assets/images/samples/logos/sharks_shield.png"
+					},
+					"stats": [
+						{
+							"player1": {
+								"thumb": "assets/images/esports/samples/event-1c-player1-sm.jpg",
+								"nickname": "FayeDBebop",
+								"role": "Offense",
+								"character": {
+									"thumb": "assets/images/esports/samples/event-1c-character1-sm.jpg",
+									"name": "Ragnark"
+								}
+							},
+							"player2": {
+								"thumb": "assets/images/esports/samples/event-1c-player-placeholder-sm.jpg",
+								"nickname": "Lionel-Reese",
+								"role": "Offense",
+								"character": {
+									"thumb": "assets/images/esports/samples/event-1c-character6-sm.jpg",
+									"name": "Grimdeath"
+								}
+							}
+						},
+						{
+							"player1": {
+								"thumb": "assets/images/esports/samples/event-1c-player2-sm.jpg",
+								"nickname": "The Destroy",
+								"role": "Offense",
+								"character": {
+									"thumb": "assets/images/esports/samples/event-1c-character2-sm.jpg",
+									"name": "Valholl"
+								}
+							},
+							"player2": {
+								"thumb": "assets/images/esports/samples/event-1c-player-placeholder-sm.jpg",
+								"nickname": "NekoKrisser",
+								"role": "Tank",
+								"character": {
+									"thumb": "assets/images/esports/samples/event-1c-character7-sm.jpg",
+									"name": "StormFist"
+								}
+							}
+						},
+						{
+							"player1": {
+								"thumb": "assets/images/esports/samples/event-1c-player3-sm.jpg",
+								"nickname": "G-Huntress",
+								"role": "Support",
+								"character": {
+									"thumb": "assets/images/esports/samples/event-1c-character3-sm.jpg",
+									"name": "Valkyrine"
+								}
+							},
+							"player2": {
+								"thumb": "assets/images/esports/samples/event-1c-player-placeholder-sm.jpg",
+								"nickname": "Sam-X-199",
+								"role": "Defense",
+								"character": {
+									"thumb": "assets/images/esports/samples/event-1c-character8-sm.jpg",
+									"name": "Gastion"
+								}
+							}
+						},
+						{
+							"player1": {
+								"thumb": "assets/images/esports/samples/event-1c-player4-sm.jpg",
+								"nickname": "BRDWonder",
+								"role": "Defense",
+								"character": {
+									"thumb": "assets/images/esports/samples/event-1c-character4-sm.jpg",
+									"name": "Jaxxy Reev"
+								}
+							},
+							"player2": {
+								"thumb": "assets/images/esports/samples/event-1c-player-placeholder-sm.jpg",
+								"nickname": "Shark_Bullet",
+								"role": "Defense",
+								"character": {
+									"thumb": "assets/images/esports/samples/event-1c-character9-sm.jpg",
+									"name": "Duvida"
+								}
+							}
+						},
+						{
+							"player1": {
+								"thumb": "assets/images/esports/samples/event-1c-player5-sm.jpg",
+								"nickname": "Crazzzy_80",
+								"role": "Tank",
+								"character": {
+									"thumb": "assets/images/esports/samples/event-1c-character5-sm.jpg",
+									"name": "Bloodshid"
+								}
+							},
+							"player2": {
+								"thumb": "assets/images/esports/samples/event-1c-player-placeholder-sm.jpg",
+								"nickname": "DaMachineR",
+								"role": "Support",
+								"character": {
+									"thumb": "assets/images/esports/samples/event-1c-character10-sm.jpg",
+									"name": "Piedad"
+								}
+							}
+						}
+					]
+				},
+				"widget-event-overview": {
+					"general": {
+						"team1": {
+							"name": "Alchemists",
+							"place": "United States",
+							"logo": "assets/images/esports/logos/alchemists-22x25.png",
+							"win": true
+						},
+						"team2": {
+							"name": "Sharks",
+							"place": "South Korea",
+							"logo": "assets/images/samples/logos/sharks_shield.png"
+						},
+						"info": [
+							{
+								"label": "Map / Level",
+								"value": "El Plateado"
+							},
+							{
+								"label": "Mission",
+								"value": "Escort"
+							},
+							{
+								"label": "Duration",
+								"value": "23:39"
+							},
+							{
+								"label": "Status",
+								"value": "Final Score"
+							}
+						]
+					},
+					"stats": [
+						{
+							"label": "Total Kills",
+							"team1": {
+								"pct": 90,
+								"value": 56,
+								"highlight": true
+							},
+							"team2": {
+								"pct": 70,
+								"value": 34
+							}
+						},
+						{
+							"label": "Total Deaths",
+							"team1": {
+								"pct": 30,
+								"value": 23
+							},
+							"team2": {
+								"pct": 70,
+								"value": 38,
+								"highlight": true
+							}
+						},
+						{
+							"label": "Damage (K)",
+							"team1": {
+								"pct": 80,
+								"value": 42.6,
+								"highlight": true
+							},
+							"team2": {
+								"pct": 30,
+								"value": 31.4
+							}
+						},
+						{
+							"label": "Healing (K)",
+							"team1": {
+								"pct": 90,
+								"value": 67.8,
+								"highlight": true
+							},
+							"team2": {
+								"pct": 50,
+								"value": 45.3
+							}
+						}
+					],
+					"additional-stats": [
+						{
+							"label": "Kills",
+							"sublabel": "per minute",
+							"pct": 28,
+							"value1": 3.2,
+							"value2": 0.9,
+							"color1": "#00ff5b",
+							"color2": "#00deff",
+							"icon": "crosshair"
+						},
+						{
+							"label": "Deaths",
+							"sublabel": "per minute",
+							"pct": 80,
+							"value1": 1.7,
+							"value2": 9.2,
+							"color1": "#00ff5b",
+							"color2": "#00deff",
+							"icon": "dead-face"
+						},
+						{
+							"label": "Damage",
+							"sublabel": "per minute",
+							"pct": 60,
+							"value1": 4.5,
+							"value2": 6.3,
+							"color1": "#00ff5b",
+							"color2": "#00deff",
+							"icon": "fire"
+						},
+						{
+							"label": "Healing",
+							"sublabel": "per minute",
+							"pct": 20,
+							"value1": 8.2,
+							"value2": 2.5,
+							"color1": "#00ff5b",
+							"color2": "#00deff",
+							"icon": "fire"
+						}
+					],
+					"leaders": [
+						{
+							"team": 1,
+							"player": {
+								"name": "FayeDBebop",
+								"img": "assets/images/esports/samples/event-1c-top-player-1.jpg"
+							},
+							"character": {
+								"name": "Thrasr",
+								"img": "assets/images/esports/samples/event-1c-top-character-1.jpg"
+							},
+							"stats": {
+								"value": "18.365",
+								"type": "Damage",
+								"status": "Done"
+							}
+						},
+						{
+							"team": 2,
+							"player": {
+								"name": "DaMachineR",
+								"img": "assets/images/esports/samples/event-1c-top-player-placeholder.jpg"
+							},
+							"character": {
+								"name": "Piedad",
+								"img": "assets/images/esports/samples/event-1c-top-character-2.jpg"
+							},
+							"stats": {
+								"value": "36.029",
+								"type": "Healing",
+								"status": "Done"
+							}
+						}
+					]
+				}
+			}
+		},
+		"event2": {
+			"individual-stats": {
+				"team1": {
+					"name": "The Alchemists",
+					"players": [
+						{
+							"player": {
+								"nickname": "FayeDBebop",
+								"name": "Sarah Valentine",
+								"avatar": "player-1-xs.jpg"
+							},
+							"character": {
+								"name": "Ragnark",
+								"type": "Offensive",
+								"avatar": "character-2-xs.jpg"
+							},
+							"performances": {
+								"kills": 18,
+								"deaths": 9,
+								"assists": 34,
+								"pkills": 2,
+								"kda-r": 7.8,
+								"dmg-pct": 56.1,
+								"dpm": 863,
+								"gold-pct": 32.7
+							}
+						},
+						{
+							"player": {
+								"nickname": "The Destroy",
+								"name": "James Spiegel",
+								"avatar": "player-2-xs.jpg"
+							},
+							"character": {
+								"name": "Valholl",
+								"type": "Offensive",
+								"avatar": "character-1-xs.jpg"
+							},
+							"performances": {
+								"kills": 25,
+								"deaths": 5,
+								"assists": 56,
+								"pkills": 5,
+								"kda-r": 12.4,
+								"dmg-pct": 78.9,
+								"dpm": 1235,
+								"gold-pct": 42.5
+							},
+							"featured": true
+						},
+						{
+							"player": {
+								"nickname": "G-Huntress",
+								"name": "April Summers",
+								"avatar": "player-3-xs.jpg"
+							},
+							"character": {
+								"name": "Valkyrine",
+								"type": "Medic",
+								"avatar": "character-5-xs.jpg"
+							},
+							"performances": {
+								"kills": 12,
+								"deaths": 8,
+								"assists": 22,
+								"pkills": 3,
+								"kda-r": 6.5,
+								"dmg-pct": 55.8,
+								"dpm": 953,
+								"gold-pct": 37.8
+							}
+						},
+						{
+							"player": {
+								"nickname": "BRDWonder",
+								"name": "Eric Thunderer",
+								"avatar": "player-4-xs.jpg"
+							},
+							"character": {
+								"name": "Jaxxy Reev",
+								"type": "Defensive",
+								"avatar": "character-3-xs.jpg"
+							},
+							"performances": {
+								"kills": 9,
+								"deaths": 6,
+								"assists": 19,
+								"pkills": 2,
+								"kda-r": 4.8,
+								"dmg-pct": 49.7,
+								"dpm": 457,
+								"gold-pct": 29.2
+							}
+						},
+						{
+							"player": {
+								"nickname": "Crazzzy_80",
+								"name": "Marc Johnson",
+								"avatar": "player-5-xs.jpg"
+							},
+							"character": {
+								"name": "Bloodshid",
+								"type": "Defensive",
+								"avatar": "character-4-xs.jpg"
+							},
+							"performances": {
+								"kills": 20,
+								"deaths": 12,
+								"assists": 24,
+								"pkills": 4,
+								"kda-r": 6.6,
+								"dmg-pct": 38.5,
+								"dpm": 788,
+								"gold-pct": 31.0
+							}
+						}
+					]
+				},
+				"team2": {
+					"name": "Sharks",
+					"players": [
+						{
+							"player": {
+								"nickname": "Lionel-Reese",
+								"name": "John Fusco",
+								"avatar": "player-placeholder-xs.jpg"
+							},
+							"character": {
+								"name": "Valholl",
+								"type": "Offensive",
+								"avatar": "character-1-xs.jpg"
+							},
+							"performances": {
+								"kills": 16,
+								"deaths": 12,
+								"assists": 42,
+								"pkills": 1,
+								"kda-r": 7.8,
+								"dmg-pct": 12.7,
+								"dpm": 536,
+								"gold-pct": 42.5
+							}
+						},
+						{
+							"player": {
+								"nickname": "NekoKrisser",
+								"name": "Mary Robinson",
+								"avatar": "player-placeholder-xs.jpg"
+							},
+							"character": {
+								"name": "Jaxxy Reev",
+								"type": "Defensive",
+								"avatar": "character-3-xs.jpg"
+							},
+							"performances": {
+								"kills": 7,
+								"deaths": 19,
+								"assists": 29,
+								"pkills": 4,
+								"kda-r": 5.1,
+								"dmg-pct": 24.5,
+								"dpm": 863,
+								"gold-pct": 32.4
+							}
+						},
+						{
+							"player": {
+								"nickname": "Sam-X-199",
+								"name": "Samantha Grey",
+								"avatar": "player-placeholder-xs.jpg"
+							},
+							"character": {
+								"name": "Ragnark",
+								"type": "Offensive",
+								"avatar": "character-2-xs.jpg"
+							},
+							"performances": {
+								"kills": 8,
+								"deaths": 11,
+								"assists": 34,
+								"pkills": 2,
+								"kda-r": 2.4,
+								"dmg-pct": 45.6,
+								"dpm": 437,
+								"gold-pct": 29.7
+							}
+						},
+						{
+							"player": {
+								"nickname": "Shark_Bullet",
+								"name": "Mark Roberts",
+								"avatar": "player-placeholder-xs.jpg"
+							},
+							"character": {
+								"name": "Bloodshid",
+								"type": "Defensive",
+								"avatar": "character-4-xs.jpg"
+							},
+							"performances": {
+								"kills": 12,
+								"deaths": 14,
+								"assists": 40,
+								"pkills": 0,
+								"kda-r": 3.9,
+								"dmg-pct": 33.8,
+								"dpm": 678,
+								"gold-pct": 38.4
+							}
+						},
+						{
+							"player": {
+								"nickname": "DaMachineR",
+								"name": "Rina Munroe",
+								"avatar": "player-placeholder-xs.jpg"
+							},
+							"character": {
+								"name": "Valkyrine",
+								"type": "Medic",
+								"avatar": "character-5-xs.jpg"
+							},
+							"performances": {
+								"kills": 9,
+								"deaths": 8,
+								"assists": 36,
+								"pkills": 2,
+								"kda-r": 4.1,
+								"dmg-pct": 19.4,
+								"dpm": 755,
+								"gold-pct": 19.9
+							}
+						}
+					]
+				}
+			},
+			"stats": [
+				{
+					"label": "Total Kills",
+					"team1": {
+						"pct": 90,
+						"value": 56,
+						"highlight": true
+					},
+					"team2": {
+						"pct": 40,
+						"value": 34
+					}
+				},
+				{
+					"label": "Total Deaths",
+					"team1": {
+						"pct": 40,
+						"value": 23
+					},
+					"team2": {
+						"pct": 60,
+						"value": 38,
+						"highlight": true
+					}
+				},
+				{
+					"label": "Total Assists",
+					"team1": {
+						"pct": 30,
+						"value": 14,
+						"highlight": true
+					},
+					"team2": {
+						"pct": 20,
+						"value": 6
+					}
+				},
+				{
+					"label": "Pentakills",
+					"team1": {
+						"pct": 60,
+						"value": 19,
+						"highlight": true
+					},
+					"team2": {
+						"pct": 30,
+						"value": 12
+					}
+				}
+			],
+			"additional-stats": {
+				"duration": {
+					"value": "32:29",
+					"label": "Game Duration"
+				},
+				"primary": [
+					{
+						"label": "Gold",
+						"sublabel": "per minute",
+						"pct": 60,
+						"value": "10.2 - 6.3",
+						"icon": "coin"
+					},
+					{
+						"label": "Kills",
+						"sublabel": "per minute",
+						"pct": 28,
+						"value": "2.3 - 0.8",
+						"icon": "crosshair"
+					},
+					{
+						"label": "Deaths",
+						"sublabel": "per minute",
+						"pct": 20,
+						"value": "2.6 - 9.2",
+						"icon": "dead-face"
+					},
+					{
+						"label": "Assists",
+						"sublabel": "per minute",
+						"pct": 45,
+						"value": "2.2 - 8.8",
+						"icon": "thumbs-up"
+					}
+				],
+				"secondary": [
+					{
+						"label": "PentaK",
+						"sublabel": "in the match",
+						"pct": 45,
+						"value": "5.4 - 6.6",
+						"icon": "gamepad"
+					},
+					{
+						"label": "F.Blood",
+						"sublabel": "in all time",
+						"pct": 50,
+						"value": "3.2 - 3.2",
+						"icon": "drop"
+					},
+					{
+						"label": "TB Kills",
+						"sublabel": "avg in match",
+						"pct": 60,
+						"value": "5.1 - 2.9",
+						"icon": "stopwatch"
+					},
+					{
+						"label": "T. Wins",
+						"sublabel": "in all time",
+						"pct": 40,
+						"value": "23 - 32",
+						"icon": "trophy"
+					}
+				]
+			}
+		},
+		"tournament": {
+			"schedule": [
+				{
+					"date": "06 - 12 - 2018",
+					"team1": {
+						"logo": "assets/images/esports/logos/alchemists-22x25.png",
+						"name": "Alchemists",
+						"place": "United States"
+					},
+					"team2": {
+						"logo": "assets/images/samples/logos/sharks_shield.png",
+						"name": "Sharks",
+						"place": "South Korea"
+					},
+					"time": "9:00PM EST",
+					"instance": "Semi-Finals",
+					"availability": true
+				},
+				{
+					"date": "06 - 12 - 2018",
+					"team1": {
+						"logo": "assets/images/samples/logos/red_wings_shield.png",
+						"name": "Red Wings",
+						"place": "Spain"
+					},
+					"team2": {
+						"logo": "assets/images/samples/logos/pirates_shield.png",
+						"name": "L.A. Pirates",
+						"place": "United States"
+					},
+					"time": "9:00PM EST",
+					"instance": "Semi-Finals",
+					"availability": false
+				},
+				{
+					"date": "06 - 29 - 2018",
+					"team1": {
+						"logo": "assets/images/samples/logos/ocean_kings_shield.png",
+						"name": "Ocean Kings",
+						"place": "Japan"
+					},
+					"team2": {
+						"logo": "assets/images/samples/logos/lucky_clovers_shield.png",
+						"name": "Lucky Clovers",
+						"place": "Ireland"
+					},
+					"time": "10:00PM EST",
+					"instance": "Quarter-Finals",
+					"availability": true
+				},
+				{
+					"date": "07 - 12 - 2018",
+					"team1": {
+						"logo": "assets/images/samples/logos/icarus_wings_shield.png",
+						"name": "Icarus Wings",
+						"place": "Portugal"
+					},
+					"team2": {
+						"logo": "assets/images/samples/logos/draconians_shield.png",
+						"name": "Draconians",
+						"place": "Russia"
+					},
+					"time": "10:00PM EST",
+					"instance": "Semi-Finals",
+					"availability": true
+				}
+			],
+			"widget-tournament": [
+				{
+					"title": "Heroes Razz Tournament",
+					"date": {
+						"short": "November - December 2018",
+						"full": "Nov 28th to Dec 4th"
+					},
+					"rank": "-",
+					"results": {
+						"label": "Quarter-Finals",
+						"value": 57.5
+					},
+					"thumb": "widget-tournament-1.jpg",
+					"category": [
+						{
+							"class": "category-5",
+							"name": "Ongoing..."
+						}
+					],
+					"meta": {
+						"win": {
+							"value": 7,
+							"label": "Wins"
+						},
+						"loss": {
+							"value": 2,
+							"label": "Losses"
+						},
+						"prize": {
+							"value": "$560.000",
+							"label": "First Place Prize"
+						},
+						"result": {
+							"value": "-",
+							"label": "Money Won",
+							"highlight": true
+						}
+					},
+					"venue": "Madison Cube Arena",
+					"excerpt": "Lorem ipsum dolor sit amet, consectet adipisicing elit, sed do eiusmod tempor incididunt ut labore a dolore magna aliqua. Ut enim ad minim veniam."
+				}
+			],
+			"last-results": [
+				{
+					"date": "06 - 12 - 2018",
+					"team1": {
+						"logo": "assets/images/esports/logos/alchemists-22x25.png",
+						"name": "The Alchemists",
+						"place": "United States",
+						"score": 9,
+						"outcome": "win",
+						"stats": {
+							"kills": 58,
+							"deaths": 22,
+							"assists": 102
+						},
+						"color": "1"
+					},
+					"team2": {
+						"logo": "assets/images/samples/logos/icarus_wings_shield.png",
+						"name": "Icarus Wings",
+						"place": "Portugal",
+						"score": 4,
+						"outcome": "lose",
+						"stats": {
+							"kills": 49,
+							"deaths": 37,
+							"assists": 86
+						},
+						"color": "2"
+					}
+				},
+				{
+					"date": "05 - 18 - 2018",
+					"team1": {
+						"logo": "assets/images/samples/logos/red_wings_shield.png",
+						"name": "Red Wings",
+						"place": "Spain",
+						"score": 15,
+						"outcome": "lose",
+						"stats": {
+							"kills": 62,
+							"deaths": 37,
+							"assists": 105
+						},
+						"color": "3"
+					},
+					"team2": {
+						"logo": "assets/images/samples/logos/ocean_kings_shield.png",
+						"name": "Ocean Kings",
+						"place": "Japan",
+						"score": 21,
+						"outcome": "win",
+						"stats": {
+							"kills": 89,
+							"deaths": 24,
+							"assists": 139
+						},
+						"color": "4"
+					}
+				},
+				{
+					"date": "05 - 15 - 2018",
+					"team1": {
+						"logo": "assets/images/samples/logos/pirates_shield.png",
+						"name": "L.A. Pirates",
+						"place": "United States",
+						"score": 8,
+						"outcome": "win",
+						"stats": {
+							"kills": 48,
+							"deaths": 26,
+							"assists": 98
+						},
+						"color": "5"
+					},
+					"team2": {
+						"logo": "assets/images/samples/logos/draconians_shield.png",
+						"name": "Draconians",
+						"place": "Russia",
+						"score": 5,
+						"outcome": "lose",
+						"stats": {
+							"kills": 29,
+							"deaths": 41,
+							"assists": 77
+						},
+						"color": "6"
+					}
+				},
+				{
+					"date": "04 - 28 - 2018",
+					"team1": {
+						"logo": "assets/images/samples/logos/pirates_shield.png",
+						"name": "Sharks",
+						"place": "South Korea",
+						"score": 3,
+						"outcome": "win",
+						"stats": {
+							"kills": 31,
+							"deaths": 12,
+							"assists": 75
+						},
+						"color": "7"
+					},
+					"team2": {
+						"logo": "assets/images/esports/logos/alchemists-22x25.png",
+						"name": "The Alchemists",
+						"place": "United States",
+						"score": 2,
+						"outcome": "lose",
+						"stats": {
+							"kills": 20,
+							"deaths": 26,
+							"assists": 61
+						},
+						"color": "1"
+					}
+				},
+				{
+					"date": "04 - 12 - 2018",
+					"team1": {
+						"logo": "assets/images/samples/logos/icarus_wings_shield.png",
+						"name": "Icarus Wings",
+						"place": "Portugal",
+						"score": 4,
+						"outcome": "lose",
+						"stats": {
+							"kills": 44,
+							"deaths": 37,
+							"assists": 85
+						},
+						"color": "2"
+					},
+					"team2": {
+						"logo": "assets/images/samples/logos/pirates_shield.png",
+						"name": "L.A. Pirates",
+						"place": "United States",
+						"score": 7,
+						"outcome": "win",
+						"stats": {
+							"kills": 59,
+							"deaths": 21,
+							"assists": 104
+						},
+						"color": "5"
+					}
+				},
+				{
+					"date": "03 - 30 - 2018",
+					"team1": {
+						"logo": "assets/images/samples/logos/ocean_kings_shield.png",
+						"name": "Ocean Kings",
+						"place": "Japan",
+						"score": 10,
+						"outcome": "win",
+						"stats": {
+							"kills": 44,
+							"deaths": 37,
+							"assists": 85
+						},
+						"color": "4"
+					},
+					"team2": {
+						"logo": "assets/images/samples/logos/red_wings_shield.png",
+						"name": "Red Wings",
+						"place": "Spain",
+						"score": 8,
+						"outcome": "lose",
+						"stats": {
+							"kills": 51,
+							"deaths": 44,
+							"assists": 92
+						},
+						"color": "3"
+					}
+				}
+			],
+			"bracket-1": {
+				"quarter": {
+					"title": "Quarterfinals",
+					"list": [
+						[
+							{
+								"thumb": "samples/logos/pirates_shield.png",
+								"team": "L.A. Pirates",
+								"desc": "United States",
+								"score": 7,
+								"winner": true
+							},
+							{
+								"thumb": "samples/logos/icarus_wings_shield.png",
+								"team": "Icarus Wings",
+								"desc": "Portugal",
+								"score": 4
+							}
+						],
+						[
+							{
+								"thumb": "samples/logos/draconians_shield.png",
+								"team": "Draconians",
+								"desc": "Russia",
+								"score": 2
+							},
+							{
+								"thumb": "samples/logos/red_wings_shield.png",
+								"team": "Red Wings",
+								"desc": "Canada",
+								"score": 5,
+								"winner": true
+							}
+						],
+						[
+							{
+								"thumb": "samples/logos/sharks_shield.png",
+								"team": "Sharks",
+								"desc": "South Korea",
+								"score": 9
+							},
+							{
+								"thumb": "esports/logos/alchemists-22x25.png",
+								"team": "Alchemists",
+								"desc": "United States",
+								"score": 12,
+								"winner": true
+							}
+						],
+						[
+							{
+								"thumb": "samples/logos/ocean_kings_shield.png",
+								"team": "Ocean Kings",
+								"desc": "Japan",
+								"score": 6,
+								"winner": true
+							},
+							{
+								"thumb": "samples/logos/lucky_clovers_shield.png",
+								"team": "Lucky Clovers",
+								"desc": "Ireland",
+								"score": 4
+							}
+						]
+					]
+				},
+				"semi": {
+					"title": "Semifinals",
+					"list": [
+						[
+							{
+								"thumb": "samples/logos/pirates_shield.png",
+								"team": "L.A. Pirates",
+								"desc": "United States",
+								"score": 9,
+								"winner": true
+							},
+							{
+								"thumb": "samples/logos/red_wings_shield.png",
+								"team": "Red Wings",
+								"desc": "Canada",
+								"score": 7
+							}
+						],
+						[
+							{
+								"thumb": "esports/logos/alchemists-22x25.png",
+								"team": "Alchemists",
+								"desc": "United States",
+								"score": 8,
+								"winner": true
+							},
+							{
+								"thumb": "samples/logos/ocean_kings_shield.png",
+								"team": "Ocean Kings",
+								"desc": "Japan",
+								"score": 4
+							}
+						]
+					]
+				},
+				"final": {
+					"title": "Finals",
+					"list": [
+						[
+							{
+								"thumb": "samples/logos/pirates_shield.png",
+								"team": "L.A. Pirates",
+								"desc": "United States",
+								"score": "-"
+							},
+							{
+								"thumb": "esports/logos/alchemists-22x25.png",
+								"team": "Alchemists",
+								"desc": "United States",
+								"score": "-"
+							}
+						]
+					]
+				},
+				"champ": {
+					"title": "Champion",
+					"list": [
+						[
+							{
+								"champ": true
+							}
+						]
+					]
+				}
+			}
+		}
+	},
+	"products": {
+		"header-cart": [
+			{
+				"title": "Jaxxy Framed Art Print",
+				"thumb": "cart-sm-1.jpg",
+				"price": "$48.00",
+				"count": 2
+			},
+			{
+				"title": "Tech Warrior Framed Art Print",
+				"thumb": "cart-sm-2.jpg",
+				"price": "$36.00",
+				"count": 4
+			},
+			{
+				"title": "Alchemists White Mug",
+				"thumb": "cart-sm-3.jpg",
+				"price": "$16.00"
+			},
+			{
+				"title": "Mercenaries Framed Art Print",
+				"thumb": "cart-sm-4.jpg",
+				"price": "$34.00"
+			}
+		],
+		"shop": [
+			{
+				"title": "Jaxxy Framed Art Print",
+				"img": "product-1.jpg",
+				"rating": {
+					"full": 5,
+					"empty": 0
+				},
+				"price": "$48.00"
+			},
+			{
+				"title": "Alchemists White Mug",
+				"img": "product-2.jpg",
+				"rating": {
+					"full": 4,
+					"empty": 1
+				},
+				"price": "$16.00"
+			},
+			{
+				"title": "Tech Warrior Framed Art Print",
+				"img": "product-3.jpg",
+				"rating": {
+					"full": 3,
+					"empty": 2
+				},
+				"price": "$36.00"
+			},
+			{
+				"title": "Alchemists Men T-Shirt",
+				"img": "product-4.jpg",
+				"rating": {
+					"full": 4,
+					"empty": 1
+				},
+				"price": "$19.00"
+			},
+			{
+				"title": "Space Journey Notepad",
+				"img": "product-5.jpg",
+				"rating": {
+					"full": 2,
+					"empty": 3
+				},
+				"price": "$10.00"
+			},
+			{
+				"title": "Alchemists Women T-Shirt",
+				"img": "product-6.jpg",
+				"rating": {
+					"full": 5,
+					"empty": 0
+				},
+				"price": "$19.00"
+			},
+			{
+				"title": "Alchemists Black Mug",
+				"img": "product-7.jpg",
+				"rating": {
+					"full": 3,
+					"empty": 2
+				},
+				"price": "$16.00"
+			},
+			{
+				"title": "Mercenaries Framed Art Print",
+				"img": "product-8.jpg",
+				"rating": {
+					"full": 4,
+					"empty": 1
+				},
+				"price": "$34.00"
+			},
+			{
+				"title": "The Sandbender Notepad",
+				"img": "product-9.jpg",
+				"rating": {
+					"full": 5,
+					"empty": 0
+				},
+				"price": "$10.00"
+			},
+			{
+				"title": "Guardians Framed Art Print",
+				"img": "product-10.jpg",
+				"rating": {
+					"full": 4,
+					"empty": 1
+				},
+				"price": "$46.00"
+			},
+			{
+				"title": "Alchemists Ennamel Mug",
+				"img": "product-11.jpg",
+				"rating": {
+					"full": 3,
+					"empty": 2
+				},
+				"price": "$22.00"
+			},
+			{
+				"title": "Outlaws Cookie Container",
+				"img": "product-12.jpg",
+				"rating": {
+					"full": 5,
+					"empty": 0
+				},
+				"price": "$30.00"
+			}
+		],
+		"related": [
+			{
+				"title": "Alchemists Men T-Shirt",
+				"img": "product-4.jpg",
+				"rating": {
+					"full": 4,
+					"empty": 1
+				},
+				"price": "$19.00"
+			},
+			{
+				"title": "Space Journey Notepad",
+				"img": "product-5.jpg",
+				"rating": {
+					"full": 2,
+					"empty": 3
+				},
+				"price": "$10.00"
+			},
+			{
+				"title": "Alchemists Women T-Shirt",
+				"img": "product-6.jpg",
+				"rating": {
+					"full": 5,
+					"empty": 0
+				},
+				"price": "$19.00"
+			},
+			{
+				"title": "Alchemists Black Mug",
+				"img": "product-7.jpg",
+				"rating": {
+					"full": 3,
+					"empty": 2
+				},
+				"price": "$16.00"
+			}
+		],
+		"widget-products": [
+			{
+				"title": "Jaxxy Framed Art Print",
+				"thumb": "cart-xs-1.jpg",
+				"category": "Prints",
+				"rating": {
+					"full": 4,
+					"empty": 1
+				},
+				"price": "$48.00"
+			},
+			{
+				"title": "Warrior Framed Art Print",
+				"thumb": "cart-xs-2.jpg",
+				"category": "Prints",
+				"rating": {
+					"full": 5,
+					"empty": 0
+				},
+				"price": "$36.00"
+			},
+			{
+				"title": "Alchemists White Mug",
+				"thumb": "cart-xs-3.jpg",
+				"category": "Mugs",
+				"rating": {
+					"full": 3,
+					"empty": 2
+				},
+				"price": "$16.00"
+			},
+			{
+				"title": "Mage Framed Art Print",
+				"thumb": "cart-xs-4.jpg",
+				"category": "Prints",
+				"rating": {
+					"full": 4,
+					"empty": 1
+				},
+				"price": "$34.00"
+			}
+		],
+		"wishlist": [
+			{
+				"title": "Guardians Framed Art Print",
+				"thumb": "product-13-sm.jpg",
+				"category": "Prints",
+				"rating": {
+					"full": 4,
+					"empty": 1
+				},
+				"price": "$46.00"
+			},
+			{
+				"title": "Jaxxy Framed Art Print",
+				"thumb": "product-1-sm.jpg",
+				"category": "Prints",
+				"rating": {
+					"full": 4,
+					"empty": 1
+				},
+				"price": "$48.00"
+			},
+			{
+				"title": "Alchemists Women T-Shirt",
+				"thumb": "product-6-sm.jpg",
+				"category": "T-Shirts",
+				"rating": {
+					"full": 3,
+					"empty": 2
+				},
+				"price": "$19.00"
+			},
+			{
+				"title": "The Sandbender Notepad",
+				"thumb": "product-9-sm.jpg",
+				"category": "Prints",
+				"rating": {
+					"full": 5,
+					"empty": 0
+				},
+				"price": "$10.00"
+			},
+			{
+				"title": "Alchemists Black Mug",
+				"thumb": "product-7-sm.jpg",
+				"category": "Mugs",
+				"rating": {
+					"full": 4,
+					"empty": 1
+				},
+				"price": "$16.00"
+			},
+			{
+				"title": "Tech Warrior Framed Art Print",
+				"thumb": "product-3-sm.jpg",
+				"category": "Prints",
+				"rating": {
+					"full": 5,
+					"empty": 0
+				},
+				"price": "$36.00"
+			}
+		],
+		"cart": [
+			{
+				"title": "Jaxxy Framed Art Print",
+				"thumb": "cart-sm-1.jpg",
+				"price": "$48.00",
+				"count": 2,
+				"active": true
+			},
+			{
+				"title": "Tech Warrior Framed Art Print",
+				"thumb": "cart-sm-2.jpg",
+				"price": "$36.00",
+				"count": 4
+			},
+			{
+				"title": "Alchemists White Mug",
+				"thumb": "cart-sm-3.jpg",
+				"price": "$16.00"
+			},
+			{
+				"title": "Mercenaries Framed Art Print",
+				"thumb": "cart-sm-4.jpg",
+				"price": "$34.00"
+			}
+		]
+	},
+	"contact-info": {
+		"email-1": "tryouts@alchemists.com",
+		"email-2": "info@alchemists.com",
+		"social": [
+			{
+				"name": "Facebook",
+				"icon": "fab fa-facebook",
+				"user": "/alchemistsgaming",
+				"link": "#"
+			},
+			{
+				"name": "Twitter",
+				"icon": "fab fa-twitter",
+				"user": "@alchemistsgaming",
+				"link": "#"
+			},
+			{
+				"name": "Twitch",
+				"icon": "fab fa-twitch",
+				"user": "@alchemistsgaming",
+				"link": "#"
+			},
+			{
+				"name": "YouTube",
+				"icon": "fab fa-youtube",
+				"user": "@alchemistsgaming",
+				"link": "#"
+			},
+			{
+				"name": "Google+",
+				"icon": "fab fa-google-plus-g",
+				"user": "/alchemistsgaming",
+				"link": "#"
+			},
+			{
+				"name": "Instagram",
+				"icon": "fab fa-instagram",
+				"user": "@alchemistsgaming",
+				"link": "#"
+			}
+		]
+	},
+	"streams": {
+		"widget-twitch": [
+			{
+				"title": "Destroy Plays Xenowatch",
+				"img": "twitch-streamer-1.png",
+				"featured": true,
+				"has_video": true,
+				"info": "Joined by Kelly and Saki",
+				"status": "online"
+			},
+			{
+				"title": "Assassins League Gameplay",
+				"img": "twitch-streamer-2.png",
+				"info": "We start the adventure mode!",
+				"status": "online"
+			},
+			{
+				"title": "League of Heroes: Ether Quest",
+				"img": "twitch-streamer-3.png",
+				"info": "I’m gonna take the hardest quest",
+				"status": "scheduled",
+				"starts_in": "June 18, 2021 21:00:00"
+			},
+			{
+				"title": "The Game Huntress's Channel",
+				"img": "twitch-streamer-4.png",
+				"info": "Join me to hunt them all!",
+				"status": "offline"
+			},
+			{
+				"title": "Bearded_Wonders's Channel",
+				"img": "twitch-streamer-5.png",
+				"info": "I only play the “beardest” games",
+				"status": "offline"
+			}
+		],
+		"widget-twitch-single": [
+			{
+				"title": "Destroy Plays Xenowatch",
+				"subtitle": "Destroy's Stream",
+				"img": "twitch-streamer-1.png",
+				"featured": true,
+				"has_video": true,
+				"info": "Joined by Kelly and Saki",
+				"status": "online"
+			}
+		]
+	},
+	"sponsors": [
+		{
+			"title": "Dark Game",
+			"logo": "sponsor-darkgame.png",
+			"link": "http://www.darkgamestudios.com",
+			"address": "www.darkgamestudios.com",
+			"social": [
+				{
+					"name": "Facebook",
+					"icon": "fab fa-facebook",
+					"link": "#"
+				},
+				{
+					"name": "Twitter",
+					"icon": "fab fa-twitter",
+					"link": "#"
+				},
+				{
+					"name": "Instagram",
+					"icon": "fab fa-instagram",
+					"link": "#"
+				}
+			],
+			"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimam, quisrud exercitation ullamco laboris nisi ut aliquip ex ea modo sequat. Duis aute irure dolorem."
+		},
+		{
+			"title": "GeniusGeek",
+			"logo": "sponsor-geniusgeek.png",
+			"link": "http://www.thegeniusgeek.com",
+			"address": "www.thegeniusgeek.com",
+			"social": [
+				{
+					"name": "Facebook",
+					"icon": "fab fa-facebook",
+					"link": "#"
+				},
+				{
+					"name": "Twitter",
+					"icon": "fab fa-twitter",
+					"link": "#"
+				}
+			],
+			"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimam, quisrud exercitation ullamco laboris nisi ut aliquip ex ea modo sequat. Duis aute irure dolorem."
+		},
+		{
+			"title": "GhostGames",
+			"logo": "sponsor-ghostgames.png",
+			"link": "http://www.ghostgamess.com",
+			"address": "www.ghostgamess.com",
+			"social": [
+				{
+					"name": "Facebook",
+					"icon": "fab fa-facebook",
+					"link": "#"
+				},
+				{
+					"name": "Twitter",
+					"icon": "fab fa-twitter",
+					"link": "#"
+				},
+				{
+					"name": "Twitch",
+					"icon": "fab fa-twitch",
+					"link": "#"
+				}
+			],
+			"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimam, quisrud exercitation ullamco laboris nisi ut aliquip ex ea modo sequat. Duis aute irure dolorem."
+		},
+		{
+			"title": "GameChat",
+			"logo": "sponsor-gamechat.png",
+			"link": "http://www.gamechatapp.com",
+			"address": "www.gamechatapp.com",
+			"social": [
+				{
+					"name": "Facebook",
+					"icon": "fab fa-facebook",
+					"link": "#"
+				},
+				{
+					"name": "Twitter",
+					"icon": "fab fa-twitter",
+					"link": "#"
+				},
+				{
+					"name": "Twitch",
+					"icon": "fab fa-twitch",
+					"link": "#"
+				}
+			],
+			"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimam, quisrud exercitation ullamco laboris nisi ut aliquip ex ea modo sequat. Duis aute irure dolorem."
+		},
+		{
+			"title": "eliteSound",
+			"logo": "sponsor-elitesound.png",
+			"link": "http://www.elite-s-productions.com",
+			"address": "www.elite-s-productions.com",
+			"social": [
+				{
+					"name": "Facebook",
+					"icon": "fab fa-facebook",
+					"link": "#"
+				},
+				{
+					"name": "Twitter",
+					"icon": "fab fa-twitter",
+					"link": "#"
+				},
+				{
+					"name": "Instagram",
+					"icon": "fab fa-instagram",
+					"link": "#"
+				}
+			],
+			"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimam, quisrud exercitation ullamco laboris nisi ut aliquip ex ea modo sequat. Duis aute irure dolorem."
+		},
+		{
+			"title": "DragonFire",
+			"logo": "sponsor-dragonfire.png",
+			"link": "http://www.dragonfireagency.com",
+			"address": "www.dragonfireagency.com",
+			"social": [
+				{
+					"name": "Facebook",
+					"icon": "fab fa-facebook",
+					"link": "#"
+				},
+				{
+					"name": "Twitter",
+					"icon": "fab fa-twitter",
+					"link": "#"
+				},
+				{
+					"name": "Twitch",
+					"icon": "fab fa-twitch",
+					"link": "#"
+				}
+			],
+			"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimam, quisrud exercitation ullamco laboris nisi ut aliquip ex ea modo sequat. Duis aute irure dolorem."
+		}
+	],
+	"faqs": [
+		{
+			"title": "Events and Streams modules",
+			"content": "<h4>Live Featured Streams!</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea modo sequat. Duis aute irure dolor in reprehenderit in voluriatur.</p><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam ede corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure nderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem.</p><h4>Events Calendar</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea modo sequat. Duis aute irure dolor in reprehenderit in voluriatur.</p>",
+			"active": true
+		},
+		{
+			"title": "Applying for the California teams",
+			"content": "<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam ede corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure nderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem.</p>"
+		},
+		{
+			"title": "Buying our Merchandise",
+			"content": "<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam ede corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure nderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem.</p>"
+		},
+		{
+			"title": "Bring the Alchemists to your country",
+			"content": "<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam ede corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure nderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem.</p>"
+		},
+		{
+			"title": "Charity drives and another events",
+			"content": "<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam ede corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure nderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem.</p>"
+		}
+	],
+	"instagram": [
+		{
+			"link": "#",
+			"image": "assets/images/esports/samples/instagram-img1.jpg"
+		},
+		{
+			"link": "#",
+			"image": "assets/images/esports/samples/instagram-img2.jpg"
+		},
+		{
+			"link": "#",
+			"image": "assets/images/esports/samples/instagram-img3.jpg"
+		},
+		{
+			"link": "#",
+			"image": "assets/images/esports/samples/instagram-img4.jpg"
+		},
+		{
+			"link": "#",
+			"image": "assets/images/esports/samples/instagram-img5.jpg"
+		},
+		{
+			"link": "#",
+			"image": "assets/images/esports/samples/instagram-img6.jpg"
+		},
+		{
+			"link": "#",
+			"image": "assets/images/esports/samples/instagram-img7.jpg"
+		},
+		{
+			"link": "#",
+			"image": "assets/images/esports/samples/instagram-img8.jpg"
+		},
+		{
+			"link": "#",
+			"image": "assets/images/esports/samples/instagram-img9.jpg"
+		},
+		{
+			"link": "#",
+			"image": "assets/images/esports/samples/instagram-img10.jpg"
+		}
+	],
+	"copyright": "<a href=\"_esports_index.html\">The Alchemists</a> 2020 &nbsp; | &nbsp; All Rights Reserved"
+}

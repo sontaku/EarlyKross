@@ -1,0 +1,19 @@
+<!-- Widget: Event Stats Carousel -->
+<aside class="widget card widget--sidebar widget-event-stats-carousel">
+	<div class="widget__title card__header">
+		<h4>Match Numbers</h4>
+	</div>
+	<div class="widget__content card__content widget__content--bottom-decor">
+		<div class="alc-event-stats-carousel js-alc-event-stats-carousel">
+			{{#each basketball.sp.event.team-stats.stats-carousel}}
+			<div class="alc-event-stats-carousel__item">
+				<h5 class="alc-event-stats-carousel__figure">{{value}}</h5>
+				<div class="alc-event-stats-carousel__desc">
+					<h6 class="alc-event-stats-carousel__title">{{title}}</h6>
+				</div>
+			</div>
+			{{/each}}
+		</div>
+	</div>
+</aside>
+<!-- Widget: Event Stats Carousel / End -->

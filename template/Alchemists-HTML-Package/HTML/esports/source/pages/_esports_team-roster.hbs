@@ -1,0 +1,196 @@
+---
+layout: esports
+page-title: Team Roster
+page-heading: "Team <span class=\"highlight\">Roster</span>"
+megamenu: v3
+
+breadcrumbs: [
+	{
+		label: "Teams",
+		link: "#"
+	},
+	{
+		label: "L.O. Heroes",
+		link: "#"
+	},
+	{
+		label: "Roster"
+	}
+]
+---
+
+{{> _esports_team-filter }}
+
+<!-- Content
+================================================== -->
+<div class="site-content">
+	<div class="container">
+
+		<!-- Team Roster Navigation -->
+		<div class="team-roster-nav js-team-roster-nav">
+
+			{{#each esports.sp.team.roster}}
+			<div class="team-roster-nav__item">
+				<div class="team-roster-nav__hexagon">
+					<figure class="team-roster-nav__img">
+						<img src="{{../root}}assets/images/esports/samples/{{img.sm}}" alt="">
+						<span class="team-roster-nav__triangle"></span>
+						<span class="team-roster-nav__triangle-border"></span>
+						<span class="team-roster-nav__icon">
+							<svg role="img" class="df-icon df-icon--{{role.icon}}">
+								<use xlink:href="{{../root}}assets/images/esports/icons-esports.svg#{{role.icon}}"/>
+							</svg>
+						</span>
+					</figure>
+				</div>
+				<div class="team-roster-nav__meta">
+					<h6 class="team-roster-nav__firstname">{{{firstname}}}</h6>
+					<h5 class="team-roster-nav__nickname">{{{nickname}}}</h5>
+				</div>
+			</div>
+			{{/each}}
+
+		</div>
+		<!-- Team Roster Navigation / End -->
+
+		<!-- Team Roster - Card -->
+		<div class="team-roster team-roster--card team-roster--slider-with-nav js-team-roster--slider-with-nav mb-0 pb-0" data-slick='{"autoplay": true, "autoplaySpeed": 6000}'>
+
+			{{#each esports.sp.team.roster}}
+			<!-- Player -->
+			<div class="team-roster__item card card--no-paddings mb-0">
+				<div class="card__content">
+					<div class="team-roster__content-wrapper">
+
+						<!-- Player Photo -->
+						<figure class="team-roster__player-img">
+							<div class="team-roster__player-shape team-roster__player-shape--{{bg.img}} effect-duotone effect-duotone--{{bg.filter}}"></div>
+							<img src="{{../root}}assets/images/esports/samples/{{img.lg}}" alt="">
+						</figure>
+						<!-- Player Photo / End-->
+
+						<!-- Player Content -->
+						<div class="team-roster__content">
+
+							<!-- Player Details -->
+							<div class="team-roster__player-details">
+								<div class="team-roster__player-info">
+									<h5 class="team-roster__player-realname">{{firstname}} {{lastname}}</h5>
+									<h3 class="team-roster__player-nickname">{{{nickname}}}</h3>
+								</div>
+							</div>
+							<!-- Player Details / End -->
+
+							<!-- Player Excerpt -->
+							<div class="team-roster__player-excerpt">
+								{{excerpt}}
+							</div>
+							<!-- Player Excerpt / End -->
+
+							<!-- Player Details - Common -->
+							<div class="team-roster__player-details-common">
+								<div class="team-roster__player-metrics">
+									{{#each metrics}}
+									<div class="team-roster__player-metrics-item">
+										<h6 class="team-roster__player-metrics-item-label">{{label}}:</h6>
+										<div class="team-roster__player-metrics-item-value">{{value}}</div>
+									</div>
+									{{/each}}
+								</div>
+								<ul class="team-roster__player-social social-links social-links--circle-filled">
+									{{#each social}}
+									<li class="social-links__item">
+										<a href="{{link}}" class="social-links__link social-links__link--{{name}}"><i class="{{icon}}"></i></a>
+									</li>
+									{{/each}}
+								</ul>
+							</div>
+							<!-- Player Details - Common / End -->
+
+							<!-- Player Stats -->
+							<div class="team-roster__player-stats">
+
+								<div class="team-roster__player-stats-circular-bars">
+
+									{{#each stats.circular-bars}}
+									<div class="team-roster__player-stats-circular-bar">
+										<div class="circular circular--size-80">
+											<div class="circular__bar" data-percent="{{pct}}">
+												<span class="circular__percents">
+													{{value}}{{#if ispct}}<small>%</small>{{/if}}
+													<span class="circular__label">{{label}}</span>
+												</span>
+											</div>
+										</div>
+									</div>
+									{{/each}}
+
+								</div>
+
+								<div class="team-roster__player-stats-progress-bars">
+
+									<!-- Progress Stats Table -->
+									<table class="progress-table progress-table--simple">
+										<tbody>
+
+											{{#each stats.progress-bars}}
+											<tr>
+												<td class="progress-table__title">{{label}}</td>
+												<td class="progress-table__progress-bar">
+													<div class="progress progress--lines">
+														<div class="progress__bar" style="width: {{pct}}%;" role="progressbar" aria-valuenow="{{pct}}" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</td>
+												<td class="progress-table__progress-label progress-table__progress-label--highlight">{{value}}</td>
+											</tr>
+											{{/each}}
+
+										</tbody>
+									</table>
+									<!-- Progress Stats Table / End -->
+
+								</div>
+
+							</div>
+							<!-- Player Stats / End -->
+
+						</div>
+						<!-- Player Content / End -->
+
+						<!-- Player Meta Info -->
+						<aside class="team-roster__meta">
+
+							<div class="team-roster__meta-item">
+								<div class="team-roster__meta-icon">
+									<svg role="img" class="df-icon df-icon--{{role.icon}}">
+										<use xlink:href="{{../root}}assets/images/esports/icons-esports.svg#{{role.icon}}"/>
+									</svg>
+								</div>
+								<div class="team-roster__meta-label">{{role.type}}</div>
+							</div>
+
+							<div class="team-roster__meta-item">
+								<a href="_esports_team-player.html">
+									<div class="team-roster__meta-icon team-roster__meta-icon--more">
+										<i class="fas fa-ellipsis-h"></i>
+									</div>
+									<div class="team-roster__meta-label">More Info</div>
+								</a>
+							</div>
+
+						</aside>
+						<!-- Player Meta Info / End -->
+
+					</div>
+				</div>
+			</div>
+			<!-- Player / End -->
+			{{/each}}
+
+		</div>
+		<!-- Team Roster - Card / End -->
+
+	</div>
+</div>
+
+<!-- Content / End -->

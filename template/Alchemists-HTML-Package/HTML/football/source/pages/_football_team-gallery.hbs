@@ -1,0 +1,55 @@
+---
+layout: football
+page-title: Gallery
+page-heading: "Team <span class=\"highlight\">Gallery</span>"
+
+breadcrumbs: [
+	{
+		label: "Team",
+		link: "_football_team-overview.html"
+	},
+	{
+		label: "Gallery"
+	}
+]
+---
+
+{{> _football_team-filter}}
+
+<!-- Content
+================================================== -->
+<div class="site-content">
+	<div class="container">
+
+		<!-- Gallery -->
+		<div class="gallery row">
+
+			{{#each football.sp.team.gallery}}
+			<div class="gallery__item col-6 col-sm-4">
+				<a href="_football_team-gallery-album.html" class="gallery__item-inner card">
+					<header class="gallery__header card__header">
+						<div class="gallery__details">
+							<h4 class="gallery__name">{{title}}</h4>
+							<div class="gallery__date">{{date}}</div>
+						</div>
+						<div class="gallery__like">
+							{{likes}} <i class="gallery__like-icon gallery__like-icon--active icon-heart"></i>
+						</div>
+					</header>
+					<figure class="gallery__thumb">
+						<img src="{{../root}}assets/images/{{thumb}}" alt="">
+						<span class="btn-fab btn-fab--clean gallery__btn-fab"></span>
+					</figure>
+				</a>
+			</div>
+			{{/each}}
+
+		</div>
+		<!-- Gallery / End -->
+
+
+		{{> _football_team-pagination custom-class="justify-content-center"}}
+	</div>
+</div>
+
+<!-- Content / End -->

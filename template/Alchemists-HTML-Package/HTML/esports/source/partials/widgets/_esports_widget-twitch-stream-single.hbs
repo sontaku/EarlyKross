@@ -1,0 +1,45 @@
+<!-- Widget: Twitch Stream -->
+<aside class="widget widget--sidebar widget-twitch">
+	<div class="twitch-streams">
+
+		{{#each esports.streams.widget-twitch-single }}
+		<!-- Stream #{{@index}} -->
+		<div class="twitch-stream-wrapper">
+			<a href="#" class="twitch-stream twitch-stream--featured twitch-stream--has-video card">
+				<div class="twitch-stream__overlay twitch-stream__overlay--bg{{@index}} effect-duotone effect-duotone--base"></div>
+				<figure class="twitch-stream__img twitch-stream__img--extra-top">
+					<img src="{{../roots}}assets/images/esports/samples/{{img}}" alt="">
+				</figure>
+				<div class="twitch-stream__body">
+					<h6 class="twitch-stream__featured">{{subtitle}}</h6>
+					<h5 class="twitch-stream__title">{{title}}</h5>
+					<div class="twitch-stream__info">{{info}}</div>
+
+					{{#ifequal status 'online'}}
+					<div class="twitch-stream__status twitch-stream__status--online">Live</div>
+					{{/ifequal}}
+
+					{{#ifequal status 'scheduled'}}
+					<div class="twitch-stream__status twitch-stream__status--scheduled">Starts in: <div class="twitch-stream__countdown-counter countdown-counter" data-date="{{starts_in}}"></div></div>
+					{{/ifequal}}
+
+					{{#ifequal status 'offline'}}
+					<div class="twitch-stream__status twitch-stream__status--offline">Offline</div>
+					{{/ifequal}}
+				</div>
+			</a>
+
+			<div class="twitch-stream-video card">
+				<div class="card__content">
+					{{> _esports_widget-video-sm title="Twitch" id="tfblade" provider="twitch" thumbnail="assets/images/esports/samples/twitch-stream-cover.jpg"}}
+				</div>
+			</div>
+
+		</div>
+		<!-- Stream #{{@index}} / End -->
+		{{/each}}
+
+
+	</div>
+</aside>
+<!-- Widget: Twitch Stream / End -->

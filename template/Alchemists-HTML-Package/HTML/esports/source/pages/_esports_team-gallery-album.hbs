@@ -1,0 +1,78 @@
+---
+layout: esports
+page-title: Team Album
+page-heading: "Team <span class=\"highlight\">Album</span>"
+megamenu: v3
+
+breadcrumbs: [
+	{
+		label: "Teams",
+		link: "#"
+	},
+	{
+		label: "L.O. Heroes",
+		link: "#"
+	},
+	{
+		label: "Gallery",
+		link: "_esports_team-gallery.html"
+	},
+	{
+		label: "Album"
+	}
+]
+---
+
+{{> _esports_team-filter }}
+
+<!-- Content
+================================================== -->
+<div class="site-content">
+	<div class="container">
+
+		<!-- Album Heading -->
+		<div class="album-heading">
+			<div class="album-heading__icon alc-icon alc-icon--circle alc-icon--sm alc-icon--outline alc-icon--outline-md">
+				<i class="icon-picture"></i>
+			</div>
+			<h2 class="album-heading__title">New Xenowatch Characters</h2>
+			<h6 class="album-heading__subtitle">Updated: March 12th, 2018</h6>
+		</div>
+		<!-- Album Heading / End -->
+
+		<!-- Album -->
+		<div class="album row js-album-masonry">
+
+			{{#each esports.sp.team.album}}
+			<div class="album__item {{col}}">
+				<div class="album__item-holder">
+					<a href="{{../root}}assets/images/esports/samples/{{imgs.full}}" class="album__item-link mp_gallery">
+						<figure class="album__thumb">
+							<img src="{{../root}}assets/images/esports/samples/{{imgs.thumb}}" alt="">
+						</figure>
+						<div class="album__item-desc">
+							<h4 class="album__item-title">{{title}}</h4>
+							<time class="album__item-date" datetime="2016-08-23">{{date}}</time>
+						</div>
+					</a>
+					<ul class="album__item-meta meta">
+						<li class="meta__item meta__item--likes"><a href="#"><i class="meta-like meta-like--active icon-heart"></i> {{meta.likes}}</a></li>
+					</ul>
+				</div>
+			</div>
+			{{/each}}
+
+		</div>
+		<!-- Gallery Album / End -->
+
+
+		<div class="spacer-lg"></div>
+
+		<div class="text-center">
+			<a href="#" class="btn btn-primary-inverse btn-lg">Load More Photos...</a>
+		</div>
+
+	</div>
+</div>
+
+<!-- Content / End -->

@@ -1,0 +1,60 @@
+---
+layout: soccer
+page-title: Game Overview
+page-heading: "Game <span class=\"highlight\">Overview</span>"
+
+breadcrumbs: [
+	{
+		label: "The Team",
+		link: "#"
+	},
+	{
+		label: "Game Overview"
+	}
+]
+---
+
+<!-- Content
+================================================== -->
+<div class="site-content">
+	<div class="container">
+
+		<div class="row">
+
+			<!-- Content -->
+			<div class="content col-lg-8">
+
+				{{> _soccer_game-scoreboard-extended}}
+
+				<div class="row">
+
+					<div class="col-md-6">
+
+						{{> _soccer_widget-lineup-table}}
+
+					</div>
+
+					<div class="col-md-6">
+
+						{{> _soccer_widget-lineup-table-alt}}
+
+					</div>
+				</div>
+
+			</div>
+			<!-- Content / End -->
+
+			<!-- Sidebar -->
+			<div class="sidebar col-lg-4">
+
+				{{> _soccer_widget-lineup}}
+
+				{{> _soccer_widget-game-commentary}}
+
+			</div>
+			<!-- Sidebar / End -->
+		</div>
+	</div>
+</div>
+
+<!-- Content / End -->

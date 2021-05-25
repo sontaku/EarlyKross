@@ -1,0 +1,41 @@
+<!-- Header Top Bar -->
+<div class="header__top-bar clearfix">
+	<div class="container">
+		<div class="header__top-bar-inner">
+
+			<!-- Social Links -->
+			<ul class="social-links social-links--inline social-links--main-nav social-links--top-bar">
+				{{#each esports.contact-info.social}}
+				<li class="social-links__item">
+					<a href="{{link}}" class="social-links__link" data-toggle="tooltip" data-placement="bottom" title="{{name}}"><i class="{{icon}}"></i></a>
+				</li>
+				{{/each}}
+			</ul>
+			<!-- Social Links / End -->
+
+			<!-- Account Navigation -->
+			<ul class="nav-account">
+				<li class="nav-account__item nav-account__item--wishlist"><a href="_esports_shop-wishlist.html">Wishlist <span class="highlight">8</span></a></li>
+				<li class="nav-account__item"><a href="#">Currency: <span class="highlight">USD</span></a>
+					<ul class="main-nav__sub">
+						<li><a href="#">USD</a></li>
+						<li><a href="#">EUR</a></li>
+						<li><a href="#">GBP</a></li>
+					</ul>
+				</li>
+				<li class="nav-account__item"><a href="#">Language: <span class="highlight">EN</span></a>
+					<ul class="main-nav__sub">
+						<li><a href="#">English</a></li>
+						<li><a href="#">Spanish</a></li>
+						<li><a href="#">French</a></li>
+						<li><a href="#">German</a></li>
+					</ul>
+				</li>
+				<li class="nav-account__item"><a href="_esports_shop-account.html">Your Account</a></li>
+				<li class="nav-account__item nav-account__item--logout"><a href="_esports_shop-login.html">Logout</a></li>
+			</ul>
+			<!-- Account Navigation / End -->
+		</div>
+	</div>
+</div>
+<!-- Header Top Bar / End -->

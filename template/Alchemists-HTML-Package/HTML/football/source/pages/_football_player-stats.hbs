@@ -1,0 +1,161 @@
+---
+layout: football
+page-title: Single Player
+player-heading: true
+---
+
+{{> _football_player-filter}}
+
+<!-- Content
+================================================== -->
+<div class="site-content">
+	<div class="container">
+
+		<!-- Last Game Log -->
+		<div class="card card--has-table">
+			<div class="card__header">
+				<h4>Last Game Log</h4>
+			</div>
+			<div class="card__content">
+				<div class="table-responsive">
+					<table class="table table-hover game-player-result">
+						<thead>
+							<tr>
+								<th class="game-player-result__date">Date</th>
+								<th class="game-player-result__vs">Versus</th>
+								<th class="game-player-result__score">Result</th>
+								<th class="game-player-result__stat">CMP</th>
+								<th class="game-player-result__stat">ATT</th>
+								<th class="game-player-result__stat">YDS</th>
+								<th class="game-player-result__stat">CMP%</th>
+								<th class="game-player-result__stat">AVG</th>
+								<th class="game-player-result__stat">LNG</th>
+								<th class="game-player-result__stat">TD</th>
+								<th class="game-player-result__stat">INT</th>
+								<th class="game-player-result__stat">QBR</th>
+								<th class="game-player-result__stat">RAT</th>
+								<th class="game-player-result__stat">ATT</th>
+								<th class="game-player-result__stat">YDS</th>
+								<th class="game-player-result__stat">AVG</th>
+								<th class="game-player-result__stat">LNG</th>
+								<th class="game-player-result__stat">TD</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th colspan="3" class="game-player-result__th game-player-result__th--game">Game</th>
+								<th colspan="10" class="game-player-result__th game-player-result__th--passing">Passing</th>
+								<th colspan="5" class="game-player-result__th game-player-result__th--rushing">Rushing</th>
+							</tr>
+
+							{{#each football.sp.player.stats}}
+							<tr>
+								<td class="game-player-result__date">{{date}}</td>
+								<td class="game-player-result__vs">
+									<div class="team-meta">
+										<figure class="team-meta__logo">
+											<img src="{{../root}}assets/images/samples/logos/{{team.logo}}" alt="">
+										</figure>
+										<div class="team-meta__info">
+											<h6 class="team-meta__name">{{team.name}}</h6>
+											<span class="team-meta__place">{{team.place}}</span>
+										</div>
+									</div>
+								</td>
+								<td class="game-player-result__score"><span class="game-player-result__game {{#ifequal result.outcome 'W'}}game-player-result__game--win{{else}}game-player-result__game--lose{{/ifequal}}">{{result.outcome}}</span> {{result.score}}</td>
+								{{#each performance.passing}}
+								<td class="game-player-result__stat">{{this}}</td>
+								{{/each}}
+								{{#each performance.rushing}}
+								<td class="game-player-result__stat">{{this}}</td>
+								{{/each}}
+							</tr>
+							{{/each}}
+
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<!-- Last Game Log / End -->
+
+		<!-- Complete Passing Stats -->
+		<div class="card card--has-table">
+			<div class="card__header">
+				<h4>Complete Passing Stats</h4>
+			</div>
+			<div class="card__content">
+				<div class="table-responsive">
+					<table class="table table-hover player-season-avg">
+						<thead>
+							<tr>
+								<th class="player-season-avg__season">Season/League</th>
+								<th class="player-season-avg__stat">GP</th>
+								<th class="player-season-avg__stat">CMP</th>
+								<th class="player-season-avg__stat">ATT</th>
+								<th class="player-season-avg__stat">CMP%</th>
+								<th class="player-season-avg__stat">YDS</th>
+								<th class="player-season-avg__stat">AVG</th>
+								<th class="player-season-avg__stat">TD</th>
+								<th class="player-season-avg__stat">LNG</th>
+								<th class="player-season-avg__stat">INT</th>
+								<th class="player-season-avg__stat">FUM</th>
+								<th class="player-season-avg__stat">QBR</th>
+								<th class="player-season-avg__stat">RAT</th>
+							</tr>
+						</thead>
+						<tbody>
+
+							{{#each football.sp.player.passing_stats}}
+							<tr>
+								<td class="player-season-avg__season">{{season}}</td>
+								<td class="player-season-avg__stat">{{gp}}</td>
+								<td class="player-season-avg__stat">{{cmp}}</td>
+								<td class="player-season-avg__stat">{{att}}</td>
+								<td class="player-season-avg__stat">{{cmppercent}}</td>
+								<td class="player-season-avg__stat">{{yds}}</td>
+								<td class="player-season-avg__stat">{{avg}}</td>
+								<td class="player-season-avg__stat">{{td}}</td>
+								<td class="player-season-avg__stat">{{lng}}</td>
+								<td class="player-season-avg__stat">{{int}}</td>
+								<td class="player-season-avg__stat">{{fum}}</td>
+								<td class="player-season-avg__stat">{{qbr}}</td>
+								<td class="player-season-avg__stat">{{rat}}</td>
+							</tr>
+							{{/each}}
+
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<!-- Complete Passing Stats / End -->
+
+		<!-- Player Glossary -->
+		<div class="card">
+			<div class="card__header">
+				<h4>Terms Glossary</h4>
+			</div>
+			<div class="card__content">
+				<div class="glossary">
+					<div class="glossary__item"><span class="glossary__abbr">CMP:</span> Completions</div>
+					<div class="glossary__item"><span class="glossary__abbr">CMP%:</span> Completion Percentage</div>
+					<div class="glossary__item"><span class="glossary__abbr">TD:</span> Passing Touchdowns</div>
+					<div class="glossary__item"><span class="glossary__abbr">LNG:</span> Longest Pass Play</div>
+					<div class="glossary__item"><span class="glossary__abbr">ATT:</span> Pass Attempts</div>
+					<div class="glossary__item"><span class="glossary__abbr">FUM:</span> Total Fumbles</div>
+					<div class="glossary__item"><span class="glossary__abbr">YDS:</span> Passing Yards</div>
+					<div class="glossary__item"><span class="glossary__abbr">QBR:</span> Total Quarterback Rating</div>
+					<div class="glossary__item"><span class="glossary__abbr">AVG:</span> Yards per Pass Attempt</div>
+					<div class="glossary__item"><span class="glossary__abbr">GP:</span> Games Played</div>
+					<div class="glossary__item"><span class="glossary__abbr">INT:</span> Interceptions Thrown</div>
+					<div class="glossary__item"><span class="glossary__abbr">RAT:</span> Passer (QB) Rating</div>
+				</div>
+			</div>
+		</div>
+		<!-- Player Glossary / End -->
+
+	</div>
+</div>
+
+<!-- Content / End -->

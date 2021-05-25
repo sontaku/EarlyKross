@@ -1,0 +1,86 @@
+---
+layout: soccer
+page-title: Tournament
+page-heading: "Tournament"
+
+breadcrumbs: [
+	{
+		label: "Tournament"
+	}
+]
+---
+
+<!-- Content
+================================================== -->
+<div class="site-content">
+	<div class="container">
+
+		<!-- Tournament Brackets -->
+		<div class="card card--clean">
+			<header class="card__header">
+				<h4>Tournament Bracket</h4>
+			</header>
+			<div class="card__content">
+
+				<!-- Brackets -->
+				<div class="tournament-bracket">
+
+					{{#each soccer.sp.tournament.bracket-1}}
+					<div class="tournament-bracket__round">
+						<h6 class="tournament-bracket__round-title d-block d-lg-none d-xl-none">{{title}}</h6>
+						<ul class="tournament-bracket__list">
+							{{#each list}}
+							<li class="tournament-bracket__item">
+								<div class="tournament-bracket__match" tabindex="0">
+									<table class="tournament-bracket__table">
+										<tbody class="tournament-bracket__content">
+											{{#each this}}
+											<tr class="tournament-bracket__team {{#if winner}}tournament-bracket__team--winner{{/if}} {{#if champ}}tournament-bracket__team--champ{{/if}}">
+												<td class="tournament-bracket__inner">
+													<figure class="tournament-bracket__team-thumb">
+														{{#if thumb}}
+														<img src="{{../root}}assets/images/{{thumb}}" alt="">
+														{{/if}}
+													</figure>
+													<div class="tournament-bracket__team-info text-truncate">
+														{{#if team}}
+														<h6 class="tournament-bracket__team-name text-truncate">{{team}}</h6>
+														{{/if}}
+														{{#if desc}}
+														<span class="tournament-bracket__team-desc text-truncate">{{desc}}</span>
+														{{/if}}
+													</div>
+												</td>
+												<td class="tournament-bracket__score">
+													{{#if champ}}
+													<div class="tournament-bracket__number tournament-bracket__champ-icon">
+														<svg role="img" class="df-icon df-icon--trophy">
+															<use xlink:href="{{../root}}assets/images/icons.svg#trophy"/>
+														</svg>
+													</div>
+													{{else}}
+													<span class="tournament-bracket__number">{{score}}</span>
+													{{/if}}
+												</td>
+											</tr>
+											{{/each}}
+										</tbody>
+									</table>
+								</div>
+							</li>
+							{{/each}}
+						</ul>
+					</div>
+					{{/each}}
+
+				</div>
+				<!-- Brackets -->
+
+			</div>
+		</div>
+		<!-- Tournament Brackets / End -->
+
+	</div>
+</div>
+
+<!-- Content / End -->

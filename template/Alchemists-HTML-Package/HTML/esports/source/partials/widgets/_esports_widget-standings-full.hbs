@@ -1,0 +1,42 @@
+<!-- Widget: Standings -->
+<aside class="widget card widget--sidebar widget-standings">
+	<div class="widget__title card__header card__header--has-btn">
+		<h4>{{#if title}}{{title}}{{else}}Standings{{/if}}</h4>
+		<a href="#" class="btn btn-default btn-xs card-header__button">See All Stats</a>
+	</div>
+	<div class="widget__content card__content">
+		<div class="table-responsive">
+			<table class="table table-hover table-standings">
+				<thead>
+					<tr>
+						<th>Team Positions</th>
+						<th>Overall Record</th>
+						<th>Match Record</th>
+					</tr>
+				</thead>
+				<tbody>
+
+					{{#each esports.sp.league-table }}
+					<tr class="{{#if highlight}}highlighted{{/if}}">
+						<td>
+							<div class="team-meta">
+								<figure class="team-meta__logo">
+									<img src="{{../root}}assets/images/{{logo}}" alt="{{name}}">
+								</figure>
+								<div class="team-meta__info">
+									<h6 class="team-meta__name">{{name}}</h6>
+									<span class="team-meta__place">{{place}}</span>
+								</div>
+							</div>
+						</td>
+						<td>{{stats.overall}}</td>
+						<td>{{stats.match}}</td>
+					</tr>
+					{{/each}}
+
+				</tbody>
+			</table>
+		</div>
+	</div>
+</aside>
+<!-- Widget: Standings / End -->

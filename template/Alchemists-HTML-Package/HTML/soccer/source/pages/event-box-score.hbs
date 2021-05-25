@@ -1,0 +1,101 @@
+---
+page-title: Event - Box Score
+event-header: true
+---
+
+{{> _event-nav}}
+
+<!-- Content
+================================================== -->
+<div class="site-content">
+	<div class="container">
+
+		<div class="row">
+
+			<!-- Content -->
+			<div class="content col-lg-12">
+
+				{{#each basketball.sp.event.box-score.teams}}
+				<!-- Box Score - Team {{@key}} -->
+				<div class="card card--has-table {{#if color}}card--color--{{color}}{{/if}}">
+					<div class="card__header card__header--has-team-info">
+						<div class="team-meta">
+							<figure class="team-meta__logo">
+								<img src="{{logo}}" alt="{{name}}">
+							</figure>
+							<div class="team-meta__info">
+								<h6 class="team-meta__name">{{name}}</h6>
+								<span class="team-meta__place">{{info}}</span>
+							</div>
+						</div>
+					</div>
+					<div class="card__content">
+						<div class="table-responsive">
+							<table class="table table-hover alc-table-stats">
+								<thead>
+									<tr>
+										{{#each thead}}
+										<th class="alc-{{class}}">{{label}}</th>
+										{{/each}}
+									</tr>
+								</thead>
+								<tbody>
+
+									<!-- Starters -->
+									{{#each players.starters}}
+									<tr>
+										<td class="alc-name">{{name}}</td>
+										<td class="alc-position">{{position}}</td>
+
+										{{#each stats}}
+										<td>{{value}}</td>
+										{{/each}}
+									</tr>
+									{{/each}}
+									<!-- Starters / End -->
+
+									<!-- Bench Players -->
+									<tr>
+										<th class="alc-subheader alc-highlight" colspan="16">Bench</th>
+									</tr>
+									{{#each players.bench}}
+									<tr>
+										<td class="alc-name">{{name}}</td>
+										<td class="alc-position">{{position}}</td>
+
+										{{#ifequal stats 'false'}}
+										<td colspan="14" class="alc-dnp text-uppercase">DNP - Coach's decision</td>
+										{{/ifequal}}
+
+										{{#each stats}}
+										<td>{{value}}</td>
+										{{/each}}
+
+									</tr>
+									{{/each}}
+									<!-- Bench Players / End -->
+
+									<!-- Total -->
+									<tr>
+										<td colspan="3" class="alc-total">Team Totals</td>
+										{{#each total}}
+										<td class="alc-highlight">{{value}}</td>
+										{{/each}}
+									</tr>
+									<!-- Total / End -->
+
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!-- Box Score - Team #{{$key}} / End -->
+				{{/each}}
+
+			</div>
+			<!-- Content / End -->
+		</div>
+	</div>
+</div>
+
+<!-- Content / End -->

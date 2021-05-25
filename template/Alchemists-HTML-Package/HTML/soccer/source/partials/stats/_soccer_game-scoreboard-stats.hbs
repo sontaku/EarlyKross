@@ -1,0 +1,193 @@
+<!-- Game Scoreboard -->
+<div class="card">
+	<header class="card__header alc-teams-legend">
+		<h4 class="alc-teams-legend__title">Match Statistics</h4>
+		<div class="alc-teams-legend__info">
+			<!-- Teams -->
+			<div class="alc-teams-legend__teams">
+
+				{{#each soccer.sp.event.stats.meta}}
+				<!-- Team #{{@key}} -->
+				<div class="alc-teams-legend__team">
+					<span class="alc-teams-legend__team-color alc-teams-legend__team-color--color-{{color}}"></span>
+					<img src="{{logo}}" class="alc-teams-legend__team-logo" alt="{{name}}">
+				</div>
+				<!-- Team #{{@key}} / End -->
+				{{/each}}
+
+			</div>
+			<!-- Teams / End -->
+
+			{{#if link_to_event}}
+			<a href="_soccer_event-team-stats.html" class="btn btn-default btn-outline btn-xs">Full Team Stats</a>
+			{{/if}}
+		</div>
+	</header>
+	<div class="card__content">
+
+		<!-- Game Result -->
+		<div class="game-result">
+			<section class="game-result__section">
+				<div class="game-result__content mb-0">
+					<div class="game-result__stats">
+						<div class="row">
+							<div class="col-12 col-md-6 order-md-2">
+								<div class="game-result__table-stats game-result__table-stats--soccer">
+									<table class="table table-wrap-bordered table-thead-color">
+										<thead>
+											<tr>
+												<th colspan="3">Main Statistics</th>
+											</tr>
+										</thead>
+										<tbody>
+											{{#each soccer.sp.event.stats.main}}
+											<tr>
+												<td>{{team1}}</td>
+												<td>{{label}}</td>
+												<td>{{team2}}</td>
+											</tr>
+											{{/each}}
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="col-6 col-md-3 order-md-1 game-result__stats-team-1">
+
+								<div class="row">
+									{{#each soccer.sp.event.stats.percentages.team1}}
+									<div class="col-6">
+										<div class="circular circular--size-70">
+											<div class="circular__bar" data-percent="{{value}}">
+												<span class="circular__percents">{{value}}<small>%</small></span>
+											</div>
+											<span class="circular__label">{{label}}</span>
+										</div>
+									</div>
+									{{/each}}
+								</div>
+
+								<div class="spacer"></div>
+
+								{{#each soccer.sp.event.stats.progress-bars.team1}}
+								<!-- Progress: {{label}} -->
+								<div class="progress-stats">
+									<div class="progress__label">{{label}}</div>
+									<div class="progress">
+										<div class="progress__bar" role="progressbar" aria-valuenow="{{pct}}" aria-valuemin="0" aria-valuemax="100" style="width: {{pct}}%; "></div>
+									</div>
+									<div class="progress__number">{{value}}</div>
+								</div>
+								<!-- Progress: {{label}} / End -->
+								{{/each}}
+
+							</div>
+							<div class="col-6 col-md-3 order-md-3 game-result__stats-team-2">
+
+								<div class="row">
+									{{#each soccer.sp.event.stats.percentages.team1}}
+									<div class="col-6">
+										<div class="circular circular--size-70">
+											<div class="circular__bar" data-percent="{{value}}" data-bar-color="#9fe900">
+												<span class="circular__percents">{{value}}<small>%</small></span>
+											</div>
+											<span class="circular__label">{{label}}</span>
+										</div>
+									</div>
+									{{/each}}
+								</div>
+
+								<div class="spacer"></div>
+
+								{{#each soccer.sp.event.stats.progress-bars.team2}}
+								<!-- Progress: {{label}} -->
+								<div class="progress-stats">
+									<div class="progress__label">{{label}}</div>
+									<div class="progress">
+										<div class="progress__bar progress__bar--success" role="progressbar" aria-valuenow="{{pct}}" aria-valuemin="0" aria-valuemax="100" style="width: {{pct}}%;"></div>
+									</div>
+									<div class="progress__number">{{value}}</div>
+								</div>
+								<!-- Progress: {{label}} / End -->
+								{{/each}}
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Ball Possession -->
+			<section class="game-result__section">
+				<header class="game-result__subheader card__subheader">
+					<h5 class="game-result__subtitle">Ball Possession</h5>
+				</header>
+				<div class="game-result__content">
+
+					<div class="spacer-sm"></div>
+
+					<!-- Progress: Ball Possession -->
+					{{#each soccer.sp.event.stats.possession}}
+					<div class="progress-double-wrapper">
+						<div class="progress-inner-holder">
+							<div class="progress__digit progress__digit--left progress__digit--highlight">{{team1.value}}%</div>
+							<div class="progress__double">
+								<div class="progress progress--lg">
+									<div class="progress__bar" role="progressbar" aria-valuenow="{{team1.value}}" aria-valuemin="0" aria-valuemax="100" style="width: {{team1.value}}%;"></div>
+								</div>
+								<div class="progress progress--lg">
+									<div class="progress__bar progress__bar--success" role="progressbar" aria-valuenow="{{team2.value}}" aria-valuemin="0" aria-valuemax="100" style="width: {{team2.value}}%;"></div>
+								</div>
+							</div>
+							<div class="progress__digit progress__digit--right progress__digit--highlight">{{team2.value}}%</div>
+						</div>
+					</div>
+					{{/each}}
+					<!-- Progress: Ball Possession / End -->
+
+				</div>
+			</section>
+			<!-- Ball Possession / End -->
+
+			{{#if additional_stats}}
+			<!-- Additional Statistics -->
+			<section class="game-result__section">
+				<header class="game-result__subheader card__subheader">
+					<h5 class="game-result__subtitle">Additional Statistics</h5>
+				</header>
+				<div class="game-result__content">
+
+					<div class="spacer-sm"></div>
+
+					<div class="progress-double-container">
+						{{#each soccer.sp.event.stats.additional}}
+						<!-- Stat: {{label}} -->
+						<div class="progress-double-wrapper">
+							<h6 class="progress-title progress-title--lg">{{label}}</h6>
+							<div class="progress-inner-holder">
+								<div class="progress__digit progress__digit--left progress__digit--highlight">{{team1.value}}</div>
+								<div class="progress__double">
+									<div class="progress progress--lg">
+										<div class="progress__bar" role="progressbar" aria-valuenow="{{team1.pct}}" aria-valuemin="0" aria-valuemax="100" style="width: {{team1.pct}}%;"></div>
+									</div>
+									<div class="progress progress--lg">
+										<div class="progress__bar progress__bar--success" role="progressbar" aria-valuenow="{{team2.pct}}" aria-valuemin="0" aria-valuemax="100" style="width: {{team2.pct}}%;"></div>
+									</div>
+								</div>
+								<div class="progress__digit progress__digit--right progress__digit--highlight">{{team2.value}}</div>
+							</div>
+						</div>
+						<!-- Stat: {{label}} / End -->
+						{{/each}}
+					</div>
+
+				</div>
+			</section>
+			<!-- Additional Statistics / End -->
+			{{/if}}
+
+		</div>
+		<!-- Game Result / End -->
+
+	</div>
+</div>
+<!-- Game Scoreboard / End -->

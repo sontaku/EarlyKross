@@ -1,0 +1,74 @@
+---
+layout: esports
+page-title: Team Gallery
+page-heading: "Team <span class=\"highlight\">Gallery</span>"
+megamenu: v3
+
+breadcrumbs: [
+	{
+		label: "Teams",
+		link: "#"
+	},
+	{
+		label: "L.O. Heroes",
+		link: "#"
+	},
+	{
+		label: "Team Gallery"
+	}
+]
+---
+
+{{> _esports_team-filter }}
+
+<!-- Content
+================================================== -->
+<div class="site-content">
+	<div class="container">
+
+		<!-- Gallery -->
+		<div class="gallery row">
+			{{#each esports.sp.team.gallery}}
+			<div class="gallery__item col-6 col-sm-4">
+				<a href="_esports_team-gallery-album.html" class="gallery__item-inner card">
+					<figure class="gallery__thumb">
+						<img src="{{../root}}assets/images/esports/samples/{{featured}}" alt="">
+						<span class="btn-fab gallery__btn-fab"></span>
+					</figure>
+					<ul class="gallery__thumb-list list-unstyled">
+						<li class="gallery__thumb-item">
+							<img src="{{../root}}assets/images/esports/samples/{{thumbs.thumb1}}" alt="">
+						</li>
+						<li class="gallery__thumb-item">
+							<img src="{{../root}}assets/images/esports/samples/{{thumbs.thumb2}}" alt="">
+						</li>
+						<li class="gallery__thumb-item">
+							<img src="{{../root}}assets/images/esports/samples/{{thumbs.thumb3}}" alt="">
+							<span class="gallery__thumb-item-number">+{{size}}</span>
+						</li>
+					</ul>
+					<div class="gallery__content card__content card__content--header-bg">
+						<span class="gallery__icon gallery__icon--circle">
+							<span class="icon-picture"></span>
+						</span>
+						<div class="gallery__details">
+							<h4 class="gallery__name">{{title}}</h4>
+							<div class="gallery__date">Updated: {{date}}</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			{{/each}}
+		</div>
+		<!-- Gallery / End -->
+
+		<div class="spacer-lg"></div>
+
+		<div class="text-center">
+			<a href="#" class="btn btn-primary-inverse btn-lg">Load More Albums...</a>
+		</div>
+
+	</div>
+</div>
+
+<!-- Content / End -->

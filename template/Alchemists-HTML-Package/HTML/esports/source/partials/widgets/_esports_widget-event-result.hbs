@@ -1,0 +1,134 @@
+<!-- Widget: Event Result -->
+<aside class="widget card widget--sidebar widget-game-result">
+	<div class="widget__title card__header">
+		<h4>Match Overview</h4>
+	</div>
+	<div class="widget__content card__content">
+		<!-- Game Score -->
+		<div class="widget-game-result__section">
+			<div class="widget-game-result__section-inner">
+
+				<header class="widget-game-result__header widget-game-result__header--alt widget-game-result__header--alt-compact mb-4">
+					<h3 class="widget-game-result__title">Madison Cube Garden</h3>
+					<time class="widget-game-result__date" datetime="2018-04-26">Friday, April 26th</time>
+				</header>
+
+				<header class="widget-game-result__header">
+					<h3 class="widget-game-result__title">Pro League - World Championship</h3>
+					<div class="widget-game-result__subtitle">Quater-Finals</div>
+				</header>
+
+				<div class="widget-game-result__main">
+					<!-- 1st Team -->
+					<div class="widget-game-result__team widget-game-result__team--first">
+						<figure class="widget-game-result__team-logo">
+							<a href="#"><img src="{{../root}}assets/images/esports/logos/alchemists-86x98.png" alt=""></a>
+						</figure>
+						<div class="widget-game-result__team-info">
+							<h5 class="widget-game-result__team-name">Alchemists</h5>
+							<div class="widget-game-result__team-desc">United States</div>
+						</div>
+					</div>
+					<!-- 1st Team / End -->
+
+					<div class="widget-game-result__score-wrap">
+						<div class="widget-game-result__score">
+							<span class="widget-game-result__score-result widget-game-result__score-result--winner">8</span> <span class="widget-game-result__score-dash">-</span> <span class="widget-game-result__score-result widget-game-result__score-result--loser">5</span>
+						</div>
+						<div class="widget-game-result__score-label">
+							32:29
+							<span class="widget-game-result__score-sublabel">Game Duration</span>
+						</div>
+					</div>
+
+					<!-- 2nd Team -->
+					<div class="widget-game-result__team widget-game-result__team--second">
+						<figure class="widget-game-result__team-logo">
+							<a href="#"><img src="{{../root}}assets/images/samples/logo-sharks--sm.png" alt=""></a>
+						</figure>
+						<div class="widget-game-result__team-info">
+							<h5 class="widget-game-result__team-name">Sharks</h5>
+							<div class="widget-game-result__team-desc">South Korea</div>
+						</div>
+					</div>
+					<!-- 2nd Team / End -->
+				</div>
+			</div>
+		</div>
+		<!-- Game Score / End -->
+
+		<!-- Game Statistics -->
+		<div class="widget-game-result__section">
+			<header class="widget-game-result__subheader card__subheader card__subheader--sm card__subheader--nomargins">
+				<h5 class="widget-game-result__subtitle">Match Statistics</h5>
+			</header>
+			<div class="widget-game-result__section-inner">
+
+				<!-- Progress Stats Table -->
+				<table class="progress-table progress-table--sm-space">
+					<tbody>
+
+						{{#each esports.sp.event.widget-event-overview.stats}}
+						<tr>
+							<td class="progress-table__progress-label {{#if team1.highlight}}progress-table__progress-label--highlight{{/if}}">{{team1.value}}</td>
+							<td class="progress-table__progress-bar progress-table__progress-bar--first">
+								<div class="progress progress--lines">
+									<div class="progress__bar" style="width: {{team1.pct}}%;" role="progressbar" aria-valuenow="{{team1.value}}" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</td>
+							<td class="progress-table__title">{{label}}</td>
+							<td class="progress-table__progress-bar progress-table__progress-bar--second">
+								<div class="progress progress--lines">
+									<div class="progress__bar progress__bar--info" style="width: {{team2.pct}}%;" role="progressbar" aria-valuenow="{{team2.value}}" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</td>
+							<td class="progress-table__progress-label {{#if team2.highlight}}progress-table__progress-label--highlight{{/if}}">{{team2.value}}</td>
+						</tr>
+						{{/each}}
+
+					</tbody>
+				</table>
+				<!-- Progress Stats Table / End -->
+
+			</div>
+		</div>
+		<!-- Game Statistics / End -->
+
+		<!-- Additional Stats -->
+		<div class="widget-game-result__section">
+			<header class="widget-game-result__subheader card__subheader card__subheader--sm card__subheader--nomargins">
+				<h5 class="widget-game-result__subtitle">Additional Stats</h5>
+			</header>
+			<div class="widget-game-result__section-inner">
+
+				<!-- Circular Bars -->
+				<ul class="widget-game-result__stats-circular-bars list-unstyled">
+
+					{{#each esports.sp.event.widget-event-overview.additional-stats}}
+					<li class="widget-game-result__stats-circular-item">
+						<div class="widget-game-result__stats-circular-bar">
+							<div class="circular circular--size-40">
+								<div class="circular__bar" data-percent="{{pct}}" data-track-color="#00ff5b" data-bar-color="#00deff">
+									<svg role="img" class="df-icon df-icon--{{icon}}" data-toggle="tooltip" data-placement="top" title="{{value}}">
+										<use xlink:href="{{../root}}assets/images/esports/icons-esports.svg#{{icon}}"/>
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div class="widget-game-result__stats-meta">
+							<span class="widget-game-result__stats-value">{{label}}</span>
+							<span class="widget-game-result__stats-label">{{sublabel}}</span>
+						</div>
+					</li>
+					{{/each}}
+
+				</ul>
+				<!-- Circular Bars / End -->
+
+			</div>
+		</div>
+		<!-- Additional Stats / End -->
+
+	</div>
+</aside>
+<!-- Widget: Event Result / End -->

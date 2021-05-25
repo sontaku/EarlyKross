@@ -1,0 +1,55 @@
+<!-- Single Product Tabbed Content -->
+<div class="product-tabs row">
+	<div class="col-md-4">
+		<!-- Nav tabs -->
+		<div class="card">
+			<div class="card__content">
+				<nav class="df-account-navigation">
+					<ul class="nav" role="tablist">
+						<li class="nav-item df-account-navigation__link">
+							<a class="nav-link active" href="#tab-desciption" role="tab" data-toggle="tab"><small>Product</small>Full Description</a>
+						</li>
+						<li class="nav-item df-account-navigation__link">
+							<a class="nav-link" href="#tab-info" role="tab" data-toggle="tab"><small>Product</small>Additional Information</a>
+						</li>
+						<li class="nav-item df-account-navigation__link">
+							<a class="nav-link" href="#tab-reviews" role="tab" data-toggle="tab"><small>Product</small>Customer Reviews <span>(3)</span></a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<!-- Nav tabs / End -->
+	</div>
+	<div class="col-md-8">
+		<!-- Tab panes -->
+		<div class="tab-content">
+
+			<!-- Tab: Description -->
+			<div role="tabpanel" class="tab-pane fade show active" id="tab-desciption">
+
+				{{> _football_product-tab-description}}
+
+			</div>
+			<!-- Tab: Description / End -->
+
+			<!-- Tab: Shipping -->
+			<div role="tabpanel" class="tab-pane fade" id="tab-info">
+
+				{{> _football_product-tab-info}}
+
+			</div>
+			<!-- Tab: Shipping / End -->
+
+			<!-- Tab: Reviews -->
+			<div role="tabpanel" class="tab-pane fade" id="tab-reviews">
+
+				{{> _football_product-tab-reviews}}
+
+			</div>
+			<!-- Tab: Reviews / End -->
+		</div>
+		<!-- Tab panes / End -->
+	</div>
+</div>
+<!-- Single Product Tabbed Content / End -->

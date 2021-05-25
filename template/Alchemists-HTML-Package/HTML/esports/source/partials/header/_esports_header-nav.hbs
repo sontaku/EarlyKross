@@ -1,0 +1,141 @@
+<!-- Main Navigation -->
+<nav class="main-nav">
+	<ul class="main-nav__list">
+		<li class="{{#ifpage '_esports_index' '_esports_index-2'}}active{{/ifpage}}"><a href="_esports_index.html">Home</a>
+			<ul class="main-nav__sub">
+				<li class="{{#ifpage '_esports_index'}}active{{/ifpage}}"><a href="_esports_index.html">Home - version 1</a></li>
+				<li class="{{#ifpage '_esports_index-2'}}active{{/ifpage}}"><a href="_esports_index-2.html">Home - version 2</a></li>
+			</ul>
+		</li>
+		<li class="{{#ifpage '_esports_features-shortcodes' '_esports_features-typography' '_esports_features-widgets-blog' '_esports_features-widgets-shop' '_esports_features-widgets-sports' '_esports_features-404' '_esports_features-search-results' '_esports_page-contacts'}}active{{/ifpage}}"><a href="#">Features</a>
+			<!-- Mega Menu -->
+			<div class="main-nav__megamenu">
+				<div class="row">
+					<div class="col-12">
+						{{> _esports_nav-widget-latest-news}}
+					</div>
+					<div class="w-100"></div>
+					<ul class="col-lg-5 col-md-3 col-12 main-nav__ul main-nav__ul-3cols">
+						<li class="main-nav__title">Main Features</li>
+						<li><a href="_esports_features-shortcodes.html">Shortcodes</a></li>
+						<li><a href="_esports_features-widgets-blog.html">Widgets - Blog</a></li>
+						<li><a href="_esports_index.html">Home V1</a></li>
+						<li><a href="_esports_features-typography.html">Typography</a></li>
+						<li><a href="_esports_features-widgets-sports.html">Widgets - eSports</a></li>
+						<li><a href="_esports_index-2.html">Home V2</a></li>
+						<li><a href="_esports_features-404.html">404 Error</a></li>
+						<li><a href="_esports_features-widgets-shop.html">Widgets - Shop</a></li>
+						<li></li>
+						<li><a href="_esports_features-search-results.html">Search Results</a></li>
+						<li><a href="_esports_shop-login.html">Login/Register</a></li>
+					</ul>
+					<ul class="col-lg-3 col-md-3 col-12 main-nav__ul main-nav__ul-2cols">
+						<li class="main-nav__title">Blog Pages</li>
+						<li><a href="_esports_blog-1.html">News Page V1</a></li>
+						<li><a href="_esports_blog-post-1.html">Post Page V1</a></li>
+						<li><a href="_esports_blog-2.html">News Page V2</a></li>
+						<li><a href="_esports_blog-post-2.html">Post Page V2</a></li>
+						<li><a href="_esports_blog-3.html">News Page V3</a></li>
+						<li><a href="_esports_blog-post-3.html">Post Page V3</a></li>
+						<li><a href="_esports_blog-4.html">News Page V4</a></li>
+					</ul>
+					<ul class="col-lg-2 col-md-3 col-12 main-nav__ul">
+						<li class="main-nav__title">Other Pages</li>
+						<li><a href="_esports_page-sponsors.html">Sponsors</a></li>
+						<li><a href="_esports_page-faqs.html">FAQs</a></li>
+						<li><a href="_esports_page-contacts.html">Contacts</a></li>
+						<li><a href="_esports_features-404.html">404 Error</a></li>
+					</ul>
+					<ul class="col-lg-2 col-md-3 col-12 main-nav__ul">
+						<li class="main-nav__title">Headers</li>
+						<li><a href="_esports_features-typography.html">Header V1</a></li>
+						<li><a href="_esports_features-shortcodes.html">Header V2</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- Mega Menu / End -->
+		</li>
+		<li class="{{#ifpage '_football_team-overview' '_football_team-roster' '_football_team-standings' '_football_team-last-results' '_football_team-schedule' '_football_team-gallery' '_football_team-gallery' '_football_team-gallery-album' '_football_staff-single'}}active{{/ifpage}}"><a href="_esports_team-overview.html">The Team</a>
+			<!-- Mega Menu -->
+			<div class="main-nav__megamenu main-nav__megamenu--no-paddings {{#ifequal megamenu 'v3'}}main-nav__megamenu--has-bg{{/ifequal}}">
+				<div class="row">
+					<ul class="col-lg-4 col-md-4 col-12 main-nav__ul main-nav__ul-2cols">
+						<li class="main-nav__title main-nav-banner {{#ifequal megamenu 'v4'}}main-nav-banner--top{{/ifequal}} main-nav-banner--img-1">
+							<a href="#" class="main-nav-banner__link">
+								<span class="main-nav-banner__subtitle">Alchemists.X</span>
+								<span class="main-nav-banner__title">Xenowatch</span>
+							</a>
+						</li>
+						<li><a href="_esports_event-overview-1a.html">Event Overview v1-A</a></li>
+						<li><a href="_esports_event-overview-1b.html">Event Overview v1-B</a></li>
+						<li><a href="_esports_event-overview-1c.html">Event Overview v1-C</a></li>
+						<li><a href="_esports_event-overview-2.html">Event Overview v2</a></li>
+						<li><a href="_esports_event-overview-3.html">Event Overview v3</a></li>
+						<li><a href="_esports_event-calendar.html">Events Calendar</a></li>
+						<li><a href="_esports_event-tournament.html">Tournaments Page</a></li>
+					</ul>
+					<ul class="col-lg-4 col-md-4 col-12 main-nav__ul main-nav__ul-2cols">
+						<li class="main-nav__title main-nav-banner {{#ifequal megamenu 'v4'}}main-nav-banner--top{{/ifequal}} main-nav-banner--img-2">
+							<a href="#" class="main-nav-banner__link">
+								<span class="main-nav-banner__subtitle">Alchemists.GO</span>
+								<span class="main-nav-banner__title">Striker GO</span>
+							</a>
+						</li>
+						<li><a href="_esports_team-video-single.html">Single Video</a></li>
+						<li><a href="_esports_team-player.html">Player Page</a></li>
+						<li><a href="_esports_team-overview.html">Single Team Page</a></li>
+						<li><a href="_esports_blog-post-1.html">Single Post Page</a></li>
+						<li><a href="_esports_event-overview-3.html">Single Event</a></li>
+						<li><a href="_esports_shop-product.html">Single Product</a></li>
+						<li><a href="_esports_team-gallery-album.html">Single Album</a></li>
+					</ul>
+					<ul class="col-lg-4 col-md-4 col-12 main-nav__ul main-nav__ul-2cols">
+						<li class="main-nav__title main-nav-banner {{#ifequal megamenu 'v4'}}main-nav-banner--top{{/ifequal}} main-nav-banner--img-3">
+							<a href="#" class="main-nav-banner__link">
+								<span class="main-nav-banner__subtitle">Alchemists LOH</span>
+								<span class="main-nav-banner__title">League of Heroes</span>
+							</a>
+						</li>
+						<li><a href="_esports_team-overview.html">Team Overview</a></li>
+						<li><a href="_esports_team-roster.html">Team Roster</a></li>
+						<li><a href="_esports_team-standings.html">Team Standings</a></li>
+						<li><a href="_esports_team-last-results.html">Latest Results</a></li>
+						<li><a href="_esports_team-schedule.html">Next Matches</a></li>
+						<li><a href="_esports_team-gallery.html">Team Gallery</a></li>
+						<li><a href="_esports_team-gallery-album.html">Team Album</a></li>
+						<li><a href="_esports_team-videos.html">Team Videos</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- Mega Menu / End -->
+		</li>
+		<li class="{{#ifpage '_esports_shop-sidebar' '_esports_shop-fullwidth' '_esports_shop-product' '_esports_shop-checkout' '_esports_shop-wishlist' '_esports_shop-account' '_esports_shop-login' '_esports_shop-cart'}}active{{/ifpage}}">
+			<a href="_esports_shop-fullwidth.html">Shop</a>
+			<ul class="main-nav__sub">
+				<li class="{{#ifpage '_esports_shop-sidebar'}}active{{/ifpage}}"><a href="_esports_shop-sidebar.html">Shop - Sidebar</a></li>
+				<li class="{{#ifpage '_esports_shop-fullwidth'}}active{{/ifpage}}"><a href="_esports_shop-fullwidth.html">Shop - Full Width</a></li>
+				<li class="{{#ifpage '_esports_shop-product'}}active{{/ifpage}}"><a href="_esports_shop-product.html">Single Product</a></li>
+				<li class="{{#ifpage '_esports_shop-cart'}}active{{/ifpage}}"><a href="_esports_shop-cart.html">Cart</a></li>
+				<li class="{{#ifpage '_esports_shop-checkout'}}active{{/ifpage}}"><a href="_esports_shop-checkout.html">Checkout</a></li>
+				<li class="{{#ifpage '_esports_shop-wishlist'}}active{{/ifpage}}"><a href="_esports_shop-wishlist.html">Wishlist</a></li>
+				<li class="{{#ifpage '_esports_shop-login'}}active{{/ifpage}}"><a href="_esports_shop-login.html">Login</a></li>
+				<li class="{{#ifpage '_esports_shop-account'}}active{{/ifpage}}"><a href="_esports_shop-account.html">Account</a></li>
+			</ul>
+		</li>
+
+		{{#if header-alt }}
+		<li class="{{#ifpage '_esports_event-tournament'}}active{{/ifpage}}"><a href="_esports_event-tournament.html">Tournaments</a></li>
+		<li class="{{#ifpage '_esports_blog-1' '_esports_blog-2' '_esports_blog-3'}}active{{/ifpage}}"><a href="_esports_blog-1.html">News</a>
+			<ul class="main-nav__sub">
+				<li class="{{#ifpage '_esports_blog-1'}}active{{/ifpage}}"><a href="_esports_blog-1.html">News Page V1</a></li>
+				<li class="{{#ifpage '_esports_blog-2'}}active{{/ifpage}}"><a href="_esports_blog-2.html">News Page V2</a></li>
+				<li class="{{#ifpage '_esports_blog-3'}}active{{/ifpage}}"><a href="_esports_blog-3.html">News Page V3</a></li>
+			</ul>
+		</li>
+		<li class="{{#ifpage '_esports_team-player'}}active{{/ifpage}}"><a href="_esports_team-player.html">Player</a></li>
+		<li class="{{#ifpage '_esports_page-contacts'}}active{{/ifpage}}"><a href="_esports_page-contacts.html">Contact Us</a></li>
+		{{/if}}
+
+	</ul>
+</nav>
+<!-- Main Navigation / End -->

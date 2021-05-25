@@ -1,0 +1,90 @@
+---
+layout: football
+page-title: Event - Play-by-Play
+event-header: true
+---
+
+{{> _football_event-nav}}
+
+<!-- Content
+================================================== -->
+<div class="site-content">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-lg-8">
+
+				<!-- Play-by-Play Toggled Content -->
+				<div class="widget card card--has-table">
+					<div class="widget__content card__content">
+						<div class="table-responsive">
+							{{#each football.sp.event.play-by-play}}
+							<table class="table table table-hover alc-table-stats alc-table-stats--compact">
+								<thead class="table-card-header">
+									<tr>
+										<th class="table-card-header__title">{{thead.title}}</th>
+										<th class="alc-item-sm">
+											<img src="{{thead.team1.logo}}" alt="{{thead.team1.name}}">
+										</th>
+										<th class="alc-item-sm">
+											<img src="{{thead.team2.logo}}" alt="{{thead.team2.name}}">
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									{{#each tbody}}
+										<tr>
+											<th colspan="3" class="alc-highlight">{{this.title}}</th>
+										</tr>
+										{{#each this.content}}
+
+										<tr {{#if details}}data-toggle="collapse" data-target="#item-{{id}}-{{@index}}" aria-expanded="false" aria-controls="item-{{id}}-{{@index}}"{{/if}}>
+											<td class="alc-align-start">
+												<div class="alc-instance-info alc-instance-info--toggle">
+													<img src="{{team.logo}}" class="alc-instance-info__img" alt="{{team.name}}">
+													<div class="alc-instance-info__content">
+														<div class="alc-instance-info__title">{{label}}</div>
+														<div class="alc-instance-info__desc">{{desc}}</div>
+													</div>
+												</div>
+											</td>
+											{{#each stats}}
+											<td class="alc-highlight alc-item-sm">{{value}}</td>
+											{{/each}}
+										</tr>
+										{{#if details}}
+										<tr class="collapse" id="item-{{id}}-{{@index}}">
+											<td colspan="3" class="alc-table-stats__details pt-0 pb-0">
+												<ul class="alc-table-stats__details-list list-unstyled">
+													{{#each details}}
+													<li class="alc-table-stats__details-item">
+														<h6 class="alc-table-stats__details-title">{{title}}</h6>
+														<div class="alc-table-stats__details-desc">{{desc}}</div>
+													</li>
+													{{/each}}
+												</ul>
+											</td>
+										</tr>
+										{{/if}}
+
+										{{/each}}
+									{{/each}}
+								</tbody>
+							</table>
+							{{/each}}
+						</div>
+					</div>
+				</div>
+				<!-- Play-by-Play Toggled Content / End -->
+			</div>
+
+			<div class="sidebar col-lg-4">
+				{{> _football_widget-standings}}
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
+<!-- Content / End -->

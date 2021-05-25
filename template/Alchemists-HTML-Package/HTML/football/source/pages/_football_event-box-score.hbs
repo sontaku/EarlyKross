@@ -1,0 +1,73 @@
+---
+layout: football
+page-title: Event - Box Score
+event-header: true
+---
+
+{{> _football_event-nav}}
+
+<!-- Content
+================================================== -->
+<div class="site-content">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-lg-8">
+
+				{{#each football.sp.event.box-score}}
+				{{#each this}}
+				<div class="row">
+					{{#each this}}
+					<div class="col-lg-6">
+						<div class="widget card card--has-table {{#if color}}card--color-clovers{{/if}}">
+							<div class="widget__title card__header">
+								<h4>{{title}}</h4>
+							</div>
+							<div class="widget__content card__content">
+
+								<div class="table-responsive">
+									<table class="table table-hover alc-table-stats alc-table-stats--compact-sm-hor">
+										<thead>
+											{{#if caption}}
+												<tr>
+												{{#each caption}}
+												<th colspan="{{colspan}}" {{#if class}}class="{{class}}"{{/if}}>{{label}}</th>
+												{{/each}}
+												</tr>
+											{{/if}}
+											<tr>
+												{{#each thead}}
+												<th {{#if class}}class="alc-{{class}}"{{/if}}>{{label}}</th>
+												{{/each}}
+											</tr>
+										</thead>
+										<tbody>
+											{{#each tbody}}
+											<tr>
+												{{#each this}}
+												<td class="{{#if class}}{{class}}{{/if}}">{{value}}</td>
+												{{/each}}
+											</tr>
+											{{/each}}
+										</tbody>
+									</table>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					{{/each}}
+				</div>
+				{{/each}}
+				{{/each}}
+
+			</div>
+			<div class="sidebar col-lg-4">
+				{{> _football_widget-event-leaders}}
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<!-- Content / End -->

@@ -1,0 +1,58 @@
+<!-- Widget: Latest Results -->
+<aside class="widget card widget--sidebar widget-results">
+	<div class="widget__title card__header card__header--has-btn">
+		<h4>Latest Results</h4>
+		<a href="#" class="btn btn-default btn-xs card-header__button">See Full Results</a>
+	</div>
+	<div class="widget__content card__content">
+		<dl class="widget-results__dl">
+
+			{{#each esports.sp.team.widget-results-2}}
+			<dt class="widget-results__dt widget-results__dt--{{cat}}">
+				{{label}}
+			</dt>
+			<dd class="widget-results__dd">
+				<ul class="widget-results__list">
+				{{#each events}}
+				<!-- Game #{{@key}} -->
+				<li class="widget-results__item">
+					<div class="widget-results__header justify-content-between">
+						<div class="widget-results__league">{{league}}</div>
+						<div class="widget-results__title">{{date}}</div>
+					</div>
+					<div class="widget-results__content">
+						<div class="widget-results__team widget-results__team--first">
+							<figure class="widget-results__team-logo">
+								<img src="{{../root}}assets/images/{{team1.logo}}" alt="">
+							</figure>
+							<div class="widget-results__team-details">
+								<h5 class="widget-results__team-name">{{team1.name}}</h5>
+								<span class="widget-results__team-info">{{team1.place}}</span>
+							</div>
+						</div>
+						<div class="widget-results__result">
+							<div class="widget-results__score">
+								<span class="widget-results__score-{{#if team1.result.outcome.win}}winner{{else}}loser{{/if}}">{{team1.result.score}}</span> - <span class="widget-results__score-{{#if team2.result.outcome.win}}winner{{else}}loser{{/if}}">{{team2.result.score}}</span>
+							</div>
+						</div>
+						<div class="widget-results__team widget-results__team--second">
+							<figure class="widget-results__team-logo">
+								<img src="{{../root}}assets/images/{{team2.logo}}" alt="">
+							</figure>
+							<div class="widget-results__team-details">
+								<h5 class="widget-results__team-name">{{team2.name}}</h5>
+								<span class="widget-results__team-info">{{team2.place}}</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<!-- Game #{{@key}} / End -->
+				{{/each}}
+				</ul>
+			</dd>
+			{{/each}}
+
+		</dl>
+	</div>
+</aside>
+<!-- Widget: Latest Results / End -->

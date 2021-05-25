@@ -1,0 +1,24 @@
+<!-- Page Heading
+================================================== -->
+<div class="page-heading page-heading--horizontal effect-duotone effect-duotone--primary">
+	<div class="container">
+		<div class="row">
+			<div class="col align-self-start">
+				<h1 class="page-heading__title">{{{page-heading}}}</h1>
+			</div>
+			<div class="col align-self-end">
+				<ol class="page-heading__breadcrumb breadcrumb font-italic">
+					<li class="breadcrumb-item"><a href="{{../root}}_esports_index.html">Home</a></li>
+					{{#each breadcrumbs}}
+					{{#if @last}}
+					<li class="breadcrumb-item active" aria-current="page">{{label}}</li>
+					{{else}}
+					<li class="breadcrumb-item"><a href="{{link}}">{{label}}</a></li>
+					{{/if}}
+					{{/each}}
+				</ol>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Page Heading / End -->
