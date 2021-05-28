@@ -15,7 +15,7 @@ import lombok.ToString;
 // 리그
 
 @Entity // 엔티티를 위한 클래스(클래스 내 인스턴스를 JPA로 관리)
-@Table(name = "player") // name으로 지정한 이름으로 테이블 생성
+@Table(name = "league") // name으로 지정한 이름으로 테이블 생성
 @ToString
 @Getter
 @Builder // 객체 생성
