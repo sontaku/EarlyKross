@@ -5,6 +5,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -25,11 +27,29 @@ public class Club {
 
     @Id // PK 지정
     @GeneratedValue(strategy = GenerationType.IDENTITY) // 자동 생성번호
-    private int cid; // 클럽 idx
+    private int cId; // 클럽번호
 
-    @Column(length = 200, nullable = false) // false = not null
-    private String memoText;
+    @Column(columnDefinition = "varchar(30)")
+    private String name; // 이름
 
-//    @Column(columnDefinition = "varchar(255) default 'SYSDATE'")
-//    private String writeDate;
+    @Column(columnDefinition = "varchar(30)")
+    private String ename; // 영문명
+
+    @Column(columnDefinition = "varchar(30)")
+    private String founded; // 창단연도
+
+    @Column(columnDefinition = "varchar(50)")
+    private String hometown; // 홈 경기장
+
+    @Column(columnDefinition = "varchar(30)")
+    private String manager; // 감독
+
+    @Column(columnDefinition = "varchar(100)")
+    private String website; // 웹사이트
+
+    @Column(columnDefinition = "varchar(10)")
+    private String teamColor; // 상징색
+
+    @Column(columnDefinition = "varchar(30)")
+    private String emblem; // 엠블럼
 }

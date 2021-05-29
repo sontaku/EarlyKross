@@ -1,5 +1,6 @@
 package com.ek.earlykross.entity;
 
+import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -14,46 +15,47 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-// 선수
+// 클럽기록
 
 @Entity // 엔티티를 위한 클래스(클래스 내 인스턴스를 JPA로 관리)
-@Table(name = "player") // name으로 지정한 이름으로 테이블 생성
+@Table(name = "clubResults") // name으로 지정한 이름으로 테이블 생성
 @ToString
 @Getter
 @Builder // 객체 생성
 @AllArgsConstructor
 @NoArgsConstructor
-public class Player {
+public class ClubResults implements Serializable {
 
     @Id // PK 지정
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // 자동 생성번호
-    private int pId; // 선수번호
-
     @ManyToOne
     @JoinColumn(name = "cId")
     private Club cId; // 클럽번호
 
-    @Column(columnDefinition = "varchar(30)")
-    private String name; // 이름
+    @ManyToOne
+    @JoinColumn(name = "pMp")
+    private Player pMp; // 최다출장선수
 
-    @Column(columnDefinition = "varchar(50)")
-    private String ename; // 영문명
+    @ManyToOne
+    @JoinColumn(name = "pMg")
+    private Player pMg; // 최다득점선수
 
-    @Column(columnDefinition = "varchar(10)")
-    private String position; // 포지션
+    @ManyToOne
+    @JoinColumn(name = "pMa")
+    private Player pMa; // 최다도움선수
 
-    @Column
-    private int backNo; // 등번호
-
-    @Column(columnDefinition = "varchar(30)")
-    private String nationality; // 국적
-
-    @Column
-    private int height; // 키
+    @ManyToOne
+    @JoinColumn(name = "pMap")
+    private Player pMap; // 최다공포선수
 
     @Column
-    private int weight; // 몸무게
+    private int mostPlayed; // 최다출장수
 
-    @Column(columnDefinition = "varchar(30)")
-    private String birthday; // 생년월일
+    @Column
+    private int mostGoal; // 최다득점수
+
+    @Column
+    private int mostAs; // 최다도움수
+
+    @Column
+    private int mostAp; // 최다공격포인트수
 }

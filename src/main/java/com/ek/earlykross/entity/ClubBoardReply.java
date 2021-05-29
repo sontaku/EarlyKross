@@ -14,46 +14,32 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-// 선수
+// 팀별 게시판 댓글
 
 @Entity // 엔티티를 위한 클래스(클래스 내 인스턴스를 JPA로 관리)
-@Table(name = "player") // name으로 지정한 이름으로 테이블 생성
+@Table(name = "clubBoardReply") // name으로 지정한 이름으로 테이블 생성
 @ToString
 @Getter
 @Builder // 객체 생성
 @AllArgsConstructor
 @NoArgsConstructor
-public class Player {
+public class ClubBoardReply {
 
     @Id // PK 지정
     @GeneratedValue(strategy = GenerationType.IDENTITY) // 자동 생성번호
-    private int pId; // 선수번호
+    private int cbrId; // 댓글번호
 
     @ManyToOne
-    @JoinColumn(name = "cId")
-    private Club cId; // 클럽번호
+    @JoinColumn(name = "cbId")
+    private ClubBoard cbId; // 글번호
+
+    @ManyToOne
+    @JoinColumn(name = "mId")
+    private Member mId; // 작성자
 
     @Column(columnDefinition = "varchar(30)")
-    private String name; // 이름
+    private String cbrDate; // 작성일
 
-    @Column(columnDefinition = "varchar(50)")
-    private String ename; // 영문명
-
-    @Column(columnDefinition = "varchar(10)")
-    private String position; // 포지션
-
-    @Column
-    private int backNo; // 등번호
-
-    @Column(columnDefinition = "varchar(30)")
-    private String nationality; // 국적
-
-    @Column
-    private int height; // 키
-
-    @Column
-    private int weight; // 몸무게
-
-    @Column(columnDefinition = "varchar(30)")
-    private String birthday; // 생년월일
+    @Column(columnDefinition = "text")
+    private String cbrText; // 내용
 }

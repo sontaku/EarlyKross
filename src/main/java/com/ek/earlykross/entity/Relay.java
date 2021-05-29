@@ -15,52 +15,25 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-// 리그
+// 중계방(경기내용)
 
 @Entity // 엔티티를 위한 클래스(클래스 내 인스턴스를 JPA로 관리)
-@Table(name = "league") // name으로 지정한 이름으로 테이블 생성
+@Table(name = "relay") // name으로 지정한 이름으로 테이블 생성
 @ToString
 @Getter
 @Builder // 객체 생성
 @AllArgsConstructor
 @NoArgsConstructor
-public class League implements Serializable {
+public class Relay implements Serializable {
 
     @Id // PK 지정
     @ManyToOne
-    @JoinColumn(name = "cId")
-    private Club cId; // 클럽번호
-
+    @JoinColumn(name = "fId")
+    private Fixture fId; // 경기번호
+    
     @Column(columnDefinition = "varchar(30)")
-    private String season; // 시즌
+    private String rDate; // 시간
 
-    @Column
-    private int played; // 경기수
-
-    @Column
-    private int points; // 승점
-
-    @Column
-    private int won; // 승
-
-    @Column
-    private int drawn; // 무
-
-    @Column
-    private int lost; // 패
-
-    @Column
-    private int gf; // 득점
-
-    @Column
-    private int ga; // 실점
-
-    @Column
-    private int gd; // 득실차
-
-    @Column
-    private int assist; // 도움
-
-    @Column
-    private int fc; // 파울
+    @Column(columnDefinition = "text")
+    private String rText; // 내용
 }
