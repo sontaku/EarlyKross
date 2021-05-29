@@ -53,35 +53,26 @@
 
 
 
-## Position
+## 구성원
 
- ### 김광운 (PL)
-
- - 리액트 공부하세요
- - Little Bro 관리
- - 인턴
-
- ### 박태영 (Old Bro)
-
- - 서버 관리
- - FireBase 채팅방
- - 총무
-
- ### 손진영 (PM)
-
+- 김광운 : https://github.com/kklck
+  - 리액트 공부하세요
+   - Little Bro 관리
+   - 인턴
+- 박태영 : https://github.com/tanguri
+  - 서버 관리
+   - FireBase 채팅방
+   - 총무
+- 손진영 : https://github.com/sontaku
   - ELK 
-  - Front Frame nanum
-  - 형상관리
-
- ### 최현웅 (Dict)
-
- - 시키는 거 다 못하겠습니다.
- - Old Bro BOJO
-
- ### 탁우근 (Little Bro)
-
- - 파일 업로드
- - 린캔버스
+    - Front Frame nanum
+    - 형상관리
+- 최현웅 : https://github.com/rphonica
+  - 시키는 거 다 못하겠습니다.
+   - Old Bro BOJO
+- 탁우근
+  - 파일 업로드
+   - 린캔버스
 
 
 
