@@ -33,19 +33,19 @@ public class Player {
     @JoinColumn(name = "cId")
     private Club cId; // 클럽번호 - 선수는 소속클럽이 없을 수 있음
 
-    @Column(columnDefinition = "varchar(30)")
+    @Column(columnDefinition = "varchar(100)")
     private String name; // 이름
 
-    @Column(columnDefinition = "varchar(50)")
+    @Column(columnDefinition = "varchar(100)")
     private String ename; // 영문명
 
-    @Column(columnDefinition = "varchar(10)")
+    @Column(columnDefinition = "varchar(30)")
     private String position; // 포지션
 
     @Column
     private int backNo; // 등번호
 
-    @Column(columnDefinition = "varchar(30)")
+    @Column(columnDefinition = "varchar(100)")
     private String nationality; // 국적
 
     @Column

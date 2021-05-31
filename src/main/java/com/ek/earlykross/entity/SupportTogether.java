@@ -41,7 +41,7 @@ public class SupportTogether {
     @JoinColumn(name = "guestId")
     private Member guestId; // 참가자
 
-    @Column(columnDefinition = "varchar(50)")
+    @Column(columnDefinition = "varchar(500)")
     private String location; // 장소
 
     @Column(columnDefinition = "varchar(30)")

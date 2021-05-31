@@ -37,10 +37,10 @@ public class ClubBoard {
     @JoinColumn(name = "mId", nullable = false)
     private Member mId;
 
-    @Column(columnDefinition = "varchar(30)")
+    @Column(columnDefinition = "varchar(300)")
     private String title; // 제목
 
-    @Column(columnDefinition = "varchar(30)")
+    @Column(columnDefinition = "varchar(50)")
     private String cbDate; // 작성일
 
     @Column

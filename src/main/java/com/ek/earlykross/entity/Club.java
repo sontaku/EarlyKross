@@ -29,25 +29,25 @@ public class Club {
     @GeneratedValue(strategy = GenerationType.IDENTITY) // 자동 생성번호
     private int cId; // 클럽번호
 
-    @Column(columnDefinition = "varchar(30)")
+    @Column(columnDefinition = "varchar(100)")
     private String name; // 이름
 
-    @Column(columnDefinition = "varchar(30)")
+    @Column(columnDefinition = "varchar(100)")
     private String ename; // 영문명
 
     @Column(columnDefinition = "varchar(30)")
     private String founded; // 창단연도
 
-    @Column(columnDefinition = "varchar(50)")
+    @Column(columnDefinition = "varchar(100)")
     private String hometown; // 홈 경기장
 
-    @Column(columnDefinition = "varchar(30)")
+    @Column(columnDefinition = "varchar(100)")
     private String manager; // 감독
 
-    @Column(columnDefinition = "varchar(100)")
+    @Column(columnDefinition = "varchar(300)")
     private String website; // 웹사이트
 
-    @Column(columnDefinition = "varchar(10)")
+    @Column(columnDefinition = "varchar(30)")
     private String teamColor; // 상징색
 
     @Column(columnDefinition = "varchar(500)")
