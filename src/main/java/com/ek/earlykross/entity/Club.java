@@ -50,6 +50,6 @@ public class Club {
     @Column(columnDefinition = "varchar(10)")
     private String teamColor; // 상징색
 
-    @Column(columnDefinition = "varchar(30)")
+    @Column(columnDefinition = "varchar(500)")
     private String emblem; // 엠블럼
 }
