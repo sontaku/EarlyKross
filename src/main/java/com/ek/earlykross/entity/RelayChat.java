@@ -14,35 +14,28 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-// 팀별 게시판
+// 중계방(채팅)
 
 @Entity // 엔티티를 위한 클래스(클래스 내 인스턴스를 JPA로 관리)
-@Table(name = "clubBoard") // name으로 지정한 이름으로 테이블 생성
+@Table(name = "relayChat") // name으로 지정한 이름으로 테이블 생성
 @ToString
 @Getter
 @Builder // 객체 생성
 @AllArgsConstructor
 @NoArgsConstructor
-public class ClubBoard {
+public class RelayChat {
 
     @Id // PK 지정
     @GeneratedValue(strategy = GenerationType.IDENTITY) // 자동 생성번호
-    private int cbId; // 클럽번호
-
-    @ManyToOne
-    @JoinColumn(name = "cId")
-    private Club cId;
+    private int rcId; // 채팅번호
 
     @ManyToOne
     @JoinColumn(name = "mId")
-    private Member mId;
+    private Member mId; // 회원번호
+
+    @Column(columnDefinition = "text")
+    private String rcText; // 내용
 
     @Column(columnDefinition = "varchar(30)")
-    private String title; // 제목
-
-    @Column(columnDefinition = "varchar(30)")
-    private String cbDate; // 작성일
-
-    @Column
-    private int view; // 조회수
+    private String rcDate; // 일시
 }

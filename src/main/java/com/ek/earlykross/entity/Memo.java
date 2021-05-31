@@ -3,22 +3,25 @@ package com.ek.earlykross.entity;
 import lombok.*;
 
 import javax.persistence.*;
+import javax.persistence.GenerationType;
 
 
-@Entity // 이 클래스는 엔티티 위한 클래스이다. Bean 느낌. JPA 에서 반드시 추가. 옵션 따라 테이블 자동 구성
-@Table(name = "tbl_memo")// 이 클래스를 어떤 테이블로 생성할지. 테이블 명 뿐만 아니라 인덱스도 설정 가능
+@Entity // 엔티티를 위한 클래스(클래스 내 인스턴스를 JPA로 관리)
+@Table(name = "tbl_memo") // name으로 지정한 이름으로 테이블 생성
 @ToString
-@Getter // 게터 메소드 생성
-@Setter
+@Getter
 @Builder // 객체 생성
-@AllArgsConstructor // 빌드 컴파일 에러 방지
-@NoArgsConstructor // 빌드 컴파일 에러 방지
+@AllArgsConstructor
+@NoArgsConstructor
 public class Memo {
 
-    @Id // 이 필드는 PK 이다.
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // 값을 사용자가 초기화하지 않으면 자동 번호 생성, (auto increment)
+    @Id // PK 지정
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // 자동 생성번호
     private Long mno;
 
-    @Column(length = 200, nullable = false)
+    @Column(length = 200, nullable = false) // 테이블 내 컬럼. 반대는 @Transient
     private String memoText;
+
+    @Column(columnDefinition = "varchar(255) default 'SYSDATE'")
+    private String writeDate;
 }

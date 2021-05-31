@@ -14,35 +14,32 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-// 팀별 게시판
+// 경기일정
 
 @Entity // 엔티티를 위한 클래스(클래스 내 인스턴스를 JPA로 관리)
-@Table(name = "clubBoard") // name으로 지정한 이름으로 테이블 생성
+@Table(name = "fixture") // name으로 지정한 이름으로 테이블 생성
 @ToString
 @Getter
 @Builder // 객체 생성
 @AllArgsConstructor
 @NoArgsConstructor
-public class ClubBoard {
+public class Fixture {
 
     @Id // PK 지정
     @GeneratedValue(strategy = GenerationType.IDENTITY) // 자동 생성번호
-    private int cbId; // 클럽번호
+    private int fId; // 경기번호
+    
+    @ManyToOne
+    @JoinColumn(name = "home")
+    private Club home; // 홈
 
     @ManyToOne
-    @JoinColumn(name = "cId")
-    private Club cId;
-
-    @ManyToOne
-    @JoinColumn(name = "mId")
-    private Member mId;
-
+    @JoinColumn(name = "away")
+    private Club away; // 어웨이
+    
     @Column(columnDefinition = "varchar(30)")
-    private String title; // 제목
+    private String fDate; // 일시
 
-    @Column(columnDefinition = "varchar(30)")
-    private String cbDate; // 작성일
-
-    @Column
-    private int view; // 조회수
+    @Column(columnDefinition = "varchar(50)")
+    private String stadium; // 경기장
 }

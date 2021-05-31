@@ -1,5 +1,6 @@
 package com.ek.earlykross.entity;
 
+import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -14,35 +15,52 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-// 팀별 게시판
+// 리그
 
 @Entity // 엔티티를 위한 클래스(클래스 내 인스턴스를 JPA로 관리)
-@Table(name = "clubBoard") // name으로 지정한 이름으로 테이블 생성
+@Table(name = "league") // name으로 지정한 이름으로 테이블 생성
 @ToString
 @Getter
 @Builder // 객체 생성
 @AllArgsConstructor
 @NoArgsConstructor
-public class ClubBoard {
+public class League implements Serializable {
 
     @Id // PK 지정
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // 자동 생성번호
-    private int cbId; // 클럽번호
-
     @ManyToOne
     @JoinColumn(name = "cId")
-    private Club cId;
-
-    @ManyToOne
-    @JoinColumn(name = "mId")
-    private Member mId;
+    private Club cId; // 클럽번호
 
     @Column(columnDefinition = "varchar(30)")
-    private String title; // 제목
-
-    @Column(columnDefinition = "varchar(30)")
-    private String cbDate; // 작성일
+    private String season; // 시즌
 
     @Column
-    private int view; // 조회수
+    private int played; // 경기수
+
+    @Column
+    private int points; // 승점
+
+    @Column
+    private int won; // 승
+
+    @Column
+    private int drawn; // 무
+
+    @Column
+    private int lost; // 패
+
+    @Column
+    private int gf; // 득점
+
+    @Column
+    private int ga; // 실점
+
+    @Column
+    private int gd; // 득실차
+
+    @Column
+    private int assist; // 도움
+
+    @Column
+    private int fc; // 파울
 }

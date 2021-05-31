@@ -14,35 +14,36 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-// 팀별 게시판
+// 같이응원
 
 @Entity // 엔티티를 위한 클래스(클래스 내 인스턴스를 JPA로 관리)
-@Table(name = "clubBoard") // name으로 지정한 이름으로 테이블 생성
+@Table(name = "supportTogether") // name으로 지정한 이름으로 테이블 생성
 @ToString
 @Getter
 @Builder // 객체 생성
 @AllArgsConstructor
 @NoArgsConstructor
-public class ClubBoard {
+public class SupportTogether {
 
     @Id // PK 지정
     @GeneratedValue(strategy = GenerationType.IDENTITY) // 자동 생성번호
-    private int cbId; // 클럽번호
+    private int stId; // 응원번호
 
     @ManyToOne
     @JoinColumn(name = "cId")
-    private Club cId;
+    private Club cId; // 응원팀
 
     @ManyToOne
-    @JoinColumn(name = "mId")
-    private Member mId;
+    @JoinColumn(name = "mId") 
+    private Member mId; // 주최자
+
+    @ManyToOne
+    @JoinColumn(name = "mId2")
+    private Member mId2; // 참가자
+
+    @Column(columnDefinition = "varchar(50)")
+    private String location; // 장소
 
     @Column(columnDefinition = "varchar(30)")
-    private String title; // 제목
-
-    @Column(columnDefinition = "varchar(30)")
-    private String cbDate; // 작성일
-
-    @Column
-    private int view; // 조회수
+    private String stDate; // 일시
 }
