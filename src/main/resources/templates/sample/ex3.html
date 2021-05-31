@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<div class="container">-->
+<!--    <h4> 글쓰기 </h4>-->
+<!--    <br><br>-->
+<!--    <form method="post" action="write.do">-->
+<!--        <input type="text" name="user" th:value="${user.user}">-->
+<!--        <label>제목 :-->
+<!--            <input type="text" name="title">-->
+<!--        </label>-->
+<!--        <br>-->
+<!--        <label>내용 :-->
+<!--            <textarea name="content"></textarea>-->
+<!--        </label>-->
+<!--        <select name="cate">-->
+<!--            <option value="서울">서울</option>-->
+<!--            <option value="인천">인천</option>-->
+<!--        </select>-->
+<!--        <label>공개-->
+<!--            <input type="radio" name="cPublic" value="true">-->
+<!--        </label>-->
+<!--        <label>비공개-->
+<!--            <input type="radio" name="cPublic" value="true">-->
+<!--        </label>-->
+<!--        <input type="submit" value="작성">-->
+<!--    </form>-->
+<!--</div>-->
+
+
+<!-- state : 인덱스 순번, 홀짝 지정, count : 1부터 시작하는 state -->
+<!-- settings > inspection > thymeleaf 검색 > 체크 해제 -->
+<!-- 반복문 -  th:each = "변수 : ${모델}" -->
+<!-- 조건문 -  th:if="${조건}" -->
+    <ul> 5의 배수
+        <li th:each = "vo,state : ${list}" th:if="${vo.sno % 5 == 0}">
+            [[${state.index}]] --- [[${vo}]] <!-- 별도의 태그 없이 인라인으로 쓰고싶을 때-->
+        </li>
+    </ul>
+    <br>
+    <ul>if - unless
+        <li th:each = "vo,state : ${list}">
+            <span th:if="${vo.sno % 5 == 0}" th:text="${'-----------------------'+vo.sno}"></span>
+            <!-- else if 를 unless 단독으로 해야함-->
+            <span th:unless="${vo.sno % 5 == 0}" th:text="${vo.first}"></span>
+        </li>
+    </ul>
+    <br>
+<!-- th:text 에서 삼항연산자로 쉽게 가능 -->
+    <ul> 삼항연산자
+        <li th:each = "vo,state : ${list}" th:text="${vo.sno % 5 == 0} ? ${'-----------------------'+vo.sno}:${vo.first}">
+        </li>
+    </ul>
+    <ul> CSS
+        <li th:each = "vo,state : ${list}" th:class="${vo.sno % 5==0}?'target'" th:text="${vo}">
+        </li>
+    </ul>
+
+
+</body>
+</html>

@@ -45,6 +45,4 @@ public class ClubBoard {
 
     @Column
     private int view; // 조회수
-
-
 }
