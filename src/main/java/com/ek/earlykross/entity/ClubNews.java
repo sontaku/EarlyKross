@@ -30,7 +30,7 @@ public class ClubNews {
     private int nId; // 뉴스번호
 
     @ManyToOne
-    @JoinColumn(name = "cId")
+    @JoinColumn(name = "cId", nullable = false)
     private Club cId; // 클럽번호
     
     @Column(columnDefinition = "varchar(30)")

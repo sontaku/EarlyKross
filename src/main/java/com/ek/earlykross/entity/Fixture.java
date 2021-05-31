@@ -30,11 +30,11 @@ public class Fixture {
     private int fId; // 경기번호
     
     @ManyToOne
-    @JoinColumn(name = "home")
+    @JoinColumn(name = "home", nullable = false)
     private Club home; // 홈
 
     @ManyToOne
-    @JoinColumn(name = "away")
+    @JoinColumn(name = "away", nullable = false)
     private Club away; // 어웨이
     
     @Column(columnDefinition = "varchar(30)")

@@ -30,11 +30,11 @@ public class ClubBoardReply {
     private int cbrId; // 댓글번호
 
     @ManyToOne
-    @JoinColumn(name = "cbId")
+    @JoinColumn(name = "cbId", nullable = false)
     private ClubBoard cbId; // 글번호
 
     @ManyToOne
-    @JoinColumn(name = "mId")
+    @JoinColumn(name = "mId", nullable = false)
     private Member mId; // 작성자
 
     @Column(columnDefinition = "varchar(30)")

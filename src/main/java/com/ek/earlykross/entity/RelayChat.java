@@ -30,7 +30,7 @@ public class RelayChat {
     private int rcId; // 채팅번호
 
     @ManyToOne
-    @JoinColumn(name = "mId")
+    @JoinColumn(name = "mId", nullable = false)
     private Member mId; // 회원번호
 
     @Column(columnDefinition = "text")

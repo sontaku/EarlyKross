@@ -31,7 +31,7 @@ public class PlayerRecord implements Serializable {
     @JoinColumn(name = "pId")
     private Player pId; // 선수번호
 
-    @Column(columnDefinition = "varchar(10)")
+    @Column(columnDefinition = "varchar(10)", nullable = false)
     private String season; // 시즌
 
     @Column
@@ -57,7 +57,7 @@ public class PlayerRecord implements Serializable {
     @Column
     private int ck; // 코너킥
     @Column
-    private int fc; // 파울
+    private int fo; // 파울
     @Column
     private int os; // 오프사이드
     @Column
@@ -66,5 +66,4 @@ public class PlayerRecord implements Serializable {
     private int yellow; // 경고
     @Column
     private int red; // 퇴장
-
 }

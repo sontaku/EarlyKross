@@ -30,16 +30,16 @@ public class SupportTogether {
     private int stId; // 응원번호
 
     @ManyToOne
-    @JoinColumn(name = "cId")
+    @JoinColumn(name = "cId", nullable = false)
     private Club cId; // 응원팀
 
     @ManyToOne
-    @JoinColumn(name = "mId") 
-    private Member mId; // 주최자
+    @JoinColumn(name = "hostId", nullable = false)
+    private Member hostId; // 주최자
 
     @ManyToOne
-    @JoinColumn(name = "mId2")
-    private Member mId2; // 참가자
+    @JoinColumn(name = "guestId")
+    private Member guestId; // 참가자
 
     @Column(columnDefinition = "varchar(50)")
     private String location; // 장소

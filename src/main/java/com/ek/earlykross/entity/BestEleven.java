@@ -31,11 +31,11 @@ import lombok.ToString;
 public class BestEleven implements Serializable {
 
     @Id // PK 지정
-    @Column(columnDefinition = "varchar(10)")
+    @Column(columnDefinition = "varchar(10)", nullable = false)
     private String season; // 시즌
 
     @Id // PK 지정
-    @Column
+    @Column(nullable = false)
     private int round; // 라운드
 
     @ManyToOne
@@ -43,47 +43,47 @@ public class BestEleven implements Serializable {
     private Member mId; // 회원번호SS
 
     @ManyToOne
-    @JoinColumn(name = "p1")
+    @JoinColumn(name = "p1", nullable = false)
     private Player p1; // 선수1
 
     @ManyToOne
-    @JoinColumn(name = "p2")
+    @JoinColumn(name = "p2", nullable = false)
     private Player p2; // 선수2
 
     @ManyToOne
-    @JoinColumn(name = "p3")
+    @JoinColumn(name = "p3", nullable = false)
     private Player p3; // 선수3
 
     @ManyToOne
-    @JoinColumn(name = "p4")
+    @JoinColumn(name = "p4", nullable = false)
     private Player p4; // 선수4
 
     @ManyToOne
-    @JoinColumn(name = "p5")
+    @JoinColumn(name = "p5", nullable = false)
     private Player p5; // 선수5
     
     @ManyToOne
-    @JoinColumn(name = "p6")
+    @JoinColumn(name = "p6", nullable = false)
     private Player p6; // 선수6
 
     @ManyToOne
-    @JoinColumn(name = "p7")
+    @JoinColumn(name = "p7", nullable = false)
     private Player p7; // 선수7
 
     @ManyToOne
-    @JoinColumn(name = "p8")
+    @JoinColumn(name = "p8", nullable = false)
     private Player p8; // 선수8
 
     @ManyToOne
-    @JoinColumn(name = "p9")
+    @JoinColumn(name = "p9", nullable = false)
     private Player p9; // 선수9
 
     @ManyToOne
-    @JoinColumn(name = "p10")
+    @JoinColumn(name = "p10", nullable = false)
     private Player p10; // 선수10
 
     @ManyToOne
-    @JoinColumn(name = "gk")
+    @JoinColumn(name = "gk", nullable = false)
     private Player gk; // 선수 : 골키퍼
 
     @Column(columnDefinition = "varchar(10)")

@@ -30,11 +30,11 @@ public class ClubBoard {
     private int cbId; // 클럽번호
 
     @ManyToOne
-    @JoinColumn(name = "cId")
+    @JoinColumn(name = "cId", nullable = false)
     private Club cId;
 
     @ManyToOne
-    @JoinColumn(name = "mId")
+    @JoinColumn(name = "mId", nullable = false)
     private Member mId;
 
     @Column(columnDefinition = "varchar(30)")

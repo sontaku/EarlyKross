@@ -25,7 +25,7 @@ import lombok.ToString;
 @NoArgsConstructor
 public class Club {
 
-    @Id // PK 지정
+    @Id// PK 지정
     @GeneratedValue(strategy = GenerationType.IDENTITY) // 자동 생성번호
     private int cId; // 클럽번호
 

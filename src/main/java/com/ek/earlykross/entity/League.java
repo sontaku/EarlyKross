@@ -31,7 +31,7 @@ public class League implements Serializable {
     @JoinColumn(name = "cId")
     private Club cId; // 클럽번호
 
-    @Column(columnDefinition = "varchar(30)")
+    @Column(columnDefinition = "varchar(30)", nullable = false)
     private String season; // 시즌
 
     @Column
@@ -62,5 +62,5 @@ public class League implements Serializable {
     private int assist; // 도움
 
     @Column
-    private int fc; // 파울
+    private int fo; // 파울
 }

@@ -31,7 +31,7 @@ public class Player {
 
     @ManyToOne
     @JoinColumn(name = "cId")
-    private Club cId; // 클럽번호
+    private Club cId; // 클럽번호 - 선수는 소속클럽이 없을 수 있음
 
     @Column(columnDefinition = "varchar(30)")
     private String name; // 이름

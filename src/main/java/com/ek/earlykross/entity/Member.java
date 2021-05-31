@@ -39,9 +39,9 @@ public class Member {
     @Column
     private int point; // 포인트
 
-    @Column
+    @Column(nullable = false)
     private int auth; // 회원등급
 
     @Column
-    private int blacklist; // 블랙리스트
+    private int blacklist; // 블랙리스트 0:기본, 1:블랙리스트
 }
