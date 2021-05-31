@@ -13,7 +13,7 @@ import javax.persistence.GenerationType;
 @Builder // 객체 생성
 @AllArgsConstructor
 @NoArgsConstructor
-public class Memo {
+public class Memo extends BaseEntity{
 
     @Id // PK 지정
     @GeneratedValue(strategy = GenerationType.IDENTITY) // 자동 생성번호
@@ -22,6 +22,10 @@ public class Memo {
     @Column(length = 200, nullable = false) // 테이블 내 컬럼. 반대는 @Transient
     private String memoText;
 
-    @Column(columnDefinition = "varchar(255) default 'SYSDATE'")
-    private String writeDate;
+//    @Column(columnDefinition = "varchar(255) default 'SYSDATE'")
+//    private String writeDate;
+
+    public void changeMemoText(String memoText){
+        this.memoText = memoText;
+    }
 }
