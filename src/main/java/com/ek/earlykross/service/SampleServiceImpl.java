@@ -25,7 +25,6 @@ import java.util.function.Function;
 @RequiredArgsConstructor
 public class SampleServiceImpl implements SampleService {
 
-
     private final MemoRepository repository; // 반드시 파이널
 
     @Override
