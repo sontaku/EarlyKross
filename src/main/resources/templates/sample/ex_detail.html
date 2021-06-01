@@ -8,7 +8,7 @@
         <h1 class="mt-4">글 상세</h1>
 
         <div class="form-group">
-            <label >Gno</label>
+            <label >Mno</label>
             <input type="text" class="form-control" name="mno" th:value="${dto.mno}" readonly >
         </div>
         <div class="form-group">
@@ -28,11 +28,11 @@
 
 <!--        <a th:href="@{/guestbook/list(page=${requestDTO.page})}"><button type="button" class="btn btn-info">List</button></a>-->
 
-        <a th:href="@{/sample/ex_update.do(mno = ${dto.mno}, page=${requestDTO.page})}">
+        <a th:href="@{/sample/ex_modify.do(mno = ${dto.mno}, page=${requestDTO.page}, type=${requestDTO.type}, keyword = ${requestDTO.keyword})}">
             <button type="button" class="btn btn-primary">수정</button>
         </a>
 
-        <a th:href="@{/sample/ex_read.do(page=${requestDTO.page})}">
+        <a th:href="@{/sample/ex_read.do(page=${requestDTO.page}, type=${requestDTO.type}, keyword = ${requestDTO.keyword})}">
             <button type="button" class="btn btn-info">목록</button>
         </a>
 

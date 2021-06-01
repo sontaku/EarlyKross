@@ -7,14 +7,24 @@ import com.ek.earlykross.vo.PageResultDTO;
 
 public interface SampleService {
 
+    // 메모 하나 읽기
     MemoDTO read(Long mno);
 
+    //메모 등록
     Long register(MemoDTO dto);
 
+    // 메모 전체 읽기
     PageResultDTO<MemoDTO, Memo> getList(PageRequestDTO requestDTO);
 
+    //메모 삭제
+    void remove(Long mno);
+
+    //메모 수정
+    void modify(MemoDTO dto);
+
+
     // dto 를 entity 로 변환
-    default Memo dtoToEntity(MemoDTO dto){
+    default Memo dtoToEntity(MemoDTO dto) {
         Memo entity = Memo.builder()
                 .mno(dto.getMno())
                 .memoText(dto.getMemoText())
@@ -23,7 +33,7 @@ public interface SampleService {
     }
 
     // entity 를 dto 로 변환
-    default MemoDTO entityToDto(Memo entity){
+    default MemoDTO entityToDto(Memo entity) {
         MemoDTO dto = MemoDTO.builder()
                 .mno(entity.getMno())
                 .memoText(entity.getMemoText())

@@ -15,6 +15,8 @@ import org.springframework.data.domain.Sort;
 public class PageRequestDTO {
     private int page;
     private int size;
+    private String type;
+    private String keyword;
 
     // 기본값은 1, 10이 좋으니까
     public PageRequestDTO() {

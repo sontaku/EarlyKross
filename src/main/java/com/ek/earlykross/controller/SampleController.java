@@ -143,10 +143,39 @@ public class SampleController {
         return "redirect:/sample/ex_read.do";
     }
 
-    @GetMapping("ex_detail.do") // 나중에 다시 목록으로 돌아가는 데이터 같이 저장하기 위해 requestDTO 사용
+    @GetMapping({"ex_detail.do", "ex_modify.do"}) // 나중에 다시 목록으로 돌아가는 데이터 같이 저장하기 위해 requestDTO 사용
     public void detail(long mno, @ModelAttribute("requestDTO") PageRequestDTO requestDTO, Model model){
         log.info("mno : " + mno);
         MemoDTO dto = service.read(mno);
         model.addAttribute("dto",dto);
     }
+
+    @PostMapping("ex_remove.do")
+    public String remove(long mno, RedirectAttributes redirectAttributes){
+
+        log.info("mno : " + mno);
+
+        service.remove(mno);
+
+        redirectAttributes.addFlashAttribute("msg",mno);
+
+        return "redirect:/sample/ex_read.do";
+    }
+
+    @PostMapping("ex_modify.do")
+    public String modfiy(MemoDTO dto, @ModelAttribute("requestDTO") PageRequestDTO requestDTO, RedirectAttributes redirectAttributes){
+
+        log.info("post modify.do.....");
+        log.info("dto : "+dto);
+
+        service.modify(dto);
+
+        redirectAttributes.addAttribute("page",requestDTO.getPage());
+        redirectAttributes.addAttribute("type",requestDTO.getType());
+        redirectAttributes.addAttribute("mno",requestDTO.getKeyword());
+        redirectAttributes.addAttribute("mno",dto.getMno());
+
+        return "redirect:/sample/ex_detail.do";
+    }
+
 }

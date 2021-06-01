@@ -7,68 +7,107 @@
 <!--</style>-->
 <th:block th:replace="~{/layout/basic :: setContent(~{this::content} )}">
 
-    <th:block th:fragment="content">
-        <h1 class="mt-4">글 목록
-            <span>
+  <th:block th:fragment="content">
+    <h1 class="mt-4">글 목록
+      <span>
                 <a th:href="@{/sample/ex_create.do}">
                     <button type="button" class="btn btn-outline-primary">글 쓰기
                     </button>
                 </a>
             </span>
-        </h1>
-        <table class="table table-striped">
-            <tr>
-                <th scope="col">글 번호</th>
-                <th scope="col">내용</th>
-                <th scope="col">날짜</th>
-            </tr>
-            <tr th:each="dto : ${result.dtoList}">
-                <td><a th:href="@{/sample/ex_detail.do(mno= ${dto.mno}, page=${result.page})}">[[${dto.mno}]]</a></td>
-                <td th:text="${dto.memoText}"></td>
-                <td>[[${#temporals.format(dto.regDate, 'yyyy/MM/dd')}]]</td>
-            </tr>
-        </table>
-        <!--@{~~~~~(~~~, size = ${result.size})}  // 사이즈 지정 가능-->
-        <ul  class="pagination h-100 justify-content-center align-items-center">
-            <li class="page-item" th:if="${result.prev}">
-                <a class="page-link" th:href="@{/sample/ex_read.do(page=${result.start-1})}">이전</a>
-            </li>
-            <li th:class="'page-item' + ${result.page == page? 'active':''}" th:each="page : ${result.pageList}">
-                <a class="page-link" th:href="@{/sample/ex_read.do(page=${page})}">[[${page}]]</a>
-            </li>
-            <li class="page-item" th:if="${result.next}">
-                <a class="page-link" th:href="@{/sample/ex_read.do(page=${result.end+1})}">다음</a>
-            </li>
-        </ul>
-
-
-        <div class="modal" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Modal title</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <p>Modal body text goes here.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                </div>
-            </div>
+    </h1>
+    <form action="/sample/ex_read.do" method="get" id="searchForm">
+      <div class="input-group">
+        <input type="hidden" name="page" value="1">
+        <div class="input-group-prepend">
+          <select class="custom-select" name="type">
+<!--            <option th:selected="${pageRequestDTO.type == null}">-&#45;&#45;&#45;&#45;&#45;&#45;</option>-->
+            <option value="t" th:selected="${pageRequestDTO.type =='t'}">내용</option>
+<!--            <option value="tc" th:selected="${pageRequestDTO.type =='tc'}">제목 + 내용(제목 구현 안함)</option>-->
+          </select>
         </div>
-        <script th:inline="javascript">
-            // 글 쓰기 후 리다이렉트 시 아래 출력, 단순 링크 이동은 null
-            var msg = [[${msg}]];
-            console.log(msg);
+        <input class="form-control" name="keyword" th:value="${pageRequestDTO.keyword}">
+        <div class="input-group-append" id="button-addon4">
+          <button class="btn btn-outline-secondary btn-search" type="button">검색</button>
+          <button class="btn btn-outline-secondary btn-clear" type="button">초기화</button>
+        </div>
+      </div>
+    </form>
+    <table class="table table-striped">
+      <tr>
+        <th scope="col">글 번호</th>
+        <th scope="col">내용</th>
+        <th scope="col">날짜</th>
+      </tr>
+      <tr th:each="dto : ${result.dtoList}">
+        <td><a
+            th:href="@{/sample/ex_detail.do(mno= ${dto.mno}, page=${result.page}, type=${pageRequestDTO.type}, keyword=${pageRequestDTO.keyword})}">[[${dto.mno}]]</a>
+        </td>
+        <td th:text="${dto.memoText}"></td>
+        <td>[[${#temporals.format(dto.regDate, 'yyyy/MM/dd')}]]</td>
+      </tr>
+    </table>
+    <!--@{~~~~~(~~~, size = ${result.size})}  // 사이즈 지정 가능-->
+    <ul class="pagination h-100 justify-content-center align-items-center">
+      <li class="page-item" th:if="${result.prev}">
+        <a class="page-link"
+           th:href="@{/sample/ex_read.do(page=${result.start-1}, type=${pageRequestDTO.type}, keyword = ${pageRequestDTO.keyword})}"
+           tabindex="-1">이전</a>
+      </li>
+      <li th:class="'page-item' + ${result.page == page? 'active':''}"
+          th:each="page : ${result.pageList}">
+        <a class="page-link"
+           th:href="@{/sample/ex_read.do(page=${page}, type=${pageRequestDTO.type}, keyword = ${pageRequestDTO.keyword})}">[[${page}]]</a>
+      </li>
+      <li class="page-item" th:if="${result.next}">
+        <a class="page-link"
+           th:href="@{/sample/ex_read.do(page=${result.end+1}, type=${pageRequestDTO.type}, keyword = ${pageRequestDTO.keyword})}">다음</a>
+      </li>
+    </ul>
 
-            if(msg){
-                $(".modal").modal();
-            }
-        </script>
-    </th:block>
+
+    <div class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Modal body text goes here.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script th:inline="javascript">
+      // 글 쓰기 후 리다이렉트 시 아래 출력, 단순 링크 이동은 null
+      var msg = [[${msg}]];
+      console.log(msg);
+
+      if (msg) {
+        $(".modal").modal();
+      }
+
+      var searchForm = $("#searchForm");
+
+      $('.btn-search').click(function (e) {
+
+        searchForm.submit();
+
+      });
+
+      $('.btn-clear').click(function (e) {
+
+        // 아무 파라미터 없으면 기본 조건 탐색
+        searchForm.empty().submit();
+
+      });
+    </script>
+  </th:block>
 </th:block>
