@@ -1,0 +1,35 @@
+<!-- Widget: Event Result Labels -->
+<aside class="widget widget--sidebar card card--has-table widget-event-result-labels">
+	<div class="widget__title card__header">
+		<h4>Last 5 Matches</h4>
+	</div>
+	<div class="widget__content card__content">
+
+		<table class="alc-event-result-labels table">
+			<tbody>
+				{{#each football.sp.event.last-events}}
+				<tr>
+					<td class="alc-team">
+						<div class="team-meta">
+							<figure class="team-meta__logo">
+								<img src="{{img}}" alt="{{name}}">
+							</figure>
+							<div class="team-meta__info">
+								<h6 class="team-meta__name">{{name}}</h6>
+								<div class="team-meta__place">{{desc}}</div>
+							</div>
+						</div>
+					</td>
+					<td class="alc-results">
+						{{#each results}}
+						<span class="label label-{{#ifequal value 'won'}}win{{else}}loss{{/ifequal}}">{{#ifequal value 'won'}}W{{else}}L{{/ifequal}}</span>
+						{{/each}}
+					</td>
+				</tr>
+				{{/each}}
+			</tbody>
+		</table>
+
+	</div>
+</aside>
+<!-- Widget: Event Result Labels / End -->

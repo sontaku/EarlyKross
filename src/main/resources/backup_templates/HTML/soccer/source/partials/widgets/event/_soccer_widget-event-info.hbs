@@ -1,0 +1,33 @@
+<!-- Widget: Team Info -->
+<div class="widget widget--sidebar card card--no-paddings widget-event-info">
+	<div class="widget__title card__header">
+		<h4>Game Information</h4>
+	</div>
+	<div class="widget__content card__content">
+		<!-- Google Map -->
+		<div class="gm-map gm-map--sm alc-event-gmap" data-map-style="default" data-map-address="{{address}}" data-map-zoom="15" data-map-type-control="false" data-street-view-control="false" data-fullscreen-control="false" data-zoom-control="false"></div>
+		<!-- Google Map / End -->
+
+		{{#each soccer.sp.event.info}}
+		<ul class="alc-event-info list-unstyled">
+
+			{{#each details}}
+			<li class="alc-event-info__item">
+				<span class="alc-event-info__icon">
+					<i class="icon-svg icon-{{icon}}"></i>
+				</span>
+				<span class="alc-event-info__value">{{value}}</span>
+			</li>
+			{{/each}}
+
+			<li class="alc-event-info__item alc-event-info__item--desc">
+				<span class="alc-event-info__label">{{excerpt.label}}</span>
+				<span class="alc-event-info__desc">{{excerpt.value}}</span>
+			</li>
+
+		</ul>
+		{{/each}}
+
+	</div>
+</div>
+<!-- Widget: Team Info / End -->

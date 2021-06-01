@@ -1,0 +1,140 @@
+---
+layout: esports
+page-title: Single Product
+page-heading: "Single <span class=\"highlight\">Product</span>"
+megamenu: v3
+
+breadcrumbs: [
+	{
+		label: "Shop",
+		link: "_esports_shop-fullwidth.html"
+	},
+	{
+		label: "Product"
+	}
+]
+---
+
+<!-- Content
+================================================== -->
+<div class="site-content">
+	<div class="container">
+
+		<!-- Single Product -->
+		<div class="products products--list products--list-lg products--list-alt">
+
+			<div class="product__item card">
+
+				<div class="product__img">
+					<div class="product__img-holder">
+
+						<div class="product__slider">
+							<div class="product__slide">
+								<div class="product__slide-img">
+									<img src="{{../root}}assets/images/esports/samples/product-1-lg.jpg" alt="">
+								</div>
+							</div>
+							<div class="product__slide">
+								<div class="product__slide-img">
+									<img src="{{../root}}assets/images/esports/samples/product-8-lg.jpg" alt="">
+								</div>
+							</div>
+							<div class="product__slide">
+								<div class="product__slide-img">
+									<img src="{{../root}}assets/images/esports/samples/product-10-lg.jpg" alt="">
+								</div>
+							</div>
+						</div>
+
+						<div class="product__slider-nav">
+							<div class="product__slider-paging js-product__slider-paging"></div>
+							<div class="product__slider-arrows js-product__slider-arrows"></div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="product__content card__content">
+
+					<header class="product__header product__header--block">
+						<div class="product__header-inner">
+							<h2 class="product__title">Jaxxy Framed Art Print</h2>
+							<div class="product__ratings product__ratings--sm">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star empty"></i>
+
+								<span class="product__ratings-label">Based on <span class="product__ratings-value">2 Reviews</span></span>
+							</div>
+						</div>
+						<div class="product__price">$48.00</div>
+					</header>
+
+					<div class="product__excerpt">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea modo sequat. Duis aute irure dolorem in reprehenderit in voluriatur.
+					</div>
+
+					<form action="#" class="product__params product__params--alt">
+						<div class="product__param-item product__param-item--color">
+							<label>Frame Color</label>
+							<ul class="filter-color">
+								<li class="filter-color__item">
+									<label class="radio">
+										<input type="radio" id="product_color_1" name="product-color" value="1" class="color-violet">
+										<span class="radio-indicator"></span>
+									</label>
+								</li>
+								<li class="filter-color__item">
+									<label class="radio">
+										<input type="radio" id="product_color_2" name="product-color" value="2" class="color-blue" checked>
+										<span class="radio-indicator"></span>
+									</label>
+								</li>
+								<li class="filter-color__item">
+									<label class="radio">
+										<input type="radio" id="product_color_8" name="product-color" value="8" class="color-black" checked>
+										<span class="radio-indicator"></span>
+									</label>
+								</li>
+								<li class="filter-color__item">
+									<label class="radio">
+										<input type="radio" id="product_color_7" name="product-color" value="7" class="color-white">
+										<span class="radio-indicator"></span>
+									</label>
+								</li>
+							</ul>
+						</div>
+						<div class="product__param-item product__param-item--size">
+							<label class="control-label" for="select-size">Choose Size</label>
+							<select name="select-size" id="select-size" class="form-control">
+								<option value="1">36x18 inches</option>
+								<option value="2">32x16 inches</option>
+								<option value="3">24x12 inches</option>
+							</select>
+						</div>
+						<div class="product__param-item product__param-item--quantity">
+							<label>Quantity</label>
+							<input type="number" class="form-control product-quantity-control" step="1" value="4">
+						</div>
+					</form>
+
+					<footer class="product__footer">
+						<a href="_esports_shop-cart.html" class="btn btn-primary-inverse btn-icon product__add-to-cart"><i class="icon-bag"></i> Add to Your Bag</a>
+						<a href="_esports_shop-wishlist.html" class="btn btn-primary btn-icon product__add-to-cart"><i class="icon-heart"></i> Add to Wishlist</a>
+					</footer>
+				</div>
+			</div>
+
+		</div>
+		<!-- Single Product / End -->
+
+		{{> _esports_product-tabs }}
+
+		{{> _esports_product-related }}
+
+	</div>
+</div>
+
+<!-- Content / End -->

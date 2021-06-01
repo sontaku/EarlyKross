@@ -1,0 +1,22 @@
+<!-- Widget: Game Commentary -->
+<aside class="widget card card--no-paddings widget--sidebar widget-commentary">
+	<div class="widget__title card__header">
+		<h4>Game Highlights</h4>
+	</div>
+	<div class="widget__content card__content">
+		<ul class="commentary">
+
+			{{#each soccer.sp.game.widget-play-by-play}}
+			<li class="commentary__item">
+				<span class="commentary__time">{{time}}</span>
+				<div class="commentary__icon">
+					<i class="icon-svg {{icon}}"></i>
+				</div>
+				{{{comment}}}
+			</li>
+			{{/each}}
+
+		</ul>
+	</div>
+</aside>
+<!-- Widget: Game Commentary / End -->

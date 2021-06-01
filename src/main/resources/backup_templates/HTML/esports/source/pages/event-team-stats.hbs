@@ -1,0 +1,162 @@
+---
+page-title: Event - Team Stats
+event-header: true
+---
+
+{{> _event-nav}}
+
+<!-- Content
+================================================== -->
+<div class="site-content">
+	<div class="container">
+
+		<div class="row">
+
+			<!-- Content -->
+			<div class="content col-lg-8">
+
+				<!-- Match Team Stats -->
+				<div class="alc-event-stats-box card card--no-paddings">
+
+					<!-- Header -->
+					<header class="widget__title card__header alc-teams-legend">
+						<h4 class="alc-teams-legend__title">Match Team Stats</h4>
+						<div class="alc-teams-legend__info">
+							<!-- Teams -->
+							<div class="alc-teams-legend__teams">
+
+								{{#each basketball.sp.event.stats.meta}}
+								<!-- Team #{{@key}} -->
+								<div class="alc-teams-legend__team">
+									<span class="alc-teams-legend__team-color alc-teams-legend__team-color--color-{{color}}"></span>
+									<img src="{{logo}}" class="alc-teams-legend__team-logo" alt="{{name}}">
+								</div>
+								<!-- Team #{{@key}} / End -->
+								{{/each}}
+
+							</div>
+							<!-- Teams / End -->
+						</div>
+					</header>
+					<!-- Header / End -->
+
+					<!-- Team & Result -->
+					<div class="alc-event-stats-box__content card__content">
+
+						<!-- Event Statistics -->
+						<div class="alc-event-stats-box__section">
+							<header class="alc-event-stats-box__subheader card__subheader card__subheader--sm card__subheader--clean card__subheader--nomargins">
+								<h5 class="alc-event-stats-box__subtitle">Main Statistics</h5>
+							</header>
+							<div class="alc-event-stats-box__section-inner alc-event-stats-box__section-inner--lg">
+
+								<!-- Progress Stats Table -->
+								<table class="progress-table progress-table--sm-space progress-table--fullwidth">
+									<tbody>
+
+										{{#each basketball.sp.event.stats.main}}
+										<tr>
+											<td class="progress-table__progress-label {{#if team1.highlight}}progress-table__progress-label--highlight{{/if}}">{{team1.value}}</td>
+											<td class="progress-table__progress-bar progress-table__progress-bar--first">
+												<div class="progress">
+													<div class="progress__bar" style="width: {{team1.pct}}%;" role="progressbar" aria-valuenow="{{team1.value}}" aria-valuemin="0" aria-valuemax="100"></div>
+												</div>
+											</td>
+											<td class="progress-table__title text-uppercase">{{label}}</td>
+											<td class="progress-table__progress-bar progress-table__progress-bar--second">
+												<div class="progress">
+													<div class="progress__bar progress__bar--info" style="width: {{team2.pct}}%;" role="progressbar" aria-valuenow="{{team2.value}}" aria-valuemin="0" aria-valuemax="100"></div>
+												</div>
+											</td>
+											<td class="progress-table__progress-label {{#if team2.highlight}}progress-table__progress-label--highlight{{/if}}">{{team2.value}}</td>
+										</tr>
+										{{/each}}
+
+									</tbody>
+								</table>
+								<!-- Progress Stats Table / End -->
+
+							</div>
+						</div>
+						<!-- Event Statistics / End -->
+
+						<!-- Event Additional Stats -->
+						<div class="alc-event-stats-box__section">
+							<header class="alc-event-stats-box__subheader card__subheader card__subheader--sm card__subheader--clean card__subheader--nomargins">
+								<h5 class="alc-event-stats-box__subtitle">Efficiency percentages</h5>
+							</header>
+							<div class="alc-event-stats-box__section-inner alc-event-stats-box__section-inner--lg">
+
+								<div class="row">
+									<div class="col-12 col-md-6">
+										<div class="row">
+
+											{{#each basketball.sp.event.stats.percentages.team1}}
+											<div class="col-4">
+												<div class="circular">
+													<div class="circular__bar" data-percent="{{value}}">
+														<span class="circular__percents">{{value}}<small>%</small></span>
+													</div>
+													<span class="circular__label circular__label--paddings">{{label}}</span>
+												</div>
+											</div>
+											{{/each}}
+
+										</div>
+									</div>
+									<div class="col-12 col-md-6">
+										<div class="row">
+
+											{{#each basketball.sp.event.stats.percentages.team2}}
+											<div class="col-4 {{class}}">
+												<div class="circular">
+													<div class="circular__bar" data-percent="{{value}}" data-bar-color="#0cb2e2">
+														<span class="circular__percents">{{value}}<small>%</small></span>
+													</div>
+													<span class="circular__label circular__label--paddings">{{label}}</span>
+												</div>
+											</div>
+											{{/each}}
+
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<!-- Event Additional Stats / End -->
+
+					</div>
+					<!-- Team & Result / End -->
+
+				</div>
+				<!-- Match team Stats / End -->
+
+				<div class="row">
+					<div class="col-md-6">
+
+						{{> widget-event-chart-cols}}
+
+					</div>
+					<div class="col-md-6">
+
+						{{> widget-event-stats-carousel}}
+
+					</div>
+				</div>
+
+			</div>
+			<!-- Content / End -->
+
+			<!-- Sidebar -->
+			<div class="sidebar col-lg-4">
+
+				{{> widget-event-matchup}}
+
+			</div>
+			<!-- Sidebar / End -->
+		</div>
+	</div>
+</div>
+
+<!-- Content / End -->

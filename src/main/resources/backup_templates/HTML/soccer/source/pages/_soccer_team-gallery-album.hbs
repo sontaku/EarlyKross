@@ -1,0 +1,62 @@
+---
+layout: soccer
+page-title: Album
+page-heading: "Single <span class=\"highlight\">Album</span>"
+
+breadcrumbs: [
+	{
+		label: "Team",
+		link: "_soccer_team-overview.html"
+	},
+	{
+		label: "Gallery",
+		link: "_soccer_team-gallery.html"
+	},
+	{
+		label: "Album"
+	}
+]
+---
+
+<!-- Content
+================================================== -->
+<div class="site-content">
+
+	<div class="container">
+		<div class="content-title">
+			<h2 class="content-title__h">Photoshoot for 2018</h2>
+			<a href="_soccer_team-gallery.html" class="btn btn-xs btn-default btn-outline">Go Back to the Albums</a>
+		</div>
+	</div>
+
+	<!-- Album -->
+	<div class="album album--condensed container-fluid js-album-masonry">
+		<div class="row">
+			{{#each soccer.sp.team.album}}
+			<div class="album__item {{col}}">
+				<div class="album__item-holder">
+					<a href="{{../root}}assets/images/{{imgs.full}}" class="album__item-link mp_gallery">
+						<figure class="album__thumb">
+							<img src="{{../root}}assets/images/{{imgs.thumb}}" alt="">
+						</figure>
+						<div class="album__item-desc">
+							<h4 class="album__item-title">{{title}}</h4>
+							<time class="album__item-date" datetime="2016-08-23">{{date}}</time>
+							<span class="album__item-btn-fab btn-fab btn-fab--clean"></span>
+						</div>
+					</a>
+					<ul class="album__item-meta meta">
+						<li class="meta__item meta__item--likes"><a href="#"><i class="meta-like meta-like--active icon-heart"></i> {{meta.likes}}</a></li>
+					</ul>
+				</div>
+			</div>
+			{{/each}}
+		</div>
+	</div>
+	<!-- Gallery Album / End -->
+
+	{{> _soccer_team-album-load-more}}
+
+</div>
+
+<!-- Content / End -->

@@ -1,0 +1,77 @@
+---
+layout: esports
+page-title: Team Overview
+page-heading: "Team <span class=\"highlight\">Overview</span>"
+
+breadcrumbs: [
+	{
+		label: "Teams",
+		link: "#"
+	},
+	{
+		label: "L.O. Heroes",
+		link: "#"
+	},
+	{
+		label: "Overview"
+	}
+]
+---
+
+{{> _esports_team-filter }}
+
+<!-- Content
+================================================== -->
+<div class="site-content">
+	<div class="container">
+
+		<div class="row">
+
+			<!-- Content -->
+			<div class="content col-lg-8">
+
+				{{> _esports_game-scoreboard }}
+
+				<div class="row">
+					<div class="col-lg-6">
+
+						{{> _esports_widget-standings title="L.O. Heroes Standings" }}
+
+					</div>
+					<div class="col-lg-6">
+
+						{{> _esports_widget-player-alt-extended }}
+
+					</div>
+				</div>
+
+				{{> _esports_widget-games-history }}
+
+				{{> _esports_widget-schedule }}
+
+				{{> _esports_widget-tournaments }}
+
+			</div>
+			<!-- Content / End -->
+
+			<!-- Sidebar -->
+			<div class="sidebar col-lg-4">
+
+				{{> _esports_widget-twitch-streams }}
+
+				{{> _esports_widget-team-info }}
+
+				{{> _esports_widget-results }}
+
+				{{> _esports_widget-team-stats }}
+
+				{{> _esports_widget-newslog }}
+
+			</div>
+			<!-- Sidebar / End -->
+		</div>
+
+	</div>
+</div>
+
+<!-- Content / End -->

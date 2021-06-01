@@ -1,0 +1,6746 @@
+{
+	"site-title": "Alchemists Soccer Club & Sports News HTML Template",
+	"template": "soccer",
+	"fonts": "Montserrat:400,700%7CSource+Sans+Pro:400,700",
+	"posts": {
+		"hero-slider": [
+			{
+				"title": {
+					"onslide": "The Alchemists <span class=\"highlight\">won the last game</span> 2-0 against Clovers",
+					"onthumb": "The Alchemists won the last game 2-0 against Clovers"
+				},
+				"thumb": "img1",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"author": {
+					"name": "James Spiegel",
+					"slogan": "Alchemists Ninja",
+					"avatar": "avatar-1.jpg"
+				},
+				"date": "August 28th, 2018",
+				"meta": {
+					"views": "2369",
+					"likes": "530",
+					"comments": "18"
+				}
+			},
+			{
+				"title": {
+					"onslide": "Franklin Stevens has <span class=\"highlight\">a knee fracture</span> and is gona be out",
+					"onthumb": "Franklin Stevens has a knee fracture and is gona be out"
+				},
+				"thumb": "img2",
+				"category": {
+					"class": "category-2",
+					"name": "Injuries"
+				},
+				"author": {
+					"name": "James Spiegel",
+					"slogan": "Alchemists Ninja",
+					"avatar": "avatar-1.jpg"
+				},
+				"date": "August 28th, 2018",
+				"meta": {
+					"views": "2369",
+					"likes": "530",
+					"comments": "18"
+				}
+			},
+			{
+				"title": {
+					"onslide": "The New <span class=\"highlight\">Eco Friendly Stadium</span> won a leafy award in 2016",
+					"onthumb": "The New Eco Friendly Stadium won a leafy award in 2016"
+				},
+				"thumb": "img3",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"author": {
+					"name": "James Spiegel",
+					"slogan": "Alchemists Ninja",
+					"avatar": "avatar-1.jpg"
+				},
+				"date": "August 28th, 2018",
+				"meta": {
+					"views": "2369",
+					"likes": "530",
+					"comments": "18"
+				}
+			}
+		],
+		"posts-1": [
+			{
+				"title": "The Planettroters will <span class=\"posts__title-higlight\">perform this May 4th</span> at Madison Cube",
+				"thumb": "soccer/samples/post-slide7.jpg",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"author": {
+					"name": "Jesse Stevens",
+					"avatar": "avatar-4.jpg"
+				},
+				"date": "August 28th, 2018"
+			},
+			{
+				"title": "New York is preparing all <span class=\"posts__title-higlight\">for the Playoffs Final</span> next December",
+				"thumb": "samples/post-slide2.jpg",
+				"category": {
+					"class": "category-3",
+					"name": "The League"
+				},
+				"author": {
+					"name": "James Spiegel",
+					"avatar": "avatar-1.jpg"
+				},
+				"date": "June 28th, 2018"
+			},
+			{
+				"title": "The new eco friendly <span class=\"posts__title-higlight\">stadium won a Leafy</span> Award in 2016",
+				"thumb": "samples/post-slide3.jpg",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"author": {
+					"name": "James Spiegel",
+					"avatar": "avatar-1.jpg"
+				},
+				"date": "June 28th, 2018"
+			},
+			{
+				"title": "New York Islanders are <span class=\"posts__title-higlight\">now flying to California</span> for the big game",
+				"thumb": "samples/post-slide4.jpg",
+				"category": {
+					"class": "category-3",
+					"name": "The League"
+				},
+				"author": {
+					"name": "James Spiegel",
+					"avatar": "avatar-1.jpg"
+				},
+				"date": "June 28th, 2018"
+			},
+			{
+				"title": "Jeremy Rittersen was <span class=\"posts__title-higlight\">called to be</span> in the National Team",
+				"thumb": "samples/post-slide6.jpg",
+				"category": {
+					"class": "category-3",
+					"name": "The League"
+				},
+				"author": {
+					"name": "Jessica Hoops",
+					"avatar": "avatar-2.jpg"
+				},
+				"date": "May 24th, 2018"
+			},
+			{
+				"title": "Jessica Valentine has a <span class=\"posts__title-higlight\">sprained ankle</span> and won't be in the Final",
+				"thumb": "samples/post-slide5.jpg",
+				"category": {
+					"class": "category-2",
+					"name": "Injuries"
+				},
+				"author": {
+					"name": "Jesse Stevens",
+					"avatar": "avatar-4.jpg"
+				},
+				"date": "April 12th, 2018"
+			}
+		],
+		"posts-2": [
+			{
+				"title": "Brian Kingster saw the red card after a kick against Jason T.",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud en derum sum laborem.",
+				"thumb": "soccer/samples/_soccer_post-img3.jpg",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"author": {
+					"name": "James Spiegel",
+					"avatar": "avatar-1.jpg"
+				},
+				"date": "August 28th, 2018",
+				"meta": {
+					"views": "2369",
+					"likes": "530",
+					"comments": "18"
+				}
+			},
+			{
+				"title": "The new eco friendly stadium won a Leafy Award in 2016",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud en derum sum laborem.",
+				"thumb": "soccer/samples/_soccer_post-img1.jpg",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"author": {
+					"name": "Jessica Hoops",
+					"avatar": "avatar-2.jpg"
+				},
+				"date": "August 28th, 2018",
+				"meta": {
+					"views": "2369",
+					"likes": "530",
+					"comments": "18"
+				}
+			},
+			{
+				"title": "The team is taking a summer vacation on Woody Valley",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud en derum sum laborem.",
+				"thumb": "samples/post-img3.jpg",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"author": {
+					"name": "Jessica Hoops",
+					"avatar": "avatar-2.jpg"
+				},
+				"date": "August 28th, 2018",
+				"meta": {
+					"views": "2369",
+					"likes": "530",
+					"comments": "18"
+				}
+			},
+			{
+				"title": "The Alchemists team is appearing in L.A. beach for chartiy",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud en derum sum laborem.",
+				"thumb": "samples/post-img5.jpg",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"author": {
+					"name": "James Spiegel",
+					"avatar": "avatar-1.jpg"
+				},
+				"date": "August 28th, 2018",
+				"meta": {
+					"views": "2369",
+					"likes": "530",
+					"comments": "18"
+				}
+			}
+		],
+		"posts-3": [
+			{
+				"title": "Brian Kingster was penalized with four games out",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				"thumb": "samples/post-img22-xs.jpg",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"date": "August 28th, 2018"
+			},
+			{
+				"title": "The next game will be played at California Beach",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				"thumb": "samples/post-img23-xs.jpg",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"date": "August 28th, 2018"
+			},
+			{
+				"title": "The Alchemists need two win the next two games",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				"thumb": "samples/post-img20-xs.jpg",
+				"category": {
+					"class": "category-3",
+					"name": "The League"
+				},
+				"date": "August 28th, 2018"
+			}
+		],
+		"posts-4": [
+			{
+				"title": "he team will make a small vacation to the Caribbean",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				"thumb": "samples/post-img24-xs.jpg",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"date": "August 28th, 2018"
+			},
+			{
+				"title": "Jenny Jackson won't be able to play next game",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				"thumb": "samples/post-img18-xs.jpg",
+				"category": {
+					"class": "category-2",
+					"name": "Injuries"
+				},
+				"date": "August 28th, 2018"
+			},
+			{
+				"title": "The team is starting a new power breakfast regimen",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				"thumb": "samples/post-img4-xs.jpg",
+				"category": {
+					"class": "category-3",
+					"name": "The League"
+				},
+				"date": "August 28th, 2018"
+			}
+		],
+		"posts-5": [
+			{
+				"title": "Franklin Stevens has a knee fracture and is gonna be out",
+				"thumb": "samples/post-img1.jpg",
+				"category": {
+					"class": "category-2",
+					"name": "Injuries"
+				},
+				"author": {
+					"name": "James Spiegel",
+					"avatar": "avatar-1.jpg"
+				},
+				"date": "August 28th, 2018",
+				"meta": {
+					"views": "2369",
+					"likes": "530",
+					"comments": "18"
+				}
+			},
+			{
+				"title": "Jay Rorks is only 24 points away from breaking the record",
+				"thumb": "soccer/samples/_soccer_post-img4.jpg",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"author": {
+					"name": "Jessica Hoops",
+					"avatar": "avatar-2.jpg"
+				},
+				"date": "August 28th, 2018",
+				"meta": {
+					"views": "2369",
+					"likes": "530",
+					"comments": "18"
+				}
+			},
+			{
+				"title": "The team is starting a new power breakfast regimen",
+				"thumb": "samples/post-img13.jpg",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"author": {
+					"name": "James Spiegel",
+					"avatar": "avatar-1.jpg"
+				},
+				"date": "August 28th, 2018",
+				"meta": {
+					"views": "2369",
+					"likes": "530",
+					"comments": "18"
+				}
+			},
+			{
+				"title": "Cheerleader tryouts will start next Friday at 5pm",
+				"thumb": "samples/post-img2.jpg",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"author": {
+					"name": "James Spiegel",
+					"avatar": "avatar-1.jpg"
+				},
+				"date": "August 28th, 2018",
+				"meta": {
+					"views": "2369",
+					"likes": "530",
+					"comments": "18"
+				}
+			}
+		],
+		"news-1": [
+			{
+				"title": "The Planetrotters will perform this May 4th at Madison Cube",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud en derum sum laborem.",
+				"thumb": "samples/post-img4.jpg",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"author": {
+					"name": "James Spiegel",
+					"avatar": "avatar-1.jpg"
+				},
+				"date": "August 23rd, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "The new eco friendly stadium won a Leafy Award in 2016",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud en derum sum laborem.",
+				"thumb": "samples/post-img3.jpg",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"author": {
+					"name": "Jessica Hoops",
+					"avatar": "avatar-2.jpg"
+				},
+				"date": "August 23rd, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "The Alchemists team is appearing in L.A. Beach for charity",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud en derum sum laborem.",
+				"thumb": "samples/post-img5.jpg",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"author": {
+					"name": "James Spiegel",
+					"avatar": "avatar-1.jpg"
+				},
+				"date": "August 23rd, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "Brian Kingster saw the red card after a kick against Jason T.",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud en derum sum laborem.",
+				"thumb": "soccer/samples/_soccer_post-img3.jpg",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"author": {
+					"name": "James Spiegel",
+					"avatar": "avatar-1.jpg"
+				},
+				"date": "August 23rd, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "Mark Johnson has a Tibia Fracture and is gonna be out",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud en derum sum laborem.",
+				"thumb": "samples/post-img1.jpg",
+				"category": {
+					"class": "category-2",
+					"name": "Injuries"
+				},
+				"author": {
+					"name": "James Spiegel",
+					"avatar": "avatar-1.jpg"
+				},
+				"date": "August 23rd, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "Jay Rorks is only 24 points away from breaking the record",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud en derum sum laborem.",
+				"thumb": "samples/post-img7.jpg",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"author": {
+					"name": "Jessica Hoops",
+					"avatar": "avatar-2.jpg"
+				},
+				"date": "August 23rd, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "The team is starting a new power breakfast regimen",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud en derum sum laborem.",
+				"thumb": "samples/post-img8.jpg",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"author": {
+					"name": "James Spiegel",
+					"avatar": "avatar-1.jpg"
+				},
+				"date": "August 23rd, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "Cheerleader tryouts will start next Friday at 5pm",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud en derum sum laborem.",
+				"thumb": "samples/post-img2.jpg",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"author": {
+					"name": "James Spiegel",
+					"avatar": "avatar-1.jpg"
+				},
+				"date": "August 23rd, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			}
+		],
+		"news-2": [
+			{
+				"title": "The Planetrotters will perform this May 4th at Madison Cube",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				"thumb": "post-img4-m.jpg",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"author": {
+					"name": "James Spiegel",
+					"avatar": "avatar-1.jpg"
+				},
+				"date": "August 23rd, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "The new eco friendly stadium won a Leafy Award in 2016",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				"thumb": "post-img3-m.jpg",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"author": {
+					"name": "Jessica Hoops",
+					"avatar": "avatar-2.jpg"
+				},
+				"date": "August 23rd, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "The Alchemists team is appearing in L.A. Beach for charity",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				"thumb": "post-img5-m.jpg",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"author": {
+					"name": "James Spiegel",
+					"avatar": "avatar-1.jpg"
+				},
+				"date": "August 23rd, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "Mark Johnson has a Tibia Fracture and is gonna be out",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				"thumb": "post-img1-m.jpg",
+				"category": {
+					"class": "category-2",
+					"name": "Injuries"
+				},
+				"author": {
+					"name": "James Spiegel",
+					"avatar": "avatar-1.jpg"
+				},
+				"date": "August 23rd, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "The team is taking a summer vacation on Woody Valley",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				"thumb": "post-img9-m.jpg",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"author": {
+					"name": "Jessica Hoops",
+					"avatar": "avatar-1.jpg"
+				},
+				"date": "August 23rd, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "Jeremy Rittersen was called to be in the National Team",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				"thumb": "post-img10-m.jpg",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"author": {
+					"name": "James Spiegel",
+					"avatar": "avatar-1.jpg"
+				},
+				"date": "August 23rd, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "Alchemists New Stadium is gonna be ready in September 2017",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				"thumb": "post-img11-m.jpg",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"author": {
+					"name": "Jessica Hoops",
+					"avatar": "avatar-2.jpg"
+				},
+				"date": "August 23rd, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			}
+		],
+		"news-3": [
+			{
+				"title": "The Planetrotters will perform this May 4th at Madison Cube",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore ere magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.",
+				"thumb": "post-img4-lg.jpg",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"author": {
+					"name": "James Spiegel",
+					"avatar": "avatar-1.jpg"
+				},
+				"date": "August 23rd, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "The new eco friendly stadium won a Leafy Award in 2016",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore ere magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.",
+				"thumb": "post-img3-lg.jpg",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"author": {
+					"name": "James Spiegel",
+					"avatar": "avatar-1.jpg"
+				},
+				"date": "August 23rd, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "Mark Johnson has a Tibia Fracture and is gonna be out",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore ere magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.",
+				"thumb": "post-img1-lg.jpg",
+				"category": {
+					"class": "category-2",
+					"name": "Injuries"
+				},
+				"author": {
+					"name": "James Spiegel",
+					"avatar": "avatar-1.jpg"
+				},
+				"date": "August 23rd, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "The team is starting a new power breakfast regimen",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore ere magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.",
+				"thumb": "post-img8-lg.jpg",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"author": {
+					"name": "James Spiegel",
+					"avatar": "avatar-1.jpg"
+				},
+				"date": "August 23rd, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			}
+		],
+		"news-4": [
+			{
+				"title": "The Planetrotters will perform this May 4th at Madison Cube",
+				"thumb": "post-img4.jpg",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"author": {
+					"name": "James Spiegel",
+					"avatar": "avatar-1.jpg"
+				},
+				"date": "August 23rd, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "The new eco friendly stadium won a Leafy Award in 2016",
+				"thumb": "post-img3.jpg",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"author": {
+					"name": "Jessica Hoops",
+					"avatar": "avatar-2.jpg"
+				},
+				"date": "August 23rd, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "The Alchemists team is appearing in L.A. Beach for charity",
+				"thumb": "post-img5.jpg",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"author": {
+					"name": "James Spiegel",
+					"avatar": "avatar-1.jpg"
+				},
+				"date": "August 23rd, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "Mark Johnson has a Tibia Fracture and is gonna be out",
+				"thumb": "post-img1.jpg",
+				"category": {
+					"class": "category-2",
+					"name": "Injuries"
+				},
+				"author": {
+					"name": "James Spiegel",
+					"avatar": "avatar-1.jpg"
+				},
+				"date": "August 23rd, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"format": "quote",
+				"content": "The most <span class=\"blockquote-stress\">important</span> thing about soccer is <span class=\"blockquote-stress\">the passion</span> you feel",
+				"author": {
+					"name": "Markus Keymore",
+					"info": "Alchemists Coach"
+				}
+			},
+			{
+				"title": "The team will attend a charity event in Malibu this Saturday",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"author": {
+					"name": "James Spiegel",
+					"avatar": "avatar-1.jpg"
+				},
+				"date": "August 23rd, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "Jay Rorks is only 24 points away from breaking the record",
+				"thumb": "post-img7.jpg",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"author": {
+					"name": "Jessica Hoops",
+					"avatar": "avatar-2.jpg"
+				},
+				"date": "August 23rd, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "Alchemists are starting a new power breakfast program",
+				"thumb": "post-img13.jpg",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"author": {
+					"name": "Jessica Hoops",
+					"avatar": "avatar-2.jpg"
+				},
+				"date": "August 23rd, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "Jeremy Rittersen was called to be in the National Team",
+				"thumb": "post-img10.jpg",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"author": {
+					"name": "Jessica Hoops",
+					"avatar": "avatar-2.jpg"
+				},
+				"date": "August 23rd, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "Cheerleader tryouts will start next Friday at 5pm",
+				"thumb": "post-img2.jpg",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"author": {
+					"name": "James Spiegel",
+					"avatar": "avatar-1.jpg"
+				},
+				"date": "August 23rd, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "Thomas Durry has a hand injury and will come back in September",
+				"category": {
+					"class": "category-2",
+					"name": "Injuries"
+				},
+				"author": {
+					"name": "James Spiegel",
+					"avatar": "avatar-1.jpg"
+				},
+				"date": "August 23rd, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "The team is starting a new power breakfast regimen",
+				"thumb": "post-img8.jpg",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"author": {
+					"name": "James Spiegel",
+					"avatar": "avatar-1.jpg"
+				},
+				"date": "August 23rd, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			},
+			{
+				"title": "Jessica Valentine has a sprained ankle and won't be in the Final",
+				"category": {
+					"class": "category-2",
+					"name": "Injuries"
+				},
+				"author": {
+					"name": "James Spiegel",
+					"avatar": "avatar-1.jpg"
+				},
+				"date": "August 23rd, 2018",
+				"meta": {
+					"views": 2369,
+					"likes": 530,
+					"comments": 18
+				}
+			}
+		],
+		"widget-popular": [
+			{
+				"title": "Mark Johnson has a Tibia Fracture and is gonna be out",
+				"thumb": "post-img1-xs",
+				"category": {
+					"class": "category-2",
+					"name": "Injuries"
+				},
+				"date": "August 23rd, 2018"
+			},
+			{
+				"title": "Jay Rorks is only 24 points away from breaking the record",
+				"thumb": "post-img2-xs",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"date": "August 22nd, 2018"
+			},
+			{
+				"title": "The new eco friendly stadium won a Leafy Award in 2016",
+				"thumb": "post-img3-xs",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"date": "June 8th, 2018"
+			},
+			{
+				"title": "The team is starting a new power breakfast regimen",
+				"thumb": "post-img4-xs",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"date": "May 12th, 2018"
+			}
+		],
+		"widget-popular-footer": [
+			{
+				"title": "The new eco friendly stadium won a Leafy Award in 2017",
+				"thumb": "post-img3-xs.jpg",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"date": "June 12th, 2018"
+			},
+			{
+				"title": "Jenny Jackson won't be able to play the next game",
+				"thumb": "post-img18-xs.jpg",
+				"category": {
+					"class": "category-2",
+					"name": "Injuries"
+				},
+				"date": "June 2nd, 2018"
+			},
+			{
+				"title": "The team is starting a new power breakfast regimen",
+				"thumb": "post-img8-xs.jpg",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"date": "January 25th, 2018"
+			}
+		],
+		"widget-featured-footer": [
+			{
+				"title": "The team trainings are instensifying looking at the next match",
+				"thumb": "post-img21-xs.jpg",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"date": "August 21st, 2018"
+			},
+			{
+				"title": "The Alchemists team is appearing in L.A. Beach for charity",
+				"thumb": "post-img5-xs.jpg",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"date": "July 13th, 2018"
+			},
+			{
+				"title": "The Alchemists need two win the next two games",
+				"thumb": "post-img20-xs.jpg",
+				"category": {
+					"class": "category-3",
+					"name": "The League"
+				},
+				"date": "May 7th, 2018"
+			}
+		],
+		"widget-tabbed": {
+			"newest": [
+				{
+					"title": "Jake Dribbler Announced that he is retiring next month",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+					"category": {
+						"class": "category-1",
+						"name": "The Team"
+					},
+					"date": "August 23rd, 2018"
+				},
+				{
+					"title": "The Alchemists news coach is bringin a new shooting guard",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+					"category": {
+						"class": "category-1",
+						"name": "The Team"
+					},
+					"date": "August 23rd, 2018"
+				},
+				{
+					"title": "This Saturday starts the intensive training for the Final",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+					"category": {
+						"class": "category-1",
+						"name": "The Team"
+					},
+					"date": "August 23rd, 2018"
+				},
+				{
+					"title": "New York Islanders are now flying to California for the big game",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+					"category": {
+						"class": "category-3",
+						"name": "Playoffs"
+					},
+					"date": "August 23rd, 2018"
+				},
+				{
+					"title": "The Female Division is growing strong after their third game",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+					"category": {
+						"class": "category-1",
+						"name": "The Team"
+					},
+					"date": "August 23rd, 2018"
+				}
+			],
+			"commented": [
+				{
+					"title": "New York Islanders are now flying to California for the big game",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+					"category": {
+						"class": "category-3",
+						"name": "Playoffs"
+					},
+					"date": "August 23rd, 2018"
+				},
+				{
+					"title": "The Female Division is growing strong after their third game",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+					"category": {
+						"class": "category-1",
+						"name": "The Team"
+					},
+					"date": "August 23rd, 2018"
+				},
+				{
+					"title": "The Alchemists news coach is bringin a new shooting guard",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+					"category": {
+						"class": "category-1",
+						"name": "The Team"
+					},
+					"date": "August 23rd, 2018"
+				},
+				{
+					"title": "This Saturday starts the intensive training for the Final",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+					"category": {
+						"class": "category-1",
+						"name": "The Team"
+					},
+					"date": "August 23rd, 2018"
+				},
+				{
+					"title": "Jake Dribbler Announced that he is retiring next month",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+					"category": {
+						"class": "category-1",
+						"name": "The Team"
+					},
+					"date": "August 23rd, 2018"
+				},
+				{
+					"title": "Jake Dribbler Announced that he is retiring next month",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+					"category": {
+						"class": "category-1",
+						"name": "The Team"
+					},
+					"date": "August 23rd, 2018"
+				}
+			],
+			"popular": [
+				{
+					"title": "The Alchemists news coach is bringin a new shooting guard",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+					"category": {
+						"class": "category-1",
+						"name": "The Team"
+					},
+					"date": "August 23rd, 2018"
+				},
+				{
+					"title": "This Saturday starts the intensive training for the Final",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+					"category": {
+						"class": "category-1",
+						"name": "The Team"
+					},
+					"date": "August 23rd, 2018"
+				},
+				{
+					"title": "Jake Dribbler Announced that he is retiring next month",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+					"category": {
+						"class": "category-1",
+						"name": "The Team"
+					},
+					"date": "August 23rd, 2018"
+				},
+				{
+					"title": "The Female Division is growing strong after their third game",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+					"category": {
+						"class": "category-1",
+						"name": "The Team"
+					},
+					"date": "August 23rd, 2018"
+				},
+				{
+					"title": "New York Islanders are now flying to California for the big game",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+					"category": {
+						"class": "category-3",
+						"name": "Playoffs"
+					},
+					"date": "August 23rd, 2018"
+				}
+			]
+		},
+		"widget-tabbed-sm": {
+			"newest": [
+				{
+					"title": "Jake Dribbler Announced that he is retiring next month",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+					"category": {
+						"class": "category-1",
+						"name": "The Team"
+					},
+					"date": "August 23rd, 2018"
+				},
+				{
+					"title": "The Alchemists news coach is bringin a new shooting guard",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+					"category": {
+						"class": "category-1",
+						"name": "The Team"
+					},
+					"date": "August 23rd, 2018"
+				},
+				{
+					"title": "This Saturday starts the intensive training for the Final",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+					"category": {
+						"class": "category-1",
+						"name": "The Team"
+					},
+					"date": "August 23rd, 2018"
+				}
+			],
+			"commented": [
+				{
+					"title": "New York Islanders are now flying to California for the big game",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+					"category": {
+						"class": "category-3",
+						"name": "Playoffs"
+					},
+					"date": "August 23rd, 2018"
+				},
+				{
+					"title": "The Female Division is growing strong after their third game",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+					"category": {
+						"class": "category-1",
+						"name": "The Team"
+					},
+					"date": "August 23rd, 2018"
+				},
+				{
+					"title": "The Alchemists news coach is bringin a new shooting guard",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+					"category": {
+						"class": "category-1",
+						"name": "The Team"
+					},
+					"date": "August 23rd, 2018"
+				}
+			],
+			"popular": [
+				{
+					"title": "The Alchemists news coach is bringin a new shooting guard",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+					"category": {
+						"class": "category-1",
+						"name": "The Team"
+					},
+					"date": "August 23rd, 2018"
+				},
+				{
+					"title": "This Saturday starts the intensive training for the Final",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+					"category": {
+						"class": "category-1",
+						"name": "The Team"
+					},
+					"date": "August 23rd, 2018"
+				},
+				{
+					"title": "Jake Dribbler Announced that he is retiring next month",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+					"category": {
+						"class": "category-1",
+						"name": "The Team"
+					},
+					"date": "August 23rd, 2018"
+				}
+			]
+		},
+		"widget-comments": [
+			{
+				"comment": "Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				"author": {
+					"name": "Samantha Rodgers",
+					"avatar": "avatar-11.jpg"
+				},
+				"date": "25 mins ago"
+			},
+			{
+				"comment": "Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud en derum sum laborem.",
+				"author": {
+					"name": "Alexandra Dason",
+					"avatar": "avatar-2.jpg"
+				},
+				"date": "48 mins ago"
+			},
+			{
+				"comment": "Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt.",
+				"author": {
+					"name": "Jake Casspon",
+					"avatar": "avatar-9.jpg"
+				},
+				"date": "23 hours ago"
+			}
+		],
+		"tagcloud": [
+			{ "label": "PLAYOFFS" },
+			{ "label": "ALCHEMISTS" },
+			{ "label": "INJURIES" },
+			{ "label": "TEAM" },
+			{ "label": "INCORPORATIONS" },
+			{ "label": "UNIFORMS" },
+			{ "label": "CHAMPIONS" },
+			{ "label": "PROFESSIONAL" },
+			{ "label": "COACH" },
+			{ "label": "STADIUM" },
+			{ "label": "NEWS" },
+			{ "label": "PLAYERS" },
+			{ "label": "WOMEN DIVISION" },
+			{ "label": "AWARDS" }
+		],
+		"pushy-panel-posts": [
+			{
+				"title": "The Team will make a small vacation to the Caribbean",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				"thumb": "post-img19-xs.jpg",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"date": "June 12th, 2018"
+			},
+			{
+				"title": "Jenny Jackson won't be able to play the next game",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				"thumb": "post-img18-xs.jpg",
+				"category": {
+					"class": "category-2",
+					"name": "Injuries"
+				},
+				"date": "May 15th, 2018"
+			},
+			{
+				"title": "The team is starting a new power breakfast regimen",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				"thumb": "post-img8-xs.jpg",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"date": "March 16th, 2018"
+			},
+			{
+				"title": "The Alchemists need two win the next two games",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				"thumb": "post-img20-xs.jpg",
+				"category": {
+					"class": "category-3",
+					"name": "The League"
+				},
+				"date": "February 8th, 2018"
+			}
+		],
+		"search-result": [
+			{
+				"title": "Alchemists coach on Jake Summer's injury \"It looks really bad\"",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in enderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+				"category": {
+					"class": "category-2",
+					"name": "Injuries"
+				},
+				"date": "September 17th, 2018"
+			},
+			{
+				"title": "The team is gonna make a trip to the beach for a small vacation",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in enderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"date": "August 12th, 2018"
+			},
+			{
+				"title": "The perfect breakfast for the team's high intensity training",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in enderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+				"category": {
+					"class": "category-1",
+					"name": "The Team"
+				},
+				"date": "January 2nd, 2018"
+			}
+		]
+	},
+	"sp": {
+		"league-table": [
+			{
+				"logo": "pirates_shield.png",
+				"name": "L.A Pirates",
+				"place": "Bebop Institute",
+				"stats": {
+					"w": 36,
+					"l": 14,
+					"d": 10,
+					"pts": 118
+				}
+			},
+			{
+				"logo": "sharks_shield.png",
+				"name": "Sharks",
+				"place": "Marine College",
+				"stats": {
+					"w": 32,
+					"l": 20,
+					"d": 8,
+					"pts": 104
+				}
+			},
+			{
+				"logo": "alchemists_b_shield.png",
+				"name": "The Alchemists",
+				"place": "Eric Bros School",
+				"stats": {
+					"w": 32,
+					"l": 21,
+					"d": 7,
+					"pts": 103
+				}
+			},
+			{
+				"logo": "ocean_kings_shield.png",
+				"name": "Ocean Kings",
+				"place": "Bay College",
+				"stats": {
+					"w": 30,
+					"l": 20,
+					"d": 10,
+					"pts": 100
+				}
+			},
+			{
+				"logo": "red_wings_shield.png",
+				"name": "Red Wings",
+				"place": "Icarus College",
+				"stats": {
+					"w": 28,
+					"l": 24,
+					"d": 8,
+					"pts": 92
+				}
+			},
+			{
+				"logo": "lucky_clovers_shield.png",
+				"name": "Lucky Clovers",
+				"place": "St. Patrick’s Institute",
+				"stats": {
+					"w": 27,
+					"l": 24,
+					"d": 9,
+					"pts": 90
+				}
+			},
+			{
+				"logo": "draconians_shield.png",
+				"name": "Draconians",
+				"place": "High Rock College",
+				"stats": {
+					"w": 25,
+					"l": 28,
+					"d": 7,
+					"pts": 82
+				}
+			},
+			{
+				"logo": "bloody_wave_shield.png",
+				"name": "Bloody Wave",
+				"place": "Atlantic School",
+				"stats": {
+					"w": 24,
+					"l": 30,
+					"d": 6,
+					"pts": 78
+				}
+			}
+		],
+		"game": {
+			"widget-play-by-play": [
+				{
+					"time": "4’",
+					"icon": "icon-whistle",
+					"comment": "<strong>Rick Valentine (Clovers)</strong> wins a free kick in the attacking half of the field."
+				},
+				{
+					"time": "12’",
+					"icon": "icon-corner-flag",
+					"comment": "Corner Kick for <strong>Alchemists</strong>. Conceded by Alphonse Tucker."
+				},
+				{
+					"time": "17’",
+					"icon": "icon-whistle",
+					"comment": "Foul by <strong>Martin Pierto (Clovers)</strong>."
+				},
+				{
+					"time": "22’",
+					"icon": "icon-soccer-ball",
+					"comment": "Goal! <strong>Franklin Stevens (Alchemists)</strong> scored with the right foot. Assisted by David Hawkins. (1-0)"
+				},
+				{
+					"time": "29’",
+					"icon": "icon-injury",
+					"comment": "Paramedics entered the field to check <strong>Christofer Grass (Alchemists)</strong> for a nasty fall."
+				},
+				{
+					"time": "36’",
+					"icon": "icon-yellow-card",
+					"comment": "<strong>Johnny Griffin (Clovers)</strong> is shown the yellow card for a bad kick to Brian Kingster’s shin."
+				},
+				{
+					"time": "42’",
+					"icon": "icon-whistle",
+					"comment": "Foul by <strong>Spike Arrowhead (Alchemists)</strong>."
+				},
+				{
+					"time": "HT",
+					"icon": "icon-stopwatch",
+					"comment": "After 2 additional minutes starts the <strong>Halftime</strong>."
+				},
+				{
+					"time": "HT",
+					"icon": "icon-substitution",
+					"comment": "<strong>Markus Jackson</strong> enters the field and substitutes <strong>Rick Valentine</strong> for the <strong>Clovers</strong>."
+				},
+				{
+					"time": "51’",
+					"icon": "icon-whistle",
+					"comment": "Foul by <strong>Dany Stak (Clovers)</strong>."
+				},
+				{
+					"time": "59’",
+					"icon": "icon-red-card",
+					"comment": "<strong>Brian Kingster (Alchemists)</strong> is shown the red card for an intentional kick to Martin Pierto."
+				},
+				{
+					"time": "63’",
+					"icon": "icon-keepers-glove",
+					"comment": "Attempt saved. <strong>Nick Rodgers (Alchemists)</strong> made an incredible save in the top corner of the goal."
+				},
+				{
+					"time": "67’",
+					"icon": "icon-whistle",
+					"comment": "Penalty Kick. <strong>Alphonse Tucker (Clovers)</strong> blocked a shot in the area with his hand."
+				},
+				{
+					"time": "68’",
+					"icon": "icon-soccer-ball-penalty",
+					"comment": "Goal! <strong>Christofer Grass (Alchemists)</strong> scored a penalty kick after a hand by Alphonse Tucker. (2-0)"
+				},
+				{
+					"time": "77’",
+					"icon": "icon-offside-flag",
+					"comment": "Offside of <strong>Chris Balleron (Clovers)</strong>."
+				},
+				{
+					"time": "82’",
+					"icon": "icon-soccer-shoe",
+					"comment": "Attempt missed. <strong>Michael Netter (Clovers)</strong> right foot shot from outside the box is too high."
+				},
+				{
+					"time": "84’",
+					"icon": "icon-yellow-card",
+					"comment": "<strong>Wally Christison (Clovers)</strong> is shown the yellow card for a headbutt to David Hawkins’s face."
+				},
+				{
+					"time": "90’",
+					"icon": "icon-stopwatch",
+					"comment": "The referee adds 4 minutes of <strong>additional time</strong>."
+				},
+				{
+					"time": "FT",
+					"icon": "icon-stopwatch",
+					"comment": "End of the game. The <strong>Alchemists won 2-0</strong>."
+				},
+				{
+					"time": "AD",
+					"icon": "icon-soccer-ball-own-goal",
+					"comment": "Additional Icon: <strong>Soccer Ball Own Goal</strong>."
+				},
+				{
+					"time": "AD",
+					"icon": "icon-soccer-ball-missed-penalty",
+					"comment": "Additional Icon: <strong>Soccer Ball Missed Penalty</strong>."
+				}
+			],
+			"widget-results": [
+				{
+					"date": "Saturday, March 24",
+					"team1": {
+						"name": "Alchemists",
+						"logo": "soccer/logos/alchemists_s_shield.png",
+						"place": "Elric Bros School",
+						"result": {
+							"outcome": {
+								"win": true
+							},
+							"score": "2"
+						}
+					},
+					"team2": {
+						"name": "Sharks",
+						"logo": "samples/logos/sharks_shield.png",
+						"place": "Marine College",
+						"result": {
+							"outcome": {
+								"win": false
+							},
+							"score": "0"
+						}
+					},
+					"event_place": "Home"
+				},
+				{
+					"date": "Friday, March 16",
+					"team1": {
+						"name": "L.A. Pirates",
+						"logo": "samples/logos/pirates_shield.png",
+						"place": "Bebop Institute",
+						"result": {
+							"outcome": {
+								"win": true
+							},
+							"score": "4"
+						}
+					},
+					"team2": {
+						"name": "Alchemists",
+						"logo": "soccer/logos/alchemists_s_shield.png",
+						"place": "Eric Bros School",
+						"result": {
+							"outcome": {
+								"win": false
+							},
+							"score": "2"
+						}
+					},
+					"event_place": "Away"
+				},
+				{
+					"date": "Saturday, March 10",
+					"team1": {
+						"name": "Alchemists",
+						"logo": "soccer/logos/alchemists_s_shield.png",
+						"place": "Eric Bros School",
+						"result": {
+							"outcome": {
+								"win": false
+							},
+							"score": "0"
+						}
+					},
+					"team2": {
+						"name": "Clovers",
+						"logo": "samples/logos/lucky_clovers_shield.png",
+						"place": "St. Patrick’s Inst",
+						"result": {
+							"outcome": {
+								"win": false
+							},
+							"score": "0"
+						}
+					},
+					"event_place": "Home"
+				},
+				{
+					"date": "Friday, March 4",
+					"team1": {
+						"name": "Ocean Kings",
+						"logo": "samples/logos/ocean_kings_shield.png",
+						"place": "Bay College",
+						"result": {
+							"outcome": {
+								"win": false
+							},
+							"score": "2"
+						}
+					},
+					"team2": {
+						"name": "Alchemists",
+						"logo": "soccer/logos/alchemists_s_shield.png",
+						"place": "Eric Bros School",
+						"result": {
+							"outcome": {
+								"win": true
+							},
+							"score": "3"
+						}
+					},
+					"event_place": "Home"
+				}
+			],
+			"widget-lineup": {
+				"starters": [
+					{
+						"num": "01",
+						"pos": "GK",
+						"name": "Nick Rodgers",
+						"info": ""
+					},
+					{
+						"num": "04",
+						"pos": "DF",
+						"name": "Mark Ironson",
+						"info": ""
+					},
+					{
+						"num": "03",
+						"pos": "DF",
+						"name": "Brian Kingster",
+						"info": "icon-red-card"
+					},
+					{
+						"num": "22",
+						"pos": "DF",
+						"name": "James Girobilli",
+						"info": ""
+					},
+					{
+						"num": "05",
+						"pos": "DF",
+						"name": "Thomas Black",
+						"info": ""
+					},
+					{
+						"num": "08",
+						"pos": "MF",
+						"name": "Christofer Grass",
+						"info": "icon-soccer-ball"
+					},
+					{
+						"num": "02",
+						"pos": "MF",
+						"name": "Spike Arrowhead",
+						"info": ""
+					},
+					{
+						"num": "26",
+						"pos": "MF",
+						"name": "Griffin Peterson",
+						"info": ""
+					},
+					{
+						"num": "07",
+						"pos": "FD",
+						"name": "James Messinal",
+						"info": ""
+					},
+					{
+						"num": "09",
+						"pos": "FD",
+						"name": "Franklin Stevens",
+						"info": "icon-soccer-ball"
+					},
+					{
+						"num": "18",
+						"pos": "FD",
+						"name": "David Hawkins",
+						"info": ""
+					},
+					{
+						"staff": true,
+						"pos": "Team Coach",
+						"name": "Robert Frankson",
+						"info": ""
+					}
+				],
+				"substitute": [
+					{
+						"num": "32",
+						"pos": "GK",
+						"name": "Taylor Redner",
+						"info": ""
+					},
+					{
+						"num": "27",
+						"pos": "DF",
+						"name": "Christian Netteron",
+						"info": ""
+					},
+					{
+						"num": "11",
+						"pos": "MF",
+						"name": "Alex Walterston",
+						"info": ""
+					},
+					{
+						"num": "19",
+						"pos": "FD",
+						"name": "Kirk Hetfield",
+						"info": ""
+					},
+					{
+						"num": "25",
+						"pos": "FD",
+						"name": "James Hammet",
+						"info": ""
+					}
+				]
+			},
+			"widget-lineup-opponent": {
+				"starters": [
+					{
+						"num": "04",
+						"pos": "DF",
+						"name": "Danny Stark",
+						"info": ""
+					},
+					{
+						"num": "03",
+						"pos": "DF",
+						"name": "Martin Pierto",
+						"info": ""
+					},
+					{
+						"num": "07",
+						"pos": "DF",
+						"name": "Brad Rockers",
+						"info": ""
+					},
+					{
+						"num": "05",
+						"pos": "DF",
+						"name": "Johnny Griffin",
+						"info": "icon-yellow-card"
+					},
+					{
+						"num": "08",
+						"pos": "MD",
+						"name": "Rick Valentine",
+						"info": "icon-out"
+					},
+					{
+						"num": "02",
+						"pos": "MF",
+						"name": "Alphonse Tucker",
+						"info": ""
+					},
+					{
+						"num": "26",
+						"pos": "MF",
+						"name": "Wally Christison",
+						"info": "icon-yellow-card"
+					},
+					{
+						"num": "22",
+						"pos": "FD",
+						"name": "Adam Howlett",
+						"info": ""
+					},
+					{
+						"num": "09",
+						"pos": "FD",
+						"name": "Michael Neter",
+						"info": ""
+					},
+					{
+						"num": "18",
+						"pos": "FD",
+						"name": "Chris Balleron",
+						"info": ""
+					},
+					{
+						"num": "20",
+						"pos": "FD",
+						"name": "David Hawkins",
+						"info": ""
+					},
+					{
+						"staff": true,
+						"pos": "Team Coach",
+						"name": "Carter Stevens",
+						"info": ""
+					}
+				],
+				"substitute": [
+					{
+						"num": "32",
+						"pos": "GK",
+						"name": "Joe D’Amico",
+						"info": ""
+					},
+					{
+						"num": "27",
+						"pos": "DF",
+						"name": "Thomas Kent",
+						"info": ""
+					},
+					{
+						"num": "11",
+						"pos": "MF",
+						"name": "Phillip West",
+						"info": ""
+					},
+					{
+						"num": "19",
+						"pos": "FD",
+						"name": "Markus Jackson",
+						"info": "icon-in"
+					},
+					{
+						"num": "25",
+						"pos": "FD",
+						"name": "Nicholas Wayne",
+						"info": ""
+					}
+				]
+			}
+		},
+		"team": {
+			"standings": [
+				{
+					"pos": "01",
+					"team": {
+						"logo": "pirates_shield.png",
+						"name": "L.A. Pirates",
+						"place": "Bebop Institute"
+					},
+					"played": "50",
+					"win": "36",
+					"lose": "14",
+					"drawn": "10",
+					"goals-for": "19",
+					"goals-against": "2",
+					"goals-diff": "17",
+					"total-points": "118",
+					"points-diff": "+ 15"
+				},
+				{
+					"pos": "02",
+					"team": {
+						"logo": "sharks_shield.png",
+						"name": "Sharks",
+						"place": "Marine College"
+					},
+					"played": "50",
+					"win": "32",
+					"lose": "20",
+					"drawn": "8",
+					"goals-for": "17",
+					"goals-against": "8",
+					"goals-diff": "9",
+					"total-points": "104",
+					"points-diff": "+ 1"
+				},
+				{
+					"pos": "03",
+					"team": {
+						"logo": "alchemists_b_shield.png",
+						"name": "The Alchemists",
+						"place": "Eric Bros School"
+					},
+					"played": "50",
+					"win": "32",
+					"lose": "21",
+					"drawn": "7",
+					"goals-for": "22",
+					"goals-against": "5",
+					"goals-diff": "17",
+					"total-points": "103",
+					"points-diff": "0"
+				},
+				{
+					"pos": "04",
+					"team": {
+						"logo": "ocean_kings_shield.png",
+						"name": "Ocean Kings",
+						"place": "Bay College"
+					},
+					"played": "50",
+					"win": "30",
+					"lose": "20",
+					"drawn": "10",
+					"goals-for": "16",
+					"goals-against": "6",
+					"goals-diff": "10",
+					"total-points": "100",
+					"points-diff": "- 3"
+				},
+				{
+					"pos": "05",
+					"team": {
+						"logo": "red_wings_shield.png",
+						"name": "Red Wings",
+						"place": "Icarus College"
+					},
+					"played": "50",
+					"win": "28",
+					"lose": "24",
+					"drawn": "8",
+					"goals-for": "18",
+					"goals-against": "4",
+					"goals-diff": "14",
+					"total-points": "92",
+					"points-diff": "- 11"
+				},
+				{
+					"pos": "06",
+					"team": {
+						"logo": "lucky_clovers_shield.png",
+						"name": "Lucky Clovers",
+						"place": "St. Patrick’s Institute"
+					},
+					"played": "50",
+					"win": "27",
+					"lose": "24",
+					"drawn": "9",
+					"goals-for": "18",
+					"goals-against": "5",
+					"goals-diff": "13",
+					"total-points": "90",
+					"points-diff": "- 13"
+				},
+				{
+					"pos": "07",
+					"team": {
+						"logo": "draconians_shield.png",
+						"name": "Draconians",
+						"place": "Wyvern College"
+					},
+					"played": "50",
+					"win": "25",
+					"lose": "28",
+					"drawn": "7",
+					"goals-for": "17",
+					"goals-against": "4",
+					"goals-diff": "13",
+					"total-points": "82",
+					"points-diff": "- 21"
+				},
+				{
+					"pos": "08",
+					"team": {
+						"logo": "bloody_wave_shield.png",
+						"name": "Bloody Wave",
+						"place": "Atlantic School"
+					},
+					"played": "50",
+					"win": "24",
+					"lose": "30",
+					"drawn": "6",
+					"goals-for": "18",
+					"goals-against": "8",
+					"goals-diff": "10",
+					"total-points": "78",
+					"points-diff": "- 25"
+				},
+				{
+					"pos": "09",
+					"team": {
+						"logo": "icarus_wings_shield.png",
+						"name": "Icarus Wings",
+						"place": "Waxer College"
+					},
+					"played": "50",
+					"win": "22",
+					"lose": "32",
+					"drawn": "6",
+					"goals-for": "16",
+					"goals-against": "12",
+					"goals-diff": "4",
+					"total-points": "72",
+					"points-diff": "- 31"
+				},
+				{
+					"pos": "10",
+					"team": {
+						"logo": "aqua_keyes_shield.png",
+						"name": "Aqua Keyes",
+						"place": "Pacific Institute"
+					},
+					"played": "50",
+					"win": "21",
+					"lose": "31",
+					"drawn": "6",
+					"goals-for": "19",
+					"goals-against": "14",
+					"goals-diff": "5",
+					"total-points": "69",
+					"points-diff": "- 34"
+				}
+			],
+			"results": [
+				{
+					"date": "Sat, Mar 10",
+					"team": {
+						"name": "Sharks",
+						"logo": "sharks_shield.png",
+						"place": "Marine College"
+					},
+					"result": {
+						"outcome": "W",
+						"score": "2-0"
+					},
+					"status": "Home",
+					"ball-possession": "62% - 38%",
+					"shots": "25(14) - 16(6)",
+					"fouls": "12 - 14"
+				},
+				{
+					"date": "Fri, Mar 16",
+					"team": {
+						"name": "L.A. Pirates",
+						"logo": "pirates_shield.png",
+						"place": "Bebop Institute"
+					},
+					"result": {
+						"outcome": "L",
+						"score": "4-2"
+					},
+					"status": "Away",
+					"ball-possession": "58% - 42%",
+					"shots": "28(16) - 22(11)",
+					"fouls": "15 - 16"
+				},
+				{
+					"date": "Sat, Mar 10",
+					"team": {
+						"name": "Lucky Clovers",
+						"logo": "lucky_clovers_shield.png",
+						"place": "St. Patrick’s Institute"
+					},
+					"result": {
+						"outcome": "D",
+						"score": "0-0"
+					},
+					"status": "Home",
+					"ball-possession": "46% - 54%",
+					"shots": "24(12) - 32(18)",
+					"fouls": "11 - 18"
+				},
+				{
+					"date": "Fri, Mar 4",
+					"team": {
+						"name": "Ocean Kings",
+						"logo": "ocean_kings_shield.png",
+						"place": "Bay College"
+					},
+					"result": {
+						"outcome": "W",
+						"score": "2-3"
+					},
+					"status": "Away",
+					"ball-possession": "60% - 40%",
+					"shots": "29(20) - 25(12)",
+					"fouls": "19 - 14"
+				},
+				{
+					"date": "Sat, Feb 29",
+					"team": {
+						"name": "Red Wings",
+						"logo": "icarus_wings_shield.png",
+						"place": "Icarus College"
+					},
+					"result": {
+						"outcome": "W",
+						"score": "2-1"
+					},
+					"status": "Home",
+					"ball-possession": "55% - 45%",
+					"shots": "25(15) - 30(17)",
+					"fouls": "14 - 16"
+				},
+				{
+					"date": "Fri, Feb 21",
+					"team": {
+						"name": "Draconians",
+						"logo": "draconians_shield.png",
+						"place": "Wyvern College"
+					},
+					"result": {
+						"outcome": "L",
+						"score": "4-2"
+					},
+					"status": "Away",
+					"ball-possession": "47% - 53%",
+					"shots": "22(11) - 25(18)",
+					"fouls": "18 - 20"
+				},
+				{
+					"date": "Sat, Feb 17",
+					"team": {
+						"name": "Icarus Wings",
+						"logo": "icarus_wings_shield.png",
+						"place": "Waxer College"
+					},
+					"result": {
+						"outcome": "D",
+						"score": "0-0"
+					},
+					"status": "Home",
+					"ball-possession": "61% - 39%",
+					"shots": "26(13) - 24(10)",
+					"fouls": "19 - 15"
+				},
+				{
+					"date": "Fri, Feb 9",
+					"team": {
+						"name": "Aqua Keyes",
+						"logo": "aqua_keyes_shield.png",
+						"place": "Pacific Institute"
+					},
+					"result": {
+						"outcome": "W",
+						"score": "2-3"
+					},
+					"status": "Away",
+					"ball-possession": "52% - 48%",
+					"shots": "22(18) - 27(8)",
+					"fouls": "21 - 17"
+				},
+				{
+					"date": "Sat, Feb 3",
+					"team": {
+						"name": "Sharks",
+						"logo": "sharks_shield.png",
+						"place": "Marine College"
+					},
+					"result": {
+						"outcome": "W",
+						"score": "2-0"
+					},
+					"status": "Home",
+					"ball-possession": "62% - 38%",
+					"shots": "25(14) - 16(6)",
+					"fouls": "12 - 14"
+				},
+				{
+					"date": "Fri, Jan 28",
+					"team": {
+						"name": "L.A. Pirates",
+						"logo": "pirates_shield.png",
+						"place": "Bebop Institute"
+					},
+					"result": {
+						"outcome": "L",
+						"score": "4-2"
+					},
+					"status": "Away",
+					"ball-possession": "58% - 42%",
+					"shots": "28(16) - 22(11)",
+					"fouls": "15 - 16"
+				},
+				{
+					"date": "Sat, Jan 22",
+					"team": {
+						"name": "Lucky Clovers",
+						"logo": "lucky_clovers_shield.png",
+						"place": "St. Patrick’s Institute"
+					},
+					"result": {
+						"outcome": "D",
+						"score": "0-0"
+					},
+					"status": "Home",
+					"ball-possession": "46% - 54%",
+					"shots": "24(12) - 32(18)",
+					"fouls": "11 - 18"
+				},
+				{
+					"date": "Fri, Jan 14",
+					"team": {
+						"name": "Ocean Kings",
+						"logo": "ocean_kings_shield.png",
+						"place": "Bay College"
+					},
+					"result": {
+						"outcome": "W",
+						"score": "2-3"
+					},
+					"status": "Away",
+					"ball-possession": "60% - 40%",
+					"shots": "29(20) - 25(12)",
+					"fouls": "19 - 14"
+				},
+				{
+					"date": "Sat, Jan 8",
+					"team": {
+						"name": "Red Wings",
+						"logo": "icarus_wings_shield.png",
+						"place": "Icarus College"
+					},
+					"result": {
+						"outcome": "W",
+						"score": "2-1"
+					},
+					"status": "Home",
+					"ball-possession": "55% - 45%",
+					"shots": "25(15) - 30(17)",
+					"fouls": "14 - 16"
+				},
+				{
+					"date": "Fri, Jan 2",
+					"team": {
+						"name": "Draconians",
+						"logo": "draconians_shield.png",
+						"place": "Wyvern College"
+					},
+					"result": {
+						"outcome": "L",
+						"score": "4-2"
+					},
+					"status": "Away",
+					"ball-possession": "47% - 53%",
+					"shots": "22(11) - 25(18)",
+					"fouls": "18 - 20"
+				}
+			],
+			"newslog": [
+				{
+					"type": "injury",
+					"content": "<strong>Mark Johnson</strong> has a tibia fracture and he’s gonna be out of the play for <strong>2 months</strong>.",
+					"date": "September 18, 2016"
+				},
+				{
+					"type": "join",
+					"content": "<strong>Dominick R. Blink</strong>, a new <strong>Shooting Guard</strong> from San Francisco has joined the team!.",
+					"date": "September 6, 2016"
+				},
+				{
+					"type": "join",
+					"content": "<strong>Christopher Grifin</strong>, a new <strong>Power Forward</strong> from Rockstar Bay College has joined the team!.",
+					"date": "August 24, 2016"
+				},
+				{
+					"type": "injury",
+					"content": "<strong>Thomas Durry</strong> has a composed hand fracture and he won’t be playing untill <strong>September</strong>.",
+					"date": "August 17, 2016"
+				},
+				{
+					"type": "exit",
+					"content": "<strong>Jeremy Rittersen</strong> left the team after 2 year in the club and his new house are the <strong>Clovers</strong>.",
+					"date": "August 12, 2016"
+				}
+			],
+			"roster": [
+				{
+					"number": "01",
+					"position": "GK",
+					"name": "Nick Rodgers",
+					"foot": "Right",
+					"age": "18",
+					"height": "6’6’’",
+					"weight": "205 lbs",
+					"goals": "2",
+					"assists": "0",
+					"fouls": "24",
+					"card-y": "1",
+					"card-r": "0",
+					"college": "South Beach College"
+				},
+				{
+					"number": "04",
+					"position": "DF",
+					"name": "Mark Ironson",
+					"foot": "Right",
+					"age": "17",
+					"height": "6’1’’",
+					"weight": "189 lbs",
+					"goals": "4",
+					"assists": "24",
+					"fouls": "68",
+					"card-y": "4",
+					"card-r": "2",
+					"college": "Green Palm College"
+				},
+				{
+					"number": "03",
+					"position": "DF",
+					"name": "Brian Kingster",
+					"foot": "Left",
+					"age": "16",
+					"height": "5’2’’",
+					"weight": "186 lbs",
+					"goals": "6",
+					"assists": "26",
+					"fouls": "76",
+					"card-y": "8",
+					"card-r": "1",
+					"college": "Green Palm College"
+				},
+				{
+					"number": "22",
+					"position": "DF",
+					"name": "James Girobilli",
+					"foot": "Right",
+					"age": "18",
+					"height": "6’2’’",
+					"weight": "198 lbs",
+					"goals": "5",
+					"assists": "25",
+					"fouls": "72",
+					"card-y": "6",
+					"card-r": "0",
+					"college": "The Sand Bay Institute"
+				},
+				{
+					"number": "05",
+					"position": "DF",
+					"name": "Thomas Black",
+					"foot": "Left",
+					"age": "17",
+					"height": "5’8’’",
+					"weight": "194 lbs",
+					"goals": "8",
+					"assists": "31",
+					"fouls": "53",
+					"card-y": "5",
+					"card-r": "2",
+					"college": "South Beach College"
+				},
+				{
+					"number": "08",
+					"position": "MF",
+					"name": "Christofer Grass",
+					"foot": "Left",
+					"age": "18",
+					"height": "5’6’’",
+					"weight": "176 lbs",
+					"goals": "7",
+					"assists": "28",
+					"fouls": "70",
+					"card-y": "8",
+					"card-r": "0",
+					"college": "The Sand Bay Institute"
+				},
+				{
+					"number": "02",
+					"position": "MF",
+					"name": "Spike Arrowhead",
+					"foot": "Right",
+					"age": "17",
+					"height": "5’5’’",
+					"weight": "180 lbs",
+					"goals": "12",
+					"assists": "39",
+					"fouls": "56",
+					"card-y": "7",
+					"card-r": "3",
+					"college": "Green Palm College"
+				},
+				{
+					"number": "26",
+					"position": "MF",
+					"name": "Griffin Peterson",
+					"foot": "Right",
+					"age": "17",
+					"height": "6’6’’",
+					"weight": "184 lbs",
+					"goals": "34",
+					"assists": "36",
+					"fouls": "59",
+					"card-y": "4",
+					"card-r": "0",
+					"college": "South Beach College"
+				},
+				{
+					"number": "07",
+					"position": "MF",
+					"name": "James Messinal",
+					"foot": "Left",
+					"age": "18",
+					"height": "5’8’’",
+					"weight": "176 lbs",
+					"goals": "68",
+					"assists": "42",
+					"fouls": "64",
+					"card-y": "8",
+					"card-r": "4",
+					"college": "Green Palm College"
+				},
+				{
+					"number": "09",
+					"position": "FD",
+					"name": "Franklin Stevens",
+					"foot": "Right",
+					"age": "16",
+					"height": "5’9’’",
+					"weight": "196 lbs",
+					"goals": "62",
+					"assists": "46",
+					"fouls": "69",
+					"card-y": "9",
+					"card-r": "2",
+					"college": "The Sand Bay Institute"
+				},
+				{
+					"number": "18",
+					"position": "FD",
+					"name": "David Hawkins",
+					"foot": "Right",
+					"age": "18",
+					"height": "6’3’’",
+					"weight": "202 lbs",
+					"goals": "60",
+					"assists": "43",
+					"fouls": "77",
+					"card-y": "7",
+					"card-r": "2",
+					"college": "South Beach College"
+				},
+				{
+					"number": "32",
+					"position": "GK",
+					"name": "Taylor Redner",
+					"foot": "Left",
+					"age": "18",
+					"height": "5’6’’",
+					"weight": "176 lbs",
+					"goals": "1",
+					"assists": "0",
+					"fouls": "70",
+					"card-y": "0",
+					"card-r": "0",
+					"college": "The Sand Bay Institute"
+				},
+				{
+					"number": "02",
+					"position": "DF",
+					"name": "Christian Netteron",
+					"foot": "Right",
+					"age": "17",
+					"height": "5’5’’",
+					"weight": "180 lbs",
+					"goals": "13",
+					"assists": "16",
+					"fouls": "56",
+					"card-y": "6",
+					"card-r": "1",
+					"college": "Green Palm College"
+				},
+				{
+					"number": "26",
+					"position": "MF",
+					"name": "Alex Walterston",
+					"foot": "Right",
+					"age": "17",
+					"height": "6’6’’",
+					"weight": "184 lbs",
+					"goals": "24",
+					"assists": "24",
+					"fouls": "59",
+					"card-y": "9",
+					"card-r": "3",
+					"college": "South Beach College"
+				},
+				{
+					"number": "07",
+					"position": "FD",
+					"name": "Kirk Hetfield",
+					"foot": "Left",
+					"age": "18",
+					"height": "5’8’’",
+					"weight": "176 lbs",
+					"goals": "32",
+					"assists": "45",
+					"fouls": "64",
+					"card-y": "4",
+					"card-r": "4",
+					"college": "Green Palm College"
+				},
+				{
+					"number": "09",
+					"position": "FD",
+					"name": "James Hammet",
+					"foot": "Right",
+					"age": "16",
+					"height": "5’9’’",
+					"weight": "196 lbs",
+					"goals": "30",
+					"assists": "48",
+					"fouls": "69",
+					"card-y": "5",
+					"card-r": "2",
+					"college": "The Sand Bay Institute"
+				}
+			],
+			"roster-featured": [
+				{
+					"number": "07",
+					"firstname": "James",
+					"lastname": "Messinal",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud en derum sum laborem.",
+					"excerpt_sm": "Brian started playing at the age of 5 for a small team called “The New Ghosts” and from...",
+					"img": "soccer/rosterv3_player_01.png",
+					"img_alt": "roster_player_01_card.png",
+					"stats": {
+						"shot-percent": {
+							"label": "Shot Accuracy",
+							"label_sm": "Shot Acc",
+							"class": "width-90",
+							"value": 96
+						},
+						"pass-percent": {
+							"label": "Pass Accuracy",
+							"label_sm": "Pass Acc",
+							"class": "width-70",
+							"value": 74
+						},
+						"performance": {
+							"label": "Performance",
+							"class": "width-80",
+							"value": 85
+						}
+					},
+					"info": [
+						{
+							"label": "Goals",
+							"value": 104,
+							"featured": true
+						},
+						{
+							"label": "Games",
+							"value": 86
+						},
+						{
+							"label": "Position",
+							"value": "FD"
+						},
+						{
+							"label": "Foot",
+							"value": "L"
+						}
+					]
+				},
+				{
+					"number": "01",
+					"firstname": "Nick",
+					"lastname": "Rodgers",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud en derum sum laborem.",
+					"excerpt_sm": "Brian started playing at the age of 5 for a small team called “The New Ghosts” and from...",
+					"img": "soccer/rosterv3_player_01.png",
+					"img_alt": "roster_player_02_card.png",
+					"stats": {
+						"shot-percent": {
+							"label": "Shot Accuracy",
+							"label_sm": "Shot Acc",
+							"class": "width-80",
+							"value": 82
+						},
+						"pass-percent": {
+							"label": "Pass Accuracy",
+							"label_sm": "Pass Acc",
+							"class": "width-60",
+							"value": 64
+						},
+						"performance": {
+							"label": "Performance",
+							"class": "width-90",
+							"value": 92
+						}
+					},
+					"info": [
+						{
+							"label": "Goals",
+							"value": 2,
+							"featured": true
+						},
+						{
+							"label": "Games",
+							"value": 82
+						},
+						{
+							"label": "Position",
+							"value": "GK"
+						},
+						{
+							"label": "Foot",
+							"value": "R"
+						}
+					]
+				},
+				{
+					"number": "04",
+					"firstname": "Mark",
+					"lastname": "Ironson",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud en derum sum laborem.",
+					"excerpt_sm": "Brian started playing at the age of 5 for a small team called “The New Ghosts” and from...",
+					"img": "soccer/rosterv3_player_01.png",
+					"img_alt": "roster_player_01_card.png",
+					"stats": {
+						"shot-percent": {
+							"label": "Shot Accuracy",
+							"label_sm": "Shot Acc",
+							"class": "width-70",
+							"value": 72
+						},
+						"pass-percent": {
+							"label": "Pass Accuracy",
+							"label_sm": "Pass Acc",
+							"class": "width-90",
+							"value": 94
+						},
+						"performance": {
+							"label": "Performance",
+							"class": "width-60",
+							"value": 62
+						}
+					},
+					"info": [
+						{
+							"label": "Goals",
+							"value": 32,
+							"featured": true
+						},
+						{
+							"label": "Games",
+							"value": 71
+						},
+						{
+							"label": "Position",
+							"value": "DF"
+						},
+						{
+							"label": "Foot",
+							"value": "R"
+						}
+					]
+				},
+				{
+					"number": "01",
+					"firstname": "Nick",
+					"lastname": "Rodgers",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud en derum sum laborem.",
+					"excerpt_sm": "Brian started playing at the age of 5 for a small team called “The New Ghosts” and from...",
+					"img": "soccer/rosterv3_player_01.png",
+					"img_alt": "roster_player_02_card.png",
+					"stats": {
+						"shot-percent": {
+							"label": "Shot Accuracy",
+							"label_sm": "Shot Acc",
+							"class": "width-80",
+							"value": 82
+						},
+						"pass-percent": {
+							"label": "Pass Accuracy",
+							"label_sm": "Pass Acc",
+							"class": "width-60",
+							"value": 64
+						},
+						"performance": {
+							"label": "Performance",
+							"class": "width-90",
+							"value": 92
+						}
+					},
+					"info": [
+						{
+							"label": "Goals",
+							"value": 2,
+							"featured": true
+						},
+						{
+							"label": "Games",
+							"value": 82
+						},
+						{
+							"label": "Position",
+							"value": "GK"
+						},
+						{
+							"label": "Foot",
+							"value": "R"
+						}
+					]
+				},
+				{
+					"number": "07",
+					"firstname": "James",
+					"lastname": "Messinal",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud en derum sum laborem.",
+					"excerpt_sm": "Brian started playing at the age of 5 for a small team called “The New Ghosts” and from...",
+					"img": "soccer/rosterv3_player_01.png",
+					"img_alt": "roster_player_01_card.png",
+					"stats": {
+						"shot-percent": {
+							"label": "Shot Accuracy",
+							"label_sm": "Shot Acc",
+							"class": "width-90",
+							"value": 96
+						},
+						"pass-percent": {
+							"label": "Pass Accuracy",
+							"label_sm": "Pass Acc",
+							"class": "width-70",
+							"value": 74
+						},
+						"performance": {
+							"label": "Performance",
+							"class": "width-80",
+							"value": 85
+						}
+					},
+					"info": [
+						{
+							"label": "Goals",
+							"value": 104,
+							"featured": true
+						},
+						{
+							"label": "Games",
+							"value": 86
+						},
+						{
+							"label": "Position",
+							"value": "FD"
+						},
+						{
+							"label": "Foot",
+							"value": "L"
+						}
+					]
+				}
+			],
+			"gallery": [
+				{
+					"thumb": "samples/post-img4.jpg",
+					"title": "Photoshoot for 2017",
+					"date": "December 17th, 2016"
+				},
+				{
+					"thumb": "soccer/samples/_soccer_post-img1.jpg",
+					"title": "California Playoffs 2016",
+					"date": "January 24th, 2016"
+				},
+				{
+					"thumb": "soccer/samples/_soccer_post-img2.jpg",
+					"title": "Player Portraits 2016",
+					"date": "January 14th, 2016"
+				},
+				{
+					"thumb": "samples/post-img3.jpg",
+					"title": "The Alchemists Stadium",
+					"date": "December 17th, 2016"
+				},
+				{
+					"thumb": "samples/post-img1.jpg",
+					"title": "Player Photoshoot",
+					"date": "January 24th, 2016"
+				},
+				{
+					"thumb": "samples/post-img17.jpg",
+					"title": "The National Team",
+					"date": "January 14th, 2016"
+				},
+				{
+					"thumb": "samples/post-img5.jpg",
+					"title": "Charity Activities",
+					"date": "December 17th, 2016"
+				},
+				{
+					"thumb": "samples/post-img2.jpg",
+					"title": "Cheerleader Squad",
+					"date": "January 24th, 2016"
+				},
+				{
+					"thumb": "samples/post-img13.jpg",
+					"title": "Meal Plan 2015",
+					"date": "January 14th, 2016"
+				}
+			],
+			"album": [
+				{
+					"col": "col-xs-6 col-sm-4",
+					"title": "The team is taking a summer vacation on Woody Valley",
+					"imgs": {
+						"full": "samples/album-img1.jpg",
+						"thumb": "samples/album-img1.jpg"
+					},
+					"date": "August 23rd, 2016",
+					"meta": {
+						"likes": "530"
+					}
+				},
+				{
+					"col": "col-xs-6 col-sm-4",
+					"title": "Mark Johnson has a Tibia Fracture and is gonna be out",
+					"imgs": {
+						"full": "samples/album-img2.jpg",
+						"thumb": "samples/album-img2.jpg"
+					},
+					"date": "August 23rd, 2016",
+					"meta": {
+						"likes": "530"
+					}
+				},
+				{
+					"col": "col-xs-6 col-sm-4",
+					"title": "Cheerleader tryouts will start next Friday at 5pm",
+					"imgs": {
+						"full": "samples/album-img5.jpg",
+						"thumb": "samples/album-img5.jpg"
+					},
+					"date": "August 23rd, 2016",
+					"meta": {
+						"likes": "530"
+					}
+				},
+				{
+					"col": "col-xs-6 col-sm-4",
+					"title": "The new eco friendly stadium won a Leafy Award in 2016",
+					"imgs": {
+						"full": "samples/album-img3.jpg",
+						"thumb": "samples/album-img3.jpg"
+					},
+					"date": "August 23rd, 2016",
+					"meta": {
+						"likes": "530"
+					}
+				},
+				{
+					"col": "col-xs-6 col-sm-4",
+					"title": "James Girobilli in the charity event in L.A. Beach",
+					"imgs": {
+						"full": "samples/album-img4.jpg",
+						"thumb": "samples/album-img4.jpg"
+					},
+					"date": "August 23rd, 2016",
+					"meta": {
+						"likes": "530"
+					}
+				},
+				{
+					"col": "col-md-8",
+					"title": "The Planetrotters will perform this May 4th at Madison Cube",
+					"imgs": {
+						"full": "samples/album-img6.jpg",
+						"thumb": "samples/album-img6.jpg"
+					},
+					"date": "August 23rd, 2016",
+					"meta": {
+						"likes": "530"
+					}
+				},
+				{
+					"col": "col-xs-6 col-sm-4",
+					"title": "Jeremy Rittersen was called to be in the National Team",
+					"imgs": {
+						"full": "soccer/samples/_soccer_album-img7.jpg",
+						"thumb": "soccer/samples/_soccer_album-img7.jpg"
+					},
+					"date": "August 23rd, 2016",
+					"meta": {
+						"likes": "530"
+					}
+				},
+				{
+					"col": "col-xs-6 col-sm-4",
+					"title": "The team is taking a summer vacation on Woody Valley",
+					"imgs": {
+						"full": "samples/album-img8.jpg",
+						"thumb": "samples/album-img8.jpg"
+					},
+					"date": "August 23rd, 2016",
+					"meta": {
+						"likes": "530"
+					}
+				}
+			],
+			"schedule": [
+				{
+					"date": "Saturday, Mar 24",
+					"team": {
+						"logo": "lucky_clovers_shield.png",
+						"name": "Lucky Clovers",
+						"place": "St. Patrick’s Institute"
+					},
+					"status": "Away",
+					"time": "9:00PM EST",
+					"league": "West Bay Playoffs 2018",
+					"venue": "Madison Cube Stadium",
+					"availability": true
+				},
+				{
+					"date": "Friday, May 31",
+					"team": {
+						"logo": "red_wings_shield.png",
+						"name": "Red Wings",
+						"place": "Icarus College"
+					},
+					"status": "Home",
+					"time": "9:30PM EST",
+					"league": "West Bay Playoffs 2018",
+					"venue": "Alchemists Stadium",
+					"availability": false
+				},
+				{
+					"date": "Saturday, May 8",
+					"team": {
+						"logo": "draconians_shield.png",
+						"name": "Draconians",
+						"place": "Wyvern College"
+					},
+					"status": "Away",
+					"time": "10:00PM EST",
+					"league": "West Bay Playoffs 2018",
+					"venue": "Scalding Rock Stadium",
+					"availability": true
+				},
+				{
+					"date": "Friday, May 14",
+					"team": {
+						"logo": "aqua_keyes_shield.png",
+						"name": "Aqua Keyes",
+						"place": "Pacific Institute"
+					},
+					"status": "Home",
+					"time": "10:00PM EST",
+					"league": "West Bay Playoffs 2018",
+					"venue": "Alchemists Stadium",
+					"availability": true
+				},
+				{
+					"date": "Saturday, May 22",
+					"team": {
+						"logo": "icarus_wings_shield.png",
+						"name": "Icarus Wings",
+						"place": "Waxer College"
+					},
+					"status": "Away",
+					"time": "10:30PM EST",
+					"league": "West Bay Playoffs 2018",
+					"venue": "The FireStar Arena",
+					"availability": false
+				},
+				{
+					"date": "Saturday, May 29",
+					"team": {
+						"logo": "bloody_wave_shield.png",
+						"name": "Bloody Wave",
+						"place": "Atlantic School"
+					},
+					"status": "Home",
+					"time": "9:00PM EST",
+					"league": "West Bay Playoffs 2018",
+					"venue": "Alchemists Stadium",
+					"availability": true
+				},
+				{
+					"date": "Friday, Jun 5",
+					"team": {
+						"logo": "sharks_shield.png",
+						"name": "Sharks",
+						"place": "Marine College"
+					},
+					"status": "Away",
+					"time": "9:30PM EST",
+					"league": "West Bay Playoffs 2018",
+					"venue": "Great Hammerhead Arena",
+					"availability": false
+				},
+				{
+					"date": "Saturday, Jun 13",
+					"team": {
+						"logo": "pirates_shield.png",
+						"name": "L.A. Pirates",
+						"place": "Bebop Institute"
+					},
+					"status": "Home",
+					"time": "10:00PM EST",
+					"league": "West Bay Playoffs 2018",
+					"venue": "Alchemists Stadium",
+					"availability": true
+				},
+				{
+					"date": "Thursday, Jun 8",
+					"team": {
+						"logo": "ocean_kings_shield.png",
+						"name": "Ocean Kings",
+						"place": "Bay College"
+					},
+					"status": "Away",
+					"time": "10:00PM EST",
+					"league": "West Bay Playoffs 2018",
+					"venue": "Coral Reef LA Institute",
+					"availability": true
+				}
+			],
+			"leaders": [
+				{
+					"thumb": "goalscorer_01.jpg",
+					"name": "James Messinal",
+					"position": "Forward",
+					"stats": {
+						"goals": 11,
+						"gp": 12,
+						"percent": 91,
+						"label": "0.91"
+					}
+				},
+				{
+					"thumb": "goalscorer_02.jpg",
+					"name": "David Hawkins",
+					"position": "Forward",
+					"stats": {
+						"goals": 10,
+						"gp": 12,
+						"percent": 83,
+						"label": "0.83"
+					}
+				},
+				{
+					"thumb": "goalscorer_01.jpg",
+					"name": "Griffin Peterson",
+					"position": "Midfielder",
+					"stats": {
+						"goals": 8,
+						"gp": 10,
+						"percent": 80,
+						"label": "0.80"
+					}
+				},
+				{
+					"thumb": "goalscorer_02.jpg",
+					"name": "Christofer Grass",
+					"position": "Midfielder",
+					"stats": {
+						"goals": 7,
+						"gp": 10,
+						"percent": 70,
+						"label": "0.70"
+					}
+				},
+				{
+					"thumb": "goalscorer_01.jpg",
+					"name": "Mark Ironson",
+					"position": "Defender",
+					"stats": {
+						"goals": 5,
+						"gp": 10,
+						"percent": 50,
+						"label": "0.50"
+					}
+				}
+			],
+			"staff": [
+				{
+					"number": "CH",
+					"firstname": "Robert",
+					"lastname": "Frankson",
+					"position": "Team Coach",
+					"img": "roster_player_06.jpg",
+					"age": 52,
+					"height": "-",
+					"weight": "-",
+					"place": "Green Palm College"
+				}
+			],
+			"widget-awards": [
+				{
+					"img": "trophy-04.svg",
+					"title": "West League Champions",
+					"date": "December 2009"
+				},
+				{
+					"img": "trophy-04.svg",
+					"title": "East League Champions",
+					"date": "November 2010"
+				},
+				{
+					"img": "trophy-04.svg",
+					"title": "Big League Champions",
+					"date": "December 2012"
+				}
+			],
+			"widget-team-info": {
+				"list": [
+					{
+						"label": "Team Name:",
+						"value": "Alchemists L.O. Heroes"
+					},
+					{
+						"label": "Country of Origin:",
+						"value": "United States"
+					},
+					{
+						"label": "Founded in:",
+						"value": "December 2014"
+					},
+					{
+						"label": "Prize Money Won in 2017:",
+						"value": "USD 94.000",
+						"highlight": true
+					},
+					{
+						"label": "Total Prize Money Won:",
+						"value": "USD 2.843.050"
+					}
+				],
+				"desc": [
+					{
+						"label": "Team Bio:",
+						"value": "Based in California, and founded by Faye Spiegel “The Game Huntress”,  The Alchemists L.O. Heroes ended up being one of the strongests teams in the world."
+					}
+				]
+			}
+		},
+		"player": {
+			"log": [
+				{
+					"date": "Sat, Mar 10",
+					"team": {
+						"logo": "sharks_shield.png",
+						"name": "Sharks",
+						"place": "Marine College"
+					},
+					"result": {
+						"outcome": "W",
+						"score": "2-0"
+					},
+					"stats": {
+						"min": 56,
+						"tg": 1,
+						"ts": 12,
+						"st": 6,
+						"ga": 1,
+						"og": 0,
+						"pc": 0,
+						"pm": 0,
+						"fc": 3,
+						"fs": 4,
+						"yc": 1,
+						"rc": 0
+					}
+				},
+				{
+					"date": "Fri, Mar 16",
+					"team": {
+						"logo": "pirates_shield.png",
+						"name": "L.A. Pirates",
+						"place": "Bebop Institute"
+					},
+					"result": {
+						"outcome": "L",
+						"score": "4-2"
+					},
+					"stats": {
+						"min": 42,
+						"tg": 0,
+						"ts": 14,
+						"st": 7,
+						"ga": 0,
+						"og": 0,
+						"pc": 1,
+						"pm": 0,
+						"fc": 4,
+						"fs": 7,
+						"yc": 0,
+						"rc": 0
+					}
+				},
+				{
+					"date": "Sat, Mar 24",
+					"team": {
+						"logo": "lucky_clovers_shield.png",
+						"name": "Lucky Clovers",
+						"place": "St. Patrick’s Institute"
+					},
+					"result": {
+						"outcome": "D",
+						"score": "0-0"
+					},
+					"stats": {
+						"min": 47,
+						"tg": 2,
+						"ts": 22,
+						"st": 14,
+						"ga": 2,
+						"og": 0,
+						"pc": 0,
+						"pm": 1,
+						"fc": 7,
+						"fs": 3,
+						"yc": 0,
+						"rc": 1
+					}
+				},
+				{
+					"date": "Fri, Mar 4",
+					"team": {
+						"logo": "ocean_kings_shield.png",
+						"name": "Ocean Kings",
+						"place": "Bay College"
+					},
+					"result": {
+						"outcome": "W",
+						"score": "2-3"
+					},
+					"stats": {
+						"min": 69,
+						"tg": 0,
+						"ts": 18,
+						"st": 10,
+						"ga": 2,
+						"og": 1,
+						"pc": 0,
+						"pm": 0,
+						"fc": 5,
+						"fs": 5,
+						"yc": 1,
+						"rc": 0
+					}
+				},
+				{
+					"date": "Sat, Feb 29",
+					"team": {
+						"logo": "red_wings_shield.png",
+						"name": "Red Wings",
+						"place": "Icarus College"
+					},
+					"result": {
+						"outcome": "W",
+						"score": "2-1"
+					},
+					"stats": {
+						"min": 73,
+						"tg": 1,
+						"ts": 13,
+						"st": 9,
+						"ga": 1,
+						"og": 0,
+						"pc": 0,
+						"pm": 0,
+						"fc": 4,
+						"fs": 2,
+						"yc": 0,
+						"rc": 0
+					}
+				},
+				{
+					"date": "Fri, Feb 21",
+					"team": {
+						"logo": "draconians_shield.png",
+						"name": "Draconians",
+						"place": "Wyvern College"
+					},
+					"result": {
+						"outcome": "L",
+						"score": "4-2"
+					},
+					"stats": {
+						"min": 42,
+						"tg": 0,
+						"ts": 14,
+						"st": 7,
+						"ga": 0,
+						"og": 0,
+						"pc": 1,
+						"pm": 0,
+						"fc": 4,
+						"fs": 7,
+						"yc": 0,
+						"rc": 0
+					}
+				},
+				{
+					"date": "Sat, Feb 17",
+					"team": {
+						"logo": "icarus_wings_shield.png",
+						"name": "Icarus Wings",
+						"place": "Waxer College"
+					},
+					"result": {
+						"outcome": "D",
+						"score": "0-0"
+					},
+					"stats": {
+						"min": 47,
+						"tg": 2,
+						"ts": 22,
+						"st": 14,
+						"ga": 2,
+						"og": 0,
+						"pc": 0,
+						"pm": 1,
+						"fc": 7,
+						"fs": 3,
+						"yc": 0,
+						"rc": 1
+					}
+				},
+				{
+					"date": "Fri, Feb 9",
+					"team": {
+						"logo": "aqua_keyes_shield.png",
+						"name": "Aqua Keyes",
+						"place": "Pacific Institute"
+					},
+					"result": {
+						"outcome": "W",
+						"score": "2-3"
+					},
+					"stats": {
+						"min": 69,
+						"tg": 0,
+						"ts": 18,
+						"st": 10,
+						"ga": 2,
+						"og": 1,
+						"pc": 0,
+						"pm": 0,
+						"fc": 5,
+						"fs": 5,
+						"yc": 1,
+						"rc": 0
+					}
+				}
+			],
+			"total": [
+				{
+					"season": "East Bay League 2015",
+					"gmp": "24",
+					"min": "846",
+					"tg": "32",
+					"gg": "1.33",
+					"ts": "28",
+					"st": "25",
+					"ga": "20",
+					"ag": "0.83",
+					"og": "2",
+					"pc": "4",
+					"pm": "2",
+					"fc": "14",
+					"fs": "26",
+					"yc": "8",
+					"rc": "3"
+				},
+				{
+					"season": "Sun Championship 2015",
+					"gmp": "28",
+					"min": "763",
+					"tg": "24",
+					"gg": "0.86",
+					"ts": "25",
+					"st": "21",
+					"ga": "17",
+					"ag": "0.61",
+					"og": "1",
+					"pc": "2",
+					"pm": "0",
+					"fc": "13",
+					"fs": "19",
+					"yc": "4",
+					"rc": "2"
+				},
+				{
+					"season": "East Bay League 2014",
+					"gmp": "24",
+					"min": "846",
+					"tg": "32",
+					"gg": "1.33",
+					"ts": "28",
+					"st": "25",
+					"ga": "20",
+					"ag": "0.83",
+					"og": "2",
+					"pc": "4",
+					"pm": "2",
+					"fc": "14",
+					"fs": "26",
+					"yc": "8",
+					"rc": "3"
+				},
+				{
+					"season": "Sun Championship 2014",
+					"gmp": "28",
+					"min": "763",
+					"tg": "24",
+					"gg": "0.86",
+					"ts": "25",
+					"st": "21",
+					"ga": "17",
+					"ag": "0.61",
+					"og": "1",
+					"pc": "2",
+					"pm": "0",
+					"fc": "13",
+					"fs": "19",
+					"yc": "4",
+					"rc": "2"
+				},
+				{
+					"season": "East Bay League 2013",
+					"gmp": "24",
+					"min": "846",
+					"tg": "32",
+					"gg": "1.33",
+					"ts": "28",
+					"st": "25",
+					"ga": "20",
+					"ag": "0.83",
+					"og": "2",
+					"pc": "4",
+					"pm": "2",
+					"fc": "14",
+					"fs": "26",
+					"yc": "8",
+					"rc": "3"
+				},
+				{
+					"season": "Sun Championship 2013",
+					"gmp": "28",
+					"min": "763",
+					"tg": "24",
+					"gg": "0.86",
+					"ts": "25",
+					"st": "21",
+					"ga": "17",
+					"ag": "0.61",
+					"og": "1",
+					"pc": "2",
+					"pm": "0",
+					"fc": "13",
+					"fs": "19",
+					"yc": "4",
+					"rc": "2"
+				}
+			],
+			"newslog": [
+				{
+					"type": "injury",
+					"content": "<strong>James Messinal’s</strong> knee fracture is healing properly and will be returning to the field <strong>next week</strong>.",
+					"date": "January 19, 2016"
+				},
+				{
+					"type": "injury",
+					"content": "<strong>James Messinal</strong> has a knee fracture and he’s gonna be out of the play for <strong>4 months</strong>.",
+					"date": "September 26, 2016"
+				},
+				{
+					"type": "join",
+					"content": "<strong>James Messinal</strong> is now the <strong>1st Shooting Guard</strong> after being 3rd Shooting Guard for the past year.",
+					"date": "September 6, 2016"
+				},
+				{
+					"type": "injury",
+					"content": "<strong>James Messinal</strong> has an abductor strain so he will miss the next game against the LA Pirates.",
+					"date": "March 4, 2016"
+				},
+				{
+					"type": "injury",
+					"content": "<strong>James Messinal</strong> has an abductor strain so he will miss the next game against the LA Pirates.",
+					"date": "March 4, 2016"
+				},
+				{
+					"type": "award",
+					"content": "<strong>James Messinal</strong> won the <strong>Player of the Year 2014 Award</strong> for the first time.",
+					"date": "August 17, 2015"
+				},
+				{
+					"type": "injury",
+					"content": "<strong>James Messinal</strong> has a lower back contusion and will miss the next two games.",
+					"date": "August 5, 2015"
+				},
+				{
+					"type": "join",
+					"content": "<strong>James Messinal</strong> has joined the team after playing for the California Surfers for a year.",
+					"date": "June 19, 2013"
+				}
+			],
+			"related_posts": [
+				{
+					"title": "Brian Kingster saw the red card after a kick against Jason T.",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud en derum sum laborem.",
+					"thumb": "soccer/samples/_soccer_post-img3.jpg",
+					"category": {
+						"class": "category-1",
+						"name": "The Team"
+					},
+					"author": {
+						"name": "James Spiegel",
+						"avatar": "avatar-1.jpg"
+					},
+					"date": "August 23rd, 2018",
+					"meta": {
+						"views": 2369,
+						"likes": 530,
+						"comments": 18
+					}
+				},
+				{
+					"title": "The team trainings are intensifying looking at the next match",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud en derum sum laborem.",
+					"thumb": "soccer/samples/_soccer_post-img1.jpg",
+					"category": {
+						"class": "category-1",
+						"name": "The Team"
+					},
+					"author": {
+						"name": "Jessica Hoops",
+						"avatar": "avatar-2.jpg"
+					},
+					"date": "August 23rd, 2018",
+					"meta": {
+						"views": 2369,
+						"likes": 530,
+						"comments": 18
+					}
+				},
+				{
+					"title": "The team is starting a new power breakfast regimen",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud en derum sum laborem.",
+					"thumb": "samples/post-img8.jpg",
+					"category": {
+						"class": "category-1",
+						"name": "The Team"
+					},
+					"author": {
+						"name": "James Spiegel",
+						"avatar": "avatar-1.jpg"
+					},
+					"date": "August 23rd, 2018",
+					"meta": {
+						"views": 2369,
+						"likes": 530,
+						"comments": 18
+					}
+				},
+				{
+					"title": "Cheerleader tryouts will start next Friday at 5pm",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud en derum sum laborem.",
+					"thumb": "samples/post-img2.jpg",
+					"category": {
+						"class": "category-1",
+						"name": "The Team"
+					},
+					"author": {
+						"name": "James Spiegel",
+						"avatar": "avatar-1.jpg"
+					},
+					"date": "August 23rd, 2018",
+					"meta": {
+						"views": 2369,
+						"likes": 530,
+						"comments": 18
+					}
+				},
+				{
+					"title": "The Alchemists team is appearing in L.A. Beach for charity",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud en derum sum laborem.",
+					"thumb": "samples/post-img5.jpg",
+					"category": {
+						"class": "category-1",
+						"name": "The Team"
+					},
+					"author": {
+						"name": "James Spiegel",
+						"avatar": "avatar-1.jpg"
+					},
+					"date": "August 23rd, 2018",
+					"meta": {
+						"views": 2369,
+						"likes": 530,
+						"comments": 18
+					}
+				}
+			],
+			"gallery": [
+				{
+					"col": "col-xs-6 col-sm-4",
+					"img": {
+						"full": "samples/album-img9.jpg",
+						"thumb": "samples/album-img9.jpg"
+					},
+					"title": "The team is taking a summer vacation on Woody Valley",
+					"date": "August 23rd, 2016"
+				},
+				{
+					"col": "col-xs-6 col-sm-4",
+					"img": {
+						"full": "samples/album-img10.jpg",
+						"thumb": "samples/album-img10.jpg"
+					},
+					"title": "Mark Johnson has a Tibia Fracture and is gonna be out",
+					"date": "August 23rd, 2016"
+				},
+				{
+					"col": "col-xs-6 col-sm-4",
+					"img": {
+						"full": "soccer/samples/_soccer_album-img11.jpg",
+						"thumb": "soccer/samples/_soccer_album-img11.jpg"
+					},
+					"title": "Cheerleader tryouts will start next Friday at 5pm",
+					"date": "August 23rd, 2016"
+				},
+				{
+					"col": "col-xs-6 col-sm-4",
+					"img": {
+						"full": "samples/album-img12.jpg",
+						"thumb": "samples/album-img12.jpg"
+					},
+					"title": "The new eco friendly stadium won a Leafy Award in 2016",
+					"date": "August 23rd, 2016"
+				},
+				{
+					"col": "col-xs-6 col-sm-4",
+					"img": {
+						"full": "samples/album-img13.jpg",
+						"thumb": "samples/album-img13.jpg"
+					},
+					"title": "James Girobilli in the charity event in L.A. Beach",
+					"date": "August 23rd, 2016"
+				},
+				{
+					"col": "col-md-8",
+					"img": {
+						"full": "samples/album-img14.jpg",
+						"thumb": "samples/album-img14.jpg"
+					},
+					"title": "The Planetrotters will perform this May 4th at Madison Cube",
+					"date": "August 23rd, 2016"
+				},
+				{
+					"col": "col-xs-6 col-sm-4",
+					"img": {
+						"full": "soccer/samples/_soccer_album-img15.jpg",
+						"thumb": "soccer/samples/_soccer_album-img15.jpg"
+					},
+					"title": "Jeremy Rittersen was called to be in the National Team",
+					"date": "August 23rd, 2016"
+				},
+				{
+					"col": "col-xs-6 col-sm-4",
+					"img": {
+						"full": "samples/album-img16.jpg",
+						"thumb": "samples/album-img16.jpg"
+					},
+					"title": "The team is taking a summer vacation on Woody Valley",
+					"date": "August 23rd, 2016"
+				}
+			]
+		},
+		"staff": {
+			"newslog": [
+				{
+					"type": "join",
+					"content": "<strong>Jenny Thomps</strong> is now the new <strong>Team Recruiter</strong> for the East Coast Colleges.",
+					"date": "December 19, 2015"
+				},
+				{
+					"type": "injury",
+					"content": "<strong>Robert Frankson</strong> will have a surgery and will be out for a month. Interim coach will be <strong>Frank Roberts</strong>.",
+					"date": "September 26, 2014"
+				},
+				{
+					"type": "join",
+					"content": "<strong>Max Stevens</strong> is now the <strong>2nd Team Doctor</strong> after a succesfull run in the Sharks.",
+					"date": "September 26, 2014"
+				},
+				{
+					"type": "exit",
+					"content": "<strong>Tommy Flankers</strong> left the team after 2 years as the <strong>2nd Team Doctor</strong>.",
+					"date": "August 12, 2014"
+				},
+				{
+					"type": "join",
+					"content": "<strong>Patrick Storm</strong> is now the new <strong>Team Recruiter</strong> for the West Coast Colleges.",
+					"date": "April 19, 2014"
+				},
+				{
+					"type": "join",
+					"content": "<strong>Alexa Polson</strong> is now the new <strong>Athletic Trainer</strong> after a succesfull run in the Pirates.",
+					"date": "November 27, 2013"
+				},
+				{
+					"type": "join",
+					"content": "<strong>Savannah Lavender</strong> is the new <strong>Team Nutritionist</strong> with more than 500.000 followers.",
+					"date": "February 15, 2012"
+				},
+				{
+					"type": "join",
+					"content": "<strong>Robert Frankson</strong> is now the new <strong>Alchemist Coach</strong> after a succesfull run in the Lucky Clovers.",
+					"date": "March 22, 2008"
+				}
+			],
+			"related_posts": [
+				{
+					"title": "Cheerleader tryouts will start next Friday at 5pm",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud en derum sum laborem.",
+					"thumb": "post-img2",
+					"category": {
+						"class": "category-1",
+						"name": "The Team"
+					},
+					"author": {
+						"name": "James Spiegel",
+						"avatar": "avatar-1.jpg"
+					},
+					"date": "August 23rd, 2018",
+					"meta": {
+						"views": 2369,
+						"likes": 530,
+						"comments": 18
+					}
+				},
+				{
+					"title": "The new eco friendly stadium won a Leafy Award in 2016",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud en derum sum laborem.",
+					"thumb": "post-img3",
+					"category": {
+						"class": "category-1",
+						"name": "The Team"
+					},
+					"author": {
+						"name": "Jessica Hoops",
+						"avatar": "avatar-2.jpg"
+					},
+					"date": "August 23rd, 2018",
+					"meta": {
+						"views": 2369,
+						"likes": 530,
+						"comments": 18
+					}
+				}
+			]
+		},
+		"event": {
+			"nav": [
+				{
+					"title": "Overview",
+					"subtitle": "Match",
+					"url": "_soccer_event-overview"
+				},
+				{
+					"title": "Box Score",
+					"subtitle": "Match",
+					"url": "_soccer_event-box-score"
+				},
+				{
+					"title": "Play-by-Play",
+					"subtitle": "Match",
+					"url": "_soccer_event-play-by-play"
+				},
+				{
+					"title": "Team Stats",
+					"subtitle": "Match",
+					"url": "_soccer_event-team-stats"
+				},
+				{
+					"title": "News Recap",
+					"subtitle": "Match",
+					"url": "_soccer_event-news-recap"
+				},
+				{
+					"title": "Videos",
+					"subtitle": "Match",
+					"url": "_soccer_event-videos"
+				}
+			],
+			"stats": {
+				"meta": [
+					{
+						"name": "The Alchemists",
+						"color": "primary",
+						"logo": "assets/images/soccer/logos/alchemists_s_shield.png"
+					},
+					{
+						"name": "Lucky Clovers",
+						"color": "4",
+						"logo": "assets/images/samples/logos/lucky_clovers_shield.png"
+					}
+				],
+				"main": [
+					{
+						"label": "Shots (on goal)",
+						"team1": "25(14)",
+						"team2": "16(6)"
+					},
+					{
+						"label": "Corner Kicks",
+						"team1": 9,
+						"team2": 11
+					},
+					{
+						"label": "Saves",
+						"team1": 8,
+						"team2": 5
+					},
+					{
+						"label": "Yellow Cards",
+						"team1": 0,
+						"team2": 2
+					},
+					{
+						"label": "Red Cards",
+						"team1": 1,
+						"team2": 0
+					}
+				],
+				"percentages": {
+					"team1": [
+						{
+							"label": "Shot Accuracy",
+							"value": 84.5
+						},
+						{
+							"label": "Pass Accuracy",
+							"value": 62.3
+						}
+					],
+					"team2": [
+						{
+							"label": "Shot Accuracy",
+							"value": 53.9
+						},
+						{
+							"label": "Pass Accuracy",
+							"value": 74.6
+						}
+					]
+				},
+				"possession": [
+					{
+						"team1": {
+							"value": 62
+						},
+						"team2": {
+							"value": 38
+						}
+					}
+				],
+				"additional": [
+					{
+						"label": "Fouls Commited",
+						"team1": {
+							"value": 12,
+							"pct": 80
+						},
+						"team2": {
+							"value": 14,
+							"pct": 95
+						}
+					},
+					{
+						"label": "Fouls Suffered",
+						"team1": {
+							"value": 14,
+							"pct": 75
+						},
+						"team2": {
+							"value": 12,
+							"pct": 60
+						}
+					},
+					{
+						"label": "Distance Covered (KM)",
+						"team1": {
+							"value": 11.7,
+							"pct": 86
+						},
+						"team2": {
+							"value": 11.1,
+							"pct": 72
+						}
+					},
+					{
+						"label": "Injured Players",
+						"team1": {
+							"value": 0,
+							"pct": 0
+						},
+						"team2": {
+							"value": 0,
+							"pct": 0
+						}
+					},
+					{
+						"label": "Total Saves",
+						"team1": {
+							"value": 6,
+							"pct": 66
+						},
+						"team2": {
+							"value": 4,
+							"pct": 34
+						}
+					}
+				],
+				"progress-bars": {
+					"team1": [
+						{
+							"label": "Sho",
+							"pct": 90,
+							"value": 25
+						},
+						{
+							"label": "Fou",
+							"pct": 40,
+							"value": 12
+						},
+						{
+							"label": "OFF",
+							"pct": 30,
+							"value": 10
+						}
+					],
+					"team2": [
+						{
+							"label": "Sho",
+							"pct": 80,
+							"value": 20
+						},
+						{
+							"label": "Fou",
+							"pct": 60,
+							"value": 14
+						},
+						{
+							"label": "OFF",
+							"pct": 40,
+							"value": 12
+						}
+					]
+				}
+			},
+			"box-score": [
+				{
+					"team1": {
+						"title": "Alchemists Lineup & Stats",
+						"thead": [
+							{
+								"label": "NBR",
+								"class": "number alc-align-start"
+							},
+							{
+								"label": "Pos",
+								"class": "position alc-align-start"
+							},
+							{
+								"label": "Player",
+								"class": "player alc-align-start"
+							},
+							{
+								"label": "Min",
+								"class": "min"
+							},
+							{
+								"label": "TG",
+								"class": "tg"
+							},
+							{
+								"label": "TS",
+								"class": "ts"
+							},
+							{
+								"label": "GA",
+								"class": "ga"
+							},
+							{
+								"label": "FC",
+								"class": "fc"
+							},
+							{
+								"label": "FS",
+								"class": "fs"
+							},
+							{
+								"label": "YC",
+								"class": "yc"
+							},
+							{
+								"label": "RC",
+								"class": "rc"
+							},
+							{
+								"label": "Icon",
+								"class": ""
+							}
+						],
+						"tbody": {
+							"played": [
+								{
+									"number": "01",
+									"position": "GK",
+									"player": {
+										"name": "Nick Rodgers",
+										"img": "assets/images/player-placeholder-26x26.png"
+									},
+									"stats": [
+										{
+											"value": 90
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 3
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										}
+									]
+								},
+								{
+									"number": "04",
+									"position": "DF",
+									"player": {
+										"name": "Mark Ironson",
+										"img": "assets/images/soccer/samples/goalscorer_03.jpg"
+									},
+									"stats": [
+										{
+											"value": 90
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 2
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 4
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										}
+									]
+								},
+								{
+									"number": "03",
+									"position": "DF",
+									"player": {
+										"name": "Brian Kingster",
+										"img": "assets/images/player-placeholder-26x26.png"
+									},
+									"icon": "icon-red-card",
+									"stats": [
+										{
+											"value": 59
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 5
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 2
+										},
+										{
+											"value": 1
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 1
+										}
+									]
+								},
+								{
+									"number": "22",
+									"position": "DF",
+									"player": {
+										"name": "James Girobilli",
+										"img": "assets/images/player-placeholder-26x26.png"
+									},
+									"stats": [
+										{
+											"value": 90
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 6
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 2
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										}
+									]
+								},
+								{
+									"number": "05",
+									"position": "DF",
+									"player": {
+										"name": "Thomas Black",
+										"img": "assets/images/player-placeholder-26x26.png"
+									},
+									"stats": [
+										{
+											"value": 90
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 3
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 1
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										}
+									]
+								},
+								{
+									"number": "08",
+									"position": "MF",
+									"player": {
+										"name": "Christofer Grass",
+										"img": "assets/images/soccer/samples/goalscorer_04.jpg"
+									},
+									"icon": "icon-soccer-ball",
+									"stats": [
+										{
+											"value": 90
+										},
+										{
+											"value": 1
+										},
+										{
+											"value": 1
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 9
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										}
+									]
+								},
+								{
+									"number": "02",
+									"position": "MF",
+									"player": {
+										"name": "Spike Arrowhead",
+										"img": "assets/images/player-placeholder-26x26.png"
+									},
+									"stats": [
+										{
+											"value": 90
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 5
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 2
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										}
+									]
+								},
+								{
+									"number": "26",
+									"position": "MF",
+									"player": {
+										"name": "Griffin Peterson",
+										"img": "assets/images/soccer/samples/goalscorer_05.jpg"
+									},
+									"stats": [
+										{
+											"value": 90
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 12
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										}
+									]
+								},
+								{
+									"number": "07",
+									"position": "FD",
+									"player": {
+										"name": "James Messinal",
+										"img": "assets/images/soccer/samples/goalscorer_01.jpg"
+									},
+									"stats": [
+										{
+											"value": 90
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 15
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 2
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										}
+									]
+								},
+								{
+									"number": "09",
+									"position": "FD",
+									"player": {
+										"name": "Franklin Stevens",
+										"img": "assets/images/player-placeholder-26x26.png"
+									},
+									"icon": "icon-soccer-ball",
+									"stats": [
+										{
+											"value": 90
+										},
+										{
+											"value": 1
+										},
+										{
+											"value": 20
+										},
+										{
+											"value": 1
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										}
+									]
+								},
+								{
+									"number": "18",
+									"position": "FD",
+									"player": {
+										"name": "David Hawkins",
+										"img": "assets/images/soccer/samples/goalscorer_02.jpg"
+									},
+									"stats": [
+										{
+											"value": 90
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 12
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 1
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										}
+									]
+								}
+							],
+							"substitute": [
+								{
+									"number": "32",
+									"position": "GK",
+									"player": {
+										"name": "Taylor Redner",
+										"img": "assets/images/player-placeholder-26x26.png"
+									},
+									"stats": [
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										}
+									]
+								},
+								{
+									"number": "27",
+									"position": "DF",
+									"player": {
+										"name": "Christian Netteron",
+										"img": "assets/images/player-placeholder-26x26.png"
+									},
+									"stats": [
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										}
+									]
+								},
+								{
+									"number": "11",
+									"position": "MF",
+									"player": {
+										"name": "Alex Walterston",
+										"img": "assets/images/player-placeholder-26x26.png"
+									},
+									"stats": [
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										}
+									]
+								},
+								{
+									"number": "19",
+									"position": "FD",
+									"player": {
+										"name": "Kirk Hetfield",
+										"img": "assets/images/player-placeholder-26x26.png"
+									},
+									"stats": [
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										}
+									]
+								},
+								{
+									"number": "25",
+									"position": "FD",
+									"player": {
+										"name": "James Hammet",
+										"img": "assets/images/player-placeholder-26x26.png"
+									},
+									"stats": [
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										}
+									]
+								}
+							],
+							"staff": [
+								{
+									"position": "Team Coach",
+									"person": {
+										"name": "Nick Rodgers",
+										"img": "assets/images/soccer/samples/staff-26x26.jpg"
+									}
+								}
+							]
+						}
+					},
+					"team2": {
+						"title": "Clovers Lineup & Stats",
+						"thead": [
+							{
+								"label": "NBR",
+								"class": "number alc-align-start"
+							},
+							{
+								"label": "Pos",
+								"class": "position alc-align-start"
+							},
+							{
+								"label": "Player",
+								"class": "player alc-align-start"
+							},
+							{
+								"label": "Min",
+								"class": "min"
+							},
+							{
+								"label": "TG",
+								"class": "tg"
+							},
+							{
+								"label": "TS",
+								"class": "ts"
+							},
+							{
+								"label": "GA",
+								"class": "ga"
+							},
+							{
+								"label": "FC",
+								"class": "fc"
+							},
+							{
+								"label": "FS",
+								"class": "fs"
+							},
+							{
+								"label": "YC",
+								"class": "yc"
+							},
+							{
+								"label": "RC",
+								"class": "rc"
+							},
+							{
+								"label": "Icon",
+								"class": ""
+							}
+						],
+						"tbody": {
+							"played": [
+								{
+									"number": "01",
+									"position": "GK",
+									"player": {
+										"name": "Samuel Grey",
+										"img": "assets/images/player-placeholder-26x26.png"
+									},
+									"stats": [
+										{
+											"value": 90
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 3
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										}
+									]
+								},
+								{
+									"number": "04",
+									"position": "DF",
+									"player": {
+										"name": "Danny Stark",
+										"img": "assets/images/player-placeholder-26x26.png"
+									},
+									"stats": [
+										{
+											"value": 90
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 2
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 4
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										}
+									]
+								},
+								{
+									"number": "03",
+									"position": "DF",
+									"player": {
+										"name": "Martin Pierto",
+										"img": "assets/images/player-placeholder-26x26.png"
+									},
+									"stats": [
+										{
+											"value": 59
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 5
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 2
+										},
+										{
+											"value": 1
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 1
+										}
+									]
+								},
+								{
+									"number": "22",
+									"position": "DF",
+									"player": {
+										"name": "Brad Rockers",
+										"img": "assets/images/player-placeholder-26x26.png"
+									},
+									"stats": [
+										{
+											"value": 90
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 6
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 2
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										}
+									]
+								},
+								{
+									"number": "05",
+									"position": "DF",
+									"player": {
+										"name": "Johnny Griffin",
+										"img": "assets/images/player-placeholder-26x26.png"
+									},
+									"icon": "icon-yellow-card",
+									"stats": [
+										{
+											"value": 90
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 3
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 1
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										}
+									]
+								},
+								{
+									"number": "08",
+									"position": "MF",
+									"player": {
+										"name": "Rick Valentine",
+										"img": "assets/images/player-placeholder-26x26.png"
+									},
+									"icon": "icon-out",
+									"stats": [
+										{
+											"value": 90
+										},
+										{
+											"value": 1
+										},
+										{
+											"value": 1
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 9
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										}
+									]
+								},
+								{
+									"number": "02",
+									"position": "MF",
+									"player": {
+										"name": "Alphonse Tucker",
+										"img": "assets/images/player-placeholder-26x26.png"
+									},
+									"stats": [
+										{
+											"value": 90
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 5
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 2
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										}
+									]
+								},
+								{
+									"number": "26",
+									"position": "MF",
+									"player": {
+										"name": "Wally Christison",
+										"img": "assets/images/player-placeholder-26x26.png"
+									},
+									"icon": "icon-yellow-card",
+									"stats": [
+										{
+											"value": 90
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 12
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										}
+									]
+								},
+								{
+									"number": "07",
+									"position": "FD",
+									"player": {
+										"name": "Adam Howlett",
+										"img": "assets/images/player-placeholder-26x26.png"
+									},
+									"stats": [
+										{
+											"value": 90
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 15
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 2
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										}
+									]
+								},
+								{
+									"number": "09",
+									"position": "FD",
+									"player": {
+										"name": "Michael Neter",
+										"img": "assets/images/player-placeholder-26x26.png"
+									},
+									"stats": [
+										{
+											"value": 90
+										},
+										{
+											"value": 1
+										},
+										{
+											"value": 20
+										},
+										{
+											"value": 1
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										}
+									]
+								},
+								{
+									"number": "18",
+									"position": "FD",
+									"player": {
+										"name": "Chris Balleron",
+										"img": "assets/images/player-placeholder-26x26.png"
+									},
+									"stats": [
+										{
+											"value": 90
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 12
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 1
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										}
+									]
+								}
+							],
+							"substitute": [
+								{
+									"number": "32",
+									"position": "GK",
+									"player": {
+										"name": "Joe D’Amico",
+										"img": "assets/images/player-placeholder-26x26.png"
+									},
+									"stats": [
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										}
+									]
+								},
+								{
+									"number": "27",
+									"position": "DF",
+									"player": {
+										"name": "Thomas Kent",
+										"img": "assets/images/player-placeholder-26x26.png"
+									},
+									"stats": [
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										}
+									]
+								},
+								{
+									"number": "11",
+									"position": "MF",
+									"player": {
+										"name": "Phillip West",
+										"img": "assets/images/player-placeholder-26x26.png"
+									},
+									"stats": [
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										}
+									]
+								},
+								{
+									"number": "19",
+									"position": "FD",
+									"player": {
+										"name": "Markus Jackson",
+										"img": "assets/images/player-placeholder-26x26.png"
+									},
+									"icon": "icon-in",
+									"stats": [
+										{
+											"value": 45
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 13
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 2
+										},
+										{
+											"value": 1
+										},
+										{
+											"value": 0
+										},
+										{
+											"value": 0
+										}
+									]
+								},
+								{
+									"number": "25",
+									"position": "FD",
+									"player": {
+										"name": "Nicholas Wayne",
+										"img": "assets/images/player-placeholder-26x26.png"
+									},
+									"stats": [
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										},
+										{
+											"value": "-"
+										}
+									]
+								}
+							],
+							"staff": [
+								{
+									"position": "Team Coach",
+									"person": {
+										"name": "Carter Stevens",
+										"img": "assets/images/player-placeholder-26x26.png"
+									}
+								}
+							]
+						}
+					}
+				}
+			],
+			"lineups": {
+				"team1": [
+					{
+						"number": "01",
+						"name": "Rodgers",
+						"gp": true
+					},
+					{
+						"number": "04",
+						"name": "Ironson"
+					},
+					{
+						"number": "03",
+						"name": "Kingster"
+					},
+					{
+						"number": "22",
+						"name": "Girobilli"
+					},
+					{
+						"number": "05",
+						"name": "Black"
+					},
+					{
+						"number": "02",
+						"name": "Arrowhead"
+					},
+					{
+						"number": "08",
+						"name": "Grass"
+					},
+					{
+						"number": "26",
+						"name": "Peterson"
+					},
+					{
+						"number": "07",
+						"name": "Messinal"
+					},
+					{
+						"number": "18",
+						"name": "Hawkins"
+					},
+					{
+						"number": "09",
+						"name": "Stevens"
+					}
+				],
+				"team2": [
+					{
+						"number": "01",
+						"name": "Grey",
+						"gp": true
+					},
+					{
+						"number": "03",
+						"name": "Pierto"
+					},
+					{
+						"number": "04",
+						"name": "Stark"
+					},
+					{
+						"number": "22",
+						"name": "Rockers"
+					},
+					{
+						"number": "05",
+						"name": "Griffin"
+					},
+					{
+						"number": "02",
+						"name": "Valentine"
+					},
+					{
+						"number": "02",
+						"name": "Tucker"
+					},
+					{
+						"number": "26",
+						"name": "Christison"
+					},
+					{
+						"number": "07",
+						"name": "Howlett"
+					},
+					{
+						"number": "09",
+						"name": "Netter"
+					},
+					{
+						"number": "18",
+						"name": "Balleron"
+					}
+				]
+			},
+			"info": [
+				{
+					"address": "Central Park, New York, US",
+					"details": [
+						{
+							"icon": "map-pin",
+							"value": "Central Park Stadium (New York, USA)"
+						},
+						{
+							"icon": "trophy-new",
+							"value": "West League 2016 - Week 9"
+						},
+						{
+							"icon": "calendar",
+							"value": "Saturday, March 24th, 2015 - 4:00pm EST"
+						},
+						{
+							"icon": "whistle",
+							"value": "M. Refree, T. Addit & J. Swanson"
+						},
+						{
+							"icon": "person",
+							"value": "12.700 Attendance (18.000 Capacity)"
+						}
+					],
+					"excerpt": {
+						"label": "Additional Info:",
+						"value": "Lorem ipsum dolor sit amet, consectetur dere adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+					}
+				}
+			],
+			"scheduled": [
+				{
+					"date": "Friday, April 5",
+					"team1": {
+						"logo": "assets/images/samples/logos/alchemists_buy_tickets_v2.png",
+						"abbr": "ALC",
+						"name": "Alchemists"
+					},
+					"team2": {
+						"logo": "assets/images/samples/logos/pirates-shield-sm.png",
+						"abbr": "LAP",
+						"name": "L.A. Pirates"
+					}
+				},
+				{
+					"date": "Saturday, April 6",
+					"team1": {
+						"logo": "assets/images/samples/logos/lucky_clovers_buy_tickets_v2.png",
+						"abbr": "CLO",
+						"name": "Lucky Clovers"
+					},
+					"team2": {
+						"logo": "assets/images/samples/logos/sharks-shield-sm.png",
+						"abbr": "SHR",
+						"name": "Sharks"
+					}
+				}
+			],
+			"schedule": {
+				"team1": [
+					{
+						"date": "Friday, March 16",
+						"team1": {
+							"name": "L.A. Pirates",
+							"logo": "samples/logos/pirates_shield.png",
+							"place": "Bebop Institute",
+							"result": {
+								"outcome": {
+									"win": true
+								},
+								"score": "4"
+							}
+						},
+						"team2": {
+							"name": "Alchemists",
+							"logo": "soccer/logos/alchemists_s_shield.png",
+							"place": "Eric Bros School",
+							"result": {
+								"outcome": {
+									"win": false
+								},
+								"score": "2"
+							}
+						},
+						"event_place": "Away"
+					},
+					{
+						"date": "Saturday, March 10",
+						"team1": {
+							"name": "Alchemists",
+							"logo": "soccer/logos/alchemists_s_shield.png",
+							"place": "Elric Bros School",
+							"result": {
+								"outcome": {
+									"win": false
+								},
+								"score": "0"
+							}
+						},
+						"team2": {
+							"name": "Sharks",
+							"logo": "samples/logos/sharks_shield.png",
+							"place": "Marine College",
+							"result": {
+								"outcome": {
+									"win": false
+								},
+								"score": "0"
+							}
+						},
+						"event_place": "Home"
+					},
+					{
+						"date": "Friday, March 4",
+						"team1": {
+							"name": "Ocean Kings",
+							"logo": "samples/logos/ocean_kings_shield.png",
+							"place": "Bay College",
+							"result": {
+								"outcome": {
+									"win": false
+								},
+								"score": "2"
+							}
+						},
+						"team2": {
+							"name": "Alchemists",
+							"logo": "soccer/logos/alchemists_s_shield.png",
+							"place": "Eric Bros School",
+							"result": {
+								"outcome": {
+									"win": true
+								},
+								"score": "3"
+							}
+						},
+						"event_place": "Home"
+					},
+					{
+						"date": "Saturday, February 27",
+						"team1": {
+							"name": "Alchemists",
+							"logo": "soccer/logos/alchemists_s_shield.png",
+							"place": "Eric Bros School",
+							"result": {
+								"outcome": {
+									"win": false
+								},
+								"score": "1"
+							}
+						},
+						"team2": {
+							"name": "Red Wings",
+							"logo": "samples/logos/red_wings_shield.png",
+							"place": "Icarus College",
+							"result": {
+								"outcome": {
+									"win": false
+								},
+								"score": "1"
+							}
+						},
+						"event_place": "Home"
+					},
+					{
+						"date": "Friday, February 26",
+						"team1": {
+							"name": "Draconians",
+							"logo": "samples/logos/draconians_shield.png",
+							"place": "Wyvern College",
+							"result": {
+								"outcome": {
+									"win": false
+								},
+								"score": "1"
+							}
+						},
+						"team2": {
+							"name": "Alchemists",
+							"logo": "soccer/logos/alchemists_s_shield.png",
+							"place": "Eric Bros School",
+							"result": {
+								"outcome": {
+									"win": true
+								},
+								"score": "4"
+							}
+						},
+						"event_place": "Away"
+					}
+				],
+				"team2": [
+					{
+						"date": "Friday, March 16",
+						"team1": {
+							"name": "Clovers",
+							"logo": "samples/logos/lucky_clovers_shield.png",
+							"place": "St. Patrick’s Inst",
+							"result": {
+								"outcome": {
+									"win": true
+								},
+								"score": "2"
+							}
+						},
+						"team2": {
+							"name": "Red Wings",
+							"logo": "samples/logos/red_wings_shield.png",
+							"place": "Eric Bros School",
+							"result": {
+								"outcome": {
+									"win": false
+								},
+								"score": "0"
+							}
+						},
+						"event_place": "Home"
+					},
+					{
+						"date": "Saturday, March 10",
+						"team1": {
+							"name": "Ocean Kings",
+							"logo": "samples/logos/ocean_kings_shield.png",
+							"place": "Bay College",
+							"result": {
+								"outcome": {
+									"win": false
+								},
+								"score": 2
+							}
+						},
+						"team2": {
+							"name": "Clovers",
+							"logo": "samples/logos/lucky_clovers_shield.png",
+							"place": "St. Patrick’s Inst",
+							"result": {
+								"outcome": {
+									"win": false
+								},
+								"score": 2
+							}
+						},
+						"event_place": "Away"
+					},
+					{
+						"date": "Friday, March 4",
+						"team1": {
+							"name": "Clovers",
+							"logo": "samples/logos/lucky_clovers_shield.png",
+							"place": "St. Patrick’s Inst",
+							"result": {
+								"outcome": {
+									"win": false
+								},
+								"score": 2
+							}
+						},
+						"team2": {
+							"name": "Sharks",
+							"logo": "samples/logos/sharks_shield.png",
+							"place": "Marine College",
+							"result": {
+								"outcome": {
+									"win": true
+								},
+								"score": 5
+							}
+						},
+						"event_place": "Home"
+					},
+					{
+						"date": "Saturday, February 27",
+						"team1": {
+							"name": "Draconians",
+							"logo": "samples/logos/draconians_shield.png",
+							"place": "Wyvern College",
+							"result": {
+								"outcome": {
+									"win": false
+								},
+								"score": 0
+							}
+						},
+						"team2": {
+							"name": "Clovers",
+							"logo": "samples/logos/lucky_clovers_shield.png",
+							"place": "St. Patrick’s Inst",
+							"result": {
+								"outcome": {
+									"win": false
+								},
+								"score": 0
+							}
+						},
+						"event_place": "Away"
+					},
+					{
+						"date": "Friday, February 26",
+						"team1": {
+							"name": "Clovers",
+							"logo": "samples/logos/lucky_clovers_shield.png",
+							"place": "St. Patrick’s Inst",
+							"result": {
+								"outcome": {
+									"win": true
+								},
+								"score": 3
+							}
+						},
+						"team2": {
+							"name": "L.A. Pirates",
+							"logo": "samples/logos/pirates_shield.png",
+							"place": "Bebop Institute",
+							"result": {
+								"outcome": {
+									"win": false
+								},
+								"score": 1
+							}
+						},
+						"event_place": "Home"
+					}
+				]
+			},
+			"commentary": [
+				{
+					"teams": {
+						"team1": "Alchemists",
+						"team2": "Clovers"
+					},
+					"kickoff": {
+						"label": "Kickoff",
+						"time": "4:00PM"
+					},
+					"firsthalf": [
+						{
+							"timestamp": "4",
+							"commentary": {
+								"text": "<strong>Rick Valentine</strong> wins a free kick in the attacking half of the field.",
+								"icon": "icon-whistle",
+								"team": "team2"
+							}
+						},
+						{
+							"timestamp": "12",
+							"commentary": {
+								"text": "Corner Kick for <strong>Alchemists</strong>. Conceded by Alphonse Tucker.",
+								"icon": "icon-corner-flag",
+								"team": "team1"
+							}
+						},
+						{
+							"timestamp": "17",
+							"commentary": {
+								"text": "Foul by <strong>Martin Pierto</strong>.",
+								"icon": "icon-whistle",
+								"team": "team2"
+							}
+						},
+						{
+							"timestamp": "22",
+							"commentary": {
+								"text": "Goal! <strong>Franklin Stevens</strong> scored with the right foot. Assisted by David Hawkins. <strong>(1-0)</strong>",
+								"icon": "icon-soccer-ball",
+								"team": "team1"
+							}
+						},
+						{
+							"timestamp": "29",
+							"commentary": {
+								"text": "Paramedics entered the field to check <strong>Christofer Grass</strong> for a nasty fall.",
+								"icon": "icon-injury",
+								"team": "team1"
+							}
+						},
+						{
+							"timestamp": "36",
+							"commentary": {
+								"text": "<strong>Johnny Griffin</strong> is shown the yellow card for a bad kick to Brian Kingster’s shin.",
+								"icon": "icon-yellow-card",
+								"team": "team2"
+							}
+						},
+						{
+							"timestamp": "42",
+							"commentary": {
+								"text": "Foul by <strong>Spike Arrowhead</strong>",
+								"icon": "icon-whistle",
+								"team": "team1"
+							}
+						}
+					],
+					"secondhalf": [
+						{
+							"timestamp": "HT",
+							"commentary": {
+								"text": "<strong>Markus Jackson</strong> enters the field and substitutes <strong>Rick Valentine</strong>.",
+								"icon": "icon-substitution",
+								"team": "team2"
+							}
+						},
+						{
+							"timestamp": "51",
+							"commentary": {
+								"text": "Foul by <strong>Danny Stark</strong>.",
+								"icon": "icon-whistle",
+								"team": "team2"
+							}
+						},
+						{
+							"timestamp": "59",
+							"commentary": {
+								"text": "<strong>Brian Kingster</strong> is shown the red card for an intentional kick to Martin Pierto.",
+								"icon": "icon-red-card",
+								"team": "team1"
+							}
+						},
+						{
+							"timestamp": "63",
+							"commentary": {
+								"text": "Attempt saved. <strong>Nick Rodgers</strong> made an incredible save in the top corner of the goal.",
+								"icon": "icon-keepers-glove",
+								"team": "team1"
+							}
+						},
+						{
+							"timestamp": "67",
+							"commentary": {
+								"text": "Penalty Kick. <strong>Alphonse Tucker</strong> blocked a shot in the area with his hand.",
+								"icon": "icon-whistle",
+								"team": "team2"
+							}
+						},
+						{
+							"timestamp": "68",
+							"commentary": {
+								"text": "Goal! <strong>Christofer Grass</strong> scored a penalty kick after a hand by Alphonse Tucker. <strong>(2-0)</strong>",
+								"icon": "icon-soccer-ball-penalty",
+								"team": "team1"
+							}
+						},
+						{
+							"timestamp": "77",
+							"commentary": {
+								"text": "Offside of <strong>Chris Balleron</strong>.",
+								"icon": "icon-offside-flag",
+								"team": "team2"
+							}
+						},
+						{
+							"timestamp": "82",
+							"commentary": {
+								"text": "Attempt mised. <strong>Michael Netter</strong> right foot shot from outside the box is too high.",
+								"icon": "icon-soccer-shoe",
+								"team": "team2"
+							}
+						},
+						{
+							"timestamp": "84",
+							"commentary": {
+								"text": "<strong>Wally Christison</strong> is shown the yellow card for a headbutt to David Hawkins’s face.",
+								"icon": "icon-yellow-card",
+								"team": "team2"
+							}
+						}
+					],
+					"subheader1": {
+						"title": "Halftime",
+						"subtitle": "After 2 additional minutes starts the <strong>Halftime</strong>.",
+						"icon": "icon-stopwatch"
+					},
+					"subheader2": {
+						"title": "90’",
+						"subtitle": "The referee adds 4 minutes of <strong>additional time</strong>."
+					},
+					"subheader3": {
+						"title": "Final",
+						"subtitle": "End of the game. <strong>Alchemists won 2-0</strong>",
+						"icon": "icon-stopwatch"
+					}
+				}
+			],
+			"players": {
+				"mvp": [
+					{
+						"info": {
+							"fname": "Frank",
+							"lname": "Stevens",
+							"img": "assets/images/soccer/samples/_soccer_widget-featured-player.png",
+							"number": "07"
+						},
+						"stats": {
+							"main": [
+								{
+									"label": "Goals",
+									"slug": "goals",
+									"value": 1
+								},
+								{
+									"label": "Shots",
+									"slug": "shots",
+									"value": 2
+								},
+								{
+									"label": "Assists",
+									"slug": "ast",
+									"value": 1
+								},
+								{
+									"label": "Played",
+									"slug": "played",
+									"value": 64
+								}
+							]
+						},
+						"progress-bars": [
+							{
+								"label": "SHOT ACC",
+								"value": 96
+							},
+							{
+								"label": "PASS ACC",
+								"value": 74
+							}
+						]
+					}
+				],
+				"other": [
+					{
+						"thead": [
+							{
+								"label": "Player"
+							},
+							{
+								"label": "Team"
+							},
+							{
+								"label": "Stat"
+							}
+						],
+						"tbody": [
+							{
+								"name": "James Messinal",
+								"pos": "Point Guard",
+								"icon": "arrow-board",
+								"team": {
+									"logo": "assets/images/soccer/logos/alchemists_s_shield.png",
+									"name": "Alchemists"
+								},
+								"stat": {
+									"label": "Pass.Acc",
+									"value": "89%"
+								}
+							},
+							{
+								"name": "Johnny Griffin",
+								"pos": "Shooting guard",
+								"icon": "crosshair",
+								"team": {
+									"logo": "assets/images/samples/logos/lucky_clovers_shield.png",
+									"name": "Lucky Clovers"
+								},
+								"stat": {
+									"label": "Shots",
+									"value": 34
+								}
+							},
+							{
+								"name": "Christofer Grass",
+								"pos": "Center",
+								"icon": "smile",
+								"team": {
+									"logo": "assets/images/soccer/logos/alchemists_s_shield.png",
+									"name": "Alchemists"
+								},
+								"stat": {
+									"label": "BLKS",
+									"value": 8
+								}
+							}
+						]
+					}
+				]
+			},
+			"videos": {
+				"primary": {
+					"title": "title"
+				},
+				"secondary": [
+					{
+						"title": "Spectacular view from the top of the stadium",
+						"thumb": "assets/images/soccer/samples/_soccer_event-video-2-sm.jpg",
+						"video": "https://vimeo.com/68384616",
+						"category": {
+							"class": "category-3",
+							"name": "Playoffs"
+						},
+						"date": "August 28th, 2020"
+					},
+					{
+						"title": "\"Shiw Wow\" is the Alchemists new pet, check him out!",
+						"thumb": "assets/images/samples/event-video-3-sm.jpg",
+						"video": "https://www.youtube.com/watch?v=87FAolfQ0LY",
+						"category": {
+							"class": "category-1",
+							"name": "The Team"
+						},
+						"date": "August 28th, 2020"
+					},
+					{
+						"title": "Checkout the new ride of our best player of the season",
+						"thumb": "assets/images/soccer/samples/_soccer_event-video-4-sm.jpg",
+						"video": "https://www.youtube.com/watch?v=87FAolfQ0LY",
+						"category": {
+							"class": "category-1",
+							"name": "The Team"
+						},
+						"date": "August 28th, 2020"
+					}
+				]
+			}
+		},
+		"tournament": {
+			"bracket-1": {
+				"quarter": {
+					"title": "Quarterfinals",
+					"list": [
+						[
+							{
+								"thumb": "samples/logos/pirates_shield.png",
+								"team": "L.A. Pirates",
+								"desc": "United States",
+								"score": 2,
+								"winner": true
+							},
+							{
+								"thumb": "samples/logos/icarus_wings_shield.png",
+								"team": "Icarus Wings",
+								"desc": "Portugal",
+								"score": 0
+							}
+						],
+						[
+							{
+								"thumb": "samples/logos/draconians_shield.png",
+								"team": "Draconians",
+								"desc": "Russia",
+								"score": 1
+							},
+							{
+								"thumb": "samples/logos/red_wings_shield.png",
+								"team": "Red Wings",
+								"desc": "Canada",
+								"score": 3,
+								"winner": true
+							}
+						],
+						[
+							{
+								"thumb": "samples/logos/sharks_shield.png",
+								"team": "Sharks",
+								"desc": "South Korea",
+								"score": 0
+							},
+							{
+								"thumb": "soccer/logos/alchemists_s_shield.png",
+								"team": "Alchemists",
+								"desc": "United States",
+								"score": 1,
+								"winner": true
+							}
+						],
+						[
+							{
+								"thumb": "samples/logos/ocean_kings_shield.png",
+								"team": "Ocean Kings",
+								"desc": "Japan",
+								"score": 4,
+								"winner": true
+							},
+							{
+								"thumb": "samples/logos/lucky_clovers_shield.png",
+								"team": "Lucky Clovers",
+								"desc": "Ireland",
+								"score": 0
+							}
+						]
+					]
+				},
+				"semi": {
+					"title": "Semifinals",
+					"list": [
+						[
+							{
+								"thumb": "samples/logos/pirates_shield.png",
+								"team": "L.A. Pirates",
+								"desc": "United States",
+								"score": 4,
+								"winner": true
+							},
+							{
+								"thumb": "samples/logos/red_wings_shield.png",
+								"team": "Red Wings",
+								"desc": "Canada",
+								"score": 3
+							}
+						],
+						[
+							{
+								"thumb": "soccer/logos/alchemists_s_shield.png",
+								"team": "Alchemists",
+								"desc": "United States",
+								"score": 1,
+								"winner": true
+							},
+							{
+								"thumb": "samples/logos/ocean_kings_shield.png",
+								"team": "Ocean Kings",
+								"desc": "Japan",
+								"score": 0
+							}
+						]
+					]
+				},
+				"final": {
+					"title": "Finals",
+					"list": [
+						[
+							{
+								"thumb": "samples/logos/pirates_shield.png",
+								"team": "L.A. Pirates",
+								"desc": "United States",
+								"score": "-"
+							},
+							{
+								"thumb": "soccer/logos/alchemists_s_shield.png",
+								"team": "Alchemists",
+								"desc": "United States",
+								"score": "-"
+							}
+						]
+					]
+				},
+				"champ": {
+					"title": "Champion",
+					"list": [
+						[
+							{
+								"champ": true
+							}
+						]
+					]
+				}
+			}
+		}
+	},
+	"products": {
+		"header-cart": [
+			{
+				"title": "Sundown Sneaker",
+				"thumb": "_soccer_cart-sm-1.jpg",
+				"category": "Sneakers",
+				"rating": {
+					"full": 4,
+					"empty": 1
+				},
+				"price": "$28.00",
+				"count": 2
+			},
+			{
+				"title": "Atlantik Sneaker",
+				"thumb": "_soccer_cart-sm-4.jpg",
+				"category": "Sneakers",
+				"rating": {
+					"full": 5,
+					"empty": 0
+				},
+				"price": "$30.00",
+				"count": 4
+			},
+			{
+				"title": "Aquarium Sneaker",
+				"thumb": "_soccer_cart-sm-2.jpg",
+				"category": "Sneakers",
+				"rating": {
+					"full": 3,
+					"empty": 2
+				},
+				"price": "$28.00",
+				"count": 1
+			}
+		],
+		"shop": [
+			{
+				"title": "Sundown Sneaker",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				"category": "Sneakers",
+				"img": "_soccer_product-img1.jpg",
+				"rating": {
+					"full": 4,
+					"empty": 1
+				},
+				"price": "$28.00"
+			},
+			{
+				"title": "Atlantic Sneaker",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				"category": "Sneakers",
+				"img": "_soccer_product-img2.jpg",
+				"rating": {
+					"full": 5,
+					"empty": 0
+				},
+				"price": "$30.00"
+			},
+			{
+				"title": "Aquarium Sneaker",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				"category": "Sneakers",
+				"img": "_soccer_product-img3.jpg",
+				"rating": {
+					"full": 3,
+					"empty": 2
+				},
+				"onsale": true,
+				"price": {
+					"old": "$26.00",
+					"new": "$22.00"
+				}
+			},
+			{
+				"title": "Crimson Fitted Hat",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				"category": "Hats and Caps",
+				"img": "_soccer_product-img4.jpg",
+				"rating": {
+					"full": 3,
+					"empty": 2
+				},
+				"price": "$20.00"
+			},
+			{
+				"title": "The Jumper Sneaker",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				"category": "Sneakers",
+				"img": "_soccer_product-img5.jpg",
+				"rating": {
+					"full": 4,
+					"empty": 1
+				},
+				"price": "$20.00"
+			},
+			{
+				"title": "Gryson Fitted Shirt",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				"category": "Shirts and Hoodies",
+				"img": "_soccer_product-img6.jpg",
+				"rating": {
+					"full": 4,
+					"empty": 1
+				},
+				"price": "$50.00"
+			},
+			{
+				"title": "The Slime Sneaker",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				"category": "Sneakers",
+				"img": "_soccer_product-img7.jpg",
+				"rating": {
+					"full": 5,
+					"empty": 0
+				},
+				"price": "$32.00"
+			},
+			{
+				"title": "The Sporting Shirt",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				"category": "Shirts and Hoodies",
+				"img": "_soccer_product-img8.jpg",
+				"rating": {
+					"full": 4,
+					"empty": 1
+				},
+				"price": "$40.00"
+			},
+			{
+				"title": "Futuristic Sneaker",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				"category": "Sneakers",
+				"img": "_soccer_product-img9.jpg",
+				"rating": {
+					"full": 4,
+					"empty": 1
+				},
+				"price": "$34.00"
+			},
+			{
+				"title": "Carbon Fiber Hoodie",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				"category": "Shirts and Hoodies",
+				"img": "_soccer_product-img10.jpg",
+				"rating": {
+					"full": 4,
+					"empty": 1
+				},
+				"price": "$45.00"
+			},
+			{
+				"title": "Carbon Fiber Hat",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				"category": "Hats and Caps",
+				"img": "_soccer_product-img11.jpg",
+				"rating": {
+					"full": 4,
+					"empty": 1
+				},
+				"price": "$22.00"
+			},
+			{
+				"title": "Iceberg Sneaker",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				"category": "Sneakers",
+				"img": "_soccer_product-img12.jpg",
+				"rating": {
+					"full": 4,
+					"empty": 1
+				},
+				"price": "$30.00"
+			}
+		],
+		"widget-products": [
+			{
+				"title": "Sundown Sneaker",
+				"thumb": "_soccer_cart-sm-1.jpg",
+				"category": "Sneakers",
+				"rating": {
+					"full": 4,
+					"empty": 1
+				},
+				"price": "$28.00"
+			},
+			{
+				"title": "Atlantik Sneaker",
+				"thumb": "_soccer_cart-sm-2.jpg",
+				"category": "Sneakers",
+				"rating": {
+					"full": 5,
+					"empty": 0
+				},
+				"price": "$30.00"
+			},
+			{
+				"title": "Aquarium Sneaker",
+				"thumb": "_soccer_cart-sm-3.jpg",
+				"category": "Sneakers",
+				"rating": {
+					"full": 3,
+					"empty": 2
+				},
+				"price": "$28.00"
+			}
+		],
+		"wishlist": [
+			{
+				"title": "Sundown Sneaker",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor en derum labore.",
+				"thumb": "cart-sm-1.jpg",
+				"category": "Sneakers",
+				"rating": {
+					"full": 4,
+					"empty": 1
+				},
+				"price": "$28.00",
+				"availability": true
+			},
+			{
+				"title": "Carbon Fiber Hoodie",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor en derum labore.",
+				"thumb": "cart-sm-4.jpg",
+				"category": "Shirts and Hoodies",
+				"rating": {
+					"full": 4,
+					"empty": 1
+				},
+				"price": "$45.00",
+				"availability": false
+			},
+			{
+				"title": "Carbon Fitted Cap",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor en derum labore.",
+				"thumb": "cart-sm-5.jpg",
+				"category": "Hats and Caps",
+				"rating": {
+					"full": 4,
+					"empty": 1
+				},
+				"price": "$22.00",
+				"availability": false
+			},
+			{
+				"title": "Aquarium Sneaker",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor en derum labore.",
+				"thumb": "cart-sm-3.jpg",
+				"category": "Sneakers",
+				"rating": {
+					"full": 3,
+					"empty": 2
+				},
+				"price": "$28.00",
+				"availability": true
+			},
+			{
+				"title": "Sporting Shirt",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor en derum labore.",
+				"thumb": "cart-sm-6.jpg",
+				"category": "Shirts",
+				"rating": {
+					"full": 5,
+					"empty": 0
+				},
+				"price": "$28.00",
+				"availability": true
+			},
+			{
+				"title": "Atlantik Sneaker",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisi ng elit, sed do eiusmod tempor en derum labore.",
+				"thumb": "cart-sm-2.jpg",
+				"category": "Sneakers",
+				"rating": {
+					"full": 5,
+					"empty": 0
+				},
+				"price": "$30.00",
+				"count": 4
+			}
+		],
+		"cart": [
+			{
+				"title": "Sundown Sneaker",
+				"thumb": "_soccer_cart-sm-1.jpg",
+				"category": "Sneakers",
+				"rating": {
+					"full": 4,
+					"empty": 1
+				},
+				"price": "$28.00",
+				"price_total": "$28.00",
+				"size": "8,5 (USA)",
+				"color": "orange",
+				"quantity": 1
+			},
+			{
+				"title": "Atlantik Sneaker",
+				"thumb": "_soccer_cart-sm-4.jpg",
+				"category": "Sneakers",
+				"rating": {
+					"full": 5,
+					"empty": 0
+				},
+				"price": "$30.00",
+				"price_total": "$120.00",
+				"size": "8,5 (USA)",
+				"color": "blue",
+				"quantity": 4
+			},
+			{
+				"title": "Aquarium Sneaker",
+				"thumb": "_soccer_cart-sm-2.jpg",
+				"category": "Sneakers",
+				"rating": {
+					"full": 3,
+					"empty": 2
+				},
+				"price": "$26.00",
+				"price_total": "$26.00",
+				"size": "8,5 (USA)",
+				"color": "aqua",
+				"quantity": 1
+			},
+			{
+				"title": "The Sporting Shirt",
+				"thumb": "_soccer_cart-sm-3.jpg",
+				"category": "Shirts",
+				"rating": {
+					"full": 5,
+					"empty": 0
+				},
+				"price": "$40.00",
+				"price_total": "$40.00",
+				"size": "Large",
+				"color": "black",
+				"quantity": 1
+			}
+		],
+		"related": [
+			{
+				"title": "Sundown Sneaker",
+				"category": "Sneakers",
+				"img": "_soccer_product-img1.jpg",
+				"rating": {
+					"full": 4,
+					"empty": 1
+				},
+				"price": "$28.00"
+			},
+			{
+				"title": "Atlantic Sneaker",
+				"category": "Sneakers",
+				"img": "_soccer_product-img2.jpg",
+				"rating": {
+					"full": 5,
+					"empty": 0
+				},
+				"price": "$30.00"
+			},
+			{
+				"title": "Aquarium Sneaker",
+				"category": "Sneakers",
+				"img": "_soccer_product-img3.jpg",
+				"rating": {
+					"full": 3,
+					"empty": 2
+				},
+				"price": "$26.00"
+			},
+			{
+				"title": "Carbon Fiber Hoodie",
+				"category": "Shirts and Hoodies",
+				"img": "_soccer_product-img10.jpg",
+				"rating": {
+					"full": 4,
+					"empty": 1
+				},
+				"price": "$45.00"
+			}
+		]
+	},
+	"contact-info": {
+		"email-1": "tryouts@alchemists.com",
+		"email-2": "info@alchemists.com",
+		"social": [
+			{
+				"name": "Facebook",
+				"icon": "fab fa-facebook",
+				"link": "#"
+			},
+			{
+				"name": "Twitter",
+				"icon": "fab fa-twitter",
+				"link": "#"
+			},
+			{
+				"name": "Instagram",
+				"icon": "fab fa-instagram",
+				"link": "#"
+			}
+		]
+	},
+	"nav-footer": [
+		{
+			"label": "Home",
+			"link": "_soccer_index.html"
+		},
+		{
+			"label": "Features",
+			"link": "_soccer_features-shortcodes.html"
+		},
+		{
+			"label": "Statistics",
+			"link": "_soccer_team-standings.html"
+		},
+		{
+			"label": "The Team",
+			"link": "_soccer_team-overview.html"
+		},
+		{
+			"label": "News",
+			"link": "_soccer_blog-3.html"
+		},
+		{
+			"label": "Shop",
+			"link": "_soccer_shop-grid.html"
+		}
+	],
+	"sponsors-full": [
+		{
+			"title": "Sponsor Name #1",
+			"logo": "sponsor-sample-gray.png",
+			"link": "#",
+			"address": "www.dan-fisher.com",
+			"social": [
+				{
+					"name": "Facebook",
+					"icon": "fab fa-facebook",
+					"link": "#"
+				},
+				{
+					"name": "Twitter",
+					"icon": "fab fa-twitter",
+					"link": "#"
+				},
+				{
+					"name": "Instagram",
+					"icon": "fab fa-instagram",
+					"link": "#"
+				}
+			],
+			"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimam, quisrud exercitation ullamco laboris nisi ut aliquip ex ea modo sequat. Duis aute irure dolorem."
+		},
+		{
+			"title": "Sponsor Name #2",
+			"logo": "sponsor-sample-gray.png",
+			"link": "http://www.dan-fisher.com",
+			"address": "www.dan-fisher.com",
+			"social": [
+				{
+					"name": "Facebook",
+					"icon": "fab fa-facebook",
+					"link": "#"
+				},
+				{
+					"name": "Twitter",
+					"icon": "fab fa-twitter",
+					"link": "#"
+				}
+			],
+			"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimam, quisrud exercitation ullamco laboris nisi ut aliquip ex ea modo sequat. Duis aute irure dolorem."
+		},
+		{
+			"title": "Sponsor Name #3",
+			"logo": "sponsor-sample-gray.png",
+			"link": "http://www.dan-fisher.com",
+			"address": "www.dan-fisher.com",
+			"social": [
+				{
+					"name": "Facebook",
+					"icon": "fab fa-facebook",
+					"link": "#"
+				},
+				{
+					"name": "Twitter",
+					"icon": "fab fa-twitter",
+					"link": "#"
+				},
+				{
+					"name": "Twitch",
+					"icon": "fab fa-twitch",
+					"link": "#"
+				}
+			],
+			"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimam, quisrud exercitation ullamco laboris nisi ut aliquip ex ea modo sequat. Duis aute irure dolorem."
+		},
+		{
+			"title": "Sponsor Name #4",
+			"logo": "sponsor-sample-gray.png",
+			"link": "http://www.dan-fisher.com",
+			"address": "www.dan-fisher.com",
+			"social": [
+				{
+					"name": "Facebook",
+					"icon": "fab fa-facebook",
+					"link": "#"
+				},
+				{
+					"name": "Twitter",
+					"icon": "fab fa-twitter",
+					"link": "#"
+				},
+				{
+					"name": "Twitch",
+					"icon": "fab fa-twitch",
+					"link": "#"
+				}
+			],
+			"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimam, quisrud exercitation ullamco laboris nisi ut aliquip ex ea modo sequat. Duis aute irure dolorem."
+		},
+		{
+			"title": "Sponsor Name #5",
+			"logo": "sponsor-sample-gray.png",
+			"link": "http://www.dan-fisher.com",
+			"address": "www.dan-fisher.com",
+			"social": [
+				{
+					"name": "Facebook",
+					"icon": "fab fa-facebook",
+					"link": "#"
+				},
+				{
+					"name": "Twitter",
+					"icon": "fab fa-twitter",
+					"link": "#"
+				},
+				{
+					"name": "Instagram",
+					"icon": "fab fa-instagram",
+					"link": "#"
+				}
+			],
+			"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimam, quisrud exercitation ullamco laboris nisi ut aliquip ex ea modo sequat. Duis aute irure dolorem."
+		},
+		{
+			"title": "Sponsor Name #6",
+			"logo": "sponsor-sample-gray.png",
+			"link": "http://www.dan-fisher.com",
+			"address": "www.dan-fisher.com",
+			"social": [
+				{
+					"name": "Facebook",
+					"icon": "fab fa-facebook",
+					"link": "#"
+				},
+				{
+					"name": "Twitter",
+					"icon": "fab fa-twitter",
+					"link": "#"
+				},
+				{
+					"name": "Twitch",
+					"icon": "fab fa-twitch",
+					"link": "#"
+				}
+			],
+			"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimam, quisrud exercitation ullamco laboris nisi ut aliquip ex ea modo sequat. Duis aute irure dolorem."
+		}
+	],
+	"sponsors": [
+		{
+			"logo": "sponsor-visa.png",
+			"link": "#"
+		},
+		{
+			"logo": "sponsor-discover.png",
+			"link": "#"
+		},
+		{
+			"logo": "sponsor-paypal.png",
+			"link": "#"
+		},
+		{
+			"logo": "sponsor-skrill.png",
+			"link": "#"
+		},
+		{
+			"logo": "sponsor-westernunion.png",
+			"link": "#"
+		},
+		{
+			"logo": "sponsor-payoneer.png",
+			"link": "#"
+		}
+	],
+	"faqs": [
+		{
+			"title": "Events and Streams modules",
+			"content": "<h4>Live Featured Streams!</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea modo sequat. Duis aute irure dolor in reprehenderit in voluriatur.</p><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam ede corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure nderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem.</p><h4>Events Calendar</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea modo sequat. Duis aute irure dolor in reprehenderit in voluriatur.</p>",
+			"active": true
+		},
+		{
+			"title": "Applying for the California teams",
+			"content": "<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam ede corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure nderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem.</p>"
+		},
+		{
+			"title": "Buying our Merchandise",
+			"content": "<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam ede corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure nderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem.</p>"
+		},
+		{
+			"title": "Bring the Alchemists to your country",
+			"content": "<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam ede corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure nderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem.</p>"
+		},
+		{
+			"title": "Charity drives and another events",
+			"content": "<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam ede corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure nderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem.</p>"
+		}
+	],
+	"copyright": "<a href=\"_soccer_index.html\">The Alchemists</a> 2020 &nbsp; | &nbsp; All Rights Reserved"
+}

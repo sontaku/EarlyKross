@@ -1,0 +1,249 @@
+---
+layout: football
+page-title: Home
+hero-unit-slider: true
+marquee_script: true
+---
+
+{{> _football_marquee}}
+
+<!-- Content
+================================================== -->
+<div class="site-content">
+	<div class="container">
+
+		<!-- Featured News -->
+		<div class="card card--clean mb-0">
+			<header class="card__header card__header--has-btn">
+				<h4>Featured News</h4>
+			</header>
+			<div class="card__content">
+
+				<!-- Slider -->
+				<div class="slick posts posts-slider posts--slider-var-width">
+
+					{{#each football.posts.featured-posts}}
+					<div class="slick__slide">
+
+						<div class="row">
+
+							{{#each this}}
+							<div class="{{col}}">
+
+								<div class="posts__item posts__item--desc-{{#if featured}}center{{else}}left{{/if}} posts__item--{{category.class}}">
+									<a href="#" class="posts__link-wrapper">
+										<figure class="posts__thumb effect-duotone effect-duotone--{{gradient}}">
+											<img src="{{../root}}assets/images/{{thumb}}" alt="" />
+										</figure>
+										<div class="posts__inner">
+											<div class="posts__cat">
+												<span class="label posts__cat-label">{{category.name}}</span>
+											</div>
+											<h3 class="posts__title">{{{title}}}</h3>
+											<div class="post-author">
+												{{#if featured}}
+												<figure class="post-author__avatar">
+													<img src="{{../root}}assets/images/{{author.avatar}}" alt="Post Author Avatar">
+												</figure>
+												{{/if}}
+												<div class="post-author__info">
+													<time datetime="2017-08-28" class="posts__date">{{date}}</time>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							{{/each}}
+
+						</div>
+					</div>
+					{{/each}}
+
+				</div>
+				<!-- Slider / End -->
+
+			</div>
+		</div>
+		<!-- Featured News / End -->
+
+		<div class="row">
+			<!-- Content -->
+			<div class="content col-lg-8">
+
+				<!-- Posts Area 1 -->
+				<!-- Latest News -->
+				<div class="card card--clean mb-0">
+					<header class="card__header card__header--has-btn">
+						<h4>Latest News</h4>
+						<a href="_football_blog-1.html" class="btn btn-default btn-xs card-header__button">See All Posts</a>
+					</header>
+					<div class="card__content">
+						<!-- Posts Grid -->
+						<div class="posts posts--cards post-grid post-grid--2cols post-grid--fitRows row">
+
+							{{#each football.posts.posts-1}}
+							<div class="post-grid__item col-6">
+								<div class="posts__item posts__item--card posts__item--{{category.class}} card">
+									<figure class="posts__thumb">
+										<div class="posts__cat">
+											<span class="label posts__cat-label">{{category.name}}</span>
+										</div>
+										<a href="#"><img src="{{../root}}assets/images/{{thumb}}" alt=""></a>
+									</figure>
+									<div class="posts__inner card__content">
+										<a href="#" class="posts__cta"></a>
+										<time datetime="2017-09-14" class="posts__date">{{date}}</time>
+										<h6 class="posts__title"><a href="#">{{title}}</a></h6>
+										<div class="posts__excerpt">
+											{{excerpt}}
+										</div>
+									</div>
+									<footer class="posts__footer card__footer">
+										<div class="post-author">
+											<figure class="post-author__avatar">
+												<img src="{{../root}}assets/images/{{author.avatar}}" alt="Post Author Avatar">
+											</figure>
+											<div class="post-author__info">
+												<h4 class="post-author__name">{{author.name}}</h4>
+											</div>
+										</div>
+										<ul class="post__meta meta">
+											<li class="meta__item meta__item--views">{{meta.views}}</li>
+											<li class="meta__item meta__item--likes"><a href="#"><i class="meta-like icon-heart"></i> {{meta.likes}}</a></li>
+											<li class="meta__item meta__item--comments"><a href="#">{{meta.comments}}</a></li>
+										</ul>
+									</footer>
+								</div>
+							</div>
+							{{/each}}
+
+							<div class="post-grid__item col-6">
+								<div class="card mb-0">
+									<div class="card__content">
+										<ul class="posts posts--simple-list">
+											{{#each football.posts.posts-2}}
+											<li class="posts__item posts__item--{{category.class}}">
+												<figure class="posts__thumb">
+													<a href="#"><img src="{{../root}}assets/images/{{thumb}}" alt=""></a>
+												</figure>
+												<div class="posts__inner">
+													<div class="posts__cat">
+														<span class="label posts__cat-label">{{category.name}}</span>
+													</div>
+													<h6 class="posts__title"><a href="#">{{title}}</a></h6>
+													<time datetime="2017-08-23" class="posts__date">{{date}}</time>
+												</div>
+												<div class="posts__excerpt posts__excerpt--space-sm">
+													{{excerpt}}
+												</div>
+											</li>
+											{{/each}}
+										</ul>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<!-- Post Grid / End -->
+					</div>
+				</div>
+				<!-- Latest News / End -->
+
+				<!-- Posts Area 1 / End -->
+
+				<!-- Main News Banner -->
+				<div class="main-news-banner main-news-banner--bg">
+					<div class="main-news-banner__inner">
+						<div class="posts posts--simple-list posts--simple-list--xlg">
+							<div class="posts__item posts__item--category-1">
+								<div class="posts__inner">
+									<div class="posts__cat">
+										<span class="label posts__cat-label">The Team</span>
+									</div>
+									<h6 class="posts__title"><a href="#">Take a look at the <span class="text-success">brand new helmets</span> for next season</a></h6>
+									<time datetime="2017-08-12" class="posts__date">August 12th, 2017</time>
+									<div class="posts__excerpt">
+										Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor ut labore.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!-- Main News Banner / End -->
+
+
+				<!-- Posts Area 2 -->
+				<!-- Posts Grid -->
+				<div class="posts posts--cards post-grid post-grid--2cols post-grid--fitRows row">
+
+					{{#each football.posts.posts-3}}
+					<div class="post-grid__item col-6">
+						<div class="posts__item posts__item--card posts__item--{{category.class}} card">
+							<figure class="posts__thumb">
+								<div class="posts__cat">
+									<span class="label posts__cat-label">{{category.name}}</span>
+								</div>
+								<a href="#"><img src="{{../root}}assets/images/{{thumb}}" alt=""></a>
+							</figure>
+							<div class="posts__inner card__content">
+								<a href="#" class="posts__cta"></a>
+								<time datetime="2017-09-14" class="posts__date">{{date}}</time>
+								<h6 class="posts__title"><a href="#">{{title}}</a></h6>
+							</div>
+							<footer class="posts__footer card__footer">
+								<div class="post-author">
+									<figure class="post-author__avatar">
+										<img src="{{../root}}assets/images/{{author.avatar}}" alt="Post Author Avatar">
+									</figure>
+									<div class="post-author__info">
+										<h4 class="post-author__name">{{author.name}}</h4>
+									</div>
+								</div>
+								<ul class="post__meta meta">
+									<li class="meta__item meta__item--views">{{meta.views}}</li>
+									<li class="meta__item meta__item--likes"><a href="#"><i class="meta-like icon-heart"></i> {{meta.likes}}</a></li>
+									<li class="meta__item meta__item--comments"><a href="#">{{meta.comments}}</a></li>
+								</ul>
+							</footer>
+						</div>
+					</div>
+					{{/each}}
+
+				</div>
+				<!-- Post Grid / End -->
+				<!-- Posts Area 2 / End -->
+
+
+				{{> _football_blog-pagination custom-class="justify-content-center"}}
+
+
+			</div>
+			<!-- Content / End -->
+
+
+			<!-- Sidebar -->
+			<div id="sidebar" class="sidebar col-lg-4">
+
+				{{> _football_widget-standings}}
+
+				{{> widget-social-grid}}
+
+				{{> _football_widget-popular-posts-numbered}}
+
+				{{> _football_widget-player}}
+
+				{{> _football_widget-game-result}}
+
+				{{> _football_widget-tabbed}}
+
+			</div>
+			<!-- Sidebar / End -->
+		</div>
+
+	</div>
+</div>
+
+<!-- Content / End -->

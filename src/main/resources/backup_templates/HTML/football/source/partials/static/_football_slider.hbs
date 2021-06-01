@@ -1,0 +1,53 @@
+<!-- Featured Posts Slider
+================================================== -->
+<div class="slick posts posts-slider posts--slider-top-news">
+
+	{{#each football.posts.hero-slider}}
+	<!-- Slide #{{key}} -->
+	<div class="slick__slide">
+
+		<div class="posts__item {{#if featured}}posts__item-has-img{{/if}} posts__item--{{category.class}}">
+
+			<!-- Main Image -->
+			<figure class="posts__thumb effect-duotone effect-duotone--{{gradient}}">
+				<img src="{{../root}}assets/images/{{thumb}}" alt="">
+			</figure>
+			<!-- Main Image / End -->
+
+			{{#if featured}}
+			<!-- Player Image -->
+			<div class="posts__img-player">
+				<img src="{{../root}}assets/images/football/samples/hero-unit-player.png" alt="Hero Unit Image">
+			</div>
+			<!-- Player Image / End -->
+			{{/if}}
+
+			<!-- Post Content -->
+			<div class="posts__inner">
+				<div class="posts__cat">
+					<span class="label posts__cat-label">{{category.name}}</span>
+				</div>
+				<h3 class="posts__title"><a href="#">{{{title}}}</a></h3>
+				<footer class="posts__footer">
+					<div class="post-author">
+						<figure class="post-author__avatar">
+							<img src="{{../root}}assets/images/{{author.avatar}}" alt="Post Author Avatar">
+						</figure>
+						<time datetime="2017-08-23" class="posts__date">{{date}}</time>
+					</div>
+					<ul class="post__meta meta">
+						<li class="meta__item meta__item--views">{{meta.views}}</li>
+						<li class="meta__item meta__item--likes"><a href="#"><i class="meta-like icon-heart"></i> {{meta.likes}}</a></li>
+						<li class="meta__item meta__item--comments"><a href="#">{{meta.comments}}</a></li>
+					</ul>
+				</footer>
+			</div>
+			<!-- Post Content / End -->
+
+		</div>
+
+	</div>
+	<!-- Slide #{{key}} / End -->
+	{{/each}}
+
+</div>

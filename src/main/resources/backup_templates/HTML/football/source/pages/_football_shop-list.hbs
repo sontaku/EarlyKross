@@ -1,0 +1,120 @@
+---
+layout: football
+page-title: Shop List
+page-heading: "Shop <span class=\"highlight\">List</span>"
+
+breadcrumbs: [
+	{
+		label: "Shop"
+	}
+]
+---
+
+<!-- Content
+================================================== -->
+<div class="site-content">
+	<div class="container">
+
+		<div class="row">
+
+			<!-- Products -->
+			<div class="col-lg-9 order-lg-2">
+
+				<!-- Shop List -->
+				<div class="card card--clean">
+					<header class="card__header card__header--shop-filter">
+
+						{{> _football_shop-filter}}
+
+					</header>
+					<div class="card__content">
+
+						<!-- Products -->
+						<ul class="products products--list products--list-sm">
+
+							{{#each football.products.shop}}
+							<!-- Product #{{@key}} -->
+							<li class="product__item product__item--{{color}} card">
+								<div class="product__img">
+									<div class="product__img-holder">
+										<div class="product__bg-letters">{{abbr}}</div>
+										<div class="product__slider">
+											{{#each img}}
+											<div class="product__slide">
+												<div class="product__slide-img">
+													<img src="{{../root}}assets/images/samples/{{thumb}}" alt="">
+												</div>
+											</div>
+											{{/each}}
+										</div>
+									</div>
+								</div>
+								<div class="product__content card__content">
+									<header class="product__header">
+										<div class="product__header-inner">
+											<h2 class="product__title"><a href="_football_shop-product.html">{{title}}</a></h2>
+											<span class="product__category">{{category}}</span>
+											<div class="product__ratings">
+												{{#repeat rating.full}}
+												<i class="fas fa-star"></i>
+												{{/repeat}}
+												{{#repeat rating.empty}}
+												<i class="fas fa-star empty"></i>
+												{{/repeat}}
+											</div>
+											<div class="product__price">
+												{{#if onsale}}
+													<del>{{price.old}}</del>
+													<ins>{{price.new}}</ins>
+												{{else}}
+													{{price}}
+												{{/if}}
+											</div>
+										</div>
+									</header>
+									<div class="product__excerpt">
+										{{excerpt}}
+									</div>
+									<footer class="product__footer">
+										<a href="_football_shop-cart.html" class="btn btn-primary-inverse btn-single-icon btn-circle" data-toggle="tooltip" data-placement="top" title="Add to cart"><i class="df-icon-plus"></i></a>
+										<a href="_football_shop-wishlist.html" class="btn btn-default btn-single-icon product__wish btn-outline btn-circle" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><i class="icon-heart"></i></a>
+										<a href="#" class="btn btn-primary btn-single-icon product__view btn-outline btn-circle" data-toggle="tooltip" data-placement="top" title="10890"><i class="icon-eye"></i></a>
+									</footer>
+								</div>
+							</li>
+							<!-- Product #{{@key}} / End -->
+							{{/each}}
+
+						</ul>
+						<!-- Products / End -->
+					</div>
+				</div>
+				<!-- Shop List / End -->
+
+				{{> _football_shop-pagination custom-class="justify-content-center"}}
+
+			</div>
+			<!-- Products / End -->
+
+			<!-- Sidebar -->
+			<div class="sidebar sidebar--shop col-lg-3 order-lg-1">
+
+				{{> widget-categories}}
+
+				{{> _football_widget-filter-color}}
+
+				{{> _football_widget-filter-size}}
+
+				{{> _football_widget-filter-price}}
+
+				{{> _football_widget-products}}
+
+			</div>
+			<!-- Sidebar / End -->
+
+		</div>
+
+	</div>
+</div>
+
+<!-- Content / End -->

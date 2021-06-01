@@ -1,0 +1,129 @@
+---
+layout: esports
+page-title: Single Video
+page-heading: "Single <span class=\"highlight\">Video</span>"
+megamenu: v3
+
+breadcrumbs: [
+	{
+		label: "Teams",
+		link: "#"
+	},
+	{
+		label: "L.O. Heroes",
+		link: "#"
+	},
+	{
+		label: "Videos",
+		link: "_esports_team-videos.html"
+	},
+	{
+		label: "Single Video"
+	}
+]
+---
+
+<!-- Content
+================================================== -->
+<div class="site-content">
+	<div class="container">
+
+		<!-- Video Player block -->
+		<div class="card alc-video-playlist">
+			<div class="row">
+				<div class="col-lg-8 alc-video-player-col">
+					<div class="card__content">
+
+						<!-- Video Player -->
+						<div class="alc-video-player js-alc-video-player">
+							{{#each esports.sp.team.video-playlist}}
+							<div class="alc-video-player__item">
+								<figure class="posts__thumb posts__thumb--video">
+									<a href="{{video}}" class="mp_iframe"><img src="{{../root}}assets/images/esports/samples/{{cover}}" alt=""></a>
+								</figure>
+							</div>
+							{{/each}}
+						</div>
+					</div>
+					<!-- Video Player / End -->
+
+				</div>
+
+				<!-- Video Playlist -->
+				<div class="col-lg-4 alc-video-playlist-col">
+					<div class="alc-video-player__header js-alc-video-player__header slick-vertical">
+						<h4 class="alc-video-player__title">Playlist Videos</h4>
+					</div>
+					<ul class="posts posts--simple-list alc-video-player__video-list">
+						{{#each esports.sp.team.video-playlist}}
+						<li class="posts__item {{#each category}}posts__item--{{class}} {{/each}}">
+							<figure class="posts__thumb posts__thumb--video posts__thumb--video-sm">
+								<img src="{{../root}}assets/images/esports/samples/{{thumb}}" alt="">
+							</figure>
+							<div class="posts__inner">
+								<div class="posts__cat">
+									{{#each category}}<span class="label posts__cat-label posts__cat-label--{{class}}">{{name}}</span>{{/each}}
+								</div>
+								<h6 class="posts__title posts__title--color-hover">{{title}}</h6>
+								<time datetime="2018-09-27" class="posts__date">{{date}}</time>
+							</div>
+						</li>
+						{{/each}}
+					</ul>
+				</div>
+				<!-- Video Playlist / End -->
+
+			</div>
+		</div>
+		<!-- Video Playlist block / End -->
+
+
+		<div class="row">
+
+			<!-- Content -->
+			<div class="content col-lg-8">
+
+				<!-- Article -->
+				<article class="card post post--single post--single-sm">
+					<div class="card__header card__header--no-highlight">
+						<div class="post__category">
+							<span class="label posts__cat-label posts__cat-label--category-1">The Team</span>
+							<span class="label posts__cat-label posts__cat-label--category-4">Xenowatch</span>
+						</div>
+						<header class="post__header">
+							<h2 class="post__title">Destroy played the first mission of the Mercenaries update with Kelly and Saki</h2>
+							<ul class="post__meta meta">
+								<li class="meta__item meta__item--date"><time datetime="2017-08-23">August 23rd, 2018</time></li>
+								<li class="meta__item meta__item--views">2369</li>
+								<li class="meta__item meta__item--likes"><a href="#"><i class="meta-like icon-heart"></i> 530</a></li>
+								<li class="meta__item meta__item--comments"><a href="#">18</a></li>
+							</ul>
+						</header>
+					</div>
+					<div class="card__content">
+						{{> _esports_post-sharing-heading class="post-sharing-compact--footer" }}
+					</div>
+				</article>
+				<!-- Article / End -->
+
+				{{> _esports_post-comments }}
+
+				{{> _esports_post-comments-form }}
+
+			</div>
+			<!-- Content / End -->
+
+			<!-- Sidebar -->
+			<div id="sidebar" class="sidebar col-lg-4">
+
+				{{> _esports_widget-videos }}
+
+			</div>
+			<!-- Sidebar / End -->
+
+		</div>
+
+	</div>
+</div>
+
+<!-- Content / End -->

@@ -1,0 +1,215 @@
+---
+layout: football
+page-title: Event - Team Stats
+event-header: true
+---
+
+{{> _football_event-nav}}
+
+<!-- Content
+================================================== -->
+<div class="site-content">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-lg-8">
+
+				<!-- Match Team Stats -->
+				<div class="alc-event-stats-box card card--no-paddings">
+
+					<!-- Header -->
+					<header class="widget__title card__header alc-teams-legend">
+						<h4 class="alc-teams-legend__title">Match Team Stats</h4>
+						<div class="alc-teams-legend__info">
+							<!-- Teams -->
+							<div class="alc-teams-legend__teams">
+
+								{{#each football.sp.event.stats.meta}}
+								<!-- Team #{{@key}} -->
+								<div class="alc-teams-legend__team">
+									<span class="alc-teams-legend__team-color alc-teams-legend__team-color--color-{{color}}"></span>
+									<img src="{{logo}}" class="alc-teams-legend__team-logo" alt="{{name}}">
+								</div>
+								<!-- Team #{{@key}} / End -->
+								{{/each}}
+
+							</div>
+							<!-- Teams / End -->
+						</div>
+					</header>
+					<!-- Header / End -->
+
+					<!-- Team & Result -->
+					<div class="alc-event-stats-box__content card__content">
+
+						<!-- Event Statistics -->
+						<div class="alc-event-stats-box__section">
+							<div class="alc-event-stats-box__section-inner alc-event-stats-box__section-inner--lg">
+
+								<!-- Progress Stats Table -->
+								<table class="progress-table progress-table--sm-space progress-table--fullwidth">
+									<tbody>
+
+										{{#each football.sp.event.stats.main}}
+										<tr>
+											<td class="progress-table__progress-label {{#if team1.highlight}}progress-table__progress-label--highlight{{/if}}">{{team1.value}}</td>
+											<td class="progress-table__progress-bar progress-table__progress-bar--first">
+												<div class="progress progress--battery">
+													<div class="progress__bar" style="width: {{team1.pct}}%;" role="progressbar" aria-valuenow="{{team1.value}}" aria-valuemin="0" aria-valuemax="100"></div>
+												</div>
+											</td>
+											<td class="progress-table__title text-uppercase">{{label}}</td>
+											<td class="progress-table__progress-bar progress-table__progress-bar--second">
+												<div class="progress progress--battery">
+													<div class="progress__bar progress__bar--success" style="width: {{team2.pct}}%;" role="progressbar" aria-valuenow="{{team2.value}}" aria-valuemin="0" aria-valuemax="100"></div>
+												</div>
+											</td>
+											<td class="progress-table__progress-label {{#if team2.highlight}}progress-table__progress-label--highlight{{/if}}">{{team2.value}}</td>
+										</tr>
+										{{/each}}
+
+									</tbody>
+								</table>
+								<!-- Progress Stats Table / End -->
+
+							</div>
+						</div>
+						<!-- Event Statistics / End -->
+
+						<!-- Ball Possession -->
+						<div class="alc-event-stats-box__section">
+							<header class="alc-event-stats-box__subheader card__subheader card__subheader--sm card__subheader--nomargins">
+								<h5 class="alc-event-stats-box__subtitle">Ball Possession</h5>
+							</header>
+							<div class="alc-event-stats-box__section-inner alc-event-stats-box__section-inner--lg">
+
+								<!-- Progress: Ball Possession -->
+								<div class="progress-double-wrapper progress-double-wrapper--fullwidth">
+									<div class="progress-inner-holder">
+										{{#each football.sp.event.stats.possession}}
+										<div class="progress__digit progress__digit--left {{#if team1.highlight}}progress__digit--highlight{{/if}}">{{team1.value}}%</div>
+										<div class="progress progress--battery">
+											<div class="progress__bar" role="progressbar" aria-valuenow="{{team1.value}}" aria-valuemin="0" aria-valuemax="100" style="width: {{team1.value}}%;"></div>
+											<div class="progress__bar progress__bar--success" role="progressbar" aria-valuenow="{{team2.value}}" aria-valuemin="0" aria-valuemax="100" style="width: {{team2.value}}%;"></div>
+										</div>
+										<div class="progress__digit progress__digit--right {{#if team2.highlight}}progress__digit--highlight{{/if}}">{{team2.value}}%</div>
+										{{/each}}
+									</div>
+								</div>
+								<!-- Progress: Ball Possession / End -->
+
+							</div>
+						</div>
+						<!-- Ball Possession / End -->
+
+
+						<!-- Event Additional Stats -->
+						<div class="alc-event-stats-box__section">
+							<header class="alc-event-stats-box__subheader card__subheader card__subheader--sm card__subheader--nomargins">
+								<h5 class="alc-event-stats-box__subtitle">Additional Stats</h5>
+							</header>
+							<div class="alc-event-stats-box__section-inner alc-event-stats-box__section-inner--lg">
+
+								<div class="row">
+									<div class="col-12 col-md-6">
+										<div class="row">
+
+											{{#each football.sp.event.stats.percentages.team1}}
+											<div class="col-4">
+												<div class="circular circular--size-80">
+													<div class="circular__bar" data-percent="{{pct}}" data-line-width="6">
+														<span class="circular__percents circular__percents--lg">{{value}}<small class="circular__label">{{label}}</small></span>
+													</div>
+												</div>
+											</div>
+											{{/each}}
+
+										</div>
+									</div>
+									<div class="col-12 col-md-6">
+										<div class="row">
+
+											{{#each football.sp.event.stats.percentages.team2}}
+											<div class="col-4 {{class}}">
+												<div class="circular circular--size-80">
+													<div class="circular__bar" data-percent="{{pct}}" data-bar-color="#aaf20e" data-line-width="6">
+														<span class="circular__percents circular__percents--lg">{{value}}<small class="circular__label">{{label}}</small></span>
+													</div>
+												</div>
+											</div>
+											{{/each}}
+
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<!-- Event Additional Stats / End -->
+
+					</div>
+					<!-- Team & Result / End -->
+
+				</div>
+				<!-- Match team Stats / End -->
+
+				<div class="row">
+
+					{{#each football.sp.event.team-stats.past-events}}
+						{{#each this}}
+						<div class="col-lg-6">
+							<!-- Last Results: Team {{@key}} -->
+							<div class="card card--has-table {{#if color}}card--color-clovers{{/if}}">
+								<div class="card__header">
+									<h4>{{title}}</h4>
+								</div>
+								<div class="card__content">
+									<div class="table-responsive">
+										<table class="table table-hover alc-table-stats alc-table-stats--compact">
+											<thead>
+												<tr>
+													{{#each thead}}
+													<th class="{{class}}">{{title}}</th>
+													{{/each}}
+												</tr>
+											</thead>
+											<tbody>
+												{{#each tbody}}
+												<tr>
+													<td class="alc-align-start">{{date}}</td>
+													<td class="alc-align-start">
+														<div class="alc-instance-info">
+															<img src="{{team.logo}}" class="alc-instance-info__img" alt="{{team.name}}">
+															<div class="alc-instance-info__content alc-instance-info__content--alt">
+																<div class="alc-instance-info__title">{{team.name}}</div>
+																<div class="alc-instance-info__desc">{{team.desc}}</div>
+															</div>
+														</div>
+													</td>
+													<td class="alc-highlight">{{result}}</td>
+													<td>
+														<span class="label label-{{#ifequal outcome 'won'}}win{{else}}loss{{/ifequal}}">{{#ifequal outcome 'won'}}W{{else}}L{{/ifequal}}</span>
+													</td>
+												</tr>
+												{{/each}}
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<!-- Last Results: Team {{@key}} / End -->
+						</div>
+						{{/each}}
+					{{/each}}
+				</div>
+
+			</div>
+
+			<div class="sidebar col-lg-4">
+				{{> _football_widget-event-matchup}}
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Content / End -->

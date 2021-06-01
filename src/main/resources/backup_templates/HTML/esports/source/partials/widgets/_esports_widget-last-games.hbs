@@ -1,0 +1,55 @@
+<!-- Last Game Log -->
+<div class="card card--has-table">
+	<div class="card__header">
+		<h4>Recent Matches Stats</h4>
+	</div>
+	<div class="card__content">
+		<div class="table-responsive">
+			<table class="table table-hover game-player-result">
+				<thead>
+					<tr>
+						<th class="game-player-result__date text-left">Date</th>
+						<th class="game-player-result__vs text-left">Versus</th>
+						<th class="game-player-result__character text-left">Character</th>
+						<th class="game-player-result__kills">Kills</th>
+						<th class="game-player-result__deaths">Deaths</th>
+						<th class="game-player-result__ast">Assists</th>
+						<th class="game-player-result__pkills">Pentakills</th>
+						<th class="game-player-result__mvp"></th>
+					</tr>
+				</thead>
+				<tbody>
+
+					{{#each esports.sp.single-player.log }}
+					<tr>
+						<td class="game-player-result__date">{{date}}</td>
+						<td class="game-player-result__vs">
+							<div class="team-meta">
+								<figure class="team-meta__logo">
+									<img src="{{../root}}assets/images/samples/logos/{{team.logo}}" alt="">
+								</figure>
+								<div class="team-meta__info">
+									<h6 class="team-meta__name">{{team.name}}</h6>
+									<span class="team-meta__place">{{team.place}}</span>
+								</div>
+							</div>
+						</td>
+						<td class="game-player-result__character highlight text-left">{{character}}</td>
+						<td class="game-player-result__kills highlight">{{stats.kills}}</td>
+						<td class="game-player-result__deaths highlight">{{stats.deaths}}</td>
+						<td class="game-player-result__ast highlight">{{stats.ast}}</td>
+						<td class="game-player-result__pkills highlight">{{stats.pkills}}</td>
+						<td class="game-player-result__mvp">
+							<div class="{{#unless featured}}alc-icon--disabled{{/unless}} alc-icon alc-icon--circle alc-icon--xs alc-icon--outline alc-icon--outline-md">
+								<i class="fas fa-star"></i>
+							</div>
+						</td>
+					</tr>
+					{{/each}}
+
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+<!-- Last Game Log / End -->

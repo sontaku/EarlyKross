@@ -1,0 +1,29 @@
+<!-- Posts - Videos -->
+<div class="posts posts--card-compact row">
+	<!-- Widget: Videos -->
+	<aside class="widget widget--sidebar widget-videos">
+		{{#each esports.sp.team.widget-videos}}
+		<div class="post-grid__item {{#each tag}}post-{{class}} {{/each}} col-12 col-sm-6 col-lg-12">
+			<div class="posts__item {{#each category}}posts__item--{{class}} {{/each}} card">
+				<figure class="posts__thumb posts__thumb--video">
+					<a href="{{video}}" class="mp_iframe"><img src="{{../root}}assets/images/esports/samples/{{thumb}}" alt=""></a>
+				</figure>
+				<div class="posts__inner card__content">
+					<div class="posts__cat">
+						{{#each category}}<span class="label posts__cat-label posts__cat-label--{{class}}">{{name}}</span>{{/each}}
+					</div>
+					<h6 class="posts__title posts__title--color-hover"><a href="_esports_team-video-single.html">{{title}}</a></h6>
+					<ul class="post__meta meta">
+						<li class="meta__item meta__item--date">{{date}}</li>
+						<li class="meta__item meta__item--views">{{meta.views}}</li>
+						<li class="meta__item meta__item--likes"><a href="#"><i class="meta-like icon-heart"></i> {{meta.likes}}</a></li>
+						<li class="meta__item meta__item--comments"><a href="#">{{meta.comments}}</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		{{/each}}
+	</aside>
+	<!-- Widget: Videos / End -->
+</div>
+<!-- Posts - Videos / End -->

@@ -1,0 +1,35 @@
+<!-- Widget: Achievements -->
+<aside class="widget card card--no-paddings widget--sidebar widget-achievements">
+	<div class="widget__title card__header card__header--has-arrows js-alc-achievements-carousel-header">
+		<h4>Achievements</h4>
+	</div>
+	<div class="widget__content card__content">
+
+		<div class="alc-achievements js-alc-achievements-carousel">
+
+			{{#each esports.sp.single-player.widget-achievements}}
+			<div class="alc-achievements__item">
+				<div class="alc-achievements__content">
+					<div class="alc-achievements__icon alc-icon alc-icon--circle alc-icon--xl alc-icon--outline alc-icon--outline-xl">
+						<svg role="img" class="df-icon df-icon--{{event.icon}}">
+							<use xlink:href="{{../root}}assets/images/esports/icons-esports.svg#{{event.icon}}"/>
+						</svg>
+					</div>
+					<h5 class="alc-achievements__event-title">{{event.title}}</h5>
+					<div class="alc-achievements__event-date">{{event.date}}</div>
+				</div>
+				<div class="alc-achievements__meta">
+					{{#each meta}}
+					<div class="alc-achievements__meta-item">
+						<h6 class="alc-achievements__meta-value">{{value}}</h6>
+						<div class="alc-achievements__meta-name">{{name}}</div>
+					</div>
+					{{/each}}
+				</div>
+			</div>
+			{{/each}}
+
+		</div>
+	</div>
+</aside>
+<!-- Widget: Achievements / End -->

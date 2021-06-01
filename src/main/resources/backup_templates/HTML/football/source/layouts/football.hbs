@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+
+	<!-- Basic Page Needs
+	================================================== -->
+	<title>{{football.site-title}} - {{page-title}}</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="{{global.description}}">
+	<meta name="author" content="{{global.author}}">
+	<meta name="keywords" content="{{global.keywords}}">
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="{{root}}assets/images/{{football.template}}/favicons/favicon.ico">
+	<link rel="apple-touch-icon" sizes="120x120" href="{{root}}assets/images/{{football.template}}/favicons/favicon-120.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="{{root}}assets/images/{{football.template}}/favicons/favicon-152.png">
+
+	<!-- Mobile Specific Metas
+	================================================== -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+
+	<!-- Google Web Fonts
+	================================================== -->
+	<link href="https://fonts.googleapis.com/css?family={{football.fonts}}" rel="stylesheet">
+
+	<!-- CSS
+	================================================== -->
+	<!-- Vendor CSS -->
+	<link href="{{root}}assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link href="{{root}}assets/fonts/font-awesome/css/all.min.css" rel="stylesheet">
+	<link href="{{root}}assets/fonts/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+	<link href="{{root}}assets/vendor/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
+	<link href="{{root}}assets/vendor/slick/slick.css" rel="stylesheet">
+
+	<!-- Template CSS-->
+	<link href="{{root}}assets/css/style-{{football.template}}.css" rel="stylesheet">
+
+	<!-- Custom CSS-->
+	<link href="{{root}}assets/css/custom.css" rel="stylesheet">
+
+</head>
+<body data-template="template-{{football.template}}">
+
+	<div class="site-wrapper clearfix">
+		<div class="site-overlay"></div>
+
+		{{> _football_header }}
+
+		{{#if hero-unit-slider}}
+		{{> _football_slider }}
+		{{else if hero-posts}}
+		{{> _football_header-posts }}
+		{{else if player-heading}}
+		{{> _football_player-heading }}
+		{{else if post-heading}}
+		{{> _football_post-heading }}
+		{{else if event-header}}
+		{{> _football_event-header }}
+		{{else}}
+		{{> _football_page-heading }}
+		{{/if}}
+
+		{{> body}}
+
+		{{> _football_footer }}
+
+	</div>
+
+	{{> _football_footer-scripts}}
+
+</body>
+</html>

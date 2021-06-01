@@ -1,0 +1,35 @@
+<!-- Widget: Latest Comments -->
+<aside class="widget widget--sidebar card widget-comments">
+	<div class="widget__title card__header">
+		<h4>Latest Comments</h4>
+	</div>
+	<div class="widget__content card__content">
+		<ul class="comments-list comments-list--alt">
+
+			{{#each football.posts.widget-comments}}
+			<li class="comments-list__item comments-list__item--{{category.class}}">
+				<header class="comments-list__header">
+					<figure class="comments-list__avatar">
+						<img src="{{../root}}assets/images/football/samples/{{author.avatar}}" alt="">
+					</figure>
+					<div class="comments-list__info">
+						<h5 class="comments-list__author-name">{{author.name}}</h5>
+						<h6 class="comments-list__post">
+							<a href="#">{{post}}</a>
+						</h6>
+					</div>
+					<a href="#" class="comments-list__link"><span class="icon-options"></span></a>
+				</header>
+				<div class="comments-list__body">
+					{{comment}}
+				</div>
+				<footer class="comments-list__footer">
+					<time class="comments-list__date" datetime="2017-08-23">{{date}}</time>
+				</footer>
+			</li>
+			{{/each}}
+
+		</ul>
+	</div>
+</aside>
+<!-- Widget: Latest Comments / End -->

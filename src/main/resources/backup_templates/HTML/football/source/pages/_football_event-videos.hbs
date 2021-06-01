@@ -1,0 +1,57 @@
+---
+layout: football
+page-title: Event - Videos
+event-header: true
+---
+
+{{> _football_event-nav}}
+
+<!-- Content
+================================================== -->
+<div class="site-content">
+	<div class="container">
+
+
+		<div class="row">
+			<div class="col-lg-12">
+
+				<!-- Video Highlights -->
+				<div class="card card--no-paddings">
+					<div class="card__content">
+						{{> widget-event-video id="XE0fU9PCrWE" class="effect-duotone effect-duotone--base" provider="youtube" thumbnail="assets/images/football/samples/post-img27-full.jpg" title="The fans went crazy last night at the Alchemist victory" date="January 27th, 2020" class="alc-embeded-player--center alc-embeded-player--center-lg"}}
+					</div>
+				</div>
+				<!-- Video Highlights / End -->
+
+				<!-- Video Slideshow -->
+				<div class="posts posts--video-grid row">
+
+					{{#each football.sp.event.videos.secondary}}
+					<div class="col-sm-4 mb-3">
+						<div class="posts__item posts__item--{{category.class}}">
+							<a href="{{video}}" class="posts__link-wrapper mp_iframe">
+								<figure class="posts__thumb effect-duotone effect-duotone--base">
+									<img src="{{../root}}assets/images/{{thumb}}" alt="">
+								</figure>
+								<div class="posts__inner">
+									<div class="posts__cat">
+										<span class="label posts__cat-label">{{category.name}}</span>
+									</div>
+									<h3 class="posts__title">{{title}}</h3>
+									<time datetime="2017-08-28" class="posts__date">August 28th, 2017</time>
+								</div>
+							</a>
+						</div>
+					</div>
+					{{/each}}
+
+				</div>
+				<!-- Video Slideshow / End -->
+
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<!-- Content / End -->

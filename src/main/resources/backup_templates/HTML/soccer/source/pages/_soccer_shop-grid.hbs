@@ -1,0 +1,112 @@
+---
+layout: soccer
+page-title: Shop
+page-heading: "Shop <span class=\"highlight\">Grid</span>"
+
+breadcrumbs: [
+	{
+		label: "Shop"
+	}
+]
+---
+
+<!-- Content
+================================================== -->
+<div class="site-content">
+	<div class="container">
+
+		<div class="row">
+
+			<!-- Products -->
+			<div class="col-lg-9 order-lg-2">
+
+				<!-- Shop Grid -->
+				<div class="card card--clean">
+					<header class="card__header card__header--shop-filter">
+
+						{{> _soccer_shop-filter}}
+
+					</header>
+					<div class="card__content">
+
+						<!-- Products -->
+						<ul class="products products--grid products--grid-condensed products--grid-light">
+
+							{{#each soccer.products.shop}}
+							<!-- Product #{{@key}} -->
+							<li class="product__item card">
+
+								{{#if onsale}}
+								<span class="onsale">
+									<span class="onsale__inner">Sale!</span>
+								</span>
+								{{/if}}
+
+								<div class="product__img">
+									<div class="product__img-holder">
+										<a href="_soccer_shop-product.html"><img src="{{../root}}assets/images/soccer/samples/{{img}}" alt=""></a>
+									</div>
+								</div>
+
+								<div class="product__content card__content">
+
+									<header class="product__header">
+										<div class="product__header-inner">
+											<span class="product__category">{{category}}</span>
+											<div class="product__ratings">
+												{{#repeat rating.full}}
+												<i class="fas fa-star"></i>
+												{{/repeat}}
+												{{#repeat rating.empty}}
+												<i class="fas fa-star empty"></i>
+												{{/repeat}}
+											</div>
+											<h2 class="product__title"><a href="_soccer_shop-product.html">{{title}}</a></h2>
+											<div class="product__price">
+												{{#if onsale}}
+													<del>{{price.old}}</del>
+													<ins>{{price.new}}</ins>
+												{{else}}
+													{{price}}
+												{{/if}}
+											</div>
+										</div>
+									</header>
+								</div>
+							</li>
+							<!-- Product #{{@key}} / End -->
+							{{/each}}
+
+						</ul>
+						<!-- Products / End -->
+					</div>
+				</div>
+				<!-- Shop Grid / End -->
+
+				{{> _soccer_shop-pagination custom-class="justify-content-end"}}
+
+			</div>
+			<!-- Products / End -->
+
+			<!-- Sidebar -->
+			<div class="sidebar sidebar--shop col-lg-3 order-lg-1">
+
+				{{> widget-categories}}
+
+				{{> widget-filter-color}}
+
+				{{> widget-filter-size-boxed}}
+
+				{{> widget-filter-price}}
+
+				{{> _soccer_widget-products}}
+
+			</div>
+			<!-- Sidebar / End -->
+
+		</div>
+
+	</div>
+</div>
+
+<!-- Content / End -->

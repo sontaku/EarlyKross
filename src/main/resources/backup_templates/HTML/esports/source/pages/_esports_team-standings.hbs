@@ -1,0 +1,114 @@
+---
+layout: esports
+page-title: Team Standings
+page-heading: "Team <span class=\"highlight\">Standings</span>"
+megamenu: v3
+
+breadcrumbs: [
+	{
+		label: "Teams",
+		link: "#"
+	},
+	{
+		label: "L.O. Heroes",
+		link: "#"
+	},
+	{
+		label: "Standings"
+	}
+]
+---
+
+{{> _esports_team-filter }}
+
+<!-- Content
+================================================== -->
+<div class="site-content">
+	<div class="container">
+
+		<!-- Team Standings -->
+		<div class="card card--has-table">
+			<div class="card__header">
+				<h4>League of Heroes Standings</h4>
+			</div>
+			<div class="card__content">
+				<div class="table-responsive">
+					<table class="table table-hover table-standings table-standings--full">
+						<thead>
+							<tr>
+								<th class="team-standings__pos">Pos</th>
+								<th class="team-standings__team">Team</th>
+								<th class="team-standings__win">Wins</th>
+								<th class="team-standings__lose">Losses</th>
+								<th class="team-standings__kills">Kills</th>
+								<th class="team-standings__deaths">Deaths</th>
+								<th class="team-standings__assists">Assists</th>
+								<th class="team-standings__pentakills">Pentakills</th>
+								<th class="team-standings__kdar">KDA.R</th>
+								<th class="team-standings__dmg-percent">DMG%</th>
+								<th class="team-standings__dpm">DPM</th>
+								<th class="team-standings__gold-percent">Gold%</th>
+								<th class="team-standings__overall-record">Overall Record</th>
+								<th class="team-standings__match-record">Match Record</th>
+							</tr>
+						</thead>
+						<tbody>
+							{{#each esports.sp.team.standings}}
+							<tr>
+								<td class="team-standings__pos">{{pos}}</td>
+								<td class="team-standings__team">
+									<div class="team-meta">
+										<figure class="team-meta__logo">
+											<img src="{{../root}}assets/images/{{team.logo}}" alt="">
+										</figure>
+										<div class="team-meta__info">
+											<h6 class="team-meta__name">{{team.name}}</h6>
+											<span class="team-meta__place">{{team.place}}</span>
+										</div>
+									</div>
+								</td>
+								<td class="team-standings__win">{{win}}</td>
+								<td class="team-standings__lose">{{lose}}</td>
+								<td class="team-standings__kills">{{kills}}</td>
+								<td class="team-standings__deaths">{{deaths}}</td>
+								<td class="team-standings__assists">{{assists}}</td>
+								<td class="team-standings__pentakills">{{pentakills}}</td>
+								<td class="team-standings__kdar">{{kdar}}</td>
+								<td class="team-standings__dmg">{{dmg}}</td>
+								<td class="team-standings__dpm">{{dpm}}</td>
+								<td class="team-standings__gold">{{gold}}</td>
+								<td class="team-standings__overall highlight">{{overall}}</td>
+								<td class="team-standings__match highlight">{{match}}</td>
+							</tr>
+							{{/each}}
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<!-- Team Standings / End -->
+
+		<!-- Team Glossary -->
+		<div class="card">
+			<div class="card__header">
+				<h4>Terms Glossary</h4>
+			</div>
+			<div class="card__content">
+				<div class="glossary">
+					<div class="glossary__item"><span class="glossary__abbr">Kills:</span> Total Kills</div>
+					<div class="glossary__item"><span class="glossary__abbr">Assists:</span> Total Assists</div>
+					<div class="glossary__item"><span class="glossary__abbr">DMG%:</span> Damage Percentage</div>
+					<div class="glossary__item"><span class="glossary__abbr">Gold%:</span> Gold Percentage</div>
+					<div class="glossary__item"><span class="glossary__abbr">Deaths:</span> Total Deaths</div>
+					<div class="glossary__item"><span class="glossary__abbr">KDA.R:</span> Kill Death Assists Ratio</div>
+					<div class="glossary__item"><span class="glossary__abbr">DPM:</span> Damanager Per Minute</div>
+					<div class="glossary__item"><span class="glossary__abbr">Records:</span> Regional Records</div>
+				</div>
+			</div>
+		</div>
+		<!-- Team Glossary / End -->
+
+	</div>
+</div>
+
+<!-- Content / End -->

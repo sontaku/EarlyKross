@@ -1,0 +1,27 @@
+<!-- Related Posts -->
+<div class="post-related">
+	<!-- Posts Grid -->
+	<div class="posts posts--tile posts--tile-alt posts--tile-alt-noborder post-grid row no-gutters">
+
+		{{#each esports.posts.related-2 }}
+		<div class="post-grid__item col-sm-6">
+			<div class="posts__item posts__item--tile {{#each category}}posts__item--{{class}} {{/each}} card">
+				<figure class="posts__thumb">
+					<img src="{{../root}}assets/images/esports/samples/{{thumb}}" alt="">
+					<div class="posts__inner">
+						<div class="posts__cat">
+							{{#each category}}<span class="label posts__cat-label posts__cat-label--{{class}}">{{name}}</span>{{/each}}
+						</div>
+						<h6 class="posts__title posts__title--color-hover"><a href="_esports_blog-post-1.html">{{title}}</a></h6>
+						<time datetime="2018-08-23" class="posts__date">{{date}}</time>
+					</div>
+				</figure>
+				<a href="_esports_blog-post-1.html" class="posts__cta"></a>
+			</div>
+		</div>
+		{{/each}}
+
+	</div>
+	<!-- Post Grid / End -->
+</div>
+<!-- Related Posts / End -->

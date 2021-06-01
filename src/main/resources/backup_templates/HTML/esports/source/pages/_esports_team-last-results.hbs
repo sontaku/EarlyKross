@@ -1,0 +1,130 @@
+---
+layout: esports
+page-title: Latest Results
+page-heading: "Latest <span class=\"highlight\">Results</span>"
+megamenu: v3
+
+breadcrumbs: [
+	{
+		label: "Teams",
+		link: "#"
+	},
+	{
+		label: "L.O. Heroes",
+		link: "#"
+	},
+	{
+		label: "Latest Results"
+	}
+]
+---
+
+{{> _esports_team-filter }}
+
+<!-- Content
+================================================== -->
+<div class="site-content">
+	<div class="container">
+
+		<!-- Team Latest Results -->
+		<div class="card card--has-table">
+			<div class="card__header card__header--has-btn">
+				<h4>Latest Results</h4>
+				<!-- Result Filter -->
+				<ul class="team-result-filter">
+					<li class="team-result-filter__item">
+						<select class="form-control input-xs">
+							<option>Playoffs 2016</option>
+							<option>Playoffs 2015</option>
+							<option>Playoffs 2014</option>
+						</select>
+					</li>
+					<li class="team-result-filter__item">
+						<select class="form-control input-xs">
+							<option>December 2016</option>
+							<option>November 2016</option>
+							<option>October 2016</option>
+							<option>September 2016</option>
+							<option>August 2016</option>
+							<option>July 2016</option>
+							<option>June 2016</option>
+							<option>May 2016</option>
+							<option>April 2016</option>
+							<option>March 2016</option>
+							<option>February 2016</option>
+							<option>January 2016</option>
+						</select>
+					</li>
+					<li class="team-result-filter__item">
+						<select class="form-control input-xs">
+							<option>Ascending</option>
+							<option>Descending</option>
+						</select>
+					</li>
+					<li class="team-result-filter__item">
+						<button type="submit" class="btn btn-default btn-xs card-header__button">Filter Latest Results</button>
+					</li>
+				</ul>
+				<!-- Result Filter / End -->
+			</div>
+			<div class="card__content">
+				<div class="table-responsive">
+					<table class="table table-hover team-result">
+						<thead>
+							<tr>
+								<th class="team-result__date">Date</th>
+								<th class="team-result__vs">Versus</th>
+								<th class="team-result__score">Result</th>
+								<th class="team-result__kills">Kills</th>
+								<th class="team-result__deaths">Deaths</th>
+								<th class="team-result__assists">Assists</th>
+								<th class="team-result__pentakills">Pentakills</th>
+								<th class="team-result__kdar">KDA.R</th>
+								<th class="team-result__dmg">DMG%</th>
+								<th class="team-result__dpm">DPM</th>
+								<th class="team-result__gold">Gold%</th>
+								<th class="team-result__match">Match</th>
+								<th class="team-result__replay">Replay</th>
+							</tr>
+						</thead>
+						<tbody>
+							{{#each esports.sp.team.results}}
+							<tr>
+								<td class="team-result__date">{{date}}</td>
+								<td class="team-result__vs">
+									<div class="team-meta">
+										<figure class="team-meta__logo">
+											<img src="assets/images/samples/logos/{{team.logo}}" alt="">
+										</figure>
+										<div class="team-meta__info">
+											<h6 class="team-meta__name">{{team.name}}</h6>
+											<span class="team-meta__place">{{team.place}}</span>
+										</div>
+									</div>
+								</td>
+								<td class="team-result__score"><span class="team-result__game team-result__game--{{#ifequal result.outcome 'W'}}win{{else}}lose{{/ifequal}}">{{result.outcome}}</span> {{result.score}}</td>
+								<td class="team-result__kills">{{kills}}</td>
+								<td class="team-result__deaths">{{deaths}}</td>
+								<td class="team-result__assists">{{assists}}</td>
+								<td class="team-result__pentakills">{{pentakills}}</td>
+								<td class="team-result__kdar">{{kdar}}</td>
+								<td class="team-result__dmg">{{dmg}}</td>
+								<td class="team-result__dpm">{{dpm}}</td>
+								<td class="team-result__gold">{{gold}}</td>
+								<td class="team-result__match"><a href="#" class="btn btn-xs btn-default-alt">See Full Stats</a></td>
+								<td class="team-result__replay"><a href="#" class="btn btn-xs btn-default-alt btn-icon"><i class="fas fa-play"></i> Watch Replay</a></td>
+							</tr>
+							{{/each}}
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<!-- Team Latest Results / End -->
+
+		{{> _esports_team-pagination custom-class="justify-content-center" }}
+
+	</div>
+</div>
+
+<!-- Content / End -->

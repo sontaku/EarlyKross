@@ -1,0 +1,114 @@
+---
+layout: football
+page-title: Latest Results
+page-heading: "Latest <span class=\"highlight\">Results</span>"
+
+breadcrumbs: [
+	{
+		label: "Team",
+		link: "_football_team-overview.html"
+	},
+	{
+		label: "Latest Results"
+	}
+]
+---
+
+{{> _football_team-filter}}
+
+<!-- Content
+================================================== -->
+<div class="site-content">
+	<div class="container">
+
+		<!-- Team Latest Results -->
+		<div class="card card--has-table">
+			<div class="card__header card__header--has-btn">
+				<h4>Latest Results</h4>
+				<!-- Result Filter -->
+				<ul class="team-result-filter">
+					<li class="team-result-filter__item">
+						<select class="form-control input-xs">
+							<option>West League 2016</option>
+							<option>West League 2015</option>
+							<option>West League 2014</option>
+						</select>
+					</li>
+					<li class="team-result-filter__item">
+						<select class="form-control input-xs">
+							<option>Game Date</option>
+							<option>December 2016</option>
+							<option>November 2016</option>
+							<option>October 2016</option>
+							<option>September 2016</option>
+							<option>August 2016</option>
+							<option>July 2016</option>
+							<option>June 2016</option>
+							<option>May 2016</option>
+							<option>April 2016</option>
+							<option>March 2016</option>
+							<option>February 2016</option>
+							<option>January 2016</option>
+						</select>
+					</li>
+					<li class="team-result-filter__item">
+						<select class="form-control input-xs">
+							<option>Ascending</option>
+							<option>Descending</option>
+						</select>
+					</li>
+					<li class="team-result-filter__item">
+						<button type="submit" class="btn btn-default btn-xs card-header__button">Filter Latest Results</button>
+					</li>
+				</ul>
+				<!-- Result Filter / End -->
+			</div>
+			<div class="card__content">
+				<div class="table-responsive">
+					<table class="table table-hover team-result">
+						<thead>
+							<tr>
+								<th class="team-result__date">Date</th>
+								<th class="team-result__vs">Versus</th>
+								<th class="team-result__score">Score</th>
+								<th class="team-result__status">Status</th>
+								<th class="team-result__pass">Hi Passing</th>
+								<th class="team-result__rush">Hi Rushing</th>
+								<th class="team-result__receiving">Hi Receiving</th>
+							</tr>
+						</thead>
+						<tbody>
+
+							{{#each football.sp.team.results}}
+							<tr>
+								<td class="team-result__date">{{date}}</td>
+								<td class="team-result__vs">
+									<div class="team-meta">
+										<figure class="team-meta__logo">
+											<img src="{{../root}}assets/images/samples/logos/{{team.logo}}" alt="">
+										</figure>
+										<div class="team-meta__info">
+											<h6 class="team-meta__name">{{team.name}}</h6>
+											<span class="team-meta__place">{{team.place}}</span>
+										</div>
+									</div>
+								</td>
+								<td class="team-result__score"><span class="team-result__game team-result__game--{{#ifequal result.outcome 'W'}}win{{else}}lose{{/ifequal}}">{{result.outcome}}</span> {{result.score}}</td>
+								<td class="team-result__status">{{status}}</td>
+								<td class="team-result__pass">{{pass}}</td>
+								<td class="team-result__rush">{{rush}}</td>
+								<td class="team-result__receiving">{{receiving}}</td>
+							</tr>
+							{{/each}}
+
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<!-- Team Latest Results / End -->
+
+	</div>
+</div>
+
+<!-- Content / End -->

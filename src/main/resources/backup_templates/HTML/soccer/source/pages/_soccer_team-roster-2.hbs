@@ -1,0 +1,181 @@
+---
+layout: soccer
+page-title: Roster V2
+page-heading: "Roster <span class=\"highlight\">V2</span>"
+
+breadcrumbs: [
+	{
+		label: "Team",
+		link: "_soccer_team-overview.html"
+	},
+	{
+		label: "Roster V2"
+	}
+]
+---
+
+{{> _soccer_team-filter}}
+
+<!-- Content
+================================================== -->
+<div class="site-content">
+	<div class="container">
+
+		<!-- Team Roster - Card Compact -->
+		<div class="team-roster team-roster--card-compact js-team-roster--card-compact row">
+
+			{{#each soccer.sp.team.roster-featured}}
+			<div class="col-lg-4">
+				<!-- Player Card #{{key}} -->
+				<div class="team-roster__item card">
+					<div class="card__content">
+
+						<div class="team-roster__content-wrapper">
+
+							<!-- Player Photo -->
+							<figure class="team-roster__player-img">
+								<img src="{{../root}}assets/images/soccer/samples/{{img_alt}}" alt="">
+							</figure>
+							<!-- Player Photo / End-->
+
+							<!-- Player Name -->
+							<div class="team-roster__player-info">
+								<h3 class="team-roster__player-name">
+									<span class="team-roster__player-first-name">{{firstname}}</span>
+									<span class="team-roster__player-last-name">{{lastname}}</span>
+								</h3>
+							</div>
+							<!-- Player Name / End -->
+
+							<!-- Player Details -->
+							<div class="team-roster__player-details card">
+
+								<!-- Player Details Body -->
+								<div class="team-roster__player-details-body">
+
+									<div class="team-roster__player-details-excerpt">
+										{{excerpt_sm}}
+									</div>
+
+									{{#each stats}}
+									<!-- Progress: {{label}} -->
+									<div class="progress-stats progress-stats--top-labels">
+										<div class="progress__label">{{label_sm}}</div>
+										<div class="progress">
+											<div class="progress__bar progress__bar--success progress__bar-{{class}}" role="progressbar" aria-valuenow="{{value}}" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+										<div class="progress__number">{{value}}%</div>
+									</div>
+									<!-- Progress: {{label}} / End -->
+									{{/each}}
+
+									<footer class="team-roster__player-details-footer">
+										<a href="_soccer_player-bio.html" class="btn btn-sm btn-block btn-primary-inverse">Read Full Bio</a>
+										<a href="#" class="btn btn-sm btn-single-icon btn-facebook"><i class="fab fa-facebook"></i></a>
+										<a href="#" class="btn btn-sm btn-single-icon btn-twitter"><i class="fab fa-twitter"></i></a>
+									</footer>
+								</div>
+								<!-- Player Details Body / End -->
+
+								<!-- Player Meta Info -->
+								<aside class="team-roster__meta">
+
+									{{#each info}}
+									<div class="team-roster__meta-item {{#if featured}}team-roster__meta-item--lg{{/if}}">
+										<div class="team-roster__meta-value">{{value}}</div>
+										<div class="team-roster__meta-label">{{label}}</div>
+									</div>
+									{{/each}}
+								</aside>
+								<!-- Player Meta Info / End -->
+
+							</div>
+							<!-- Player Details / End -->
+
+							<!-- Player Squad Number -->
+							<div class="team-roster__player-number">{{number}}</div>
+							<!-- Player Squad Number / End -->
+
+						</div>
+					</div>
+				</div>
+				<!-- Player Card #{{key}} / End -->
+			</div>
+			{{/each}}
+
+		</div>
+		<!-- Team Roster - Card Compact / End -->
+
+		<!-- Team Roster: Table -->
+		<div class="card card--has-table">
+			<div class="card__header">
+				<h4>Complete Roster</h4>
+			</div>
+			<div class="card__content">
+				<div class="table-responsive">
+					<table class="table table--lg team-roster-table">
+						<thead>
+							<tr>
+								<th class="team-roster-table__number">NBR</th>
+								<th class="team-roster-table__position">Pos</th>
+								<th class="team-roster-table__name">Player Name</th>
+								<th class="team-roster-table__foot">Foot</th>
+								<th class="team-roster-table__age">Age</th>
+								<th class="team-roster-table__height">Height</th>
+								<th class="team-roster-table__weight">Weight</th>
+								<th class="team-roster-table__goals">Goals</th>
+								<th class="team-roster-table__assists">Assists</th>
+								<th class="team-roster-table__fouls">Fouls</th>
+								<th class="team-roster-table__card-y">Y.CRDS</th>
+								<th class="team-roster-table__card-r">R.CRDS</th>
+								<th class="team-roster-table__college hidden-xs hidden-sm">College</th>
+							</tr>
+						</thead>
+						<tbody>
+
+							{{#each soccer.sp.team.roster}}
+							<tr>
+								<td class="team-roster-table__number">{{number}}</td>
+								<td class="team-roster-table__position">{{position}}</td>
+								<td class="team-roster-table__name">{{name}}</td>
+								<td class="team-roster-table__foot">{{foot}}</td>
+								<td class="team-roster-table__age">{{age}}</td>
+								<td class="team-roster-table__height">{{height}}</td>
+								<td class="team-roster-table__weight">{{weight}}</td>
+								<td class="team-roster-table__goals">{{goals}}</td>
+								<td class="team-roster-table__assists">{{assists}}</td>
+								<td class="team-roster-table__fouls">{{fouls}}</td>
+								<td class="team-roster-table__card-y">{{card-y}}</td>
+								<td class="team-roster-table__card-r">{{card-r}}</td>
+								<td class="team-roster-table__college hidden-xs hidden-sm">{{college}}</td>
+							</tr>
+							{{/each}}
+
+							{{#each soccer.sp.team.staff}}
+							<tr>
+								<td class="team-roster-table__number" colspan="2">{{position}}</td>
+								<td class="team-roster-table__name">{{firstname}} {{lastname}}</td>
+								<td class="team-roster-table__foot">-</td>
+								<td class="team-roster-table__age">{{age}}</td>
+								<td class="team-roster-table__height">-</td>
+								<td class="team-roster-table__weight">-</td>
+								<td class="team-roster-table__goals">-</td>
+								<td class="team-roster-table__assists">-</td>
+								<td class="team-roster-table__fouls">-</td>
+								<td class="team-roster-table__card-y">-</td>
+								<td class="team-roster-table__card-r">-</td>
+								<td class="team-roster-table__college hidden-xs hidden-sm">-</td>
+							</tr>
+							{{/each}}
+
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<!-- Team Roster: Table / End -->
+
+	</div>
+</div>
+
+<!-- Content / End -->

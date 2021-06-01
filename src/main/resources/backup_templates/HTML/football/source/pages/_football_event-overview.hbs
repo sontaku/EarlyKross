@@ -1,0 +1,231 @@
+---
+layout: football
+page-title: Event - Overview
+event-header: true
+gmap_script: true
+---
+
+{{> _football_event-nav}}
+
+<!-- Content
+================================================== -->
+<div class="site-content">
+	<div class="container">
+
+
+		<div class="row">
+			<!-- Content -->
+			<div class="content col-lg-8">
+
+				<!-- Video Highlights -->
+				<div class="card card--no-paddings">
+					<header class="card__header">
+						<h4>Video Highlights</h4>
+					</header>
+					<div class="card__content">
+						{{> widget-event-video id="XE0fU9PCrWE" class="effect-duotone effect-duotone--base" provider="youtube" thumbnail="assets/images/football/samples/post-img27-xlg.jpg" title="The fans went crazy last night at the Alchemist victory" date="January 27th, 2020"}}
+					</div>
+				</div>
+				<!-- Video Highlights / End -->
+
+				{{> _football_widget-event-info}}
+
+				<!-- Match Team Stats -->
+				<div class="alc-event-stats-box card card--no-paddings">
+
+					<!-- Header -->
+					<header class="widget__title card__header alc-teams-legend">
+						<h4 class="alc-teams-legend__title">Match Team Stats</h4>
+						<div class="alc-teams-legend__info">
+							<!-- Teams -->
+							<div class="alc-teams-legend__teams">
+
+								{{#each football.sp.event.stats.meta}}
+								<!-- Team #{{@key}} -->
+								<div class="alc-teams-legend__team">
+									<span class="alc-teams-legend__team-color alc-teams-legend__team-color--color-{{color}}"></span>
+									<img src="{{logo}}" class="alc-teams-legend__team-logo" alt="{{name}}">
+								</div>
+								<!-- Team #{{@key}} / End -->
+								{{/each}}
+
+							</div>
+							<!-- Teams / End -->
+
+							<a href="_football_event-team-stats.html" class="btn btn-default btn-xs card-header__button">Full Team Stats</a>
+						</div>
+					</header>
+					<!-- Header / End -->
+
+					<!-- Team & Result -->
+					<div class="alc-event-stats-box__content card__content">
+
+						<!-- Event Statistics -->
+						<div class="alc-event-stats-box__section">
+							<div class="alc-event-stats-box__section-inner alc-event-stats-box__section-inner--lg">
+
+								<!-- Progress Stats Table -->
+								<table class="progress-table progress-table--sm-space progress-table--fullwidth">
+									<tbody>
+
+										{{#each football.sp.event.stats.main}}
+										<tr>
+											<td class="progress-table__progress-label {{#if team1.highlight}}progress-table__progress-label--highlight{{/if}}">{{team1.value}}</td>
+											<td class="progress-table__progress-bar progress-table__progress-bar--first">
+												<div class="progress progress--battery">
+													<div class="progress__bar" style="width: {{team1.pct}}%;" role="progressbar" aria-valuenow="{{team1.value}}" aria-valuemin="0" aria-valuemax="100"></div>
+												</div>
+											</td>
+											<td class="progress-table__title text-uppercase">{{label}}</td>
+											<td class="progress-table__progress-bar progress-table__progress-bar--second">
+												<div class="progress progress--battery">
+													<div class="progress__bar progress__bar--success" style="width: {{team2.pct}}%;" role="progressbar" aria-valuenow="{{team2.value}}" aria-valuemin="0" aria-valuemax="100"></div>
+												</div>
+											</td>
+											<td class="progress-table__progress-label {{#if team2.highlight}}progress-table__progress-label--highlight{{/if}}">{{team2.value}}</td>
+										</tr>
+										{{/each}}
+
+									</tbody>
+								</table>
+								<!-- Progress Stats Table / End -->
+
+							</div>
+						</div>
+						<!-- Event Statistics / End -->
+
+						<!-- Ball Possession -->
+						<div class="alc-event-stats-box__section">
+							<header class="alc-event-stats-box__subheader card__subheader card__subheader--sm card__subheader--nomargins">
+								<h5 class="alc-event-stats-box__subtitle">Ball Possession</h5>
+							</header>
+							<div class="alc-event-stats-box__section-inner alc-event-stats-box__section-inner--lg">
+
+								<!-- Progress: Ball Possession -->
+								<div class="progress-double-wrapper progress-double-wrapper--fullwidth">
+									<div class="progress-inner-holder">
+										{{#each football.sp.event.stats.possession}}
+										<div class="progress__digit progress__digit--left {{#if team1.highlight}}progress__digit--highlight{{/if}}">{{team1.value}}%</div>
+										<div class="progress progress--battery">
+											<div class="progress__bar" role="progressbar" aria-valuenow="{{team1.value}}" aria-valuemin="0" aria-valuemax="100" style="width: {{team1.value}}%;"></div>
+											<div class="progress__bar progress__bar--success" role="progressbar" aria-valuenow="{{team2.value}}" aria-valuemin="0" aria-valuemax="100" style="width: {{team2.value}}%;"></div>
+										</div>
+										<div class="progress__digit progress__digit--right {{#if team2.highlight}}progress__digit--highlight{{/if}}">{{team2.value}}%</div>
+										{{/each}}
+									</div>
+								</div>
+								<!-- Progress: Ball Possession / End -->
+
+							</div>
+						</div>
+						<!-- Ball Possession / End -->
+
+
+						<!-- Event Additional Stats -->
+						<div class="alc-event-stats-box__section">
+							<header class="alc-event-stats-box__subheader card__subheader card__subheader--sm card__subheader--nomargins">
+								<h5 class="alc-event-stats-box__subtitle">Additional Stats</h5>
+							</header>
+							<div class="alc-event-stats-box__section-inner alc-event-stats-box__section-inner--lg">
+
+								<div class="row">
+									<div class="col-12 col-md-6">
+										<div class="row">
+
+											{{#each football.sp.event.stats.percentages.team1}}
+											<div class="col-4">
+												<div class="circular circular--size-80">
+													<div class="circular__bar" data-percent="{{pct}}" data-line-width="6">
+														<span class="circular__percents circular__percents--lg">{{value}}<small class="circular__label">{{label}}</small></span>
+													</div>
+												</div>
+											</div>
+											{{/each}}
+
+										</div>
+									</div>
+									<div class="col-12 col-md-6">
+										<div class="row">
+
+											{{#each football.sp.event.stats.percentages.team2}}
+											<div class="col-4 {{class}}">
+												<div class="circular circular--size-80">
+													<div class="circular__bar" data-percent="{{pct}}" data-bar-color="#aaf20e" data-line-width="6">
+														<span class="circular__percents circular__percents--lg">{{value}}<small class="circular__label">{{label}}</small></span>
+													</div>
+												</div>
+											</div>
+											{{/each}}
+
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<!-- Event Additional Stats / End -->
+
+					</div>
+					<!-- Team & Result / End -->
+
+				</div>
+				<!-- Match team Stats / End -->
+
+				{{> _football_post-comments}}
+
+			</div>
+			<!-- Content / End -->
+
+			<!-- Sidebar -->
+			<div class="sidebar col-lg-4">
+
+				{{> _football_widget-standings}}
+
+				{{> _football_widget-event-leaders has-btn="true"}}
+
+				{{> _football_widget-event-result-labels}}
+
+				<!-- Event Post -->
+				<div class="posts__item posts__item--card posts__item--category-3 card">
+					<figure class="posts__thumb">
+						<div class="posts__cat">
+							<span class="label posts__cat-label">The League</span>
+						</div>
+						<a href="_football_event-news-recap.html"><img src="{{../root}}assets/images/football/samples/post-img32.jpg" alt=""></a>
+					</figure>
+					<div class="posts__inner card__content">
+						<a href="#" class="posts__cta"></a>
+						<time datetime="2016-08-23" class="posts__date">April 26th, 2020</time>
+						<h6 class="posts__title"><a href="#">The Alchemists had a great night against the Clovers and go for more!</a></h6>
+						<div class="posts__excerpt">
+							Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud en derum sum laborem.
+						</div>
+					</div>
+					<footer class="posts__footer card__footer">
+						<div class="post-author">
+							<figure class="post-author__avatar">
+								<img src="{{../root}}assets/images/football/samples/avatar-12-xs.jpg" alt="Post Author Avatar">
+							</figure>
+							<div class="post-author__info">
+								<h4 class="post-author__name">Eric Rodgers</h4>
+							</div>
+						</div>
+						<ul class="post__meta meta">
+							<li class="meta__item meta__item--views">2369</li>
+							<li class="meta__item meta__item--likes"><a href="#"><i class="meta-like icon-heart"></i> 530</a></li>
+							<li class="meta__item meta__item--comments"><a href="#">18</a></li>
+						</ul>
+					</footer>
+				</div>
+				<!-- Event Post / End -->
+
+				{{> _football_widget-event-scheduled}}
+
+			</div>
+			<!-- Sidebar / End -->
+		</div>
+
+	</div>
+</div>
+
+<!-- Content / End -->
