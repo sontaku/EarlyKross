@@ -3,6 +3,8 @@ plugins {
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
     id 'java'
     id 'war'
+    // Querydsl 라이브러리
+    id 'com.ewerk.gradle.plugins.querydsl' version '1.0.10'
 }
 
 group = 'com.ek'
@@ -43,8 +45,32 @@ dependencies {
     // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-thymeleaf
     implementation group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf', version: '2.4.6'
 
+    // thymeleaf 용 java8 날짜 라이브러리
+    compile group: 'org.thymeleaf.extras', name: 'thymeleaf-extras-java8time'
+    // querydsl 위한
+    implementation 'com.querydsl:querydsl-jpa'
 }
 
 test {
     useJUnitPlatform()
+}
+
+// querydsl task 생성
+def querydslDir = "$buildDir/generated/querydsl"
+
+querydsl{
+    jpa = true
+    querydslSourcesDir = querydslDir
+}
+
+sourceSets{
+    main.java.srcDir querydslDir
+}
+
+configurations {
+    querydsl.extendsFrom compileClasspath
+}
+
+compileQuerydsl{
+    options.annotationProcessorPath = configurations.querydsl
 }
