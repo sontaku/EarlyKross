@@ -28,8 +28,9 @@ $(document).ready(function(){
 
 
     var $wrapper     = $('.site-wrapper');
+    var $toggle = $(".pushy-panel__toggle");
 
-    $(document).on("click", $(".pushy-panel__toggle"), function (e){
+    $(document).on("click", ".pushy-panel__toggle, .pushy-panel__back-btn", function (e){
         e.preventDefault();
         $wrapper.toggleClass('site-wrapper--has-overlay-pushy');
     });
