@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
 
 	<!-- Basic Page Needs
 	================================================== -->
-	<title>Alchemists Soccer Club &amp; Sports News HTML Template - Home</title>
+	<title>얼리크로스 :: K리그 커뮤니티</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="Sports Club, League and News HTML Template">
@@ -50,16 +50,18 @@
 		================================================== -->
 		
 		<!-- Header Mobile -->
-		<div id="header_mobile"><h3>include</h3></div>
+<!--		<div id="header_mobile"><h3>include</h3></div>-->
+		<div th:replace="/fragments/header_mobile.html :: header_mobile">-- thymeleaf header_mobile --</div>
 
 		<!-- Header Desktop -->
 		<header class="header header--layout-1">
-			<div id="header_desktop"><h3>include</h3></div>
+			<div th:replace="/fragments/header_desktop.html :: header_desktop">-- thymeleaf header_desktop --</div>
 		</header>
 		<!-- Header / End -->
 
 		<!-- Pushy Panel - Dark -->
-		<div id="custom_pushy_panel"><h3>include</h3></div>
+<!--		<div id="custom_pushy_panel"><h3>include</h3></div>-->
+		<div th:replace="/fragments/custom_pushy_panel.html :: custom_pushy_panel">-- thymeleaf custom_pushy_panel --</div>
 		<!-- Pushy Panel - Dark / End -->
 
 		<!-- Hero Slider
@@ -1655,7 +1657,9 @@
 		<footer id="footer" class="footer">
 		
 			<!-- Footer Widgets -->
-			<div id="footer_custom"><h3>include</h3></div>
+
+<!--			<div id="footer_custom"><h3>include</h3></div>-->
+			<div th:replace="/fragments/footer_custom.html :: footer_custom">-- thymeleaf footer_custom --</div>
 			<!-- Footer Secondary / End -->
 		</footer>
 		<!-- Footer / End -->

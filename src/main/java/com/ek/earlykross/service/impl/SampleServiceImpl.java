@@ -1,8 +1,9 @@
-package com.ek.earlykross.service;
+package com.ek.earlykross.service.impl;
 
 import com.ek.earlykross.entity.Memo;
 import com.ek.earlykross.entity.QMemo;
 import com.ek.earlykross.repository.MemoRepository;
+import com.ek.earlykross.service.SampleService;
 import com.ek.earlykross.vo.MemoDTO;
 import com.ek.earlykross.vo.PageRequestDTO;
 import com.ek.earlykross.vo.PageResultDTO;
