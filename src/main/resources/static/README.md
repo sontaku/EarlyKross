@@ -4,7 +4,7 @@
 
 ## Preview
 
-[![Simple Sidebar Preview](https://startbootstrap.com/assets/img/screenshots/templates/simple-sidebar.png)](https://startbootstrap.github.io/startbootstrap-simple-sidebar/)
+[![Simple Sidebar Preview](https://startbootstrap.com/../assets/img/screenshots/templates/simple-sidebar.png)](https://startbootstrap.github.io/startbootstrap-simple-sidebar/)
 
 **[View Live Preview](https://startbootstrap.github.io/startbootstrap-simple-sidebar/)**
 

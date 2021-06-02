@@ -37,7 +37,6 @@ $(document).ready(function(){
 
 
 
-
     // footer_custom
     $("#footer_custom").load("./tiles/footer_custom.html")
 });
