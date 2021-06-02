@@ -7,6 +7,18 @@
     <path id="Forma_9" data-name="Forma 9" class="cls-1" d="M813.558,1843.45l-12,20.78s-0.29,1.65,2.1,2.37,3.964,1.13,3.964,1.13l9.964-9.25" transform="translate(-802.431 -1834.98)"/>
   </symbol>
 
+  <symbol id="ground" width="30" height="32" viewBox="0 0 30 34">
+<!--    <svg version="1.0" xmlns="http://www.w3.org/2000/svg"-->
+<!--      width="30.000000pt" height="42.000000pt" viewBox="0 0 30.000000 42.000000"-->
+<!--      preserveAspectRatio="xMidYMid meet">-->
+<!--    <g transform="translate(0.000000,42.000000) scale(0.100000,-0.100000)"-->
+<!--      fill="#000000" stroke="none">-->
+<!--    </g>-->
+<!--    </svg>-->
+    <title>Ground</title>
+    <path id="ground_custom" data-name="ground_custom 2" class="cls-1" transform="translate(0.000000,42.000000) scale(0.100000,-0.100000)"/>
+  </symbol>
+
   <symbol id="soccer-ball" width="28" height="28" viewBox="0 0 28 28">
     <title>Soccer Ball Icon</title>
     <circle id="Elipse_1_copia" data-name="Elipse 1 copia" class="cls-1" cx="13.8" cy="13.8" r="13"/>

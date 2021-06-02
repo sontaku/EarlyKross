@@ -9,7 +9,7 @@
           <!-- Account Navigation -->
           <ul class="nav-account">
             <li class="nav-account__item"><a href="#" data-toggle="modal"
-                                             data-target="#modal-login-register-tabs">내 계정 </a>
+                                            data-target="#modal-login-register-tabs">내 계정 </a>
             </li>
             <li class="nav-account__item nav-account__item--wishlist"><a
                 href="_soccer_shop-wishlist.html">여기뭐넣지 <span class="highlight">8</span></a></li>
@@ -54,13 +54,18 @@
         <!-- Header Search Form / End -->
         <ul class="info-block info-block--header">
           <li class="info-block__item info-block__item--contact-primary">
-            <!--                    <svg role="img" class="df-icon df-icon&#45;&#45;whistle">-->
-            <!--                        <use xlink:href="assets/images/icons-soccer.svg#whistle"/>-->
-            <!--                    </svg>-->
             <img src="assets/images/ek_ground.png" class="df-icon df-icon&#45;&#45;whistle" alt="ground">
-            <h6 class="info-block__heading">Join Our Team!</h6>
+            <h6 class="info-block__heading">라운드</h6>
             <a class="info-block__link"
-               href="mailto:tryouts@alchemists.com">tryouts@alchemists.com</a>
+               href="mailto:tryouts@alchemists.com">베스트 <span class="highlight" style="color: #c2ff1f;">일레븐</a>
+            <!--            <img src="assets/images/ek_ground.png" alt="ground" style="display:inline; position: absolute">-->
+<!--            <a class="info-block__link" href="mailto:tryouts@alchemists.com" style="position: relative; z-index: 2; color: #FFFFFF; font-size: large">-->
+<!--              <div style="display:inline; float: left;  width: 24px">-->
+<!--                <img src="assets/images/ek_ground.png" alt="ground">-->
+<!--              </div>-->
+<!--              <div>-->
+<!--                <h3 class="info-block__heading">라운드</h3>베스트 <span class="highlight" style="color: #c2ff1f;">일레븐</span></a>-->
+<!--              </div>-->
           </li>
           <li class="info-block__item info-block__item--contact-secondary">
             <svg role="img" class="df-icon df-icon--soccer-ball">
@@ -193,8 +198,9 @@
           <!-- Main Navigation -->
           <nav class="main-nav clearfix">
             <ul class="main-nav__list">
-              <li class="active"><a href="_soccer_index.html">Home</a></li>
-              <li class=""><a href="#" class="custom_top_menu">경기일정</a>
+              <li class="active"><a th:href="@{/}">Home</a></li>
+              <li class=""><a href="#">경기일정</a></li>
+<!--              <li class=""><a href="#" class="custom_top_menu">경기일정</a></li>-->
                 <!--                            <div class="main-nav__megamenu clearfix">-->
                 <!--                                <ul class="col-lg-2 col-md-3 col-12 main-nav__ul">-->
                 <!--                                    <li class="main-nav__title">Features</li>-->
@@ -291,7 +297,7 @@
                 <!--                                    </ul>-->
                 <!--                                </div>-->
                 <!--                            </div>-->
-              </li>
+<!--              </li>-->
               <li class=""><a th:href="@{/datacenter/team_overview.do}" class="custom_top_menu">데이터센터</a>
                 <!--          <li class=""><a th:href="@{team_overview.do}" class="custom_top_menu">데이터센터</a>-->
                 <ul class="main-nav__sub">
