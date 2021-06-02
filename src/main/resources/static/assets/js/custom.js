@@ -38,5 +38,10 @@ $(document).ready(function(){
 
 
     // footer_custom
-    $("#footer_custom").load("./tiles/footer_custom.html")
+    $("#footer_custom").load("./tiles/footer_custom.html");
+
+
+
+    // $('#whistle').css();
+    // $('#whistle').attr("../../assets/images/ek_ground.png", imgurl);
 });
