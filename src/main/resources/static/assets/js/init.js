@@ -187,11 +187,13 @@
 				// Pushy Panel Toggle
 				$pushy_btn.on('click', function(e){
 					e.preventDefault();
+					console.log("sddssdsdsdsdds")
 					$wrapper.toggleClass('site-wrapper--has-overlay-pushy');
 				});
 
 				$('.site-overlay, .pushy-panel__back-btn').on('click', function(e){
 					e.preventDefault();
+					console.log("ddddddd")
 					$wrapper.removeClass('site-wrapper--has-overlay-pushy site-wrapper--has-overlay');
 				});
 

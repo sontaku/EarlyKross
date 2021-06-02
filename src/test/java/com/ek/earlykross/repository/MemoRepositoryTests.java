@@ -19,13 +19,13 @@ public class MemoRepositoryTests {
 //        System.out.println(memoRepository.getClass().getName());
 //    }
 //
-    @Test
-    public void testInsertDummies() {
-        IntStream.rangeClosed(1, 100).forEach(i -> {
-            Memo memo = Memo.builder().memoText("Sample..." + i).build();
-            memoRepository.save(memo);
-        });
-    }
+//    @Test
+//    public void testInsertDummies() {
+//        IntStream.rangeClosed(1, 100).forEach(i -> {
+//            Memo memo = Memo.builder().memoText("Sample..." + i).build();
+//            memoRepository.save(memo);
+//        });
+//    }
 //
 //    // findById()
 //    @Test

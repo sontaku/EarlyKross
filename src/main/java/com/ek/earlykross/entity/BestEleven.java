@@ -40,7 +40,7 @@ public class BestEleven implements Serializable {
 
     @ManyToOne
     @JoinColumn(name = "mId")
-    private Member mId; // 회원번호SS
+    private Member mId; // 회원번호
 
     @ManyToOne
     @JoinColumn(name = "p1", nullable = false)

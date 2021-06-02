@@ -137,6 +137,7 @@ public class SampleController {
         //새로 추가된 엔티티의 번호
         Long mno = service.register(dto);
 
+
         // 모델이 아닌 리다이렉트로 브라우저에 데이터를 한 번만 전달
         redirectAttributes.addFlashAttribute("msg",mno);
 

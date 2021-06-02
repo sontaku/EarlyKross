@@ -6,6 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.IdClass;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
@@ -24,6 +25,7 @@ import lombok.ToString;
 @Builder // 객체 생성
 @AllArgsConstructor
 @NoArgsConstructor
+@IdClass(LeaguePK.class)
 public class League implements Serializable {
 
     @Id // PK 지정
@@ -31,6 +33,7 @@ public class League implements Serializable {
     @JoinColumn(name = "cId")
     private Club cId; // 클럽번호
 
+    @Id
     @Column(columnDefinition = "varchar(30)", nullable = false)
     private String season; // 시즌
 
