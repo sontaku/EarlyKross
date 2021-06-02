@@ -1,56 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-
-	<!-- Basic Page Needs
-	================================================== -->
-	<title>얼리크로스 :: K리그 커뮤니티</title>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="description" content="Sports Club, League and News HTML Template">
-	<meta name="author" content="Dan Fisher">
-	<meta name="keywords" content="sports club news HTML template">
-
-	<!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="assets/images/soccer/favicons/favicon.ico">
-	<link rel="apple-touch-icon" sizes="120x120" href="assets/images/soccer/favicons/favicon-120.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="assets/images/soccer/favicons/favicon-152.png">
-
-	<!-- Mobile Specific Metas
-	================================================== -->
-	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
-
-	<!-- Google Web Fonts
-	================================================== -->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CSource+Sans+Pro:400,700" rel="stylesheet">
-
-	<!-- CSS
-	================================================== -->
-	<!-- Vendor CSS -->
-	<link href="assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
-	<link href="assets/fonts/font-awesome/css/all.min.css" rel="stylesheet">
-	<link href="assets/fonts/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-	<link href="assets/vendor/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
-	<link href="assets/vendor/slick/slick.css" rel="stylesheet">
-
-	<!-- Template CSS-->
-	<link href="assets/css/style-soccer.css" rel="stylesheet">
-
-	<!-- Custom CSS-->
-	<link href="assets/css/custom.css" rel="stylesheet">
-
+	<div th:replace="/fragments/head_line.html :: head_line">-- thymeleaf head_line --</div>
 </head>
 <body data-template="template-soccer">
 
 	<div class="site-wrapper clearfix">
 		<div class="site-overlay"></div>
 
-		<!-- Header
-		================================================== -->
-		
+		<!-- Header ================================================== -->
 		<!-- Header Mobile -->
-<!--		<div id="header_mobile"><h3>include</h3></div>-->
 		<div th:replace="/fragments/header_mobile.html :: header_mobile">-- thymeleaf header_mobile --</div>
 
 		<!-- Header Desktop -->
@@ -60,7 +19,6 @@
 		<!-- Header / End -->
 
 		<!-- Pushy Panel - Dark -->
-<!--		<div id="custom_pushy_panel"><h3>include</h3></div>-->
 		<div th:replace="/fragments/custom_pushy_panel.html :: custom_pushy_panel">-- thymeleaf custom_pushy_panel --</div>
 		<!-- Pushy Panel - Dark / End -->
 
@@ -101,7 +59,7 @@
 									<!-- Post Author -->
 									<div class="post-author">
 										<figure class="post-author__avatar">
-											<img src="assets/images/samples/avatar-1.jpg" alt="Post Author Avatar">
+											<img src="../assets/images/samples/avatar-1.jpg" alt="Post Author Avatar">
 										</figure>
 										<div class="post-author__info">
 											<h4 class="post-author__name">James Spiegel</h4>
@@ -149,7 +107,7 @@
 									<!-- Post Author -->
 									<div class="post-author">
 										<figure class="post-author__avatar">
-											<img src="assets/images/samples/avatar-1.jpg" alt="Post Author Avatar">
+											<img src="../assets/images/samples/avatar-1.jpg" alt="Post Author Avatar">
 										</figure>
 										<div class="post-author__info">
 											<h4 class="post-author__name">James Spiegel</h4>
@@ -197,7 +155,7 @@
 									<!-- Post Author -->
 									<div class="post-author">
 										<figure class="post-author__avatar">
-											<img src="assets/images/samples/avatar-1.jpg" alt="Post Author Avatar">
+											<img src="../assets/images/samples/avatar-1.jpg" alt="Post Author Avatar">
 										</figure>
 										<div class="post-author__info">
 											<h4 class="post-author__name">James Spiegel</h4>
@@ -294,7 +252,7 @@
 									<div class="posts__item posts__item--category-1">
 										<a href="#" class="posts__link-wrapper">
 											<figure class="posts__thumb">
-												<img src="assets/images/soccer/samples/post-slide7.jpg" alt="">
+												<img src="../assets/images/soccer/samples/post-slide7.jpg" alt="">
 											</figure>
 											<div class="posts__inner">
 												<div class="posts__cat">
@@ -303,7 +261,7 @@
 												<h3 class="posts__title">The Planettroters will <span class="posts__title-higlight">perform this May 4th</span> at Madison Cube</h3>
 												<div class="post-author">
 													<figure class="post-author__avatar">
-														<img src="assets/images/samples/avatar-4.jpg" alt="Post Author Avatar">
+														<img src="../assets/images/samples/avatar-4.jpg" alt="Post Author Avatar">
 													</figure>
 													<div class="post-author__info">
 														<h4 class="post-author__name">Jesse Stevens</h4>
@@ -316,7 +274,7 @@
 									<div class="posts__item posts__item--category-3">
 										<a href="#" class="posts__link-wrapper">
 											<figure class="posts__thumb">
-												<img src="assets/images/samples/post-slide2.jpg" alt="">
+												<img src="../assets/images/samples/post-slide2.jpg" alt="">
 											</figure>
 											<div class="posts__inner">
 												<div class="posts__cat">
@@ -325,7 +283,7 @@
 												<h3 class="posts__title">New York is preparing all <span class="posts__title-higlight">for the Playoffs Final</span> next December</h3>
 												<div class="post-author">
 													<figure class="post-author__avatar">
-														<img src="assets/images/samples/avatar-1.jpg" alt="Post Author Avatar">
+														<img src="../assets/images/samples/avatar-1.jpg" alt="Post Author Avatar">
 													</figure>
 													<div class="post-author__info">
 														<h4 class="post-author__name">James Spiegel</h4>
@@ -338,7 +296,7 @@
 									<div class="posts__item posts__item--category-1">
 										<a href="#" class="posts__link-wrapper">
 											<figure class="posts__thumb">
-												<img src="assets/images/samples/post-slide3.jpg" alt="">
+												<img src="../assets/images/samples/post-slide3.jpg" alt="">
 											</figure>
 											<div class="posts__inner">
 												<div class="posts__cat">
@@ -347,7 +305,7 @@
 												<h3 class="posts__title">The new eco friendly <span class="posts__title-higlight">stadium won a Leafy</span> Award in 2016</h3>
 												<div class="post-author">
 													<figure class="post-author__avatar">
-														<img src="assets/images/samples/avatar-1.jpg" alt="Post Author Avatar">
+														<img src="../assets/images/samples/avatar-1.jpg" alt="Post Author Avatar">
 													</figure>
 													<div class="post-author__info">
 														<h4 class="post-author__name">James Spiegel</h4>
@@ -360,7 +318,7 @@
 									<div class="posts__item posts__item--category-3">
 										<a href="#" class="posts__link-wrapper">
 											<figure class="posts__thumb">
-												<img src="assets/images/samples/post-slide4.jpg" alt="">
+												<img src="../assets/images/samples/post-slide4.jpg" alt="">
 											</figure>
 											<div class="posts__inner">
 												<div class="posts__cat">
@@ -369,7 +327,7 @@
 												<h3 class="posts__title">New York Islanders are <span class="posts__title-higlight">now flying to California</span> for the big game</h3>
 												<div class="post-author">
 													<figure class="post-author__avatar">
-														<img src="assets/images/samples/avatar-1.jpg" alt="Post Author Avatar">
+														<img src="../assets/images/samples/avatar-1.jpg" alt="Post Author Avatar">
 													</figure>
 													<div class="post-author__info">
 														<h4 class="post-author__name">James Spiegel</h4>
@@ -382,7 +340,7 @@
 									<div class="posts__item posts__item--category-3">
 										<a href="#" class="posts__link-wrapper">
 											<figure class="posts__thumb">
-												<img src="assets/images/samples/post-slide6.jpg" alt="">
+												<img src="../assets/images/samples/post-slide6.jpg" alt="">
 											</figure>
 											<div class="posts__inner">
 												<div class="posts__cat">
@@ -391,7 +349,7 @@
 												<h3 class="posts__title">Jeremy Rittersen was <span class="posts__title-higlight">called to be</span> in the National Team</h3>
 												<div class="post-author">
 													<figure class="post-author__avatar">
-														<img src="assets/images/samples/avatar-2.jpg" alt="Post Author Avatar">
+														<img src="../assets/images/samples/avatar-2.jpg" alt="Post Author Avatar">
 													</figure>
 													<div class="post-author__info">
 														<h4 class="post-author__name">Jessica Hoops</h4>
@@ -404,7 +362,7 @@
 									<div class="posts__item posts__item--category-2">
 										<a href="#" class="posts__link-wrapper">
 											<figure class="posts__thumb">
-												<img src="assets/images/samples/post-slide5.jpg" alt="">
+												<img src="../assets/images/samples/post-slide5.jpg" alt="">
 											</figure>
 											<div class="posts__inner">
 												<div class="posts__cat">
@@ -413,7 +371,7 @@
 												<h3 class="posts__title">Jessica Valentine has a <span class="posts__title-higlight">sprained ankle</span> and won't be in the Final</h3>
 												<div class="post-author">
 													<figure class="post-author__avatar">
-														<img src="assets/images/samples/avatar-4.jpg" alt="Post Author Avatar">
+														<img src="../assets/images/samples/avatar-4.jpg" alt="Post Author Avatar">
 													</figure>
 													<div class="post-author__info">
 														<h4 class="post-author__name">Jesse Stevens</h4>
@@ -441,7 +399,7 @@
 										<div class="posts__cat">
 											<span class="label posts__cat-label">The Team</span>
 										</div>
-										<a href="#"><img src="assets/images/soccer/samples/_soccer_post-img3.jpg" alt=""></a>
+										<a href="#"><img src="../assets/images/soccer/samples/_soccer_post-img3.jpg" alt=""></a>
 									</figure>
 									<div class="posts__inner card__content">
 										<a href="#" class="posts__cta"></a>
@@ -454,7 +412,7 @@
 									<footer class="posts__footer card__footer">
 										<div class="post-author">
 											<figure class="post-author__avatar">
-												<img src="assets/images/samples/avatar-1.jpg" alt="Post Author Avatar">
+												<img src="../assets/images/samples/avatar-1.jpg" alt="Post Author Avatar">
 											</figure>
 											<div class="post-author__info">
 												<h4 class="post-author__name">James Spiegel</h4>
@@ -474,7 +432,7 @@
 										<div class="posts__cat">
 											<span class="label posts__cat-label">The Team</span>
 										</div>
-										<a href="#"><img src="assets/images/soccer/samples/_soccer_post-img1.jpg" alt=""></a>
+										<a href="#"><img src="../assets/images/soccer/samples/_soccer_post-img1.jpg" alt=""></a>
 									</figure>
 									<div class="posts__inner card__content">
 										<a href="#" class="posts__cta"></a>
@@ -487,7 +445,7 @@
 									<footer class="posts__footer card__footer">
 										<div class="post-author">
 											<figure class="post-author__avatar">
-												<img src="assets/images/samples/avatar-2.jpg" alt="Post Author Avatar">
+												<img src="../assets/images/samples/avatar-2.jpg" alt="Post Author Avatar">
 											</figure>
 											<div class="post-author__info">
 												<h4 class="post-author__name">Jessica Hoops</h4>
@@ -507,7 +465,7 @@
 										<div class="posts__cat">
 											<span class="label posts__cat-label">The Team</span>
 										</div>
-										<a href="#"><img src="assets/images/samples/post-img3.jpg" alt=""></a>
+										<a href="#"><img src="../assets/images/samples/post-img3.jpg" alt=""></a>
 									</figure>
 									<div class="posts__inner card__content">
 										<a href="#" class="posts__cta"></a>
@@ -520,7 +478,7 @@
 									<footer class="posts__footer card__footer">
 										<div class="post-author">
 											<figure class="post-author__avatar">
-												<img src="assets/images/samples/avatar-2.jpg" alt="Post Author Avatar">
+												<img src="../assets/images/samples/avatar-2.jpg" alt="Post Author Avatar">
 											</figure>
 											<div class="post-author__info">
 												<h4 class="post-author__name">Jessica Hoops</h4>
@@ -540,7 +498,7 @@
 										<div class="posts__cat">
 											<span class="label posts__cat-label">The Team</span>
 										</div>
-										<a href="#"><img src="assets/images/samples/post-img5.jpg" alt=""></a>
+										<a href="#"><img src="../assets/images/samples/post-img5.jpg" alt=""></a>
 									</figure>
 									<div class="posts__inner card__content">
 										<a href="#" class="posts__cta"></a>
@@ -553,7 +511,7 @@
 									<footer class="posts__footer card__footer">
 										<div class="post-author">
 											<figure class="post-author__avatar">
-												<img src="assets/images/samples/avatar-1.jpg" alt="Post Author Avatar">
+												<img src="../assets/images/samples/avatar-1.jpg" alt="Post Author Avatar">
 											</figure>
 											<div class="post-author__info">
 												<h4 class="post-author__name">James Spiegel</h4>
@@ -580,7 +538,7 @@
 		
 											<li class="posts__item posts__item--category-1">
 												<figure class="posts__thumb">
-													<a href="#"><img src="assets/images/samples/post-img22-xs.jpg" alt=""></a>
+													<a href="#"><img src="../assets/images/samples/post-img22-xs.jpg" alt=""></a>
 												</figure>
 												<div class="posts__inner">
 													<div class="posts__cat">
@@ -595,7 +553,7 @@
 											</li>
 											<li class="posts__item posts__item--category-1">
 												<figure class="posts__thumb">
-													<a href="#"><img src="assets/images/samples/post-img23-xs.jpg" alt=""></a>
+													<a href="#"><img src="../assets/images/samples/post-img23-xs.jpg" alt=""></a>
 												</figure>
 												<div class="posts__inner">
 													<div class="posts__cat">
@@ -610,7 +568,7 @@
 											</li>
 											<li class="posts__item posts__item--category-3">
 												<figure class="posts__thumb">
-													<a href="#"><img src="assets/images/samples/post-img20-xs.jpg" alt=""></a>
+													<a href="#"><img src="../assets/images/samples/post-img20-xs.jpg" alt=""></a>
 												</figure>
 												<div class="posts__inner">
 													<div class="posts__cat">
@@ -635,7 +593,7 @@
 		
 											<li class="posts__item posts__item--category-1">
 												<figure class="posts__thumb">
-													<a href="#"><img src="assets/images/samples/post-img24-xs.jpg" alt=""></a>
+													<a href="#"><img src="../assets/images/samples/post-img24-xs.jpg" alt=""></a>
 												</figure>
 												<div class="posts__inner">
 													<div class="posts__cat">
@@ -650,7 +608,7 @@
 											</li>
 											<li class="posts__item posts__item--category-2">
 												<figure class="posts__thumb">
-													<a href="#"><img src="assets/images/samples/post-img18-xs.jpg" alt=""></a>
+													<a href="#"><img src="../assets/images/samples/post-img18-xs.jpg" alt=""></a>
 												</figure>
 												<div class="posts__inner">
 													<div class="posts__cat">
@@ -665,7 +623,7 @@
 											</li>
 											<li class="posts__item posts__item--category-3">
 												<figure class="posts__thumb">
-													<a href="#"><img src="assets/images/samples/post-img4-xs.jpg" alt=""></a>
+													<a href="#"><img src="../assets/images/samples/post-img4-xs.jpg" alt=""></a>
 												</figure>
 												<div class="posts__inner">
 													<div class="posts__cat">
@@ -729,7 +687,7 @@
 												<div class="posts__cat">
 													<span class="label posts__cat-label">Injuries</span>
 												</div>
-												<a href="#"><img src="assets/images/samples/post-img1.jpg" alt=""></a>
+												<a href="#"><img src="../assets/images/samples/post-img1.jpg" alt=""></a>
 											</figure>
 											<div class="posts__inner card__content">
 												<a href="#" class="posts__cta"></a>
@@ -739,7 +697,7 @@
 											<footer class="posts__footer card__footer">
 												<div class="post-author">
 													<figure class="post-author__avatar">
-														<img src="assets/images/samples/avatar-1.jpg" alt="Post Author Avatar">
+														<img src="../assets/images/samples/avatar-1.jpg" alt="Post Author Avatar">
 													</figure>
 													<div class="post-author__info">
 														<h4 class="post-author__name">James Spiegel</h4>
@@ -759,7 +717,7 @@
 												<div class="posts__cat">
 													<span class="label posts__cat-label">The Team</span>
 												</div>
-												<a href="#"><img src="assets/images/soccer/samples/_soccer_post-img4.jpg" alt=""></a>
+												<a href="#"><img src="../assets/images/soccer/samples/_soccer_post-img4.jpg" alt=""></a>
 											</figure>
 											<div class="posts__inner card__content">
 												<a href="#" class="posts__cta"></a>
@@ -769,7 +727,7 @@
 											<footer class="posts__footer card__footer">
 												<div class="post-author">
 													<figure class="post-author__avatar">
-														<img src="assets/images/samples/avatar-2.jpg" alt="Post Author Avatar">
+														<img src="../assets/images/samples/avatar-2.jpg" alt="Post Author Avatar">
 													</figure>
 													<div class="post-author__info">
 														<h4 class="post-author__name">Jessica Hoops</h4>
@@ -789,7 +747,7 @@
 												<div class="posts__cat">
 													<span class="label posts__cat-label">The Team</span>
 												</div>
-												<a href="#"><img src="assets/images/samples/post-img13.jpg" alt=""></a>
+												<a href="#"><img src="../assets/images/samples/post-img13.jpg" alt=""></a>
 											</figure>
 											<div class="posts__inner card__content">
 												<a href="#" class="posts__cta"></a>
@@ -799,7 +757,7 @@
 											<footer class="posts__footer card__footer">
 												<div class="post-author">
 													<figure class="post-author__avatar">
-														<img src="assets/images/samples/avatar-1.jpg" alt="Post Author Avatar">
+														<img src="../assets/images/samples/avatar-1.jpg" alt="Post Author Avatar">
 													</figure>
 													<div class="post-author__info">
 														<h4 class="post-author__name">James Spiegel</h4>
@@ -819,7 +777,7 @@
 												<div class="posts__cat">
 													<span class="label posts__cat-label">The Team</span>
 												</div>
-												<a href="#"><img src="assets/images/samples/post-img2.jpg" alt=""></a>
+												<a href="#"><img src="../assets/images/samples/post-img2.jpg" alt=""></a>
 											</figure>
 											<div class="posts__inner card__content">
 												<a href="#" class="posts__cta"></a>
@@ -829,7 +787,7 @@
 											<footer class="posts__footer card__footer">
 												<div class="post-author">
 													<figure class="post-author__avatar">
-														<img src="assets/images/samples/avatar-1.jpg" alt="Post Author Avatar">
+														<img src="../assets/images/samples/avatar-1.jpg" alt="Post Author Avatar">
 													</figure>
 													<div class="post-author__info">
 														<h4 class="post-author__name">James Spiegel</h4>
@@ -893,7 +851,7 @@
 												<td>
 													<div class="team-meta">
 														<figure class="team-meta__logo">
-															<img src="assets/images/samples/logos/pirates_shield.png" alt="">
+															<img src="../assets/images/samples/logos/pirates_shield.png" alt="">
 														</figure>
 														<div class="team-meta__info">
 															<h6 class="team-meta__name">L.A Pirates</h6>
@@ -910,7 +868,7 @@
 												<td>
 													<div class="team-meta">
 														<figure class="team-meta__logo">
-															<img src="assets/images/samples/logos/sharks_shield.png" alt="">
+															<img src="../assets/images/samples/logos/sharks_shield.png" alt="">
 														</figure>
 														<div class="team-meta__info">
 															<h6 class="team-meta__name">Sharks</h6>
@@ -927,7 +885,7 @@
 												<td>
 													<div class="team-meta">
 														<figure class="team-meta__logo">
-															<img src="assets/images/samples/logos/alchemists_b_shield.png" alt="">
+															<img src="../assets/images/samples/logos/alchemists_b_shield.png" alt="">
 														</figure>
 														<div class="team-meta__info">
 															<h6 class="team-meta__name">The Alchemists</h6>
@@ -944,7 +902,7 @@
 												<td>
 													<div class="team-meta">
 														<figure class="team-meta__logo">
-															<img src="assets/images/samples/logos/ocean_kings_shield.png" alt="">
+															<img src="../assets/images/samples/logos/ocean_kings_shield.png" alt="">
 														</figure>
 														<div class="team-meta__info">
 															<h6 class="team-meta__name">Ocean Kings</h6>
@@ -961,7 +919,7 @@
 												<td>
 													<div class="team-meta">
 														<figure class="team-meta__logo">
-															<img src="assets/images/samples/logos/red_wings_shield.png" alt="">
+															<img src="../assets/images/samples/logos/red_wings_shield.png" alt="">
 														</figure>
 														<div class="team-meta__info">
 															<h6 class="team-meta__name">Red Wings</h6>
@@ -978,7 +936,7 @@
 												<td>
 													<div class="team-meta">
 														<figure class="team-meta__logo">
-															<img src="assets/images/samples/logos/lucky_clovers_shield.png" alt="">
+															<img src="../assets/images/samples/logos/lucky_clovers_shield.png" alt="">
 														</figure>
 														<div class="team-meta__info">
 															<h6 class="team-meta__name">Lucky Clovers</h6>
@@ -995,7 +953,7 @@
 												<td>
 													<div class="team-meta">
 														<figure class="team-meta__logo">
-															<img src="assets/images/samples/logos/draconians_shield.png" alt="">
+															<img src="../assets/images/samples/logos/draconians_shield.png" alt="">
 														</figure>
 														<div class="team-meta__info">
 															<h6 class="team-meta__name">Draconians</h6>
@@ -1012,7 +970,7 @@
 												<td>
 													<div class="team-meta">
 														<figure class="team-meta__logo">
-															<img src="assets/images/samples/logos/bloody_wave_shield.png" alt="">
+															<img src="../assets/images/samples/logos/bloody_wave_shield.png" alt="">
 														</figure>
 														<div class="team-meta__info">
 															<h6 class="team-meta__name">Bloody Wave</h6>
@@ -1072,7 +1030,7 @@
 						
 									<li class="posts__item posts__item--category-2">
 										<figure class="posts__thumb">
-											<a href="#"><img src="assets/images/samples/post-img1-xs.jpg" alt=""></a>
+											<a href="#"><img src="../assets/images/samples/post-img1-xs.jpg" alt=""></a>
 										</figure>
 										<div class="posts__inner">
 											<div class="posts__cat">
@@ -1084,7 +1042,7 @@
 									</li>
 									<li class="posts__item posts__item--category-1">
 										<figure class="posts__thumb">
-											<a href="#"><img src="assets/images/samples/post-img2-xs.jpg" alt=""></a>
+											<a href="#"><img src="../assets/images/samples/post-img2-xs.jpg" alt=""></a>
 										</figure>
 										<div class="posts__inner">
 											<div class="posts__cat">
@@ -1096,7 +1054,7 @@
 									</li>
 									<li class="posts__item posts__item--category-1">
 										<figure class="posts__thumb">
-											<a href="#"><img src="assets/images/samples/post-img3-xs.jpg" alt=""></a>
+											<a href="#"><img src="../assets/images/samples/post-img3-xs.jpg" alt=""></a>
 										</figure>
 										<div class="posts__inner">
 											<div class="posts__cat">
@@ -1108,7 +1066,7 @@
 									</li>
 									<li class="posts__item posts__item--category-1">
 										<figure class="posts__thumb">
-											<a href="#"><img src="assets/images/samples/post-img4-xs.jpg" alt=""></a>
+											<a href="#"><img src="../assets/images/samples/post-img4-xs.jpg" alt=""></a>
 										</figure>
 										<div class="posts__inner">
 											<div class="posts__cat">
@@ -1131,7 +1089,7 @@
 									<div class="fas fa-star"></div>
 								</div>
 								<figure class="widget-player__photo">
-									<img src="assets/images/soccer/samples/_soccer_widget-featured-player.png" alt="">
+									<img src="../assets/images/soccer/samples/_soccer_widget-featured-player.png" alt="">
 								</figure>
 								<header class="widget-player__header clearfix">
 									<div class="widget-player__number">07</div>
@@ -1207,7 +1165,7 @@
 											<!-- 1st Team -->
 											<div class="widget-game-result__team widget-game-result__team--first">
 												<figure class="widget-game-result__team-logo">
-													<a href="#"><img src="assets/images/soccer/logos/alchemists_last_game_results_big.png" alt=""></a>
+													<a href="#"><img src="../assets/images/soccer/logos/alchemists_last_game_results_big.png" alt=""></a>
 												</figure>
 												<div class="widget-game-result__team-info">
 													<h5 class="widget-game-result__team-name">Alchemists</h5>
@@ -1226,7 +1184,7 @@
 											<!-- 2nd Team -->
 											<div class="widget-game-result__team widget-game-result__team--second">
 												<figure class="widget-game-result__team-logo">
-													<a href="#"><img src="assets/images/samples/logo-l-clovers--sm.png" alt=""></a>
+													<a href="#"><img src="../assets/images/samples/logo-l-clovers--sm.png" alt=""></a>
 												</figure>
 												<div class="widget-game-result__team-info">
 													<h5 class="widget-game-result__team-name">Clovers</h5>
@@ -1602,7 +1560,7 @@
 											<!-- 1st Team -->
 											<div class="match-preview__team match-preview__team--first">
 												<figure class="match-preview__team-logo">
-													<img src="assets/images/soccer/logos/alchemists_buy_tickets.png" alt="">
+													<img src="../assets/images/soccer/logos/alchemists_buy_tickets.png" alt="">
 												</figure>
 												<h5 class="match-preview__team-name">Alchemists</h5>
 												<div class="match-preview__team-info">Elric Bros School</div>
@@ -1620,7 +1578,7 @@
 											<!-- 2nd Team -->
 											<div class="match-preview__team match-preview__team--second">
 												<figure class="match-preview__team-logo">
-													<img src="assets/images/soccer/logos/pirates_buy_tickets.png" alt="">
+													<img src="../assets/images/soccer/logos/pirates_buy_tickets.png" alt="">
 												</figure>
 												<h5 class="match-preview__team-name">Pirates</h5>
 												<div class="match-preview__team-info">Bebop Institute</div>
@@ -1652,13 +1610,9 @@
 		<!-- Content / End -->
 		
 
-		<!-- Footer
-		================================================== -->
+		<!-- Footer ================================================== -->
 		<footer id="footer" class="footer">
-		
 			<!-- Footer Widgets -->
-
-<!--			<div id="footer_custom"><h3>include</h3></div>-->
 			<div th:replace="/fragments/footer_custom.html :: footer_custom">-- thymeleaf footer_custom --</div>
 			<!-- Footer Secondary / End -->
 		</footer>
@@ -1666,125 +1620,10 @@
 		
 		
 		<!-- Login/Register Tabs Modal -->
-		<div class="modal fade" id="modal-login-register-tabs" tabindex="-1" role="dialog">
-			<div class="modal-dialog modal-lg modal--login modal--login-only" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					</div>
-					<div class="modal-body">
-		
-						<div class="modal-account-holder">
-							<div class="modal-account__item modal-account__item--logo">
-								<p class="modal-account__item-register-txt">Don’t have an account? <a href="#">Register Now</a> and enjoy all our benefits!</p>
-							</div>
-							<div class="modal-account__item">
-		
-								<!-- Tab panes -->
-								<div class="tab-content">
-		
-									<!-- Tab: Login -->
-									<div role="tabpanel" class="tab-pane fade show active" id="tab-login">
-		
-										<!-- Login Form -->
-										<form action="#" class="modal-form">
-											<h5>Login to your account</h5>
-											<div class="form-group">
-												<input type="email" class="form-control" placeholder="Enter your email address...">
-											</div>
-											<div class="form-group">
-												<input type="password" class="form-control" placeholder="Enter your password...">
-											</div>
-											<div class="form-group form-group--pass-reminder">
-												<label class="checkbox checkbox-inline">
-													<input type="checkbox" id="inlineCheckbox1" value="option1" checked> Remember Me
-													<span class="checkbox-indicator"></span>
-												</label>
-												<a href="#">Forgot your password?</a>
-											</div>
-											<div class="form-group form-group--submit">
-												<a href="_soccer_shop-account.html" class="btn btn-primary-inverse btn-block">Enter to your account</a>
-											</div>
-											<div class="modal-form--social">
-												<h6>or Login with your social profile:</h6>
-												<ul class="social-links social-links--btn text-center">
-													<li class="social-links__item">
-														<a href="#" class="social-links__link social-links__link--lg social-links__link--fb"><i class="fab fa-facebook"></i></a>
-													</li>
-													<li class="social-links__item">
-														<a href="#" class="social-links__link social-links__link--lg social-links__link--twitter"><i class="fab fa-twitter"></i></a>
-													</li>
-													<li class="social-links__item">
-														<a href="#" class="social-links__link social-links__link--lg social-links__link--gplus"><i class="fab fa-google-plus-g"></i></a>
-													</li>
-												</ul>
-											</div>
-										</form>
-										<!-- Login Form / End -->
-		
-									</div>
-									<!-- Tab: Login / End -->
-		
-									<!-- Tab: Register -->
-									<div role="tabpanel" class="tab-pane fade" id="tab-register">
-		
-										<!-- Register Form -->
-										<form action="#" class="modal-form">
-											<h5>Register Now!</h5>
-											<div class="form-group">
-												<input type="email" class="form-control" placeholder="Enter your email address...">
-											</div>
-											<div class="form-group">
-												<input type="password" class="form-control" placeholder="Enter your password...">
-											</div>
-											<div class="form-group">
-												<input type="password" class="form-control" placeholder="Repeat your password...">
-											</div>
-											<div class="form-group form-group--submit">
-												<a href="_soccer_shop-account.html" class="btn btn-success btn-block">Create Your Account</a>
-											</div>
-											<div class="modal-form--note">You’ll receive a confirmation email in your inbox with a link to activate your account. </div>
-										</form>
-										<!-- Register Form / End -->
-		
-									</div>
-									<!-- Tab: Register / End -->
-		
-								</div>
-		
-								<!-- Nav tabs -->
-								<div class="nav-tabs-login-wrapper">
-									<ul class="nav nav-tabs nav-justified nav-tabs--login" role="tablist">
-										<li class="nav-item"><a class="nav-link active" href="#tab-login" role="tab" data-toggle="tab">Login</a></li>
-										<li class="nav-item"><a class="nav-link" href="#tab-register" role="tab" data-toggle="tab">Register</a></li>
-									</ul>
-								</div>
-								<!-- Nav tabs / End -->
-		
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+		<div th:replace="/fragments/login_register.html :: login_register">-- thymeleaf login_register --</div>
 		<!-- Login/Register Tabs Modal / End -->
 
 	</div>
-
-	<!-- Javascript Files
-	================================================== -->
-	<!-- Core JS -->
-	<script src="assets/vendor/jquery/jquery.min.js"></script>
-	<script src="assets/vendor/jquery/jquery-migrate.min.js"></script>
-	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-	<script src="assets/js/core.js"></script>
-	
-	<!-- Vendor JS -->
-	<script src="assets/vendor/twitter/jquery.twitter.js"></script>
-	
-	<!-- Template JS -->
-	<script src="assets/js/init.js"></script>
-	<script src="assets/js/custom.js"></script>
-
+	<div th:replace="/fragments/script_line.html :: script_line">-- thymeleaf script_line --</div>
 </body>
 </html>

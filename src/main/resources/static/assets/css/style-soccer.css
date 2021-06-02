@@ -3008,7 +3008,7 @@ fieldset[disabled] .btn-odnoklassniki.focus {
 }
 
 .card__content--pattern-dotted {
-  background-image: url("../../assets/images/pattern-12x12.gif");
+  background-image: url("../../../assets/images/pattern-12x12.gif");
   background-position: 6px 10px;
 }
 
@@ -21030,7 +21030,7 @@ table.alc-event-result-labels > tbody > tr > td.alc-results .label {
 }
 
 .team-roster--card-compact .team-roster__item .team-roster__content-wrapper {
-  background-image: url("../../assets/images/soccer/samples/roster_player_card-bg.jpg");
+  background-image: url("../../../assets/images/soccer/samples/roster_player_card-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -23197,7 +23197,7 @@ table.alc-event-result-labels > tbody > tr > td.alc-results .label {
 }
 
 .alc-event-header--layout-2 .alc-event-header__content {
-  background-image: url("../../assets/images/pattern-12x12.gif");
+  background-image: url("../../../assets/images/pattern-12x12.gif");
   background-position: 6px 10px;
 }
 
@@ -23423,7 +23423,7 @@ table.alc-event-result-labels > tbody > tr > td.alc-results .label {
   right: 0;
   top: 0;
   bottom: 0;
-  background-image: url("../../assets/images/pattern-4x4-dark.gif");
+  background-image: url("../../../assets/images/pattern-4x4-dark.gif");
   background-position: 50% 0;
   background-repeat: repeat;
   z-index: -1;

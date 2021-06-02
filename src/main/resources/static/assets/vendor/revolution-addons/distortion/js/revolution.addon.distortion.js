@@ -35,7 +35,7 @@
 				
 				sprite = img.attr('src');
 				img.attr('data-lazyload', sprite);
-				img.attr('src', base.replace('/extensions', '') + '/revslider/admin/assets/images/dummy.png');
+				img.attr('src', base.replace('/extensions', '') + '/revslider/admin/../assets/images/dummy.png');
 				
 			}
 			else {
