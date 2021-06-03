@@ -44,4 +44,7 @@ $(document).ready(function(){
 
     // $('#whistle').css();
     // $('#whistle').attr("../../assets/images/ek_ground.png", imgurl);
+
+    //best 아약스
+
 });
