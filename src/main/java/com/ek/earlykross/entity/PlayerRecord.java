@@ -9,6 +9,7 @@ import javax.persistence.Id;
 import javax.persistence.IdClass;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -32,6 +33,11 @@ public class PlayerRecord implements Serializable {
     @ManyToOne
     @JoinColumn(name = "pId", nullable = false)
     private Player pId; // 선수번호
+
+    @Id
+    @OneToOne
+    @JoinColumn(name = "cId", nullable = false)
+    private Club cId; // 클럽번호
 
     @Id
     @Column(columnDefinition = "varchar(10)", nullable = false)

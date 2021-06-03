@@ -16,16 +16,9 @@
 
 
 $(document).ready(function(){
-    // header_mobile
-    $("#header_mobile").load("./tiles/header_mobile.html")
-    // header_desktop
-    $("#header_desktop").load("./tiles/header_desktop.html")
+
 
     $("#custom_nav_logout").css({"color":"#F7F7F7"})
-
-    // Pushy Panel
-    $("#custom_pushy_panel").load("./tiles/custom_pushy_panel.html")
-
 
     var $wrapper     = $('.site-wrapper');
     var $toggle = $(".pushy-panel__toggle");
@@ -35,8 +28,6 @@ $(document).ready(function(){
         $wrapper.toggleClass('site-wrapper--has-overlay-pushy');
     });
 
-
-
     // footer_custom
     $("#footer_custom").load("./tiles/footer_custom.html");
 
@@ -45,3 +36,4 @@ $(document).ready(function(){
     // $('#whistle').css();
     // $('#whistle').attr("../../assets/images/ek_ground.png", imgurl);
 });
+

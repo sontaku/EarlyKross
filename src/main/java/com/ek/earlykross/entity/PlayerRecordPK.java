@@ -18,5 +18,6 @@ import lombok.ToString;
 @Data
 public class PlayerRecordPK implements Serializable {
     private Player pId; // 선수번호
+    private Club cId; // 클럽번호
     private String season; // 시즌
 }
