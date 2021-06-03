@@ -1,5 +1,6 @@
 package com.ek.earlykross.entity;
 
+import java.time.LocalDateTime;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -33,9 +34,19 @@ public class ClubNews {
     @JoinColumn(name = "cId", nullable = false)
     private Club cId; // 클럽번호
     
-    @Column(columnDefinition = "varchar(30)")
-    private String name; // 이름
+    @Column(columnDefinition = "varchar(100)")
+    private String title; // 제목
 
-    @Column(columnDefinition = "varchar(30)")
-    private String ename; // 영문명
+
+    @Column(columnDefinition = "DATE")
+    private LocalDateTime timestamp; // 작성일
+
+    @Column(columnDefinition = "varchar(50)")
+    private LocalDateTime imageurl; // 이미지
+
+    @Column(columnDefinition = "varchar(100)")
+    private LocalDateTime source; // 원본
+
+
+
 }
