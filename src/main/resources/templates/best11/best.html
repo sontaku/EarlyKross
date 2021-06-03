@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <div th:replace="/fragments/head_line.html :: head_line">-- thymeleaf head_line --</div>
+</head>
+<body data-template="template-soccer">
+
+<div class="site-wrapper clearfix">
+  <div class="site-overlay"></div>
+
+  <!-- Header ================================================== -->
+
+  <!-- Header Mobile -->
+  <div th:replace="/fragments/header_mobile.html :: header_mobile">-- thymeleaf header_mobile --
+  </div>
+  <!-- Header Desktop -->
+  <header class="header header--layout-1">
+    <div th:replace="/fragments/header_desktop.html :: header_desktop">-- thymeleaf header_desktop
+      --
+    </div>
+  </header>
+  <!-- Header / End -->
+
+  <!-- Pushy Panel - Dark -->
+  <div th:replace="/fragments/custom_pushy_panel.html :: custom_pushy_panel">-- thymeleaf
+    custom_pushy_panel --
+  </div>
+  <!-- Pushy Panel - Dark / End -->
+
+  <!-- Page Heading
+  ================================================== -->
+  <div class="page-heading">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 offset-md-1">
+          <h1 class="page-heading__title">Over<span class="highlight">View</span></h1>
+          <ol class="page-heading__breadcrumb breadcrumb">
+            <li class="breadcrumb-item"><a href="_soccer_index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="_soccer_team-overview.html">Team</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Overview</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Page Heading / End -->
+
+
+  <!-- Team Pages Filter -->
+  <!--		<nav class="content-filter">-->
+  <!--			<div class="container">-->
+  <!--				<a href="#" class="content-filter__toggle"></a>-->
+  <!--				<ul class="content-filter__list">-->
+  <!--					<li class="content-filter__item content-filter__item&#45;&#45;active"><a th:href="@{team_overview.do}" class="content-filter__link"><small>The Team</small>Overview</a></li>-->
+  <!--					<li class="content-filter__item "><a href="_soccer_team-roster.html" class="content-filter__link"><small>The Team</small>Roster</a></li>-->
+  <!--					<li class="content-filter__item "><a href="_soccer_team-standings.html" class="content-filter__link"><small>The Team</small>Standings</a></li>-->
+  <!--					<li class="content-filter__item "><a href="_soccer_team-last-results.html" class="content-filter__link"><small>The Team</small>Latest Results</a></li>-->
+  <!--					<li class="content-filter__item "><a href="_soccer_team-schedule.html" class="content-filter__link"><small>The Team</small>Schedule</a></li>-->
+  <!--					<li class="content-filter__item "><a href="_soccer_team-gallery.html" class="content-filter__link"><small>The Team</small>Gallery</a></li>-->
+  <!--				</ul>-->
+  <!--			</div>-->
+  <!--		</nav>-->
+  <!-- Team Pages Filter / End -->
+
+  <!-- Content
+  ================================================== -->
+  <div class="site-content">
+    <div class="container">
+
+      <div class="row">
+
+        <!-- Content -->
+        <div class="content col-lg-8">
+
+          <!-- Game Scoreboard -->
+          <div class="card">
+            <header class="card__header card__header--has-btn">
+              <h4>나의 BEST 11</h4>
+            </header>
+            <div class="card__content">
+
+              <!-- Game Timeline / End -->
+
+            </div>
+          </div>
+          <!-- Game Scoreboard / End -->
+
+          <!-- Team Roster: Table -->
+          <div class="card card--has-table">
+            <div class="card__header card__header--has-btn">
+              <h4>2021 시즌 라운드 별 BEST 11</h4>
+              <a href="_soccer_team-roster.html"
+                 class="btn btn-default btn-outline btn-xs card-header__button">라운드</a>
+            </div>
+            <div class="card__content">
+
+            </div>
+          </div>
+        </div>
+        <!-- Content / End -->
+
+        <!-- Sidebar -->
+        <div class="sidebar col-lg-4">
+
+          <!-- Widget: Team Newslog -->
+          <aside class="widget card widget--sidebar widget-newslog">
+            <div class="widget__title card__header">
+              <h4>이번 라운드 BEST 11은?</h4>
+            </div>
+            <div class="widget__content card__content">
+              <ul class="newslog">
+
+                <li class="newslog__item newslog__item--injury">
+                  <div class="newslog__item-inner">
+                    <div class="newslog__content"><strong>Mark Johnson</strong> has a tibia fracture
+                      and he’s gonna be out of the play for <strong>2 months</strong>.
+                    </div>
+                    <time class="newslog__date" datetime="2016-01-19">September 18, 2016</time>
+                  </div>
+                </li>
+                <li class="newslog__item newslog__item--join">
+                  <div class="newslog__item-inner">
+                    <div class="newslog__content"><strong>Dominick R. Blink</strong>, a new <strong>Shooting
+                      Guard</strong> from San Francisco has joined the team!.
+                    </div>
+                    <time class="newslog__date" datetime="2016-01-19">September 6, 2016</time>
+                  </div>
+                </li>
+                <li class="newslog__item newslog__item--join">
+                  <div class="newslog__item-inner">
+                    <div class="newslog__content"><strong>Christopher Grifin</strong>, a new
+                      <strong>Power Forward</strong> from Rockstar Bay College has joined the team!.
+                    </div>
+                    <time class="newslog__date" datetime="2016-01-19">August 24, 2016</time>
+                  </div>
+                </li>
+                <li class="newslog__item newslog__item--injury">
+                  <div class="newslog__item-inner">
+                    <div class="newslog__content"><strong>Thomas Durry</strong> has a composed hand
+                      fracture and he won’t be playing untill <strong>September</strong>.
+                    </div>
+                    <time class="newslog__date" datetime="2016-01-19">August 17, 2016</time>
+                  </div>
+                </li>
+                <li class="newslog__item newslog__item--exit">
+                  <div class="newslog__item-inner">
+                    <div class="newslog__content"><strong>Jeremy Rittersen</strong> left the team
+                      after 2 year in the club and his new house are the <strong>Clovers</strong>.
+                    </div>
+                    <time class="newslog__date" datetime="2016-01-19">August 12, 2016</time>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+          </aside>
+          <!-- Widget: Team Newslog / End -->
+
+        </div>
+        <!-- Sidebar / End -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Content / End -->
+
+
+  <!-- Footer ================================================== -->
+  <footer id="footer" class="footer">
+    <!-- Footer Widgets -->
+    <div th:replace="/fragments/footer_custom.html :: footer_custom">-- thymeleaf footer_custom --
+    </div>
+    <!-- Footer Secondary / End -->
+  </footer>
+  <!-- Footer / End -->
+
+
+  <!-- Login/Register Tabs Modal -->
+  <div th:replace="/fragments/login_register.html :: login_register">-- thymeleaf login_register
+    --
+  </div>
+  <!-- Login/Register Tabs Modal / End -->
+
+</div>
+<div th:replace="/fragments/script_line.html :: script_line">-- thymeleaf script_line --</div>
+</body>
+</html>
