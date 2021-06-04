@@ -407,29 +407,38 @@
         //console.info('Event type = ' + origEvent.type);
         //console.info('ui.item.value = ' + ui.item.value);
         if (origEvent.type == 'click' && count < 11) {
-          $("#best").append('<div class="ball" style="width:100px; cursor: pointer"><img src="https://en.js.cx/clipart/ball.svg">'+ui.item.value+'<div>');
+          $("#best").append('<div class="ball" style="width:100px; cursor: pointer"><img class="inball" src="https://en.js.cx/clipart/ball.svg">'+ui.item.value+'<div>');
           count++;
         }
       }
     });
 
 
-    $("body").on("mousedown","div[class='ball']",function (e){
+    $(document).on("mousedown","div[class='ball']",function (e){
       $(this).draggable();
-      console.log($(this).offset().left)
-      // if($(this).offsetLeft<-70px)
-    });
-    $("body").on("mousemove","div[class='ball']",function (e){
-      // $(this).draggable();
-      console.log($(this).offset().left)
+      console.log($(this).position().left)
       // if($(this).offsetLeft<-70px)
     });
 
+    $(document).on("mousemove","img[class='inball']",function (e){
+      // $(this).draggable();
+      // console.log($(this).parent("div").position().left)
+      if($(this).parent("div").position().left<-75){
+        $(this).parent("div").fadeOut(300, function() { $(this).remove(); });
+      }
+
+    });
     $("#gate").droppable({
       drop:function (e,ui){
         $(this).html("들어왔음");
     }
     })
+
+
+
+
+
+
 
   })
 </script>
