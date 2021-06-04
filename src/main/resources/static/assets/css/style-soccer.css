@@ -18367,11 +18367,15 @@ td.team-leader__goals {
 }
 
 .team-leader__player-img--sm {
-  width: 30px;
-  height: 30px;
+  /*width: 30px;*/
+  /*height: 30px;*/
+  width: 60px;
+  height: 80px;
 }
 
 .team-leader__player-inner {
+  text-align: center;
+  width: 60%;
   display: inline-block;
   vertical-align: middle;
 }
@@ -21525,8 +21529,8 @@ table.alc-event-result-labels > tbody > tr > td.alc-results .label {
 }
 
 .team-meta__logo {
-  width: 35px;
-  height: 30px;
+  width: 40px;
+  height: 100%;
   margin-right: 2px;
   text-align: center;
   display: -webkit-box;
@@ -21541,6 +21545,7 @@ table.alc-event-result-labels > tbody > tr > td.alc-results .label {
 }
 
 .team-meta__info {
+  text-align: center;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
