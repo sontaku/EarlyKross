@@ -49,7 +49,7 @@
 				<ul class="content-filter__list">
 					<li class="content-filter__item content-filter__item--active"><a th:href="@{team_overview.do}" class="content-filter__link"><small>LEAGUE OVERVIEW</small>리그 정보</a></li>
 					<li class="content-filter__item "><a href="_soccer_team-roster.html" class="content-filter__link"><small>CLUB INFO</small>K리그 구단</a></li>
-					<li class="content-filter__item "><a href="_soccer_team-standings.html" class="content-filter__link"><small>PLYAER INFO</small></a></li>
+					<li class="content-filter__item "><a href="_soccer_team-standings.html" class="content-filter__link"><small>PLYAER INFO</small>선수 기록</a></li>
 					<li class="content-filter__item "><a href="_soccer_team-last-results.html" class="content-filter__link"><small>The Team</small>Latest Results</a></li>
 					<li class="content-filter__item "><a href="_soccer_team-schedule.html" class="content-filter__link"><small>The Team</small>Schedule</a></li>
 					<li class="content-filter__item "><a href="_soccer_team-gallery.html" class="content-filter__link"><small>The Team</small>Gallery</a></li>
@@ -94,11 +94,12 @@
 																			<td>
 																				<div class="team-meta">
 																					<figure class="team-meta__logo">
-																						<img src="../assets/images/samples/logos/pirates_shield.png" alt="">
+<!--																						<img src="../assets/images/samples/logos/pirates_shield.png" alt="">-->
+																						<img src="https://ww.namu.la/s/bd31122154e5f8010694e83df2e985bb9340e030f0e161275c4812ddd46d1191df6c52d29881e0ec17c111e16092054100b2a997d942a41c8ce6df7201ce66dbc2314f5e4043d45f62b02a355d88513623adc95317ebf25c8f5858b2ee2e477e0a4bc0a9b47185456bfa79a47bcdaf3c" alt="">
 																					</figure>
 																					<div class="team-meta__info">
-																						<h6 class="team-meta__name">L.A Pirates</h6>
-																						<span class="team-meta__place">Bebop Institute</span>
+																						<h6 class="team-meta__name">FC 서울</h6>
+																						<span class="team-meta__place">FC Seoul</span>
 																					</div>
 																				</div>
 																			</td>
@@ -239,7 +240,7 @@
 					</div>
 
 					<div class="content col-lg-12">
-						<aside class="widget widget&#45;&#45;sidebar card card&#45;&#45;has-table widget-leaders">-->
+						<aside class="widget widget&#45;&#45;sidebar card card&#45;&#45;has-table widget-leaders">
 														<div class="widget__title card__header">
 															<h4>선수 개인 시즌 기록</h4>
 														</div>
@@ -259,7 +260,8 @@
 																			<td class="team-leader__player">
 																				<div class="team-leader__player-info">
 																					<figure class="team-leader__player-img team-leader__player-img--sm">
-																						<img src="../assets/images/soccer/samples/goalscorer_01.jpg" alt="">
+<!--																						<img src="../assets/images/soccer/samples/goalscorer_01.jpg" alt="">-->
+																						<img src="https://portal.kleague.com/common/playerPhotoById.do?playerId=20060073&recYn=Y&searchYear=2021" alt="">
 																					</figure>
 																					<div class="team-leader__player-inner">
 																						<h5 class="team-leader__player-name">박주영</h5>
@@ -295,7 +297,8 @@
 																			<td class="team-leader__player">
 																				<div class="team-leader__player-info">
 																					<figure class="team-leader__player-img team-leader__player-img--sm">
-																						<img src="../assets/images/soccer/samples/goalscorer_01.jpg" alt="">
+<!--																						<img src="../assets/images/soccer/samples/goalscorer_01.jpg" alt="">-->
+																						<img src="https://portal.kleague.com/common/playerPhotoById.do?playerId=20060073&recYn=Y&searchYear=2021" alt="">
 																					</figure>
 																					<div class="team-leader__player-inner">
 																						<h5 class="team-leader__player-name">James Messinal</h5>
@@ -331,7 +334,8 @@
 																			<td class="team-leader__player">
 																				<div class="team-leader__player-info">
 																					<figure class="team-leader__player-img team-leader__player-img--sm">
-																						<img src="../assets/images/soccer/samples/goalscorer_01.jpg" alt="">
+<!--																						<img src="../assets/images/soccer/samples/goalscorer_01.jpg" alt="">-->
+																						<img src="https://portal.kleague.com/common/playerPhotoById.do?playerId=20060073&recYn=Y&searchYear=2021" alt="">
 																					</figure>
 																					<div class="team-leader__player-inner">
 																						<h5 class="team-leader__player-name">James Messinal</h5>
@@ -360,6 +364,183 @@
 
 														</div>
 													</aside>
+					</div>
+
+
+					<div class="content col-lg-12">
+						<aside class="widget card widget&#45;&#45;sidebar widget-standings">
+							<div class="widget__title card__header card__header--has-btn">
+								<h4>시즌 <span>선수</span> 기록</h4>
+								<!--															<a href="#" class="btn btn-default btn-outline btn-xs card-header__button">See All Stats</a>-->
+							</div>
+							<div class="widget__content card__content">
+								<div class="table-responsive">
+									<table class="table table-hover table-standings">
+										<thead>
+										<tr>
+											<th>순위</th>
+											<th>선수</th>
+											<th>득점</th>
+											<th>도움</th>
+											<th>공격포인트</th>
+											<th>슈팅</th>
+											<th>파울</th>
+											<th>경고</th>
+											<th>퇴장</th>
+											<th>코너킥</th>
+											<th>오프사이드</th>
+											<th>경기수</th>
+										</tr>
+										</thead>
+										<tbody>
+
+										<tr th:each="num: ${#numbers.sequence(1,12)}">
+											<td>
+												<div class="team-meta">
+													<figure class="team-meta__logo">
+														<!--																						<img src="../assets/images/samples/logos/pirates_shield.png" alt="">-->
+														<img src="https://ww.namu.la/s/bd31122154e5f8010694e83df2e985bb9340e030f0e161275c4812ddd46d1191df6c52d29881e0ec17c111e16092054100b2a997d942a41c8ce6df7201ce66dbc2314f5e4043d45f62b02a355d88513623adc95317ebf25c8f5858b2ee2e477e0a4bc0a9b47185456bfa79a47bcdaf3c" alt="">
+													</figure>
+													<div class="team-meta__info">
+														<h6 class="team-meta__name">FC 서울</h6>
+														<span class="team-meta__place">FC Seoul</span>
+													</div>
+												</div>
+											</td>
+											<td>36</td>
+											<td>14</td>
+											<td>10</td>
+											<td>118</td>
+											<td>118</td>
+											<td>118</td>
+											<td>118</td>
+											<td>118</td>
+										</tr>
+										<!--																		<tr>-->
+										<!--																			<td>-->
+										<!--																				<div class="team-meta">-->
+										<!--																					<figure class="team-meta__logo">-->
+										<!--																						<img src="../assets/images/samples/logos/sharks_shield.png" alt="">-->
+										<!--																					</figure>-->
+										<!--																					<div class="team-meta__info">-->
+										<!--																						<h6 class="team-meta__name">Sharks</h6>-->
+										<!--																						<span class="team-meta__place">Marine College</span>-->
+										<!--																					</div>-->
+										<!--																				</div>-->
+										<!--																			</td>-->
+										<!--																			<td>32</td>-->
+										<!--																			<td>20</td>-->
+										<!--																			<td>8</td>-->
+										<!--																			<td>104</td>-->
+										<!--																		</tr>-->
+										<!--																		<tr>-->
+										<!--																			<td>-->
+										<!--																				<div class="team-meta">-->
+										<!--																					<figure class="team-meta__logo">-->
+										<!--																						<img src="../assets/images/samples/logos/alchemists_b_shield.png" alt="">-->
+										<!--																					</figure>-->
+										<!--																					<div class="team-meta__info">-->
+										<!--																						<h6 class="team-meta__name">The Alchemists</h6>-->
+										<!--																						<span class="team-meta__place">Eric Bros School</span>-->
+										<!--																					</div>-->
+										<!--																				</div>-->
+										<!--																			</td>-->
+										<!--																			<td>32</td>-->
+										<!--																			<td>21</td>-->
+										<!--																			<td>7</td>-->
+										<!--																			<td>103</td>-->
+										<!--																		</tr>-->
+										<!--																		<tr>-->
+										<!--																			<td>-->
+										<!--																				<div class="team-meta">-->
+										<!--																					<figure class="team-meta__logo">-->
+										<!--																						<img src="../assets/images/samples/logos/ocean_kings_shield.png" alt="">-->
+										<!--																					</figure>-->
+										<!--																					<div class="team-meta__info">-->
+										<!--																						<h6 class="team-meta__name">Ocean Kings</h6>-->
+										<!--																						<span class="team-meta__place">Bay College</span>-->
+										<!--																					</div>-->
+										<!--																				</div>-->
+										<!--																			</td>-->
+										<!--																			<td>30</td>-->
+										<!--																			<td>20</td>-->
+										<!--																			<td>10</td>-->
+										<!--																			<td>100</td>-->
+										<!--																		</tr>-->
+										<!--																		<tr>-->
+										<!--																			<td>-->
+										<!--																				<div class="team-meta">-->
+										<!--																					<figure class="team-meta__logo">-->
+										<!--																						<img src="../assets/images/samples/logos/red_wings_shield.png" alt="">-->
+										<!--																					</figure>-->
+										<!--																					<div class="team-meta__info">-->
+										<!--																						<h6 class="team-meta__name">Red Wings</h6>-->
+										<!--																						<span class="team-meta__place">Icarus College</span>-->
+										<!--																					</div>-->
+										<!--																				</div>-->
+										<!--																			</td>-->
+										<!--																			<td>28</td>-->
+										<!--																			<td>24</td>-->
+										<!--																			<td>8</td>-->
+										<!--																			<td>92</td>-->
+										<!--																		</tr>-->
+										<!--																		<tr>-->
+										<!--																			<td>-->
+										<!--																				<div class="team-meta">-->
+										<!--																					<figure class="team-meta__logo">-->
+										<!--																						<img src="../assets/images/samples/logos/lucky_clovers_shield.png" alt="">-->
+										<!--																					</figure>-->
+										<!--																					<div class="team-meta__info">-->
+										<!--																						<h6 class="team-meta__name">Lucky Clovers</h6>-->
+										<!--																						<span class="team-meta__place">St. Patrick’s Institute</span>-->
+										<!--																					</div>-->
+										<!--																				</div>-->
+										<!--																			</td>-->
+										<!--																			<td>27</td>-->
+										<!--																			<td>24</td>-->
+										<!--																			<td>9</td>-->
+										<!--																			<td>90</td>-->
+										<!--																		</tr>-->
+										<!--																		<tr>-->
+										<!--																			<td>-->
+										<!--																				<div class="team-meta">-->
+										<!--																					<figure class="team-meta__logo">-->
+										<!--																						<img src="../assets/images/samples/logos/draconians_shield.png" alt="">-->
+										<!--																					</figure>-->
+										<!--																					<div class="team-meta__info">-->
+										<!--																						<h6 class="team-meta__name">Draconians</h6>-->
+										<!--																						<span class="team-meta__place">High Rock College</span>-->
+										<!--																					</div>-->
+										<!--																				</div>-->
+										<!--																			</td>-->
+										<!--																			<td>25</td>-->
+										<!--																			<td>28</td>-->
+										<!--																			<td>7</td>-->
+										<!--																			<td>82</td>-->
+										<!--																		</tr>-->
+										<!--																		<tr>-->
+										<!--																			<td>-->
+										<!--																				<div class="team-meta">-->
+										<!--																					<figure class="team-meta__logo">-->
+										<!--																						<img src="../assets/images/samples/logos/bloody_wave_shield.png" alt="">-->
+										<!--																					</figure>-->
+										<!--																					<div class="team-meta__info">-->
+										<!--																						<h6 class="team-meta__name">Bloody Wave</h6>-->
+										<!--																						<span class="team-meta__place">Atlantic School</span>-->
+										<!--																					</div>-->
+										<!--																				</div>-->
+										<!--																			</td>-->
+										<!--																			<td>24</td>-->
+										<!--																			<td>30</td>-->
+										<!--																			<td>6</td>-->
+										<!--																			<td>78</td>-->
+										<!--																		</tr>-->
+
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</aside>
 					</div>
 
 <!--					<div class="content col-lg-8">-->
