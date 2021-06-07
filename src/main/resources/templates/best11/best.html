@@ -476,9 +476,26 @@
         let name = p[0];
         let pos = p[1];
         let pp =[name,pos];
+        if(name==""){
+          break;
+        }
         best.push(pp);
       }
-      // console.log(best);
+      console.log(best)
+      $.ajax({
+        url:"/best11/savePlayer.do",
+        data:{
+          "players":best,
+          "formationText":all
+        },
+        type:"post",
+        success:function (data){
+          console.log(data);
+        },
+        error:function (e){
+          alert(e);
+        }
+      })
     })
   })
 </script>
