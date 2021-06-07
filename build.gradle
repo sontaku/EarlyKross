@@ -49,6 +49,13 @@ dependencies {
     compile group: 'org.thymeleaf.extras', name: 'thymeleaf-extras-java8time'
     // querydsl 위한
     implementation 'com.querydsl:querydsl-jpa'
+    // security 추가
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+
+    testImplementation('org.springframework.boot:spring-boot-starter-test'){
+        exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+    }
+
 }
 
 test {
