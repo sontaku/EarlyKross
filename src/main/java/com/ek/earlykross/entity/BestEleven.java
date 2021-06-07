@@ -95,4 +95,7 @@ public class BestEleven implements Serializable {
 
     @Column(columnDefinition = "varchar(10)")
     private String formation; // 포메이션
+
+    @Column(columnDefinition = "text")
+    private String formationText;
 }
