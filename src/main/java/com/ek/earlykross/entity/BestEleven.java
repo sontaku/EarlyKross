@@ -1,7 +1,12 @@
 package com.ek.earlykross.entity;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import javax.persistence.CollectionTable;
 import javax.persistence.Column;
+import javax.persistence.ElementCollection;
 import javax.persistence.Embeddable;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,8 +14,10 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.IdClass;
 import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -61,7 +68,7 @@ public class BestEleven implements Serializable {
     @ManyToOne
     @JoinColumn(name = "p5", nullable = false)
     private Player p5; // 선수5
-    
+
     @ManyToOne
     @JoinColumn(name = "p6", nullable = false)
     private Player p6; // 선수6
@@ -88,4 +95,7 @@ public class BestEleven implements Serializable {
 
     @Column(columnDefinition = "varchar(10)")
     private String formation; // 포메이션
+
+    @Column(columnDefinition = "text")
+    private String formationText;
 }
