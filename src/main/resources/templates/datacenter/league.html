@@ -12,6 +12,7 @@
 
 		<!-- Header Mobile -->
 		<div th:replace="/fragments/header_mobile.html :: header_mobile">-- thymeleaf header_mobile --</div>
+
 		<!-- Header Desktop -->
 		<header class="header header--layout-1">
 			<div th:replace="/fragments/header_desktop.html :: header_desktop">-- thymeleaf header_desktop --</div>
@@ -46,12 +47,12 @@
 			<div class="container">
 				<a href="#" class="content-filter__toggle"></a>
 				<ul class="content-filter__list">
-					<li class="content-filter__item content-filter__item--active"><a th:href="@{team_overview.do}" class="content-filter__link"><small>LEAGUE OVERVIEW</small>리그 정보</a></li>
-					<li class="content-filter__item "><a href="_soccer_team-roster.html" class="content-filter__link"><small>CLUB INFO</small>K리그 구단</a></li>
-					<li class="content-filter__item "><a href="_soccer_team-standings.html" class="content-filter__link"><small>PLYAER INFO</small>선수 기록</a></li>
-					<li class="content-filter__item "><a href="_soccer_team-last-results.html" class="content-filter__link"><small>The Team</small>Latest Results</a></li>
-					<li class="content-filter__item "><a href="_soccer_team-schedule.html" class="content-filter__link"><small>The Team</small>Schedule</a></li>
-					<li class="content-filter__item "><a href="_soccer_team-gallery.html" class="content-filter__link"><small>The Team</small>Gallery</a></li>
+					<li class="content-filter__item content-filter__item--active"><a th:href="@{league.do}" class="content-filter__link"><small>LEAGUE OVERVIEW</small>리그 정보</a></li>
+					<li class="content-filter__item "><a th:href="@{club.do}" class="content-filter__link"><small>CLUB INFO</small>구단</a></li>
+					<li class="content-filter__item "><a href="_soccer_team-standings.html" class="content-filter__link"><small>PLYAER INFO</small>선수</a></li>
+<!--					<li class="content-filter__item "><a href="_soccer_team-last-results.html" class="content-filter__link"><small>The Team</small>Latest Results</a></li>-->
+<!--					<li class="content-filter__item "><a href="_soccer_team-schedule.html" class="content-filter__link"><small>The Team</small>Schedule</a></li>-->
+<!--					<li class="content-filter__item "><a href="_soccer_team-gallery.html" class="content-filter__link"><small>The Team</small>Gallery</a></li>-->
 				</ul>
 			</div>
 		</nav>
@@ -68,7 +69,7 @@
 					<div class="content col-lg-12">
 						<aside class="widget card widget&#45;&#45;sidebar widget-standings">
 														<div class="widget__title card__header card__header--has-btn">
-															<h4>리그 순위 <span>0000</span> 시즌</h4>
+															<h4>리그 순위 <span class="highlight">0000</span> 시즌</h4>
 <!--															<a href="#" class="btn btn-default btn-outline btn-xs card-header__button">See All Stats</a>-->
 														</div>
 														<div class="widget__content card__content">
@@ -369,7 +370,7 @@
 					<div class="content col-lg-12">
 						<aside class="widget card widget&#45;&#45;sidebar widget-standings">
 							<div class="widget__title card__header card__header--has-btn">
-								<h4>시즌 <span>선수</span> 기록</h4>
+								<h4>시즌 <span class="highlight">선수</span> 기록</h4>
 								<!--															<a href="#" class="btn btn-default btn-outline btn-xs card-header__button">See All Stats</a>-->
 							</div>
 							<div class="widget__content card__content">
@@ -378,7 +379,6 @@
 										<thead>
 										<tr>
 											<th>순위</th>
-											<th>선수</th>
 											<th>득점</th>
 											<th>도움</th>
 											<th>공격포인트</th>
@@ -387,13 +387,15 @@
 											<th>경고</th>
 											<th>퇴장</th>
 											<th>코너킥</th>
+											<th>패널티킥</th>
 											<th>오프사이드</th>
+											<th>유효슈팅</th>
 											<th>경기수</th>
 										</tr>
 										</thead>
 										<tbody>
 
-										<tr th:each="num: ${#numbers.sequence(1,12)}">
+										<tr th:each="num: ${#numbers.sequence(1,20)}">
 											<td>
 												<div class="team-meta">
 													<figure class="team-meta__logo">
@@ -401,14 +403,18 @@
 														<img src="https://ww.namu.la/s/bd31122154e5f8010694e83df2e985bb9340e030f0e161275c4812ddd46d1191df6c52d29881e0ec17c111e16092054100b2a997d942a41c8ce6df7201ce66dbc2314f5e4043d45f62b02a355d88513623adc95317ebf25c8f5858b2ee2e477e0a4bc0a9b47185456bfa79a47bcdaf3c" alt="">
 													</figure>
 													<div class="team-meta__info">
-														<h6 class="team-meta__name">FC 서울</h6>
-														<span class="team-meta__place">FC Seoul</span>
+														<h6 class="team-meta__name">기성용</h6>
+														<span class="team-meta__place">FC 서울</span>
 													</div>
 												</div>
 											</td>
-											<td>36</td>
-											<td>14</td>
-											<td>10</td>
+											<td>118</td>
+											<td>118</td>
+											<td>118</td>
+											<td>118</td>
+											<td>118</td>
+											<td>118</td>
+											<td>118</td>
 											<td>118</td>
 											<td>118</td>
 											<td>118</td>
@@ -1729,6 +1735,8 @@
 		<!-- Login/Register Tabs Modal / End -->
 
 	</div>
+
+	!-- Javascript Files	================================================== -->
 	<div th:replace="/fragments/script_line.html :: script_line">-- thymeleaf script_line --</div>
 </body>
 </html>
