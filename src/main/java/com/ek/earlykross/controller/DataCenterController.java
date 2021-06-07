@@ -1,6 +1,7 @@
 package com.ek.earlykross.controller;
 
 import com.ek.earlykross.repository.ClubRepository;
+import com.ek.earlykross.repository.LeagueRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,6 +26,9 @@ public class DataCenterController {
     }
 
     @Autowired
+    LeagueRepository leagueRepository;
+
+    @Autowired
     ClubRepository clubRepository;
 
 //    @GetMapping("{step}.do")
@@ -38,11 +42,16 @@ public class DataCenterController {
     // 리그 정보 페이지
     @GetMapping({"/league.do"})
     public void leagueOverview(Model model) {
-        log.info("DataCenterController.LeagueOverview 호출");
+        log.info("DataCenterController.leagueOverview 호출");
 //        return "redirect:/league/overview.do";
     }
 
     // 리그순위
+    public void leagueRanking(Model model) {
+        log.info("DataCenterController.leagueRanking 호출");
+//        model.addAttribute("leagueTable", service.getList(pageRequestDTO));
+    }
+
     // 선수 개인 시즌 기록
     // 시즌 선수 기록
 

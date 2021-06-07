@@ -9,6 +9,7 @@ import org.springframework.data.repository.query.Param;
 
 import java.util.List;
 
+// QuerydslPredicateExecutor 검색 목적
 public interface BestRepository extends JpaRepository<Player, Integer>, QuerydslPredicateExecutor<Player> { // <테이블 명, PK의 자료형)
     @Query("select p from Player p where p.name = :name order by p.pId desc")
     List<Player> getList(String name);

@@ -19,9 +19,9 @@ public class LeagueController {
   @Autowired
   LeagueRepository leagueRepository;
 
-  @GetMapping({"/overview.do"})
-  public String teamOverview(Model model) {
-    log.info("ClubController.team_overview 호출");
-    return "/datacenter/league_overview.do";
-  }
+//  @GetMapping({"/overview.do"})
+//  public String teamOverview(Model model) {
+//    log.info("ClubController.team_overview 호출");
+//    return "/datacenter/league_overview.do";
+//  }
 }

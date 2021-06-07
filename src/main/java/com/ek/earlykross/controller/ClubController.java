@@ -18,9 +18,9 @@ public class ClubController {
   @Autowired
   ClubRepository clubRepository;
 
-  @GetMapping({"/team_overview.do"})
-  public void teamOverview(Model model) {
-    log.info("ClubController.team_overview 호출");
-//    return "redirect:/club/team_overview.do";
-  }
+//  @GetMapping({"/team_overview.do"})
+//  public void teamOverview(Model model) {
+//    log.info("ClubController.team_overview 호출");
+////    return "redirect:/club/team_overview.do";
+//  }
 }
