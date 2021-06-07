@@ -33,6 +33,8 @@ public class DataCenterController {
 //        return "sample/" + step;
 //    }
 
+
+    // == 리그 =====================================================
     // 리그 정보 페이지
     @GetMapping({"/league.do"})
     public void leagueOverview(Model model) {
@@ -40,10 +42,30 @@ public class DataCenterController {
 //        return "redirect:/league/overview.do";
     }
 
-    //
+    // 리그순위
+    // 선수 개인 시즌 기록
+    // 시즌 선수 기록
+
+   // =============================================================
+    
+    // == 클럽 =====================================================
+    // 클럽 목록
     @GetMapping({"/club.do"})
     public void clubOverview(Model model) {
         log.info("DataCenterController.ClubOverview 호출");
 //        return "redirect:/club/overview.do";
     }
+    // 클럽 로고 목록(a태그 경로)
+    // 얼크위키
+    // 팀내 최다 득점자
+    // 스쿼드(라인업)
+    // 경기 일정
+    // 승점 변화(그래프) or 순위 변화 - 타클럽과 비교
+    
+    // =============================================================
+    
+    // == 선수 =====================================================
+
+    
+    // =============================================================
 }
