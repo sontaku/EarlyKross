@@ -2,6 +2,7 @@ package com.ek.earlykross.controller;
 
 import com.ek.earlykross.repository.ClubRepository;
 import com.ek.earlykross.repository.LeagueRepository;
+import com.ek.earlykross.service.LeagueService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +19,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class DataCenterController {
 
 //    private final DataCenterService service;
+    private final LeagueService service;
 
     @GetMapping("/")
     public String index(){
@@ -30,6 +32,8 @@ public class DataCenterController {
 
     @Autowired
     ClubRepository clubRepository;
+
+    LeagueController leagueController;
 
 //    @GetMapping("{step}.do")
 //    public String viewPage(@PathVariable String step) {
@@ -44,11 +48,15 @@ public class DataCenterController {
     public void leagueOverview(Model model) {
         log.info("DataCenterController.leagueOverview 호출");
 //        return "redirect:/league/overview.do";
+
+//        System.out.println(leagueRanking(model));
+        System.out.println(service.getList());
     }
 
     // 리그순위
-    public void leagueRanking(Model model) {
+    public String leagueRanking(Model model) {
         log.info("DataCenterController.leagueRanking 호출");
+        return "redirect:/league/rank.do";
 //        model.addAttribute("leagueTable", service.getList(pageRequestDTO));
     }
 
