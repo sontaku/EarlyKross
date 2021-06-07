@@ -2,6 +2,27 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
   <div th:replace="/fragments/head_line.html :: head_line">-- thymeleaf head_line --</div>
+  <style>
+    #best{
+      height: 560px;
+      position: relative;
+    }
+    .player_list{
+      max-height: 300px;
+      overflow-y: scroll;
+    }
+    .player{
+      border-bottom: 2px solid black;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .ball{
+      width: 60px;
+      cursor: pointer;
+      text-align: center;
+    }
+  </style>
 </head>
 <body data-template="template-soccer">
 
@@ -26,6 +47,7 @@
     custom_pushy_panel --
   </div>
   <!-- Pushy Panel - Dark / End -->
+
 
   <!-- Page Heading
   ================================================== -->
@@ -81,19 +103,21 @@
 
               <div class="widget__content card__content">
                 <div class="row">
-                  <div class="col-md-7">
-                    <div style="background-image: url('../assets/images/ek_best.png'); height: 560px; position: relative" id="best">
-                      <p>Drag the ball.</p>
-
-                      <img src="https://en.js.cx/clipart/soccer-gate.svg" id="gate" class="droppable">
+                  <div class="col-md-7" style="color: black">
+                    <div style="background-image: url('../assets/images/ek_best.png');" id="best">
+<!--                      <p>Drag the ball.</p>-->
+<!--                      <img src="https://en.js.cx/clipart/soccer-gate.svg" id="gate" class="droppable">-->
 
                     </div>
                   </div>
-                  <div class="col-md-4">
+                  <div class="col-md-5">
                     <div class="form-group">
                       <label class="control-label" for="name">선수 검색</label>
                       <input type="text" class="form-control" id="name" name="name"
                              placeholder="선수 검색...">
+                      <div class="player_list">
+
+                      </div>
                     </div>
                     <div class="form-group">
                       <button id="bp">추가</button>
@@ -370,7 +394,7 @@
     var autocomplete_text = [];
     let count = 0;
     $("#name").keyup(function () {
-
+      $(".player_list").empty();
       var name = $("#name").val();
       var requestDTO = {
         keyword: name
@@ -384,9 +408,11 @@
           console.log(data);
           for (var i of data) {
             console.log(i.cid.name, i.name, i.position);
-            if (autocomplete_text.indexOf(i.pid + i.name) === -1) {
-              autocomplete_text.push(i.pid + i.name);
-            }
+            $(".player_list").append('<div class="player">\n'
+                + '                          <img src="https://portal.kleague.com//common/playerPhotoById.do?playerId='+i.pid+'&recYn=Y&searchYear=2021" style="width: 60px; display: inline; border-radius: 30px;" >\n'
+                + '                          <div class="pname" style="margin-top:25px">'+i.name+'['+i.position+']</div>\n'
+                + '                        <img src="'+i.cid.emblem+'" style="width: 60px; height: 60px; display: inline; " ></div>')
+
             // autocomplete_text[i] = data[i].cid.name +" : " + data[i].name + " : " + data[i].position;
           }
         },
@@ -396,50 +422,64 @@
         }
       });
     })
-    autocomplete_text = ["손흥민","아구에로","펩","메시","이지섭","배신범","리절트","손진영","박진영","손오공","손수건"];
-    $("#name").autocomplete({
-      source: autocomplete_text,
-      select: function (event, ui) {
-        var origEvent = event;
-        while (origEvent.originalEvent !== undefined) {
-          origEvent = origEvent.originalEvent;
-        }
-        //console.info('Event type = ' + origEvent.type);
-        //console.info('ui.item.value = ' + ui.item.value);
-        if (origEvent.type == 'click' && count < 11) {
-          $("#best").append('<div class="ball" style="width:100px; cursor: pointer"><img class="inball" src="https://en.js.cx/clipart/ball.svg">'+ui.item.value+'<div>');
-          count++;
-        }
-      }
-    });
+    // $("#name").autocomplete({
+    //   source: autocomplete_text,
+    //   select: function (event, ui) {
+    //     var origEvent = event;
+    //     while (origEvent.originalEvent !== undefined) {
+    //       origEvent = origEvent.originalEvent;
+    //     }
+    //     //console.info('Event type = ' + origEvent.type);
+    //     //console.info('ui.item.value = ' + ui.item.value);
+    //     if (origEvent.type == 'click' && count < 11) {
+    //       $("#best").append('<div class="ball" style="width:100px; cursor: pointer"><img class="inball" src="../assets/images/player_default.png" style="width: 60px">'+ui.item.value+'<div>');
+    //       count++;
+    //     }
+    //   }
+    // });
 
 
     $(document).on("mousedown","div[class='ball']",function (e){
       $(this).draggable();
       console.log($(this).position().left)
-      // if($(this).offsetLeft<-70px)
     });
 
     $(document).on("mousemove","img[class='inball']",function (e){
       // $(this).draggable();
-      // console.log($(this).parent("div").position().left)
-      if($(this).parent("div").position().left<-75){
+      let par = $(this).parent("div").position();
+      if(par.left<-75||par.left>410 || par.top<-100 || par.top>530){
         $(this).parent("div").fadeOut(300, function() { $(this).remove(); });
+        count--;
       }
-
     });
-    $("#gate").droppable({
-      drop:function (e,ui){
-        $(this).html("들어왔음");
-    }
+
+    $(".player_list").on("click","div[class='player']",function (){
+      if(count<=11) {
+        $(".player_list").empty()
+        $("#name").text("")
+        let pid = $(this).children("img").attr("src");
+        let name = $(this).children("div.pname").text()
+        console.log(pid);
+        $("#best").append('<div class="ball"><img class="inball" src=' + pid
+            + ' style="width: 60px; display:block;">' + name + '</div>');
+        count++;
+      }
     })
-
-
-
-
-
-
-
+    $("#bp").click(function (){
+      let player = $("#best").text().trim().split("]")
+      let all = $("#best").html();
+      console.log(all);
+      // console.log(player);
+      let best = [];
+      for(i of player){
+        let p = i.split("[");
+        let name = p[0];
+        let pos = p[1];
+        let pp =[name,pos];
+        best.push(pp);
+      }
+      // console.log(best);
+    })
   })
 </script>
 </html>
