@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
 	<div th:replace="/fragments/head_line.html :: head_line">-- thymeleaf head_line --</div>
 </head>
@@ -51,9 +51,23 @@
 					<li class="content-filter__item"><a th:href="@{league_overview.do}" class="content-filter__link"><small>LEAGUE OVERVIEW</small>리그 정보</a></li>
 					<li class="content-filter__item content-filter__item--active"><a th:href="@{team_overview.do}" class="content-filter__link"><small>CLUB INFO</small>K리그 구단</a></li>
 					<li class="content-filter__item "><a href="_soccer_team-standings.html" class="content-filter__link"><small>PLYAER INFO</small>선수 기록</a></li>
-					<li class="content-filter__item "><a href="_soccer_team-last-results.html" class="content-filter__link"><small>The Team</small>Latest Results</a></li>
-					<li class="content-filter__item "><a href="_soccer_team-schedule.html" class="content-filter__link"><small>The Team</small>Schedule</a></li>
-					<li class="content-filter__item "><a href="_soccer_team-gallery.html" class="content-filter__link"><small>The Team</small>Gallery</a></li>
+<!--					<li class="content-filter__item "><a href="_soccer_team-last-results.html" class="content-filter__link"><small>The Team</small>Latest Results</a></li>-->
+<!--					<li class="content-filter__item "><a href="_soccer_team-schedule.html" class="content-filter__link"><small>The Team</small>Schedule</a></li>-->
+<!--					<li class="content-filter__item "><a href="_soccer_team-gallery.html" class="content-filter__link"><small>The Team</small>Gallery</a></li>-->
+				</ul>
+			</div>
+		</nav>
+		<!-- Team Pages Filter / End -->
+
+		<!-- Team Pages Filter -->
+		<!-- 구단 엠블럼 목록 -->
+		<!-- 활성화시 아래와 같이 클래스 구성 -->
+		<!-- <li class="content-filter__item content-filter__item--active"> -->
+		<nav class="content-filter">
+			<div class="container">
+				<a href="#" class="content-filter__toggle"></a>
+				<ul class="content-filter__list">
+					<li th:each="num: ${#numbers.sequence(1,12)}" class="content-filter__item"><a href="https://www.fcseoul.com/" class="content-filter__link"><img src="https://ww.namu.la/s/bd31122154e5f8010694e83df2e985bb9340e030f0e161275c4812ddd46d1191df6c52d29881e0ec17c111e16092054100b2a997d942a41c8ce6df7201ce66dbc2314f5e4043d45f62b02a355d88513623adc95317ebf25c8f5858b2ee2e477e0a4bc0a9b47185456bfa79a47bcdaf3c"></a></li>
 				</ul>
 			</div>
 		</nav>
@@ -767,7 +781,7 @@
 										</tr>
 										<tr>
 											<td>엠블럼</td>
-											<td><img style="width: 25%; height: 25%" src="https://ww.namu.la/s/bd31122154e5f8010694e83df2e985bb9340e030f0e161275c4812ddd46d1191df6c52d29881e0ec17c111e16092054100b2a997d942a41c8ce6df7201ce66dbc2314f5e4043d45f62b02a355d88513623adc95317ebf25c8f5858b2ee2e477e0a4bc0a9b47185456bfa79a47bcdaf3c" alt=""></td>
+											<td style="width: 10%;"><img src="https://ww.namu.la/s/bd31122154e5f8010694e83df2e985bb9340e030f0e161275c4812ddd46d1191df6c52d29881e0ec17c111e16092054100b2a997d942a41c8ce6df7201ce66dbc2314f5e4043d45f62b02a355d88513623adc95317ebf25c8f5858b2ee2e477e0a4bc0a9b47185456bfa79a47bcdaf3c" alt=""></td>
 										</tr>
 										</tbody>
 									</table>
@@ -1146,5 +1160,9 @@
 
 	<!-- Javascript Files	================================================== -->
 	<div th:replace="/fragments/script_line.html :: script_line">-- thymeleaf script_line --</div>
+	<script>
+		// 활성화된 클래스 add / remove 추가
+		// content-filter__item
+	</script>
 </body>
 </html>
