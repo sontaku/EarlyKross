@@ -86,10 +86,10 @@
           clearInterval(frame)
           //유저 정보 저장
           user = JSON.parse(userinfoElem.value)
-
+          console.log(user.profile);
           //필요하면 백엔드로 유저정보 보내서 토큰 만들고 쿠키에 저장하기
 
-          axios.post('backend_url',{user:user},{withCredentials:true})
+          axios.post('backend_url',null,{param:{user:userinfoElem.value,withCredentials:true}})
             .then(res =>{
               console.log(`${user.username}로그인 성공`)
             })
