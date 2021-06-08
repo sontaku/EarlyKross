@@ -65,8 +65,19 @@ public class DataCenterController {
   // == 클럽 =====================================================
   // 클럽 목록
   @GetMapping({"/club.do"})
-  public void clubOverview(Model model) {
+  public void clubOverview(Model model, String cId) {
     log.info("DataCenterController.ClubOverview 호출");
+
+    if(cId == null) {
+      cId = "1";
+    }
+
+    // 구단 로고
+    model.addAttribute("cId", cId);
+
+    // repository
+
+
 //        return "redirect:/club/overview.do";
   }
   // 클럽 로고 목록(a태그 경로)
