@@ -1,13 +1,9 @@
 package com.ek.earlykross.service;
 
-import com.ek.earlykross.entity.Memo;
 import com.ek.earlykross.entity.Player;
-import com.ek.earlykross.vo.MemoDTO;
 import com.ek.earlykross.vo.PageRequestDTO;
 import com.ek.earlykross.vo.PageResultDTO;
 import com.ek.earlykross.vo.PlayerDTO;
-
-import java.util.HashMap;
 
 public interface BestService {
 
@@ -60,4 +56,6 @@ public interface BestService {
                 .build();
         return dto;
     }
+
+  int selectPidByPlayer(PlayerDTO playerDTO);
 }

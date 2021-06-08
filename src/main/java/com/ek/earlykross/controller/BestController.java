@@ -87,9 +87,15 @@ public class BestController {
     }
     @PostMapping("savePlayer.do")
     @ResponseBody
-    public String save(ArrayList<String[]> players, String formationText){
-
-        System.out.println(players.toString());
+    public String save(String players, String formationText){
+        String[] arr = players.split("]");
+        for(int i = 0; i<arr.length-1;i++){
+            String[] player = arr[i].split("\\[");
+            PlayerDTO playerDTO = new PlayerDTO();
+            playerDTO.setName(player[0]);
+            playerDTO.setPosition(player[1]);
+            service.selectPidByPlayer(playerDTO);// 20210274
+        }
         System.out.println(formationText);
         return "성공";
     }

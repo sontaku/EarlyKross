@@ -466,26 +466,28 @@
       }
     })
     $("#bp").click(function (){
-      let player = $("#best").text().trim().split("]")
+      // let player = $("#best").text().trim().split("]")
+      let player = $("#best").text().trim()
       let all = $("#best").html();
-      console.log(all);
-      // console.log(player);
-      let best = [];
-      for(i of player){
-        let p = i.split("[");
-        let name = p[0];
-        let pos = p[1];
-        let pp =[name,pos];
-        if(name==""){
-          break;
-        }
-        best.push(pp);
-      }
-      console.log(best)
+      // console.log(all);
+      // // console.log(player);
+      // let best = "";
+      // for(i of player){
+      //   let p = i.split("[");
+      //   let name = p[0];
+      //   let pos = p[1];
+      //   let pp =[name,pos];
+      //   if(name==""){
+      //     break;
+      //   }
+      //   best+=pp;
+      // }
+      // console.log(best)
+      console.log(player)
       $.ajax({
         url:"/best11/savePlayer.do",
         data:{
-          "players":best,
+          "players":player,
           "formationText":all
         },
         type:"post",

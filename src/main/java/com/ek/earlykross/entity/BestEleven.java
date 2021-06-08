@@ -83,8 +83,8 @@ public class BestEleven implements Serializable {
     private Player p10; // 선수10
 
     @ManyToOne
-    @JoinColumn(name = "gk", nullable = false)
-    private Player gk; // 선수 : 골키퍼
+    @JoinColumn(name = "p11", nullable = false)
+    private Player p11; // 선수 : 골키퍼
 
     @Column(columnDefinition = "varchar(10)")
     private String formation; // 포메이션
