@@ -23,24 +23,22 @@ import lombok.ToString;
 @NoArgsConstructor
 public class Member {
 
-    @Id // PK 지정
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // 자동 생성번호
-    private int mId; // 회원번호
+    @Id
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    private Long id;
 
-    @Column(columnDefinition = "varchar(30)")
-    private String email; // 이메일
+    @Column(length = 30, nullable = false)
+    private String email;
 
-    @Column(columnDefinition = "varchar(30)")
-    private String pw; // 비밀번호
+    @Column(length = 100, nullable = false)
+    private String password;
 
-    @Column(columnDefinition = "varchar(30)")
-    private String nickname; // 닉네임
-
-    @Column
-    private int point; // 포인트
-
-    @Column(nullable = false)
-    private int auth; // 회원등급
+    @Builder
+    public Member(Long id, String email, String password) {
+        this.id = id;
+        this.email = email;
+        this.password = password;
+    }
 
     @Column
     private int blacklist; // 블랙리스트 0:기본, 1:블랙리스트
