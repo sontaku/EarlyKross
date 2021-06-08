@@ -68,7 +68,7 @@
 
     <!-- 사용자 정보를 저장하고, 필요시에 백엔드로 보내 토큰을 만들고 쿠키에 저장 -->
     <script>
-      let user
+      let user="";
       let userinfoElem = document.querySelector("#userinfo") //유저 정보가 들어있는 input 엘리먼트
       //1초마다 유저정보가 있는지 체크하기
       let frame = setInterval(function (){
@@ -89,7 +89,9 @@
 
           //필요하면 백엔드로 유저정보 보내서 토큰 만들고 쿠키에 저장하기
 
-          axios.post('backend_url',{user:user},{withCredentials:true})
+          console.log(user)
+          //withCredentials:true
+          axios.post('backend_url',{user:user})
             .then(res =>{
               console.log(`${user.username}로그인 성공`)
             })
