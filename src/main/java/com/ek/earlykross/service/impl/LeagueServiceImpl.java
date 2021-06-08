@@ -39,14 +39,13 @@ public class LeagueServiceImpl implements LeagueService {
     @Override
     public List<LeagueDTO> getList() {
         // JPA 로 DB 탐색
-        List<League> leagueTable = repository.findAll();
+        List<League> leagueTable = repository.findAllByLeagueEqualsOrderByRankAsc("kleague");
 
 //        // Entity To DTO
         Function<League, LeagueDTO> fn = (entity -> entityToDto(entity));
 
         List<LeagueDTO> leagueDTO = leagueTable.stream().map(fn).collect(Collectors.toList());
 
-//        return !leagueTable.isEmpty() ? entityToDto(leagueTable):null;
         return leagueDTO;
     }
 
