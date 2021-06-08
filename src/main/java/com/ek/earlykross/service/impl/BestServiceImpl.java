@@ -3,6 +3,7 @@ package com.ek.earlykross.service.impl;
 import com.ek.earlykross.entity.Player;
 import com.ek.earlykross.entity.QPlayer;
 import com.ek.earlykross.repository.BestRepository;
+import com.ek.earlykross.repository.PlayerRepository;
 import com.ek.earlykross.service.BestService;
 import com.ek.earlykross.vo.PageRequestDTO;
 import com.ek.earlykross.vo.PageResultDTO;
@@ -25,7 +26,8 @@ import java.util.function.Function;
 @RequiredArgsConstructor
 public class BestServiceImpl implements BestService {
 
-    private final BestRepository repository; // 반드시 파이널
+    private final PlayerRepository repository; // 반드시 파이널
+    private final BestRepository bestRepository; // 반드시 파이널
 
     @Override
     public PageResultDTO<PlayerDTO, Player> serach(PageRequestDTO requestDTO) {
@@ -45,6 +47,15 @@ public class BestServiceImpl implements BestService {
 //
         return new PageResultDTO<>(result, fn);
 //        return null;
+    }
+
+    @Override
+    public int selectPidByPlayer(PlayerDTO playerDTO) {
+        Player player = dtoToEntity(playerDTO);
+        Player result = repository.findPlayerByNameEqualsAndPositionEquals(player.getName(),player.getPosition());
+        PlayerDTO playerDTO1 = entityToDto(result);
+        return playerDTO1.getPId();
+//        return result.isPresent() ? entityToDto(result.get()):null;
     }
 
     // Querydsl 처리

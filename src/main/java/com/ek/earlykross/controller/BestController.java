@@ -6,6 +6,7 @@ import com.ek.earlykross.service.BestService;
 import com.ek.earlykross.vo.PageRequestDTO;
 import com.ek.earlykross.vo.PageResultDTO;
 import com.ek.earlykross.vo.PlayerDTO;
+import java.util.ArrayList;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +15,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.HashMap;
@@ -82,6 +84,20 @@ public class BestController {
         PageResultDTO<PlayerDTO, Player> dto = service.serach(requestDTO);
 //        System.out.println(dto.getDtoList().get());
         return dto.getDtoList();
+    }
+    @PostMapping("savePlayer.do")
+    @ResponseBody
+    public String save(String players, String formationText){
+        String[] arr = players.split("]");
+        for(int i = 0; i<arr.length-1;i++){
+            String[] player = arr[i].split("\\[");
+            PlayerDTO playerDTO = new PlayerDTO();
+            playerDTO.setName(player[0]);
+            playerDTO.setPosition(player[1]);
+            service.selectPidByPlayer(playerDTO);// 20210274
+        }
+        System.out.println(formationText);
+        return "성공";
     }
 
 }
