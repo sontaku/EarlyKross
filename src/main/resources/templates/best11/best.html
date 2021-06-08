@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <div th:replace="/fragments/head_line.html :: head_line">-- thymeleaf head_line --</div>
+  <style>
+    #best{
+      height: 560px;
+      position: relative;
+    }
+    .player_list{
+      max-height: 300px;
+      overflow-y: scroll;
+    }
+    .player{
+      border-bottom: 2px solid black;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .ball{
+      width: 60px;
+      cursor: pointer;
+      text-align: center;
+    }
+  </style>
+</head>
+<body data-template="template-soccer">
+
+<div class="site-wrapper clearfix">
+  <div class="site-overlay"></div>
+
+  <!-- Header ================================================== -->
+
+  <!-- Header Mobile -->
+  <div th:replace="/fragments/header_mobile.html :: header_mobile">-- thymeleaf header_mobile --
+  </div>
+  <!-- Header Desktop -->
+  <header class="header header--layout-1">
+    <div th:replace="/fragments/header_desktop.html :: header_desktop">-- thymeleaf header_desktop
+      --
+    </div>
+  </header>
+  <!-- Header / End -->
+
+  <!-- Pushy Panel - Dark -->
+  <div th:replace="/fragments/custom_pushy_panel.html :: custom_pushy_panel">-- thymeleaf
+    custom_pushy_panel --
+  </div>
+  <!-- Pushy Panel - Dark / End -->
+
+
+  <!-- Page Heading
+  ================================================== -->
+  <div class="page-heading">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 offset-md-1">
+          <h1 class="page-heading__title">Over<span class="highlight">View</span></h1>
+          <ol class="page-heading__breadcrumb breadcrumb">
+            <li class="breadcrumb-item"><a href="_soccer_index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="_soccer_team-overview.html">Team</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Overview</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Page Heading / End -->
+
+
+  <!-- Team Pages Filter -->
+  <!--		<nav class="content-filter">-->
+  <!--			<div class="container">-->
+  <!--				<a href="#" class="content-filter__toggle"></a>-->
+  <!--				<ul class="content-filter__list">-->
+  <!--					<li class="content-filter__item content-filter__item&#45;&#45;active"><a th:href="@{team_overview.do}" class="content-filter__link"><small>The Team</small>Overview</a></li>-->
+  <!--					<li class="content-filter__item "><a href="_soccer_team-roster.html" class="content-filter__link"><small>The Team</small>Roster</a></li>-->
+  <!--					<li class="content-filter__item "><a href="_soccer_team-standings.html" class="content-filter__link"><small>The Team</small>Standings</a></li>-->
+  <!--					<li class="content-filter__item "><a href="_soccer_team-last-results.html" class="content-filter__link"><small>The Team</small>Latest Results</a></li>-->
+  <!--					<li class="content-filter__item "><a href="_soccer_team-schedule.html" class="content-filter__link"><small>The Team</small>Schedule</a></li>-->
+  <!--					<li class="content-filter__item "><a href="_soccer_team-gallery.html" class="content-filter__link"><small>The Team</small>Gallery</a></li>-->
+  <!--				</ul>-->
+  <!--			</div>-->
+  <!--		</nav>-->
+  <!-- Team Pages Filter / End -->
+
+  <!-- Content
+  ================================================== -->
+  <div class="site-content">
+    <div class="container">
+
+      <div class="row">
+
+        <!-- Content -->
+        <div class="content col-lg-9">
+
+          <!-- Game Scoreboard -->
+          <div class="card">
+            <header class="card__header card__header--has-btn">
+              <h4>나의 BEST 11</h4>
+            </header>
+            <div class="card__content">
+
+              <div class="widget__content card__content">
+                <div class="row">
+                  <div class="col-md-7" style="color: black">
+                    <div style="background-image: url('../assets/images/ek_best.png');" id="best">
+<!--                      <p>Drag the ball.</p>-->
+<!--                      <img src="https://en.js.cx/clipart/soccer-gate.svg" id="gate" class="droppable">-->
+
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <div class="form-group">
+                      <label class="control-label" for="name">선수 검색</label>
+                      <input type="text" class="form-control" id="name" name="name"
+                             placeholder="선수 검색...">
+                      <div class="player_list">
+
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <button id="bp">추가</button>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+
+
+            </div>
+          </div>
+          <!-- Game Scoreboard / End -->
+
+          <!-- Team Roster: Table -->
+          <div class="card card--has-table">
+            <div class="card__header card__header--has-btn">
+              <h4>2021 시즌 라운드 별 BEST 11</h4>
+              <a href="_soccer_team-roster.html"
+                 class="btn btn-default btn-outline btn-xs card-header__button">라운드</a>
+            </div>
+            <div class="card__content">
+
+              <div class="widget__content card__content">
+
+                <div class="alc-formation">
+                  <ul class="alc-formation__field alc-formation__field--bg-2 alc-formation__field--lineup-1">
+                    <li class="alc-formation__player">
+                      <div class="alc-formation__player-tshirt alc-formation__player-tshirt--clean">
+                        <div class="alc-formation__player-number">01</div>
+                      </div>
+                      <span class="alc-formation__player-name">Rodgers</span>
+                    </li>
+                    <li class="alc-formation__player">
+                      <div class="alc-formation__player-tshirt ">
+                        <div class="alc-formation__player-number">04</div>
+                      </div>
+                      <span class="alc-formation__player-name">Ironson</span>
+                    </li>
+                    <li class="alc-formation__player">
+                      <div class="alc-formation__player-tshirt ">
+                        <div class="alc-formation__player-number">03</div>
+                      </div>
+                      <span class="alc-formation__player-name">Kingster</span>
+                    </li>
+                    <li class="alc-formation__player">
+                      <div class="alc-formation__player-tshirt ">
+                        <div class="alc-formation__player-number">22</div>
+                      </div>
+                      <span class="alc-formation__player-name">Girobilli</span>
+                    </li>
+                    <li class="alc-formation__player">
+                      <div class="alc-formation__player-tshirt ">
+                        <div class="alc-formation__player-number">05</div>
+                      </div>
+                      <span class="alc-formation__player-name">Black</span>
+                    </li>
+                    <li class="alc-formation__player">
+                      <div class="alc-formation__player-tshirt ">
+                        <div class="alc-formation__player-number">02</div>
+                      </div>
+                      <span class="alc-formation__player-name">Arrowhead</span>
+                    </li>
+                    <li class="alc-formation__player">
+                      <div class="alc-formation__player-tshirt ">
+                        <div class="alc-formation__player-number">08</div>
+                      </div>
+                      <span class="alc-formation__player-name">Grass</span>
+                    </li>
+                    <li class="alc-formation__player">
+                      <div class="alc-formation__player-tshirt ">
+                        <div class="alc-formation__player-number">26</div>
+                      </div>
+                      <span class="alc-formation__player-name">Peterson</span>
+                    </li>
+                    <li class="alc-formation__player">
+                      <div class="alc-formation__player-tshirt ">
+                        <div class="alc-formation__player-number">07</div>
+                      </div>
+                      <span class="alc-formation__player-name">Messinal</span>
+                    </li>
+                    <li class="alc-formation__player">
+                      <div class="alc-formation__player-tshirt ">
+                        <div class="alc-formation__player-number">18</div>
+                      </div>
+                      <span class="alc-formation__player-name">Hawkins</span>
+                    </li>
+                    <li class="alc-formation__player">
+                      <div class="alc-formation__player-tshirt ">
+                        <div class="alc-formation__player-number">09</div>
+                      </div>
+                      <span class="alc-formation__player-name">Stevens</span>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Content / End -->
+        <!-- Widget: Lineup -->
+        <!--        <div class="widget card widget&#45;&#45;sidebar widget-lineup">-->
+        <!--          <div class="widget__title card__header">-->
+        <!--            <h4>Alchemists Tactic</h4>-->
+        <!--          </div>-->
+        <!--          <div class="widget__content card__content">-->
+
+        <!--            <div class="alc-formation">-->
+        <!--              <ul class="alc-formation__field alc-formation__field&#45;&#45;bg-2 alc-formation__field&#45;&#45;lineup-1">-->
+        <!--                <li class="alc-formation__player">-->
+        <!--                  <div class="alc-formation__player-tshirt alc-formation__player-tshirt&#45;&#45;clean">-->
+        <!--                    <div class="alc-formation__player-number">01</div>-->
+        <!--                  </div>-->
+        <!--                  <span class="alc-formation__player-name">Rodgers</span>-->
+        <!--                </li>-->
+        <!--                <li class="alc-formation__player">-->
+        <!--                  <div class="alc-formation__player-tshirt ">-->
+        <!--                    <div class="alc-formation__player-number">04</div>-->
+        <!--                  </div>-->
+        <!--                  <span class="alc-formation__player-name">Ironson</span>-->
+        <!--                </li>-->
+        <!--                <li class="alc-formation__player">-->
+        <!--                  <div class="alc-formation__player-tshirt ">-->
+        <!--                    <div class="alc-formation__player-number">03</div>-->
+        <!--                  </div>-->
+        <!--                  <span class="alc-formation__player-name">Kingster</span>-->
+        <!--                </li>-->
+        <!--                <li class="alc-formation__player">-->
+        <!--                  <div class="alc-formation__player-tshirt ">-->
+        <!--                    <div class="alc-formation__player-number">22</div>-->
+        <!--                  </div>-->
+        <!--                  <span class="alc-formation__player-name">Girobilli</span>-->
+        <!--                </li>-->
+        <!--                <li class="alc-formation__player">-->
+        <!--                  <div class="alc-formation__player-tshirt ">-->
+        <!--                    <div class="alc-formation__player-number">05</div>-->
+        <!--                  </div>-->
+        <!--                  <span class="alc-formation__player-name">Black</span>-->
+        <!--                </li>-->
+        <!--                <li class="alc-formation__player">-->
+        <!--                  <div class="alc-formation__player-tshirt ">-->
+        <!--                    <div class="alc-formation__player-number">02</div>-->
+        <!--                  </div>-->
+        <!--                  <span class="alc-formation__player-name">Arrowhead</span>-->
+        <!--                </li>-->
+        <!--                <li class="alc-formation__player">-->
+        <!--                  <div class="alc-formation__player-tshirt ">-->
+        <!--                    <div class="alc-formation__player-number">08</div>-->
+        <!--                  </div>-->
+        <!--                  <span class="alc-formation__player-name">Grass</span>-->
+        <!--                </li>-->
+        <!--                <li class="alc-formation__player">-->
+        <!--                  <div class="alc-formation__player-tshirt ">-->
+        <!--                    <div class="alc-formation__player-number">26</div>-->
+        <!--                  </div>-->
+        <!--                  <span class="alc-formation__player-name">Peterson</span>-->
+        <!--                </li>-->
+        <!--                <li class="alc-formation__player">-->
+        <!--                  <div class="alc-formation__player-tshirt ">-->
+        <!--                    <div class="alc-formation__player-number">07</div>-->
+        <!--                  </div>-->
+        <!--                  <span class="alc-formation__player-name">Messinal</span>-->
+        <!--                </li>-->
+        <!--                <li class="alc-formation__player">-->
+        <!--                  <div class="alc-formation__player-tshirt ">-->
+        <!--                    <div class="alc-formation__player-number">18</div>-->
+        <!--                  </div>-->
+        <!--                  <span class="alc-formation__player-name">Hawkins</span>-->
+        <!--                </li>-->
+        <!--                <li class="alc-formation__player">-->
+        <!--                  <div class="alc-formation__player-tshirt ">-->
+        <!--                    <div class="alc-formation__player-number">09</div>-->
+        <!--                  </div>-->
+        <!--                  <span class="alc-formation__player-name">Stevens</span>-->
+        <!--                </li>-->
+        <!--              </ul>-->
+        <!--            </div>-->
+
+        <!--          </div>-->
+        <!--        </div>-->
+        <!-- Widget: Lineup / End -->
+
+
+        <!-- Sidebar -->
+        <div class="sidebar col-lg-3">
+
+          <!-- Widget: Team Newslog -->
+          <aside class="widget card widget--sidebar widget-newslog">
+            <div class="widget__title card__header">
+              <h4>이번 라운드 BEST 11은?</h4>
+            </div>
+            <div class="widget__content card__content">
+              <ul class="newslog">
+
+                <li class="newslog__item newslog__item--injury">
+                  <div class="newslog__item-inner">
+                    <div class="newslog__content"><strong>Mark Johnson</strong> has a tibia fracture
+                      and he’s gonna be out of the play for <strong>2 months</strong>.
+                    </div>
+                    <time class="newslog__date" datetime="2016-01-19">September 18, 2016</time>
+                  </div>
+                </li>
+                <li class="newslog__item newslog__item--join">
+                  <div class="newslog__item-inner">
+                    <div class="newslog__content"><strong>Dominick R. Blink</strong>, a new <strong>Shooting
+                      Guard</strong> from San Francisco has joined the team!.
+                    </div>
+                    <time class="newslog__date" datetime="2016-01-19">September 6, 2016</time>
+                  </div>
+                </li>
+                <li class="newslog__item newslog__item--join">
+                  <div class="newslog__item-inner">
+                    <div class="newslog__content"><strong>Christopher Grifin</strong>, a new
+                      <strong>Power Forward</strong> from Rockstar Bay College has joined the team!.
+                    </div>
+                    <time class="newslog__date" datetime="2016-01-19">August 24, 2016</time>
+                  </div>
+                </li>
+                <li class="newslog__item newslog__item--injury">
+                  <div class="newslog__item-inner">
+                    <div class="newslog__content"><strong>Thomas Durry</strong> has a composed hand
+                      fracture and he won’t be playing untill <strong>September</strong>.
+                    </div>
+                    <time class="newslog__date" datetime="2016-01-19">August 17, 2016</time>
+                  </div>
+                </li>
+                <li class="newslog__item newslog__item--exit">
+                  <div class="newslog__item-inner">
+                    <div class="newslog__content"><strong>Jeremy Rittersen</strong> left the team
+                      after 2 year in the club and his new house are the <strong>Clovers</strong>.
+                    </div>
+                    <time class="newslog__date" datetime="2016-01-19">August 12, 2016</time>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+          </aside>
+          <!-- Widget: Team Newslog / End -->
+
+        </div>
+        <!-- Sidebar / End -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Content / End -->
+
+
+  <!-- Footer ================================================== -->
+  <footer id="footer" class="footer">
+    <!-- Footer Widgets -->
+    <div th:replace="/fragments/footer_custom.html :: footer_custom">-- thymeleaf footer_custom --
+    </div>
+    <!-- Footer Secondary / End -->
+  </footer>
+  <!-- Footer / End -->
+
+
+  <!-- Login/Register Tabs Modal -->
+  <div th:replace="/fragments/login_register.html :: login_register">-- thymeleaf login_register
+    --
+  </div>
+  <!-- Login/Register Tabs Modal / End -->
+
+</div>
+<div th:replace="/fragments/script_line.html :: script_line">-- thymeleaf script_line --</div>
+</body>
+
+<script>
+  $(function () {
+    var autocomplete_text = [];
+    let count = 0;
+    $("#name").keyup(function () {
+      $(".player_list").empty();
+      var name = $("#name").val();
+      var requestDTO = {
+        keyword: name
+      };
+      $.ajax({
+        url: "/best11/searchPlayer.do",
+        data: requestDTO,
+        // contentType:"appl"
+        type: "post",
+        success: function (data) {
+          console.log(data);
+          for (var i of data) {
+            console.log(i.cid.name, i.name, i.position);
+            $(".player_list").append('<div class="player">\n'
+                + '                          <img src="https://portal.kleague.com//common/playerPhotoById.do?playerId='+i.pid+'&recYn=Y&searchYear=2021" style="width: 60px; display: inline; border-radius: 30px;" >\n'
+                + '                          <div class="pname" style="margin-top:25px">'+i.name+'['+i.position+']</div>\n'
+                + '                        <img src="'+i.cid.emblem+'" style="width: 60px; height: 60px; display: inline; " ></div>')
+
+            // autocomplete_text[i] = data[i].cid.name +" : " + data[i].name + " : " + data[i].position;
+          }
+        },
+        error: function (e) {
+          alert(name);
+          console.log(e);
+        }
+      });
+    })
+    // $("#name").autocomplete({
+    //   source: autocomplete_text,
+    //   select: function (event, ui) {
+    //     var origEvent = event;
+    //     while (origEvent.originalEvent !== undefined) {
+    //       origEvent = origEvent.originalEvent;
+    //     }
+    //     //console.info('Event type = ' + origEvent.type);
+    //     //console.info('ui.item.value = ' + ui.item.value);
+    //     if (origEvent.type == 'click' && count < 11) {
+    //       $("#best").append('<div class="ball" style="width:100px; cursor: pointer"><img class="inball" src="../assets/images/player_default.png" style="width: 60px">'+ui.item.value+'<div>');
+    //       count++;
+    //     }
+    //   }
+    // });
+
+
+    $(document).on("mousedown","div[class='ball']",function (e){
+      $(this).draggable();
+      console.log($(this).position().left)
+    });
+
+    $(document).on("mousemove","img[class='inball']",function (e){
+      // $(this).draggable();
+      let par = $(this).parent("div").position();
+      if(par.left<-75||par.left>410 || par.top<-100 || par.top>530){
+        $(this).parent("div").fadeOut(300, function() { $(this).remove(); });
+        count--;
+      }
+    });
+
+    $(".player_list").on("click","div[class='player']",function (){
+      if(count<=11) {
+        $(".player_list").empty()
+        $("#name").text("")
+        let pid = $(this).children("img").attr("src");
+        let name = $(this).children("div.pname").text()
+        console.log(pid);
+        $("#best").append('<div class="ball"><img class="inball" src=' + pid
+            + ' style="width: 60px; display:block;">' + name + '</div>');
+        count++;
+      }
+    })
+    $("#bp").click(function (){
+      // let player = $("#best").text().trim().split("]")
+      let player = $("#best").text().trim()
+      let all = $("#best").html();
+      // console.log(all);
+      // // console.log(player);
+      // let best = "";
+      // for(i of player){
+      //   let p = i.split("[");
+      //   let name = p[0];
+      //   let pos = p[1];
+      //   let pp =[name,pos];
+      //   if(name==""){
+      //     break;
+      //   }
+      //   best+=pp;
+      // }
+      // console.log(best)
+      console.log(player)
+      $.ajax({
+        url:"/best11/savePlayer.do",
+        data:{
+          "players":player,
+          "formationText":all
+        },
+        type:"post",
+        success:function (data){
+          console.log(data);
+        },
+        error:function (e){
+          alert(e);
+        }
+      })
+    })
+  })
+</script>
+</html>

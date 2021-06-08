@@ -35,7 +35,7 @@ public class PlayerRecord implements Serializable {
     private Player pId; // 선수번호
 
     @Id
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name = "cId", nullable = false)
     private Club cId; // 클럽번호
 
@@ -46,19 +46,19 @@ public class PlayerRecord implements Serializable {
     @Column
     private int played; // 출장경기수
     @Column
-    private int played_in; // 교체출장
+    private int playedIn; // 교체출장
     @Column
-    private int played_out; // 교체아웃
+    private int playedOut; // 교체아웃
     @Column
-    private int inout_total; // 교체합계
+    private int inoutTotal; // 교체합계
     @Column
-    private int fh_goal; // 전반 골
+    private int fhGoal; // 전반 골
     @Column
-    private int sh_goal; // 후반 골
+    private int shGoal; // 후반 골
     @Column
-    private int ot_goal; // 연장 골
+    private int otGoal; // 연장 골
     @Column
-    private int total_goal; // 합계 골
+    private int totalGoal; // 합계 골
     @Column
     private int assist; // 도움
     @Column
@@ -66,13 +66,29 @@ public class PlayerRecord implements Serializable {
     @Column
     private int ck; // 코너킥
     @Column
-    private int fo; // 파울
+    private int fc; // 파울횟수
+    @Column
+    private int fs; // 파울 당한 횟수
     @Column
     private int os; // 오프사이드
     @Column
     private int st; // 슈팅
     @Column
+    private int sot; // 유효슈팅
+    @Column
+    private int pkGoal; // pk득점
+    @Column
+    private int pkFail; // pk 실축
+    @Column
+    private float pkPer; // pk 성공률
+    @Column
     private int yellow; // 경고
     @Column
     private int red; // 퇴장
+    @Column
+    private int ga; // 실점
+    @Column
+    private int og; // 자책골
+    @Column
+    private float rating; // 평점
 }
