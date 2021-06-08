@@ -1,6 +1,10 @@
 package com.ek.earlykross.controller;
 
 import com.ek.earlykross.repository.ClubRepository;
+import com.ek.earlykross.repository.LeagueRepository;
+import com.ek.earlykross.service.LeagueService;
+import com.ek.earlykross.vo.LeagueDTO;
+import java.util.List;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +21,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class DataCenterController {
 
 //    private final DataCenterService service;
+    private final LeagueService service;
 
     @GetMapping("/")
     public String index(){
@@ -25,7 +30,12 @@ public class DataCenterController {
     }
 
     @Autowired
+    LeagueRepository leagueRepository;
+
+    @Autowired
     ClubRepository clubRepository;
+
+    LeagueController leagueController;
 
 //    @GetMapping("{step}.do")
 //    public String viewPage(@PathVariable String step) {
@@ -38,11 +48,22 @@ public class DataCenterController {
     // 리그 정보 페이지
     @GetMapping({"/league.do"})
     public void leagueOverview(Model model) {
-        log.info("DataCenterController.LeagueOverview 호출");
+        log.info("DataCenterController.leagueOverview 호출");
 //        return "redirect:/league/overview.do";
+
+//        System.out.println(leagueRanking(model));
+//        List<LeagueDTO> leagueRankList = service.getList();
+        model.addAttribute("leagueRankList", service.getList());
+//        return leagueRankList;
     }
 
     // 리그순위
+    public String leagueRanking(Model model) {
+        log.info("DataCenterController.leagueRanking 호출");
+        return "redirect:/league/rank.do";
+//        model.addAttribute("leagueTable", service.getList(pageRequestDTO));
+    }
+
     // 선수 개인 시즌 기록
     // 시즌 선수 기록
 
