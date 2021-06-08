@@ -69,7 +69,7 @@
 					<div class="content col-lg-12">
 						<aside class="widget card widget&#45;&#45;sidebar widget-standings">
 														<div class="widget__title card__header card__header--has-btn">
-															<h4>리그 순위 <span class="highlight">0000</span> 시즌</h4>
+															<h4>리그 순위</h4>
 <!--															<a href="#" class="btn btn-default btn-outline btn-xs card-header__button">See All Stats</a>-->
 														</div>
 														<div class="widget__content card__content">
@@ -90,27 +90,28 @@
 																	</thead>
 																	<tbody>
 
-																		<tr th:each="num: ${#numbers.sequence(1,12)}">
+																		<tr th:each="lrl : ${leagueRankList}">
 																			<td>
 																				<div class="team-meta">
 																					<figure class="team-meta__logo">
 <!--																						<img src="../assets/images/samples/logos/pirates_shield.png" alt="">-->
-																						<img src="https://ww.namu.la/s/bd31122154e5f8010694e83df2e985bb9340e030f0e161275c4812ddd46d1191df6c52d29881e0ec17c111e16092054100b2a997d942a41c8ce6df7201ce66dbc2314f5e4043d45f62b02a355d88513623adc95317ebf25c8f5858b2ee2e477e0a4bc0a9b47185456bfa79a47bcdaf3c" alt="">
+<!--																						<img src="https://ww.namu.la/s/bd31122154e5f8010694e83df2e985bb9340e030f0e161275c4812ddd46d1191df6c52d29881e0ec17c111e16092054100b2a997d942a41c8ce6df7201ce66dbc2314f5e4043d45f62b02a355d88513623adc95317ebf25c8f5858b2ee2e477e0a4bc0a9b47185456bfa79a47bcdaf3c" alt="">-->
+																						<img th:src="${lrl.cId.emblem}">
 																					</figure>
 																					<div class="team-meta__info">
-																						<h6 class="team-meta__name">FC 서울</h6>
-																						<span class="team-meta__place">FC Seoul</span>
+																						<h6 class="team-meta__name" th:text="${lrl.cId.name}"></h6>
+																						<span class="team-meta__place" th:text="${lrl.cId.ename}"></span>
 																					</div>
 																				</div>
 																			</td>
-																			<td>36</td>
-																			<td>14</td>
-																			<td>10</td>
-																			<td>118</td>
-																			<td>118</td>
-																			<td>118</td>
-																			<td>118</td>
-																			<td>118</td>
+																			<td th:text="${lrl.played}"></td>
+																			<td th:text="${lrl.points}"></td>
+																			<td th:text="${lrl.won}"></td>
+																			<td th:text="${lrl.drawn}"></td>
+																			<td th:text="${lrl.lost}"></td>
+																			<td th:text="${lrl.gf}"></td>
+																			<td th:text="${lrl.ga}"></td>
+																			<td th:text="${lrl.gd}"></td>
 																		</tr>
 																	</tbody>
 																</table>
@@ -136,7 +137,7 @@
 																		</tr>
 																	</thead>
 																	<tbody>
-																		<tr th:each="num: ${#numbers.sequence(1,5)}">
+																		<tr th:each="num: ${#numbers.sequence(1,3)}">
 																			<td class="team-leader__player">
 																				<div class="team-leader__player-info">
 																					<figure class="team-leader__player-img team-leader__player-img--sm">

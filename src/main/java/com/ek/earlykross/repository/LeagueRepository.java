@@ -2,6 +2,8 @@ package com.ek.earlykross.repository;
 
 import com.ek.earlykross.entity.Club;
 import com.ek.earlykross.entity.League;
+import com.ek.earlykross.vo.LeagueDTO;
+import com.ek.earlykross.vo.LeagueRankDTO;
 import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
@@ -24,6 +26,5 @@ public interface LeagueRepository extends JpaRepository<League, Long> { // <테�
 //  List<League> getList();
 
   // 리그 순위 - 규정이 적용된 테이블 크롤링시
-  @Query("SELECT l FROM League l WHERE l.league='kleague' ORDER BY l.rank DESC")
-  List<League> getList();
+  List<League> findAllByLeagueEqualsOrderByRankAsc(String leagueName);
 }

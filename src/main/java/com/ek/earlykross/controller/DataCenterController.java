@@ -47,13 +47,14 @@ public class DataCenterController {
     // == 리그 =====================================================
     // 리그 정보 페이지
     @GetMapping({"/league.do"})
-    public List<LeagueDTO> leagueOverview(Model model) {
+    public void leagueOverview(Model model) {
         log.info("DataCenterController.leagueOverview 호출");
 //        return "redirect:/league/overview.do";
 
 //        System.out.println(leagueRanking(model));
-        List<LeagueDTO> dto = service.getList();
-        return dto;
+//        List<LeagueDTO> leagueRankList = service.getList();
+        model.addAttribute("leagueRankList", service.getList());
+//        return leagueRankList;
     }
 
     // 리그순위
