@@ -3,6 +3,8 @@ package com.ek.earlykross.controller;
 import com.ek.earlykross.repository.ClubRepository;
 import com.ek.earlykross.repository.LeagueRepository;
 import com.ek.earlykross.service.LeagueService;
+import com.ek.earlykross.vo.LeagueDTO;
+import java.util.List;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -45,12 +47,13 @@ public class DataCenterController {
     // == 리그 =====================================================
     // 리그 정보 페이지
     @GetMapping({"/league.do"})
-    public void leagueOverview(Model model) {
+    public List<LeagueDTO> leagueOverview(Model model) {
         log.info("DataCenterController.leagueOverview 호출");
 //        return "redirect:/league/overview.do";
 
 //        System.out.println(leagueRanking(model));
-        System.out.println(service.getList());
+        List<LeagueDTO> dto = service.getList();
+        return dto;
     }
 
     // 리그순위
