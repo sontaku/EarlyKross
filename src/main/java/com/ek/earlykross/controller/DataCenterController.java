@@ -20,22 +20,22 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequiredArgsConstructor // 자동 주입 어노테이션
 public class DataCenterController {
 
-//    private final DataCenterService service;
-    private final LeagueService service;
+  //    private final DataCenterService service;
+  private final LeagueService service;
 
-    @GetMapping("/")
-    public String index(){
-        System.out.println("리다이렉트");
-        return "redirect:/datacenter/league_overview.do";
-    }
+  @GetMapping("/")
+  public String index() {
+    System.out.println("리다이렉트");
+    return "redirect:/datacenter/league_overview.do";
+  }
 
-    @Autowired
-    LeagueRepository leagueRepository;
+  @Autowired
+  LeagueRepository leagueRepository;
 
-    @Autowired
-    ClubRepository clubRepository;
+  @Autowired
+  ClubRepository clubRepository;
 
-    LeagueController leagueController;
+//  LeagueController leagueController;
 
 //    @GetMapping("{step}.do")
 //    public String viewPage(@PathVariable String step) {
@@ -44,49 +44,52 @@ public class DataCenterController {
 //    }
 
 
-    // == 리그 =====================================================
-    // 리그 정보 페이지
-    @GetMapping({"/league.do"})
-    public void leagueOverview(Model model) {
-        log.info("DataCenterController.leagueOverview 호출");
-//        return "redirect:/league/overview.do";
-
-//        System.out.println(leagueRanking(model));
-//        List<LeagueDTO> leagueRankList = service.getList();
-        model.addAttribute("leagueRankList", service.getList());
-//        return leagueRankList;
-    }
+  // == 리그 =====================================================
+  // 리그 정보 페이지
+  @GetMapping({"/league.do"})
+  public void leagueOverview(Model model) {
+    log.info("DataCenterController.leagueOverview 호출");
 
     // 리그순위
-    public String leagueRanking(Model model) {
-        log.info("DataCenterController.leagueRanking 호출");
-        return "redirect:/league/rank.do";
-//        model.addAttribute("leagueTable", service.getList(pageRequestDTO));
-    }
+    model.addAttribute("leagueRankList", service.getList());
 
     // 선수 개인 시즌 기록
     // 시즌 선수 기록
+  }
 
-   // =============================================================
-    
-    // == 클럽 =====================================================
-    // 클럽 목록
-    @GetMapping({"/club.do"})
-    public void clubOverview(Model model) {
-        log.info("DataCenterController.ClubOverview 호출");
-//        return "redirect:/club/overview.do";
+
+
+
+  // =============================================================
+
+  // == 클럽 =====================================================
+  // 클럽 목록
+  @GetMapping({"/club.do"})
+  public void clubOverview(Model model, String cId) {
+    log.info("DataCenterController.ClubOverview 호출");
+
+    if(cId == null) {
+      cId = "1";
     }
-    // 클럽 로고 목록(a태그 경로)
-    // 얼크위키
-    // 팀내 최다 득점자
-    // 스쿼드(라인업)
-    // 경기 일정
-    // 승점 변화(그래프) or 순위 변화 - 타클럽과 비교
-    
-    // =============================================================
-    
-    // == 선수 =====================================================
 
-    
-    // =============================================================
+    // 구단 로고
+    model.addAttribute("cId", cId);
+
+    // repository
+
+
+//        return "redirect:/club/overview.do";
+  }
+  // 클럽 로고 목록(a태그 경로)
+  // 얼크위키
+  // 팀내 최다 득점자
+  // 스쿼드(라인업)
+  // 경기 일정
+  // 승점 변화(그래프) or 순위 변화 - 타클럽과 비교
+
+  // =============================================================
+
+  // == 선수 =====================================================
+
+  // =============================================================
 }

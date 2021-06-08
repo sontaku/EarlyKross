@@ -1,13 +1,24 @@
 package com.ek.earlykross.controller;
 
+import com.ek.earlykross.repository.KakaoRepository;
+import com.ek.earlykross.service.KakaoService;
+import java.util.Map;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 @RequestMapping("member")
 public class UserController {
+
+//  @Autowired
+//  KakaoRepository kakaoRepository;
+
 
   @GetMapping("/loginForm")
   public String joinForm(){
@@ -15,12 +26,10 @@ public class UserController {
     return null;
   }
 
-  @RequestMapping("/backend_url")
+  @PostMapping("/backend_url")
   @ResponseBody
-  public String saveUser(String user, boolean withCredentials){
-    System.out.println("로그인 요청");
-    // 유저 데이터를 DB 저장
-
+  public String KakaoSave(String user, boolean withCredentials){
+    System.out.println(user);
 
     return "내가 뷰로 보내는 데이터";
   }
