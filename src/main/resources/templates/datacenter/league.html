@@ -96,7 +96,7 @@
 																					<figure class="team-meta__logo">
 <!--																						<img src="../assets/images/samples/logos/pirates_shield.png" alt="">-->
 <!--																						<img src="https://ww.namu.la/s/bd31122154e5f8010694e83df2e985bb9340e030f0e161275c4812ddd46d1191df6c52d29881e0ec17c111e16092054100b2a997d942a41c8ce6df7201ce66dbc2314f5e4043d45f62b02a355d88513623adc95317ebf25c8f5858b2ee2e477e0a4bc0a9b47185456bfa79a47bcdaf3c" alt="">-->
-																						<img th:src="${lrl.cId.emblem}">
+																						<img th:src="|../upload/emblem/${lrl.cId.cId}.png|">
 																					</figure>
 																					<div class="team-meta__info">
 																						<h6 class="team-meta__name" th:text="${lrl.cId.name}"></h6>
