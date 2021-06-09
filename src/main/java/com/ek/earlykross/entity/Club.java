@@ -39,7 +39,10 @@ public class Club {
     private String founded; // 창단연도
 
     @Column(columnDefinition = "varchar(100)")
-    private String hometown; // 홈 경기장
+    private String hometown; // 연고지
+
+    @Column(columnDefinition = "varchar(100)")
+    private String stadium; // 홈 경기장
 
     @Column(columnDefinition = "varchar(100)")
     private String manager; // 감독
@@ -52,4 +55,7 @@ public class Club {
 
     @Column(columnDefinition = "varchar(500)")
     private String emblem; // 엠블럼
+
+    @Column(columnDefinition = "varchar(30)")
+    private String shortName; // 숏네임
 }
