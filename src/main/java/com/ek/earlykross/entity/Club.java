@@ -52,4 +52,7 @@ public class Club {
 
     @Column(columnDefinition = "varchar(500)")
     private String emblem; // 엠블럼
+    
+    @Column(columnDefinition = "varchar(30)")
+    private String shortName; // 짧은 이름
 }
