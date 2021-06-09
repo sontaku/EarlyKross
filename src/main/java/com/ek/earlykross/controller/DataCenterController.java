@@ -1,10 +1,7 @@
 package com.ek.earlykross.controller;
 
-import com.ek.earlykross.repository.ClubRepository;
 import com.ek.earlykross.repository.LeagueRepository;
-import com.ek.earlykross.service.LeagueService;
-import com.ek.earlykross.vo.LeagueDTO;
-import java.util.List;
+import com.ek.earlykross.service.DataCenterService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +18,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class DataCenterController {
 
   //    private final DataCenterService service;
-  private final LeagueService service;
+  private final DataCenterService service;
 
   @GetMapping("/")
   public String index() {
@@ -32,10 +29,6 @@ public class DataCenterController {
   @Autowired
   LeagueRepository leagueRepository;
 
-  @Autowired
-  ClubRepository clubRepository;
-
-//  LeagueController leagueController;
 
 //    @GetMapping("{step}.do")
 //    public String viewPage(@PathVariable String step) {
@@ -51,7 +44,7 @@ public class DataCenterController {
     log.info("DataCenterController.leagueOverview 호출");
 
     // 리그순위
-    model.addAttribute("leagueRankList", service.getList());
+    model.addAttribute("leagueRankList", service.getLeagueTable());
 
     // 선수 개인 시즌 기록
     // 시즌 선수 기록
@@ -68,12 +61,23 @@ public class DataCenterController {
   public void clubOverview(Model model, String cId) {
     log.info("DataCenterController.ClubOverview 호출");
 
+
+    // 클럽 목록
+//    model.addAttribute("clubList", service.getClubList());
+    model.addAttribute("clubList", service.getLeagueTable());
+
+    // 특정 클럽
     if(cId == null) {
       cId = "1";
     }
+    log.info("구단 페이지 :: 구단번호 : " + cId);
+    
+    // cId로 구단 탐색
+    model.addAttribute("oneClub", service.getClubBycId(Integer.parseInt(cId)));
+    
 
-    // 구단 로고
-    model.addAttribute("cId", cId);
+    // 구단 로고(클럽 목록 받음)
+//    model.addAttribute("cId", cId);
 
     // repository
 
