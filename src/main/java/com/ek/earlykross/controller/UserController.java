@@ -13,18 +13,17 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-@RequestMapping("member")
+//@RequestMapping("member")
+//@RequestMapping("")
 public class UserController {
 
 //  @Autowired
 //  KakaoRepository kakaoRepository;
 
 
-  @GetMapping("/loginForm")
-  public String joinForm(){
-
-    return null;
-  }
+//  @RequestMapping("/loginForm")
+//  public void joinForm(){
+//  }
 
   @PostMapping("/backend_url")
   @ResponseBody
