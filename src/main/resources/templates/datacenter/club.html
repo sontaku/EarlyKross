@@ -29,7 +29,8 @@
 				<div class="row">
 					<div class="col-md-10 offset-md-1">
 <!--						<h1 class="page-heading__title">Over<span class="highlight">View</span></h1>-->
-						<h1 class="page-heading__title"><img id="mainImg" style="width: 50%; height: 50%" th:src="${oneClub.emblem}" alt="">
+<!--						<h1 class="page-heading__title"><img id="mainImg" style="width: 50%; height: 50%" th:src="${oneClub.emblem}" alt="">-->
+						<h1 class="page-heading__title"><img id="mainImg" style="width: 50%; height: 50%" th:src="|../upload/emblem/${oneClub.cId}.png|" alt="">
 						</h1>
 						<ol class="page-heading__breadcrumb breadcrumb" style="font-size: 16px;">
 							<li class="breadcrumb-item"><a href="_soccer_index.html" th:text="${oneClub.name}"></a></li>
@@ -69,7 +70,7 @@
 				<ul id="csUl" class="content-filter__list">
 					<li th:each="cList: ${clubList}" class="content-filter__item" style="width: 100%;">
 						<a th:href="@{/datacenter/club.do(cId=${cList.cId.cId})}" class="content-filter__link" style="padding: 5%; height: 100%; cursor: pointer; display: flex; align-items: center;">
-							<img class="clubEmblemImg" th:src="${cList.cId.emblem}">
+							<img class="clubEmblemImg" th:src="|../upload/emblem/${cList.cId.cId}.png|">
 						</a>
 					</li>
 <!--					<li th:each="cList: ${clubList}" class="content-filter__item content-filter__item&#45;&#45;active">-->
@@ -773,24 +774,24 @@
 										</tr>
 										<tr>
 											<td>연고지</td>
-											<td th:text="${oneClub.}"></td>
+											<td th:text="${oneClub.hometown}"></td>
 										</tr>
 										<tr>
 											<td>홈 경기장</td>
-											<td>서울?</td>
+											<td th:text="${oneClub.stadium}"></td>
 										</tr>
 										<tr>
 											<td>감독</td>
-											<td>Sir. Alex Furguson</td>
+											<td th:text="${oneClub.manager}"></td>
 										</tr>
 										<tr>
 											<td>웹사이트</td>
-											<td><a href="https://www.fcseoul.com/">https://www.fcseoul.com/</a></td>
+											<td><a th:href="${oneClub.website}" th:text="${oneClub.website}"></a></td>
 										</tr>
-										<tr>
-											<td>엠블럼</td>
-											<td style="width: 10%;"><img src="https://ww.namu.la/s/bd31122154e5f8010694e83df2e985bb9340e030f0e161275c4812ddd46d1191df6c52d29881e0ec17c111e16092054100b2a997d942a41c8ce6df7201ce66dbc2314f5e4043d45f62b02a355d88513623adc95317ebf25c8f5858b2ee2e477e0a4bc0a9b47185456bfa79a47bcdaf3c" alt=""></td>
-										</tr>
+<!--										<tr>-->
+<!--											<td>엠블럼</td>-->
+<!--											<td style="width: 10%;"><img th:src="${oneClub.emblem}"></td>-->
+<!--										</tr>-->
 										</tbody>
 									</table>
 								</div>

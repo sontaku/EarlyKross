@@ -26,9 +26,11 @@ public class ClubDTO {
     private String name; // 이름
     private String ename; // 영문명
     private String founded; // 창단연도
-    private String hometown; // 홈 경기장
+    private String hometown; // 연고지
+    private String stadium; // 홈경기장
     private String manager; // 감독
     private String website; // 웹사이트
     private String teamColor; // 상징색
     private String emblem; // 엠블럼
+    private String shortName; // 숏네임
 }
