@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
 <div th:fragment="header_desktop">
 
   <!-- Header Top Bar -->
@@ -32,7 +32,15 @@
               href="_soccer_shop-login.html" id="custom_nav_logout"
               style="color: #F7F7F7">로그아웃</a></li> -->
               <li class="nav-account__item nav-account__item--logout">
-                <a href="../member/loginForm" id="custom_nav_logout" style="color: #F7F7F7">로그인</a>
+<!--                <a href="../member/loginForm" id="custom_nav_logout" style="color: #F7F7F7">로그인</a>-->
+          <li class="nav-account__item nav-account__item--logout">
+<!--            <a href="../login/login" id="custom_nav_logout" style="color: #F7F7F7">로그인</a>-->
+            <a sec:authorize="isAnonymous()" style="color: #F7F7F7" th:href="@{/member/loginForm}">로그인</a>
+            <a sec:authorize="isAuthenticated()" style="color: #F7F7F7" th:href="@{/logout}">로그아웃</a>
+            <!--                <a sec:authorize="isAnonymous()" th:href="@{/user/signup}">회원가입</a>-->
+            <a sec:authorize="hasRole('USER')" style="color: #F7F7F7" th:href="@{/user/info}">내정보</a>
+            <a sec:authorize="hasRole('ADMIN')" style="color: #F7F7F7" th:href="@{/admin}">어드민</a>
+          </li>
               </li>
         </ul>
         <!-- Account Navigation / End -->

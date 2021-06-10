@@ -3,6 +3,7 @@ package com.ek.earlykross.controller;
 import com.ek.earlykross.entity.ClubBoard;
 import com.ek.earlykross.repository.ClubBoardRepository;
 import com.ek.earlykross.repository.MemoRepository;
+import com.ek.earlykross.security.dto.AuthMemberDTO;
 import com.ek.earlykross.service.SampleService;
 import com.ek.earlykross.vo.MemoDTO;
 import com.ek.earlykross.vo.PageRequestDTO;
@@ -13,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -33,6 +35,23 @@ import java.util.stream.IntStream;
 public class SampleController {
 
     private final SampleService service;
+
+    @GetMapping("all")
+    public void exAll(){//로그인 하지 않아도 접근
+        log.info("exAll....");
+    }
+
+    @GetMapping("member")
+    public void exMember(@AuthenticationPrincipal AuthMemberDTO authMemberDTO){//멤버만 접근
+        log.info("exMember....");
+        log.info("-----------------");
+        log.info(authMemberDTO);
+    }
+
+    @GetMapping("admin")
+    public void exAdmin(){//관리자만 접근
+        log.info("exAdmin....");
+    }
 
     @GetMapping("/")
     public String index(){

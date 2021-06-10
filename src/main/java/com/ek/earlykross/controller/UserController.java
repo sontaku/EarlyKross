@@ -20,10 +20,8 @@ public class UserController {
 //  KakaoRepository kakaoRepository;
 
 
-  @GetMapping("/loginForm")
-  public String joinForm(){
-
-    return null;
+  @RequestMapping("/loginForm")
+    public void joinForm(){
   }
 
   @PostMapping("/backend_url")
