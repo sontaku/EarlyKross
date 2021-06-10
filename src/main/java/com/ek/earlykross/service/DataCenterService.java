@@ -48,6 +48,8 @@ public interface DataCenterService {
         .website(entity.getWebsite())
         .teamColor(entity.getTeamColor())
         .emblem(entity.getEmblem())
+        .shortName(entity.getShortName())
+        .stadium(entity.getStadium())
         .build();
     return dto;
   }
