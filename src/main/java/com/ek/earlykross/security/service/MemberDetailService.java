@@ -73,7 +73,7 @@ public class MemberDetailService implements UserDetailsService {
   public Boolean check(String email){
     Optional<Member> result = memberRepository.findByEmail(email, false);
 
-    System.out.println(result.get());
+//    System.out.println(result.get());
     return result.isEmpty();
   }
 }

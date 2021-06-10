@@ -8,6 +8,7 @@ import lombok.extern.log4j.Log4j2;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
@@ -26,10 +27,10 @@ public class MemberController {
 
   @PostMapping("/check")
   @ResponseBody
-  public String check(String email){
-    System.out.println(email);
+  public String check(MemberDTO memberDTO){
+    System.out.println(memberDTO.getEmail());
 
-    Boolean b = service.check(email);
+    Boolean b = service.check(memberDTO.getEmail());
 
     return b ?"사용가능합니다":"중복입니다";
   }

@@ -243,7 +243,7 @@
                 <div class="card__content">
 
                   <!-- Register Form -->
-                  <form action="/signup" method="post">
+                  <form action="/signup" method="post" id="signup">
 
                       <div class="form-group">
                         <label for="email">이메일</label> <button type="button" style="float: right" id="check" class="btn btn-info btn-xs">중복 체크</button>
@@ -301,21 +301,27 @@
   </body>
 <script>
   $(function (){
-
+    let flag = false;
     $("#check").click(function (){
-      let email = $("#email").val();
-      console.log(email);
+      var email = $("#email").val();
+      var memberDTO = {email:email};
       $.ajax({
         url:"/check",
-        data: email,
+        data: memberDTO,
         type:"POST",
         success:function (data){
           $(".checkmark").text(data);
-
+          if(data === "사용가능합니다"){
+            flag = true;
+          }
         },
-        error:function (e){
-          alert(e);
-          console.log(e);
+        error:function(request,status,error){
+          alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+        }
+      })
+      $("#btn-save").click(function (){
+        if(flag){
+          $("#signup").submit();
         }
       })
     })
