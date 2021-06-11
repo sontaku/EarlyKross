@@ -75,8 +75,13 @@
                       [[${fixture.away.shortName}]]
                     </td>
                     <td class="team-schedule__tickets">
-                      <a th:href="@{https://sports.news.naver.com/gameCenter/textRelayFootball.nhn?category=kleague&(gameId=${fixture.fId})}"
-                         class="btn btn-xs btn-default btn-outline btn-block ">
+<!--                      <a th:href="@{https://sports.news.naver.com/gameCenter/textRelayFootball.nhn?category=kleague&(gameId=${fixture.fId})}"-->
+<!--                         class="btn btn-xs btn-default btn-outline btn-block ">-->
+<!--                        전력비교-->
+<!--                      </a>-->
+                      <a th:href="@{http://localhost:3000(fId=${fixture.fId})}"
+                         class="btn btn-xs btn-default btn-outline btn-block" target="_blank">
+<!--                      <a th:href="@{/chat/chat.do(fId=${fixture.fId})}"-->
                         전력비교
                       </a>
                     </td>
