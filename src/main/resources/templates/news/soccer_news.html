@@ -103,7 +103,7 @@
         <div class="content col-md-12">
           <!-- Posts Grid -->
           <div class="posts posts--cards post-grid post-grid--masonry row">
-            <!-- 여기에 추가 -->
+            <!-- News Post -->
             <div class="post-grid__item col-md-6 col-lg-4" th:each="dto : ${result}">
               <div class="posts__item posts__item--card posts__item--category-1 card">
                 <figure class="posts__thumb">
@@ -120,22 +120,17 @@
                 </div>
                 <footer class="posts__footer card__footer">
                   <div class="post-author">
-                    <figure class="post-author__avatar">
-                      <img src="../assets/images/samples/avatar-1.jpg" alt="Post Author Avatar">
+                    <figure class="post-team__avatar">
+                      <img src="../assets/images/samples/avatar-1.jpg" alt="Post Team Avatar">
                     </figure>
-                    <div class="post-author__info">
-                      <h4 class="post-author__name" th:text="${dto.cName}"></h4>
+                    <div class="post-team__info">
+                      <h4 class="post-team__name" th:text="${dto.cName}"></h4>
                     </div>
                   </div>
-                  <ul class="post__meta meta">
-                    <li class="meta__item meta__item--views">2369</li>
-                    <li class="meta__item meta__item--likes"><a href="#"><i
-                        class="meta-like icon-heart"></i> 530</a></li>
-                    <li class="meta__item meta__item--comments"><a href="#">18</a></li>
-                  </ul>
                 </footer>
               </div>
             </div>
+            <!-- News Post / End -->
 
           </div>
           <!-- Post Grid / End -->
