@@ -26,8 +26,7 @@ import lombok.ToString;
 public class Fixture {
 
     @Id // PK 지정
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // 자동 생성번호
-    private int fId; // 경기번호
+    private Long fId; // 경기번호
     
     @ManyToOne
     @JoinColumn(name = "home", nullable = false)
