@@ -35,4 +35,5 @@ public class MemberController {
     return b ?"사용가능합니다":"중복입니다";
   }
 
+
 }
