@@ -312,7 +312,10 @@
         success:function (data){
           $(".checkmark").text(data);
           if(data === "사용가능합니다"){
+            $(".checkmark").css("color","green");
             flag = true;
+          }else{
+            $(".checkmark").css("color","red");
           }
         },
         error:function(request,status,error){
