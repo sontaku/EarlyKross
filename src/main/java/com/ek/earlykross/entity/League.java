@@ -66,4 +66,10 @@ public class League implements Serializable {
 
     @Column
     private int fo; // 파울
+
+    @Column
+    private int rank; // 순위
+
+    @Column(columnDefinition = "varchar(30)", nullable = false)
+    private String league; // 리그 구분
 }
