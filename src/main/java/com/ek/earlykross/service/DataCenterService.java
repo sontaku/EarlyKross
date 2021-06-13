@@ -2,9 +2,11 @@ package com.ek.earlykross.service;
 
 import com.ek.earlykross.entity.Club;
 import com.ek.earlykross.entity.League;
+import com.ek.earlykross.entity.Player;
 import com.ek.earlykross.entity.PlayerRecord;
 import com.ek.earlykross.vo.ClubDTO;
 import com.ek.earlykross.vo.LeagueDTO;
+import com.ek.earlykross.vo.PlayerDTO;
 import com.ek.earlykross.vo.PlayerRecordDTO;
 import java.util.List;
 
@@ -13,6 +15,26 @@ public interface DataCenterService {
   // 리그 순위 테이블
   List<LeagueDTO> getLeagueTable();
 
+  // cId로 구단 탐색
+  ClubDTO getClubBycId(int cId);
+
+  // 리그 최다 골 순위
+  List<PlayerRecordDTO> getLeagueTopGoal();
+
+  // 리그 최다 도움 순위
+  List<PlayerRecordDTO> getLeagueTopAssist();
+
+  // 리그 최다 공격포인트 순위
+  List<PlayerRecordDTO> getLeagueTopAp();
+
+  // 시즌 선수 기록
+  List<PlayerRecordDTO> getPlayerSeasonRecord();
+
+  // 클럽 - 포지션별 선수
+  List<List<PlayerDTO>> getPlayerByPosition(int cId);
+
+
+  // == entity to dto ===================================================
   // league entity
   // entity 를 dto 로 변환
   default LeagueDTO entityToDto(League entity) {
@@ -32,9 +54,6 @@ public interface DataCenterService {
         .build();
     return dto;
   }
-
-  // 클럽 목록
-//  List<ClubDTO> getClubList();
 
   // club entity
   // entity 를 dto 로 변환
@@ -89,16 +108,21 @@ public interface DataCenterService {
     return dto;
   }
 
-  // cId로 구단 탐색
-  ClubDTO getClubBycId(int cId);
-
-  // 리그 최다 골 순위
-  List<PlayerRecordDTO> getLeagueTopGoal();
-  // 리그 최다 도움 순위
-  List<PlayerRecordDTO> getLeagueTopAssist();
-  // 리그 최다 공격포인트 순위
-  List<PlayerRecordDTO> getLeagueTopAp();
-
-  // 시즌 선수 기록
-  List<PlayerRecordDTO> getPlayerSeasonRecord();
+  // player entity
+  // entity 를 dto 로 변환
+  default PlayerDTO entityToDto(Player entity) {
+    PlayerDTO dto = PlayerDTO.builder()
+        .pId(entity.getPId())
+        .cId(entity.getCId())
+        .name(entity.getName())
+        .ename(entity.getEname())
+        .position(entity.getPosition())
+        .backNo(entity.getBackNo())
+        .nationality(entity.getNationality())
+        .height(entity.getHeight())
+        .weight(entity.getWeight())
+        .birthday(entity.getBirthday())
+        .build();
+    return dto;
+  }
 }

@@ -12,6 +12,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 import lombok.ToString;
 
 // 선수
@@ -20,6 +21,7 @@ import lombok.ToString;
 @Table(name = "player") // name으로 지정한 이름으로 테이블 생성
 @ToString
 @Getter
+@Setter
 @Builder // 객체 생성
 @AllArgsConstructor
 @NoArgsConstructor
