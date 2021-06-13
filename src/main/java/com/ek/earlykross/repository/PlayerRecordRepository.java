@@ -35,4 +35,12 @@ public interface PlayerRecordRepository extends JpaRepository<PlayerRecord, Long
       + " WHERE l.league = 'kleague'"
       + " ORDER BY ap DESC, pr.played")
   List<PlayerRecord> findByPlayedIsNotNull();
+
+  // 시즌 선수 기록 (골 순위-임시)
+  @Query("SELECT pr"
+      + " FROM PlayerRecord pr , League l"
+      + " WHERE pr.cId = l.cId"
+      + " AND l.league = 'kleague'"
+      + " ORDER BY pr.totalGoal DESC")
+  List<PlayerRecord> findTop20ByPlayedIsNotNull();
 }

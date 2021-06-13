@@ -52,6 +52,7 @@ public class DataCenterController {
     model.addAttribute("leagueTopAp", service.getLeagueTopAp()); // 공포
 
     // 시즌 선수 기록
+    model.addAttribute("playerSeasonRecord", service.getPlayerSeasonRecord()); // 공포
   }
 
 

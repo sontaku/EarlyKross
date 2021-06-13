@@ -89,4 +89,16 @@ public class DataCenterServiceImpl implements DataCenterService {
     List<PlayerRecordDTO> prApDTO = prAp.stream().map(fn).collect(Collectors.toList());
     return prApDTO;
   }
+
+  // 시즌 선수 기록
+  @Override
+  public List<PlayerRecordDTO> getPlayerSeasonRecord() {
+    // entity 탐색
+    List<PlayerRecord> prsr = playerRecordRepository.findTop20ByPlayedIsNotNull();
+
+    // entity to dto
+    Function<PlayerRecord, PlayerRecordDTO> fn = (entity -> entityToDto(entity));
+    List<PlayerRecordDTO> dto = prsr.stream().map(fn).collect(Collectors.toList());
+    return dto;
+  }
 }

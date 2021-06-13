@@ -98,4 +98,7 @@ public interface DataCenterService {
   List<PlayerRecordDTO> getLeagueTopAssist();
   // 리그 최다 공격포인트 순위
   List<PlayerRecordDTO> getLeagueTopAp();
+
+  // 시즌 선수 기록
+  List<PlayerRecordDTO> getPlayerSeasonRecord();
 }
