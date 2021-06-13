@@ -5,10 +5,8 @@ import com.ek.earlykross.entity.League;
 import com.ek.earlykross.entity.PlayerRecord;
 import com.ek.earlykross.vo.ClubDTO;
 import com.ek.earlykross.vo.LeagueDTO;
-import com.ek.earlykross.vo.PRGoalDTO;
 import com.ek.earlykross.vo.PlayerRecordDTO;
 import java.util.List;
-import java.util.Optional;
 
 public interface DataCenterService {
 
