@@ -1,58 +1,546 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
   <head>
-    <meta charset="utf-8" />
-    <title>Socket.io Chat Example</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <div th:replace="/fragments/head_line.html :: head_line">-- thymeleaf head_line --</div>
   </head>
-  <body>
-    <div class="container">
-      <h3>Socket.io Chat Example</h3>
-      <!-- <form class="form-inline"> -->
-      <form class="form-horizontal">
-        <div class="form-group">
-          <label for="name" class="col-sm-2 control-label">Name</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="name" placeholder="Name" />
+  <body data-template="template-soccer">
+
+    <div class="site-wrapper clearfix">
+      <div class="site-overlay"></div>
+
+      <!-- Header ================================================== -->
+
+      <!-- Header Mobile -->
+      <div th:replace="/fragments/header_mobile.html :: header_mobile">-- thymeleaf header_mobile
+        --
+      </div>
+
+      <!-- Header Desktop -->
+      <header class="header header--layout-1">
+        <div th:replace="/fragments/header_desktop.html :: header_desktop">-- thymeleaf
+          header_desktop --
+        </div>
+      </header>
+
+      <!-- Pushy Panel - Dark -->
+      <div th:replace="/fragments/custom_pushy_panel.html :: custom_pushy_panel">-- thymeleaf
+        custom_pushy_panel --
+      </div>
+      <!-- Pushy Panel - Dark / End -->
+
+      <!-- Page Heading
+      ================================================== -->
+      <div class="page-heading">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 offset-md-1">
+              <h1 class="page-heading__title">경기 <span class="highlight">일정</span></h1>
+              <ol class="page-heading__breadcrumb breadcrumb">
+                <li class="breadcrumb-item"><a href="_soccer_index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="_soccer_team-overview.html">Team</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Schedule</li>
+              </ol>
+            </div>
           </div>
         </div>
-        <div class="form-group">
-          <label for="msg" class="col-sm-2 control-label">Message</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="msg" placeholder="Message" />
+      </div>
+      <!-- Page Heading / End -->
+      <!-- Content ================================================== -->
+      <div class="site-content">
+        <div class="container">
+
+          <!-- Schedule & Tickets -->
+          <div class="card card--has-table">
+            <div class="card__header">
+              <h4>경기 일정</h4>
+            </div>
+            <div class="card__content">
+              <div class="table-responsive">
+                <table class="table table-hover team-schedule team-schedule--full">
+                  <thead>
+                    <tr>
+                      <th class="team-schedule__date">날짜</th>
+                      <th class="team-schedule__time">시간</th>
+                      <th class="team-schedule__venue">장소</th>
+                      <th class="team-schedule__versus">경기</th>
+                      <th class="team-schedule__tickets">중계</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr th:each="fixture : ${fixtures}">
+                      <td class="team-schedule__date">[[${fixture.fDate}]]</td>
+                      <td class="team-schedule__time">[[${fixture.fDate}]]</td>
+                      <td class="team-schedule__venue">[[${fixture.stadium}]]</td>
+                      <td class="team-schedule__versus">[[${fixture.home.shortName}]] VS
+                        [[${fixture.away.shortName}]]
+                      </td>
+                      <td class="team-schedule__tickets">
+                        <!--                      <a th:href="@{https://sports.news.naver.com/gameCenter/textRelayFootball.nhn?category=kleague&(gameId=${fixture.fId})}"-->
+                        <!--                         class="btn btn-xs btn-default btn-outline btn-block ">-->
+                        <!--                        전력비교-->
+                        <!--                      </a>-->
+                        <a th:href="@{http://localhost:3000(fId=${fixture.fId})}"
+                           class="btn btn-xs btn-default btn-outline btn-block" target="_blank">
+                          <!--                      <a th:href="@{/chat/chat.do(fId=${fixture.fId})}"-->
+                          전력비교
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- Schedule & Tickets / End -->
+
+          <!-- Team Pagination -->
+          <!--          <nav class="team-pagination" aria-label="Team navigation">-->
+          <!--            <ul class="pagination pagination&#45;&#45;condensed pagination&#45;&#45;lg justify-content-center">-->
+          <!--              <li class="page-item active"><a class="page-link" href="#">1</a></li>-->
+          <!--              <li class="page-item"><a class="page-link" href="#">2</a></li>-->
+          <!--              <li class="page-item"><a class="page-link" href="#">3</a></li>-->
+          <!--              <li class="page-item"><span class="page-link">...</span></li>-->
+          <!--              <li class="page-item"><a class="page-link" href="#">16</a></li>-->
+          <!--            </ul>-->
+          <!--          </nav>-->
+          <!-- Team Pagination / End -->
+
+        </div>
+      </div>
+
+      <!-- Content / End -->
+
+
+      <!-- Footer
+      ================================================== -->
+      <footer id="footer" class="footer">
+
+        <!-- Footer Widgets -->
+        <div class="footer-widgets">
+          <div class="footer-widgets__inner">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-6 col-lg-3">
+                  <div class="footer-col-inner">
+
+                    <!-- Footer Logo -->
+                    <div class="footer-logo footer-logo--has-txt">
+                      <a href="index.html">
+                        <img src="assets/images/soccer/logo-footer.png"
+                             srcset="assets/images/soccer/logo-footer@2x.png 2x"
+                             alt="The Alchemists" class="footer-logo__img">
+                        <div class="footer-logo__heading">
+                          <h5 class="footer-logo__txt">The Alchemists</h5>
+                          <span class="footer-logo__tagline">Elric Bros School</span>
+                        </div>
+                      </a>
+                    </div>
+                    <!-- Footer Logo / End -->
+
+                    <!-- Widget: Contact Info -->
+                    <div class="widget widget--footer widget-contact-info">
+                      <div class="widget__content">
+                        <div class="widget-contact-info__desc">
+                          <p>Lorem ipsum dolor sit amet, consectetur cing elit, sed do eiusmod
+                            tempor incididunt uten labore et dolore magna aliqua. Ut enim ad minim
+                            veniam.</p>
+                        </div>
+                        <div class="widget-contact-info__body info-block">
+                          <div class="info-block__item">
+                            <svg role="img" class="df-icon df-icon--soccer-ball">
+                              <use xlink:href="assets/images/icons-soccer.svg#soccer-ball"/>
+                            </svg>
+                            <h6 class="info-block__heading">Contact Us</h6>
+                            <a class="info-block__link" href="mailto:tryouts@alchemists.com">tryouts@alchemists.com</a>
+                          </div>
+                          <div class="info-block__item">
+                            <svg role="img" class="df-icon df-icon--whistle">
+                              <use xlink:href="assets/images/icons-soccer.svg#whistle"/>
+                            </svg>
+                            <h6 class="info-block__heading">Join Our Team!</h6>
+                            <a class="info-block__link" href="mailto:info@alchemists.com">info@alchemists.com</a>
+                          </div>
+                          <div class="info-block__item info-block__item--nopadding">
+                            <ul class="social-links">
+                              <li class="social-links__item">
+                                <a href="#" class="social-links__link"><i
+                                    class="fab fa-facebook"></i> Facebook</a>
+                              </li>
+                              <li class="social-links__item">
+                                <a href="#" class="social-links__link"><i
+                                    class="fab fa-twitter"></i> Twitter</a>
+                              </li>
+                              <li class="social-links__item">
+                                <a href="#" class="social-links__link"><i
+                                    class="fab fa-instagram"></i> Instagram</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Widget: Contact Info / End -->
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                  <div class="footer-col-inner">
+                    <!-- Widget: Popular Posts / End -->
+                    <div class="widget widget--footer widget-popular-posts">
+                      <h4 class="widget__title">Popular News</h4>
+                      <div class="widget__content">
+                        <ul class="posts posts--simple-list">
+
+                          <li class="posts__item posts__item--category-1">
+                            <figure class="posts__thumb posts__thumb--hover">
+                              <a href="#"><img src="assets/images/samples/post-img3-xs.jpg" alt=""></a>
+                            </figure>
+                            <div class="posts__inner">
+                              <div class="posts__cat">
+                                <span class="label posts__cat-label">The Team</span>
+                              </div>
+                              <h6 class="posts__title posts__title--color-hover"><a
+                                  href="_soccer_blog-post-1.html">The new eco friendly stadium won a
+                                Leafy Award in 2017</a></h6>
+                              <time datetime="2017-08-21" class="posts__date">June 12th, 2018</time>
+                            </div>
+                          </li>
+                          <li class="posts__item posts__item--category-2">
+                            <figure class="posts__thumb posts__thumb--hover">
+                              <a href="#"><img src="assets/images/samples/post-img18-xs.jpg" alt=""></a>
+                            </figure>
+                            <div class="posts__inner">
+                              <div class="posts__cat">
+                                <span class="label posts__cat-label">Injuries</span>
+                              </div>
+                              <h6 class="posts__title posts__title--color-hover"><a
+                                  href="_soccer_blog-post-1.html">Jenny Jackson won&#x27;t be able
+                                to play the next game</a></h6>
+                              <time datetime="2017-08-21" class="posts__date">June 2nd, 2018</time>
+                            </div>
+                          </li>
+                          <li class="posts__item posts__item--category-1">
+                            <figure class="posts__thumb posts__thumb--hover">
+                              <a href="#"><img src="assets/images/samples/post-img8-xs.jpg" alt=""></a>
+                            </figure>
+                            <div class="posts__inner">
+                              <div class="posts__cat">
+                                <span class="label posts__cat-label">The Team</span>
+                              </div>
+                              <h6 class="posts__title posts__title--color-hover"><a
+                                  href="_soccer_blog-post-1.html">The team is starting a new power
+                                breakfast regimen</a></h6>
+                              <time datetime="2017-08-21" class="posts__date">January 25th, 2018
+                              </time>
+                            </div>
+                          </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- Widget: Popular Posts / End -->
+                  </div>
+                </div>
+                <div class="clearfix visible-sm"></div>
+                <div class="col-sm-6 col-lg-3">
+                  <div class="footer-col-inner">
+                    <!-- Widget: Featured News / End -->
+                    <div class="widget widget--footer widget-featured-posts">
+                      <h4 class="widget__title">Featured News</h4>
+                      <div class="widget__content">
+                        <ul class="posts posts--simple-list">
+
+                          <li class="posts__item posts__item--category-1">
+                            <figure class="posts__thumb posts__thumb--hover">
+                              <a href="#"><img src="assets/images/samples/post-img21-xs.jpg" alt=""></a>
+                            </figure>
+                            <div class="posts__inner">
+                              <div class="posts__cat">
+                                <span class="label posts__cat-label">The Team</span>
+                              </div>
+                              <h6 class="posts__title posts__title--color-hover"><a
+                                  href="_soccer_blog-post-1.html">The team trainings are
+                                instensifying looking at the next match</a></h6>
+                              <time datetime="2017-08-21" class="posts__date">August 21st, 2018
+                              </time>
+                            </div>
+                          </li>
+                          <li class="posts__item posts__item--category-1">
+                            <figure class="posts__thumb posts__thumb--hover">
+                              <a href="#"><img src="assets/images/samples/post-img5-xs.jpg" alt=""></a>
+                            </figure>
+                            <div class="posts__inner">
+                              <div class="posts__cat">
+                                <span class="label posts__cat-label">The Team</span>
+                              </div>
+                              <h6 class="posts__title posts__title--color-hover"><a
+                                  href="_soccer_blog-post-1.html">The Alchemists team is appearing
+                                in L.A. Beach for charity</a></h6>
+                              <time datetime="2017-08-21" class="posts__date">July 13th, 2018</time>
+                            </div>
+                          </li>
+                          <li class="posts__item posts__item--category-3">
+                            <figure class="posts__thumb posts__thumb--hover">
+                              <a href="#"><img src="assets/images/samples/post-img20-xs.jpg" alt=""></a>
+                            </figure>
+                            <div class="posts__inner">
+                              <div class="posts__cat">
+                                <span class="label posts__cat-label">The League</span>
+                              </div>
+                              <h6 class="posts__title posts__title--color-hover"><a
+                                  href="_soccer_blog-post-1.html">The Alchemists need two win the
+                                next two games</a></h6>
+                              <time datetime="2017-08-21" class="posts__date">May 7th, 2018</time>
+                            </div>
+                          </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- Widget: Featured News / End -->
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                  <div class="footer-col-inner">
+
+                    <!-- Widget: Contact / End -->
+                    <div class="widget widget--footer widget-contact">
+                      <h4 class="widget__title">Quick Contact</h4>
+                      <div class="widget__content">
+                        <p>Lorem ipsum dolor sit amet, consectetur cing elit, sed do eiusmod
+                          tempor.</p>
+                        <form action="#" class="contact-form">
+                          <div class="form-group form-group--xs">
+                            <input type="email" class="form-control input-sm"
+                                   id="contact-form-email" placeholder="Your email address...">
+                          </div>
+                          <div class="form-group form-group--xs">
+                            <textarea class="form-control input-sm" name="contact-form-message"
+                                      rows="4" placeholder="Your message..."></textarea>
+                          </div>
+                          <button type="submit" class="btn btn-primary-inverse btn-sm btn-block">
+                            Send Your Message
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                    <!-- Widget: Contact / End -->
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sponsors -->
+          <div class="container">
+            <div class="sponsors">
+              <h6 class="sponsors-title">Our Sponsors:</h6>
+              <ul class="sponsors-logos">
+                <li class="sponsors__item">
+                  <a href="#" target="_blank"><img src="assets/images/soccer/sponsor-visa.png"
+                                                   alt=""></a>
+                </li>
+                <li class="sponsors__item">
+                  <a href="#" target="_blank"><img src="assets/images/soccer/sponsor-discover.png"
+                                                   alt=""></a>
+                </li>
+                <li class="sponsors__item">
+                  <a href="#" target="_blank"><img src="assets/images/soccer/sponsor-paypal.png"
+                                                   alt=""></a>
+                </li>
+                <li class="sponsors__item">
+                  <a href="#" target="_blank"><img src="assets/images/soccer/sponsor-skrill.png"
+                                                   alt=""></a>
+                </li>
+                <li class="sponsors__item">
+                  <a href="#" target="_blank"><img
+                      src="assets/images/soccer/sponsor-westernunion.png" alt=""></a>
+                </li>
+                <li class="sponsors__item">
+                  <a href="#" target="_blank"><img src="assets/images/soccer/sponsor-payoneer.png"
+                                                   alt=""></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Sponsors / End -->
+
+        </div>
+        <!-- Footer Widgets / End -->
+
+        <!-- Footer Secondary -->
+        <div class="footer-secondary">
+          <div class="container">
+            <div class="footer-secondary__inner">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="footer-copyright"><a href="_soccer_index.html">The Alchemists</a> 2020
+                    &nbsp; | &nbsp; All Rights Reserved
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <ul class="footer-nav footer-nav--right footer-nav--condensed footer-nav--sm">
+                    <li class="footer-nav__item"><a href="_soccer_index.html">Home</a></li>
+                    <li class="footer-nav__item"><a
+                        href="_soccer_features-shortcodes.html">Features</a></li>
+                    <li class="footer-nav__item"><a
+                        href="_soccer_team-standings.html">Statistics</a></li>
+                    <li class="footer-nav__item"><a href="_soccer_team-overview.html">The Team</a>
+                    </li>
+                    <li class="footer-nav__item"><a href="_soccer_blog-3.html">News</a></li>
+                    <li class="footer-nav__item"><a href="_soccer_shop-grid.html">Shop</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="form-group">
-          <div class="col-sm-offset-2 col-sm-10">
-            <button type="submit" class="btn btn-default">Send</button>
+        <!-- Footer Secondary / End -->
+      </footer>
+      <!-- Footer / End -->
+
+
+      <!-- Login/Register Tabs Modal -->
+      <div class="modal fade" id="modal-login-register-tabs" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg modal--login modal--login-only" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                  aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+
+              <div class="modal-account-holder">
+                <div class="modal-account__item modal-account__item--logo">
+                  <p class="modal-account__item-register-txt">Don’t have an account? <a href="#">Register
+                    Now</a> and enjoy all our benefits!</p>
+                </div>
+                <div class="modal-account__item">
+
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+
+                    <!-- Tab: Login -->
+                    <div role="tabpanel" class="tab-pane fade show active" id="tab-login">
+
+                      <!-- Login Form -->
+                      <form action="#" class="modal-form">
+                        <h5>Login to your account</h5>
+                        <div class="form-group">
+                          <input type="email" class="form-control"
+                                 placeholder="Enter your email address...">
+                        </div>
+                        <div class="form-group">
+                          <input type="password" class="form-control"
+                                 placeholder="Enter your password...">
+                        </div>
+                        <div class="form-group form-group--pass-reminder">
+                          <label class="checkbox checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox1" value="option1" checked>
+                            Remember Me
+                            <span class="checkbox-indicator"></span>
+                          </label>
+                          <a href="#">Forgot your password?</a>
+                        </div>
+                        <div class="form-group form-group--submit">
+                          <a href="_soccer_shop-account.html"
+                             class="btn btn-primary-inverse btn-block">Enter to your account</a>
+                        </div>
+                        <div class="modal-form--social">
+                          <h6>or Login with your social profile:</h6>
+                          <ul class="social-links social-links--btn text-center">
+                            <li class="social-links__item">
+                              <a href="#"
+                                 class="social-links__link social-links__link--lg social-links__link--fb"><i
+                                  class="fab fa-facebook"></i></a>
+                            </li>
+                            <li class="social-links__item">
+                              <a href="#"
+                                 class="social-links__link social-links__link--lg social-links__link--twitter"><i
+                                  class="fab fa-twitter"></i></a>
+                            </li>
+                            <li class="social-links__item">
+                              <a href="#"
+                                 class="social-links__link social-links__link--lg social-links__link--gplus"><i
+                                  class="fab fa-google-plus-g"></i></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </form>
+                      <!-- Login Form / End -->
+
+                    </div>
+                    <!-- Tab: Login / End -->
+
+                    <!-- Tab: Register -->
+                    <div role="tabpanel" class="tab-pane fade" id="tab-register">
+
+                      <!-- Register Form -->
+                      <form action="#" class="modal-form">
+                        <h5>Register Now!</h5>
+                        <div class="form-group">
+                          <input type="email" class="form-control"
+                                 placeholder="Enter your email address...">
+                        </div>
+                        <div class="form-group">
+                          <input type="password" class="form-control"
+                                 placeholder="Enter your password...">
+                        </div>
+                        <div class="form-group">
+                          <input type="password" class="form-control"
+                                 placeholder="Repeat your password...">
+                        </div>
+                        <div class="form-group form-group--submit">
+                          <a href="_soccer_shop-account.html" class="btn btn-success btn-block">Create
+                            Your Account</a>
+                        </div>
+                        <div class="modal-form--note">You’ll receive a confirmation email in your
+                          inbox with a link to activate your account.
+                        </div>
+                      </form>
+                      <!-- Register Form / End -->
+
+                    </div>
+                    <!-- Tab: Register / End -->
+
+                  </div>
+
+                  <!-- Nav tabs -->
+                  <div class="nav-tabs-login-wrapper">
+                    <ul class="nav nav-tabs nav-justified nav-tabs--login" role="tablist">
+                      <li class="nav-item"><a class="nav-link active" href="#tab-login" role="tab"
+                                              data-toggle="tab">Login</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#tab-register" role="tab"
+                                              data-toggle="tab">Register</a></li>
+                    </ul>
+                  </div>
+                  <!-- Nav tabs / End -->
+
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </form>
-      <ul id="chat"></ul>
+      </div>
+      <!-- Login/Register Tabs Modal / End -->
+
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="https://cdn.socket.io/4.0.1/socket.io.js"></script>
-    <script th:inline="javascript">
-      $(function () {
-        // 지정 namespace로 접속한다
-        var chat = io("http://localhost:3000/chat"),
-            news = io("/news");
 
-        $("form").submit(function (e) {
-          e.preventDefault();
+    <!-- Javascript Files
+    ================================================== -->
+    <!-- Core JS -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/jquery/jquery-migrate.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/core.js"></script>
 
-          // 서버로 자신의 정보를 전송한다.
-          chat.emit("chat message", {
-            name: $("#name").val(),
-            msg: $("#msg").val()
-          });
-        });
+    <!-- Vendor JS -->
+    <script src="assets/vendor/twitter/jquery.twitter.js"></script>
 
-        // 서버로부터의 메시지가 수신되면
-        chat.on("chat message", function (data) {
-          $("#chat").append($("<li>").text(data));
-        });
-      });
-    </script>
+    <!-- Template JS -->
+    <script src="assets/js/init.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+    <div th:replace="/fragments/script_line.html :: script_line">-- thymeleaf script_line --</div>
   </body>
 </html>
