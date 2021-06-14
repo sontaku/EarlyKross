@@ -16,10 +16,10 @@ const conn = {
 fId = "";
 // localhost:3000으로 서버에 접속하면 클라이언트로 index.html을 전송한다
 app.get("/", function (req, res) {
-  res.sendFile("C:\\Users\\Siat\\IdeaProjects\\EarlyKross\\src\\main\\resources\\templates\\chat\\chat.html");
-  // res.sendFile(__dirname + "/index-room.html");
+  res.sendFile(__dirname + "/room.html");
   fId = req.query["fId"];
   console.log(fId);
+  res.redirect("http://localhost:8180/chat/chat.do")
 });
 
 // namespace /chat에 접속한다.
@@ -31,16 +31,16 @@ var chat = io.of("/chat").on("connection", function (socket) {
     connection.connect(); // DB 접속
 
     var sql =
-      "INSERT INTO chat(room, name, msg) VALUES(" +
-      // connection.escape(data.room) +
-      connection.escape(fId) +
-      "," +
-      connection.escape(data.name) +
-      "," +
-      connection.escape(data.msg) +
-      ")";
+        "INSERT INTO chat(room, name, msg) VALUES(" +
+        // connection.escape(data.room) +
+        connection.escape(fId) +
+        "," +
+        connection.escape(data.name) +
+        "," +
+        connection.escape(data.msg) +
+        ")";
 
-    connection.query(sql, function (err, results, fields) {
+    connection.query(sql, function (err, results) {
       // testQuery 실행
       if (err) {
         console.log(err);
