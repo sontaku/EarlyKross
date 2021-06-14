@@ -363,36 +363,23 @@
               <!-- Posts Grid -->
               <div class="posts posts--cards post-grid post-grid--fitRows row">
 
-                <div class="post-grid__item col-sm-4">
+                <div class="post-grid__item col-sm-4" th:each="fwList: ${lineup0}">
                   <div class="posts__item posts__item--card posts__item--category-1 card" th:style="'background-image:' + 'url(' + |../upload/emblem/${oneClub.cId}.png| + ');'
-                  + 'background-size:' + 'cover;'
+                  + 'background-size:' + '75% 75%;'
                   + 'background-position:' + 'center;'
                   + 'background-repeat:' + 'no-repeat;'
                   + 'background-blend-mode:' + 'luminosity'">
-                    <img src="https://portal.kleague.com/common/playerPhotoById.do?playerId=20060073&recYn=Y&searchYear=2021" alt="">
-
-                    <!--                    <figure class="posts__thumb">-->
-<!--                      <div class="posts__cat">-->
-<!--                        <span class="label posts__cat-label">The Team</span>-->
-<!--                      </div>-->
-<!--                      <a href="#"><img src="assets/images/soccer/samples/_soccer_post-img3.jpg"-->
-<!--                                       alt=""></a>-->
-<!--                    </figure>-->
-<!--                    <div class="posts__inner card__content">-->
-<!--                      <img src="https://portal.kleague.com/common/playerPhotoById.do?playerId=20060073&recYn=Y&searchYear=2021" alt="">-->
-<!--                      <h6 class="posts__title">ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ</h6>-->
-<!--											th:src="|../upload/emblem/${oneClub.cId}.png|"-->
-<!--                    </div>-->
+                    <img th:src="|https://portal.kleague.com/common/playerPhotoById.do?playerId=${fwList.pId}&recYn=Y&searchYear=2021|" alt="">
                     <footer class="posts__footer card__footer"
                             style="padding: 0; margin: 0 auto; text-align: center">
                       <div class="post-author" style="text-align: center; background-color: #F8B500;">
                         <div class="post-author__info" style="text-align: center">
-                          <h4 class="post-author__name" style="width: 100%; color: #f7f7f7">10</h4>
+                          <h4 class="post-author__name" style="width: 100%; color: #f7f7f7" th:text="${fwList.backNo}"></h4>
                         </div>
                       </div>
                       <div class="post-author" style="text-align: center">
                         <div class="post-author__info">
-                          <h4 class="post-author__name" style="color: #31404b; width: 100%">박주영</h4>
+                          <h4 class="post-author__name" style="color: #31404b; width: 100%" th:text="${fwList.name}"></h4>
                         </div>
                       </div>
                     </footer>
@@ -402,127 +389,113 @@
               </div>
             </div>
 
-						<!-- MF -->
-						<div class="widget-results__header justify-content-center">
-							<div class="widget-results__title">
-								<h5 style="text-align: center; margin: 0 auto">MF</h5>
-							</div>
-						</div>
-						<div class="card__content">
-							<!-- Posts Grid -->
-							<div class="posts posts--cards post-grid post-grid--fitRows row">
+            <!-- MF -->
+            <div class="widget-results__header justify-content-center">
+              <div class="widget-results__title">
+                <h5 style="text-align: center; margin: 0 auto">MF</h5>
+              </div>
+            </div>
+            <div class="card__content">
+              <!-- Posts Grid -->
+              <div class="posts posts--cards post-grid post-grid--fitRows row">
 
-								<div class="post-grid__item col-sm-4">
-									<div class="posts__item posts__item--card posts__item--category-1 card">
-										<figure class="posts__thumb">
-											<div class="posts__cat">
-												<span class="label posts__cat-label">The Team</span>
-											</div>
-											<a href="#"><img src="assets/images/soccer/samples/_soccer_post-img3.jpg"
-																			 alt=""></a>
-										</figure>
-										<div class="posts__inner card__content">
-											<h6 class="posts__title"><a href="#">Brian Kingster saw the red card after a kick against Jason T.</a></h6>
-										</div>
-										<footer class="posts__footer card__footer"
-														style="padding: 0; margin: 0 auto; text-align: center">
-											<div class="post-author" style="text-align: center">
-												<div class="post-author__info" style="text-align: center">
-													<h4 class="post-author__name" style="color: #31404b; width: 100%">10</h4>
-												</div>
-											</div>
-											<div class="post-author" style="text-align: center">
-												<div class="post-author__info">
-													<h4 class="post-author__name" style="color: #31404b; width: 100%">박주영</h4>
-												</div>
-											</div>
-										</footer>
-									</div>
-								</div>
-								<!-- Post Grid / End -->
-							</div>
-						</div>
-						<!-- DF -->
-						<div class="widget-results__header justify-content-center">
-							<div class="widget-results__title">
-								<h5 style="text-align: center; margin: 0 auto">DF</h5>
-							</div>
-						</div>
-						<div class="card__content">
-							<!-- Posts Grid -->
-							<div class="posts posts--cards post-grid post-grid--fitRows row">
+                <div class="post-grid__item col-sm-4" th:each="mfList: ${lineup1}">
+                  <div class="posts__item posts__item--card posts__item--category-1 card" th:style="'background-image:' + 'url(' + |../upload/emblem/${oneClub.cId}.png| + ');'
+                  + 'background-size:' + '75% 75%;'
+                  + 'background-position:' + 'center;'
+                  + 'background-repeat:' + 'no-repeat;'
+                  + 'background-blend-mode:' + 'luminosity'">
+                    <img th:src="|https://portal.kleague.com/common/playerPhotoById.do?playerId=${mfList.pId}&recYn=Y&searchYear=2021|" alt="">
+                    <footer class="posts__footer card__footer"
+                            style="padding: 0; margin: 0 auto; text-align: center">
+                      <div class="post-author" style="text-align: center; background-color: #F8B500;">
+                        <div class="post-author__info" style="text-align: center">
+                          <h4 class="post-author__name" style="width: 100%; color: #f7f7f7" th:text="${mfList.backNo}"></h4>
+                        </div>
+                      </div>
+                      <div class="post-author" style="text-align: center">
+                        <div class="post-author__info">
+                          <h4 class="post-author__name" style="color: #31404b; width: 100%" th:text="${mfList.name}"></h4>
+                        </div>
+                      </div>
+                    </footer>
+                  </div>
+                </div>
+                <!-- Post Grid / End -->
+              </div>
+            </div>
 
-								<div class="post-grid__item col-sm-4">
-									<div class="posts__item posts__item--card posts__item--category-1 card">
-										<figure class="posts__thumb">
-											<div class="posts__cat">
-												<span class="label posts__cat-label">The Team</span>
-											</div>
-											<a href="#"><img src="assets/images/soccer/samples/_soccer_post-img3.jpg"
-																			 alt=""></a>
-										</figure>
-										<div class="posts__inner card__content">
-											<h6 class="posts__title"><a href="#">Brian Kingster saw the red card after a kick against Jason T.</a></h6>
-										</div>
-										<footer class="posts__footer card__footer"
-														style="padding: 0; margin: 0 auto; text-align: center">
-											<div class="post-author" style="text-align: center">
-												<div class="post-author__info" style="text-align: center">
-													<h4 class="post-author__name" style="color: #31404b; width: 100%">10</h4>
-												</div>
-											</div>
-											<div class="post-author" style="text-align: center">
-												<div class="post-author__info">
-													<h4 class="post-author__name" style="color: #31404b; width: 100%">박주영</h4>
-												</div>
-											</div>
-										</footer>
-									</div>
-								</div>
-								<!-- Post Grid / End -->
-							</div>
-						</div>
+            <!-- DF -->
+            <div class="widget-results__header justify-content-center">
+              <div class="widget-results__title">
+                <h5 style="text-align: center; margin: 0 auto">DF</h5>
+              </div>
+            </div>
+            <div class="card__content">
+              <!-- Posts Grid -->
+              <div class="posts posts--cards post-grid post-grid--fitRows row">
 
-						<!-- GK -->
-						<div class="widget-results__header justify-content-center">
-							<div class="widget-results__title">
-								<h5 style="text-align: center; margin: 0 auto">GK</h5>
-							</div>
-						</div>
-						<div class="card__content">
-							<!-- Posts Grid -->
-							<div class="posts posts--cards post-grid post-grid--fitRows row">
+                <div class="post-grid__item col-sm-4" th:each="dfList: ${lineup2}">
+                  <div class="posts__item posts__item--card posts__item--category-1 card" th:style="'background-image:' + 'url(' + |../upload/emblem/${oneClub.cId}.png| + ');'
+                  + 'background-size:' + '75% 75%;'
+                  + 'background-position:' + 'center;'
+                  + 'background-repeat:' + 'no-repeat;'
+                  + 'background-blend-mode:' + 'luminosity'">
+                    <img th:src="|https://portal.kleague.com/common/playerPhotoById.do?playerId=${dfList.pId}&recYn=Y&searchYear=2021|" alt="">
+                    <footer class="posts__footer card__footer"
+                            style="padding: 0; margin: 0 auto; text-align: center">
+                      <div class="post-author" style="text-align: center; background-color: #F8B500;">
+                        <div class="post-author__info" style="text-align: center">
+                          <h4 class="post-author__name" style="width: 100%; color: #f7f7f7" th:text="${dfList.backNo}"></h4>
+                        </div>
+                      </div>
+                      <div class="post-author" style="text-align: center">
+                        <div class="post-author__info">
+                          <h4 class="post-author__name" style="color: #31404b; width: 100%" th:text="${dfList.name}"></h4>
+                        </div>
+                      </div>
+                    </footer>
+                  </div>
+                </div>
+                <!-- Post Grid / End -->
+              </div>
+            </div>
 
-								<div class="post-grid__item col-sm-4">
-									<div class="posts__item posts__item--card posts__item--category-1 card">
-										<figure class="posts__thumb">
-											<div class="posts__cat">
-												<span class="label posts__cat-label">The Team</span>
-											</div>
-											<a href="#"><img src="assets/images/soccer/samples/_soccer_post-img3.jpg"
-																			 alt=""></a>
-										</figure>
-										<div class="posts__inner card__content">
-											<h6 class="posts__title"><a href="#">Brian Kingster saw the red card after a kick against Jason T.</a></h6>
-										</div>
-										<footer class="posts__footer card__footer"
-														style="padding: 0; margin: 0 auto; text-align: center">
-											<div class="post-author" style="text-align: center">
-												<div class="post-author__info" style="text-align: center">
-													<h4 class="post-author__name" style="color: #31404b; width: 100%">10</h4>
-												</div>
-											</div>
-											<div class="post-author" style="text-align: center">
-												<div class="post-author__info">
-													<h4 class="post-author__name" style="color: #31404b; width: 100%">박주영</h4>
-												</div>
-											</div>
-										</footer>
-									</div>
-								</div>
-								<!-- Post Grid / End -->
-							</div>
-						</div>
+            <!-- GK -->
+            <div class="widget-results__header justify-content-center">
+              <div class="widget-results__title">
+                <h5 style="text-align: center; margin: 0 auto">GK</h5>
+              </div>
+            </div>
+            <div class="card__content">
+              <!-- Posts Grid -->
+              <div class="posts posts--cards post-grid post-grid--fitRows row">
+
+                <div class="post-grid__item col-sm-4" th:each="gkList: ${lineup3}">
+                  <div class="posts__item posts__item--card posts__item--category-1 card" th:style="'background-image:' + 'url(' + |../upload/emblem/${oneClub.cId}.png| + ');'
+                  + 'background-size:' + '75% 75%;'
+                  + 'background-position:' + 'center;'
+                  + 'background-repeat:' + 'no-repeat;'
+                  + 'background-blend-mode:' + 'luminosity'">
+                    <img th:src="|https://portal.kleague.com/common/playerPhotoById.do?playerId=${gkList.pId}&recYn=Y&searchYear=2021|" alt="">
+                    <footer class="posts__footer card__footer"
+                            style="padding: 0; margin: 0 auto; text-align: center">
+                      <div class="post-author" style="text-align: center; background-color: #F8B500;">
+                        <div class="post-author__info" style="text-align: center">
+                          <h4 class="post-author__name" style="width: 100%; color: #f7f7f7" th:text="${gkList.backNo}"></h4>
+                        </div>
+                      </div>
+                      <div class="post-author" style="text-align: center">
+                        <div class="post-author__info">
+                          <h4 class="post-author__name" style="color: #31404b; width: 100%" th:text="${gkList.name}"></h4>
+                        </div>
+                      </div>
+                    </footer>
+                  </div>
+                </div>
+                <!-- Post Grid / End -->
+              </div>
+            </div>
           </div>
           <!-- Team Roster: Table / End -->
 

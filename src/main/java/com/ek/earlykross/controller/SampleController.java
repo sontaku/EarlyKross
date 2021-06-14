@@ -14,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -36,6 +37,7 @@ public class SampleController {
 
     private final SampleService service;
 
+    @PreAuthorize("permitAll()")
     @GetMapping("all")
     public void exAll(){//로그인 하지 않아도 접근
         log.info("exAll....");
@@ -48,9 +50,18 @@ public class SampleController {
         log.info(authMemberDTO);
     }
 
+    @PreAuthorize("hasRole('ADMIN')")
     @GetMapping("admin")
     public void exAdmin(){//관리자만 접근
         log.info("exAdmin....");
+    }
+
+    @PreAuthorize("#authMember != null && #authMember.username eq \"a@a\"")
+    @GetMapping("exOnly")
+    public String exMemberOnly(@AuthenticationPrincipal AuthMemberDTO authMember){
+        log.info("member only : " + authMember);
+
+        return "/sample/admin";
     }
 
     @GetMapping("/")

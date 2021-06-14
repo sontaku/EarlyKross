@@ -2,16 +2,39 @@ package com.ek.earlykross.service;
 
 import com.ek.earlykross.entity.Club;
 import com.ek.earlykross.entity.League;
+import com.ek.earlykross.entity.Player;
+import com.ek.earlykross.entity.PlayerRecord;
 import com.ek.earlykross.vo.ClubDTO;
 import com.ek.earlykross.vo.LeagueDTO;
+import com.ek.earlykross.vo.PlayerDTO;
+import com.ek.earlykross.vo.PlayerRecordDTO;
 import java.util.List;
-import java.util.Optional;
 
 public interface DataCenterService {
 
   // 리그 순위 테이블
   List<LeagueDTO> getLeagueTable();
 
+  // cId로 구단 탐색
+  ClubDTO getClubBycId(int cId);
+
+  // 리그 최다 골 순위
+  List<PlayerRecordDTO> getLeagueTopGoal();
+
+  // 리그 최다 도움 순위
+  List<PlayerRecordDTO> getLeagueTopAssist();
+
+  // 리그 최다 공격포인트 순위
+  List<PlayerRecordDTO> getLeagueTopAp();
+
+  // 시즌 선수 기록
+  List<PlayerRecordDTO> getPlayerSeasonRecord();
+
+  // 클럽 - 포지션별 선수
+  List<List<PlayerDTO>> getPlayerByPosition(int cId);
+
+
+  // == entity to dto ===================================================
   // league entity
   // entity 를 dto 로 변환
   default LeagueDTO entityToDto(League entity) {
@@ -32,10 +55,7 @@ public interface DataCenterService {
     return dto;
   }
 
-  // 클럽 목록
-//  List<ClubDTO> getClubList();
-
-  // league entity
+  // club entity
   // entity 를 dto 로 변환
   default ClubDTO entityToDto(Club entity) {
     ClubDTO dto = ClubDTO.builder()
@@ -54,6 +74,55 @@ public interface DataCenterService {
     return dto;
   }
 
-  // cId로 구단 탐색
-  ClubDTO getClubBycId(int cId);
+  // player_record goal entity
+  // entity 를 dto 로 변환
+  default PlayerRecordDTO entityToDto(PlayerRecord entity) {
+    PlayerRecordDTO dto = PlayerRecordDTO.builder()
+        .pId(entity.getPId())
+        .season(entity.getSeason())
+        .played(entity.getPlayed())
+        .playedIn(entity.getPlayedIn())
+        .playedOut(entity.getPlayedOut())
+        .inoutTotal(entity.getInoutTotal())
+        .fhGoal(entity.getFhGoal())
+        .shGoal(entity.getShGoal())
+        .otGoal(entity.getOtGoal())
+        .totalGoal(entity.getTotalGoal())
+        .assist(entity.getAssist())
+        .gk(entity.getGk())
+        .ck(entity.getCk())
+        .fc(entity.getFc())
+        .fs(entity.getFs())
+        .os(entity.getOs())
+        .st(entity.getSt())
+        .sot(entity.getSot())
+        .pkGoal(entity.getPkGoal())
+        .pkFail(entity.getPkFail())
+        .pkPer(entity.getPkPer())
+        .yellow(entity.getYellow())
+        .red(entity.getRed())
+        .ga(entity.getGa())
+        .og(entity.getOg())
+        .rating(entity.getRating())
+        .build();
+    return dto;
+  }
+
+  // player entity
+  // entity 를 dto 로 변환
+  default PlayerDTO entityToDto(Player entity) {
+    PlayerDTO dto = PlayerDTO.builder()
+        .pId(entity.getPId())
+        .cId(entity.getCId())
+        .name(entity.getName())
+        .ename(entity.getEname())
+        .position(entity.getPosition())
+        .backNo(entity.getBackNo())
+        .nationality(entity.getNationality())
+        .height(entity.getHeight())
+        .weight(entity.getWeight())
+        .birthday(entity.getBirthday())
+        .build();
+    return dto;
+  }
 }

@@ -1,20 +1,28 @@
 package com.ek.earlykross.config;
 
+import com.ek.earlykross.security.handle.LoginSuccessHandler;
 import lombok.extern.log4j.Log4j2;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 @Configuration
 @Log4j2
+@EnableGlobalMethodSecurity(prePostEnabled = true, securedEnabled = true) // 접근 제한 설정
 public class SecurityConfig extends WebSecurityConfigurerAdapter { //시큐리티 관련 기능 쉽게
 
+  @Autowired
+  private UserDetailsService userDetailsService;
+
   @Bean
-  PasswordEncoder PasswordEncoder(){// 비밀번호를 암호화 하는 것
+  PasswordEncoder passwordEncoder(){// 비밀번호를 암호화 하는 것
     return new BCryptPasswordEncoder();
   }
 
@@ -28,7 +36,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter { //시큐리�
     http.csrf().disable();// 토큰 발행 비활성화
     http.logout()
         .logoutSuccessUrl("/");
+    http.oauth2Login().successHandler(successHandler());
+    http.rememberMe().tokenValiditySeconds(60*60*7).userDetailsService(userDetailsService); // 자동로그인 7일을 뜻 함
+  }
 
+  @Bean
+  public LoginSuccessHandler successHandler(){
+    return new LoginSuccessHandler(passwordEncoder());
   }
 
 //  @Override
