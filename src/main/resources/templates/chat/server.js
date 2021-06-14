@@ -1,7 +1,7 @@
-var app = require("express")();
-var server = require("http").createServer(app);
+const app = require("express")();
+const server = require("http").createServer(app);
 // http server를 socket.io server로 upgrade한다
-var io = require("socket.io")(server);
+const io = require("socket.io")(server);
 
 const mysql = require("mysql"); // mysql 모듈 로드
 const conn = {
@@ -13,40 +13,43 @@ const conn = {
   database: "earlykross",
 };
 
-fId = "";
+fId = ''
 // localhost:3000으로 서버에 접속하면 클라이언트로 index.html을 전송한다
 app.get("/", function (req, res) {
-  res.sendFile(__dirname + "/room.html");
-  fId = req.query["fId"];
+  fId = req.query['fId'];
   console.log(fId);
   res.redirect("http://localhost:8180/chat/chat.do")
 });
 
+app.get('/room', (req, res) => {
+  res.sendFile(__dirname + '/room.html')
+})
+
 // namespace /chat에 접속한다.
-var chat = io.of("/chat").on("connection", function (socket) {
+const chat = io.of("/chat").on("connection", function (socket) {
   socket.on("chat message", function (data) {
     console.log("message from client: ", data);
 
-    var connection = mysql.createConnection(conn); // DB 커넥션 생성
-    connection.connect(); // DB 접속
-
-    var sql =
-        "INSERT INTO chat(room, name, msg) VALUES(" +
-        // connection.escape(data.room) +
-        connection.escape(fId) +
-        "," +
-        connection.escape(data.name) +
-        "," +
-        connection.escape(data.msg) +
-        ")";
-
-    connection.query(sql, function (err, results) {
-      // testQuery 실행
-      if (err) {
-        console.log(err);
-      }
-      console.log(results);
-    });
+    // const connection = mysql.createConnection(conn); // DB 커넥션 생성
+    // connection.connect(); // DB 접속
+    //
+    // const sql =
+    //     "INSERT INTO chat(room, name, msg) VALUES(" +
+    //     // connection.escape(data.room) +
+    //     connection.escape(fId) +
+    //     "," +
+    //     connection.escape(data.name) +
+    //     "," +
+    //     connection.escape(data.msg) +
+    //     ")";
+    //
+    // connection.query(sql, function (err, results) {
+    //   // testQuery 실행
+    //   if (err) {
+    //     console.log(err);
+    //   }
+    //   console.log(results);
+    // });
 
     // testQuery = "SELECT * FROM chat";
 
@@ -58,10 +61,10 @@ var chat = io.of("/chat").on("connection", function (socket) {
     //   console.log(results);
     // });
 
-    connection.end(); // DB 접속 종료
+    // connection.end(); // DB 접속 종료
 
-    var name = (socket.name = data.name);
-    var room = fId;
+    const name = (socket.name = data.name);
+    const room = fId;
 
     console.log(room);
 
