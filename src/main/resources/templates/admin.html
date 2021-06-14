@@ -48,19 +48,21 @@
     <link
         rel="stylesheet"
         type="text/css"
-        href="assets/icon/themify-icons/themify-icons.css"
-    />
+        href="assets/icon/themify-icons/themify-icons.css"    />
+        <!--적용-->
+
     <!-- font-awesome-n -->
     <link
         rel="stylesheet"
         type="text/css"
-        href="assets/css/font-awesome-n.min.css"
-    />
+        href="assets/css/font-awesome-n.min.css"    />
+
     <link
         rel="stylesheet"
         type="text/css"
-        href="assets/css/font-awesome.min.css"
-    />
+        href="assets/css/font-awesome.min.css" />
+        <!--적용-->
+
     <!-- scrollbar.css -->
     <link
         rel="stylesheet"
@@ -69,6 +71,7 @@
     />
     <!-- Style.css -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <!--적용-->
   </head>
 
   <body>
@@ -130,13 +133,19 @@
     <div id="pcoded" class="pcoded">
       <div class="pcoded-overlay-box"></div>
       <div class="pcoded-container navbar-wrapper">
-        <div th:replace="/fragments/admin_header.html :: admin_header">-- thymeleaf admin_header --</div>
+        <nav class="navbar header-navbar pcoded-header">
+          <div th:replace="/fragments/admin_header.html :: admin_header">-- thymeleaf admin_header --</div>
+        </nav>
 
         <div class="pcoded-main-container">
           <div class="pcoded-wrapper">
+            <!-- pcoded-navbar -->
+
             <!-- nav.html -->
-            <div th:replace="/fragments/admin_nav.html :: admin_nav">-- thymeleaf admin_nav --</div>
-            <!-- 불러오는 스크립트 -->
+            <nav class="pcoded-navbar">
+              <div th:replace="/fragments/admin_nav.html :: admin_nav">-- thymeleaf admin_nav --</div>
+            </nav>
+              <!-- 불러오는 스크립트 -->
 
 
             <div class="pcoded-content">
@@ -437,7 +446,7 @@
                                           class="d-inline-block align-middle"
                                       >
                                         <img
-                                            src="assets/images/avatar-2.jpg"
+                                            src="assets/images/admin_header/avatar-2.jpg"
                                             alt="user image"
                                             class="
                                               img-radius img-40
@@ -472,7 +481,7 @@
                                           class="d-inline-block align-middle"
                                       >
                                         <img
-                                            src="assets/images/avatar-4.jpg"
+                                            src="assets/images/admin_header/avatar-4.jpg"
                                             alt="user image"
                                             class="
                                               img-radius img-40
@@ -507,7 +516,7 @@
                                           class="d-inline-block align-middle"
                                       >
                                         <img
-                                            src="assets/images/avatar-2.jpg"
+                                            src="assets/images/admin_header/avatar-2.jpg"
                                             alt="user image"
                                             class="
                                               img-radius img-40
@@ -725,25 +734,25 @@
         <ul class="iew-download">
           <li>
             <a href="http://www.google.com/chrome/">
-              <img src="assets/images/browser/chrome.png" alt="Chrome"/>
+              <img src="assets/images/Admin_Browser/browser/chrome.png" alt="Chrome"/>
               <div>Chrome</div>
             </a>
           </li>
           <li>
             <a href="https://www.mozilla.org/en-US/firefox/new/">
-              <img src="assets/images/browser/firefox.png" alt="Firefox"/>
+              <img src="assets/images/Admin_Browser/browser/firefox.png" alt="Firefox"/>
               <div>Firefox</div>
             </a>
           </li>
           <li>
             <a href="http://www.opera.com">
-              <img src="assets/images/browser/opera.png" alt="Opera"/>
+              <img src="assets/images/Admin_Browser/browser/opera.png" alt="Opera"/>
               <div>Opera</div>
             </a>
           </li>
           <li>
             <a href="https://www.apple.com/safari/">
-              <img src="assets/images/browser/safari.png" alt="Safari"/>
+              <img src="assets/images/Admin_Browser/browser/safari.png" alt="Safari"/>
               <div>Safari</div>
             </a>
           </li>
@@ -751,7 +760,7 @@
             <a
                 href="http://windows.microsoft.com/en-us/internet-explorer/download-ie"
             >
-              <img src="assets/images/browser/ie.png" alt=""/>
+              <img src="assets/images/Admin_Browser/browser/ie.png" alt=""/>
               <div>IE (9 & above)</div>
             </a>
           </li>
