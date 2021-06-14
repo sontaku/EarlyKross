@@ -33,6 +33,9 @@ public interface DataCenterService {
   // 클럽 - 포지션별 선수
   List<List<PlayerDTO>> getPlayerByPosition(int cId);
 
+  // 시즌 게임당 골, 유효슈팅, 슈팅, 공격포인트
+  List<PlayerRecordDTO> getTeamStat(int cId);
+
 
   // == entity to dto ===================================================
   // league entity

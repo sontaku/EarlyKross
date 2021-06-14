@@ -107,7 +107,6 @@ public class DataCenterServiceImpl implements DataCenterService {
     return dto;
   }
 
-
   // 클럽 - 포지션별 선수
   @Override
   public List<List<PlayerDTO>> getPlayerByPosition(int cId) {
@@ -118,8 +117,6 @@ public class DataCenterServiceImpl implements DataCenterService {
     Club club = new Club();
     club.setCId(cId);
 
-
-
     List<List<PlayerDTO>> dtoList = new ArrayList<>();
     String[] strArr = {"FW", "MF", "DF", "GK"};
     for(int i = 0; i < strArr.length; i++) {
@@ -128,5 +125,20 @@ public class DataCenterServiceImpl implements DataCenterService {
       dtoList.add(tmpEntity.stream().map(fn).collect(Collectors.toList()));
     }
     return dtoList;
+  }
+
+  // 시즌 게임당 골, 유효슈팅, 슈팅, 공격포인트
+  @Override
+  public List<PlayerRecordDTO> getTeamStat(int cId) {
+    Club club = new Club();
+    club.setCId(cId);
+
+    // entity 탐색
+    List<PlayerRecord> prEntity = playerRecordRepository.findPlayerRecordBycId(club);
+
+    // entity to dto
+    Function<PlayerRecord, PlayerRecordDTO> fn = (entity -> entityToDto(entity));
+    List<PlayerRecordDTO> dto = prEntity.stream().map(fn).collect(Collectors.toList());
+    return dto;
   }
 }

@@ -1,5 +1,6 @@
 package com.ek.earlykross.repository;
 
+import com.ek.earlykross.entity.Club;
 import com.ek.earlykross.entity.League;
 import com.ek.earlykross.entity.Player;
 import com.ek.earlykross.entity.PlayerRecord;
@@ -43,4 +44,17 @@ public interface PlayerRecordRepository extends JpaRepository<PlayerRecord, Long
       + " AND l.league = 'kleague'"
       + " ORDER BY pr.totalGoal DESC")
   List<PlayerRecord> findTop20ByPlayedIsNotNull();
+
+
+  // 시즌 게임당 골, 유효슈팅, 슈팅, 공격포인트
+//  @Query(value = "SELECT "
+//      + " ROUND(SUM(pr.total_goal)/l.played, 1) AS GPG, "
+//      + " ROUND(SUM(pr.st)/l.played, 1) AS TSPG, "
+//      + " ROUND(SUM(pr.sot)/l.played, 1) AS SOPG, "
+//      + " ROUND((sum(pr.total_goal) + SUM(pr.assist))/l.played, 1) AS APPG"
+//      + " FROM league l, player_record pr"
+//      + " WHERE l.c_id = pr.c_id"
+//      + " AND pr.c_id = cId", nativeQuery = true)
+//  Object getStatistic(int cId);
+  List<PlayerRecord> findPlayerRecordBycId(Club cId);
 }

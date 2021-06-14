@@ -5,6 +5,7 @@ import com.ek.earlykross.entity.Player;
 import com.ek.earlykross.repository.LeagueRepository;
 import com.ek.earlykross.service.DataCenterService;
 import com.ek.earlykross.vo.PlayerDTO;
+import com.ek.earlykross.vo.PlayerRecordDTO;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
@@ -90,6 +91,13 @@ public class DataCenterController {
       model.addAttribute("lineup" + (tmpInt + ""), dto);
       tmpInt++;
     }
+    
+    // 팀 스탯
+    // 시즌 게임당 골, 유효슈팅, 슈팅, 공격포인트
+    List<PlayerRecordDTO> prDTOList = service.getTeamStat(Integer.parseInt(cId));
+//    model.addAttribute("teamStat", service.getTeamStat(Integer.parseInt(cId)));
+    
+    
   }
   // 클럽 로고 목록(a태그 경로)
   // 얼크위키
