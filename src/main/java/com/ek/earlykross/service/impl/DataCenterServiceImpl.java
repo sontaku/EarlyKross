@@ -1,15 +1,18 @@
 package com.ek.earlykross.service.impl;
 
 import com.ek.earlykross.entity.Club;
+import com.ek.earlykross.entity.ClubHistory;
 import com.ek.earlykross.entity.League;
 import com.ek.earlykross.entity.Player;
 import com.ek.earlykross.entity.PlayerRecord;
+import com.ek.earlykross.repository.ClubHistoryRepository;
 import com.ek.earlykross.repository.ClubRepository;
 import com.ek.earlykross.repository.LeagueRepository;
 import com.ek.earlykross.repository.PlayerRecordRepository;
 import com.ek.earlykross.repository.PlayerRepository;
 import com.ek.earlykross.service.DataCenterService;
 import com.ek.earlykross.vo.ClubDTO;
+import com.ek.earlykross.vo.ClubHistoryDTO;
 import com.ek.earlykross.vo.LeagueDTO;
 import com.ek.earlykross.vo.PlayerDTO;
 import com.ek.earlykross.vo.PlayerRecordDTO;
@@ -30,6 +33,7 @@ public class DataCenterServiceImpl implements DataCenterService {
 
   private final LeagueRepository leagueRepository;
   private final ClubRepository clubRepository;
+  private final ClubHistoryRepository clubHistoryRepository;
   private final PlayerRecordRepository playerRecordRepository;
   private final PlayerRepository playerRepository;
 
@@ -107,7 +111,6 @@ public class DataCenterServiceImpl implements DataCenterService {
     return dto;
   }
 
-
   // 클럽 - 포지션별 선수
   @Override
   public List<List<PlayerDTO>> getPlayerByPosition(int cId) {
@@ -118,8 +121,6 @@ public class DataCenterServiceImpl implements DataCenterService {
     Club club = new Club();
     club.setCId(cId);
 
-
-
     List<List<PlayerDTO>> dtoList = new ArrayList<>();
     String[] strArr = {"FW", "MF", "DF", "GK"};
     for(int i = 0; i < strArr.length; i++) {
@@ -128,5 +129,26 @@ public class DataCenterServiceImpl implements DataCenterService {
       dtoList.add(tmpEntity.stream().map(fn).collect(Collectors.toList()));
     }
     return dtoList;
+  }
+
+  // 시즌 게임당 골, 유효슈팅, 슈팅, 공격포인트
+  @Override
+  public String getTeamStat(int cId) {
+    Club club = new Club();
+    club.setCId(cId);
+    String tmpEntity = playerRecordRepository.getStatistic(club);
+    return tmpEntity;
+  }
+
+  // 클럽 통산 선수 기록
+  @Override
+  public ClubHistoryDTO getClubHistoryBycId(int cId) {
+    log.info("DataCenterServiceImpl.getClubHistoryBycId 호출");
+
+    Club club = new Club();
+    club.setCId(cId);
+
+    ClubHistory entity = clubHistoryRepository.findClubHistoryBycId(club);
+    return entityToDto(entity);
   }
 }

@@ -1,10 +1,12 @@
 package com.ek.earlykross.service;
 
 import com.ek.earlykross.entity.Club;
+import com.ek.earlykross.entity.ClubHistory;
 import com.ek.earlykross.entity.League;
 import com.ek.earlykross.entity.Player;
 import com.ek.earlykross.entity.PlayerRecord;
 import com.ek.earlykross.vo.ClubDTO;
+import com.ek.earlykross.vo.ClubHistoryDTO;
 import com.ek.earlykross.vo.LeagueDTO;
 import com.ek.earlykross.vo.PlayerDTO;
 import com.ek.earlykross.vo.PlayerRecordDTO;
@@ -33,6 +35,11 @@ public interface DataCenterService {
   // 클럽 - 포지션별 선수
   List<List<PlayerDTO>> getPlayerByPosition(int cId);
 
+  // 시즌 게임당 골, 유효슈팅, 슈팅, 공격포인트
+  String getTeamStat(int cId);
+
+  // 클럽 통산 선수 기록
+  ClubHistoryDTO getClubHistoryBycId(int cId);
 
   // == entity to dto ===================================================
   // league entity
@@ -122,6 +129,23 @@ public interface DataCenterService {
         .height(entity.getHeight())
         .weight(entity.getWeight())
         .birthday(entity.getBirthday())
+        .build();
+    return dto;
+  }
+
+  // club_history entity
+  // entity 를 dto 로 변환
+  default ClubHistoryDTO entityToDto(ClubHistory entity) {
+    ClubHistoryDTO dto = ClubHistoryDTO.builder()
+        .cId(entity.getCId())
+        .pMp(entity.getPMp())
+        .pMg(entity.getPMg())
+        .pMa(entity.getPMa())
+        .pMap(entity.getPMap())
+        .mostPlayed(entity.getMostPlayed())
+        .mostGoal(entity.getMostGoal())
+        .mostAs(entity.getMostAs())
+        .mostAp(entity.getMostAp())
         .build();
     return dto;
   }
