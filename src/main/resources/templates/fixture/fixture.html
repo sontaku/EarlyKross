@@ -60,23 +60,23 @@
                   <thead>
                   <tr>
                     <th class="team-schedule__date">날짜</th>
-                    <th class="team-schedule__time">시간</th>
-                    <th class="team-schedule__venue">장소</th>
+<!--                    <th class="team-schedule__time">시간</th>-->
                     <th class="team-schedule__versus">경기</th>
+                    <th class="team-schedule__venue">장소</th>
                     <th class="team-schedule__tickets">중계</th>
                   </tr>
                   </thead>
                   <tbody>
                   <tr th:each="fixture : ${fixtures}">
                     <td class="team-schedule__date">[[${fixture.fDate}]]</td>
-                    <td class="team-schedule__time">[[${fixture.fDate}]]</td>
-                    <td class="team-schedule__venue">[[${fixture.stadium}]]</td>
+<!--                    <td class="team-schedule__time">[[${fixture.fDate}]]</td>-->
                     <td class="team-schedule__versus">[[${fixture.home.shortName}]] VS
                       [[${fixture.away.shortName}]]
                     </td>
+                    <td class="team-schedule__venue">[[${fixture.stadium}]]</td>
                     <td class="team-schedule__tickets">
-                      <a th:href="@{https://sports.news.naver.com/gameCenter/textRelayFootball.nhn?category=kleague&(gameId=${fixture.fId})}"
-                         class="btn btn-xs btn-default btn-outline btn-block ">
+                      <a th:href="@{http://localhost:3000(fId=${fixture.fId})}"
+                         class="btn btn-xs btn-default btn-outline btn-block" target="_blank">
                         전력비교
                       </a>
                     </td>
@@ -86,26 +86,9 @@
               </div>
             </div>
           </div>
-          <!-- Schedule & Tickets / End -->
-
-          <!-- Team Pagination -->
-          <!--          <nav class="team-pagination" aria-label="Team navigation">-->
-          <!--            <ul class="pagination pagination&#45;&#45;condensed pagination&#45;&#45;lg justify-content-center">-->
-          <!--              <li class="page-item active"><a class="page-link" href="#">1</a></li>-->
-          <!--              <li class="page-item"><a class="page-link" href="#">2</a></li>-->
-          <!--              <li class="page-item"><a class="page-link" href="#">3</a></li>-->
-          <!--              <li class="page-item"><span class="page-link">...</span></li>-->
-          <!--              <li class="page-item"><a class="page-link" href="#">16</a></li>-->
-          <!--            </ul>-->
-          <!--          </nav>-->
-          <!-- Team Pagination / End -->
-
         </div>
       </div>
-
       <!-- Content / End -->
-
-
       <!-- Footer
       ================================================== -->
       <footer id="footer" class="footer">
