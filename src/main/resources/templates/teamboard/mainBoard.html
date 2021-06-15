@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <div th:replace="/fragments/head_line.html :: head_line">-- thymeleaf head_line --</div>
+    <style>
+      .logo{
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body data-template="template-soccer">
+    <div class="site-wrapper clearfix">
+      <div class="site-overlay"></div>
+
+      <!-- Header ================================================== -->
+
+      <!-- Header Mobile -->
+      <div th:replace="/fragments/header_mobile.html :: header_mobile">-- thymeleaf header_mobile
+        --
+      </div>
+
+      <!-- Header Desktop -->
+      <header class="header header--layout-1">
+        <div th:replace="/fragments/header_desktop.html :: header_desktop">-- thymeleaf
+          header_desktop --
+        </div>
+      </header>
+      <!-- Header / End -->
+
+      <!-- Pushy Panel - Dark -->
+      <div th:replace="/fragments/custom_pushy_panel.html :: custom_pushy_panel">-- thymeleaf
+        custom_pushy_panel --
+      </div>
+      <!-- Pushy Panel - Dark / End -->
+
+      <!-- Page Heading
+      ================================================== -->
+      <div class="page-heading">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 offset-md-1">
+              <h1 class="page-heading__title">Over<span class="highlight">View</span></h1>
+              <ol class="page-heading__breadcrumb breadcrumb">
+                <li class="breadcrumb-item"><a href="_soccer_index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="_soccer_team-overview.html">Team</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Overview</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Page Heading / End -->
+
+      <!-- Team Pages Filter -->
+      <nav class="content-filter">
+        <div class="container">
+          <a href="#" class="content-filter__toggle"></a>
+          <ul class="content-filter__list">
+            <li class="content-filter__item content-filter__item--active"><a
+                th:href="@{team_overview.do}" class="content-filter__link"><small>LEAGUE
+              OVERVIEW</small>리그 정보</a></li>
+            <li class="content-filter__item "><a href="_soccer_team-roster.html"
+                                                 class="content-filter__link"><small>CLUB
+              INFO</small>K리그 구단</a></li>
+            <li class="content-filter__item "><a href="_soccer_team-standings.html"
+                                                 class="content-filter__link"><small>PLYAER
+              INFO</small></a></li>
+            <li class="content-filter__item "><a href="_soccer_team-last-results.html"
+                                                 class="content-filter__link"><small>The
+              Team</small>Latest Results</a></li>
+            <li class="content-filter__item "><a href="_soccer_team-schedule.html"
+                                                 class="content-filter__link"><small>The
+              Team</small>Schedule</a></li>
+            <li class="content-filter__item "><a href="_soccer_team-gallery.html"
+                                                 class="content-filter__link"><small>The
+              Team</small>Gallery</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Team Pages Filter / End -->
+
+      <!-- Content
+      ================================================== -->
+      <div class="site-content">
+        <div class="container">
+
+          <div class="row">
+
+            <div class="col-md-11">
+              <div class="card">
+                <header class="card__header card__header--has-btn">
+                  <h4>팀별 게시판</h4>
+                </header>
+                <div class="card__content" style="background-image: url('../assets/images/map.png');height: 1250px; margin-top: 50px; position: relative">
+                  <div class="logo" style="position: absolute;width: 60px;inset: 230px auto auto 353px;">
+                    <img src="../assets/images/logo/인천유나이티드.png">
+                  </div>
+                  <div class="logo" style="position: absolute;width: 60px;inset: 194px auto auto 427px;">
+                    <img src="../assets/images/logo/서울FC.png">
+                  </div>
+                  <div class="logo" style="position: absolute;width: 60px;inset: 251px auto auto 456px;">
+                    <img src="../assets/images/logo/성남FC.png">
+                  </div>
+                  <div class="logo" style="position: absolute; width: 60px; inset: 298px auto auto 437px;">
+                    <img src="../assets/images/logo/수원삼성.png">
+                  </div>
+                  <div class="logo" style="position: absolute; width: 60px; inset: 298px auto auto 491px;">
+                    <img src="../assets/images/logo/수원FC.png">
+                  </div>
+                  <div class="logo" style="position: absolute;width: 60px;inset: 621px auto auto 469px;">
+                    <img src="../assets/images/logo/전북현대.png">
+                  </div>
+                  <div class="logo" style="position: absolute;width: 60px;inset: 150px auto auto 740px;">
+                    <img src="../assets/images/logo/강원FC.png">
+                  </div>
+                  <div class="logo" style="position: absolute;width: 60px;inset: 750px auto auto 420px;">
+                    <img src="../assets/images/logo/광주FC.png">
+                  </div>
+                  <div class="logo" style="position: absolute; width: 60px; inset: 576px auto auto 732px;">
+                    <img src="../assets/images/logo/대구FC.png">
+                  </div>
+                  <div class="logo" style="position: absolute; width: 60px; inset: 585px auto auto 879px;">
+                    <img src="../assets/images/logo/포항스틸러스.png">
+                  </div>
+                  <div class="logo" style="position: absolute;width: 60px;inset: 676px auto auto 849px;">
+                    <img src="../assets/images/logo/울산현대.png">
+                  </div>
+                  <div class="logo" style="position: absolute;width: 60px;inset: 1160px auto auto 344px;">
+                    <img src="../assets/images/logo/제주유나이티드.png">
+                  </div>
+                </div>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content / End -->
+
+
+      <!-- Footer ================================================== -->
+      <footer id="footer" class="footer">
+        <!-- Footer Widgets -->
+        <div th:replace="/fragments/footer_custom.html :: footer_custom">-- thymeleaf footer_custom
+          --
+        </div>
+        <!-- Footer Secondary / End -->
+      </footer>
+      <!-- Footer / End -->
+
+
+      <!-- Login/Register Tabs Modal -->
+      <div th:replace="/fragments/login_register.html :: login_register">-- thymeleaf login_register
+        --
+      </div>
+      <!-- Login/Register Tabs Modal / End -->
+
+    </div>
+    <div th:replace="/fragments/script_line.html :: script_line">-- thymeleaf script_line --</div>
+  </body>
+<script>
+  $(function (){
+    $(".logo").hover(function (){
+      // alert("R")
+      $(this).animate({"width":"120px", "z-index":1000});
+    },function (){
+      $(this).animate({"width":"60px","z-index":0});
+    })
+  })
+</script>
+</html>

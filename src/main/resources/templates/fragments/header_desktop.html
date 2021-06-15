@@ -38,7 +38,7 @@
             <a sec:authorize="isAnonymous()" style="color: #F7F7F7" th:href="@{/member/loginForm}">로그인</a>
             <a sec:authorize="isAuthenticated()" style="color: #F7F7F7" th:href="@{/logout}">로그아웃</a>
             <!--                <a sec:authorize="isAnonymous()" th:href="@{/user/signup}">회원가입</a>-->
-            <a sec:authorize="hasRole('USER')" style="color: #F7F7F7" th:href="@{/user/info}">내정보</a>
+            <a sec:authorize="hasRole('USER')" style="color: #F7F7F7" th:href="@{/user/info}" sec:authentication="name"></a>
             <a sec:authorize="hasRole('ADMIN')" style="color: #F7F7F7" th:href="@{/admin}">어드민</a>
           </li>
               </li>
@@ -64,11 +64,10 @@
         </div>
         <!-- Header Search Form / End -->
         <ul class="info-block info-block--header">
-          <li class="info-block__item info-block__item--contact-primary">
+          <li class="info-block__item info-block__item--contact-primary" th:href="@{/best11/best.do}">
             <img src="../assets/images/ek_ground.png" class="df-icon df-icon&#45;&#45;whistle" alt="ground">
             <h6 class="info-block__heading">라운드</h6>
-            <a class="info-block__link"
-               th:href="@{/best11/best.do}">베스트 <span class="highlight" style="color: #c2ff1f;">일레븐</a>
+            <a class="info-block__link">베스트 <span class="highlight" style="color: #c2ff1f;">일레븐</span></a>
             <!--            <img src="../assets/images/ek_ground.png" alt="ground" style="display:inline; position: absolute">-->
             <!--            <a class="info-block__link" href="mailto:tryouts@alchemists.com" style="position: relative; z-index: 2; color: #FFFFFF; font-size: large">-->
             <!--              <div style="display:inline; float: left;  width: 24px">-->
@@ -369,13 +368,7 @@
                   <!--                  <li class=""><a href="_soccer_blog-2.html">News - version 2</a></li>-->
                   <!--                  <li class=""><a href="_soccer_blog-3.html">News - version 3</a></li>-->
                   <li class=""><a th:href="@{/news/soccer_news.do}">뉴스</a></li>
-                  <li><a href="#">Post</a>
-                    <ul class="main-nav__sub-2">
-                      <li><a href="_soccer_blog-post-1.html">Single Post - version 1</a></li>
-                      <li><a href="_soccer_blog-post-2.html">Single Post - version 2</a></li>
-                      <li><a href="_soccer_blog-post-3.html">Single Post - version 3</a></li>
-                    </ul>
-                  </li>
+                  <li><a th:href="@{/teamboard/mainBoard}">팀별 게시판</a></li>
                 </ul>
               </li>
               <!--                        <li class=""><a href="_soccer_shop-grid.html" class="custom_top_menu">Shop</a>-->

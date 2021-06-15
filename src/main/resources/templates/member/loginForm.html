@@ -189,7 +189,7 @@
                 <div class="card__content">
 
                   <!-- Login Form -->
-                  <form method="post" action="/login">
+                  <form method="post" action="/login" id="login">
                     <div class="form-group">
                       <label for="username">이메일</label>
                       <input type="text" name="username" id="username" class="form-control"
@@ -221,9 +221,8 @@
                         </div>
                       </div>
                       <div class="col-md-6">
-                        <button class="btn btn-google btn-icon btn-block" style="border: 1px solid black"><i
-                            class="fab fa-google"></i> 구글 로그인
-                        </button>
+                        <div class="btn btn-google btn-icon btn-block" style="border: 1px solid black" onclick="location.href='/oauth2/authorization/google'">구글 로그인
+                        </div>
                       </div>
                     </div>
                   </form>
@@ -342,12 +341,32 @@
             success: function (response) {
               console.log(response)
               console.log('이름 : ' + response.properties.nickname)
-              alert(response.properties.nickname +'님 반갑습니다')
-              alert(response.kakao_account.email +'님 반갑습니다')
+              // alert(response.properties.nickname +'님 반갑습니다')
+              // alert(response.kakao_account.email +'님 반갑습니다')
 
               //페이지 이동
               // location.href = '/hello?email='+response.kakao_account.email;
               //여기서 페이지 이동이 아닌 ajax로 전송???
+              var memberDTO = {email: response.kakao_account.email};
+              $.ajax({
+                url:"/check",
+                data: memberDTO,
+                type:"POST",
+                success:function (data){
+                  $(".checkmark").text(data);
+                  if(data === "사용가능합니다"){
+                    $("#email").val(response.kakao_account.email);
+                    $("#name").val("카카오 사용자")
+                    $("#rgpassword").val(1111);
+                    $("#signup").submit();
+                    alert("회원가입에 성공하였습니다. 로그인을 해주세요")
+                  }else{
+                    $("#username").val(response.kakao_account.email);
+                    $("#password").val(1111)
+                    $("#login").submit();
+                  }
+                 }
+              })
             },
             fail: function (error) {
               console.log(error)
