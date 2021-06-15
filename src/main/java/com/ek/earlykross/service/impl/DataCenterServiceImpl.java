@@ -5,7 +5,6 @@ import com.ek.earlykross.entity.ClubHistory;
 import com.ek.earlykross.entity.League;
 import com.ek.earlykross.entity.Player;
 import com.ek.earlykross.entity.PlayerRecord;
-import com.ek.earlykross.repository.ClubHistoryRepository;
 import com.ek.earlykross.repository.ClubRepository;
 import com.ek.earlykross.repository.LeagueRepository;
 import com.ek.earlykross.repository.PlayerRecordRepository;
@@ -33,7 +32,7 @@ public class DataCenterServiceImpl implements DataCenterService {
 
   private final LeagueRepository leagueRepository;
   private final ClubRepository clubRepository;
-  private final ClubHistoryRepository clubHistoryRepository;
+  //private final ClubHistoryRepository clubHistoryRepository;
   private final PlayerRecordRepository playerRecordRepository;
   private final PlayerRepository playerRepository;
 
@@ -148,7 +147,8 @@ public class DataCenterServiceImpl implements DataCenterService {
     Club club = new Club();
     club.setCId(cId);
 
-    ClubHistory entity = clubHistoryRepository.findClubHistoryBycId(club);
-    return entityToDto(entity);
+    // ClubHistory entity = clubHistoryRepository.findClubHistoryBycId(club);
+    // return entityToDto(entity);
+    return null;
   }
 }
