@@ -12,9 +12,4 @@ public class ChatController {
   public void chat() {
 
   }
-
-  @GetMapping("/room.do")
-  public void room() {
-
-  }
 }
