@@ -8,6 +8,7 @@ import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.querydsl.QuerydslPredicateExecutor;
+import org.springframework.data.repository.query.Param;
 
 public interface PlayerRecordRepository extends JpaRepository<PlayerRecord, Long>, QuerydslPredicateExecutor<PlayerRecord> {
   // 리그 최다 골 순위
@@ -47,14 +48,14 @@ public interface PlayerRecordRepository extends JpaRepository<PlayerRecord, Long
 
 
   // 시즌 게임당 골, 유효슈팅, 슈팅, 공격포인트
-//  @Query(value = "SELECT "
-//      + " ROUND(SUM(pr.total_goal)/l.played, 1) AS GPG, "
-//      + " ROUND(SUM(pr.st)/l.played, 1) AS TSPG, "
-//      + " ROUND(SUM(pr.sot)/l.played, 1) AS SOPG, "
-//      + " ROUND((sum(pr.total_goal) + SUM(pr.assist))/l.played, 1) AS APPG"
-//      + " FROM league l, player_record pr"
-//      + " WHERE l.c_id = pr.c_id"
-//      + " AND pr.c_id = cId", nativeQuery = true)
-//  Object getStatistic(int cId);
-  List<PlayerRecord> findPlayerRecordBycId(Club cId);
+  @Query(value = "SELECT "
+      + " ROUND(SUM(pr.total_goal)/l.played, 1) AS GPG, "
+      + " ROUND(SUM(pr.st)/l.played, 1) AS TSPG, "
+      + " ROUND(SUM(pr.sot)/l.played, 1) AS SOPG, "
+      + " ROUND((sum(pr.total_goal) + SUM(pr.assist))/l.played, 1) AS APPG"
+      + " FROM league l, player_record pr"
+      + " WHERE l.c_id = pr.c_id"
+      + " AND pr.c_id =:cId" , nativeQuery = true)
+  String getStatistic(@Param("cId") Club cId);
+//  List<PlayerRecord> findPlayerRecordBycId(Club cId);
 }

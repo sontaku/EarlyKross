@@ -94,14 +94,22 @@ public class DataCenterController {
     
     // 팀 스탯
     // 시즌 게임당 골, 유효슈팅, 슈팅, 공격포인트
-    List<PlayerRecordDTO> prDTOList = service.getTeamStat(Integer.parseInt(cId));
-//    model.addAttribute("teamStat", service.getTeamStat(Integer.parseInt(cId)));
-    
-    
+    String dbResult = service.getTeamStat(Integer.parseInt(cId));
+//    System.out.println("결과 : " + dbResult);
+    String[] tsResult = dbResult.split(",");
+
+    model.addAttribute("gpg", tsResult[0]); // 경기당 골
+    model.addAttribute("tspg", tsResult[1]); // 경기당 슈팅 수
+    model.addAttribute("sopg", tsResult[2]); // 경기당 유효슈팅 수
+    model.addAttribute("appg", tsResult[3]); // 경기당 공격포인트
+
+    // 클럽 레전드 기록
+    // 구단 통산 기록
+    model.addAttribute("clubHistory", service.getClubHistoryBycId(Integer.parseInt(cId)));
   }
   // 클럽 로고 목록(a태그 경로)
   // 얼크위키
-  // 팀내 최다 득점자
+
 
   // 경기 일정
   // 승점 변화(그래프) or 순위 변화 - 타클럽과 비교

@@ -1,15 +1,18 @@
 package com.ek.earlykross.service.impl;
 
 import com.ek.earlykross.entity.Club;
+import com.ek.earlykross.entity.ClubHistory;
 import com.ek.earlykross.entity.League;
 import com.ek.earlykross.entity.Player;
 import com.ek.earlykross.entity.PlayerRecord;
+import com.ek.earlykross.repository.ClubHistoryRepository;
 import com.ek.earlykross.repository.ClubRepository;
 import com.ek.earlykross.repository.LeagueRepository;
 import com.ek.earlykross.repository.PlayerRecordRepository;
 import com.ek.earlykross.repository.PlayerRepository;
 import com.ek.earlykross.service.DataCenterService;
 import com.ek.earlykross.vo.ClubDTO;
+import com.ek.earlykross.vo.ClubHistoryDTO;
 import com.ek.earlykross.vo.LeagueDTO;
 import com.ek.earlykross.vo.PlayerDTO;
 import com.ek.earlykross.vo.PlayerRecordDTO;
@@ -30,6 +33,7 @@ public class DataCenterServiceImpl implements DataCenterService {
 
   private final LeagueRepository leagueRepository;
   private final ClubRepository clubRepository;
+  private final ClubHistoryRepository clubHistoryRepository;
   private final PlayerRecordRepository playerRecordRepository;
   private final PlayerRepository playerRepository;
 
@@ -129,16 +133,22 @@ public class DataCenterServiceImpl implements DataCenterService {
 
   // 시즌 게임당 골, 유효슈팅, 슈팅, 공격포인트
   @Override
-  public List<PlayerRecordDTO> getTeamStat(int cId) {
+  public String getTeamStat(int cId) {
+    Club club = new Club();
+    club.setCId(cId);
+    String tmpEntity = playerRecordRepository.getStatistic(club);
+    return tmpEntity;
+  }
+
+  // 클럽 통산 선수 기록
+  @Override
+  public ClubHistoryDTO getClubHistoryBycId(int cId) {
+    log.info("DataCenterServiceImpl.getClubHistoryBycId 호출");
+
     Club club = new Club();
     club.setCId(cId);
 
-    // entity 탐색
-    List<PlayerRecord> prEntity = playerRecordRepository.findPlayerRecordBycId(club);
-
-    // entity to dto
-    Function<PlayerRecord, PlayerRecordDTO> fn = (entity -> entityToDto(entity));
-    List<PlayerRecordDTO> dto = prEntity.stream().map(fn).collect(Collectors.toList());
-    return dto;
+    ClubHistory entity = clubHistoryRepository.findClubHistoryBycId(club);
+    return entityToDto(entity);
   }
 }
