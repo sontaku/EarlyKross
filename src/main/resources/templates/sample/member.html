@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:sec="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
@@ -17,6 +17,10 @@
 Authenticated username:
 <div sec:authentication="name"></div>
 Authenticated user roles:
-<div sec:authentication="principal.authorities"></div
+<div sec:authentication="principal.authorities"></div>
+
+<!--<div th:if="${#authorization.expr('isAuthenticated()')} eq 'a@a'">-->
+<!--  내가 보이니-->
+<!--</div>-->
 </body>
 </html>

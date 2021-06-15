@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+    <div th:fragment="admin_nav">
+        <div class="sidebar_toggle"><i class="icon-close icons"></i></div>
+        <div class="pcoded-inner-navbar main-menu">
+            <div class="">
+                <div class="main-menu-header">
+                    <img class="img-80 img-radius" src="../assets/images/Admin_header/avatar-1.jpg" alt="User-Profile-Image">
+                    <div class="user-details">
+                        <span id="more-details">Admin</span>
+                    </div>
+                </div>
+                <!-- <div class="main-menu-content">
+                    <ul>
+                        <li class="more-details">
+                            <a href="user-profile.html"><i class="ti-user"></i>호스트 신청하기</a>
+                            <a href="form-elements-component.html"><i class="ti-settings"></i>비밀번호 수정</a>
+                            <a href="index.html"><i class="ti-layout-sidebar-left"></i>로그아웃</a>
+                        </li>
+                    </ul>
+                </div> -->
+            </div>
+            <!-- <div class="p-15 p-b-0">
+                <form class="form-material">
+                    <div class="form-group form-primary">
+                        <input type="text" name="footer-email" class="form-control">
+                        <span class="form-bar"></span>
+                        <label class="float-label"><i class="fa fa-search m-r-10"></i>호스트 찾기</label>
+                    </div>
+                </form>
+            </div> -->
+            <div class="pcoded-navigation-label">회원 관리</div>
+            <ul class="pcoded-item pcoded-left-item">
+                <li class="pcoded-hasmenu">
+                    <a th:href="@{'../admin/userInquiry.do'}" class="waves-effect waves-dark">
+                        <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
+                        <span class="pcoded-mtext">회원조회</span>
+                        <span class="pcoded-mcaret"></span>
+                    </a>
+                </li>
+                <li class="pcoded-hasmenu">
+                    <a th:href="@{'../admin/userBlacklist.do'}" class="waves-effect waves-dark">
+                        <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
+                        <span class="pcoded-mtext">블랙리스트 회원 조회</span>
+                        <span class="pcoded-mcaret"></span>
+                    </a>
+                </li>
+                <li class="pcoded-hasmenu">
+                    <a th:href="@{'../admin/userBesteleven.do'}" class="waves-effect waves-dark">
+                        <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
+                        <span class="pcoded-mtext">Best_11 맞춘 회원 조회</span>
+                        <span class="pcoded-mcaret"></span>
+                    </a>
+                </li>
+                <li class="pcoded-hasmenu">
+                    <a th:href="@{'../admin/userPoint'.do}" class="waves-effect waves-dark">
+                        <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
+                        <span class="pcoded-mtext">회원 포인트 조회</span>
+                        <span class="pcoded-mcaret"></span>
+                    </a>
+                </li>
+            </ul>
+            <!-- <div class="pcoded-navigation-label">UI Element</div>
+            <ul class="pcoded-item pcoded-left-item">
+                <li class="pcoded-hasmenu">
+                    <a href="javascript:void(0)" class="waves-effect waves-dark">
+                        <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i><b>BC</b></span>
+                        <span class="pcoded-mtext">Basic</span>
+                        <span class="pcoded-mcaret"></span>
+                    </a>
+                    <ul class="pcoded-submenu">
+                        <li class=" ">
+                            <a href="breadcrumb.html" class="waves-effect waves-dark">
+                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                <span class="pcoded-mtext">Breadcrumbs</span>
+                                <span class="pcoded-mcaret"></span>
+                            </a>
+                        </li>
+                        <li class=" ">
+                            <a href="button.html" class="waves-effect waves-dark">
+                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                <span class="pcoded-mtext">Button</span>
+                                <span class="pcoded-mcaret"></span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="accordion.html" class="waves-effect waves-dark">
+                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                <span class="pcoded-mtext">Accordion</span>
+                                <span class="pcoded-mcaret"></span>
+                            </a>
+                        </li>
+                        <li class=" ">
+                            <a href="tabs.html" class="waves-effect waves-dark">
+                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                <span class="pcoded-mtext">Tabs</span>
+                                <span class="pcoded-mcaret"></span>
+                            </a>
+                        </li>
+                        <li class=" ">
+                            <a href="color.html" class="waves-effect waves-dark">
+                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                <span class="pcoded-mtext">Color</span>
+                                <span class="pcoded-mcaret"></span>
+                            </a>
+                        </li>
+                        <li class=" ">
+                            <a href="label-badge.html" class="waves-effect waves-dark">
+                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                <span class="pcoded-mtext">Label Badge</span>
+                                <span class="pcoded-mcaret"></span>
+                            </a>
+                        </li>
+                        <li class=" ">
+                            <a href="tooltip.html" class="waves-effect waves-dark">
+                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                <span class="pcoded-mtext">Tooltip And Popover</span>
+                                <span class="pcoded-mcaret"></span>
+                            </a>
+                        </li>
+                        <li class=" ">
+                            <a href="typography.html" class="waves-effect waves-dark">
+                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                <span class="pcoded-mtext">Typography</span>
+                                <span class="pcoded-mcaret"></span>
+                            </a>
+                        </li>
+                        <li class=" ">
+                            <a href="notification.html" class="waves-effect waves-dark">
+                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                <span class="pcoded-mtext">Notifications</span>
+                                <span class="pcoded-mcaret"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul> -->
+            <div class="pcoded-navigation-label">페이지 관리</div>
+            <ul class="pcoded-item pcoded-left-item">
+                <li class="">
+                    <a th:href="userNumber" class="waves-effect waves-dark">
+                        <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
+                        <span class="pcoded-mtext">이용자 수 조회</span>
+                        <span class="pcoded-mcaret"></span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="../admin/admin_table.html" class="waves-effect waves-dark">
+                        <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
+                        <span class="pcoded-mtext">매칭현황 조회</span>
+                        <span class="pcoded-mcaret"></span>
+                    </a>
+                </li>
+            </ul>
+            <div class="pcoded-navigation-label">운영관리</div>
+            <ul class="pcoded-item pcoded-left-item">
+                <li class="">
+                    <a href="../admin/admin_table.html" class="waves-effect waves-dark">
+                        <span class="pcoded-micon"><i class="ti-receipt"></i><b>B</b></span>
+                        <span class="pcoded-mtext">총매출 조회</span>
+                        <span class="pcoded-mcaret"></span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="../admin/admin_table.html" class="waves-effect waves-dark">
+                        <span class="pcoded-micon"><i class="ti-receipt"></i><b>B</b></span>
+                        <span class="pcoded-mtext">매출 장부 조회</span>
+                        <span class="pcoded-mcaret"></span>
+                    </a>
+                </li>
+            </ul>
+            <!-- <div class="pcoded-navigation-label">기록</div>
+            <ul class="pcoded-item pcoded-left-item">
+                <li class="">
+                    <a href="chart-morris.html" class="waves-effect waves-dark">
+                        <span class="pcoded-micon"><i class="ti-bar-chart-alt"></i><b>C</b></span>
+                        <span class="pcoded-mtext">데이터</span>
+                        <span class="pcoded-mcaret"></span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="map-google.html" class="waves-effect waves-dark">
+                        <span class="pcoded-micon"><i class="ti-map-alt"></i><b>M</b></span>
+                        <span class="pcoded-mtext">장소</span>
+                        <span class="pcoded-mcaret"></span>
+                    </a>
+                </li>
+            </ul> -->
+            <!-- <div class="pcoded-navigation-label">Pages</div>
+            <ul class="pcoded-item pcoded-left-item">
+                <li class="pcoded-hasmenu ">
+                    <a href="javascript:void(0)" class="waves-effect waves-dark">
+                        <span class="pcoded-micon"><i class="ti-id-badge"></i><b>A</b></span>
+                        <span class="pcoded-mtext">Pages</span>
+                        <span class="pcoded-mcaret"></span>
+                    </a>
+                    <ul class="pcoded-submenu">
+                        <li class="">
+                            <a href="auth-normal-sign-in.html" class="waves-effect waves-dark">
+                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                <span class="pcoded-mtext">Login</span>
+                                <span class="pcoded-mcaret"></span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="auth-sign-up.html" class="waves-effect waves-dark">
+                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                <span class="pcoded-mtext">Registration</span>
+                                <span class="pcoded-mcaret"></span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="sample-page.html" class="waves-effect waves-dark">
+                                <span class="pcoded-micon"><i class="ti-layout-sidebar-left"></i><b>S</b></span>
+                                <span class="pcoded-mtext">Sample Page</span>
+                                <span class="pcoded-mcaret"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul> 
+        </div>-->
+        </div>
+    </div>
+</html>
