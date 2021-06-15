@@ -1,7 +1,12 @@
 package com.ek.earlykross.controller;
 
+import com.ek.earlykross.entity.Club;
+import com.ek.earlykross.entity.Player;
 import com.ek.earlykross.repository.LeagueRepository;
 import com.ek.earlykross.service.DataCenterService;
+import com.ek.earlykross.vo.PlayerDTO;
+import com.ek.earlykross.vo.PlayerRecordDTO;
+import java.util.List;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,7 +34,6 @@ public class DataCenterController {
   @Autowired
   LeagueRepository leagueRepository;
 
-
 //    @GetMapping("{step}.do")
 //    public String viewPage(@PathVariable String step) {
 //        System.out.println("main에서 자신 반환하는 모든 동작 : " + step);
@@ -47,11 +51,13 @@ public class DataCenterController {
     model.addAttribute("leagueRankList", service.getLeagueTable());
 
     // 선수 개인 시즌 기록
+    model.addAttribute("leagueTopGoal", service.getLeagueTopGoal()); // 골
+    model.addAttribute("leagueTopAssist", service.getLeagueTopAssist()); // 어시
+    model.addAttribute("leagueTopAp", service.getLeagueTopAp()); // 공포
+
     // 시즌 선수 기록
+    model.addAttribute("playerSeasonRecord", service.getPlayerSeasonRecord()); // 공포
   }
-
-
-
 
   // =============================================================
 
@@ -61,33 +67,50 @@ public class DataCenterController {
   public void clubOverview(Model model, String cId) {
     log.info("DataCenterController.ClubOverview 호출");
 
-
     // 클럽 목록
 //    model.addAttribute("clubList", service.getClubList());
     model.addAttribute("clubList", service.getLeagueTable());
 
     // 특정 클럽
-    if(cId == null) {
+    if (cId == null) {
       cId = "1";
     }
     log.info("구단 페이지 :: 구단번호 : " + cId);
-    
+
     // cId로 구단 탐색
     model.addAttribute("oneClub", service.getClubBycId(Integer.parseInt(cId)));
+
+    // 스쿼드(라인업)
+    List<List<PlayerDTO>> dtoList = service.getPlayerByPosition(Integer.parseInt(cId));
+    // 0 : FW
+    // 1 : MF
+    // 2 : DF
+    // 3 : GK
+    int tmpInt = 0;
+    for(List<PlayerDTO> dto: dtoList) {
+      model.addAttribute("lineup" + (tmpInt + ""), dto);
+      tmpInt++;
+    }
     
+    // 팀 스탯
+    // 시즌 게임당 골, 유효슈팅, 슈팅, 공격포인트
+    String dbResult = service.getTeamStat(Integer.parseInt(cId));
+//    System.out.println("결과 : " + dbResult);
+    String[] tsResult = dbResult.split(",");
 
-    // 구단 로고(클럽 목록 받음)
-//    model.addAttribute("cId", cId);
+    model.addAttribute("gpg", tsResult[0]); // 경기당 골
+    model.addAttribute("tspg", tsResult[1]); // 경기당 슈팅 수
+    model.addAttribute("sopg", tsResult[2]); // 경기당 유효슈팅 수
+    model.addAttribute("appg", tsResult[3]); // 경기당 공격포인트
 
-    // repository
-
-
-//        return "redirect:/club/overview.do";
+    // 클럽 레전드 기록
+    // 구단 통산 기록
+    model.addAttribute("clubHistory", service.getClubHistoryBycId(Integer.parseInt(cId)));
   }
   // 클럽 로고 목록(a태그 경로)
   // 얼크위키
-  // 팀내 최다 득점자
-  // 스쿼드(라인업)
+
+
   // 경기 일정
   // 승점 변화(그래프) or 순위 변화 - 타클럽과 비교
 
