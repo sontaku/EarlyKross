@@ -6,14 +6,20 @@ import com.ek.earlykross.repository.ClubNewsRepository;
 import com.ek.earlykross.service.ClubNewsService;
 import com.ek.earlykross.vo.ClubNewsVO;
 import com.ek.earlykross.vo.PageRequestDTO;
+import com.ek.earlykross.vo.PageResultDTO;
 import com.querydsl.core.BooleanBuilder;
 import com.querydsl.core.types.dsl.BooleanExpression;
+
 import java.util.List;
 import java.util.Optional;
 import java.util.function.Function;
 import java.util.stream.Collectors;
+
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 // Bean 처리
@@ -23,69 +29,78 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class ClubNewsServiceImpl implements ClubNewsService {
 
-  private final ClubNewsRepository repository; // 반드시 파이널
+    private final ClubNewsRepository repository; // 반드시 파이널
 
 
-  @Override
-  public List<ClubNewsVO> getList() {
-    // 요청한 DTO 를 페이징
-//    Pageable pageable = requestDTO.getPageable(Sort.by("mno").descending());
+    @Override
+    public PageResultDTO<ClubNewsVO, ClubNews> getList(PageRequestDTO requestDTO) {
+        System.out.println("getList 호출");
+        Pageable pageable = requestDTO.getPageable(Sort.by("nId").ascending());
 
-    // 검색 조건 탐색
-//    BooleanBuilder booleanBuilder = getSearch(requestDTO);
+        // 검색 조건 탐색
+        BooleanBuilder booleanBuilder = getSearch(requestDTO);
 
-    // JPA 로 DB 탐색, Querydsl 사용
-//    Page<ClubNews> result = repository.findAll(booleanBuilder, pageable);
+        // PA 로 DB 탐색, Querydsl 사용
+        Page<ClubNews> result = repository.findAll(booleanBuilder, pageable);
 
-    List<ClubNews> result = repository.findAll();
-    // 엔티티를 DTO 로 변환
-    Function<ClubNews, ClubNewsVO> fn = (entity -> entityToDto(entity));
+        Function<ClubNews, ClubNewsVO> fn = entity -> entityToDto(entity);
 
-    return result.stream().map(fn).collect(Collectors.toList());
-//    return new PageResultDTO<>(result, fn);
-  }
+        return new PageResultDTO<>(result, fn);
+    }
 
-
-  @Override
-  public ClubNewsVO read(Long mno) { // PK 자료형
-    Optional<ClubNews> result = repository.findById(mno);
-    // JPA 에서 엔티티 객체를 가져왔다면 DTO로 반환해서 리턴
-    return result.isPresent() ? entityToDto(result.get()) : null;
-  }
-
-  // Querydsl 처리
-  private BooleanBuilder getSearch(PageRequestDTO requestDTO) {
-
-//        String type = requestDTO.getType();
-
-    BooleanBuilder booleanBuilder = new BooleanBuilder();
+//    @Override
+//    public List<ClubNewsVO> getList() {
+//        // 요청한 DTO 를 페이징
 //
-    QClubNews qClubNews = QClubNews.clubNews;
+//        List<ClubNews> result = repository.findAll();
+//        // 엔티티를 DTO 로 변환
+//        Function<ClubNews, ClubNewsVO> fn = (entity -> entityToDto(entity));
 //
-//        String keyword = requestDTO.getKeyword();
+//        return result.stream().map(fn).collect(Collectors.toList());
+////    return new PageResultDTO<>(result, fn);
+//    }
+
+
+    @Override
+    public ClubNewsVO read(Long nId) { // PK 자료형
+        Optional<ClubNews> result = repository.findById(nId);
+        // JPA 에서 엔티티 객체를 가져왔다면 DTO로 반환해서 리턴
+        return result.isPresent() ? entityToDto(result.get()) : null;
+    }
+
+    // Querydsl 처리
+    private BooleanBuilder getSearch(PageRequestDTO requestDTO) {
+
+        String type = requestDTO.getType();
+
+        BooleanBuilder booleanBuilder = new BooleanBuilder();
 //
-//        // 기본 검색 규칙
+        QClubNews qClubNews = QClubNews.clubNews;
 //
-//        BooleanExpression expression = qMemo.mno.gt(0L);
-    BooleanExpression expression = null;
-//        booleanBuilder.and(expression);
-//
-//        // 검색을 하지 않으면
-//        if (type == null || type.trim().length() == 0) {
-//            return booleanBuilder;
-//        }
-//
-//        // 검색 조건 작성
-//        BooleanBuilder conditionBuilder = new BooleanBuilder();
-//
+        String keyword = requestDTO.getKeyword();
+
+        // 기본 검색 규칙
+
+        BooleanExpression expression = qClubNews.nId.gt(0L);
+
+        booleanBuilder.and(expression);
+
+        // 검색을 하지 않으면
+        if (type == null || type.trim().length() == 0) {
+            return booleanBuilder;
+        }
+
+        // 검색 조건 작성
+        BooleanBuilder conditionBuilder = new BooleanBuilder();
+
 //        if (type.contains("t")) {
-//            conditionBuilder.or((qMemo.memoText.contains(keyword)));
+//            conditionBuilder.or(qClubNews());
 //        }
-//        // 위의 검색조건을 타입을 변경하며 여러개 작성 가능
-//
-//        //위의 모든 조건 통합
-//        booleanBuilder.and(conditionBuilder);
+        // 위의 검색조건을 타입을 변경하며 여러개 작성 가능
 
-    return booleanBuilder;
-  }
+        //위의 모든 조건 통합
+        booleanBuilder.and(conditionBuilder);
+
+        return booleanBuilder;
+    }
 }
