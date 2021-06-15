@@ -24,7 +24,7 @@ import lombok.ToString;
 @Builder // 객체 생성
 @AllArgsConstructor
 @NoArgsConstructor
-public class ClubHistory implements Serializable {
+public class ClubHistory {
 
     @Id // PK 지정
     @ManyToOne
