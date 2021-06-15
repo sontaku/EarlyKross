@@ -55,6 +55,8 @@ dependencies {
     // security 추가, 쿠키에서 JSESSIONID 가 로그인 정보
     implementation 'org.springframework.boot:spring-boot-starter-security'
     compile group: 'org.thymeleaf.extras', name: 'thymeleaf-extras-springsecurity5'
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-redis', version: '2.5.0'
+    implementation group: 'org.springframework.session', name: 'spring-session-data-redis', version: '2.5.0'
 
 //
 //    testImplementation('org.springframework.boot:spring-boot-starter-test'){

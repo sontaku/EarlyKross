@@ -45,6 +45,7 @@ public class SampleController {
 
     @GetMapping("member")
     public void exMember(@AuthenticationPrincipal AuthMemberDTO authMemberDTO){//멤버만 접근
+        System.out.println("hello");
         log.info("exMember....");
         log.info("-----------------");
         log.info(authMemberDTO);
