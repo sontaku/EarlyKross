@@ -34,6 +34,7 @@ public class DataCenterController {
   @Autowired
   LeagueRepository leagueRepository;
 
+
 //    @GetMapping("{step}.do")
 //    public String viewPage(@PathVariable String step) {
 //        System.out.println("main에서 자신 반환하는 모든 동작 : " + step);
@@ -68,7 +69,6 @@ public class DataCenterController {
     log.info("DataCenterController.ClubOverview 호출");
 
     // 클럽 목록
-//    model.addAttribute("clubList", service.getClubList());
     model.addAttribute("clubList", service.getLeagueTable());
 
     // 특정 클럽
@@ -105,7 +105,7 @@ public class DataCenterController {
 
     // 클럽 레전드 기록
     // 구단 통산 기록
-    model.addAttribute("clubHistory", service.getClubHistoryBycId(Integer.parseInt(cId)));
+//    model.addAttribute("clubHistory", service.getClubHistoryBycId(Integer.parseInt(cId)));
   }
   // 클럽 로고 목록(a태그 경로)
   // 얼크위키
@@ -117,6 +117,30 @@ public class DataCenterController {
   // =============================================================
 
   // == 선수 =====================================================
+  // 선수 목록
+  @GetMapping({"/playerlist.do"})
+  public void playerList(Model model, String cId) {
+    log.info("DataCenterController.playerList 호출");
+
+    // 특정 클럽
+    if (cId == null) {
+      cId = "1";
+    }
+    log.info("구단 페이지 :: 구단번호 : " + cId);
+
+    // 클럽별 선수 조회
+    model.addAttribute("pList", service.getPlayerBycId(cId));
+
+    // 클럽 목록
+    model.addAttribute("clubList", service.getLeagueTable());
+  }
+
+  // 선수 detail view
+  @GetMapping({"/playerdetail.do"})
+  public void playerDetail(Model model, String pId) {
+    log.info("DataCenterController.playerDetail 호출");
+
+  }
 
   // =============================================================
 }
