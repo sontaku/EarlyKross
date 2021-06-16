@@ -2,6 +2,7 @@ package com.ek.earlykross.entity;
 
 import java.util.HashSet;
 import java.util.Set;
+import javax.persistence.Column;
 import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -34,7 +35,10 @@ public class Member extends BaseEntity {
 
     private String name; // 닉네임
 
-    private boolean fromSocial;
+    @Column(columnDefinition = "BigInt default 0")
+    private Long point; // 회원포인트 기본값:0
+
+    private boolean fromSocial; // 소셜 가입여부
 
     @ElementCollection(fetch = FetchType.LAZY)
     @Builder.Default
@@ -44,6 +48,8 @@ public class Member extends BaseEntity {
         roleSet.add(memberRole);
     }
 
-//    @Column
-//    private int blacklist; // 블랙리스트 0:기본, 1:블랙리스트
+    @Column(columnDefinition = "boolean default 0")
+    private boolean blacklist; // 블랙리스트 0:기본, 1:블랙리스트
+
+
 }
