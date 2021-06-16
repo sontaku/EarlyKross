@@ -4,10 +4,14 @@ import com.ek.earlykross.entity.BestEleven;
 import com.ek.earlykross.entity.Member;
 import com.ek.earlykross.entity.Player;
 import com.ek.earlykross.vo.BestElevenDTO;
+import com.ek.earlykross.repository.PlayerRepository;
 import com.ek.earlykross.vo.MemberDTO;
 import com.ek.earlykross.vo.PageRequestDTO;
 import com.ek.earlykross.vo.PageResultDTO;
 import com.ek.earlykross.vo.PlayerDTO;
+import java.util.List;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 public interface BestService {
 
@@ -87,7 +91,7 @@ public interface BestService {
     BestEleven entity = BestEleven.builder()
         .season(dto.getSeason())
         .round(dto.getRound())
-//        .mId(dto.getMId())
+        .mId(dto.getMId())
         .p1(dto.getP1())
         .p2(dto.getP2())
         .p3(dto.getP3())
@@ -108,7 +112,7 @@ public interface BestService {
     BestElevenDTO dto = BestElevenDTO.builder()
         .season(entity.getSeason())
         .round(entity.getRound())
-//        .mId(entity.getm)
+        .mId(entity.getMId())
         .p1(entity.getP1())
         .p2(entity.getP2())
         .p3(entity.getP3())

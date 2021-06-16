@@ -2,16 +2,22 @@ package com.ek.earlykross.service;
 
 import com.ek.earlykross.entity.ClubNews;
 import com.ek.earlykross.vo.ClubNewsVO;
+import com.ek.earlykross.vo.PageRequestDTO;
+import com.ek.earlykross.vo.PageResultDTO;
+
 import java.util.List;
 
 
 public interface ClubNewsService {
 
   // 뉴스 한 개 읽기
-  ClubNewsVO read(Long mno);
+  ClubNewsVO read(Long nId);
 
   // 뉴스 전체 읽기
-  List<ClubNewsVO> getList();
+//  List<ClubNewsVO> getList();
+
+  // 뉴스 페이지 단위로 읽기
+  PageResultDTO<ClubNewsVO,ClubNews> getList(PageRequestDTO requestDTO);
 
 
   // dto 를 entity 로 변환

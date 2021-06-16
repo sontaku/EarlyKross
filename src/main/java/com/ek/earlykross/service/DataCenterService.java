@@ -41,6 +41,9 @@ public interface DataCenterService {
   // 클럽 통산 선수 기록
   ClubHistoryDTO getClubHistoryBycId(int cId);
 
+  // 클럽별 선수 조회
+  List<PlayerDTO> getPlayerBycId(String cId);
+
   // == entity to dto ===================================================
   // league entity
   // entity 를 dto 로 변환
@@ -149,4 +152,5 @@ public interface DataCenterService {
         .build();
     return dto;
   }
+
 }

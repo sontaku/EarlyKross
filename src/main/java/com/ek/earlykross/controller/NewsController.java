@@ -4,9 +4,12 @@ import com.ek.earlykross.repository.ClubNewsRepository;
 import com.ek.earlykross.service.ClubNewsService;
 import com.ek.earlykross.vo.ClubNewsVO;
 import java.util.List;
+
+import com.ek.earlykross.vo.PageRequestDTO;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.querydsl.QPageRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -37,14 +40,10 @@ public class NewsController {
 //    }
 
   @GetMapping({"/soccer_news.do"})
-  public void list(Model model) {
+  public void list(PageRequestDTO pageRequestDTO, Model model) {
+    pageRequestDTO.setSize(30);
     log.info("list........news");
-    List<ClubNewsVO> cList = service.getList();
-//    확인
-//    for(ClubNewsVO c:cList){
-//      System.out.println(c.getSource());
-//    }
-    model.addAttribute("result", cList);
+    model.addAttribute("result", service.getList(pageRequestDTO));
   }
 
 //  @GetMapping({"/soccer_news.do"})
