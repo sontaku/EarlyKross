@@ -61,7 +61,6 @@ public class BestServiceImpl implements BestService {
     // Querydsl 처리
     private BooleanBuilder getSearch(PageRequestDTO requestDTO){
 
-
         BooleanBuilder booleanBuilder = new BooleanBuilder();
 
 //        QMemo qMemo = QMemo.memo;
