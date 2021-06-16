@@ -2,6 +2,7 @@ package com.ek.earlykross.controller;
 
 import com.ek.earlykross.entity.Player;
 import com.ek.earlykross.repository.BestRepository;
+import com.ek.earlykross.security.dto.AuthMemberDTO;
 import com.ek.earlykross.service.BestService;
 import com.ek.earlykross.vo.PageRequestDTO;
 import com.ek.earlykross.vo.PageResultDTO;
@@ -10,6 +11,7 @@ import java.util.ArrayList;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -87,7 +89,8 @@ public class BestController {
     }
     @PostMapping("savePlayer.do")
     @ResponseBody
-    public String save(String players, String formationText){
+    public String save(String players, String formationText, @AuthenticationPrincipal AuthMemberDTO memberDTO){
+        System.out.println(memberDTO.getUsername());
         String[] arr = players.split("]");
         for(int i = 0; i<arr.length-1;i++){
             String[] player = arr[i].split("\\[");
