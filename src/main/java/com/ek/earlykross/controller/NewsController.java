@@ -41,8 +41,8 @@ public class NewsController {
 
   @GetMapping({"/soccer_news.do"})
   public void list(PageRequestDTO pageRequestDTO, Model model) {
+    pageRequestDTO.setSize(30);
     log.info("list........news");
-
     model.addAttribute("result", service.getList(pageRequestDTO));
   }
 
