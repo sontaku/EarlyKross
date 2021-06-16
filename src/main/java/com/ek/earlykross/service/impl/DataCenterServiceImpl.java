@@ -21,6 +21,7 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
+import org.springframework.security.core.parameters.P;
 import org.springframework.stereotype.Service;
 
 // Bean 처리
@@ -163,5 +164,23 @@ public class DataCenterServiceImpl implements DataCenterService {
     List<Player> plEntity = playerRepository.findPlayerBycId(club);
     Function<Player, PlayerDTO> fn = (entity -> entityToDto(entity));
     return plEntity.stream().map(fn).collect(Collectors.toList());
+  }
+
+  // 선수 조회(pId)
+  @Override
+  public PlayerDTO getPlayerBypId(String pId) {
+
+    Player plDTO = playerRepository.findPlayerBypId(Integer.parseInt(pId));
+    return entityToDto(plDTO);
+  }
+
+  // 선수 시즌 기록(pId)
+  @Override
+  public PlayerRecordDTO getPlayerRecordBypId(String pId) {
+    Player player = new Player();
+    player.setPId(Integer.parseInt(pId));
+
+    PlayerRecord prDTO = playerRecordRepository.findPlayerRecordBypId(player);
+    return entityToDto(prDTO);
   }
 }

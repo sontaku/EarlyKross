@@ -107,8 +107,7 @@ public class DataCenterController {
     // 구단 통산 기록
 //    model.addAttribute("clubHistory", service.getClubHistoryBycId(Integer.parseInt(cId)));
   }
-  // 클럽 로고 목록(a태그 경로)
-  // 얼크위키
+
 
 
   // 경기 일정
@@ -140,7 +139,18 @@ public class DataCenterController {
   public void playerDetail(Model model, String pId) {
     log.info("DataCenterController.playerDetail 호출");
 
+    // 선수 조회(pId)
+    model.addAttribute("p", service.getPlayerBypId(pId));
+
+    // 선수 시즌 기록(pId)
+    model.addAttribute("pRecord", service.getPlayerRecordBypId(pId));
   }
 
   // =============================================================
+  // 검색
+  @GetMapping({"/search.do"})
+  public void search(Model model, String keyword) {
+    log.info("DataCenterController.playerDetail 호출");
+    log.info("검색값 : " + keyword);
+  }
 }

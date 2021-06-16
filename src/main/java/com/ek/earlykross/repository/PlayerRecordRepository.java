@@ -11,6 +11,9 @@ import org.springframework.data.querydsl.QuerydslPredicateExecutor;
 import org.springframework.data.repository.query.Param;
 
 public interface PlayerRecordRepository extends JpaRepository<PlayerRecord, Long>, QuerydslPredicateExecutor<PlayerRecord> {
+  // 선수별 시즌기록(pId)
+  PlayerRecord findPlayerRecordBypId(Player pId);
+
   // 리그 최다 골 순위
   @Query("SELECT pr"
       + " FROM PlayerRecord pr"
