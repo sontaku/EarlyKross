@@ -57,7 +57,7 @@
           <form action="/datacenter/search.do" id="mobile-search-form" class="search-form" method="GET">
             <input type="text"
                    class="form-control header-mobile__search-control"
-                   value="keyword"
+                   th:value="${keyword}=='' ? '' : ${keyword}"
                    name="keyword"
                    placeholder="검색어를 입력해주세요.">
             <button type="submit" class="header-mobile__search-submit"><i

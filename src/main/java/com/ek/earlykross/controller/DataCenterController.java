@@ -152,5 +152,8 @@ public class DataCenterController {
   public void search(Model model, String keyword) {
     log.info("DataCenterController.playerDetail 호출");
     log.info("검색값 : " + keyword);
+
+    // 해당 페이지 검색창 입력값 적용
+    model.addAttribute("keyword", keyword);
   }
 }
