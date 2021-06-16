@@ -15,5 +15,8 @@ public class MemberDTO {
     private Long mId;
     private String email;
     private String name;
+    private Long point;
     private String password;
+    private Boolean social;
+    private boolean blacklist;
 }
