@@ -5,7 +5,7 @@
         <div class="pcoded-inner-navbar main-menu">
             <div class="">
                 <div class="main-menu-header">
-                    <img class="img-80 img-radius" src="../assets/images/Admin_header/avatar-1.jpg" alt="User-Profile-Image">
+                    <img class="img-80 img-radius" src="../assets/images/MyFriend.png" alt="User-Profile-Image">
                     <div class="user-details">
                         <span id="more-details">Admin</span>
                     </div>
@@ -34,14 +34,7 @@
                 <li class="pcoded-hasmenu">
                     <a th:href="@{'../admin/userInquiry.do'}" class="waves-effect waves-dark">
                         <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
-                        <span class="pcoded-mtext">회원조회</span>
-                        <span class="pcoded-mcaret"></span>
-                    </a>
-                </li>
-                <li class="pcoded-hasmenu">
-                    <a th:href="@{'../admin/userBlacklist.do'}" class="waves-effect waves-dark">
-                        <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
-                        <span class="pcoded-mtext">블랙리스트 회원 조회</span>
+                        <span class="pcoded-mtext">모든 회원 조회</span>
                         <span class="pcoded-mcaret"></span>
                     </a>
                 </li>
@@ -49,13 +42,14 @@
                     <a th:href="@{'../admin/userBesteleven.do'}" class="waves-effect waves-dark">
                         <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
                         <span class="pcoded-mtext">Best_11 맞춘 회원 조회</span>
+                        <span class="pcoded-mtext">Best_11 맞춘 회원 조회</span>
                         <span class="pcoded-mcaret"></span>
                     </a>
                 </li>
-                <li class="pcoded-hasmenu">
-                    <a th:href="@{'../admin/userPoint'.do}" class="waves-effect waves-dark">
-                        <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
-                        <span class="pcoded-mtext">회원 포인트 조회</span>
+                <li class="">
+                    <a th:href="@{'../admin/userNumber.do'}" class="waves-effect waves-dark">
+                        <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
+                        <span class="pcoded-mtext">이용자 수 조회</span>
                         <span class="pcoded-mcaret"></span>
                     </a>
                 </li>
@@ -138,16 +132,30 @@
             <div class="pcoded-navigation-label">페이지 관리</div>
             <ul class="pcoded-item pcoded-left-item">
                 <li class="">
-                    <a th:href="userNumber" class="waves-effect waves-dark">
+                    <a th:href="@{'../admin/adminNews.do'}" class="waves-effect waves-dark">
                         <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
-                        <span class="pcoded-mtext">이용자 수 조회</span>
+                        <span class="pcoded-mtext">News 조회</span>
                         <span class="pcoded-mcaret"></span>
                     </a>
                 </li>
                 <li class="">
-                    <a href="../admin/admin_table.html" class="waves-effect waves-dark">
+                    <a th:href="@{'../admin/adminTextrelay.do'}" class="waves-effect waves-dark">
                         <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
-                        <span class="pcoded-mtext">매칭현황 조회</span>
+                        <span class="pcoded-mtext">문자 중계 조회</span>
+                        <span class="pcoded-mcaret"></span>
+                    </a>
+                </li>
+                <li class="">
+                    <a th:href="@{'../admin/adminAllChart.do'}" class="waves-effect waves-dark">
+                        <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
+                        <span class="pcoded-mtext">통합 차트</span>
+                        <span class="pcoded-mcaret"></span>
+                    </a>
+                </li>
+                <li class="">
+                    <a th:href="@{'../admin/adminPlayer.do'}" class="waves-effect waves-dark">
+                        <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
+                        <span class="pcoded-mtext">모든 선수 조회</span>
                         <span class="pcoded-mcaret"></span>
                     </a>
                 </li>
