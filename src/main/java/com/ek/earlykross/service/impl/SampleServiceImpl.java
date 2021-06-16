@@ -63,7 +63,7 @@ public class SampleServiceImpl implements SampleService {
     @Override
     public MemoDTO read(Long mno) { // PK 자료형
         Optional<Memo> result = repository.findById(mno);
-        // JPA 에서 엔티티 객체를 가져왔다면 DTO로 반환해서 리턴
+        // JPA 에서 엔티티 객체를 가져왔다면 DTO 로 반환해서 리턴
         return result.map(this::entityToDto).orElse(null);
     }
 
