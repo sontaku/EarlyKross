@@ -170,8 +170,17 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-
+                        <tr th:each="pl: ${pList}">
+                          <th th:text="${pl.pId}"></th>
+                          <th th:text="${pl.backNo}"></th>
+                          <th th:text="${pl.birthday}"></th>
+                          <th th:text="${pl.ename}"></th>
+                          <th th:text="${pl.height}"></th>
+                          <th th:text="${pl.name}"></th>
+                          <th th:text="${pl.nationality}"></th>
+                          <th th:text="${pl.position}"></th>
+                          <th th:text="${pl.weight}"></th>
+                          <th th:text="${pl.cId.cId}"></th>
                         </tr>
                         </tbody>
                       </table>
