@@ -10,4 +10,5 @@ import org.springframework.data.querydsl.QuerydslPredicateExecutor;
 public interface ClubNewsRepository extends JpaRepository<ClubNews, Long>,
     QuerydslPredicateExecutor<ClubNews> {
 
+
 }

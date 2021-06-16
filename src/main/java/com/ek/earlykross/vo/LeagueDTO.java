@@ -30,4 +30,7 @@ public class LeagueDTO {
     private int gd; // 득실차
     private int assist; // 도움
     private int fo; // 파울
+    private int rank; // 순위
+    private String league; // 리그 구분
+
 }

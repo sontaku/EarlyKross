@@ -24,6 +24,11 @@ public class PageRequestDTO {
         this.size = 10;
     }
 
+    public PageRequestDTO(int page, int size) {
+        this.page = page;
+        this.size = size;
+    }
+
     // JPA 에서 사용할 Pageable 객체를 생성, JPA 는 0번부터 시작하니까 -1, 정렬은 나중에 다양한 상황을 위해
     public Pageable getPageable(Sort sort) {
         return PageRequest.of(page-1, size, sort);

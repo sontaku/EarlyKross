@@ -104,7 +104,7 @@
           <!-- Posts Grid -->
           <div class="posts posts--cards post-grid post-grid--masonry row">
             <!-- News Post -->
-            <div class="post-grid__item col-md-6 col-lg-4" th:each="dto : ${result}">
+            <div class="post-grid__item col-md-6 col-lg-4" th:each="dto : ${result.dtoList}">
               <div class="posts__item posts__item--card posts__item--category-1 card">
                 <figure class="posts__thumb">
                   <div class="posts__cat">
@@ -114,7 +114,7 @@
                 </figure>
                 <div class="posts__inner card__content">
                   <a href="#" class="posts__cta"></a>
-                  <time th:datetime="${dto.updateTime}" class="posts__date"></time>
+<!--                  <time th:text="${#temporals.createDateTime(dto.updateTime, 'yyyy-MM-dd HH:mm')}" class="posts__date"></time>-->
                   <h6 class="posts__title"><a th:href="${dto.source}" th:text="${dto.title}"></a>
                   </h6>
                 </div>

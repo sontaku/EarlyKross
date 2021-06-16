@@ -34,6 +34,7 @@ public class DataCenterController {
   @Autowired
   LeagueRepository leagueRepository;
 
+
 //    @GetMapping("{step}.do")
 //    public String viewPage(@PathVariable String step) {
 //        System.out.println("main에서 자신 반환하는 모든 동작 : " + step);
