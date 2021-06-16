@@ -1,15 +1,20 @@
 package com.ek.earlykross.service.impl;
 
+import com.ek.earlykross.entity.BestEleven;
+import com.ek.earlykross.entity.Member;
 import com.ek.earlykross.entity.Player;
 import com.ek.earlykross.entity.QPlayer;
 import com.ek.earlykross.repository.BestRepository;
+import com.ek.earlykross.repository.MemberRepository;
 import com.ek.earlykross.repository.PlayerRepository;
 import com.ek.earlykross.service.BestService;
+import com.ek.earlykross.vo.BestElevenDTO;
 import com.ek.earlykross.vo.PageRequestDTO;
 import com.ek.earlykross.vo.PageResultDTO;
 import com.ek.earlykross.vo.PlayerDTO;
 import com.querydsl.core.BooleanBuilder;
 import com.querydsl.core.types.dsl.BooleanExpression;
+import java.util.Optional;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.data.domain.Page;
@@ -28,6 +33,7 @@ public class BestServiceImpl implements BestService {
 
     private final PlayerRepository repository; // 반드시 파이널
     private final BestRepository bestRepository; // 반드시 파이널
+    private final MemberRepository memberRepository; // 반드시 파이널
 
     @Override
     public PageResultDTO<PlayerDTO, Player> serach(PageRequestDTO requestDTO) {
@@ -50,12 +56,31 @@ public class BestServiceImpl implements BestService {
     }
 
     @Override
-    public int selectPidByPlayer(PlayerDTO playerDTO) {
+    public Player selectPidByPlayer(PlayerDTO playerDTO) {
         Player player = dtoToEntity(playerDTO);
         Player result = repository.findPlayerByNameEqualsAndPositionEquals(player.getName(),player.getPosition());
-        PlayerDTO playerDTO1 = entityToDto(result);
-        return playerDTO1.getPId();
+
+        return result;
 //        return result.isPresent() ? entityToDto(result.get()):null;
+    }
+
+    @Override
+    public Member findBestByEmail(String username) {
+        Optional<Member> member = memberRepository.findMemberByEmail(username);
+
+        return member.isPresent()?member.get():null;
+    }
+
+    @Override
+    public boolean findBest(String username) {
+        Optional<BestEleven> bestEleven = bestRepository.findBestElevenBymIdAndRoundAndSeason(findBestByEmail(username),20,"2021");
+        return bestEleven.isEmpty();
+    }
+
+    @Override
+    public void save(BestElevenDTO bestElevenDTO) {
+        BestEleven bestEleven = dtoToEntity(bestElevenDTO);
+        bestRepository.save(bestEleven);
     }
 
     // Querydsl 처리
@@ -84,6 +109,7 @@ public class BestServiceImpl implements BestService {
 
         return booleanBuilder;
     }
+
 
 //    @Override
 //    public Long register(MemoDTO dto) {
