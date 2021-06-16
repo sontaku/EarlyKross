@@ -31,7 +31,6 @@ public class MemberDetailService implements UserDetailsService {
 
   private final MemberRepository memberRepository;
 
-
   private final PasswordEncoder passwordEncoder;
 
   @Override
