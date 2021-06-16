@@ -140,6 +140,7 @@ public class DataCenterServiceImpl implements DataCenterService {
   }
 
   // 클럽 통산 선수 기록
+  // 개발 임시 중단
   @Override
   public ClubHistoryDTO getClubHistoryBycId(int cId) {
     log.info("DataCenterServiceImpl.getClubHistoryBycId 호출");
@@ -150,5 +151,17 @@ public class DataCenterServiceImpl implements DataCenterService {
     // ClubHistory entity = clubHistoryRepository.findClubHistoryBycId(club);
     // return entityToDto(entity);
     return null;
+  }
+
+  // 클럽별 선수 조회
+  @Override
+  public List<PlayerDTO> getPlayerBycId(String cId) {
+
+    Club club = new Club();
+    club.setCId(Integer.parseInt(cId));
+
+    List<Player> plEntity = playerRepository.findPlayerBycId(club);
+    Function<Player, PlayerDTO> fn = (entity -> entityToDto(entity));
+    return plEntity.stream().map(fn).collect(Collectors.toList());
   }
 }

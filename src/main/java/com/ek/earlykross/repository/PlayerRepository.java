@@ -15,7 +15,9 @@ public interface PlayerRepository extends JpaRepository<Player, Long>, QuerydslP
 
   Player findPlayerByNameEqualsAndPositionEquals(String name, String position);
 
+  // 클럽 별 선수
+  List<Player> findPlayerBycId(Club cId);
+
   // 클럽 - 포지션별 선수
   List<Player> findBycIdAndPositionEquals(Club cId, String position);
-
 }
