@@ -1,7 +1,8 @@
 package com.ek.earlykross.controller;
 
 import com.ek.earlykross.security.service.MemberDetailService;
-import com.ek.earlykross.service.BestService;
+import com.ek.earlykross.service.impl.ClubNewsServiceImpl;
+import com.ek.earlykross.service.impl.LeagueServiceImpl;
 import com.ek.earlykross.service.impl.PlayerServiceImpl;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
@@ -18,6 +19,8 @@ public class AdminController {
 
   private final MemberDetailService mdService;
   private final PlayerServiceImpl plService;
+  private final ClubNewsServiceImpl newsList;
+  private final LeagueServiceImpl LeagueList;
 
   //이번엔 .do를 사용한다고 했다.
   //회원 페이지 이동
@@ -33,21 +36,9 @@ public class AdminController {
     model.addAttribute("mList", mdService.getMemberList());
   }
 
-  //회원 Best_11 맞춘 회원 조회
-  @GetMapping("/userBesteleven.do")
-  public void userBesteleven() {
-
-  }
-
   //이용자 수 페이지
   @GetMapping("/userNumber.do")
   public void userNumber() {
-
-  }
-
-  //News 조회
-  @GetMapping("/adminNews.do")
-  public void adminNews() {
 
   }
 
@@ -63,9 +54,36 @@ public class AdminController {
 
   }
 
+  //News 조회
+  @GetMapping("/adminNews.do")
+  public void adminNews(Model model) {
+    model.addAttribute("nList", newsList.getAllNews());
+  }
+
   //모든 선수 정보
   @GetMapping("/adminPlayer.do")
   public void adminPlayer(Model model) {
     model.addAttribute("pList", plService.getAllPlayer());
   }
+
+  //모든 리그 관리
+  @GetMapping("/adminAllLeague.do")
+  public void AllLeague(Model model){
+    model.addAttribute("LegList",LeagueList.getAllLeague());
+
+  }
+
+  //모든 경기 일정 관리
+  @GetMapping("/adminMatch.do")
+  public void adminMatch(Model model){
+    
+  }
+
+  //회원 Best_11 맞춘 회원 조회
+  @GetMapping("/userBesteleven.do")
+  public void userBesteleven() {
+
+  }
+
+
 }

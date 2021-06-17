@@ -21,6 +21,8 @@ public class PlayerServiceImpl implements PlayerService {
 
   private final PlayerRepository PLrepository; // 반드시 파이널
 
+
+  //모든 선수 조회 가져오기
   @Override
   public List<PlayerDTO> getAllPlayer() {
     List<Player> result = PLrepository.findAll();

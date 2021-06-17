@@ -2,6 +2,7 @@ package com.ek.earlykross.service;
 
 import com.ek.earlykross.entity.Member;
 import com.ek.earlykross.entity.Player;
+import com.ek.earlykross.repository.BestRepository;
 import com.ek.earlykross.repository.PlayerRepository;
 import com.ek.earlykross.vo.MemberDTO;
 import com.ek.earlykross.vo.PageRequestDTO;
@@ -12,6 +13,7 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public interface BestService {
+
 
   default void message(){
     System.out.println("dc service");
