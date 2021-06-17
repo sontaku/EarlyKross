@@ -76,7 +76,7 @@ public class AdminController {
   //모든 경기 일정 관리
   @GetMapping("/adminMatch.do")
   public void adminMatch(Model model){
-    
+
   }
 
   //회원 Best_11 맞춘 회원 조회

@@ -8,4 +8,5 @@ import lombok.Data;
 public class BestElevenPK implements Serializable {
   private String season; // 시즌
   private int round; // 라운드
+//  private Member mId;
 }
