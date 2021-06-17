@@ -3,16 +3,11 @@ package com.ek.earlykross.service;
 import com.ek.earlykross.entity.BestEleven;
 import com.ek.earlykross.entity.Member;
 import com.ek.earlykross.entity.Player;
-import com.ek.earlykross.repository.BestRepository;
 import com.ek.earlykross.vo.BestElevenDTO;
-import com.ek.earlykross.repository.PlayerRepository;
 import com.ek.earlykross.vo.MemberDTO;
 import com.ek.earlykross.vo.PageRequestDTO;
 import com.ek.earlykross.vo.PageResultDTO;
 import com.ek.earlykross.vo.PlayerDTO;
-import java.util.List;
-import java.util.function.Function;
-import java.util.stream.Collectors;
 
 public interface BestService {
   default void message(){
@@ -103,6 +98,8 @@ public interface BestService {
         .p9(dto.getP9())
         .p10(dto.getP10())
         .p11(dto.getP11())
+        .formation(dto.getFormation())
+        .formationText(dto.getFormationText())
         .build();
     return entity;
   }
@@ -124,6 +121,8 @@ public interface BestService {
         .p9(entity.getP9())
         .p10(entity.getP10())
         .p11(entity.getP11())
+        .formation(entity.getFormation())
+        .formationText(entity.getFormationText())
         .build();
     return dto;
   }

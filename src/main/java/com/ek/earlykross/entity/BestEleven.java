@@ -1,23 +1,11 @@
 package com.ek.earlykross.entity;
 
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import javax.persistence.CollectionTable;
 import javax.persistence.Column;
-import javax.persistence.ElementCollection;
-import javax.persistence.Embeddable;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.IdClass;
 import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -35,9 +23,9 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 @IdClass(BestElevenPK.class) // 다중복합키 불러옴
-public class BestEleven implements Serializable {
+public class BestEleven{
 
-    @Id // PK 지정
+
     @Column(columnDefinition = "varchar(10)", nullable = false)
     private String season; // 시즌
 
@@ -45,9 +33,14 @@ public class BestEleven implements Serializable {
     @Column(nullable = false)
     private int round; // 라운드
 
+    @Id
     @ManyToOne
-    @JoinColumn(name = "mId")
-    private Member mId; // 회원번호
+    @JoinColumn(name = "m_Id", nullable = false)
+    private Member mId;
+
+//    @ManyToOne
+//    @JoinColumn(name = "mId")
+//    private Member mId; // 회원번호
 
     @ManyToOne
     @JoinColumn(name = "p1", nullable = false)
@@ -96,6 +89,6 @@ public class BestEleven implements Serializable {
     @Column(columnDefinition = "varchar(10)")
     private String formation; // 포메이션
 
-    @Column(columnDefinition = "text")
+    @Column(columnDefinition = "longtext")
     private String formationText;
 }
