@@ -3,11 +3,8 @@ package com.ek.earlykross.service;
 import com.ek.earlykross.entity.BestEleven;
 import com.ek.earlykross.entity.Member;
 import com.ek.earlykross.entity.Player;
-<<<<<<< HEAD
 import com.ek.earlykross.repository.BestRepository;
-=======
 import com.ek.earlykross.vo.BestElevenDTO;
->>>>>>> upstream/master
 import com.ek.earlykross.repository.PlayerRepository;
 import com.ek.earlykross.vo.MemberDTO;
 import com.ek.earlykross.vo.PageRequestDTO;
@@ -18,13 +15,7 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public interface BestService {
-
-<<<<<<< HEAD
-
   default void message(){
-=======
-  default void message() {
->>>>>>> upstream/master
     System.out.println("dc service");
   }
 

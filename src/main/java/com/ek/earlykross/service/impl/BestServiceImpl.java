@@ -1,10 +1,7 @@
 package com.ek.earlykross.service.impl;
 
 import com.ek.earlykross.entity.BestEleven;
-<<<<<<< HEAD
-=======
 import com.ek.earlykross.entity.Member;
->>>>>>> upstream/master
 import com.ek.earlykross.entity.Player;
 import com.ek.earlykross.entity.QPlayer;
 import com.ek.earlykross.repository.BestRepository;
@@ -17,19 +14,14 @@ import com.ek.earlykross.vo.PageResultDTO;
 import com.ek.earlykross.vo.PlayerDTO;
 import com.querydsl.core.BooleanBuilder;
 import com.querydsl.core.types.dsl.BooleanExpression;
-<<<<<<< HEAD
-import java.util.List;
-=======
 import java.util.Optional;
->>>>>>> upstream/master
+import java.util.function.Function;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
-
-import java.util.function.Function;
 
 // Bean 처리
 @Service
@@ -117,11 +109,6 @@ public class BestServiceImpl implements BestService {
 
         return booleanBuilder;
     }
-<<<<<<< HEAD
-=======
-
-
->>>>>>> upstream/master
 //    @Override
 //    public Long register(MemoDTO dto) {
 //
