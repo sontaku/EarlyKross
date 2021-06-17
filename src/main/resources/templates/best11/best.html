@@ -462,7 +462,6 @@
       let par = $(this).parent("div").position();
       if(par.left<-75||par.left>410 || par.top<-100 || par.top>530){
         $(this).parent("div").fadeOut(300, function() { $(this).remove(); });
-        count--;
         console.log(count);
       }
     });
@@ -482,7 +481,7 @@
     })
     $("#bp").click(function (){
       // let player = $("#best").text().trim().split("]")
-      if(count!= 11){
+      if($("#best").children(".ball").size()!=11){
         alert("선수를 11명 모두 입력하세요.");
         return;
       }
@@ -518,6 +517,7 @@
           },
           error: function (e) {
             alert(e);
+            console.log(e)
           }
         })
       }
