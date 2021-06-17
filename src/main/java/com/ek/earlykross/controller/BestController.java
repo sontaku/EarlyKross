@@ -12,6 +12,7 @@ import com.ek.earlykross.vo.MemberDTO;
 import com.ek.earlykross.vo.PageRequestDTO;
 import com.ek.earlykross.vo.PageResultDTO;
 import com.ek.earlykross.vo.PlayerDTO;
+import com.google.gson.Gson;
 import java.util.ArrayList;
 import java.util.Optional;
 import lombok.RequiredArgsConstructor;
@@ -50,6 +51,7 @@ public class BestController {
     @Autowired
     BestRepository bestRepository;
 
+
 //    @GetMapping("{step}.do")
 //    public String viewPage(@PathVariable String step) {
 //        System.out.println("main에서 자신 반환하는 모든 동작 : " + step);
@@ -69,15 +71,48 @@ public class BestController {
             formation = bestEleven.get().getFormationText();
         }
         //고쳐라 제와피
+
+        Member member = service.findBestByEmail("t@t");
+        System.out.println(bestRepository.findAllBymId(member).toString());
         model.addAttribute("formation", formation);
+        List<Player> players = new ArrayList<>();
+        BestEleven bestElevens = bestRepository.findBestElevenBymIdAndRound(member,19);
+        players.add(bestElevens.getP1());
+        players.add(bestElevens.getP2());
+        players.add(bestElevens.getP3());
+        players.add(bestElevens.getP4());
+        players.add(bestElevens.getP5());
+        players.add(bestElevens.getP6());
+        players.add(bestElevens.getP7());
+        players.add(bestElevens.getP8());
+        players.add(bestElevens.getP9());
+        players.add(bestElevens.getP10());
+        players.add(bestElevens.getP11());
+        model.addAttribute("bestList",bestRepository.findAllBymId(member));
+        model.addAttribute("players",players);
     }
 
-//    @PostMapping("formation.do")
-//    @ResponseBody
-//    public String formation(){
-//
-//        return bestEleven.isPresent()?bestEleven.get().getFormationText():null;
-//    }
+    @PostMapping("allBest.do")
+    @ResponseBody
+    public String allBest(int round){
+        Member member = service.findBestByEmail("t@t");
+        List<Player> players = new ArrayList<>();
+        BestEleven bestElevens = bestRepository.findBestElevenBymIdAndRound(member,round);
+        players.add(bestElevens.getP1());
+        players.add(bestElevens.getP2());
+        players.add(bestElevens.getP3());
+        players.add(bestElevens.getP4());
+        players.add(bestElevens.getP5());
+        players.add(bestElevens.getP6());
+        players.add(bestElevens.getP7());
+        players.add(bestElevens.getP8());
+        players.add(bestElevens.getP9());
+        players.add(bestElevens.getP10());
+        players.add(bestElevens.getP11());
+        String json = new Gson().toJson(players);
+        return json;
+    }
+
 
     @PostMapping("searchPlayer.do")
     @ResponseBody
