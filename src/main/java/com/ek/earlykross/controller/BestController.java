@@ -62,7 +62,7 @@ public class BestController {
         System.out.println("bestController");
         Optional<BestEleven> bestEleven = bestRepository.findBestElevenBymIdAndRoundAndSeason(service.findBestByEmail(memberDTO.getUsername()),20,"2021");
 
-        System.out.println(bestEleven.get().getFormationText());
+//        System.out.println(bestEleven.get().getFormationText());
 
         String formation = "";
         if(bestEleven.isPresent()){
@@ -108,6 +108,7 @@ public class BestController {
         bestElevenDTO.setRound(20);
         bestElevenDTO.setSeason("2021");
         bestElevenDTO.setFormationText(formationText);
+        bestElevenDTO.setFormation(formationText.substring(1,3));
         bestElevenDTO.setP1(mIdArr.get(0));
         bestElevenDTO.setP2(mIdArr.get(1));
         bestElevenDTO.setP3(mIdArr.get(2));

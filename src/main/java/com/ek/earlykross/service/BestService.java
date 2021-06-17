@@ -103,6 +103,8 @@ public interface BestService {
         .p9(dto.getP9())
         .p10(dto.getP10())
         .p11(dto.getP11())
+        .formation(dto.getFormation())
+        .formationText(dto.getFormationText())
         .build();
     return entity;
   }
@@ -124,6 +126,8 @@ public interface BestService {
         .p9(entity.getP9())
         .p10(entity.getP10())
         .p11(entity.getP11())
+        .formation(entity.getFormation())
+        .formationText(entity.getFormationText())
         .build();
     return dto;
   }

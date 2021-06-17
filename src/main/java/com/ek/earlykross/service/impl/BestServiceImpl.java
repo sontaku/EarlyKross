@@ -66,20 +66,26 @@ public class BestServiceImpl implements BestService {
 
     @Override
     public Member findBestByEmail(String username) {
-        Optional<Member> member = memberRepository.findMemberByEmail(username);
+        Member member = memberRepository.findMemberByEmail(username);
+//        member.ifPresent(value -> System.out.println(value.getEmail()));
 
-        return member.isPresent()?member.get():null;
+        return member;
     }
 
     @Override
     public boolean findBest(String username) {
         Optional<BestEleven> bestEleven = bestRepository.findBestElevenBymIdAndRoundAndSeason(findBestByEmail(username),20,"2021");
+        bestEleven.ifPresent(eleven -> System.out.println(eleven.getFormationText()));
+        ;
         return bestEleven.isEmpty();
     }
 
     @Override
     public void save(BestElevenDTO bestElevenDTO) {
         BestEleven bestEleven = dtoToEntity(bestElevenDTO);
+        System.out.println("===========================");
+        System.out.println(bestEleven.getFormationText());
+
         bestRepository.save(bestEleven);
     }
 
@@ -111,65 +117,5 @@ public class BestServiceImpl implements BestService {
     }
 
 
-//    @Override
-//    public Long register(MemoDTO dto) {
-//
-//        log.info("DTO---------------------------");
-//        log.info(dto);
-//
-//        Memo entity = dtoToEntity(dto);
-//
-//        log.info(entity);
-//
-//        repository.save(entity);
-//
-//        return entity.getMno();
-//    }
-//
-//    @Override
-//    public PageResultDTO<MemoDTO, Memo> getList(PageRequestDTO requestDTO){
-//        // 요청한 DTO 를 페이징
-//        Pageable pageable = requestDTO.getPageable(Sort.by("mno").descending());
-//
-//        // 검색 조건 탐색
-//        BooleanBuilder booleanBuilder = getSearch(requestDTO);
-//
-//        // JPA 로 DB 탐색, Querydsl 사용
-//        Page<Memo> result = repository.findAll(booleanBuilder, pageable);
-
-//
-//        // 엔티티를 DTO 로 변환
-//        Function<Memo, MemoDTO> fn = (entity -> entityToDto(entity));
-//
-//        return new PageResultDTO<>(result, fn);
-//    }
-//
-//    @Override
-//    public MemoDTO read(Long mno) { // PK 자료형
-//        Optional<Memo> result = repository.findById(mno);
-//        // JPA 에서 엔티티 객체를 가져왔다면 DTO로 반환해서 리턴
-//        return result.isPresent() ? entityToDto(result.get()):null;
-//    }
-//
-//    @Override
-//    public void remove(Long mno) {
-//
-//        repository.deleteById(mno);
-//    }
-//
-//    @Override
-//    public void modify(MemoDTO dto) {
-//        Optional<Memo> result = repository.findById(dto.getMno());
-//
-//        if(result.isPresent()){
-//            Memo entity = result.get();
-//
-//            entity.changeMemoText(dto.getMemoText());
-//
-//            repository.save(entity);
-//        }
-//    }
-//
-//
 
 }
