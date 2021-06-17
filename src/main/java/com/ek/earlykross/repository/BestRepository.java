@@ -19,6 +19,7 @@ public interface BestRepository extends JpaRepository<BestEleven, BestElevenPK>{
 //    List<Player> getList(String name);
 
 
+
     Optional<BestEleven> findBestElevenBymIdAndRoundAndSeason(Member mId, int round, String season);
 
     List<BestEleven> findAllBymId(Member MId);

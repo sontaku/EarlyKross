@@ -59,11 +59,9 @@
                   <div class="game-result">
                     <section class="game-result__section pt-0">
                       <header class="game-result__header game-result__header--alt">
-                        <span class="game-result__league">West League 2016</span>
-                        <h3 class="game-result__title">Madison Cube Stadium</h3>
-                        <time class="game-result__date" datetime="2017-03-17">Saturday, March 17th,
-                          2017
-                        </time>
+                        <span class="game-result__league">K리그 1</span>
+                        <h3 class="game-result__title" th:text="${result.stadium}"></h3>
+                        <time class="game-result__date" th:text="${result.fDate}"></time>
                       </header>
                       <div class="game-result__content">
 
@@ -121,28 +119,22 @@
               <!-- Team Roster: Table -->
               <div class="card card--has-table">
                 <div class="card__header card__header--has-btn">
-                  <h4>Main Lineup</h4>
-                  <a href="_soccer_team-roster.html"
-                     class="btn btn-default btn-outline btn-xs card-header__button">See Complete
-                    Roster</a>
+                  <h4>중계</h4>
                 </div>
                 <div class="card__content">
                   <div class="table-responsive">
                     <table class="table table--lg team-roster-table">
                       <thead>
                       <tr>
-                        <th class="team-roster-table__number">NBR</th>
-                        <th class="team-roster-table__position">Pos</th>
-                        <th class="team-roster-table__name">Player Name</th>
-                        <th class="team-roster-table__foot">Foot</th>
-                        <th class="team-roster-table__age">Age</th>
-                        <th class="team-roster-table__height">Height</th>
-                        <th class="team-roster-table__weight">Weight</th>
-                        <th class="team-roster-table__college hidden-xs hidden-sm">College</th>
+                        <th>시간</th>
+                        <th></th>
                       </tr>
                       </thead>
                       <tbody>
-
+                      <tr th:each="l : ${list}">
+                        <td>[[${l.rDate}]]</td>
+                        <td>[[${l.rText}]]</td>
+                      </tr>
                       </tbody>
                     </table>
                   </div>
@@ -154,15 +146,13 @@
             <!-- Sidebar -->
             <div class="sidebar col-lg-4">
               <div>
-                <!--              &lt;!&ndash; Widget: Team Newslog &ndash;&gt;-->
-                <!--              <aside class="widget card widget&#45;&#45;sidebar widget-newslog">-->
-                <!--                <div class="widget__title card__header">-->
-                <!--                  <h4>Team Newslog</h4>-->
-                <!--                </div>-->
-                <iframe src="http://localhost:3000/room"></iframe>
+                <aside class="widget card widget--sidebar widget-newslog">
+                  <div class="widget__title card__header">
+                    <iframe src="http://localhost:3000/room"
+                            style="border:none; width:100%; height:500px"></iframe>
+                  </div>
+                </aside>
               </div>
-              <!--              </aside>-->
-              <!-- Widget: Team Newslog / End -->
             </div>
             <!-- Sidebar / End -->
           </div>

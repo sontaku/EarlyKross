@@ -1,7 +1,11 @@
 const app = require("express")()
+const session = require("express-session")
+const redisStore = require('connect-redis')(session)
 const server = require("http").createServer(app)
 // http server를 socket.io server로 upgrade한다
 const io = require("socket.io")(server)
+
+const redis = require('redis');
 
 const mysql = require("mysql") // mysql 모듈 로드
 const conn = {
@@ -14,16 +18,31 @@ const conn = {
 };
 
 fId = ''
-// localhost:3000으로 서버에 접속하면 클라이언트로 index.html을 전송한다
+uId = ''
+
 app.get("/", function (req, res) {
   fId = req.query['fId'];
-  console.log(fId)
-  res.redirect("http://localhost:8180/chat/chat.do")
+  uId = req.query['uId'];
+  res.redirect("http://localhost:8180/chat/chat.do?fId=" + fId)
 })
 
 app.get('/room', (req, res) => {
   res.sendFile(__dirname + '/room.html')
 })
+
+const client = redis.createClient();
+
+app.use(session({
+  secret: 'SojuWithBeer',
+  // store: new redisStore({
+  //   host: 'localhost',
+  //   port: 6379,
+  //   client: client,
+  //   ttl: 260
+  // }),
+  saveUninitialized: false,
+  resave: false
+}))
 
 // namespace /chat에 접속한다.
 const chat = io.of("/chat").on("connection", function (socket) {
@@ -63,10 +82,10 @@ const chat = io.of("/chat").on("connection", function (socket) {
 
     // connection.end() // DB 접속 종료
 
-    const name = (socket.name = data.name)
+    const name = uId;
     const room = fId;
 
-    console.log(room)
+    console.log(room, name, data.msg)
 
     // room에 join한다
     socket.join(room)
@@ -79,5 +98,5 @@ const chat = io.of("/chat").on("connection", function (socket) {
 })
 
 server.listen(3000, function () {
-  console.log("Socket IO server listening on port 3000")
+  console.log("채팅서버 시작~!!")
 })
