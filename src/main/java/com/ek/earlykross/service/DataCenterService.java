@@ -44,6 +44,12 @@ public interface DataCenterService {
   // 클럽별 선수 조회
   List<PlayerDTO> getPlayerBycId(String cId);
 
+  // 선수 조회(pId)
+  PlayerDTO getPlayerBypId(String pId);
+
+  // 선수 시즌 기록(pId)
+  PlayerRecordDTO getPlayerRecordBypId(String pId);
+
   // == entity to dto ===================================================
   // league entity
   // entity 를 dto 로 변환
@@ -152,5 +158,6 @@ public interface DataCenterService {
         .build();
     return dto;
   }
+
 
 }

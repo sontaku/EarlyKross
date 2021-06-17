@@ -1,10 +1,189 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Title</title>
-</head>
-<body>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <div th:replace="/fragments/head_line.html :: head_line">-- thymeleaf head_line --</div>
+  </head>
+  <body data-template="template-soccer">
 
-</body>
+    <div class="site-wrapper clearfix">
+      <div class="site-overlay"></div>
+
+      <!-- Header	================================================== -->
+
+      <!-- Header Mobile -->
+      <div th:replace="/fragments/header_mobile.html :: header_mobile">-- thymeleaf header_mobile --
+      </div>
+      <!-- Header Desktop -->
+      <header class="header header--layout-1">
+        <div th:replace="/fragments/header_desktop.html :: header_desktop">-- thymeleaf header_desktop
+          --
+        </div>
+      </header>
+      <!-- Header / End -->
+
+      <!-- Pushy Panel - Dark -->
+      <div th:replace="/fragments/custom_pushy_panel.html :: custom_pushy_panel">-- thymeleaf
+        custom_pushy_panel --
+      </div>
+      <!-- Pushy Panel - Dark / End -->
+
+      <!-- Page Heading
+		================================================== -->
+      <div class="page-heading">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 offset-md-1">
+              <h1 class="page-heading__title">검색 결과</h1>
+              <ol class="page-heading__breadcrumb breadcrumb">
+                <li class="breadcrumb-item">클럽</li>
+                <li class="breadcrumb-item">선수</li>
+                <li class="breadcrumb-item">뉴스</li>
+<!--                <li class="breadcrumb-item active" aria-current="page">Tournament</li>-->
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Page Heading / End -->
+
+
+      <!-- Content
+      ================================================== -->
+      <div class="site-content">
+        <div class="container">
+
+          <!-- Tournament Brackets -->
+          <div class="card card--clean">
+            <header class="card__header">
+              <h4>클럽 검색 결과</h4>
+            </header>
+            <div class="widget__content card__content">
+              <div class="table-responsive">
+                <table class="table table-hover table-standings">
+                  <thead>
+                    <tr>
+                      <th>팀 순위</th>
+                      <th>경기수</th>
+                      <th>승점</th>
+                      <th>승</th>
+                      <th>무</th>
+                      <th>패</th>
+                      <th>득점</th>
+                      <th>실점</th>
+                      <th>득실차</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+
+                    <tr>
+                      <td>
+                        <div class="team-meta">
+                          <figure class="team-meta__logo">
+                            <!--																						<img src="../assets/images/samples/logos/pirates_shield.png" alt="">-->
+                            <!--																						<img src="https://ww.namu.la/s/bd31122154e5f8010694e83df2e985bb9340e030f0e161275c4812ddd46d1191df6c52d29881e0ec17c111e16092054100b2a997d942a41c8ce6df7201ce66dbc2314f5e4043d45f62b02a355d88513623adc95317ebf25c8f5858b2ee2e477e0a4bc0a9b47185456bfa79a47bcdaf3c" alt="">-->
+                            <img th:src="|../upload/emblem/1.png|">
+                          </figure>
+                          <div class="team-meta__info">
+                            <h6 class="team-meta__name"></h6>
+                            <span class="team-meta__place"></span>
+                          </div>
+                        </div>
+                      </td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="card card--clean">
+            <header class="card__header">
+              <h4>선수 검색 결과</h4>
+            </header>
+            <div class="widget__content card__content">
+              <div class="table-responsive">
+                <table class="table table-hover table-standings">
+                  <thead>
+                    <tr>
+                      <th>선수</th>
+                      <th>포지션</th>
+                      <th>국적</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+
+                    <tr>
+                      <td>
+                        <a th:href="@{/datacenter/playerdetail.do(pId=1)}">
+                          <div class="team-meta">
+                            <figure class="team-meta__logo">
+                              <!--																						<img src="../assets/images/samples/logos/pirates_shield.png" alt="">-->
+                              <!--																						<img src="https://ww.namu.la/s/bd31122154e5f8010694e83df2e985bb9340e030f0e161275c4812ddd46d1191df6c52d29881e0ec17c111e16092054100b2a997d942a41c8ce6df7201ce66dbc2314f5e4043d45f62b02a355d88513623adc95317ebf25c8f5858b2ee2e477e0a4bc0a9b47185456bfa79a47bcdaf3c" alt="">-->
+                              <img th:src="|https://portal.kleague.com/common/playerPhotoById.do?playerId=22222222&recYn=Y&searchYear=2021|" alt="">
+                            </figure>
+                            <div class="team-meta__info">
+                              <h6 class="team-meta__name" style="text-align: left"></h6>
+                              <!--
+                              <span class="team-meta__place">ㅋㅋ</span>
+                              -->
+                            </div>
+                          </div>
+                        </a>
+                      </td>
+                      <td></td>
+                      <td>
+                        <div>
+                          <span>
+                            <h6 class="team-meta__name"></h6>
+                          </span>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="card card--clean">
+            <header class="card__header">
+              <h4>뉴스 검색 결과</h4>
+            </header>
+          </div>
+          <!-- Tournament Brackets / End -->
+
+        </div>
+      </div>
+
+      <!-- Content / End -->
+
+
+      <!-- Footer ================================================== -->
+      <footer id="footer" class="footer">
+        <!-- Footer Widgets -->
+        <div th:replace="/fragments/footer_custom.html :: footer_custom">-- thymeleaf footer_custom --
+        </div>
+        <!-- Footer Secondary / End -->
+      </footer>
+      <!-- Footer / End -->
+
+
+      <!-- Login/Register Tabs Modal -->
+      <div th:replace="/fragments/login_register.html :: login_register">-- thymeleaf login_register
+        --
+      </div>
+      <!-- Login/Register Tabs Modal / End -->
+
+    </div>
+
+    <!-- Javascript Files	================================================== -->
+    <div th:replace="/fragments/script_line.html :: script_line">-- thymeleaf script_line --</div>
+
+  </body>
 </html>
