@@ -6,4 +6,6 @@ import java.util.List;
 public interface PlayerService {
 
   List<PlayerDTO> getAllPlayer();
+
+  Long countPosition(String position);
 }

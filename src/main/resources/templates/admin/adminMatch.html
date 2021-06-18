@@ -157,11 +157,21 @@
                       <table class="table table-striped">
                         <thead>
                         <tr>
-
+                          <th scope="col">번호</th>
+                          <th scope="col">홈</th>
+                          <th scope="col">어웨이</th>
+                          <th scope="col">일시</th>
+                          <th scope="col">경기장</th>
                         </tr>
                         </thead>
                         <tbody>
-
+                          <tr th:each="fl:${fixList}">
+                            <th th:text="${fl.fId}"></th>
+                            <th th:text="${fl.home}"></th>
+                            <th th:text="${fl.away}"></th>
+                            <th th:text="${fl.fDate}"></th>
+                            <th th:text="${fl.stadium}"></th>
+                          </tr>
                         </tbody>
                       </table>
                     </th:block>

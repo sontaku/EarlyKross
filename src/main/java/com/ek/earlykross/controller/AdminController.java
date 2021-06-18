@@ -2,14 +2,18 @@ package com.ek.earlykross.controller;
 
 import com.ek.earlykross.security.service.MemberDetailService;
 import com.ek.earlykross.service.impl.ClubNewsServiceImpl;
+import com.ek.earlykross.service.impl.FixtureServiceImpl;
 import com.ek.earlykross.service.impl.LeagueServiceImpl;
 import com.ek.earlykross.service.impl.PlayerServiceImpl;
+import java.util.List;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 @Log4j2
@@ -21,6 +25,8 @@ public class AdminController {
   private final PlayerServiceImpl plService;
   private final ClubNewsServiceImpl newsList;
   private final LeagueServiceImpl LeagueList;
+  private final FixtureServiceImpl FixList;
+
 
   //이번엔 .do를 사용한다고 했다.
   //회원 페이지 이동
@@ -47,6 +53,19 @@ public class AdminController {
   public void adminTextrelay() {
 
   }
+
+  @PostMapping("GetCountPosition.do")
+  @ResponseBody
+  public List<Integer> getCountPosition(){
+//    List<Integer> position = new ArrayList<>();
+//    position.add(plService.countPosition("FW"));
+//    position.add(plService.countPosition("MF"));
+//    position.add(plService.countPosition("DF"));
+//    position.add(plService.countPosition("GK"));
+//    return position;
+    return null;
+  }
+
 
   //통합 차트
   @GetMapping("/adminAllChart.do")
@@ -76,7 +95,8 @@ public class AdminController {
   //모든 경기 일정 관리
   @GetMapping("/adminMatch.do")
   public void adminMatch(Model model){
-
+    model.addAttribute("fixList",FixList.getAllFixture());
+    //이제 화면에 가서 가져오면된다.
   }
 
   //회원 Best_11 맞춘 회원 조회
