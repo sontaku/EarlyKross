@@ -4,37 +4,44 @@
     <meta charset="utf-8"/>
     <title>채팅</title>
     <style>
-      #chat li {
-        overflow-y: auto;
+      input {
+        margin: 10px;
+      }
+      ul {
+        padding: 0;
+        overflow: auto;
+      }
+
+      li {
+        list-style-type: none;
+        background-color: #edeff5;
+        margin: 10px;
+        width: 90%;
+        height: 30px;
+        line-height: 100%;
+        font-size: 20px;
+        padding: 5px;
+        border-radius: 5px;
+      }
+      #divmsg {
+        width: 100%;
+      }
+
+      #msg {
+        width: 90%;
+        height: 50px;
+        font-size: 30px;
       }
     </style>
   </head>
   <body>
-    <div style="position: fixed">
+    <div id="divmsg" style="position: fixed">
       <input type="text" class="form-control" id="msg" placeholder="댓글을 작성하세요"/>
-    </div>
-    <div>
       <ul id="chat"></ul>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="/socket.io/socket.io.js"></script>
     <script>
-      // function getParam(sname) {
-      //
-      //   var params = location.search.substr(location.search.indexOf("?") + 1);
-      //   var sval = "";
-      //
-      //   params = params.split("&");
-      //
-      //   for (var i = 0; i < params.length; i++) {
-      //     temp = params[i].split("=");
-      //     if ([temp[0]] == sname) {
-      //       sval = temp[1];
-      //     }
-      //   }
-      //   return sval;
-      // }
-
       $(function () {
         // 지정 namespace로 접속한다
         const chat = io("http://localhost:3000/chat")
@@ -52,7 +59,7 @@
 
         // 서버로부터의 메시지가 수신되면
         chat.on("chat message", function (data) {
-          $("#chat").append($("<li>").text(data))
+          $("#chat").append($('<li class="cc">').text(data))
         })
       })
     </script>
