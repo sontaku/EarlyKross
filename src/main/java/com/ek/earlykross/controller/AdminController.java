@@ -95,7 +95,7 @@ public class AdminController {
   //모든 경기 일정 관리
   @GetMapping("/adminMatch.do")
   public void adminMatch(Model model){
-    model.addAttribute("fixList",FixList.getAllFixture());
+//    model.addAttribute("fixList",FixList.getAllFixture());
     //이제 화면에 가서 가져오면된다.
   }
 
