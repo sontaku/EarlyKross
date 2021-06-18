@@ -8,9 +8,9 @@ import lombok.Data;
 @Builder(toBuilder = true)
 public class FixtureDTO {
 
-  private Long fId;        // 경기번호
-  private Club home;       // 홈
-  private Club away;       // 어웨이
-  private String fDate;    // 일시
-  private String stadium;  // 경기장
+  private Long fId; // 경기번호
+  private Club home; // 홈
+  private Club away; // 어웨이
+  private String fDate; // 일시
+  private String stadium; // 경기장
 }
