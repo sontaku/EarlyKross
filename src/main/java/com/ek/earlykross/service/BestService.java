@@ -4,18 +4,13 @@ import com.ek.earlykross.entity.BestEleven;
 import com.ek.earlykross.entity.Member;
 import com.ek.earlykross.entity.Player;
 import com.ek.earlykross.vo.BestElevenDTO;
-import com.ek.earlykross.repository.PlayerRepository;
 import com.ek.earlykross.vo.MemberDTO;
 import com.ek.earlykross.vo.PageRequestDTO;
 import com.ek.earlykross.vo.PageResultDTO;
 import com.ek.earlykross.vo.PlayerDTO;
-import java.util.List;
-import java.util.function.Function;
-import java.util.stream.Collectors;
 
 public interface BestService {
-
-  default void message() {
+  default void message(){
     System.out.println("dc service");
   }
 

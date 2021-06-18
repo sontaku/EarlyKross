@@ -1,10 +1,8 @@
 package com.ek.earlykross.service.impl;
 
-import com.ek.earlykross.entity.Member;
 import com.ek.earlykross.entity.Player;
 import com.ek.earlykross.repository.PlayerRepository;
 import com.ek.earlykross.service.PlayerService;
-import com.ek.earlykross.vo.MemberDTO;
 import com.ek.earlykross.vo.PlayerDTO;
 import java.util.List;
 import java.util.function.Function;
@@ -21,6 +19,8 @@ public class PlayerServiceImpl implements PlayerService {
 
   private final PlayerRepository PLrepository; // 반드시 파이널
 
+
+  //모든 선수 조회 가져오기
   @Override
   public List<PlayerDTO> getAllPlayer() {
     List<Player> result = PLrepository.findAll();
@@ -29,6 +29,12 @@ public class PlayerServiceImpl implements PlayerService {
     Function<Player, PlayerDTO> fn = (entity -> entityToDto(entity));
     List<PlayerDTO> playerDTOList = result.stream().map(fn).collect(Collectors.toList());
     return playerDTOList;
+  }
+
+  //포지션 별 숫자 가져오기
+  @Override
+  public Long countPosition(String position) {
+    return PLrepository.countByPosition(position);
   }
 
   //player entity to dto

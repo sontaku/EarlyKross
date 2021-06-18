@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
   <head>
-    <title>Best_11 맞춘 회원</title>
+    <title>모든 경기 일정 관리</title>
     <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 10]>
@@ -152,30 +152,26 @@
                 <!-- Main-body start -->
                 <div class="main-body">
                   <div class="page-wrapper">
-                    <h3>이달의 Best_11 회원</h3>
+                    <h3>모든 경기 일정 관리</h3>
                     <th:block th:fragment="content">
                       <table class="table table-striped">
                         <thead>
                         <tr>
                           <th scope="col">번호</th>
-                          <th scope="col">시즌</th>
-                          <th scope="col">라운드</th>
-                          <th scope="col">선수_1</th>
-                          <th scope="col">선수_2</th>
-                          <th scope="col">선수_3</th>
-                          <th scope="col">선수_5</th>
-                          <th scope="col">선수_6</th>
-                          <th scope="col">선수_7</th>
-                          <th scope="col">선수_8</th>
-                          <th scope="col">선수_9</th>
-                          <th scope="col">선수_10</th>
-                          <th scope="col">골키퍼</th>
-                          <th scope="col">포메이션</th>
-                          <th scope="col">포메이션_텍스트</th>
+                          <th scope="col">홈</th>
+                          <th scope="col">어웨이</th>
+                          <th scope="col">일시</th>
+                          <th scope="col">경기장</th>
                         </tr>
                         </thead>
                         <tbody>
-
+                          <tr th:each="fl:${fixList}">
+                            <th th:text="${fl.fId}"></th>
+                            <th th:text="${fl.home}"></th>
+                            <th th:text="${fl.away}"></th>
+                            <th th:text="${fl.fDate}"></th>
+                            <th th:text="${fl.stadium}"></th>
+                          </tr>
                         </tbody>
                       </table>
                     </th:block>
