@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <div th:replace="/fragments/head_line.html :: head_line">-- thymeleaf head_line --</div>
+  <script type="text/javascript"
+          src="//dapi.kakao.com/v2/maps/sdk.js?appkey=3512efd5b0d9522108ab16756e818589"></script>
+  <!-- services와 clusterer, drawing 라이브러리 불러오기 -->
+  <script type="text/javascript"
+          src="//dapi.kakao.com/v2/maps/sdk.js?appkey=3512efd5b0d9522108ab16756e818589&libraries=services,clusterer,drawing"></script>
+</head>
+<body data-template="template-soccer">
+<div class="site-wrapper clearfix">
+  <div class="site-overlay"></div>
+
+  <!-- Header ================================================== -->
+
+  <!-- Header Mobile -->
+  <div th:replace="/fragments/header_mobile.html :: header_mobile">-- thymeleaf header_mobile
+    --
+  </div>
+
+  <!-- Header Desktop -->
+  <header class="header header--layout-1">
+    <div th:replace="/fragments/header_desktop.html :: header_desktop">-- thymeleaf
+      header_desktop --
+    </div>
+  </header>
+  <!-- Header / End -->
+
+  <!-- Pushy Panel - Dark -->
+  <div th:replace="/fragments/custom_pushy_panel.html :: custom_pushy_panel">-- thymeleaf
+    custom_pushy_panel --
+  </div>
+  <!-- Pushy Panel - Dark / End -->
+
+  <!-- Page Heading
+  ================================================== -->
+  <div class="page-heading">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 offset-md-1">
+          <h1 class="page-heading__title">Over<span class="highlight">View</span></h1>
+          <ol class="page-heading__breadcrumb breadcrumb">
+            <li class="breadcrumb-item"><a href="_soccer_index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="_soccer_team-overview.html">Team</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Overview</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Page Heading / End -->
+
+
+  <!-- Content
+  ================================================== -->
+  <div class="site-content">
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-11">
+          <div class="card">
+            <header class="card__header card__header--has-btn">
+              <h4>같이 응원 하자</h4>
+            </header>
+            <div class="card__content">
+              <div id="map" style="width:1000px;height:500px;"></div>
+              <br>
+              <form action="/map/create.do" method="post" id="create">
+                <div class="row">
+                  <div class="col-md-8">
+                    <div class="form-group">
+                      <label class="control-label" for="input-default">내용</label>
+                      <textarea class="form-control" name="content" id="input-default" style="height: 130px"
+                                placeholder="Your placeholder text..."></textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-group">
+                      <label class="control-label">날짜</label>
+                      <input type="date" class="form-control" name="date"
+                             placeholder="Your placeholder text...">
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-group">
+                      <label class="control-label">응원 할 구단</label>
+                      <select class="form-control" name="team">
+                        <option value="1">울산현대</option>
+                        <option value="2">성남FC</option>
+                        <option value="3">서울FC</option>
+                        <option value="4">수원삼성</option>
+                      </select>
+                      <br><br>
+                      <input type="hidden" name="xLoc" id="xLoc">
+                      <input type="hidden" name="yLoc" id="yLoc">
+                      <button type="button" id="sub" class="btn btn-info" style="float: right">마커 생성하기</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Content / End -->
+
+
+  <!-- Footer ================================================== -->
+  <footer id="footer" class="footer">
+    <!-- Footer Widgets -->
+    <div th:replace="/fragments/footer_custom.html :: footer_custom">-- thymeleaf footer_custom
+      --
+    </div>
+    <!-- Footer Secondary / End -->
+  </footer>
+  <!-- Footer / End -->
+
+
+  <!-- Login/Register Tabs Modal -->
+  <div th:replace="/fragments/login_register.html :: login_register">-- thymeleaf login_register
+    --
+  </div>
+  <!-- Login/Register Tabs Modal / End -->
+
+</div>
+<div th:replace="/fragments/script_line.html :: script_line">-- thymeleaf script_line --</div>
+</body>
+<script>
+  $(function () {
+
+    var xLoc = 0, yLoc = 0;
+
+    var mapContainer = document.getElementById('map'), // 지도를 표시할 div
+        mapOption = {
+          center: new kakao.maps.LatLng(37.4112279, 127.0947789), // 지도의 중심좌표
+          level: 3, // 지도의 확대 레벨
+          mapTypeId: kakao.maps.MapTypeId.ROADMAP // 지도종류
+        };
+
+    // 지도를 생성한다
+    var map = new kakao.maps.Map(mapContainer, mapOption);
+
+    // 지도에 마커를 생성하고 표시한다
+    var marker = new kakao.maps.Marker({
+      position: new kakao.maps.LatLng(37.4112279, 127.0947789), // 마커의 좌표
+      // draggable : true, // 마커를 드래그 가능하도록 설정한다
+      map: map // 마커를 표시할 지도 객체
+    });
+
+    // 마커 위에 표시할 인포윈도우를 생성한다
+    var infowindow = new kakao.maps.InfoWindow({
+      content: '<div style="padding:5px;">인포윈도우 :D</div>' // 인포윈도우에 표시할 내용
+    });
+
+    // 인포윈도우를 지도에 표시한다
+    infowindow.open(map, marker);
+
+    // 마커에 클릭 이벤트를 등록한다 (우클릭 : rightclick)
+    kakao.maps.event.addListener(marker, 'click', function () {
+      alert('마커를 클릭했습니다!');
+      console.log(marker.position())
+    });
+
+    // 마커에 mouseover 이벤트를 등록한다
+    kakao.maps.event.addListener(marker, 'mouseover', function () {
+      console.log('마커에 mouseover 이벤트가 발생했습니다!');
+    });
+
+    // 마커에 mouseout 이벤트 등록
+    kakao.maps.event.addListener(marker, 'mouseout', function () {
+      console.log('마커에 mouseout 이벤트가 발생했습니다!');
+    });
+
+    // // 마커에 dragstart 이벤트 등록
+    // kakao.maps.event.addListener(marker, 'dragstart', function() {
+    //   console.log('마커에 dragstart 이벤트가 발생했습니다!');
+    // });
+    //
+    // // 마커에 dragend 이벤트 등록
+    // kakao.maps.event.addListener(marker, 'dragend', function() {
+    //   console.log('마커에 dragend 이벤트가 발생했습니다!');
+    // });
+    // 지도에 클릭 이벤트를 등록합니다
+// 지도를 클릭하면 마지막 파라미터로 넘어온 함수를 호출합니다
+    kakao.maps.event.addListener(map, 'click', function (mouseEvent) {
+
+      // 클릭한 위도, 경도 정보를 가져옵니다
+      var latlng = mouseEvent.latLng;
+
+      // 마커 위치를 클릭한 위치로 옮깁니다
+      marker.setPosition(latlng);
+
+      xLoc = latlng.getLat();
+      yLoc = latlng.getLng();
+
+    });
+
+    // 커스텀 오버레이를 생성하고 지도에 표시한다
+    var customOverlay = new kakao.maps.CustomOverlay({
+      map: map,
+      clickable: true, // 커스텀 오버레이 클릭 시 지도에 이벤트를 전파하지 않도록 설정한다
+      content: '<div style="padding:0 5px;background:#fff;">HTML코드를 입력해주세요 :D</div>',
+      position: new kakao.maps.LatLng(37.4112279, 127.0947789), // 커스텀 오버레이를 표시할 좌표
+      xAnchor: 0.5, // 컨텐츠의 x 위치
+      yAnchor: 0 // 컨텐츠의 y 위치
+    });
+    $("#sub").click(function (){
+      $("#xLoc").val(xLoc);
+      $("#yLoc").val(yLoc)
+      $("#create").submit();
+    })
+  })
+</script>
+</html>
