@@ -152,22 +152,27 @@
                 <!-- Main-body start -->
                 <div class="main-body">
                   <div class="page-wrapper">
-                    <h3>회원 포인트 조회</h3>
+                    <h3>K리그 뉴스 조회</h3>
                     <th:block th:fragment="content">
                       <table class="table table-striped">
                         <thead>
                         <tr>
                           <th scope="col">번호</th>
-                          <th scope="col">이름</th>
-                          <th scope="col">이메일</th>
-                          <th scope="col">시즌</th>
-                          <th scope="col">맞춘 선수</th>
-                          <th scope="col">총 포인트</th>
+                          <th scope="col">제목</th>
+                          <th scope="col">업로드 시간</th>
+                          <th scope="col">이미지 주소</th>
+                          <th scope="col">주소</th>
+                          <th scope="col">클럽 이름</th>
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-
+                        <tr th:each="nl:${nList}">
+                          <th th:text="${nl.nId}"></th>
+                          <th th:text="${nl.title}"></th>
+                          <th th:text="${nl.updateTime}"></th>
+                          <th th:text="${nl.imageurl}"></th>
+                          <th th:text="${nl.source}"></th>
+                          <th th:text="${nl.cName}"></th>
                         </tr>
                         </tbody>
                       </table>

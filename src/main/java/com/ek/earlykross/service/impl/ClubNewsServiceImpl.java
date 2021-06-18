@@ -103,4 +103,14 @@ public class ClubNewsServiceImpl implements ClubNewsService {
 
         return booleanBuilder;
     }
+
+
+    //모든 뉴스 소식 가져오기
+    public List<ClubNewsVO> getAllNews(){
+        List<ClubNews> result = repository.findAll();
+        //entity to dto
+        Function<ClubNews, ClubNewsVO> fn = (entity -> entityToDto(entity));
+        List<ClubNewsVO> newsAllList = result.stream().map(fn).collect(Collectors.toList());
+        return newsAllList;
+    }
 }

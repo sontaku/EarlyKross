@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
   <head>
-    <title>Best_11 맞춘 회원</title>
+    <title>모든 리그 관리</title>
     <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 10]>
@@ -152,30 +152,44 @@
                 <!-- Main-body start -->
                 <div class="main-body">
                   <div class="page-wrapper">
-                    <h3>이달의 Best_11 회원</h3>
+                    <h3>모든 리그 관리</h3>
                     <th:block th:fragment="content">
                       <table class="table table-striped">
                         <thead>
                         <tr>
-                          <th scope="col">번호</th>
+                          <th scope="col">클럽번호</th>
                           <th scope="col">시즌</th>
-                          <th scope="col">라운드</th>
-                          <th scope="col">선수_1</th>
-                          <th scope="col">선수_2</th>
-                          <th scope="col">선수_3</th>
-                          <th scope="col">선수_5</th>
-                          <th scope="col">선수_6</th>
-                          <th scope="col">선수_7</th>
-                          <th scope="col">선수_8</th>
-                          <th scope="col">선수_9</th>
-                          <th scope="col">선수_10</th>
-                          <th scope="col">골키퍼</th>
-                          <th scope="col">포메이션</th>
-                          <th scope="col">포메이션_텍스트</th>
+                          <th scope="col">경기 수</th>
+                          <th scope="col">승점</th>
+                          <th scope="col">승</th>
+                          <th scope="col">무</th>
+                          <th scope="col">패</th>
+                          <th scope="col">득점</th>
+                          <th scope="col">실점</th>
+                          <th scope="col">득실차</th>
+                          <th scope="col">도움</th>
+                          <th scope="col">파울</th>
+                          <th scope="col">순위</th>
+                          <th scope="col">리그 구분</th>
                         </tr>
                         </thead>
                         <tbody>
-
+                        <tr th:each="Lg: ${LegList}">
+                          <th th:text="${Lg.cId.cId}"></th>'
+                          <th th:text="${Lg.season}"></th>
+                          <th th:text="${Lg.played}"></th>
+                          <th th:text="${Lg.points}"></th>
+                          <th th:text="${Lg.won}"></th>
+                          <th th:text="${Lg.drawn}"></th>
+                          <th th:text="${Lg.lost}"></th>
+                          <th th:text="${Lg.gf}"></th>
+                          <th th:text="${Lg.ga}"></th>
+                          <th th:text="${Lg.gd}"></th>
+                          <th th:text="${Lg.assist}"></th>
+                          <th th:text="${Lg.fo}"></th>
+                          <th th:text="${Lg.rank}"></th>
+                          <th th:text="${Lg.league}"></th>
+                        </tr>
                         </tbody>
                       </table>
                     </th:block>
