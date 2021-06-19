@@ -19,5 +19,5 @@ public interface PlayerRepository extends JpaRepository<Player, Long>, QuerydslP
   // 선수 조회(pId)
   Player findPlayerBypId(int pId);
 
-  Long countByPosition(String position);
+  long countByPosition(String position);
 }
