@@ -72,7 +72,9 @@
     - Front Frame nanum
     - 형상관리
 - 최현웅 : https://github.com/rphonica
-  - 시키는 거 다 못하겠습니다.
+  - 메인 페이지
+  - 뉴스 페이지
+  - 게시판 기능
    - Old Bro BOJO
 - 탁우근
   - 파일 업로드
