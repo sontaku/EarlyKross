@@ -69,8 +69,8 @@ public class AdminController {
 
   //통합 차트
   @GetMapping("/adminAllChart.do")
-  public void adminAllChart() {
-
+  public void adminAllChart(Model model) {
+    model.addAttribute("cntByPos",plService.countGroupByPos());
   }
 
   //News 조회
