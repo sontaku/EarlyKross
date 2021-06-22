@@ -1,5 +1,6 @@
 package com.ek.earlykross.vo;
 
+import com.ek.earlykross.entity.Map;
 import com.ek.earlykross.entity.Member;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -10,14 +11,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder(toBuilder = true)
-public class MapDTO {
+public class MapMemberDTO {
 
-    private Long mId;
-    private Double xLoc;
-    private Double yLoc;
-    private String content;
-    private String date;
-    private int team;
-    private Member host;
-    private int mCount;
+    private Long uId;
+    private Map mId;
+    private Member user;
 }

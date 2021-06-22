@@ -45,5 +45,10 @@ public class Map{
     @JoinColumn(name = "host", nullable = false)
     private Member host;
 
+    private int mCount;
+
+    public void changeMCount(int mCount){
+        this.mCount = mCount;
+    }
 
 }
