@@ -4,6 +4,7 @@
     <div th:replace="/fragments/head_line.html :: head_line">-- thymeleaf head_line --</div>
     <!--카카오 로그인 스크립트-->
     <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <!-- javaScript 키로 카카오 Developer에 접근 -->
 <!--    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>-->
 <!--    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>-->
 <!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>-->
@@ -176,18 +177,14 @@
       ================================================== -->
       <div class="site-content">
         <div class="container">
-
           <div class="row">
-
             <div class="col-md-6">
-
               <!-- Login -->
               <div class="card">
                 <div class="card__header">
                   <h4>계정 로그인</h4>
                 </div>
                 <div class="card__content">
-
                   <!-- Login Form -->
                   <form method="post" action="/login" id="login">
                     <div class="form-group">
@@ -220,7 +217,9 @@
 <!--                        <input id="userinfo" value=""/>&lt;!&ndash;유저 정보를 저장할 input 엘리먼트&ndash;&gt;-->
                         </div>
                       </div>
-                      <div class="col-md-6">
+                      <div class="col-md-6">                                                              <!-- 이 주소로 가라 oauth2를 이용해서 설정한 api키가 맞는지 확인 -->
+                                                                                                          <!-- Security를 써서 로그인정보를 Security가 매핑한 곳으로 보냄 -->
+                                                                                                          <!-- Security 로그인 , 회원가입의 매핑을 숨겨 둔다. 사용자의 권한에 따라서 접근 할수있는 페이지가 있고 , 비밀번호같은것도  인코딩을 통해서 보안을한다. -->
                         <div class="btn btn-google btn-icon btn-block" style="border: 1px solid black" onclick="location.href='/oauth2/authorization/google'">구글 로그인
                         </div>
                       </div>
@@ -228,21 +227,17 @@
                   </form>
                   <!-- Login Form / End -->
                   <!-- Login Form / End -->
-
                 </div>
               </div>
               <!-- Login / End -->
             </div>
-
             <div class="col-md-6">
-
               <!-- Register -->
               <div class="card">
                 <div class="card__header">
                   <h4>지금 등록하기</h4>
                 </div>
                 <div class="card__content">
-
                   <!-- Register Form -->
                   <form action="/signup" method="post" id="signup">
 
@@ -257,7 +252,6 @@
                       <input type="text" name="name" id="name"
                              class="form-control" placeholder="닉네임을 입력해주세요..">
                     </div>
-
                     <div class="form-group">
                       <label for="rgpassword">비밀번호</label>
                       <input type="password" name="password" id="rgpassword"
@@ -301,6 +295,7 @@
     <div th:replace="/fragments/script_line.html :: script_line">-- thymeleaf script_line --</div>
   </body>
 <script>
+  //회원가입 이메일 중복체크
   $(function (){
     let flag = false;
     $("#check").click(function (){
@@ -337,7 +332,7 @@
       Kakao.Auth.login({
         success: function (response) {
           Kakao.API.request({
-            url: '/v2/user/me',
+            url: '/v2/user/me',  // 사용자의 정보 가져오기
             success: function (response) {
               console.log(response)
               console.log('이름 : ' + response.properties.nickname)
@@ -349,9 +344,9 @@
               //여기서 페이지 이동이 아닌 ajax로 전송???
               var memberDTO = {email: response.kakao_account.email};
               $.ajax({
-                url:"/check",
+                url:"/check", //아이디 체크
                 data: memberDTO,
-                type:"POST",
+                type:"POST",  // 데이터의 값을 가려서 보낼ㄹ고
                 success:function (data){
                   $(".checkmark").text(data);
                   if(data === "사용가능합니다"){
@@ -361,8 +356,8 @@
                     $("#signup").submit();
                     alert("회원가입에 성공하였습니다. 로그인을 해주세요")
                   }else{
-                    $("#username").val(response.kakao_account.email);
-                    $("#password").val(1111)
+                    $("#username").val(response.kakao_account.email);  //kakao_account = 이메일을 불러옴
+                    $("#password").val(1111) //패스워드는 인코딩을 하기때문에 임의로 지정
                     $("#login").submit();
                   }
                  }
@@ -382,7 +377,7 @@
     function kakaoLogout() {
       if (Kakao.Auth.getAccessToken()) {
         Kakao.API.request({
-          url: '/v1/user/unlink',
+          url: '/v1/user/unlink',          //연결을 끊는 함수
           success: function (response) {
             console.log(response)
           },

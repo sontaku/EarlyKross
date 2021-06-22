@@ -45,58 +45,34 @@
       }
     </script>
 
-    <!--Pie Chart-->
-    <script type="text/javascript">
+    <!--Pie Chart = 우리 프로젝트는 Thymelef를 사용했기 때문에 th:inline을 사용해야 한다.-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" th:inline="javascript">
+      var temp = [[${cntByPos}]];
 
-      // google.charts.load('current', {'packages':['corechart']});
-      // google.charts.setOnLoadCallback(drawChart);
-      // let arr = [];
-      //
-      // function drawChart() {
-      //   $.ajax({
-      //     url:"/admin/GetCountPosition.do",
-      //     type: "post",
-      //     success: function (data) {
-      //       console.log(data);
-      //       for (let i of data){
-      //         arr.push(i);
-      //       }
-      //       for(let i of arr){
-      //         console.log(i);
-      //       }
-      //       console.log(arr[1])
-      //     },
-      //     error:function (e){
-      //       console.log(e);
-      //     }
-      //   })
-      //
-      //   let fw = 0;
-      //   let mf = 0;
-      //   let df = 0;
-      //   let gk = 0;
-      //   console.log(arr.Class);
-      //   fw += arr[0];
-      //   mf += arr[1];
-      //   df += arr[2];
-      //   gk += arr[3];
-      //
-      //   var data = google.visualization.arrayToDataTable([
-      //     ['Task', 'Hours per Day'],
-      //     ['공격수', fw],
-      //     ['미드필더', mf],
-      //     ['수비수',  df],
-      //     ['골키퍼', gk]
-      //   ]);
-      //
-      //   var options = {
-      //     title: 'K리그 포지션 분포 그래프'
-      //   };
-      //
-      //   var chart = new google.visualization.PieChart(document.getElementById('chart_Pie'));
-      //
-      //   chart.draw(data, options);
-      // }
+      var cntByGroup = [
+          ['포지션','선수 수']
+      ]
+
+      for (var i in temp){
+        cntByGroup.push(temp[i])
+      }
+
+      google.charts.load('current', {'packages' : ['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart(){
+
+        var data = google.visualization.arrayToDataTable(cntByGroup);
+
+        var options = {
+          title: '포지션 별 선수 비율'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
     </script>
 
     <!--Area Chart-->

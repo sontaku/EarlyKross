@@ -37,6 +37,11 @@ public class PlayerServiceImpl implements PlayerService {
     return PLrepository.countByPosition(position);
   }
 
+  //각 포지션 별 전체 선수 수 가져오기
+  public List<List> countGroupByPos(){
+    return PLrepository.countGroupByPos();
+  }
+
   //player entity to dto
   PlayerDTO entityToDto(Player entity){
     PlayerDTO dto = PlayerDTO.builder()
