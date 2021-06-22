@@ -20,4 +20,7 @@ public interface BestRepository extends JpaRepository<BestEleven, BestElevenPK>{
 
 
     Optional<BestEleven> findBestElevenBymIdAndRoundAndSeason(Member mId, int round, String season);
+
+    List<BestEleven> findAllBymId(Member MId);
+    BestEleven findBestElevenBymIdAndRound(Member mId, int round);
 }
