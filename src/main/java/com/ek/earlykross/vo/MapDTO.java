@@ -19,4 +19,5 @@ public class MapDTO {
     private String date;
     private int team;
     private Member host;
+    private int mCount;
 }

@@ -1,11 +1,6 @@
 package com.ek.earlykross.entity;
 
-import java.util.HashSet;
-import java.util.Set;
-import javax.persistence.Column;
-import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -30,20 +25,16 @@ public class Map{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) // 자동 생성번호
     private Long mId;
-
     private Double xLoc;
-
     private Double yLoc;
-
     private String content;
-
     private String date;
-
     private int team;
 
     @ManyToOne
     @JoinColumn(name = "host", nullable = false)
     private Member host;
 
+    private int mCount;
 
 }

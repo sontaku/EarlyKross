@@ -6,7 +6,6 @@
 <!--    }-->
 <!--</style>-->
 <th:block th:replace="~{/layout/basic :: setContent(~{this::content} )}">
-
   <th:block th:fragment="content">
     <h1 class="mt-4">글 목록
       <span>
@@ -95,18 +94,12 @@
       }
 
       var searchForm = $("#searchForm");
-
       $('.btn-search').click(function (e) {
-
         searchForm.submit();
-
       });
-
       $('.btn-clear').click(function (e) {
-
         // 아무 파라미터 없으면 기본 조건 탐색
         searchForm.empty().submit();
-
       });
     </script>
   </th:block>
