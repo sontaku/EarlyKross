@@ -18,4 +18,7 @@ public interface ClubRepository extends JpaRepository<Club, Long> { // <테이�
 
   // cId로 구단 탐색
   Club findBycId(int cId);
+
+  // name으로 구단 탐색
+  List<Club> findByNameContainingIgnoreCase(String keyword);
 }

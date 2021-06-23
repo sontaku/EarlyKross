@@ -33,7 +33,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-10 offset-md-1">
-              <h1 class="page-heading__title">검색 결과</h1>
+              <h1 class="page-heading__title" th:text="|${keyword} 검색 결과|"></h1>
               <ol class="page-heading__breadcrumb breadcrumb">
                 <li class="breadcrumb-item">클럽</li>
                 <li class="breadcrumb-item">선수</li>
@@ -75,13 +75,13 @@
                   </thead>
                   <tbody>
 
-                    <tr>
+                    <tr th:each="cList: ${clubResult}">
                       <td>
                         <div class="team-meta">
                           <figure class="team-meta__logo">
                             <!--																						<img src="../assets/images/samples/logos/pirates_shield.png" alt="">-->
                             <!--																						<img src="https://ww.namu.la/s/bd31122154e5f8010694e83df2e985bb9340e030f0e161275c4812ddd46d1191df6c52d29881e0ec17c111e16092054100b2a997d942a41c8ce6df7201ce66dbc2314f5e4043d45f62b02a355d88513623adc95317ebf25c8f5858b2ee2e477e0a4bc0a9b47185456bfa79a47bcdaf3c" alt="">-->
-                            <img th:src="|../upload/emblem/1.png|">
+                            <img th:src="|../upload/emblem/${cList.emblem}.png|">
                           </figure>
                           <div class="team-meta__info">
                             <h6 class="team-meta__name"></h6>
@@ -119,14 +119,14 @@
                   </thead>
                   <tbody>
 
-                    <tr>
+                    <tr th:each="pList: ${playerResult}">
                       <td>
                         <a th:href="@{/datacenter/playerdetail.do(pId=1)}">
                           <div class="team-meta">
                             <figure class="team-meta__logo">
                               <!--																						<img src="../assets/images/samples/logos/pirates_shield.png" alt="">-->
                               <!--																						<img src="https://ww.namu.la/s/bd31122154e5f8010694e83df2e985bb9340e030f0e161275c4812ddd46d1191df6c52d29881e0ec17c111e16092054100b2a997d942a41c8ce6df7201ce66dbc2314f5e4043d45f62b02a355d88513623adc95317ebf25c8f5858b2ee2e477e0a4bc0a9b47185456bfa79a47bcdaf3c" alt="">-->
-                              <img th:src="|https://portal.kleague.com/common/playerPhotoById.do?playerId=22222222&recYn=Y&searchYear=2021|" alt="">
+                              <img th:src="|https://portal.kleague.com/common/playerPhotoById.do?playerId=${pList.pId}&recYn=Y&searchYear=2021|" alt="">
                             </figure>
                             <div class="team-meta__info">
                               <h6 class="team-meta__name" style="text-align: left"></h6>
@@ -155,6 +155,9 @@
             <header class="card__header">
               <h4>뉴스 검색 결과</h4>
             </header>
+            <p th:each="nList: ${newsResult}">
+              <span th:text="${nList.title}"></span>
+            </p>
           </div>
           <!-- Tournament Brackets / End -->
 

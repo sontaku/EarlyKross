@@ -21,9 +21,12 @@ public interface PlayerRepository extends JpaRepository<Player, Long>, QuerydslP
   Player findPlayerBypId(int pId);
 
   // 포지션 별 전체 선수 수 가져오기 ( 포지션과 , 포지션별 수 )
-  @Query("select * position, count(*) from Player"
+  @Query("select position, count(*) from Player"
       + " group by position")
   List<List> countGroupByPos();
 
-  Long countByPosition(String position);
+  long countByPosition(String position);
+
+  // 선수 검색 (name)
+  List<Player> findByNameContainingIgnoreCase(String keyword);
 }
