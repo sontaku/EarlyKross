@@ -759,7 +759,7 @@ th {
   .table > tfoot > tr > th,
   .table > tfoot > tr > td {
     padding: 13px 10px;
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 
@@ -18382,7 +18382,7 @@ td.team-leader__goals {
 
 .team-leader__player-name {
   text-transform: none;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.2em;
   font-weight: 400;
   margin-bottom: 0;
@@ -18648,7 +18648,7 @@ td.team-leader__goals {
 
 @media (min-width: 768px) {
   .team-stats__label {
-    font-size: 10px;
+    font-size: 14px;
   }
 }
 
@@ -21552,7 +21552,7 @@ table.alc-event-result-labels > tbody > tr > td.alc-results .label {
 }
 
 .team-meta__name {
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.2em;
   margin-bottom: 0;
   text-transform: none;
@@ -30325,7 +30325,7 @@ table.alc-event-result-labels > tbody > tr > td.alc-results .label {
   padding-top: 6px;
   padding-bottom: 6px;
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 700;
 }
 
@@ -31085,7 +31085,7 @@ table.alc-event-result-labels > tbody > tr > td.alc-results .label {
 
 .content-filter__link {
   display: block;
-  font-size: 13px;
+  font-size: 20px;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;

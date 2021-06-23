@@ -33,7 +33,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-10 offset-md-1">
-              <h1 class="page-heading__title">검색 결과</h1>
+              <h1 class="page-heading__title" th:text="|${keyword} 검색 결과|"></h1>
               <ol class="page-heading__breadcrumb breadcrumb">
                 <li class="breadcrumb-item">클럽</li>
                 <li class="breadcrumb-item">선수</li>
@@ -62,41 +62,28 @@
                 <table class="table table-hover table-standings">
                   <thead>
                     <tr>
-                      <th>팀 순위</th>
-                      <th>경기수</th>
-                      <th>승점</th>
-                      <th>승</th>
-                      <th>무</th>
-                      <th>패</th>
-                      <th>득점</th>
-                      <th>실점</th>
-                      <th>득실차</th>
+                      <th>클럽</th>
+                      <th></th>
                     </tr>
                   </thead>
                   <tbody>
-
-                    <tr>
+                    <tr th:each="cList: ${clubResult}">
                       <td>
+                        <a th:href="@{/datacenter/club.do(cId=${cList.cId})}">
                         <div class="team-meta">
                           <figure class="team-meta__logo">
                             <!--																						<img src="../assets/images/samples/logos/pirates_shield.png" alt="">-->
                             <!--																						<img src="https://ww.namu.la/s/bd31122154e5f8010694e83df2e985bb9340e030f0e161275c4812ddd46d1191df6c52d29881e0ec17c111e16092054100b2a997d942a41c8ce6df7201ce66dbc2314f5e4043d45f62b02a355d88513623adc95317ebf25c8f5858b2ee2e477e0a4bc0a9b47185456bfa79a47bcdaf3c" alt="">-->
-                            <img th:src="|../upload/emblem/1.png|">
+                            <img th:src="|../upload/emblem/${cList.cId}.png|">
                           </figure>
                           <div class="team-meta__info">
                             <h6 class="team-meta__name"></h6>
-                            <span class="team-meta__place"></span>
+                            <span class="team-meta__place" th:text="${cList.name}"></span>
                           </div>
                         </div>
+                        </a>
                       </td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
+                      <td th:text="${cList.ename}" style="vertical-align: middle"></td>
                     </tr>
                   </tbody>
                 </table>
@@ -119,17 +106,17 @@
                   </thead>
                   <tbody>
 
-                    <tr>
+                    <tr th:each="pList: ${playerResult}">
                       <td>
-                        <a th:href="@{/datacenter/playerdetail.do(pId=1)}">
+                        <a th:href="@{/datacenter/playerdetail.do(pId=${pList.pId})}">
                           <div class="team-meta">
                             <figure class="team-meta__logo">
                               <!--																						<img src="../assets/images/samples/logos/pirates_shield.png" alt="">-->
                               <!--																						<img src="https://ww.namu.la/s/bd31122154e5f8010694e83df2e985bb9340e030f0e161275c4812ddd46d1191df6c52d29881e0ec17c111e16092054100b2a997d942a41c8ce6df7201ce66dbc2314f5e4043d45f62b02a355d88513623adc95317ebf25c8f5858b2ee2e477e0a4bc0a9b47185456bfa79a47bcdaf3c" alt="">-->
-                              <img th:src="|https://portal.kleague.com/common/playerPhotoById.do?playerId=22222222&recYn=Y&searchYear=2021|" alt="">
+                              <img th:src="|https://portal.kleague.com/common/playerPhotoById.do?playerId=${pList.pId}&recYn=Y&searchYear=2021|" alt="">
                             </figure>
                             <div class="team-meta__info">
-                              <h6 class="team-meta__name" style="text-align: left"></h6>
+                              <h6 class="team-meta__name" style="text-align: left" th:text="${pList.name}"></h6>
                               <!--
                               <span class="team-meta__place">ㅋㅋ</span>
                               -->
@@ -137,8 +124,8 @@
                           </div>
                         </a>
                       </td>
-                      <td></td>
-                      <td>
+                      <td th:text="${pList.position}" style="vertical-align: middle"></td>
+                      <td th:text="${pList.nationality}" style="vertical-align: middle">
                         <div>
                           <span>
                             <h6 class="team-meta__name"></h6>
@@ -155,6 +142,11 @@
             <header class="card__header">
               <h4>뉴스 검색 결과</h4>
             </header>
+            <span th:each="nList: ${newsResult}">
+              <a th:href="${nList.source}">
+                <p th:text="${nList.title}"></p>
+              </a>
+            </span>
           </div>
           <!-- Tournament Brackets / End -->
 

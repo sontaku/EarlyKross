@@ -26,4 +26,7 @@ public interface PlayerRepository extends JpaRepository<Player, Long>, QuerydslP
   List<List> countGroupByPos();
 
   long countByPosition(String position);
+
+  // 선수 검색 (name)
+  List<Player> findByNameContainingIgnoreCase(String keyword);
 }

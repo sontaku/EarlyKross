@@ -123,6 +123,7 @@
               <div class="posts posts--cards post-grid post-grid--fitRows row">
 
                 <div class="post-grid__item col-sm-3" th:each="fwList: ${lineup0}" style="position: relative">
+                  <a th:href="@{/datacenter/playerdetail.do(pId=${fwList.pId})}">
                   <div class="posts__item posts__item--card posts__item--category-1 card" th:style="'background-image:' + 'url(' + |../upload/emblem/${oneClub.cId}.png| + ');'
                   + 'background-size:' + '75% 75%;'
                   + 'background-position:' + 'center;'
@@ -143,6 +144,7 @@
                       </div>
                     </footer>
                   </div>
+                  </a>
                 </div>
                 <!-- Post Grid / End -->
               </div>
@@ -159,6 +161,7 @@
               <div class="posts posts--cards post-grid post-grid--fitRows row">
 
                 <div class="post-grid__item col-sm-3" th:each="mfList: ${lineup1}">
+                  <a th:href="@{/datacenter/playerdetail.do(pId=${mfList.pId})}">
                   <div class="posts__item posts__item--card posts__item--category-1 card" th:style="'background-image:' + 'url(' + |../upload/emblem/${oneClub.cId}.png| + ');'
                   + 'background-size:' + '75% 75%;'
                   + 'background-position:' + 'center;'
@@ -179,6 +182,7 @@
                       </div>
                     </footer>
                   </div>
+                  </a>
                 </div>
                 <!-- Post Grid / End -->
               </div>
@@ -195,6 +199,7 @@
               <div class="posts posts--cards post-grid post-grid--fitRows row ">
 
                 <div class="post-grid__item col-sm-3" th:each="dfList: ${lineup2}">
+                  <a th:href="@{/datacenter/playerdetail.do(pId=${dfList.pId})}">
                   <div class="posts__item posts__item--card posts__item--category-1 card" th:style="'background-image:' + 'url(' + |../upload/emblem/${oneClub.cId}.png| + ');'
                   + 'background-size:' + '75% 75%;'
                   + 'background-position:' + 'center;'
@@ -215,6 +220,7 @@
                       </div>
                     </footer>
                   </div>
+                  </a>
                 </div>
                 <!-- Post Grid / End -->
               </div>
@@ -231,6 +237,7 @@
               <div class="posts posts--cards post-grid post-grid--fitRows row">
 
                 <div class="post-grid__item col-sm-3" th:each="gkList: ${lineup3}">
+                  <a th:href="@{/datacenter/playerdetail.do(pId=${gkList.pId})}">
                   <div class="posts__item posts__item--card posts__item--category-1 card" th:style="'background-image:' + 'url(' + |../upload/emblem/${oneClub.cId}.png| + ');'
                   + 'background-size:' + '75% 75%;'
                   + 'background-position:' + 'center;'
@@ -251,6 +258,7 @@
                       </div>
                     </footer>
                   </div>
+                  </a>
                 </div>
                 <!-- Post Grid / End -->
               </div>
@@ -332,171 +340,171 @@
 <!--            </div>-->
           </div>
 
-          <!-- Schedule & Tickets -->
-          <div class="card card--has-table">
-            <div class="card__header card__header--has-btn">
-              <h4>Games Schedule</h4>
-              <a href="_soccer_team-schedule.html"
-                 class="btn btn-default btn-outline btn-xs card-header__button">See Complete
-                Schedule</a>
-            </div>
-            <div class="card__content">
-              <div class="table-responsive">
-                <table class="table table-hover team-schedule">
-                  <thead>
-                  <tr>
-                    <th class="team-schedule__date">Date</th>
-                    <th class="team-schedule__versus">Versus</th>
-                    <th class="team-schedule__time">Time</th>
-                    <th class="team-schedule__venue">Venue</th>
-                    <th class="team-schedule__tickets">Tickets</th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                  <tr>
-                    <td class="team-schedule__date">Saturday, Mar 24</td>
-                    <td class="team-schedule__versus">
-                      <div class="team-meta">
-                        <figure class="team-meta__logo">
-                          <img src="../assets/images/samples/logos/lucky_clovers_shield.png" alt="">
-                        </figure>
-                        <div class="team-meta__info">
-                          <h6 class="team-meta__name">Lucky Clovers</h6>
-                          <span class="team-meta__place">St. Patrick’s Institute</span>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="team-schedule__time">9:00PM EST</td>
-                    <td class="team-schedule__venue">Madison Cube Stadium</td>
-                    <td class="team-schedule__tickets">
-                      <a href="#" class="btn btn-xs btn-default btn-outline btn-block ">
-                        Buy Game Tickets
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="team-schedule__date">Friday, May 31</td>
-                    <td class="team-schedule__versus">
-                      <div class="team-meta">
-                        <figure class="team-meta__logo">
-                          <img src="../assets/images/samples/logos/red_wings_shield.png" alt="">
-                        </figure>
-                        <div class="team-meta__info">
-                          <h6 class="team-meta__name">Red Wings</h6>
-                          <span class="team-meta__place">Icarus College</span>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="team-schedule__time">9:30PM EST</td>
-                    <td class="team-schedule__venue">Alchemists Stadium</td>
-                    <td class="team-schedule__tickets">
-                      <a href="#" class="btn btn-xs btn-default btn-outline btn-block disabled">
-                        Sold Out
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="team-schedule__date">Saturday, May 8</td>
-                    <td class="team-schedule__versus">
-                      <div class="team-meta">
-                        <figure class="team-meta__logo">
-                          <img src="../assets/images/samples/logos/draconians_shield.png" alt="">
-                        </figure>
-                        <div class="team-meta__info">
-                          <h6 class="team-meta__name">Draconians</h6>
-                          <span class="team-meta__place">Wyvern College</span>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="team-schedule__time">10:00PM EST</td>
-                    <td class="team-schedule__venue">Scalding Rock Stadium</td>
-                    <td class="team-schedule__tickets">
-                      <a href="#" class="btn btn-xs btn-default btn-outline btn-block ">
-                        Buy Game Tickets
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="team-schedule__date">Friday, May 14</td>
-                    <td class="team-schedule__versus">
-                      <div class="team-meta">
-                        <figure class="team-meta__logo">
-                          <img src="../assets/images/samples/logos/aqua_keyes_shield.png" alt="">
-                        </figure>
-                        <div class="team-meta__info">
-                          <h6 class="team-meta__name">Aqua Keyes</h6>
-                          <span class="team-meta__place">Pacific Institute</span>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="team-schedule__time">10:00PM EST</td>
-                    <td class="team-schedule__venue">Alchemists Stadium</td>
-                    <td class="team-schedule__tickets">
-                      <a href="#" class="btn btn-xs btn-default btn-outline btn-block ">
-                        Buy Game Tickets
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="team-schedule__date">Saturday, May 22</td>
-                    <td class="team-schedule__versus">
-                      <div class="team-meta">
-                        <figure class="team-meta__logo">
-                          <img src="../assets/images/samples/logos/icarus_wings_shield.png" alt="">
-                        </figure>
-                        <div class="team-meta__info">
-                          <h6 class="team-meta__name">Icarus Wings</h6>
-                          <span class="team-meta__place">Waxer College</span>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="team-schedule__time">10:30PM EST</td>
-                    <td class="team-schedule__venue">The FireStar Arena</td>
-                    <td class="team-schedule__tickets">
-                      <a href="#" class="btn btn-xs btn-default btn-outline btn-block disabled">
-                        Sold Out
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="team-schedule__date">Saturday, May 29</td>
-                    <td class="team-schedule__versus">
-                      <div class="team-meta">
-                        <figure class="team-meta__logo">
-                          <img src="../assets/images/samples/logos/bloody_wave_shield.png" alt="">
-                        </figure>
-                        <div class="team-meta__info">
-                          <h6 class="team-meta__name">Bloody Wave</h6>
-                          <span class="team-meta__place">Atlantic School</span>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="team-schedule__time">9:00PM EST</td>
-                    <td class="team-schedule__venue">Alchemists Stadium</td>
-                    <td class="team-schedule__tickets">
-                      <a href="#" class="btn btn-xs btn-default btn-outline btn-block ">
-                        Buy Game Tickets
-                      </a>
-                    </td>
-                  </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-          <!-- Schedule & Tickets / End -->
+<!--          &lt;!&ndash; Schedule & Tickets &ndash;&gt;-->
+<!--          <div class="card card&#45;&#45;has-table">-->
+<!--            <div class="card__header card__header&#45;&#45;has-btn">-->
+<!--              <h4>Games Schedule</h4>-->
+<!--              <a href="_soccer_team-schedule.html"-->
+<!--                 class="btn btn-default btn-outline btn-xs card-header__button">See Complete-->
+<!--                Schedule</a>-->
+<!--            </div>-->
+<!--            <div class="card__content">-->
+<!--              <div class="table-responsive">-->
+<!--                <table class="table table-hover team-schedule">-->
+<!--                  <thead>-->
+<!--                  <tr>-->
+<!--                    <th class="team-schedule__date">Date</th>-->
+<!--                    <th class="team-schedule__versus">Versus</th>-->
+<!--                    <th class="team-schedule__time">Time</th>-->
+<!--                    <th class="team-schedule__venue">Venue</th>-->
+<!--                    <th class="team-schedule__tickets">Tickets</th>-->
+<!--                  </tr>-->
+<!--                  </thead>-->
+<!--                  <tbody>-->
+<!--                  <tr>-->
+<!--                    <td class="team-schedule__date">Saturday, Mar 24</td>-->
+<!--                    <td class="team-schedule__versus">-->
+<!--                      <div class="team-meta">-->
+<!--                        <figure class="team-meta__logo">-->
+<!--                          <img src="../assets/images/samples/logos/lucky_clovers_shield.png" alt="">-->
+<!--                        </figure>-->
+<!--                        <div class="team-meta__info">-->
+<!--                          <h6 class="team-meta__name">Lucky Clovers</h6>-->
+<!--                          <span class="team-meta__place">St. Patrick’s Institute</span>-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                    </td>-->
+<!--                    <td class="team-schedule__time">9:00PM EST</td>-->
+<!--                    <td class="team-schedule__venue">Madison Cube Stadium</td>-->
+<!--                    <td class="team-schedule__tickets">-->
+<!--                      <a href="#" class="btn btn-xs btn-default btn-outline btn-block ">-->
+<!--                        Buy Game Tickets-->
+<!--                      </a>-->
+<!--                    </td>-->
+<!--                  </tr>-->
+<!--                  <tr>-->
+<!--                    <td class="team-schedule__date">Friday, May 31</td>-->
+<!--                    <td class="team-schedule__versus">-->
+<!--                      <div class="team-meta">-->
+<!--                        <figure class="team-meta__logo">-->
+<!--                          <img src="../assets/images/samples/logos/red_wings_shield.png" alt="">-->
+<!--                        </figure>-->
+<!--                        <div class="team-meta__info">-->
+<!--                          <h6 class="team-meta__name">Red Wings</h6>-->
+<!--                          <span class="team-meta__place">Icarus College</span>-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                    </td>-->
+<!--                    <td class="team-schedule__time">9:30PM EST</td>-->
+<!--                    <td class="team-schedule__venue">Alchemists Stadium</td>-->
+<!--                    <td class="team-schedule__tickets">-->
+<!--                      <a href="#" class="btn btn-xs btn-default btn-outline btn-block disabled">-->
+<!--                        Sold Out-->
+<!--                      </a>-->
+<!--                    </td>-->
+<!--                  </tr>-->
+<!--                  <tr>-->
+<!--                    <td class="team-schedule__date">Saturday, May 8</td>-->
+<!--                    <td class="team-schedule__versus">-->
+<!--                      <div class="team-meta">-->
+<!--                        <figure class="team-meta__logo">-->
+<!--                          <img src="../assets/images/samples/logos/draconians_shield.png" alt="">-->
+<!--                        </figure>-->
+<!--                        <div class="team-meta__info">-->
+<!--                          <h6 class="team-meta__name">Draconians</h6>-->
+<!--                          <span class="team-meta__place">Wyvern College</span>-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                    </td>-->
+<!--                    <td class="team-schedule__time">10:00PM EST</td>-->
+<!--                    <td class="team-schedule__venue">Scalding Rock Stadium</td>-->
+<!--                    <td class="team-schedule__tickets">-->
+<!--                      <a href="#" class="btn btn-xs btn-default btn-outline btn-block ">-->
+<!--                        Buy Game Tickets-->
+<!--                      </a>-->
+<!--                    </td>-->
+<!--                  </tr>-->
+<!--                  <tr>-->
+<!--                    <td class="team-schedule__date">Friday, May 14</td>-->
+<!--                    <td class="team-schedule__versus">-->
+<!--                      <div class="team-meta">-->
+<!--                        <figure class="team-meta__logo">-->
+<!--                          <img src="../assets/images/samples/logos/aqua_keyes_shield.png" alt="">-->
+<!--                        </figure>-->
+<!--                        <div class="team-meta__info">-->
+<!--                          <h6 class="team-meta__name">Aqua Keyes</h6>-->
+<!--                          <span class="team-meta__place">Pacific Institute</span>-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                    </td>-->
+<!--                    <td class="team-schedule__time">10:00PM EST</td>-->
+<!--                    <td class="team-schedule__venue">Alchemists Stadium</td>-->
+<!--                    <td class="team-schedule__tickets">-->
+<!--                      <a href="#" class="btn btn-xs btn-default btn-outline btn-block ">-->
+<!--                        Buy Game Tickets-->
+<!--                      </a>-->
+<!--                    </td>-->
+<!--                  </tr>-->
+<!--                  <tr>-->
+<!--                    <td class="team-schedule__date">Saturday, May 22</td>-->
+<!--                    <td class="team-schedule__versus">-->
+<!--                      <div class="team-meta">-->
+<!--                        <figure class="team-meta__logo">-->
+<!--                          <img src="../assets/images/samples/logos/icarus_wings_shield.png" alt="">-->
+<!--                        </figure>-->
+<!--                        <div class="team-meta__info">-->
+<!--                          <h6 class="team-meta__name">Icarus Wings</h6>-->
+<!--                          <span class="team-meta__place">Waxer College</span>-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                    </td>-->
+<!--                    <td class="team-schedule__time">10:30PM EST</td>-->
+<!--                    <td class="team-schedule__venue">The FireStar Arena</td>-->
+<!--                    <td class="team-schedule__tickets">-->
+<!--                      <a href="#" class="btn btn-xs btn-default btn-outline btn-block disabled">-->
+<!--                        Sold Out-->
+<!--                      </a>-->
+<!--                    </td>-->
+<!--                  </tr>-->
+<!--                  <tr>-->
+<!--                    <td class="team-schedule__date">Saturday, May 29</td>-->
+<!--                    <td class="team-schedule__versus">-->
+<!--                      <div class="team-meta">-->
+<!--                        <figure class="team-meta__logo">-->
+<!--                          <img src="../assets/images/samples/logos/bloody_wave_shield.png" alt="">-->
+<!--                        </figure>-->
+<!--                        <div class="team-meta__info">-->
+<!--                          <h6 class="team-meta__name">Bloody Wave</h6>-->
+<!--                          <span class="team-meta__place">Atlantic School</span>-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                    </td>-->
+<!--                    <td class="team-schedule__time">9:00PM EST</td>-->
+<!--                    <td class="team-schedule__venue">Alchemists Stadium</td>-->
+<!--                    <td class="team-schedule__tickets">-->
+<!--                      <a href="#" class="btn btn-xs btn-default btn-outline btn-block ">-->
+<!--                        Buy Game Tickets-->
+<!--                      </a>-->
+<!--                    </td>-->
+<!--                  </tr>-->
+<!--                  </tbody>-->
+<!--                </table>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          &lt;!&ndash; Schedule & Tickets / End &ndash;&gt;-->
 
-          <!-- Points History -->
-          <div class="card">
-            <div class="card__header card__header--has-legend">
-              <h4>Points History</h4>
-              <div id="gamesPoinstsLegendSoccer" class="chart-legend"></div>
-            </div>
-            <div class="card__content">
-              <canvas id="points-history-soccer" class="points-history-chart" height="135"></canvas>
-            </div>
-          </div>
-          <!-- Points History / End -->
+<!--          &lt;!&ndash; Points History &ndash;&gt;-->
+<!--          <div class="card">-->
+<!--            <div class="card__header card__header&#45;&#45;has-legend">-->
+<!--              <h4>Points History</h4>-->
+<!--              <div id="gamesPoinstsLegendSoccer" class="chart-legend"></div>-->
+<!--            </div>-->
+<!--            <div class="card__content">-->
+<!--              <canvas id="points-history-soccer" class="points-history-chart" height="135"></canvas>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          &lt;!&ndash; Points History / End &ndash;&gt;-->
 
         </div>
         <!-- Content / End -->
@@ -721,224 +729,224 @@
 <!--          </aside>-->
           <!-- Widget: Team Leaders / End -->
 
-          <!-- Widget: Latest Results -->
-          <aside class="widget card widget--sidebar widget-results">
-            <div class="widget__title card__header card__header--has-btn">
-              <h4>Latest Results</h4>
-              <a href="#" class="btn btn-default btn-outline btn-xs card-header__button">See Full
-                Results</a>
-            </div>
-            <div class="widget__content card__content">
-              <ul class="widget-results__list">
+<!--          &lt;!&ndash; Widget: Latest Results &ndash;&gt;-->
+<!--          <aside class="widget card widget&#45;&#45;sidebar widget-results">-->
+<!--            <div class="widget__title card__header card__header&#45;&#45;has-btn">-->
+<!--              <h4>Latest Results</h4>-->
+<!--              <a href="#" class="btn btn-default btn-outline btn-xs card-header__button">See Full-->
+<!--                Results</a>-->
+<!--            </div>-->
+<!--            <div class="widget__content card__content">-->
+<!--              <ul class="widget-results__list">-->
 
-                <!-- Game #0 -->
-                <li class="widget-results__item">
-                  <div class="widget-results__header justify-content-center">
-                    <div class="widget-results__title">Saturday, March 24</div>
-                  </div>
-                  <div class="widget-results__content">
-                    <div class="widget-results__team widget-results__team--first">
-                      <figure class="widget-results__team-logo">
-                        <img src="../assets/images/soccer/logos/alchemists_s_shield.png" alt="">
-                      </figure>
-                      <div class="widget-results__team-details">
-                        <h5 class="widget-results__team-name">Alchemists</h5>
-                        <span class="widget-results__team-info">Elric Bros School</span>
-                      </div>
-                    </div>
-                    <div class="widget-results__result">
-                      <div class="widget-results__score">
-                        <span class="widget-results__score-winner">2</span> - <span
-                          class="widget-results__score-loser">0</span>
-                        <div class="widget-results__status">Home</div>
-                      </div>
-                    </div>
-                    <div class="widget-results__team widget-results__team--second">
-                      <figure class="widget-results__team-logo">
-                        <img src="../assets/images/samples/logos/sharks_shield.png" alt="">
-                      </figure>
-                      <div class="widget-results__team-details">
-                        <h5 class="widget-results__team-name">Sharks</h5>
-                        <span class="widget-results__team-info">Marine College</span>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <!-- Game #0 / End -->
-                <!-- Game #1 -->
-                <li class="widget-results__item">
-                  <div class="widget-results__header justify-content-center">
-                    <div class="widget-results__title">Friday, March 16</div>
-                  </div>
-                  <div class="widget-results__content">
-                    <div class="widget-results__team widget-results__team--first">
-                      <figure class="widget-results__team-logo">
-                        <img src="../assets/images/samples/logos/pirates_shield.png" alt="">
-                      </figure>
-                      <div class="widget-results__team-details">
-                        <h5 class="widget-results__team-name">L.A. Pirates</h5>
-                        <span class="widget-results__team-info">Bebop Institute</span>
-                      </div>
-                    </div>
-                    <div class="widget-results__result">
-                      <div class="widget-results__score">
-                        <span class="widget-results__score-winner">4</span> - <span
-                          class="widget-results__score-loser">2</span>
-                        <div class="widget-results__status">Away</div>
-                      </div>
-                    </div>
-                    <div class="widget-results__team widget-results__team--second">
-                      <figure class="widget-results__team-logo">
-                        <img src="../assets/images/soccer/logos/alchemists_s_shield.png" alt="">
-                      </figure>
-                      <div class="widget-results__team-details">
-                        <h5 class="widget-results__team-name">Alchemists</h5>
-                        <span class="widget-results__team-info">Eric Bros School</span>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <!-- Game #1 / End -->
-                <!-- Game #2 -->
-                <li class="widget-results__item">
-                  <div class="widget-results__header justify-content-center">
-                    <div class="widget-results__title">Saturday, March 10</div>
-                  </div>
-                  <div class="widget-results__content">
-                    <div class="widget-results__team widget-results__team--first">
-                      <figure class="widget-results__team-logo">
-                        <img src="../assets/images/soccer/logos/alchemists_s_shield.png" alt="">
-                      </figure>
-                      <div class="widget-results__team-details">
-                        <h5 class="widget-results__team-name">Alchemists</h5>
-                        <span class="widget-results__team-info">Eric Bros School</span>
-                      </div>
-                    </div>
-                    <div class="widget-results__result">
-                      <div class="widget-results__score">
-                        <span class="widget-results__score-loser">0</span> - <span
-                          class="widget-results__score-loser">0</span>
-                        <div class="widget-results__status">Home</div>
-                      </div>
-                    </div>
-                    <div class="widget-results__team widget-results__team--second">
-                      <figure class="widget-results__team-logo">
-                        <img src="../assets/images/samples/logos/lucky_clovers_shield.png" alt="">
-                      </figure>
-                      <div class="widget-results__team-details">
-                        <h5 class="widget-results__team-name">Clovers</h5>
-                        <span class="widget-results__team-info">St. Patrick’s Inst</span>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <!-- Game #2 / End -->
-                <!-- Game #3 -->
-                <li class="widget-results__item">
-                  <div class="widget-results__header justify-content-center">
-                    <div class="widget-results__title">Friday, March 4</div>
-                  </div>
-                  <div class="widget-results__content">
-                    <div class="widget-results__team widget-results__team--first">
-                      <figure class="widget-results__team-logo">
-                        <img src="../assets/images/samples/logos/ocean_kings_shield.png" alt="">
-                      </figure>
-                      <div class="widget-results__team-details">
-                        <h5 class="widget-results__team-name">Ocean Kings</h5>
-                        <span class="widget-results__team-info">Bay College</span>
-                      </div>
-                    </div>
-                    <div class="widget-results__result">
-                      <div class="widget-results__score">
-                        <span class="widget-results__score-loser">2</span> - <span
-                          class="widget-results__score-winner">3</span>
-                        <div class="widget-results__status">Home</div>
-                      </div>
-                    </div>
-                    <div class="widget-results__team widget-results__team--second">
-                      <figure class="widget-results__team-logo">
-                        <img src="../assets/images/soccer/logos/alchemists_s_shield.png" alt="">
-                      </figure>
-                      <div class="widget-results__team-details">
-                        <h5 class="widget-results__team-name">Alchemists</h5>
-                        <span class="widget-results__team-info">Eric Bros School</span>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <!-- Game #3 / End -->
+<!--                &lt;!&ndash; Game #0 &ndash;&gt;-->
+<!--                <li class="widget-results__item">-->
+<!--                  <div class="widget-results__header justify-content-center">-->
+<!--                    <div class="widget-results__title">Saturday, March 24</div>-->
+<!--                  </div>-->
+<!--                  <div class="widget-results__content">-->
+<!--                    <div class="widget-results__team widget-results__team&#45;&#45;first">-->
+<!--                      <figure class="widget-results__team-logo">-->
+<!--                        <img src="../assets/images/soccer/logos/alchemists_s_shield.png" alt="">-->
+<!--                      </figure>-->
+<!--                      <div class="widget-results__team-details">-->
+<!--                        <h5 class="widget-results__team-name">Alchemists</h5>-->
+<!--                        <span class="widget-results__team-info">Elric Bros School</span>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                    <div class="widget-results__result">-->
+<!--                      <div class="widget-results__score">-->
+<!--                        <span class="widget-results__score-winner">2</span> - <span-->
+<!--                          class="widget-results__score-loser">0</span>-->
+<!--                        <div class="widget-results__status">Home</div>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                    <div class="widget-results__team widget-results__team&#45;&#45;second">-->
+<!--                      <figure class="widget-results__team-logo">-->
+<!--                        <img src="../assets/images/samples/logos/sharks_shield.png" alt="">-->
+<!--                      </figure>-->
+<!--                      <div class="widget-results__team-details">-->
+<!--                        <h5 class="widget-results__team-name">Sharks</h5>-->
+<!--                        <span class="widget-results__team-info">Marine College</span>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </li>-->
+<!--                &lt;!&ndash; Game #0 / End &ndash;&gt;-->
+<!--                &lt;!&ndash; Game #1 &ndash;&gt;-->
+<!--                <li class="widget-results__item">-->
+<!--                  <div class="widget-results__header justify-content-center">-->
+<!--                    <div class="widget-results__title">Friday, March 16</div>-->
+<!--                  </div>-->
+<!--                  <div class="widget-results__content">-->
+<!--                    <div class="widget-results__team widget-results__team&#45;&#45;first">-->
+<!--                      <figure class="widget-results__team-logo">-->
+<!--                        <img src="../assets/images/samples/logos/pirates_shield.png" alt="">-->
+<!--                      </figure>-->
+<!--                      <div class="widget-results__team-details">-->
+<!--                        <h5 class="widget-results__team-name">L.A. Pirates</h5>-->
+<!--                        <span class="widget-results__team-info">Bebop Institute</span>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                    <div class="widget-results__result">-->
+<!--                      <div class="widget-results__score">-->
+<!--                        <span class="widget-results__score-winner">4</span> - <span-->
+<!--                          class="widget-results__score-loser">2</span>-->
+<!--                        <div class="widget-results__status">Away</div>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                    <div class="widget-results__team widget-results__team&#45;&#45;second">-->
+<!--                      <figure class="widget-results__team-logo">-->
+<!--                        <img src="../assets/images/soccer/logos/alchemists_s_shield.png" alt="">-->
+<!--                      </figure>-->
+<!--                      <div class="widget-results__team-details">-->
+<!--                        <h5 class="widget-results__team-name">Alchemists</h5>-->
+<!--                        <span class="widget-results__team-info">Eric Bros School</span>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </li>-->
+<!--                &lt;!&ndash; Game #1 / End &ndash;&gt;-->
+<!--                &lt;!&ndash; Game #2 &ndash;&gt;-->
+<!--                <li class="widget-results__item">-->
+<!--                  <div class="widget-results__header justify-content-center">-->
+<!--                    <div class="widget-results__title">Saturday, March 10</div>-->
+<!--                  </div>-->
+<!--                  <div class="widget-results__content">-->
+<!--                    <div class="widget-results__team widget-results__team&#45;&#45;first">-->
+<!--                      <figure class="widget-results__team-logo">-->
+<!--                        <img src="../assets/images/soccer/logos/alchemists_s_shield.png" alt="">-->
+<!--                      </figure>-->
+<!--                      <div class="widget-results__team-details">-->
+<!--                        <h5 class="widget-results__team-name">Alchemists</h5>-->
+<!--                        <span class="widget-results__team-info">Eric Bros School</span>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                    <div class="widget-results__result">-->
+<!--                      <div class="widget-results__score">-->
+<!--                        <span class="widget-results__score-loser">0</span> - <span-->
+<!--                          class="widget-results__score-loser">0</span>-->
+<!--                        <div class="widget-results__status">Home</div>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                    <div class="widget-results__team widget-results__team&#45;&#45;second">-->
+<!--                      <figure class="widget-results__team-logo">-->
+<!--                        <img src="../assets/images/samples/logos/lucky_clovers_shield.png" alt="">-->
+<!--                      </figure>-->
+<!--                      <div class="widget-results__team-details">-->
+<!--                        <h5 class="widget-results__team-name">Clovers</h5>-->
+<!--                        <span class="widget-results__team-info">St. Patrick’s Inst</span>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </li>-->
+<!--                &lt;!&ndash; Game #2 / End &ndash;&gt;-->
+<!--                &lt;!&ndash; Game #3 &ndash;&gt;-->
+<!--                <li class="widget-results__item">-->
+<!--                  <div class="widget-results__header justify-content-center">-->
+<!--                    <div class="widget-results__title">Friday, March 4</div>-->
+<!--                  </div>-->
+<!--                  <div class="widget-results__content">-->
+<!--                    <div class="widget-results__team widget-results__team&#45;&#45;first">-->
+<!--                      <figure class="widget-results__team-logo">-->
+<!--                        <img src="../assets/images/samples/logos/ocean_kings_shield.png" alt="">-->
+<!--                      </figure>-->
+<!--                      <div class="widget-results__team-details">-->
+<!--                        <h5 class="widget-results__team-name">Ocean Kings</h5>-->
+<!--                        <span class="widget-results__team-info">Bay College</span>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                    <div class="widget-results__result">-->
+<!--                      <div class="widget-results__score">-->
+<!--                        <span class="widget-results__score-loser">2</span> - <span-->
+<!--                          class="widget-results__score-winner">3</span>-->
+<!--                        <div class="widget-results__status">Home</div>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                    <div class="widget-results__team widget-results__team&#45;&#45;second">-->
+<!--                      <figure class="widget-results__team-logo">-->
+<!--                        <img src="../assets/images/soccer/logos/alchemists_s_shield.png" alt="">-->
+<!--                      </figure>-->
+<!--                      <div class="widget-results__team-details">-->
+<!--                        <h5 class="widget-results__team-name">Alchemists</h5>-->
+<!--                        <span class="widget-results__team-info">Eric Bros School</span>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </li>-->
+<!--                &lt;!&ndash; Game #3 / End &ndash;&gt;-->
 
-              </ul>
-            </div>
-          </aside>
-          <!-- Widget: Latest Results / End -->
+<!--              </ul>-->
+<!--            </div>-->
+<!--          </aside>-->
+<!--          &lt;!&ndash; Widget: Latest Results / End &ndash;&gt;-->
 
-          <!-- Widget: Team Newslog -->
-          <aside class="widget card widget--sidebar widget-newslog">
-            <div class="widget__title card__header">
-              <h4>Team Newslog</h4>
-            </div>
-            <div class="widget__content card__content">
-              <ul class="newslog">
+<!--          &lt;!&ndash; Widget: Team Newslog &ndash;&gt;-->
+<!--          <aside class="widget card widget&#45;&#45;sidebar widget-newslog">-->
+<!--            <div class="widget__title card__header">-->
+<!--              <h4>Team Newslog</h4>-->
+<!--            </div>-->
+<!--            <div class="widget__content card__content">-->
+<!--              <ul class="newslog">-->
 
-                <li class="newslog__item newslog__item--injury">
-                  <div class="newslog__item-inner">
-                    <div class="newslog__content"><strong>Mark Johnson</strong> has a tibia fracture
-                      and he’s gonna be out of the play for <strong>2 months</strong>.
-                    </div>
-                    <time class="newslog__date" datetime="2016-01-19">September 18, 2016</time>
-                  </div>
-                </li>
-                <li class="newslog__item newslog__item--join">
-                  <div class="newslog__item-inner">
-                    <div class="newslog__content"><strong>Dominick R. Blink</strong>, a new <strong>Shooting
-                      Guard</strong> from San Francisco has joined the team!.
-                    </div>
-                    <time class="newslog__date" datetime="2016-01-19">September 6, 2016</time>
-                  </div>
-                </li>
-                <li class="newslog__item newslog__item--join">
-                  <div class="newslog__item-inner">
-                    <div class="newslog__content"><strong>Christopher Grifin</strong>, a new
-                      <strong>Power Forward</strong> from Rockstar Bay College has joined the team!.
-                    </div>
-                    <time class="newslog__date" datetime="2016-01-19">August 24, 2016</time>
-                  </div>
-                </li>
-                <li class="newslog__item newslog__item--injury">
-                  <div class="newslog__item-inner">
-                    <div class="newslog__content"><strong>Thomas Durry</strong> has a composed hand
-                      fracture and he won’t be playing untill <strong>September</strong>.
-                    </div>
-                    <time class="newslog__date" datetime="2016-01-19">August 17, 2016</time>
-                  </div>
-                </li>
-                <li class="newslog__item newslog__item--exit">
-                  <div class="newslog__item-inner">
-                    <div class="newslog__content"><strong>Jeremy Rittersen</strong> left the team
-                      after 2 year in the club and his new house are the <strong>Clovers</strong>.
-                    </div>
-                    <time class="newslog__date" datetime="2016-01-19">August 12, 2016</time>
-                  </div>
-                </li>
+<!--                <li class="newslog__item newslog__item&#45;&#45;injury">-->
+<!--                  <div class="newslog__item-inner">-->
+<!--                    <div class="newslog__content"><strong>Mark Johnson</strong> has a tibia fracture-->
+<!--                      and he’s gonna be out of the play for <strong>2 months</strong>.-->
+<!--                    </div>-->
+<!--                    <time class="newslog__date" datetime="2016-01-19">September 18, 2016</time>-->
+<!--                  </div>-->
+<!--                </li>-->
+<!--                <li class="newslog__item newslog__item&#45;&#45;join">-->
+<!--                  <div class="newslog__item-inner">-->
+<!--                    <div class="newslog__content"><strong>Dominick R. Blink</strong>, a new <strong>Shooting-->
+<!--                      Guard</strong> from San Francisco has joined the team!.-->
+<!--                    </div>-->
+<!--                    <time class="newslog__date" datetime="2016-01-19">September 6, 2016</time>-->
+<!--                  </div>-->
+<!--                </li>-->
+<!--                <li class="newslog__item newslog__item&#45;&#45;join">-->
+<!--                  <div class="newslog__item-inner">-->
+<!--                    <div class="newslog__content"><strong>Christopher Grifin</strong>, a new-->
+<!--                      <strong>Power Forward</strong> from Rockstar Bay College has joined the team!.-->
+<!--                    </div>-->
+<!--                    <time class="newslog__date" datetime="2016-01-19">August 24, 2016</time>-->
+<!--                  </div>-->
+<!--                </li>-->
+<!--                <li class="newslog__item newslog__item&#45;&#45;injury">-->
+<!--                  <div class="newslog__item-inner">-->
+<!--                    <div class="newslog__content"><strong>Thomas Durry</strong> has a composed hand-->
+<!--                      fracture and he won’t be playing untill <strong>September</strong>.-->
+<!--                    </div>-->
+<!--                    <time class="newslog__date" datetime="2016-01-19">August 17, 2016</time>-->
+<!--                  </div>-->
+<!--                </li>-->
+<!--                <li class="newslog__item newslog__item&#45;&#45;exit">-->
+<!--                  <div class="newslog__item-inner">-->
+<!--                    <div class="newslog__content"><strong>Jeremy Rittersen</strong> left the team-->
+<!--                      after 2 year in the club and his new house are the <strong>Clovers</strong>.-->
+<!--                    </div>-->
+<!--                    <time class="newslog__date" datetime="2016-01-19">August 12, 2016</time>-->
+<!--                  </div>-->
+<!--                </li>-->
 
-              </ul>
-            </div>
-          </aside>
-          <!-- Widget: Team Newslog / End -->
+<!--              </ul>-->
+<!--            </div>-->
+<!--          </aside>-->
+<!--          &lt;!&ndash; Widget: Team Newslog / End &ndash;&gt;-->
 
-          <!-- Widget: Games History -->
-          <aside class="widget card widget--sidebar widget-games-history">
-            <div class="widget__title card__header card__header--has-legend">
-              <h4>Games History</h4>
-              <div id="gamesHistoryLegendSoccer"
-                   class="chart-legend chart-legend--games-history"></div>
-            </div>
-            <div class="widget__content card__content">
-              <canvas id="games-history-soccer" class="games-history-chart" height="230"></canvas>
-            </div>
-          </aside>
-          <!-- Widget: Games History / End -->
+<!--          &lt;!&ndash; Widget: Games History &ndash;&gt;-->
+<!--          <aside class="widget card widget&#45;&#45;sidebar widget-games-history">-->
+<!--            <div class="widget__title card__header card__header&#45;&#45;has-legend">-->
+<!--              <h4>Games History</h4>-->
+<!--              <div id="gamesHistoryLegendSoccer"-->
+<!--                   class="chart-legend chart-legend&#45;&#45;games-history"></div>-->
+<!--            </div>-->
+<!--            <div class="widget__content card__content">-->
+<!--              <canvas id="games-history-soccer" class="games-history-chart" height="230"></canvas>-->
+<!--            </div>-->
+<!--          </aside>-->
+<!--          &lt;!&ndash; Widget: Games History / End &ndash;&gt;-->
 
         </div>
         <!-- Sidebar / End -->
