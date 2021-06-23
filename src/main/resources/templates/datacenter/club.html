@@ -123,6 +123,7 @@
               <div class="posts posts--cards post-grid post-grid--fitRows row">
 
                 <div class="post-grid__item col-sm-3" th:each="fwList: ${lineup0}" style="position: relative">
+                  <a th:href="@{/datacenter/playerdetail.do(pId=${fwList.pId})}">
                   <div class="posts__item posts__item--card posts__item--category-1 card" th:style="'background-image:' + 'url(' + |../upload/emblem/${oneClub.cId}.png| + ');'
                   + 'background-size:' + '75% 75%;'
                   + 'background-position:' + 'center;'
@@ -143,6 +144,7 @@
                       </div>
                     </footer>
                   </div>
+                  </a>
                 </div>
                 <!-- Post Grid / End -->
               </div>
@@ -159,6 +161,7 @@
               <div class="posts posts--cards post-grid post-grid--fitRows row">
 
                 <div class="post-grid__item col-sm-3" th:each="mfList: ${lineup1}">
+                  <a th:href="@{/datacenter/playerdetail.do(pId=${mfList.pId})}">
                   <div class="posts__item posts__item--card posts__item--category-1 card" th:style="'background-image:' + 'url(' + |../upload/emblem/${oneClub.cId}.png| + ');'
                   + 'background-size:' + '75% 75%;'
                   + 'background-position:' + 'center;'
@@ -179,6 +182,7 @@
                       </div>
                     </footer>
                   </div>
+                  </a>
                 </div>
                 <!-- Post Grid / End -->
               </div>
@@ -195,6 +199,7 @@
               <div class="posts posts--cards post-grid post-grid--fitRows row ">
 
                 <div class="post-grid__item col-sm-3" th:each="dfList: ${lineup2}">
+                  <a th:href="@{/datacenter/playerdetail.do(pId=${dfList.pId})}">
                   <div class="posts__item posts__item--card posts__item--category-1 card" th:style="'background-image:' + 'url(' + |../upload/emblem/${oneClub.cId}.png| + ');'
                   + 'background-size:' + '75% 75%;'
                   + 'background-position:' + 'center;'
@@ -215,6 +220,7 @@
                       </div>
                     </footer>
                   </div>
+                  </a>
                 </div>
                 <!-- Post Grid / End -->
               </div>
@@ -231,6 +237,7 @@
               <div class="posts posts--cards post-grid post-grid--fitRows row">
 
                 <div class="post-grid__item col-sm-3" th:each="gkList: ${lineup3}">
+                  <a th:href="@{/datacenter/playerdetail.do(pId=${gkList.pId})}">
                   <div class="posts__item posts__item--card posts__item--category-1 card" th:style="'background-image:' + 'url(' + |../upload/emblem/${oneClub.cId}.png| + ');'
                   + 'background-size:' + '75% 75%;'
                   + 'background-position:' + 'center;'
@@ -251,6 +258,7 @@
                       </div>
                     </footer>
                   </div>
+                  </a>
                 </div>
                 <!-- Post Grid / End -->
               </div>
