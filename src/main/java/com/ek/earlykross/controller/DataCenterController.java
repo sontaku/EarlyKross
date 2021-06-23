@@ -156,8 +156,8 @@ public class DataCenterController {
     model.addAttribute("keyword", keyword);
 
     log.info("클럽 검색 결과" + service.getClubByName(keyword).isEmpty());
-    log.info("선수 검색 결과" + service.getPlayerByName(keyword));
-    log.info("뉴스 검색 결과" + service.getNewsByCnameAndTitle(keyword));
+    log.info("선수 검색 결과" + service.getPlayerByName(keyword).isEmpty());
+    log.info("뉴스 검색 결과" + service.getNewsByCnameAndTitle(keyword).isEmpty());
 
 
 

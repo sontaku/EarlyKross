@@ -191,7 +191,7 @@ public class DataCenterServiceImpl implements DataCenterService {
   // 클럽 검색 (name)
   @Override
   public List<ClubDTO> getClubByName(String keyword) {
-    List<Club> clubEntity = clubRepository.findByNameContainingIgnoreCase(keyword);
+    List<Club> clubEntity = clubRepository.findByNameContainingIgnoreCaseOrEnameContainingIgnoreCaseOrShortNameContainingIgnoreCase(keyword, keyword, keyword);
     Function<Club, ClubDTO> fn = (entity -> entityToDto(entity));
     return clubEntity.stream().map(fn).collect(Collectors.toList());
   }
