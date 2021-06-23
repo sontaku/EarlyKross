@@ -11,12 +11,12 @@
                 <!-- Footer Logo -->
                 <div class="footer-logo footer-logo--has-txt">
                   <a href="../index.htmltml">
-                    <img src="../../assets/images/soccer/logo-footer.png"
-                         srcset="../../assets/images/soccer/logo-footer@2x.png 2x" alt="The Alchemists"
-                         class="footer-logo__img">
+                    <img src="../../assets/images/soccer/ek_logo.png"
+                         srcset="../../assets/images/soccer/ek_logo@2x.png 2x"
+                         alt="Alchemists" class="header-logo__img">
                     <div class="footer-logo__heading">
-                      <h5 class="footer-logo__txt">The Alchemists</h5>
-                      <span class="footer-logo__tagline">Elric Bros School</span>
+                      <h5 class="footer-logo__txt">EarlyKross</h5>
+                      <span class="footer-logo__tagline">K-league football comunity</span>
                     </div>
                   </a>
                 </div>
@@ -207,31 +207,10 @@
       <!-- Sponsors -->
       <div class="container">
         <div class="sponsors">
-          <h6 class="sponsors-title">Our Sponsors:</h6>
-          <ul class="sponsors-logos">
+<!--          <h6 class="sponsors-title">Our Sponsors:</h6>-->
+          <ul class="sponsors-logos" th:each="cList: ${clubList}">
             <li class="sponsors__item">
-              <a href="#" target="_blank"><img src="../../assets/images/soccer/sponsor-visa.png"
-                                               alt=""></a>
-            </li>
-            <li class="sponsors__item">
-              <a href="#" target="_blank"><img src="../../assets/images/soccer/sponsor-discover.png"
-                                               alt=""></a>
-            </li>
-            <li class="sponsors__item">
-              <a href="#" target="_blank"><img src="../../assets/images/soccer/sponsor-paypal.png"
-                                               alt=""></a>
-            </li>
-            <li class="sponsors__item">
-              <a href="#" target="_blank"><img src="../../assets/images/soccer/sponsor-skrill.png"
-                                               alt=""></a>
-            </li>
-            <li class="sponsors__item">
-              <a href="#" target="_blank"><img
-                  src="../../assets/images/soccer/sponsor-westernunion.png" alt=""></a>
-            </li>
-            <li class="sponsors__item">
-              <a href="#" target="_blank"><img src="../../assets/images/soccer/sponsor-payoneer.png"
-                                               alt=""></a>
+              <a th:href="${cList.cId.website}" target="_blank"><img th:src="|../upload/emblem/${cList.cId.cId}.png|" alt=""></a>
             </li>
           </ul>
         </div>
@@ -246,23 +225,22 @@
       <div class="container">
         <div class="footer-secondary__inner">
           <div class="row">
-            <div class="col-md-4">
-              <div class="footer-copyright"><a href="_soccer_index.html">The Alchemists</a> 2020
-                &nbsp; | &nbsp; All Rights Reserved
+            <div class="col-md-12">
+              <div class="footer-copyright"><a th:href="@{/}">EarlyKross</a>&nbsp; | &nbsp; All Rights Reserved
               </div>
             </div>
-            <div class="col-md-8">
-              <ul class="footer-nav footer-nav--right footer-nav--condensed footer-nav--sm">
-                <li class="footer-nav__item"><a href="_soccer_index.html">Home</a></li>
-                <li class="footer-nav__item"><a href="_soccer_features-shortcodes.html">Features</a>
-                </li>
-                <li class="footer-nav__item"><a href="_soccer_team-standings.html">Statistics</a>
-                </li>
-                <li class="footer-nav__item"><a href="_soccer_team-overview.html">The Team</a></li>
-                <li class="footer-nav__item"><a href="_soccer_blog-3.html">News</a></li>
-                <li class="footer-nav__item"><a href="_soccer_shop-grid.html">Shop</a></li>
-              </ul>
-            </div>
+<!--            <div class="col-md-8">-->
+<!--              <ul class="footer-nav footer-nav&#45;&#45;right footer-nav&#45;&#45;condensed footer-nav&#45;&#45;sm">-->
+<!--                <li class="footer-nav__item"><a href="_soccer_index.html">Home</a></li>-->
+<!--                <li class="footer-nav__item"><a href="_soccer_features-shortcodes.html">Features</a>-->
+<!--                </li>-->
+<!--                <li class="footer-nav__item"><a href="_soccer_team-standings.html">Statistics</a>-->
+<!--                </li>-->
+<!--                <li class="footer-nav__item"><a href="_soccer_team-overview.html">The Team</a></li>-->
+<!--                <li class="footer-nav__item"><a href="_soccer_blog-3.html">News</a></li>-->
+<!--                <li class="footer-nav__item"><a href="_soccer_shop-grid.html">Shop</a></li>-->
+<!--              </ul>-->
+<!--            </div>-->
           </div>
         </div>
       </div>

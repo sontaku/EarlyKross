@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 
+
 @Controller
 @RequestMapping("datacenter")
 @Log4j2
@@ -158,8 +159,6 @@ public class DataCenterController {
     log.info("클럽 검색 결과" + service.getClubByName(keyword).isEmpty());
     log.info("선수 검색 결과" + service.getPlayerByName(keyword).isEmpty());
     log.info("뉴스 검색 결과" + service.getNewsByCnameAndTitle(keyword).isEmpty());
-
-
 
     // 클럽 검색 결과
     model.addAttribute("clubResult", service.getClubByName(keyword));
