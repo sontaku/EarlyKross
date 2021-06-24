@@ -1,9 +1,11 @@
 package com.ek.earlykross.controller;
 
 import com.ek.earlykross.security.service.MemberDetailService;
+import com.ek.earlykross.service.impl.AdminServiceImpl;
 import com.ek.earlykross.service.impl.ClubNewsServiceImpl;
 import com.ek.earlykross.service.impl.FixtureServiceImpl;
 import com.ek.earlykross.service.impl.LeagueServiceImpl;
+import com.ek.earlykross.service.impl.MapServiceImpl;
 import com.ek.earlykross.service.impl.PlayerServiceImpl;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
@@ -26,7 +28,8 @@ public class AdminController {
   private final ClubNewsServiceImpl newsList;
   private final LeagueServiceImpl LeagueList;
   private final FixtureServiceImpl FixList;
-
+  private final AdminServiceImpl adminService;
+  private final MapServiceImpl mapServiceImpl;
 
   //이번엔 .do를 사용한다고 했다.
   //회원 페이지 이동
@@ -70,7 +73,10 @@ public class AdminController {
   //통합 차트
   @GetMapping("/adminAllChart.do")
   public void adminAllChart(Model model) {
+    //model.addAttribute("cntByPos",plService.countGroupByPos());
     model.addAttribute("cntByPos",plService.countGroupByPos());
+    model.addAttribute("cntSocialMember",adminService.countSocialMember());
+    model.addAttribute("cntTeam",mapServiceImpl.countTeam());
   }
 
   //News 조회
@@ -95,6 +101,7 @@ public class AdminController {
   //모든 경기 일정 관리
   @GetMapping("/adminMatch.do")
   public void adminMatch(Model model){
+
 //    model.addAttribute("fixList",FixList.getAllFixture());
     //이제 화면에 가서 가져오면된다.
   }
@@ -104,6 +111,4 @@ public class AdminController {
   public void userBesteleven() {
 
   }
-
-
 }

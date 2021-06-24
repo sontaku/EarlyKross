@@ -8,67 +8,25 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <!--구글차트-->
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {packages: ['corechart', 'Bar']});
-      google.charts.setOnLoadCallback(drawBasic);
-      function drawBasic() {
-        var data = new google.visualization.DataTable();
-        data.addColumn('string', '요일');
-        data.addColumn('number', '방문자수(명)');
-        data.addRows([
-          ['일', 1],
-          ['월', 2],
-          ['화', 3],
-          ['수', 4],
-          ['일', 5],
-          ['금', 6],
-          ['토', 7],
-        ]);
-        var options = {
-          title: '이번주 일별 방문자 현황',
-          hAxis: {
-            title: '요일',
-            viewWindow: {
-              min: [7, 30, 0],
-              max: [17, 30, 0]
-            }
-          },
-          vAxis: {
-            title: '방문자수(명)'
-          }
-        };
-        var chart = new google.visualization.ColumnChart(
-            document.getElementById('chart_Bar'));
-        chart.draw(data, options);
-      }
-    </script>
-
     <!--Pie Chart = 우리 프로젝트는 Thymelef를 사용했기 때문에 th:inline을 사용해야 한다.-->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript" th:inline="javascript">
       var temp = [[${cntByPos}]];
+      console.log('temp', temp)
 
       var cntByGroup = [
           ['포지션','선수 수']
       ]
-
       for (var i in temp){
         cntByGroup.push(temp[i])
       }
-
       google.charts.load('current', {'packages' : ['corechart']});
       google.charts.setOnLoadCallback(drawChart);
-
       function drawChart(){
-
         var data = google.visualization.arrayToDataTable(cntByGroup);
-
         var options = {
           title: '포지션 별 선수 비율'
         };
-
         var chart = new google.visualization.PieChart(document.getElementById('piechart'));
 
         chart.draw(data, options);
@@ -76,55 +34,64 @@
     </script>
 
     <!--Area Chart-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
+      var temp2 = [[${cntSocialMember}]];
+      console.log('temp2', temp2);
+      var countByGroup2 = [
+          ['가입유형','가입자 수',{ role:'style'}],
+          ['일반 가입자', temp2[0][1], 'sky'],  //[0][1]
+          ['소셜 가입자', temp2[1][1], 'red']   //[1][1]
+      ]                    // of = temp2를 사용하지 않고 데이터를 집어 넣을수있다.
+      // for(var i in temp2){ // in = temp2 안에있는 인덱스를 foreach
+      //   countByGroup2.push(temp2[i]);
+      // }
+      google.charts.load('current', {'packages' : ['corechart']});
+      google.charts.setOnLoadCallback(drawChart2);
 
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Year', 'Sales', 'Expenses'],
-          ['2013',  1000,      400],
-          ['2014',  1170,      460],
-          ['2015',  660,       1120],
-          ['2016',  1030,      540]
-        ]);
-
+      function drawChart2(){
+        var data = google.visualization.arrayToDataTable(countByGroup2);
         var options = {
-          title: 'Company Performance',
-          hAxis: {title: 'Year',  titleTextStyle: {color: '#333'}},
-          vAxis: {minValue: 0}
+          title : '회원가입 유형 비율',
+          width: 600,
+          height: 400,
+          bar: {groupWidth: "95%"},
+          legend: { position: "none" },
         };
-
-        var chart = new google.visualization.AreaChart(document.getElementById('chart_Area'));
-        chart.draw(data, options);
+        var chart = new google.visualization.BarChart(document.getElementById('Bar_Chart'))
+        chart.draw(data,options);
       }
     </script>
 
-    <!--LineChart-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
+      var temp3 = [[${cntTeam}]];
+      console.log('temp3',temp3);
+      var countByGroup3 = [
+          ['응원 팀','모임 수']
+      ]
+      for (var i in temp3){
+        countByGroup3.push(temp3[i])
+      }
+      google.charts.load('current', {'packages':['scatter']});
+      google.charts.setOnLoadCallback(drawChart3);
 
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Year', 'Sales', 'Expenses'],
-          ['2004',  1000,      400],
-          ['2005',  1170,      460],
-          ['2006',  660,       1120],
-          ['2007',  1030,      540]
-        ]);
+      function drawChart3(){
+        var data = google.visualization.arrayToDataTable(countByGroup3);
 
         var options = {
-          title: 'Company Performance',
-          curveType: 'function',
-          legend: { position: 'bottom' }
+          title: '팀 별 응원 모임',
+          hAxis: {title: '응원 팀', minValue:0, maxValue:15},
+          vAxis: {title: '모임 수', minValue: 0, maxValue: 15},
+          legend:'none'
         };
 
-        var chart = new google.visualization.LineChart(document.getElementById('chart_Line'));
+        var chart = new google.visualization.ScatterChart(document.getElementById('chart_Bubble'));
 
-        chart.draw(data, options);
+        chart.draw(data,options);
       }
     </script>
+
     <!-- Meta -->
     <meta charset="utf-8"/>
     <meta
@@ -296,11 +263,11 @@
                       <div class="row">
 
                         <!--Google_BarChart-->
-                        <div id="chart_Bar" style='width: 600px; height: 400px;'></div>
+                        <div id="piechart" style='width: 600px; height: 400px;'></div>
                         <!--Google_PieChart-->
-                        <div id="chart_Pie" style="width: 600px; height: 400px;"></div>
+                        <div id="Bar_Chart" style="width: 600px; height: 400px;"></div>
                         <!--Google_Area-->
-                        <div id="chart_Area" style="width: 600px; height: 400px;"></div>
+                        <div id="chart_Bubble" style="width: 600px; height: 400px;"></div>
                         <!--Google_Line-->
                         <div id="chart_Line" style="width: 600px; height: 400px;"></div>
                       </div>

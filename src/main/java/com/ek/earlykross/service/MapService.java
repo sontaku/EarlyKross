@@ -66,4 +66,7 @@ public interface MapService {
   List<Map> getAll();
 
   void countMap(Long mId, Member memberDTO);
+
+  //팀별 수 데이터 가져오기
+  List<List> countTeam();
 }

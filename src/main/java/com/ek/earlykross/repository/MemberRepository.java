@@ -18,4 +18,11 @@ public interface MemberRepository extends JpaRepository<Member, Long> {
   // 관리자 페이지 회원조회
 //  findAll();
 //  List<Member> findAll();
+
+
+  //SocialMember 수 가져오기
+  @Query(value = "select from_social, count(*) from member group by from_social",nativeQuery = true)
+  List<List> countSocialMember();
+  //Table에서 데이터를 가져올때는 매개변수가 필요없다
+  //Table에 데이터를 집어 넣을때는 매개변수가 필요하다.
 }
