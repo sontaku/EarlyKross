@@ -19,4 +19,9 @@ public class AdminServiceImpl implements AdminService {
   public List<List> countSocialMember() {
     return memberRepository.countSocialMember();
   }
+
+  @Override
+  public List<List> countReg_dateMember() {
+    return memberRepository.countReg_dateMember();
+  }
 }
