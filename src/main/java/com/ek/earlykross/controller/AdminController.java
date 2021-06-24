@@ -45,17 +45,18 @@ public class AdminController {
     model.addAttribute("mList", mdService.getMemberList());
   }
 
-  //이용자 수 페이지
-  @GetMapping("/userNumber.do")
-  public void userNumber() {
+//  //이용자 수 페이지
+//  @GetMapping("/userNumber.do")
+//  public void userNumber() {
+//
+//  }
 
-  }
+//  //문자 중계 조회
+//  @GetMapping("/adminTextrelay.do")
+//  public void adminTextrelay() {
+//
+//  }
 
-  //문자 중계 조회
-  @GetMapping("/adminTextrelay.do")
-  public void adminTextrelay() {
-
-  }
 
   @PostMapping("GetCountPosition.do")
   @ResponseBody
@@ -77,13 +78,14 @@ public class AdminController {
     model.addAttribute("cntByPos",plService.countGroupByPos());
     model.addAttribute("cntSocialMember",adminService.countSocialMember());
     model.addAttribute("cntTeam",mapServiceImpl.countTeam());
+    model.addAttribute("cntReg_dateMember",adminService.countReg_dateMember());
   }
 
   //News 조회
-  @GetMapping("/adminNews.do")
-  public void adminNews(Model model) {
-    model.addAttribute("nList", newsList.getAllNews());
-  }
+//  @GetMapping("/adminNews.do")
+//  public void adminNews(Model model) {
+//    model.addAttribute("nList", newsList.getAllNews());
+//  }
 
   //모든 선수 정보
   @GetMapping("/adminPlayer.do")

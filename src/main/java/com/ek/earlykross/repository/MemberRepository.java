@@ -25,4 +25,9 @@ public interface MemberRepository extends JpaRepository<Member, Long> {
   List<List> countSocialMember();
   //Table에서 데이터를 가져올때는 매개변수가 필요없다
   //Table에 데이터를 집어 넣을때는 매개변수가 필요하다.
+
+
+  //월별 회원가입 수 가져오기
+  @Query(value = "SELECT DATE_FORMAT(reg_date,'%Y-%m'), COUNT(*) FROM member GROUP BY month(reg_date)",nativeQuery = true)
+  List<List> countReg_dateMember();
 }
