@@ -56,4 +56,10 @@ public class MapServiceImpl implements MapService {
 
     }
 
+    //각 팀별 건수 가져오기
+    @Override
+    public List<List> countTeam() {
+        return mapRepository.countTeam();
+    }
+
 }
