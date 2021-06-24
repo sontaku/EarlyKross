@@ -60,7 +60,7 @@
                   <thead>
                   <tr>
                     <th class="team-schedule__date">날짜</th>
-<!--                    <th class="team-schedule__time">시간</th>-->
+                    <!--                    <th class="team-schedule__time">시간</th>-->
                     <th class="team-schedule__versus">경기</th>
                     <th class="team-schedule__venue">장소</th>
                     <th class="team-schedule__tickets">중계</th>
@@ -69,7 +69,6 @@
                   <tbody>
                   <tr th:each="fixture : ${fixtures}">
                     <td class="team-schedule__date">[[${fixture.fDate}]]</td>
-<!--                    <td class="team-schedule__time">[[${fixture.fDate}]]</td>-->
                     <td class="team-schedule__versus">[[${fixture.home.shortName}]] VS
                       [[${fixture.away.shortName}]]
                     </td>
