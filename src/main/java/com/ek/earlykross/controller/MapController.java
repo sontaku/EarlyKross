@@ -1,20 +1,13 @@
 package com.ek.earlykross.controller;
 
-import com.ek.earlykross.entity.BestEleven;
-import com.ek.earlykross.entity.Map;
-import com.ek.earlykross.entity.Member;
-import com.ek.earlykross.entity.Player;
+import com.ek.earlykross.entity.*;
 import com.ek.earlykross.repository.BestRepository;
 import com.ek.earlykross.repository.MemberRepository;
 import com.ek.earlykross.security.dto.AuthMemberDTO;
 import com.ek.earlykross.security.service.MemberDetailService;
 import com.ek.earlykross.service.BestService;
 import com.ek.earlykross.service.MapService;
-import com.ek.earlykross.vo.BestElevenDTO;
-import com.ek.earlykross.vo.MapDTO;
-import com.ek.earlykross.vo.PageRequestDTO;
-import com.ek.earlykross.vo.PageResultDTO;
-import com.ek.earlykross.vo.PlayerDTO;
+import com.ek.earlykross.vo.*;
 import com.google.gson.Gson;
 import java.util.ArrayList;
 import java.util.List;
@@ -52,8 +45,10 @@ public class MapController {
 
     @PostMapping("create.do")
     public String saveRoom(MapDTO mapDTO, @AuthenticationPrincipal AuthMemberDTO memberDTO){
+        System.out.println(mapDTO.getXLoc() + " : " + mapDTO.getYLoc());
         Member member = memberRepository.findMemberByEmail(memberDTO.getUsername());
         mapDTO.setHost(member);
+        mapDTO.setMCount(1);
 
         mapService.save(mapDTO);
 
@@ -65,6 +60,13 @@ public class MapController {
     public List<Map> readMarkder(){
 
         return mapService.getAll();
+    }
+
+    @RequestMapping("count.do")
+    public String count(Long mId, @AuthenticationPrincipal AuthMemberDTO memberDTO){
+        Member member = memberRepository.findMemberByEmail(memberDTO.getUsername());
+        mapService.countMap(mId, member);
+        return "redirect:/map/main.do";
     }
 
 }

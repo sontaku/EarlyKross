@@ -37,4 +37,8 @@ public class Map{
 
     private int mCount;
 
+    public void changeMCount(int mCount){
+        this.mCount = mCount;
+    }
+
 }

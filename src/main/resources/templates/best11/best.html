@@ -55,7 +55,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-10 offset-md-1">
-          <h1 class="page-heading__title">팀별<span class="highlight">게시판</span></h1>
+          <h1 class="page-heading__title">BEST 11 을<span class="highlight">맞히자</span></h1>
           <ol class="page-heading__breadcrumb breadcrumb">
 <!--            <li class="breadcrumb-item"><a href="_soccer_index.html">Home</a></li>-->
 <!--            <li class="breadcrumb-item"><a href="_soccer_team-overview.html">Team</a></li>-->
@@ -163,7 +163,7 @@
                     <td class="team-result__vs">
                       <div class="team-meta">
                         <figure class="team-meta__logo">
-                          <img th:src="${dto.cId.emblem}" alt="">
+                          <img th:src="'../upload/emblem/'+${dto.cId.cId}+'.png'" alt="">
                         </figure>
                         <div class="team-meta__info">
                           <h6 class="team-meta__name" th:text="${dto.cId.shortName}"></h6>
@@ -218,22 +218,6 @@
                       Guard</strong> from San Francisco has joined the team!.
                     </div>
                     <time class="newslog__date" datetime="2016-01-19">September 6, 2016</time>
-                  </div>
-                </li>
-                <li class="newslog__item newslog__item--join">
-                  <div class="newslog__item-inner">
-                    <div class="newslog__content"><strong>Christopher Grifin</strong>, a new
-                      <strong>Power Forward</strong> from Rockstar Bay College has joined the team!.
-                    </div>
-                    <time class="newslog__date" datetime="2016-01-19">August 24, 2016</time>
-                  </div>
-                </li>
-                <li class="newslog__item newslog__item--injury">
-                  <div class="newslog__item-inner">
-                    <div class="newslog__content"><strong>Thomas Durry</strong> has a composed hand
-                      fracture and he won’t be playing untill <strong>September</strong>.
-                    </div>
-                    <time class="newslog__date" datetime="2016-01-19">August 17, 2016</time>
                   </div>
                 </li>
                 <li class="newslog__item newslog__item--exit">
@@ -296,12 +280,13 @@
         type: "post",
         success: function (data) {
           console.log(data);
+          $(".player_list").empty();
           for (var i of data) {
             console.log(i.cid.name, i.name, i.position);
             $(".player_list").append('<div class="player">\n'
                 + '                          <img src="https://portal.kleague.com//common/playerPhotoById.do?playerId='+i.pid+'&recYn=Y&searchYear=2021" style="width: 60px; display: inline; border-radius: 30px;" >\n'
                 + '                          <div class="pname" style="margin-top:25px">'+i.name+'['+i.position+']</div>\n'
-                + '                        <img src="'+i.cid.emblem+'" style="width: 60px; height: 60px; display: inline; " ></div>')
+                + '                        <img src="../upload/emblem/'+i.cid.cid+'.png" style="width: 60px; height: 60px; display: inline; " ></div>')
 
             // autocomplete_text[i] = data[i].cid.name +" : " + data[i].name + " : " + data[i].position;
           }
@@ -392,7 +377,7 @@
                 + '                    <td class="team-result__vs">\n'
                 + '                      <div class="team-meta">\n'
                 + '                        <figure class="team-meta__logo">\n'
-                + '                          <img src="../upload/emblem/'+i.cId+'.png" alt="">\n'
+                + '                          <img src="../upload/emblem/'+i.cId.cId+'.png" alt="">\n'
                 + '                        </figure>\n'
                 + '                        <div class="team-meta__info">\n'
                 + '                          <h6 class="team-meta__name">'+i.cId.shortName+'</h6>\n'
@@ -403,7 +388,7 @@
                 + '                    <td class="team-result__vs">\n'
                 + '                      <div class="team-meta">\n'
                 + '                        <figure class="team-meta__logo">\n'
-                + '                          <img th:src="https://portal.kleague.com//common/playerPhotoById.do?playerId='+i.pId+'&recYn=Y&searchYear=2021" alt="">\n'
+                + '                          <img src="https://portal.kleague.com//common/playerPhotoById.do?playerId='+i.pId+'&recYn=Y&searchYear=2021" alt="">\n'
                 + '                        </figure>\n'
                 + '                        <div class="team-meta__info">\n'
                 + '                          <h6 class="team-meta__name">'+i.name+'</h6>\n'

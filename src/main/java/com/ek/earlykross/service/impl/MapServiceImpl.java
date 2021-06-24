@@ -1,31 +1,18 @@
 package com.ek.earlykross.service.impl;
 
-import com.ek.earlykross.entity.BestEleven;
 import com.ek.earlykross.entity.Map;
+import com.ek.earlykross.entity.MapMember;
 import com.ek.earlykross.entity.Member;
-import com.ek.earlykross.entity.Player;
-import com.ek.earlykross.entity.QPlayer;
-import com.ek.earlykross.repository.BestRepository;
-import com.ek.earlykross.repository.MapRepository;
-import com.ek.earlykross.repository.MemberRepository;
-import com.ek.earlykross.repository.PlayerRepository;
-import com.ek.earlykross.service.BestService;
+import com.ek.earlykross.repository.*;
 import com.ek.earlykross.service.MapService;
-import com.ek.earlykross.vo.BestElevenDTO;
 import com.ek.earlykross.vo.MapDTO;
-import com.ek.earlykross.vo.PageRequestDTO;
-import com.ek.earlykross.vo.PageResultDTO;
-import com.ek.earlykross.vo.PlayerDTO;
-import com.querydsl.core.BooleanBuilder;
-import com.querydsl.core.types.dsl.BooleanExpression;
+
 import java.util.List;
 import java.util.Optional;
-import java.util.function.Function;
+
+import com.ek.earlykross.vo.MapMemberDTO;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 // Bean 처리
@@ -36,6 +23,9 @@ import org.springframework.stereotype.Service;
 public class MapServiceImpl implements MapService {
 
     private final MapRepository mapRepository;
+    private final MapMemberRepository mapMemberRepository;
+
+
     @Override
     public void save(MapDTO mapDTO) {
 
@@ -47,6 +37,29 @@ public class MapServiceImpl implements MapService {
     @Override
     public List<Map> getAll() {
         return mapRepository.findAll();
+    }
+
+    @Override
+    public void countMap(Long mId, Member memberDTO) {
+        Optional<Map> map = mapRepository.findById(mId);
+
+        Map map1 = map.get();
+        map1.changeMCount(map1.getMCount()+1);
+        mapRepository.save(map1);
+
+        MapMemberDTO mapMemberDTO = new MapMemberDTO();
+        mapMemberDTO.setMId(map1);
+        mapMemberDTO.setUser(memberDTO);
+
+        MapMember mapMember = dtoToEntity(mapMemberDTO);
+        mapMemberRepository.save(mapMember);
+
+    }
+
+    //각 팀별 건수 가져오기
+    @Override
+    public List<List> countTeam() {
+        return mapRepository.countTeam();
     }
 
 }

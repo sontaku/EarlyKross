@@ -5,6 +5,7 @@ import com.ek.earlykross.service.impl.AdminServiceImpl;
 import com.ek.earlykross.service.impl.ClubNewsServiceImpl;
 import com.ek.earlykross.service.impl.FixtureServiceImpl;
 import com.ek.earlykross.service.impl.LeagueServiceImpl;
+import com.ek.earlykross.service.impl.MapServiceImpl;
 import com.ek.earlykross.service.impl.PlayerServiceImpl;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
@@ -28,7 +29,7 @@ public class AdminController {
   private final LeagueServiceImpl LeagueList;
   private final FixtureServiceImpl FixList;
   private final AdminServiceImpl adminService;
-
+  private final MapServiceImpl mapServiceImpl;
 
   //이번엔 .do를 사용한다고 했다.
   //회원 페이지 이동
@@ -75,6 +76,7 @@ public class AdminController {
     //model.addAttribute("cntByPos",plService.countGroupByPos());
     model.addAttribute("cntByPos",plService.countGroupByPos());
     model.addAttribute("cntSocialMember",adminService.countSocialMember());
+    model.addAttribute("cntTeam",mapServiceImpl.countTeam());
   }
 
   //News 조회

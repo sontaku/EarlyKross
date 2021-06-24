@@ -63,6 +63,35 @@
       }
     </script>
 
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      var temp3 = [[${cntTeam}]];
+      console.log('temp3',temp3);
+      var countByGroup3 = [
+          ['응원 팀','모임 수']
+      ]
+      for (var i in temp3){
+        countByGroup3.push(temp3[i])
+      }
+      google.charts.load('current', {'packages':['scatter']});
+      google.charts.setOnLoadCallback(drawChart3);
+
+      function drawChart3(){
+        var data = google.visualization.arrayToDataTable(countByGroup3);
+
+        var options = {
+          title: '팀 별 응원 모임',
+          hAxis: {title: '응원 팀', minValue:0, maxValue:15},
+          vAxis: {title: '모임 수', minValue: 0, maxValue: 15},
+          legend:'none'
+        };
+
+        var chart = new google.visualization.ScatterChart(document.getElementById('chart_Bubble'));
+
+        chart.draw(data,options);
+      }
+    </script>
+
     <!-- Meta -->
     <meta charset="utf-8"/>
     <meta
@@ -238,7 +267,7 @@
                         <!--Google_PieChart-->
                         <div id="Bar_Chart" style="width: 600px; height: 400px;"></div>
                         <!--Google_Area-->
-                        <div id="chart_Area" style="width: 600px; height: 400px;"></div>
+                        <div id="chart_Bubble" style="width: 600px; height: 400px;"></div>
                         <!--Google_Line-->
                         <div id="chart_Line" style="width: 600px; height: 400px;"></div>
                       </div>
