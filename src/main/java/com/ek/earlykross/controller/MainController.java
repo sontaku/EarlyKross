@@ -16,18 +16,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 
 @Controller
-
 @Log4j2
 @RequiredArgsConstructor
 public class MainController {
 
   private final ClubNewsService clubNewsService;
   private final DataCenterService dataCenterService;
-  private final FixtureService fixtureService;
+
   @Autowired
   ClubNewsRepository clubNewsRepository;
-  LeagueRepository leagueRepository;
-  FixtureRepository fixtureRepository;
 
   @RequestMapping("/")
   public String index(PageRequestDTO pageRequestDTO, Model model) {
@@ -35,13 +32,6 @@ public class MainController {
     pageRequestDTO.setSize(4);
     model.addAttribute("result", clubNewsService.getList(pageRequestDTO));
     model.addAttribute("leagueRankList", dataCenterService.getLeagueTable());
-
-
-
-
-
     return "index.html";
   }
-
-
 }
