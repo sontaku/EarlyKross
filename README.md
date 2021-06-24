@@ -108,8 +108,8 @@ K리그 데이터 기반 리그, 클럽, 선수 정보를 제공하며 팀별 �
 - 김광운 : https://github.com/kklck
   - 베스트 일레븐
   - 회원가입 및 로그인 페이지
-  - Spring Security 적용
-  - 중계 메세지 알림 서비스
+  - Spring Security 적용 및 구글 API 로그인
+  - 카카오 맵 API로 동적 마커 생성하여 매칭 서비스
 - 박태영 : https://github.com/tanguri
   - AWS 서버 관리
   - DB 데이터 크롤링
