@@ -2,9 +2,11 @@ package com.ek.earlykross.service.impl;
 
 import com.ek.earlykross.entity.Club;
 import com.ek.earlykross.entity.ClubHistory;
+import com.ek.earlykross.entity.ClubNews;
 import com.ek.earlykross.entity.League;
 import com.ek.earlykross.entity.Player;
 import com.ek.earlykross.entity.PlayerRecord;
+import com.ek.earlykross.repository.ClubNewsRepository;
 import com.ek.earlykross.repository.ClubRepository;
 import com.ek.earlykross.repository.LeagueRepository;
 import com.ek.earlykross.repository.PlayerRecordRepository;
@@ -12,6 +14,7 @@ import com.ek.earlykross.repository.PlayerRepository;
 import com.ek.earlykross.service.DataCenterService;
 import com.ek.earlykross.vo.ClubDTO;
 import com.ek.earlykross.vo.ClubHistoryDTO;
+import com.ek.earlykross.vo.ClubNewsVO;
 import com.ek.earlykross.vo.LeagueDTO;
 import com.ek.earlykross.vo.PlayerDTO;
 import com.ek.earlykross.vo.PlayerRecordDTO;
@@ -36,6 +39,7 @@ public class DataCenterServiceImpl implements DataCenterService {
   //private final ClubHistoryRepository clubHistoryRepository;
   private final PlayerRecordRepository playerRecordRepository;
   private final PlayerRepository playerRepository;
+  private final ClubNewsRepository clubNewsRepository;
 
   // 리그 순위
   @Override
@@ -182,5 +186,29 @@ public class DataCenterServiceImpl implements DataCenterService {
 
     PlayerRecord prDTO = playerRecordRepository.findPlayerRecordBypId(player);
     return entityToDto(prDTO);
+  }
+
+  // 클럽 검색 (name)
+  @Override
+  public List<ClubDTO> getClubByName(String keyword) {
+    List<Club> clubEntity = clubRepository.findByNameContainingIgnoreCaseOrEnameContainingIgnoreCaseOrShortNameContainingIgnoreCase(keyword, keyword, keyword);
+    Function<Club, ClubDTO> fn = (entity -> entityToDto(entity));
+    return clubEntity.stream().map(fn).collect(Collectors.toList());
+  }
+
+  // 선수 검색 (name)
+  @Override
+  public List<PlayerDTO> getPlayerByName(String keyword) {
+    List<Player> playerEntity = playerRepository.findByNameContainingIgnoreCase(keyword);
+    Function<Player, PlayerDTO> fn = (entity -> entityToDto(entity));
+    return playerEntity.stream().map(fn).collect(Collectors.toList());
+  }
+
+  // 뉴스 검색 결과
+  @Override
+  public List<ClubNewsVO> getNewsByCnameAndTitle(String keyword) {
+    List<ClubNews> clubnewsEntity = clubNewsRepository.findBycNameContainingIgnoreCaseOrTitleContainingIgnoreCase(keyword, keyword);
+    Function<ClubNews, ClubNewsVO> fn = (entity -> entityToDto(entity));
+    return clubnewsEntity.stream().map(fn).collect(Collectors.toList());
   }
 }

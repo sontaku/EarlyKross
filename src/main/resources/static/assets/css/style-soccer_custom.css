@@ -759,7 +759,7 @@ th {
   .table > tfoot > tr > th,
   .table > tfoot > tr > td {
     padding: 13px 10px;
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 
@@ -9690,17 +9690,17 @@ input.header-mobile__search-control:focus {
 /* 메인 슬라이드 이미지 */
 .hero-slider__item--img1 {
   /* background-image: url("../images/soccer/samples/hero-slide-1.jpg"); */
-  background-image: url("https://image.ajunews.com/content/image/2014/09/16/20140916171719311946.jpg");
+  background-image: url("https://image5jvqbd.fmkorea.com/files/attach/new2/20210623/3674493/1373670040/3700150155/44e8dbbfdd70b24ac6c5a3f14e7b6424.jpeg");
 }
 
 .hero-slider__item--img2 {
   /* background-image: url("../images/soccer/samples/hero-slide-2.jpg"); */
-  background-image: url("https://newsimg.hankookilbo.com/cms/articlerelease/2019/03/13/201903131623319506_17.jpg");
+  background-image: url("https://idsb.tmgrup.com.tr/ly/uploads/images/2020/04/28/32878.jpg");
 }
 
 .hero-slider__item--img3 {
   /* background-image: url("../images/soccer/samples/hero-slide-3.jpg"); */
-  background-image: url("http://spnimage.edaily.co.kr/images/Photo/files/NP/S/2020/03/PS20032500068.jpg");
+  background-image: url("https://www.porchdrinking.com/wp-content/uploads/2019/09/NFLBeers_Ultimate6er_HeaderImage.jpg");
 }
 
 .hero-slider__item-container {
@@ -18382,7 +18382,7 @@ td.team-leader__goals {
 
 .team-leader__player-name {
   text-transform: none;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.2em;
   font-weight: 400;
   margin-bottom: 0;
@@ -18648,7 +18648,7 @@ td.team-leader__goals {
 
 @media (min-width: 768px) {
   .team-stats__label {
-    font-size: 10px;
+    font-size: 14px;
   }
 }
 
@@ -21552,7 +21552,7 @@ table.alc-event-result-labels > tbody > tr > td.alc-results .label {
 }
 
 .team-meta__name {
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.2em;
   margin-bottom: 0;
   text-transform: none;
@@ -30325,7 +30325,7 @@ table.alc-event-result-labels > tbody > tr > td.alc-results .label {
   padding-top: 6px;
   padding-bottom: 6px;
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 700;
 }
 
@@ -31085,7 +31085,7 @@ table.alc-event-result-labels > tbody > tr > td.alc-results .label {
 
 .content-filter__link {
   display: block;
-  font-size: 13px;
+  font-size: 20px;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;

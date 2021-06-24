@@ -2,11 +2,13 @@ package com.ek.earlykross.service;
 
 import com.ek.earlykross.entity.Club;
 import com.ek.earlykross.entity.ClubHistory;
+import com.ek.earlykross.entity.ClubNews;
 import com.ek.earlykross.entity.League;
 import com.ek.earlykross.entity.Player;
 import com.ek.earlykross.entity.PlayerRecord;
 import com.ek.earlykross.vo.ClubDTO;
 import com.ek.earlykross.vo.ClubHistoryDTO;
+import com.ek.earlykross.vo.ClubNewsVO;
 import com.ek.earlykross.vo.LeagueDTO;
 import com.ek.earlykross.vo.PlayerDTO;
 import com.ek.earlykross.vo.PlayerRecordDTO;
@@ -49,6 +51,15 @@ public interface DataCenterService {
 
   // 선수 시즌 기록(pId)
   PlayerRecordDTO getPlayerRecordBypId(String pId);
+
+  // 클럽 검색 결과
+  List<ClubDTO> getClubByName(String keyword);
+
+  // 선수 검색 결과
+  List<PlayerDTO> getPlayerByName(String keyword);
+
+  // 뉴스 검색 결과
+  List<ClubNewsVO> getNewsByCnameAndTitle(String keyword);
 
   // == entity to dto ===================================================
   // league entity
@@ -159,5 +170,18 @@ public interface DataCenterService {
     return dto;
   }
 
+  // club_news entity
+  // dto 를 entity 로 변환
+  default ClubNewsVO entityToDto(ClubNews entity) {
+    ClubNewsVO dto = ClubNewsVO.builder()
+        .nId(entity.getNId())
+        .title(entity.getTitle())
+        .updateTime(entity.getUpdateTime())
+        .imageurl(entity.getImageurl())
+        .source(entity.getSource())
+        .cName(entity.getCName())
+        .build();
+    return dto;
+  }
 
 }
