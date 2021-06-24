@@ -27,9 +27,11 @@ import lombok.ToString;
 public class Relay implements Serializable {
 
     @Id // PK 지정
-    @ManyToOne
-    @JoinColumn(name = "fId")
-    private Fixture fId; // 경기번호
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long rId;
+
+    @Column(columnDefinition = "bigint(20)")
+    private Long fId; // 경기번호
     
     @Column(columnDefinition = "varchar(30)")
     private String rDate; // 시간

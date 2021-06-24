@@ -3,56 +3,63 @@
   <head>
     <meta charset="utf-8"/>
     <title>채팅</title>
+    <style>
+      input {
+        margin: 10px;
+      }
+      ul {
+        padding: 0;
+        overflow: auto;
+      }
+
+      li {
+        list-style-type: none;
+        background-color: #edeff5;
+        margin: 10px;
+        width: 90%;
+        height: 30px;
+        line-height: 100%;
+        font-size: 20px;
+        padding: 5px;
+        border-radius: 5px;
+      }
+      #divmsg {
+        width: 100%;
+      }
+
+      #msg {
+        width: 90%;
+        height: 50px;
+        font-size: 30px;
+      }
+    </style>
   </head>
   <body>
-    <div class="container">
-      <form class="form-horizontal">
-        <div class="form-group">
-          <label for="name" class="col-sm-2 control-label">Name</label>
-          <div>
-            <input type="text" class="form-control" id="name" placeholder="Name"/>
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="msg" class="col-sm-2 control-label">Message</label>
-          <div>
-            <input type="text" class="form-control" id="msg" placeholder="Message"/>
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="col-sm-offset-2 col-sm-10">
-            <button type="submit" class="btn btn-default">Send</button>
-          </div>
-        </div>
-      </form>
+    <div id="divmsg" style="position: fixed">
+      <input type="text" class="form-control" id="msg" placeholder="댓글을 작성하세요"/>
       <ul id="chat"></ul>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="/socket.io/socket.io.js"></script>
     <script>
       $(function () {
-        // 지정 namespace로 접속한다
+         // 지정 namespace로 접속한다
         const chat = io("http://localhost:3000/chat")
 
-        $('#msg').keydown(function(e) {
+        $('#msg').keydown(function (e) {
           if (e.keyCode === 13) {
-            $("form").submit(function (e) {
-              e.preventDefault()
-
-              // 서버로 자신의 정보를 전송한다.
-              chat.emit("chat message", {
-                name: $("#name").val(),
-                msg: $("#msg").val()
-              })
-
-              $('#msg').val('')
+            // 서버로 자신의 정보를 전송한다.
+            chat.emit("chat message", {
+              msg: $("#msg").val()
             })
+
+            $('#msg').val('')
           }
         });
 
         // 서버로부터의 메시지가 수신되면
         chat.on("chat message", function (data) {
-          $("#chat").append($("<li>").text(data))
+          $("#chat").append($('<li class="cc">').text(data))
         })
       })
     </script>

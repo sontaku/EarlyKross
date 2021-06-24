@@ -1,7 +1,7 @@
 package com.ek.earlykross.controller;
 
 import com.ek.earlykross.repository.ClubNewsRepository;
-import com.ek.earlykross.repository.FixtureRepository;
+//import com.ek.earlykross.repository.FixtureRepository;
 import com.ek.earlykross.repository.LeagueRepository;
 import com.ek.earlykross.service.ClubNewsService;
 import com.ek.earlykross.service.DataCenterService;
@@ -16,18 +16,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 
 @Controller
-
 @Log4j2
 @RequiredArgsConstructor
 public class MainController {
 
   private final ClubNewsService clubNewsService;
   private final DataCenterService dataCenterService;
-  private final FixtureService fixtureService;
+
   @Autowired
   ClubNewsRepository clubNewsRepository;
   LeagueRepository leagueRepository;
-  FixtureRepository fixtureRepository;
+//  FixtureRepository fixtureRepository;
 
   @RequestMapping("/")
   public String index(PageRequestDTO pageRequestDTO, Model model) {
@@ -35,13 +34,6 @@ public class MainController {
     pageRequestDTO.setSize(4);
     model.addAttribute("result", clubNewsService.getList(pageRequestDTO));
     model.addAttribute("leagueRankList", dataCenterService.getLeagueTable());
-
-
-
-
-
     return "index.html";
   }
-
-
 }
