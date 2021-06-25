@@ -1,7 +1,10 @@
 package com.ek.earlykross.service.impl;
 
+import com.ek.earlykross.entity.Fixture;
 import com.ek.earlykross.repository.FixtureRepository;
 import com.ek.earlykross.service.FixtureService;
+import com.ek.earlykross.vo.FixtureDTO;
+import java.util.Optional;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Service;
@@ -13,7 +16,7 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class FixtureServiceImpl implements FixtureService {
 
-  private final FixtureRepository fixtureRepository;
+    private final FixtureRepository fixtureRepository;
 
 //  @Override
 //  public FixtureDTO getList() {
@@ -26,12 +29,10 @@ public class FixtureServiceImpl implements FixtureService {
 //    return fixtureDTO;
 //  }
 
-  public String getOne(){
-
-    System.out.println(fixtureRepository.findFixtureByFDateIsNotNull());
-
-    return fixtureRepository.findFixtureByFDateIsNotNull();
-  }
+    public FixtureDTO getOne() {
+        System.out.println(fixtureRepository.findFixtureByFDateIsNotNull());
+        return entityToDto(fixtureRepository.findFixtureByFDateIsNotNull());
+    }
 
 
 }

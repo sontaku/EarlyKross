@@ -7,7 +7,7 @@ public interface FixtureService {
 
   // 예정된 최신 리그
 //  FixtureDTO getList();
-  String getOne();
+  public FixtureDTO getOne();
   // entity 를 dto 로 변환
   default FixtureDTO entityToDto (Fixture entity){
     FixtureDTO dto = FixtureDTO.builder()
