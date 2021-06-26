@@ -5,8 +5,6 @@ import com.ek.earlykross.vo.ClubNewsVO;
 import com.ek.earlykross.vo.PageRequestDTO;
 import com.ek.earlykross.vo.PageResultDTO;
 
-import java.util.List;
-
 
 public interface ClubNewsService {
 

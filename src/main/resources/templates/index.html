@@ -310,53 +310,51 @@
 						<!-- Widget: Match Announcement -->
 						<aside class="widget widget--sidebar card widget-preview">
 							<div class="widget__title card__header">
-								<h4>Next Match</h4>
+								<h4>다음 경기</h4>
 							</div>
 							<div class="widget__content card__content">
 
-								<!-- Match Preview -->
+								<!-- 매치 미리보기 -->
 								<div class="match-preview">
 									<section class="match-preview__body">
 										<header class="match-preview__header">
-											<time class="match-preview__date" datetime="2018-08-14">2021-06-19 16:30</time>
-											<h3 class="match-preview__title match-preview__title--lg">광주</h3>
+											<time class="match-preview__date" th:text="${nextLeague.fDate}"></time>
 										</header>
 										<div class="match-preview__content">
 
 											<!-- 1st Team -->
 											<div class="match-preview__team match-preview__team--first">
 												<figure class="match-preview__team-logo">
-													<img src="../upload/emblem/22.png" width="100px" height="200px" alt="">
+													<img th:src="|../upload/emblem/${nextLeague.home.cId}.png|" width="100px" height="200px" alt="">
 												</figure>
-<!--												<h5 class="match-preview__team-name" th:text="${str4}"></h5>-->
-												<h5 class="match-preview__team-name" >광주 FC</h5>
-												<div class="match-preview__team-info">Gwangju FC</div>
+												<h5 class="match-preview__team-name" th:text="${nextLeague.home.name}"></h5>
+												<div class="match-preview__team-info" th:text="${nextLeague.home.ename}"></div>
 											</div>
 											<!-- 1st Team / End -->
 
 											<div class="match-preview__vs">
 												<div class="match-preview__conj">VS</div>
 												<div class="match-preview__match-info">
-													<time class="match-preview__match-time" datetime="2017-08-12 09:00">2021-06-19 16:30</time>
-													<div class="match-preview__match-place">광주 전용</div>
+													<time class="match-preview__match-time" th:text="${nextLeague.fDate}"></time>
+													<div class="match-preview__match-place" th:text="${nextLeague.stadium}"></div>
 												</div>
 											</div>
 
 											<!-- 2nd Team -->
 											<div class="match-preview__team match-preview__team--second">
 												<figure class="match-preview__team-logo">
-													<img src="../upload/emblem/9.png"  width="100px" height="200px" alt="">
+													<img th:src="|../upload/emblem/${nextLeague.away.cId}.png|" width="100px" height="200px" alt="">
 												</figure>
-<!--												<h5 class="match-preview__team-name"th:text="${str5}"></h5>-->
-												<h5 class="match-preview__team-name">FC 서울</h5>
-												<div class="match-preview__team-info">FC Seoul</div>
+
+												<h5 class="match-preview__team-name" th:text="${nextLeague.away.name}"></h5>
+												<div class="match-preview__team-info" th:text="${nextLeague.away.ename}"></div>
 											</div>
 											<!-- 2nd Team / End -->
 
 										</div>
 									</section>
 									<div class="countdown__content">
-										<div class="countdown-counter" data-date="2021-06-19 16:30"></div>
+										<div class="countdown-counter" th:data-date="${nextLeague.fDate}"></div>
 									</div>
 									<div class="match-preview__action match-preview__action--ticket">
 <!--										<a href="#" class="btn btn-primary-inverse btn-lg btn-block">Buy Tickets Now</a>-->
