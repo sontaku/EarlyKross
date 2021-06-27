@@ -39,7 +39,7 @@
             <a sec:authorize="isAuthenticated()" style="color: #F7F7F7" th:href="@{/logout}">로그아웃</a>
             <!--                <a sec:authorize="isAnonymous()" th:href="@{/user/signup}">회원가입</a>-->
             <a sec:authorize="hasRole('USER')" style="color: #F7F7F7" th:href="@{/user/info}" sec:authentication="name"></a>
-            <a sec:authorize="hasRole('ADMIN')" style="color: #F7F7F7" th:href="@{/admin}">어드민</a>
+            <a sec:authorize="hasRole('ADMIN')" style="color: #F7F7F7" th:href="@{/admin/adminAllChart.do}">어드민</a>
           </li>
               </li>
         </ul>

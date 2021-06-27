@@ -44,7 +44,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter { //시큐리�
   protected void configure(HttpSecurity http) throws Exception {
     http.authorizeRequests()
         .antMatchers("/sample/all").permitAll()// 이 사이트는 모든 사용자에게 허락
-        .antMatchers("/sample/member","/best11/best.do","/map/*").hasRole("USER");
+//        .antMatchers("/sample/member","/best11/best.do","/map/*").hasRole("USER")
+        .antMatchers("/sample/member","/best11/best.do","/map/*").hasRole("ADMIN");
     http.formLogin();
 //        .loginPage("/member/loginForm");
     http.csrf().disable();// 토큰 발행 비활성화
